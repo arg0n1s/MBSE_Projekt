@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.moflon.tgg.runtime:CorrespondenceModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ReqToImpTransformator="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore" xmlns:org.moflon.tgg.runtime="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore">
+  <correspondences xsi:type="ReqToImpTransformator:ReqContainerToImplContainer">
+    <source href="t6r-t6i-req.xmi#/"/>
+    <target href="t6r-t6i-impl.xmi#/"/>
+  </correspondences>
+  <correspondences xsi:type="ReqToImpTransformator:VirtualNodeToRouter">
+    <source href="t6r-t6i-req.xmi#//@networkSpan"/>
+    <target href="t6r-t6i-impl.xmi#//@devices.0"/>
+  </correspondences>
+  <correspondences xsi:type="ReqToImpTransformator:VirtualNodeToServer">
+    <source href="t6r-t6i-req.xmi#//@networkSpan"/>
+    <target href="t6r-t6i-impl.xmi#//@devices.2"/>
+  </correspondences>
+  <correspondences xsi:type="ReqToImpTransformator:VirtualNodeToComputer">
+    <source href="t6r-t6i-req.xmi#//@networkSpan"/>
+    <target href="t6r-t6i-impl.xmi#//@devices.1"/>
+  </correspondences>
+  <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
+    <source href="t6r-t6i-req.xmi#//@agents.3"/>
+    <target href="t6r-t6i-impl.xmi#//@devices.2"/>
+  </correspondences>
+  <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
+    <source href="t6r-t6i-req.xmi#//@agents.0"/>
+    <target href="t6r-t6i-impl.xmi#//@devices.2"/>
+  </correspondences>
+  <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
+    <source href="t6r-t6i-req.xmi#//@agents.2"/>
+    <target href="t6r-t6i-impl.xmi#//@devices.1"/>
+  </correspondences>
+  <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
+    <source href="t6r-t6i-req.xmi#//@agents.1"/>
+    <target href="t6r-t6i-impl.xmi#//@devices.1"/>
+  </correspondences>
+  <source href="t6r-t6i-req.xmi#/"/>
+  <target href="t6r-t6i-impl.xmi#/"/>
+</org.moflon.tgg.runtime:CorrespondenceModel>
