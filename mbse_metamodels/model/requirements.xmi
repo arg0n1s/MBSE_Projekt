@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<req:Container xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:req="http://requirements/1.0" xsi:schemaLocation="http://requirements/1.0 requirements.ecore">
+  <agents xsi:type="req:Provider"
+      name="s1"
+      speed="3"/>
+  <agents xsi:type="req:Provider"
+      name="s2"
+      speed="3"/>
+  <agents xsi:type="req:Consumer"
+      name="pc1"
+      speed="2"/>
+  <agents xsi:type="req:Consumer"
+      name="pc2"
+      speed="2"/>
+  <agents xsi:type="req:Consumer"
+      name="pc3"
+      speed="2"/>
+</req:Container>

@@ -1,0 +1,1248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/ReqToImpTransformator/gen" modelPluginID="ReqToImpTransformator"
+    modelName="ReqToImpTransformator" updateClasspath="false" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    usedGenPackages="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.genmodel#//runtime platform:/plugin/mbse_metamodels/model/requirements.genmodel#//requirements platform:/plugin/mbse_metamodels/model/requirements.genmodel#//implementation platform:/plugin/mbse_metamodels/model/implementation.genmodel#//implementation platform:/plugin/mbse_metamodels/model/implementation.genmodel#//requirements platform:/plugin/org.moflon.tgg.language/model/Language.genmodel#//language platform:/plugin/SDMLanguage/model/SDMLanguage.genmodel#//SDMLanguage platform:/plugin/MocaTree/model/MocaTree.genmodel#//MocaTree"
+    operationReflection="true">
+  <foreignModel>ReqToImpTransformator.ecore</foreignModel>
+  <genPackages prefix="ReqToImpTransformator" disposableProviderFactory="true" ecorePackage="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#/">
+    <genClasses ecoreClass="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer/target"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToRouter">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToRouter/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToRouter/target"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqAgentToImplDevice">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqAgentToImplDevice/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqAgentToImplDevice/target"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToComputer">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToComputer/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToComputer/target"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToServer">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToServer/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToServer/target"/>
+    </genClasses>
+    <nestedGenPackages prefix="Rules" disposableProviderFactory="true" loadInitialization="true"
+        literalsInterface="false" ecorePackage="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules">
+      <genClasses ecoreClass="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqAgentToDeviceRule"/>
+      <genClasses ecoreClass="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1">
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_FWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_FWD/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/perform_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/perform_FWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/registerObjectsToMatch_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/registerObjectsToMatch_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/registerObjectsToMatch_FWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/registerObjectsToMatch_FWD/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_solveCsp_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_solveCsp_FWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_solveCsp_FWD/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkTypes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkTypes_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_BWD/router"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/perform_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/perform_BWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/registerObjectsToMatch_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/registerObjectsToMatch_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/registerObjectsToMatch_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/registerObjectsToMatch_BWD/router"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_solveCsp_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_solveCsp_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_solveCsp_BWD/router"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_solveCsp_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_solveCsp_BWD/reqContainerToImplContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_solveCsp_BWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_solveCsp_BWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_solveCsp_BWD/router"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/registerObjects_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/registerObjects_BWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/registerObjects_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/registerObjects_BWD/reqContainerToImplContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/registerObjects_BWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/registerObjects_BWD/virtualNodeToRouter"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/registerObjects_BWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/registerObjects_BWD/router"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkTypes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkTypes_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_FWD_NetworkSpan_3">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_FWD_NetworkSpan_3/virtualNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_BWD_EMoflonEdge_18">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_BWD_EMoflonEdge_18/_edge_devices"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkAttributes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkAttributes_FWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkAttributes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkAttributes_BWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_solveCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_solveCsp_CC/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_solveCsp_CC/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_solveCsp_CC/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_solveCsp_CC/router"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_solveCsp_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_solveCsp_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_checkCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_checkCsp_CC/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkDEC_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkDEC_FWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkDEC_FWD/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkDEC_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkDEC_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkDEC_BWD/router"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/generateModel">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/generateModel/ruleEntryContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/generateModel/reqContainerToImplContainerParameter"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/generateModel_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/generateModel_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/generateModel_solveCsp_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/generateModel_solveCsp_BWD/reqContainerToImplContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/generateModel_solveCsp_BWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/generateModel_solveCsp_BWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/generateModel_solveCsp_BWD/ruleResult"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/generateModel_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/generateModel_checkCsp_BWD/csp"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule">
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_FWD/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/perform_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/perform_FWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/registerObjectsToMatch_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/registerObjectsToMatch_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/registerObjectsToMatch_FWD/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_solveCsp_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_solveCsp_FWD/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkTypes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkTypes_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_BWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/perform_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/perform_BWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/registerObjectsToMatch_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/registerObjectsToMatch_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/registerObjectsToMatch_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/registerObjectsToMatch_BWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_solveCsp_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_solveCsp_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_solveCsp_BWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_solveCsp_BWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_solveCsp_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_solveCsp_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_solveCsp_BWD/reqContainerToImplContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/registerObjects_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/registerObjects_BWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/registerObjects_BWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/registerObjects_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/registerObjects_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/registerObjects_BWD/reqContainerToImplContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkTypes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkTypes_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_FWD_Container_15">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_FWD_Container_15/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_BWD_EMoflonEdge_19">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_BWD_EMoflonEdge_19/_edge_cables"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkAttributes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkAttributes_FWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkAttributes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkAttributes_BWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_solveCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_solveCsp_CC/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_solveCsp_CC/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_solveCsp_CC/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_solveCsp_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_solveCsp_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_checkCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_checkCsp_CC/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkDEC_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkDEC_FWD/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkDEC_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkDEC_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkDEC_BWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/generateModel">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/generateModel/ruleEntryContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/generateModel/reqContainerToImplContainerParameter"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/generateModel_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/generateModel_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/generateModel_solveCsp_BWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/generateModel_solveCsp_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/generateModel_solveCsp_BWD/reqContainerToImplContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/generateModel_solveCsp_BWD/ruleResult"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/generateModel_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/generateModel_checkCsp_BWD/csp"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplOutgoingConnectionIgnoreRule"/>
+      <genClasses ecoreClass="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule">
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_FWD/reqAgent"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_FWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_FWD/virtualNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/perform_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/perform_FWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/registerObjectsToMatch_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/registerObjectsToMatch_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/registerObjectsToMatch_FWD/reqAgent"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/registerObjectsToMatch_FWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/registerObjectsToMatch_FWD/virtualNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_solveCsp_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_solveCsp_FWD/reqAgent"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_solveCsp_FWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_solveCsp_FWD/virtualNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_solveCsp_FWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_solveCsp_FWD/virtualNodeToServer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_solveCsp_FWD/implDevice"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_solveCsp_FWD/reqAgent"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_solveCsp_FWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_solveCsp_FWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_solveCsp_FWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_solveCsp_FWD/reqContainerToImplContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_solveCsp_FWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/registerObjects_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/registerObjects_FWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/registerObjects_FWD/virtualNodeToServer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/registerObjects_FWD/reqAgentToImplDevice"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/registerObjects_FWD/implDevice"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/registerObjects_FWD/reqAgent"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/registerObjects_FWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/registerObjects_FWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/registerObjects_FWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/registerObjects_FWD/reqContainerToImplContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/registerObjects_FWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/checkTypes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/checkTypes_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_BWD/implDevice"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_BWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/perform_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/perform_BWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/registerObjectsToMatch_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/registerObjectsToMatch_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/registerObjectsToMatch_BWD/implDevice"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/registerObjectsToMatch_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/registerObjectsToMatch_BWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_solveCsp_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_solveCsp_BWD/implDevice"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_solveCsp_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_solveCsp_BWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/checkTypes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/checkTypes_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_BWD_Server_2">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_BWD_Server_2/implDevice"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_FWD_EMoflonEdge_9">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_FWD_EMoflonEdge_9/_edge_agents"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/checkAttributes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/checkAttributes_FWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/checkAttributes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/checkAttributes_BWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_solveCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_solveCsp_CC/implDevice"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_solveCsp_CC/reqAgent"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_solveCsp_CC/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_solveCsp_CC/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_solveCsp_CC/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_solveCsp_CC/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_solveCsp_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_solveCsp_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_checkCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_checkCsp_CC/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/checkDEC_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/checkDEC_FWD/reqAgent"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/checkDEC_FWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/checkDEC_FWD/virtualNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/checkDEC_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/checkDEC_BWD/implDevice"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/checkDEC_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/checkDEC_BWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/generateModel">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/generateModel/ruleEntryContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/generateModel/virtualNodeToServerParameter"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/generateModel_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/generateModel_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/generateModel_solveCsp_BWD/virtualNodeToServer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/generateModel_solveCsp_BWD/implDevice"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/generateModel_solveCsp_BWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/generateModel_solveCsp_BWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/generateModel_solveCsp_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/generateModel_solveCsp_BWD/reqContainerToImplContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/generateModel_solveCsp_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/generateModel_solveCsp_BWD/ruleResult"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/generateModel_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/generateModel_checkCsp_BWD/csp"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCableIgnoreRule"/>
+      <genClasses ecoreClass="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule">
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_FWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_FWD/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/perform_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/perform_FWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjectsToMatch_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjectsToMatch_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjectsToMatch_FWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjectsToMatch_FWD/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_solveCsp_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_solveCsp_FWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_solveCsp_FWD/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkTypes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkTypes_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_BWD/server"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_BWD/router"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/perform_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/perform_BWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjectsToMatch_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjectsToMatch_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjectsToMatch_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjectsToMatch_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjectsToMatch_BWD/server"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjectsToMatch_BWD/router"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_solveCsp_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_solveCsp_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_solveCsp_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_solveCsp_BWD/server"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_solveCsp_BWD/router"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_solveCsp_BWD/reqContainerToImplContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_solveCsp_BWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_solveCsp_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_solveCsp_BWD/virtualNodeToRouter"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_solveCsp_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_solveCsp_BWD/server"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_solveCsp_BWD/router"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_solveCsp_BWD/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjects_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjects_BWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjects_BWD/reqContainerToImplContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjects_BWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjects_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjects_BWD/virtualNodeToRouter"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjects_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjects_BWD/server"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjects_BWD/router"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjects_BWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjects_BWD/virtualNodeToServer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkTypes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkTypes_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_FWD_NetworkSpan_4">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_FWD_NetworkSpan_4/virtualNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_BWD_EMoflonEdge_20">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_BWD_EMoflonEdge_20/_edge_incoming"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkAttributes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkAttributes_FWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkAttributes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkAttributes_BWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_solveCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_solveCsp_CC/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_solveCsp_CC/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_solveCsp_CC/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_solveCsp_CC/server"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_solveCsp_CC/router"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_solveCsp_CC/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_solveCsp_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_solveCsp_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_checkCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_checkCsp_CC/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkDEC_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkDEC_FWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkDEC_FWD/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkDEC_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkDEC_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkDEC_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkDEC_BWD/server"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkDEC_BWD/router"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/generateModel">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/generateModel/ruleEntryContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/generateModel/reqContainerToImplContainerParameter"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/generateModel_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/generateModel_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/generateModel_solveCsp_BWD/reqContainerToImplContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/generateModel_solveCsp_BWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/generateModel_solveCsp_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/generateModel_solveCsp_BWD/virtualNodeToRouter"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/generateModel_solveCsp_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/generateModel_solveCsp_BWD/router"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/generateModel_solveCsp_BWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/generateModel_solveCsp_BWD/ruleResult"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/generateModel_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/generateModel_checkCsp_BWD/csp"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule">
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_FWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_FWD/virtualNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/perform_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/perform_FWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjectsToMatch_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjectsToMatch_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjectsToMatch_FWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjectsToMatch_FWD/virtualNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_solveCsp_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_solveCsp_FWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_solveCsp_FWD/virtualNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkTypes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkTypes_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_BWD/router"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_BWD/computer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_BWD/cable"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/perform_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/perform_BWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjectsToMatch_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjectsToMatch_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjectsToMatch_BWD/router"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjectsToMatch_BWD/computer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjectsToMatch_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjectsToMatch_BWD/cable"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_solveCsp_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_solveCsp_BWD/router"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_solveCsp_BWD/computer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_solveCsp_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_solveCsp_BWD/cable"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_solveCsp_BWD/router"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_solveCsp_BWD/computer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_solveCsp_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_solveCsp_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_solveCsp_BWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_solveCsp_BWD/virtualNodeToRouter"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_solveCsp_BWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_solveCsp_BWD/reqContainerToImplContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjects_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjects_BWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjects_BWD/router"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjects_BWD/computer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjects_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjects_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjects_BWD/virtualNodeToComputer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjects_BWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjects_BWD/virtualNodeToRouter"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjects_BWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjects_BWD/reqContainerToImplContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkTypes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkTypes_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_FWD_Container_16">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_FWD_Container_16/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_BWD_EMoflonEdge_21">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_BWD_EMoflonEdge_21/_edge_outgoing"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkAttributes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkAttributes_FWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkAttributes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkAttributes_BWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_solveCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_solveCsp_CC/router"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_solveCsp_CC/computer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_solveCsp_CC/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_solveCsp_CC/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_solveCsp_CC/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_solveCsp_CC/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_solveCsp_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_solveCsp_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_checkCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_checkCsp_CC/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkDEC_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkDEC_FWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkDEC_FWD/virtualNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkDEC_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkDEC_BWD/router"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkDEC_BWD/computer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkDEC_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkDEC_BWD/cable"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/generateModel">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/generateModel/ruleEntryContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/generateModel/reqContainerToImplContainerParameter"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/generateModel_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/generateModel_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/generateModel_solveCsp_BWD/router"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/generateModel_solveCsp_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/generateModel_solveCsp_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/generateModel_solveCsp_BWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/generateModel_solveCsp_BWD/virtualNodeToRouter"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/generateModel_solveCsp_BWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/generateModel_solveCsp_BWD/reqContainerToImplContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/generateModel_solveCsp_BWD/ruleResult"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/generateModel_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/generateModel_checkCsp_BWD/csp"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule">
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_FWD/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/perform_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/perform_FWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/registerObjectsToMatch_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/registerObjectsToMatch_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/registerObjectsToMatch_FWD/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_solveCsp_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_solveCsp_FWD/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/checkTypes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/checkTypes_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_BWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/perform_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/perform_BWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/registerObjectsToMatch_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/registerObjectsToMatch_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/registerObjectsToMatch_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/registerObjectsToMatch_BWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_solveCsp_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_solveCsp_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_solveCsp_BWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_solveCsp_BWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_solveCsp_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_solveCsp_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_solveCsp_BWD/reqContainerToImplContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/registerObjects_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/registerObjects_BWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/registerObjects_BWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/registerObjects_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/registerObjects_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/registerObjects_BWD/reqContainerToImplContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/checkTypes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/checkTypes_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_FWD_Container_17">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_FWD_Container_17/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_BWD_EMoflonEdge_22">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_BWD_EMoflonEdge_22/_edge_cables"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/checkAttributes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/checkAttributes_FWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/checkAttributes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/checkAttributes_BWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_solveCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_solveCsp_CC/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_solveCsp_CC/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_solveCsp_CC/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_solveCsp_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_solveCsp_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_checkCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_checkCsp_CC/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/checkDEC_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/checkDEC_FWD/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/checkDEC_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/checkDEC_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/checkDEC_BWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/generateModel">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/generateModel/ruleEntryContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/generateModel/reqContainerToImplContainerParameter"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/generateModel_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/generateModel_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/generateModel_solveCsp_BWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/generateModel_solveCsp_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/generateModel_solveCsp_BWD/reqContainerToImplContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/generateModel_solveCsp_BWD/ruleResult"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/generateModel_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/generateModel_checkCsp_BWD/csp"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplIncomingConnectionIgnoreRule"/>
+      <genClasses ecoreClass="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule">
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_FWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_FWD/virtualNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/perform_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/perform_FWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/registerObjectsToMatch_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/registerObjectsToMatch_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/registerObjectsToMatch_FWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/registerObjectsToMatch_FWD/virtualNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_solveCsp_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_solveCsp_FWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_solveCsp_FWD/virtualNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_solveCsp_FWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_solveCsp_FWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_solveCsp_FWD/virtualNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/registerObjects_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/registerObjects_FWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/registerObjects_FWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/registerObjects_FWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/registerObjects_FWD/reqContainerToImplContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/registerObjects_FWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/checkTypes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/checkTypes_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_BWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/perform_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/perform_BWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/registerObjectsToMatch_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/registerObjectsToMatch_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/registerObjectsToMatch_BWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_solveCsp_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_solveCsp_BWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_solveCsp_BWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/registerObjects_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/registerObjects_BWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/registerObjects_BWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/registerObjects_BWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/registerObjects_BWD/reqContainerToImplContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/registerObjects_BWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/checkTypes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/checkTypes_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_BWD_Container_5">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_BWD_Container_5/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_FWD_EMoflonEdge_10">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_FWD_EMoflonEdge_10/_edge_networkSpan"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/checkAttributes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/checkAttributes_FWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/checkAttributes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/checkAttributes_BWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_solveCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_solveCsp_CC/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_solveCsp_CC/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_solveCsp_CC/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_solveCsp_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_solveCsp_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_checkCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_checkCsp_CC/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/checkDEC_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/checkDEC_FWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/checkDEC_FWD/virtualNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/checkDEC_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/checkDEC_BWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/generateModel">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/generateModel/ruleEntryContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/generateModel_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/generateModel_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/generateModel_solveCsp_BWD/ruleResult"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/generateModel_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/generateModel_checkCsp_BWD/csp"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2">
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_FWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_FWD/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/perform_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/perform_FWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjectsToMatch_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjectsToMatch_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjectsToMatch_FWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjectsToMatch_FWD/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_solveCsp_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_solveCsp_FWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_solveCsp_FWD/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkTypes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkTypes_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_BWD/router2"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_BWD/router"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_BWD/cable"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/perform_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/perform_BWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjectsToMatch_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjectsToMatch_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjectsToMatch_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjectsToMatch_BWD/router2"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjectsToMatch_BWD/router"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjectsToMatch_BWD/cable"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_solveCsp_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_solveCsp_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_solveCsp_BWD/router2"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_solveCsp_BWD/router"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_solveCsp_BWD/cable"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_solveCsp_BWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_solveCsp_BWD/reqContainerToImplContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_solveCsp_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_solveCsp_BWD/router2"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_solveCsp_BWD/router"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_solveCsp_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_solveCsp_BWD/virtualNodeToRouter1"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_solveCsp_BWD/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjects_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjects_BWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjects_BWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjects_BWD/reqContainerToImplContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjects_BWD/virtualNodeToRouter"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjects_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjects_BWD/router2"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjects_BWD/router"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjects_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjects_BWD/virtualNodeToRouter1"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjects_BWD/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkTypes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkTypes_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_FWD_NetworkSpan_5">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_FWD_NetworkSpan_5/virtualNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_BWD_EMoflonEdge_23">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_BWD_EMoflonEdge_23/_edge_devices"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkAttributes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkAttributes_FWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkAttributes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkAttributes_BWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_solveCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_solveCsp_CC/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_solveCsp_CC/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_solveCsp_CC/router2"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_solveCsp_CC/router"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_solveCsp_CC/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_solveCsp_CC/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_solveCsp_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_solveCsp_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_checkCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_checkCsp_CC/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkDEC_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkDEC_FWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkDEC_FWD/reqContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkDEC_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkDEC_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkDEC_BWD/router2"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkDEC_BWD/router"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkDEC_BWD/cable"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/generateModel">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/generateModel/ruleEntryContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/generateModel/virtualNodeToRouter1Parameter"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/generateModel_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/generateModel_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/generateModel_solveCsp_BWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/generateModel_solveCsp_BWD/reqContainerToImplContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/generateModel_solveCsp_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/generateModel_solveCsp_BWD/router"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/generateModel_solveCsp_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/generateModel_solveCsp_BWD/virtualNodeToRouter1"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/generateModel_solveCsp_BWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/generateModel_solveCsp_BWD/ruleResult"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/generateModel_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/generateModel_checkCsp_BWD/csp"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule">
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_FWD/reqAgent"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_FWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_FWD/virtualNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/perform_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/perform_FWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjectsToMatch_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjectsToMatch_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjectsToMatch_FWD/reqAgent"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjectsToMatch_FWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjectsToMatch_FWD/virtualNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_solveCsp_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_solveCsp_FWD/reqAgent"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_solveCsp_FWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_solveCsp_FWD/virtualNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_solveCsp_FWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_solveCsp_FWD/implDevice"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_solveCsp_FWD/reqAgent"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_solveCsp_FWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_solveCsp_FWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_solveCsp_FWD/virtualNodeToComputer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_solveCsp_FWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_solveCsp_FWD/reqContainerToImplContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_solveCsp_FWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjects_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjects_FWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjects_FWD/reqAgentToImplDevice"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjects_FWD/implDevice"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjects_FWD/reqAgent"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjects_FWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjects_FWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjects_FWD/virtualNodeToComputer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjects_FWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjects_FWD/reqContainerToImplContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjects_FWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkTypes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkTypes_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_BWD/implDevice"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_BWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/perform_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/perform_BWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjectsToMatch_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjectsToMatch_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjectsToMatch_BWD/implDevice"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjectsToMatch_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjectsToMatch_BWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_solveCsp_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_solveCsp_BWD/implDevice"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_solveCsp_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_solveCsp_BWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkTypes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkTypes_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_BWD_Computer_2">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_BWD_Computer_2/implDevice"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_FWD_EMoflonEdge_11">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_FWD_EMoflonEdge_11/_edge_agents"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkAttributes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkAttributes_FWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkAttributes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkAttributes_BWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_solveCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_solveCsp_CC/implDevice"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_solveCsp_CC/reqAgent"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_solveCsp_CC/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_solveCsp_CC/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_solveCsp_CC/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_solveCsp_CC/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_solveCsp_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_solveCsp_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_checkCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_checkCsp_CC/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkDEC_FWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkDEC_FWD/reqAgent"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkDEC_FWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkDEC_FWD/virtualNode"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkDEC_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkDEC_BWD/implDevice"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkDEC_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkDEC_BWD/implContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/generateModel">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/generateModel/ruleEntryContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/generateModel/virtualNodeToComputerParameter"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/generateModel_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/generateModel_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/generateModel_solveCsp_BWD/implDevice"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/generateModel_solveCsp_BWD/reqContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/generateModel_solveCsp_BWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/generateModel_solveCsp_BWD/virtualNodeToComputer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/generateModel_solveCsp_BWD/cable"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/generateModel_solveCsp_BWD/reqContainerToImplContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/generateModel_solveCsp_BWD/implContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/generateModel_solveCsp_BWD/ruleResult"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/generateModel_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/generateModel_checkCsp_BWD/csp"/>
+        </genOperations>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

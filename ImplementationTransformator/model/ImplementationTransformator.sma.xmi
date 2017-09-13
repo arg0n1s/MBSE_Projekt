@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ASCII"?>
+<analysis:StaticAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:analysis="platform:/plugin/org.moflon.tgg.language/model/Language.ecore#//analysis">
+  <sourceRules>
+    <rules ruleName="XComputerToComputer">
+      <isAppropriateMethods href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XComputerToComputer/isAppropriate_FWD_EMoflonEdge_11"/>
+      <checkDECMethod href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XComputerToComputer/checkDEC_FWD"/>
+    </rules>
+    <rules ruleName="XSimplexCopperCableRule">
+      <isAppropriateMethods href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XSimplexCopperCableRule/isAppropriate_FWD_EMoflonEdge_12"/>
+      <checkDECMethod href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XSimplexCopperCableRule/checkDEC_FWD"/>
+    </rules>
+    <rules ruleName="XRouterToRouterRule">
+      <isAppropriateMethods href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XRouterToRouterRule/isAppropriate_FWD_EMoflonEdge_13"/>
+      <checkDECMethod href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XRouterToRouterRule/checkDEC_FWD"/>
+    </rules>
+    <rules ruleName="XServerToServer">
+      <isAppropriateMethods href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XServerToServer/isAppropriate_FWD_EMoflonEdge_14"/>
+      <checkDECMethod href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XServerToServer/checkDEC_FWD"/>
+    </rules>
+    <rules ruleName="XDuplexCopperCableRule">
+      <isAppropriateMethods href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XDuplexCopperCableRule/isAppropriate_FWD_EMoflonEdge_15"/>
+      <checkDECMethod href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XDuplexCopperCableRule/checkDEC_FWD"/>
+    </rules>
+    <rules ruleName="XSimplexConnectionToConnectionRule">
+      <isAppropriateMethods href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XSimplexConnectionToConnectionRule/isAppropriate_FWD_EMoflonEdge_16"/>
+      <checkDECMethod href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XSimplexConnectionToConnectionRule/checkDEC_FWD"/>
+    </rules>
+    <rules ruleName="XDuplexConnectionToConnectionRule">
+      <isAppropriateMethods href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XDuplexConnectionToConnectionRule/isAppropriate_FWD_EMoflonEdge_17"/>
+      <checkDECMethod href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XDuplexConnectionToConnectionRule/checkDEC_FWD"/>
+    </rules>
+    <rules ruleName="XDuplexGlassFiberCableRule">
+      <isAppropriateMethods href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XDuplexGlassFiberCableRule/isAppropriate_FWD_EMoflonEdge_18"/>
+      <checkDECMethod href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XDuplexGlassFiberCableRule/checkDEC_FWD"/>
+    </rules>
+    <rules ruleName="XContainerToContainerRule">
+      <isAppropriateMethods href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_FWD_XContainer_2"/>
+      <checkDECMethod href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XContainerToContainerRule/checkDEC_FWD"/>
+    </rules>
+    <rules ruleName="XSimplexGlassFiberCableRule">
+      <isAppropriateMethods href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XSimplexGlassFiberCableRule/isAppropriate_FWD_EMoflonEdge_19"/>
+      <checkDECMethod href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XSimplexGlassFiberCableRule/checkDEC_FWD"/>
+    </rules>
+  </sourceRules>
+  <targetRules>
+    <rules ruleName="XComputerToComputer">
+      <isAppropriateMethods href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XComputerToComputer/isAppropriate_BWD_EMoflonEdge_12"/>
+      <checkDECMethod href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XComputerToComputer/checkDEC_BWD"/>
+    </rules>
+    <rules ruleName="XSimplexCopperCableRule">
+      <isAppropriateMethods href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XSimplexCopperCableRule/isAppropriate_BWD_EMoflonEdge_13"/>
+      <checkDECMethod href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XSimplexCopperCableRule/checkDEC_BWD"/>
+    </rules>
+    <rules ruleName="XRouterToRouterRule">
+      <isAppropriateMethods href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XRouterToRouterRule/isAppropriate_BWD_EMoflonEdge_14"/>
+      <checkDECMethod href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XRouterToRouterRule/checkDEC_BWD"/>
+    </rules>
+    <rules ruleName="XServerToServer">
+      <isAppropriateMethods href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XServerToServer/isAppropriate_BWD_EMoflonEdge_15"/>
+      <checkDECMethod href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XServerToServer/checkDEC_BWD"/>
+    </rules>
+    <rules ruleName="XDuplexCopperCableRule">
+      <isAppropriateMethods href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XDuplexCopperCableRule/isAppropriate_BWD_EMoflonEdge_16"/>
+      <checkDECMethod href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XDuplexCopperCableRule/checkDEC_BWD"/>
+    </rules>
+    <rules ruleName="XSimplexConnectionToConnectionRule">
+      <isAppropriateMethods href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XSimplexConnectionToConnectionRule/isAppropriate_BWD_EMoflonEdge_17"/>
+      <checkDECMethod href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XSimplexConnectionToConnectionRule/checkDEC_BWD"/>
+    </rules>
+    <rules ruleName="XDuplexConnectionToConnectionRule">
+      <isAppropriateMethods href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XDuplexConnectionToConnectionRule/isAppropriate_BWD_EMoflonEdge_18"/>
+      <checkDECMethod href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XDuplexConnectionToConnectionRule/checkDEC_BWD"/>
+    </rules>
+    <rules ruleName="XDuplexGlassFiberCableRule">
+      <isAppropriateMethods href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XDuplexGlassFiberCableRule/isAppropriate_BWD_EMoflonEdge_19"/>
+      <checkDECMethod href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XDuplexGlassFiberCableRule/checkDEC_BWD"/>
+    </rules>
+    <rules ruleName="XContainerToContainerRule">
+      <isAppropriateMethods href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_BWD_Container_1"/>
+      <checkDECMethod href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XContainerToContainerRule/checkDEC_BWD"/>
+    </rules>
+    <rules ruleName="XSimplexGlassFiberCableRule">
+      <isAppropriateMethods href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XSimplexGlassFiberCableRule/isAppropriate_BWD_EMoflonEdge_20"/>
+      <checkDECMethod href="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore#//Rules/XSimplexGlassFiberCableRule/checkDEC_BWD"/>
+    </rules>
+  </targetRules>
+</analysis:StaticAnalysis>
