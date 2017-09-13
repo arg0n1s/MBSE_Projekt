@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdmUtil:CompilerInjection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:sdmUtil="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//sdmUtil">
+  <importInjectionEntries content="org.moflon.tgg.csp.*">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="RequirementsTransformator.csp.constraints.*">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.csp.constraints.*">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.language.csp.*">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.csp.*">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="RequirementsTransformator.csp.constraints.*">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.csp.constraints.*">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.language.csp.*">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.csp.*">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="RequirementsTransformator.csp.constraints.*">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.csp.constraints.*">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.language.csp.*">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
+    <eClass href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule"/>
+  </importInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_solveCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="match.registerObject(&quot;xContainer&quot;, xContainer);&#xA;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjectsToMatch_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_checkCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;xContainer&quot;,xContainer);&#xA;return csp;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_checkCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;xContainerToContainer&quot;, xContainerToContainer);&#xA;ruleresult.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;ruleresult.registerObject(&quot;container&quot;, container);&#xA;ruleresult.registerObject(&quot;xContainer&quot;, xContainer);&#xA;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;xContainer&quot;).eClass()).equals(&quot;reqXtext.XContainer.&quot;);">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkTypes_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="match.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;match.registerObject(&quot;container&quot;, container);&#xA;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjectsToMatch_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;isApplicableMatch.registerObject(&quot;container&quot;,container);&#xA;return csp;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;xContainerToContainer&quot;, xContainerToContainer);&#xA;ruleresult.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;ruleresult.registerObject(&quot;container&quot;, container);&#xA;ruleresult.registerObject(&quot;xContainer&quot;, xContainer);&#xA;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;virtualNode&quot;).eClass()).equals(&quot;requirements.NetworkSpan.&quot;) &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;container&quot;).eClass()).equals(&quot;requirements.Container.&quot;);">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkTypes_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isAppropriate_solveCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="match.registerObject(&quot;xAgent&quot;, xAgent);&#xA;match.registerObject(&quot;xContainer&quot;, xContainer);&#xA;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/registerObjectsToMatch_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isAppropriate_checkCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;Variable var_xAgent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent.speed&quot;, true, csp);&#xA;var_xAgent_speed.setValue(xAgent.getSpeed());&#xA;var_xAgent_speed.setType(&quot;BigInteger&quot;);&#xA;Variable var_xAgent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent.name&quot;, true, csp);&#xA;var_xAgent_name.setValue(xAgent.getName());&#xA;var_xAgent_name.setType(&quot;String&quot;);&#xA;&#xA;// Create unbound variables&#xA;Variable var_agent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent.speed&quot;, csp);&#xA;var_agent_speed.setType(&quot;BigInteger&quot;);&#xA;Variable var_agent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent.name&quot;, csp);&#xA;var_agent_name.setType(&quot;String&quot;);&#xA;&#xA;// Create constraints&#xA;Eq eq = new Eq();&#xA;Eq eq_0 = new Eq();&#xA;&#xA;&#xA;csp.getConstraints().add(eq);&#xA;csp.getConstraints().add(eq_0);&#xA;&#xA;// Solve CSP&#xA;eq.setRuleName(&quot;NoRuleName&quot;);&#xA;eq.solve(var_xAgent_speed,var_agent_speed);&#xA;eq_0.setRuleName(&quot;NoRuleName&quot;);&#xA;eq_0.solve(var_xAgent_name,var_agent_name);&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;container&quot;,container);&#xA;isApplicableMatch.registerObject(&quot;xAgent&quot;,xAgent);&#xA;isApplicableMatch.registerObject(&quot;xContainerToContainer&quot;,xContainerToContainer);&#xA;isApplicableMatch.registerObject(&quot;xContainer&quot;,xContainer);&#xA;return csp;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isApplicable_solveCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isApplicable_checkCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;xAgentToAgent&quot;, xAgentToAgent);&#xA;ruleresult.registerObject(&quot;container&quot;, container);&#xA;ruleresult.registerObject(&quot;agent&quot;, agent);&#xA;ruleresult.registerObject(&quot;xAgent&quot;, xAgent);&#xA;ruleresult.registerObject(&quot;xContainerToContainer&quot;, xContainerToContainer);&#xA;ruleresult.registerObject(&quot;xContainer&quot;, xContainer);&#xA;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/registerObjects_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;xAgent&quot;).eClass()).equals(&quot;reqXtext.XConsumer.&quot;);">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/checkTypes_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isAppropriate_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="match.registerObject(&quot;container&quot;, container);&#xA;match.registerObject(&quot;agent&quot;, agent);&#xA;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/registerObjectsToMatch_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isAppropriate_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;Variable var_agent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent.speed&quot;, true, csp);&#xA;var_agent_speed.setValue(agent.getSpeed());&#xA;var_agent_speed.setType(&quot;BigInteger&quot;);&#xA;Variable var_agent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent.name&quot;, true, csp);&#xA;var_agent_name.setValue(agent.getName());&#xA;var_agent_name.setType(&quot;String&quot;);&#xA;&#xA;// Create unbound variables&#xA;Variable var_xAgent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent.speed&quot;, csp);&#xA;var_xAgent_speed.setType(&quot;BigInteger&quot;);&#xA;Variable var_xAgent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent.name&quot;, csp);&#xA;var_xAgent_name.setType(&quot;String&quot;);&#xA;&#xA;// Create constraints&#xA;Eq eq = new Eq();&#xA;Eq eq_0 = new Eq();&#xA;&#xA;&#xA;csp.getConstraints().add(eq);&#xA;csp.getConstraints().add(eq_0);&#xA;&#xA;// Solve CSP&#xA;eq.setRuleName(&quot;NoRuleName&quot;);&#xA;eq.solve(var_xAgent_speed,var_agent_speed);&#xA;eq_0.setRuleName(&quot;NoRuleName&quot;);&#xA;eq_0.solve(var_xAgent_name,var_agent_name);&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;container&quot;,container);&#xA;isApplicableMatch.registerObject(&quot;agent&quot;,agent);&#xA;isApplicableMatch.registerObject(&quot;xContainerToContainer&quot;,xContainerToContainer);&#xA;isApplicableMatch.registerObject(&quot;xContainer&quot;,xContainer);&#xA;return csp;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isApplicable_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isApplicable_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;xAgentToAgent&quot;, xAgentToAgent);&#xA;ruleresult.registerObject(&quot;container&quot;, container);&#xA;ruleresult.registerObject(&quot;agent&quot;, agent);&#xA;ruleresult.registerObject(&quot;xAgent&quot;, xAgent);&#xA;ruleresult.registerObject(&quot;xContainerToContainer&quot;, xContainerToContainer);&#xA;ruleresult.registerObject(&quot;xContainer&quot;, xContainer);&#xA;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/registerObjects_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;agent&quot;).eClass()).equals(&quot;requirements.Consumer.&quot;);">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/checkTypes_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isAppropriate_solveCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="match.registerObject(&quot;xAgent&quot;, xAgent);&#xA;match.registerObject(&quot;xContainer&quot;, xContainer);&#xA;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/registerObjectsToMatch_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isAppropriate_checkCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;Variable var_xAgent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent.speed&quot;, true, csp);&#xA;var_xAgent_speed.setValue(xAgent.getSpeed());&#xA;var_xAgent_speed.setType(&quot;BigInteger&quot;);&#xA;Variable var_xAgent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent.name&quot;, true, csp);&#xA;var_xAgent_name.setValue(xAgent.getName());&#xA;var_xAgent_name.setType(&quot;String&quot;);&#xA;&#xA;// Create unbound variables&#xA;Variable var_agent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent.speed&quot;, csp);&#xA;var_agent_speed.setType(&quot;BigInteger&quot;);&#xA;Variable var_agent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent.name&quot;, csp);&#xA;var_agent_name.setType(&quot;String&quot;);&#xA;&#xA;// Create constraints&#xA;Eq eq = new Eq();&#xA;Eq eq_0 = new Eq();&#xA;&#xA;&#xA;csp.getConstraints().add(eq);&#xA;csp.getConstraints().add(eq_0);&#xA;&#xA;// Solve CSP&#xA;eq.setRuleName(&quot;NoRuleName&quot;);&#xA;eq.solve(var_xAgent_speed,var_agent_speed);&#xA;eq_0.setRuleName(&quot;NoRuleName&quot;);&#xA;eq_0.solve(var_xAgent_name,var_agent_name);&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;container&quot;,container);&#xA;isApplicableMatch.registerObject(&quot;xAgent&quot;,xAgent);&#xA;isApplicableMatch.registerObject(&quot;xContainerToContainer&quot;,xContainerToContainer);&#xA;isApplicableMatch.registerObject(&quot;xContainer&quot;,xContainer);&#xA;return csp;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isApplicable_solveCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isApplicable_checkCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;xAgentToAgent&quot;, xAgentToAgent);&#xA;ruleresult.registerObject(&quot;container&quot;, container);&#xA;ruleresult.registerObject(&quot;agent&quot;, agent);&#xA;ruleresult.registerObject(&quot;xAgent&quot;, xAgent);&#xA;ruleresult.registerObject(&quot;xContainerToContainer&quot;, xContainerToContainer);&#xA;ruleresult.registerObject(&quot;xContainer&quot;, xContainer);&#xA;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/registerObjects_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;xAgent&quot;).eClass()).equals(&quot;reqXtext.XProvider.&quot;);">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/checkTypes_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isAppropriate_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="match.registerObject(&quot;container&quot;, container);&#xA;match.registerObject(&quot;agent&quot;, agent);&#xA;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/registerObjectsToMatch_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isAppropriate_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;Variable var_agent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent.speed&quot;, true, csp);&#xA;var_agent_speed.setValue(agent.getSpeed());&#xA;var_agent_speed.setType(&quot;BigInteger&quot;);&#xA;Variable var_agent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent.name&quot;, true, csp);&#xA;var_agent_name.setValue(agent.getName());&#xA;var_agent_name.setType(&quot;String&quot;);&#xA;&#xA;// Create unbound variables&#xA;Variable var_xAgent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent.speed&quot;, csp);&#xA;var_xAgent_speed.setType(&quot;BigInteger&quot;);&#xA;Variable var_xAgent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent.name&quot;, csp);&#xA;var_xAgent_name.setType(&quot;String&quot;);&#xA;&#xA;// Create constraints&#xA;Eq eq = new Eq();&#xA;Eq eq_0 = new Eq();&#xA;&#xA;&#xA;csp.getConstraints().add(eq);&#xA;csp.getConstraints().add(eq_0);&#xA;&#xA;// Solve CSP&#xA;eq.setRuleName(&quot;NoRuleName&quot;);&#xA;eq.solve(var_xAgent_speed,var_agent_speed);&#xA;eq_0.setRuleName(&quot;NoRuleName&quot;);&#xA;eq_0.solve(var_xAgent_name,var_agent_name);&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;container&quot;,container);&#xA;isApplicableMatch.registerObject(&quot;agent&quot;,agent);&#xA;isApplicableMatch.registerObject(&quot;xContainerToContainer&quot;,xContainerToContainer);&#xA;isApplicableMatch.registerObject(&quot;xContainer&quot;,xContainer);&#xA;return csp;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isApplicable_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isApplicable_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;xAgentToAgent&quot;, xAgentToAgent);&#xA;ruleresult.registerObject(&quot;container&quot;, container);&#xA;ruleresult.registerObject(&quot;agent&quot;, agent);&#xA;ruleresult.registerObject(&quot;xAgent&quot;, xAgent);&#xA;ruleresult.registerObject(&quot;xContainerToContainer&quot;, xContainerToContainer);&#xA;ruleresult.registerObject(&quot;xContainer&quot;, xContainer);&#xA;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/registerObjects_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;agent&quot;).eClass()).equals(&quot;requirements.Provider.&quot;);">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/checkTypes_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;XContainerToContainerRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkAttributes_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;XContainerToContainerRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkAttributes_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;XConsumerToConsumerRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;Variable var_xAgent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent&quot;, true, csp);&#xA;var_xAgent_speed.setValue(__helper.getValue(&quot;xAgent&quot;, &quot;speed&quot;));&#xA;var_xAgent_speed.setType(&quot;BigInteger&quot;);&#xA;&#xA;Variable var_agent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent&quot;, true, csp);&#xA;var_agent_speed.setValue(__helper.getValue(&quot;agent&quot;, &quot;speed&quot;));&#xA;var_agent_speed.setType(&quot;BigInteger&quot;);&#xA;&#xA;Variable var_agent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent&quot;, true, csp);&#xA;var_agent_name.setValue(__helper.getValue(&quot;agent&quot;, &quot;name&quot;));&#xA;var_agent_name.setType(&quot;String&quot;);&#xA;&#xA;Variable var_xAgent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent&quot;, true, csp);&#xA;var_xAgent_name.setValue(__helper.getValue(&quot;xAgent&quot;, &quot;name&quot;));&#xA;var_xAgent_name.setType(&quot;String&quot;);&#xA;&#xA;Eq eq0 = new Eq();&#xA;csp.getConstraints().add(eq0);&#xA;&#xA;Eq eq1 = new Eq();&#xA;csp.getConstraints().add(eq1);&#xA;&#xA;eq0.setRuleName(&quot;XConsumerToConsumerRule&quot;);&#xA;eq0.solve(var_xAgent_speed,var_agent_speed);&#xA;&#xA;eq1.setRuleName(&quot;XConsumerToConsumerRule&quot;);&#xA;eq1.solve(var_xAgent_name,var_agent_name);&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;var_agent_speed.setBound(false);&#xA;&#x9;var_agent_name.setBound(false);&#xA;&#x9;eq0.solve(var_xAgent_speed,var_agent_speed);&#xA;&#x9;eq1.solve(var_xAgent_name,var_agent_name);&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;&#x9;__helper.setValue(&quot;agent&quot;, &quot;speed&quot;, var_agent_speed.getValue());&#xA;&#x9;&#x9;__helper.setValue(&quot;agent&quot;, &quot;name&quot;, var_agent_name.getValue());&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/checkAttributes_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;XConsumerToConsumerRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;Variable var_xAgent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent&quot;, true, csp);&#xA;var_xAgent_speed.setValue(__helper.getValue(&quot;xAgent&quot;, &quot;speed&quot;));&#xA;var_xAgent_speed.setType(&quot;BigInteger&quot;);&#xA;&#xA;Variable var_agent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent&quot;, true, csp);&#xA;var_agent_speed.setValue(__helper.getValue(&quot;agent&quot;, &quot;speed&quot;));&#xA;var_agent_speed.setType(&quot;BigInteger&quot;);&#xA;&#xA;Variable var_agent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent&quot;, true, csp);&#xA;var_agent_name.setValue(__helper.getValue(&quot;agent&quot;, &quot;name&quot;));&#xA;var_agent_name.setType(&quot;String&quot;);&#xA;&#xA;Variable var_xAgent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent&quot;, true, csp);&#xA;var_xAgent_name.setValue(__helper.getValue(&quot;xAgent&quot;, &quot;name&quot;));&#xA;var_xAgent_name.setType(&quot;String&quot;);&#xA;&#xA;Eq eq0 = new Eq();&#xA;csp.getConstraints().add(eq0);&#xA;&#xA;Eq eq1 = new Eq();&#xA;csp.getConstraints().add(eq1);&#xA;&#xA;eq0.setRuleName(&quot;XConsumerToConsumerRule&quot;);&#xA;eq0.solve(var_xAgent_speed,var_agent_speed);&#xA;&#xA;eq1.setRuleName(&quot;XConsumerToConsumerRule&quot;);&#xA;eq1.solve(var_xAgent_name,var_agent_name);&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;var_xAgent_speed.setBound(false);&#xA;&#x9;var_xAgent_name.setBound(false);&#xA;&#x9;eq0.solve(var_xAgent_speed,var_agent_speed);&#xA;&#x9;eq1.solve(var_xAgent_name,var_agent_name);&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;&#x9;__helper.setValue(&quot;xAgent&quot;, &quot;speed&quot;, var_xAgent_speed.getValue());&#xA;&#x9;&#x9;__helper.setValue(&quot;xAgent&quot;, &quot;name&quot;, var_xAgent_name.getValue());&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/checkAttributes_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;XProviderToProviderRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;Variable var_xAgent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent&quot;, true, csp);&#xA;var_xAgent_speed.setValue(__helper.getValue(&quot;xAgent&quot;, &quot;speed&quot;));&#xA;var_xAgent_speed.setType(&quot;BigInteger&quot;);&#xA;&#xA;Variable var_agent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent&quot;, true, csp);&#xA;var_agent_speed.setValue(__helper.getValue(&quot;agent&quot;, &quot;speed&quot;));&#xA;var_agent_speed.setType(&quot;BigInteger&quot;);&#xA;&#xA;Variable var_agent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent&quot;, true, csp);&#xA;var_agent_name.setValue(__helper.getValue(&quot;agent&quot;, &quot;name&quot;));&#xA;var_agent_name.setType(&quot;String&quot;);&#xA;&#xA;Variable var_xAgent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent&quot;, true, csp);&#xA;var_xAgent_name.setValue(__helper.getValue(&quot;xAgent&quot;, &quot;name&quot;));&#xA;var_xAgent_name.setType(&quot;String&quot;);&#xA;&#xA;Eq eq0 = new Eq();&#xA;csp.getConstraints().add(eq0);&#xA;&#xA;Eq eq1 = new Eq();&#xA;csp.getConstraints().add(eq1);&#xA;&#xA;eq0.setRuleName(&quot;XProviderToProviderRule&quot;);&#xA;eq0.solve(var_xAgent_speed,var_agent_speed);&#xA;&#xA;eq1.setRuleName(&quot;XProviderToProviderRule&quot;);&#xA;eq1.solve(var_xAgent_name,var_agent_name);&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;var_agent_speed.setBound(false);&#xA;&#x9;var_agent_name.setBound(false);&#xA;&#x9;eq0.solve(var_xAgent_speed,var_agent_speed);&#xA;&#x9;eq1.solve(var_xAgent_name,var_agent_name);&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;&#x9;__helper.setValue(&quot;agent&quot;, &quot;speed&quot;, var_agent_speed.getValue());&#xA;&#x9;&#x9;__helper.setValue(&quot;agent&quot;, &quot;name&quot;, var_agent_name.getValue());&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/checkAttributes_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;XProviderToProviderRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;Variable var_xAgent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent&quot;, true, csp);&#xA;var_xAgent_speed.setValue(__helper.getValue(&quot;xAgent&quot;, &quot;speed&quot;));&#xA;var_xAgent_speed.setType(&quot;BigInteger&quot;);&#xA;&#xA;Variable var_agent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent&quot;, true, csp);&#xA;var_agent_speed.setValue(__helper.getValue(&quot;agent&quot;, &quot;speed&quot;));&#xA;var_agent_speed.setType(&quot;BigInteger&quot;);&#xA;&#xA;Variable var_agent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent&quot;, true, csp);&#xA;var_agent_name.setValue(__helper.getValue(&quot;agent&quot;, &quot;name&quot;));&#xA;var_agent_name.setType(&quot;String&quot;);&#xA;&#xA;Variable var_xAgent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent&quot;, true, csp);&#xA;var_xAgent_name.setValue(__helper.getValue(&quot;xAgent&quot;, &quot;name&quot;));&#xA;var_xAgent_name.setType(&quot;String&quot;);&#xA;&#xA;Eq eq0 = new Eq();&#xA;csp.getConstraints().add(eq0);&#xA;&#xA;Eq eq1 = new Eq();&#xA;csp.getConstraints().add(eq1);&#xA;&#xA;eq0.setRuleName(&quot;XProviderToProviderRule&quot;);&#xA;eq0.solve(var_xAgent_speed,var_agent_speed);&#xA;&#xA;eq1.setRuleName(&quot;XProviderToProviderRule&quot;);&#xA;eq1.solve(var_xAgent_name,var_agent_name);&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;var_xAgent_speed.setBound(false);&#xA;&#x9;var_xAgent_name.setBound(false);&#xA;&#x9;eq0.solve(var_xAgent_speed,var_agent_speed);&#xA;&#x9;eq1.solve(var_xAgent_name,var_agent_name);&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;&#x9;__helper.setValue(&quot;xAgent&quot;, &quot;speed&quot;, var_xAgent_speed.getValue());&#xA;&#x9;&#x9;__helper.setValue(&quot;xAgent&quot;, &quot;name&quot;, var_xAgent_name.getValue());&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/checkAttributes_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_CC"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_checkCsp_CC"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;Variable var_xAgent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent.speed&quot;, true, csp);&#xA;var_xAgent_speed.setValue(xAgent.getSpeed());&#xA;var_xAgent_speed.setType(&quot;BigInteger&quot;);&#xA;Variable var_agent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent.speed&quot;, true, csp);&#xA;var_agent_speed.setValue(agent.getSpeed());&#xA;var_agent_speed.setType(&quot;BigInteger&quot;);&#xA;Variable var_xAgent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent.name&quot;, true, csp);&#xA;var_xAgent_name.setValue(xAgent.getName());&#xA;var_xAgent_name.setType(&quot;String&quot;);&#xA;Variable var_agent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent.name&quot;, true, csp);&#xA;var_agent_name.setValue(agent.getName());&#xA;var_agent_name.setType(&quot;String&quot;);&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;Eq eq = new Eq();&#xA;Eq eq_0 = new Eq();&#xA;&#xA;&#xA;csp.getConstraints().add(eq);&#xA;csp.getConstraints().add(eq_0);&#xA;&#xA;// Solve CSP&#xA;eq.setRuleName(&quot;NoRuleName&quot;);&#xA;eq.solve(var_xAgent_speed,var_agent_speed);&#xA;eq_0.setRuleName(&quot;NoRuleName&quot;);&#xA;eq_0.solve(var_xAgent_name,var_agent_name);&#xA;return csp;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isApplicable_solveCsp_CC"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isApplicable_checkCsp_CC"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;Variable var_xAgent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent.speed&quot;, true, csp);&#xA;var_xAgent_speed.setValue(xAgent.getSpeed());&#xA;var_xAgent_speed.setType(&quot;BigInteger&quot;);&#xA;Variable var_agent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent.speed&quot;, true, csp);&#xA;var_agent_speed.setValue(agent.getSpeed());&#xA;var_agent_speed.setType(&quot;BigInteger&quot;);&#xA;Variable var_xAgent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent.name&quot;, true, csp);&#xA;var_xAgent_name.setValue(xAgent.getName());&#xA;var_xAgent_name.setType(&quot;String&quot;);&#xA;Variable var_agent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent.name&quot;, true, csp);&#xA;var_agent_name.setValue(agent.getName());&#xA;var_agent_name.setType(&quot;String&quot;);&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;Eq eq = new Eq();&#xA;Eq eq_0 = new Eq();&#xA;&#xA;&#xA;csp.getConstraints().add(eq);&#xA;csp.getConstraints().add(eq_0);&#xA;&#xA;// Solve CSP&#xA;eq.setRuleName(&quot;NoRuleName&quot;);&#xA;eq.solve(var_xAgent_speed,var_agent_speed);&#xA;eq_0.setRuleName(&quot;NoRuleName&quot;);&#xA;eq_0.solve(var_xAgent_name,var_agent_name);&#xA;return csp;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isApplicable_solveCsp_CC"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isApplicable_checkCsp_CC"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;return csp;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/generateModel_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/generateModel_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;Variable var_xAgent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent.speed&quot;, csp);&#xA;var_xAgent_speed.setType(&quot;BigInteger&quot;);&#xA;Variable var_agent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent.speed&quot;, csp);&#xA;var_agent_speed.setType(&quot;BigInteger&quot;);&#xA;Variable var_xAgent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent.name&quot;, csp);&#xA;var_xAgent_name.setType(&quot;String&quot;);&#xA;Variable var_agent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent.name&quot;, csp);&#xA;var_agent_name.setType(&quot;String&quot;);&#xA;&#xA;// Create constraints&#xA;Eq eq = new Eq();&#xA;Eq eq_0 = new Eq();&#xA;&#xA;&#xA;csp.getConstraints().add(eq);&#xA;csp.getConstraints().add(eq_0);&#xA;&#xA;// Solve CSP&#xA;eq.setRuleName(&quot;NoRuleName&quot;);&#xA;eq.solve(var_xAgent_speed,var_agent_speed);&#xA;eq_0.setRuleName(&quot;NoRuleName&quot;);&#xA;eq_0.solve(var_xAgent_name,var_agent_name);&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;container&quot;,container);&#xA;isApplicableMatch.registerObject(&quot;xContainerToContainer&quot;,xContainerToContainer);&#xA;isApplicableMatch.registerObject(&quot;xContainer&quot;,xContainer);&#xA;return csp;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/generateModel_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/generateModel_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;Variable var_xAgent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent.speed&quot;, csp);&#xA;var_xAgent_speed.setType(&quot;BigInteger&quot;);&#xA;Variable var_agent_speed = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent.speed&quot;, csp);&#xA;var_agent_speed.setType(&quot;BigInteger&quot;);&#xA;Variable var_xAgent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;xAgent.name&quot;, csp);&#xA;var_xAgent_name.setType(&quot;String&quot;);&#xA;Variable var_agent_name = CSPFactoryHelper.eINSTANCE.createVariable(&quot;agent.name&quot;, csp);&#xA;var_agent_name.setType(&quot;String&quot;);&#xA;&#xA;// Create constraints&#xA;Eq eq = new Eq();&#xA;Eq eq_0 = new Eq();&#xA;&#xA;&#xA;csp.getConstraints().add(eq);&#xA;csp.getConstraints().add(eq_0);&#xA;&#xA;// Solve CSP&#xA;eq.setRuleName(&quot;NoRuleName&quot;);&#xA;eq.solve(var_xAgent_speed,var_agent_speed);&#xA;eq_0.setRuleName(&quot;NoRuleName&quot;);&#xA;eq_0.solve(var_xAgent_name,var_agent_name);&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;container&quot;,container);&#xA;isApplicableMatch.registerObject(&quot;xContainerToContainer&quot;,xContainerToContainer);&#xA;isApplicableMatch.registerObject(&quot;xContainer&quot;,xContainer);&#xA;return csp;">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/generateModel_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/generateModel_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+</sdmUtil:CompilerInjection>

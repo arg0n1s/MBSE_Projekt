@@ -1,0 +1,20 @@
+#using RequirementsTransformator.*
+#using AttrCondDefLibrary.*
+
+#rule XProviderToProviderRule #extends XAgentToAgentRule #with RequirementsTransformator
+
+#source { 
+	++ xAgent : XProvider
+}
+
+#target {
+	++ agent : Provider
+}
+
+#correspondence {
+	
+}
+
+#attributeConditions {
+	
+}

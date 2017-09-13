@@ -1,0 +1,20 @@
+#using RequirementsTransformator.*
+#using AttrCondDefLibrary.*
+
+#rule XConsumerToConsumerRule #extends XAgentToAgentRule #with RequirementsTransformator
+
+#source { 
+	++ xAgent : XConsumer 
+}
+
+#target {
+	++ agent : Consumer
+}
+
+#correspondence {
+	
+}
+
+#attributeConditions {
+	
+}

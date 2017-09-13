@@ -1,0 +1,28 @@
+#using RequirementsTransformator.*
+#using AttrCondDefLibrary.*
+
+#rule XContainerToContainerRule #with RequirementsTransformator
+
+#source { 
+	++ xContainer : XContainer
+}
+
+#target {
+	++ container : Container {
+		++ -networkSpan->virtualNode
+	}
+	
+	++ virtualNode : requirements.NetworkSpan
+}
+
+#correspondence {
+	++ xContainerToContainer : XContainerToContainer {
+		#src->xContainer
+		#trg->container
+	}
+}
+
+#attributeConditions {
+	
+}
+

@@ -1,0 +1,37 @@
+#using RequirementsTransformator.*
+#using AttrCondDefLibrary.*
+
+#abstract #rule XAgentToAgentRule #with RequirementsTransformator
+
+#source { 
+	xContainer : XContainer {
+	 ++	-agents->xAgent 	
+	}
+	
+	 ++ xAgent : XAgent
+}
+
+#target {
+	container : Container {
+		++ -agents->agent
+	}
+	
+	++ agent : Agent
+}
+
+#correspondence {
+	xContainerToContainer : XContainerToContainer {
+		#src->xContainer
+		#trg->container
+	}
+	
+	++ xAgentToAgent : XAgentToAgent {
+		#src->xAgent
+		#trg->agent
+	}
+}
+
+#attributeConditions {
+	eq(xAgent.name, agent.name)
+	eq(xAgent.speed, agent.speed)
+}

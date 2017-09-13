@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<req:Container xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:req="platform:/plugin/mbse_metamodels/model/requirements.ecore">
+  <agents xsi:type="req:Consumer" name="B" speed="100"/>
+  <agents xsi:type="req:Provider" name="C" speed="120"/>
+  <agents xsi:type="req:Provider" name="A" speed="100"/>
+  <agents xsi:type="req:Consumer" name="D" speed="130"/>
+  <networkSpan/>
+</req:Container>

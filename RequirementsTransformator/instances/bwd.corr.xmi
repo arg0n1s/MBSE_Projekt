@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.moflon.tgg.runtime:CorrespondenceModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:RequirementsTransformator="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore" xmlns:org.moflon.tgg.runtime="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore">
+  <correspondences xsi:type="RequirementsTransformator:XContainerToContainer">
+    <source href="bwd.trg.xmi#/"/>
+    <target href="bwd.src.xmi#/"/>
+  </correspondences>
+  <correspondences xsi:type="RequirementsTransformator:XAgentToAgent">
+    <source href="bwd.trg.xmi#//@agents.0"/>
+    <target href="bwd.src.xmi#//@agents.0"/>
+  </correspondences>
+  <correspondences xsi:type="RequirementsTransformator:XAgentToAgent">
+    <source href="bwd.trg.xmi#//@agents.1"/>
+    <target href="bwd.src.xmi#//@agents.1"/>
+  </correspondences>
+  <correspondences xsi:type="RequirementsTransformator:XAgentToAgent">
+    <source href="bwd.trg.xmi#//@agents.2"/>
+    <target href="bwd.src.xmi#//@agents.2"/>
+  </correspondences>
+  <correspondences xsi:type="RequirementsTransformator:XAgentToAgent">
+    <source href="bwd.trg.xmi#//@agents.3"/>
+    <target href="bwd.src.xmi#//@agents.3"/>
+  </correspondences>
+  <source href="bwd.trg.xmi#/"/>
+  <target href="bwd.src.xmi#/"/>
+</org.moflon.tgg.runtime:CorrespondenceModel>

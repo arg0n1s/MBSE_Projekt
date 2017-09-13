@@ -1,0 +1,38 @@
+#import "platform:/plugin/mbse_metamodels/model/requirements.ecore"
+#import "platform:/plugin/requirementsXtext/model/generated/ReqXtext.ecore"
+
+#schema RequirementsTransformator
+	
+#source {
+	reqXtext
+}
+
+#target { 
+	requirements
+} 
+
+#correspondence {
+	XContainerToContainer{
+		#src->XContainer
+		#trg->Container
+	}
+	
+	XAgentToAgent{
+		#src->XAgent
+		#trg->Agent
+	}
+	
+	XProviderToProvider{
+		#src->XProvider
+		#trg->Provider
+	}
+	
+	XConsumerToConsumer{
+		#src->XConsumer
+		#trg->Consumer
+	}
+}
+
+#attributeConditions {
+	
+}

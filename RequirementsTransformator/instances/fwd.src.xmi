@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reqXtext:XContainer
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:reqXtext="platform:/plugin/requirementsXtext/model/generated/ReqXtext.ecore"
+    xsi:schemaLocation="platform:/plugin/requirementsXtext/model/generated/ReqXtext.ecore ../../requirementsXtext/model/generated/ReqXtext.ecore">
+  <agents xsi:type="reqXtext:XProvider"
+      name="A"
+      speed="100"/>
+  <agents xsi:type="reqXtext:XConsumer"
+      name="B"
+      speed="100"/>
+  <agents xsi:type="reqXtext:XProvider"
+      name="C"
+      speed="120"/>
+  <agents xsi:type="reqXtext:XConsumer"
+      name="D"
+      speed="130"/>
+</reqXtext:XContainer>
