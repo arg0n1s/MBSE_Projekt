@@ -17,20 +17,20 @@
     <target href="t1r-t2i-impl.xmi#//@devices.3"/>
   </correspondences>
   <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
-    <source href="t1r-t2i-req.xmi#//@agents.1"/>
+    <source href="t1r-t2i-req.xmi#//@agents.0"/>
     <target href="t1r-t2i-impl.xmi#//@devices.0"/>
   </correspondences>
   <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
     <source href="t1r-t2i-req.xmi#//@agents.4"/>
     <target href="t1r-t2i-impl.xmi#//@devices.0"/>
   </correspondences>
+  <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
+    <source href="t1r-t2i-req.xmi#//@agents.1"/>
+    <target href="t1r-t2i-impl.xmi#//@devices.0"/>
+  </correspondences>
   <correspondences xsi:type="ReqToImpTransformator:VirtualNodeToRouter">
     <source href="t1r-t2i-req.xmi#//@networkSpan"/>
     <target href="t1r-t2i-impl.xmi#//@devices.4"/>
-  </correspondences>
-  <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
-    <source href="t1r-t2i-req.xmi#//@agents.0"/>
-    <target href="t1r-t2i-impl.xmi#//@devices.0"/>
   </correspondences>
   <correspondences xsi:type="ReqToImpTransformator:VirtualNodeToRouter">
     <source href="t1r-t2i-req.xmi#//@networkSpan"/>
@@ -41,7 +41,7 @@
     <target href="t1r-t2i-impl.xmi#//@devices.1"/>
   </correspondences>
   <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
-    <source href="t1r-t2i-req.xmi#//@agents.3"/>
+    <source href="t1r-t2i-req.xmi#//@agents.2"/>
     <target href="t1r-t2i-impl.xmi#//@devices.1"/>
   </correspondences>
   <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
@@ -49,7 +49,7 @@
     <target href="t1r-t2i-impl.xmi#//@devices.1"/>
   </correspondences>
   <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
-    <source href="t1r-t2i-req.xmi#//@agents.2"/>
+    <source href="t1r-t2i-req.xmi#//@agents.3"/>
     <target href="t1r-t2i-impl.xmi#//@devices.1"/>
   </correspondences>
   <source href="t1r-t2i-req.xmi#/"/>
