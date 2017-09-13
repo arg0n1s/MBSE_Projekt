@@ -1,0 +1,88 @@
+#using ImplementationTransformator.*
+#using AttrCondDefLibrary.*
+
+#rule XSimplexConnectionToConnectionRule #with ImplementationTransformator
+
+#source { 
+	
+	xContainer : XContainer {
+		-elements->xDevice1
+		-elements->xDevice2
+	 	-elements->xCable 	
+	} 
+	
+	xDevice1 : XDevice {
+		-connections->connection1
+	}
+	
+	xDevice2 : XDevice {
+		-connections->connection2
+	}
+	
+	connection1 : Connections {
+		++ -outgoing->xCable
+	}
+	
+	connection2 : Connections {
+		++ -incoming->xCable
+	}
+	
+	 xCable : XCable {
+		-cableAttributes->cableAttributes
+	}
+	
+	 cableAttributes : CableAttributes {
+	 	isDuplex := false
+	 	++ -endPoint1->xDevice1
+	 	++ -endPoint2->xDevice2
+	 }
+
+}
+
+#target {
+	
+	container : Container {
+		-devices->device1
+		-devices->device2
+		-cables->cable
+	}
+	
+	device1 : implementation.Device {
+		// ++ -outgoing->cable
+	}
+	
+	device2 : implementation.Device {
+		// ++ -incoming->cable
+	}
+	
+	cable : Cable {
+		++ -source->device1
+		++ -target->device2
+	}
+	
+}
+
+#correspondence {
+	
+	xDeviceToDevice : XDeviceToDevice {
+		#src->xDevice1
+		#trg->device1
+	}
+	
+	xDeviceToDevice2 : XDeviceToDevice {
+		#src->xDevice2
+		#trg->device2
+	}
+	
+	xCableToCable : XCableToCable {
+		#src->xCable
+		#trg->cable
+	}
+	
+}
+
+#attributeConditions {
+	
+	eq(cableAttributes.speed, cable.speed)
+	
+}

@@ -1,0 +1,2148 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.moflon.tgg.runtime:PrecedenceStructure xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.moflon.tgg.runtime="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore">
+  <tripleMatches children="//@tripleMatches.15 //@tripleMatches.14 //@tripleMatches.13 //@tripleMatches.12 //@tripleMatches.11 //@tripleMatches.10 //@tripleMatches.9 //@tripleMatches.8 //@tripleMatches.7 //@tripleMatches.6 //@tripleMatches.5 //@tripleMatches.4 //@tripleMatches.3 //@tripleMatches.2 //@tripleMatches.1" ruleName="XContainerToContainerRule" number="15">
+    <sourceElements href="bwd.trg.xmi#/"/>
+    <nodeMappings nodeName="container">
+      <node href="bwd.src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainerToContainer">
+      <node href="bwd.corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainer">
+      <node href="bwd.trg.xmi#/"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.src.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.trg.xmi#/"/>
+    </containedEdges>
+    <targetElements href="bwd.src.xmi#/"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.0"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.1"/>
+    <createdElements href="bwd.trg.xmi#/"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.0"/>
+    <createdElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <createdElements href="bwd.src.xmi#/"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.1"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.15 //@tripleMatches.10 //@tripleMatches.4 //@tripleMatches.3" ruleName="XRouterToRouterRule" number="16">
+    <sourceElements href="bwd.trg.xmi#//@elements.0"/>
+    <sourceElements href="bwd.trg.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.3"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.0/@connections"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.5"/>
+    <contextElements href="bwd.trg.xmi#/"/>
+    <contextElements href="#//@tripleMatches.1/@containedEdges.0"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <contextElements href="bwd.src.xmi#/"/>
+    <contextElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <nodeMappings nodeName="container">
+      <node href="bwd.src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainerToContainer">
+      <node href="bwd.corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDevice">
+      <node href="bwd.trg.xmi#//@elements.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainer">
+      <node href="bwd.trg.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="connection">
+      <node href="bwd.trg.xmi#//@elements.0/@connections"/>
+    </nodeMappings>
+    <nodeMappings nodeName="device">
+      <node href="bwd.src.xmi#//@devices.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDeviceToDevice">
+      <node href="bwd.corr.xmi#//@correspondences.1"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.src.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.trg.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.1"/>
+      <trg href="bwd.trg.xmi#//@elements.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="connections">
+      <src href="bwd.trg.xmi#//@elements.0"/>
+      <trg href="bwd.trg.xmi#//@elements.0/@connections"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.1"/>
+      <trg href="bwd.src.xmi#//@devices.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.2"/>
+    </containedEdges>
+    <targetElements href="bwd.src.xmi#//@devices.2"/>
+    <targetElements href="bwd.src.xmi#/"/>
+    <targetElements href="#//@tripleMatches.1/@containedEdges.7"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.2"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.0"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.1"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.6"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <createdElements href="bwd.trg.xmi#//@elements.0"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.2"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.3"/>
+    <createdElements href="bwd.src.xmi#//@devices.2"/>
+    <createdElements href="bwd.trg.xmi#//@elements.0/@connections"/>
+    <createdElements href="bwd.corr.xmi#//@correspondences.1"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.6"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.10 //@tripleMatches.6" ruleName="XComputerToComputer" number="17">
+    <sourceElements href="bwd.trg.xmi#/"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.1/@connections"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.4"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.1"/>
+    <contextElements href="bwd.trg.xmi#/"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.0"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <contextElements href="bwd.src.xmi#/"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.1"/>
+    <nodeMappings nodeName="container">
+      <node href="bwd.src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainerToContainer">
+      <node href="bwd.corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDevice">
+      <node href="bwd.trg.xmi#//@elements.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainer">
+      <node href="bwd.trg.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="connection">
+      <node href="bwd.trg.xmi#//@elements.1/@connections"/>
+    </nodeMappings>
+    <nodeMappings nodeName="device">
+      <node href="bwd.src.xmi#//@devices.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDeviceToDevice">
+      <node href="bwd.corr.xmi#//@correspondences.2"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.src.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.trg.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="connections">
+      <src href="bwd.trg.xmi#//@elements.1"/>
+      <trg href="bwd.trg.xmi#//@elements.1/@connections"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.2"/>
+      <trg href="bwd.src.xmi#//@devices.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.2"/>
+      <trg href="bwd.trg.xmi#//@elements.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.1"/>
+    </containedEdges>
+    <targetElements href="bwd.src.xmi#/"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.7"/>
+    <targetElements href="bwd.src.xmi#//@devices.1"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.0"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.2"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.5"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.6"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.1"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.2"/>
+    <createdElements href="bwd.trg.xmi#//@elements.1/@connections"/>
+    <createdElements href="bwd.corr.xmi#//@correspondences.2"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.4"/>
+    <createdElements href="bwd.src.xmi#//@devices.1"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.5"/>
+    <createdElements href="bwd.trg.xmi#//@elements.1"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.6"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.9" ruleName="XSimplexCopperCableRule" number="18">
+    <sourceElements href="bwd.trg.xmi#//@elements.0"/>
+    <sourceElements href="bwd.trg.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.5"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.6"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.2"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.2"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.2/@cableAttributes"/>
+    <contextElements href="bwd.trg.xmi#//@elements.0"/>
+    <contextElements href="bwd.trg.xmi#/"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.0"/>
+    <contextElements href="bwd.src.xmi#//@devices.2"/>
+    <contextElements href="bwd.src.xmi#/"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.1"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.1"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.2"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.3"/>
+    <nodeMappings nodeName="container">
+      <node href="bwd.src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cableAttributes">
+      <node href="bwd.trg.xmi#//@elements.2/@cableAttributes"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDevice">
+      <node href="bwd.trg.xmi#//@elements.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xCable">
+      <node href="bwd.trg.xmi#//@elements.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainer">
+      <node href="bwd.trg.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xCableToCable">
+      <node href="bwd.corr.xmi#//@correspondences.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cable">
+      <node href="bwd.src.xmi#//@cables.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="device">
+      <node href="bwd.src.xmi#//@devices.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDeviceToDevice">
+      <node href="bwd.corr.xmi#//@correspondences.1"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.1"/>
+      <trg href="bwd.trg.xmi#//@elements.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.1"/>
+      <trg href="bwd.src.xmi#//@devices.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.3"/>
+      <trg href="bwd.src.xmi#//@cables.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cableAttributes">
+      <src href="bwd.trg.xmi#//@elements.2"/>
+      <trg href="bwd.trg.xmi#//@elements.2/@cableAttributes"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@cables.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.3"/>
+      <trg href="bwd.trg.xmi#//@elements.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@cables.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.2"/>
+    </containedEdges>
+    <targetElements href="bwd.src.xmi#//@devices.2"/>
+    <targetElements href="bwd.src.xmi#/"/>
+    <targetElements href="bwd.src.xmi#//@cables.0"/>
+    <targetElements href="#//@tripleMatches.3/@containedEdges.9"/>
+    <targetElements href="#//@tripleMatches.3/@containedEdges.10"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.4"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.0"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.3"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.1"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.8"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.6"/>
+    <createdElements href="bwd.src.xmi#//@cables.0"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.7"/>
+    <createdElements href="bwd.trg.xmi#//@elements.2"/>
+    <createdElements href="bwd.corr.xmi#//@correspondences.3"/>
+    <createdElements href="bwd.trg.xmi#//@elements.2/@cableAttributes"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.8"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.13" ruleName="XSimplexGlassFiberCableRule" number="19">
+    <sourceElements href="bwd.trg.xmi#//@elements.3"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.0"/>
+    <sourceElements href="bwd.trg.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.4"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.8"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.2"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.3/@cableAttributes"/>
+    <contextElements href="bwd.trg.xmi#//@elements.0"/>
+    <contextElements href="bwd.trg.xmi#/"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.0"/>
+    <contextElements href="bwd.src.xmi#//@devices.2"/>
+    <contextElements href="bwd.src.xmi#/"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.1"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.1"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.2"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.3"/>
+    <nodeMappings nodeName="container">
+      <node href="bwd.src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cableAttributes">
+      <node href="bwd.trg.xmi#//@elements.3/@cableAttributes"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDevice">
+      <node href="bwd.trg.xmi#//@elements.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xCable">
+      <node href="bwd.trg.xmi#//@elements.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainer">
+      <node href="bwd.trg.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xCableToCable">
+      <node href="bwd.corr.xmi#//@correspondences.4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cable">
+      <node href="bwd.src.xmi#//@cables.4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="device">
+      <node href="bwd.src.xmi#//@devices.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDeviceToDevice">
+      <node href="bwd.corr.xmi#//@correspondences.1"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.1"/>
+      <trg href="bwd.trg.xmi#//@elements.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.1"/>
+      <trg href="bwd.src.xmi#//@devices.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cableAttributes">
+      <src href="bwd.trg.xmi#//@elements.3"/>
+      <trg href="bwd.trg.xmi#//@elements.3/@cableAttributes"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@cables.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.4"/>
+      <trg href="bwd.src.xmi#//@cables.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.4"/>
+      <trg href="bwd.trg.xmi#//@elements.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@cables.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.2"/>
+    </containedEdges>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.9"/>
+    <targetElements href="bwd.src.xmi#//@devices.2"/>
+    <targetElements href="bwd.src.xmi#/"/>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.10"/>
+    <targetElements href="bwd.src.xmi#//@cables.4"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.0"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.4"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.6"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.7"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.1"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.3"/>
+    <createdElements href="bwd.trg.xmi#//@elements.3"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.5"/>
+    <createdElements href="bwd.corr.xmi#//@correspondences.4"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.7"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.8"/>
+    <createdElements href="bwd.trg.xmi#//@elements.3/@cableAttributes"/>
+    <createdElements href="bwd.src.xmi#//@cables.4"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.14 //@tripleMatches.13 //@tripleMatches.9 //@tripleMatches.8" ruleName="XRouterToRouterRule" number="20">
+    <sourceElements href="bwd.trg.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.2"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.4"/>
+    <sourceElements href="#//@tripleMatches.5/@containedEdges.6"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.4/@connections"/>
+    <contextElements href="bwd.trg.xmi#/"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.0"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <contextElements href="bwd.src.xmi#/"/>
+    <contextElements href="#//@tripleMatches.5/@containedEdges.1"/>
+    <nodeMappings nodeName="container">
+      <node href="bwd.src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainerToContainer">
+      <node href="bwd.corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDevice">
+      <node href="bwd.trg.xmi#//@elements.4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainer">
+      <node href="bwd.trg.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="connection">
+      <node href="bwd.trg.xmi#//@elements.4/@connections"/>
+    </nodeMappings>
+    <nodeMappings nodeName="device">
+      <node href="bwd.src.xmi#//@devices.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDeviceToDevice">
+      <node href="bwd.corr.xmi#//@correspondences.5"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.src.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.trg.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.5"/>
+      <trg href="bwd.trg.xmi#//@elements.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.5"/>
+      <trg href="bwd.src.xmi#//@devices.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="connections">
+      <src href="bwd.trg.xmi#//@elements.4"/>
+      <trg href="bwd.trg.xmi#//@elements.4/@connections"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.3"/>
+    </containedEdges>
+    <targetElements href="bwd.src.xmi#//@devices.3"/>
+    <targetElements href="bwd.src.xmi#/"/>
+    <targetElements href="#//@tripleMatches.5/@containedEdges.7"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.0"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.5"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.5"/>
+    <correspondenceElements href="#//@tripleMatches.5/@containedEdges.1"/>
+    <createdElements href="bwd.src.xmi#//@devices.3"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.2"/>
+    <createdElements href="bwd.corr.xmi#//@correspondences.5"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.3"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.4"/>
+    <createdElements href="bwd.trg.xmi#//@elements.4"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.6"/>
+    <createdElements href="bwd.trg.xmi#//@elements.4/@connections"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.15 //@tripleMatches.14" ruleName="XDuplexGlassFiberCableRule" number="21">
+    <sourceElements href="bwd.trg.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.9"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.5"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.1"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.5/@cableAttributes"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.1"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.7"/>
+    <contextElements href="bwd.trg.xmi#/"/>
+    <contextElements href="bwd.src.xmi#/"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.0"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.2"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.1"/>
+    <contextElements href="bwd.src.xmi#//@devices.1"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.2"/>
+    <contextElements href="bwd.trg.xmi#//@elements.1"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.3"/>
+    <nodeMappings nodeName="cable1">
+      <node href="bwd.src.xmi#//@cables.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="container">
+      <node href="bwd.src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cable2">
+      <node href="bwd.src.xmi#//@cables.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cableAttributes">
+      <node href="bwd.trg.xmi#//@elements.5/@cableAttributes"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDevice">
+      <node href="bwd.trg.xmi#//@elements.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xCable">
+      <node href="bwd.trg.xmi#//@elements.5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainer">
+      <node href="bwd.trg.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xCableToCable">
+      <node href="bwd.corr.xmi#//@correspondences.6"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xCableToCable2">
+      <node href="bwd.corr.xmi#//@correspondences.7"/>
+    </nodeMappings>
+    <nodeMappings nodeName="device">
+      <node href="bwd.src.xmi#//@devices.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDeviceToDevice">
+      <node href="bwd.corr.xmi#//@correspondences.2"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.2"/>
+      <trg href="bwd.src.xmi#//@devices.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.2"/>
+      <trg href="bwd.trg.xmi#//@elements.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.6"/>
+      <trg href="bwd.trg.xmi#//@elements.5"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@cables.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.6"/>
+      <trg href="bwd.src.xmi#//@cables.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cableAttributes">
+      <src href="bwd.trg.xmi#//@elements.5"/>
+      <trg href="bwd.trg.xmi#//@elements.5/@cableAttributes"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.7"/>
+      <trg href="bwd.src.xmi#//@cables.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.5"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@cables.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.7"/>
+      <trg href="bwd.trg.xmi#//@elements.5"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@cables.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@cables.3"/>
+    </containedEdges>
+    <targetElements href="bwd.src.xmi#/"/>
+    <targetElements href="#//@tripleMatches.6/@containedEdges.12"/>
+    <targetElements href="bwd.src.xmi#//@cables.2"/>
+    <targetElements href="#//@tripleMatches.6/@containedEdges.13"/>
+    <targetElements href="bwd.src.xmi#//@devices.1"/>
+    <targetElements href="#//@tripleMatches.6/@containedEdges.14"/>
+    <targetElements href="bwd.src.xmi#//@cables.3"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.8"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.6"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.4"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.6"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.2"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.2"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.3"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.7"/>
+    <correspondenceElements href="#//@tripleMatches.6/@containedEdges.11"/>
+    <createdElements href="bwd.corr.xmi#//@correspondences.6"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.6"/>
+    <createdElements href="bwd.src.xmi#//@cables.3"/>
+    <createdElements href="bwd.corr.xmi#//@correspondences.7"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.7"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.8"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.9"/>
+    <createdElements href="bwd.src.xmi#//@cables.2"/>
+    <createdElements href="bwd.trg.xmi#//@elements.5"/>
+    <createdElements href="bwd.trg.xmi#//@elements.5/@cableAttributes"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.10"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.11"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.9" ruleName="XComputerToComputer" number="22">
+    <sourceElements href="bwd.trg.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.7/@containedEdges.2"/>
+    <sourceElements href="#//@tripleMatches.7/@containedEdges.3"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.6/@connections"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.6"/>
+    <contextElements href="bwd.trg.xmi#/"/>
+    <contextElements href="#//@tripleMatches.7/@containedEdges.0"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <contextElements href="bwd.src.xmi#/"/>
+    <contextElements href="#//@tripleMatches.7/@containedEdges.1"/>
+    <nodeMappings nodeName="container">
+      <node href="bwd.src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainerToContainer">
+      <node href="bwd.corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDevice">
+      <node href="bwd.trg.xmi#//@elements.6"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainer">
+      <node href="bwd.trg.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="connection">
+      <node href="bwd.trg.xmi#//@elements.6/@connections"/>
+    </nodeMappings>
+    <nodeMappings nodeName="device">
+      <node href="bwd.src.xmi#//@devices.4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDeviceToDevice">
+      <node href="bwd.corr.xmi#//@correspondences.8"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.src.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.trg.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.6"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="connections">
+      <src href="bwd.trg.xmi#//@elements.6"/>
+      <trg href="bwd.trg.xmi#//@elements.6/@connections"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.8"/>
+      <trg href="bwd.trg.xmi#//@elements.6"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.8"/>
+      <trg href="bwd.src.xmi#//@devices.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.4"/>
+    </containedEdges>
+    <targetElements href="bwd.src.xmi#//@devices.4"/>
+    <targetElements href="bwd.src.xmi#/"/>
+    <targetElements href="#//@tripleMatches.7/@containedEdges.7"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.8"/>
+    <correspondenceElements href="#//@tripleMatches.7/@containedEdges.0"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.7/@containedEdges.5"/>
+    <correspondenceElements href="#//@tripleMatches.7/@containedEdges.6"/>
+    <correspondenceElements href="#//@tripleMatches.7/@containedEdges.1"/>
+    <createdElements href="bwd.corr.xmi#//@correspondences.8"/>
+    <createdElements href="bwd.src.xmi#//@devices.4"/>
+    <createdElements href="#//@tripleMatches.7/@containedEdges.2"/>
+    <createdElements href="#//@tripleMatches.7/@containedEdges.3"/>
+    <createdElements href="bwd.trg.xmi#//@elements.6/@connections"/>
+    <createdElements href="#//@tripleMatches.7/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.7/@containedEdges.5"/>
+    <createdElements href="bwd.trg.xmi#//@elements.6"/>
+    <createdElements href="#//@tripleMatches.7/@containedEdges.6"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.10" ruleName="XSimplexCopperCableRule" number="23">
+    <sourceElements href="bwd.trg.xmi#//@elements.7"/>
+    <sourceElements href="bwd.trg.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.8/@containedEdges.0"/>
+    <sourceElements href="#//@tripleMatches.8/@containedEdges.4"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.7/@cableAttributes"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.4"/>
+    <sourceElements href="#//@tripleMatches.8/@containedEdges.8"/>
+    <contextElements href="bwd.trg.xmi#/"/>
+    <contextElements href="bwd.src.xmi#//@devices.3"/>
+    <contextElements href="#//@tripleMatches.8/@containedEdges.0"/>
+    <contextElements href="bwd.src.xmi#/"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.5"/>
+    <contextElements href="#//@tripleMatches.8/@containedEdges.1"/>
+    <contextElements href="#//@tripleMatches.8/@containedEdges.2"/>
+    <contextElements href="bwd.trg.xmi#//@elements.4"/>
+    <contextElements href="#//@tripleMatches.8/@containedEdges.3"/>
+    <nodeMappings nodeName="container">
+      <node href="bwd.src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cableAttributes">
+      <node href="bwd.trg.xmi#//@elements.7/@cableAttributes"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDevice">
+      <node href="bwd.trg.xmi#//@elements.4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xCable">
+      <node href="bwd.trg.xmi#//@elements.7"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainer">
+      <node href="bwd.trg.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xCableToCable">
+      <node href="bwd.corr.xmi#//@correspondences.9"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cable">
+      <node href="bwd.src.xmi#//@cables.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="device">
+      <node href="bwd.src.xmi#//@devices.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDeviceToDevice">
+      <node href="bwd.corr.xmi#//@correspondences.5"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.5"/>
+      <trg href="bwd.trg.xmi#//@elements.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.5"/>
+      <trg href="bwd.src.xmi#//@devices.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cableAttributes">
+      <src href="bwd.trg.xmi#//@elements.7"/>
+      <trg href="bwd.trg.xmi#//@elements.7/@cableAttributes"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@cables.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.9"/>
+      <trg href="bwd.trg.xmi#//@elements.7"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.9"/>
+      <trg href="bwd.src.xmi#//@cables.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.7"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@cables.1"/>
+    </containedEdges>
+    <targetElements href="bwd.src.xmi#//@devices.3"/>
+    <targetElements href="bwd.src.xmi#//@cables.1"/>
+    <targetElements href="bwd.src.xmi#/"/>
+    <targetElements href="#//@tripleMatches.8/@containedEdges.9"/>
+    <targetElements href="#//@tripleMatches.8/@containedEdges.10"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.9"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.5"/>
+    <correspondenceElements href="#//@tripleMatches.8/@containedEdges.2"/>
+    <correspondenceElements href="#//@tripleMatches.8/@containedEdges.6"/>
+    <correspondenceElements href="#//@tripleMatches.8/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.8/@containedEdges.7"/>
+    <createdElements href="bwd.trg.xmi#//@elements.7"/>
+    <createdElements href="bwd.src.xmi#//@cables.1"/>
+    <createdElements href="bwd.corr.xmi#//@correspondences.9"/>
+    <createdElements href="#//@tripleMatches.8/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.8/@containedEdges.5"/>
+    <createdElements href="bwd.trg.xmi#//@elements.7/@cableAttributes"/>
+    <createdElements href="#//@tripleMatches.8/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.8/@containedEdges.7"/>
+    <createdElements href="#//@tripleMatches.8/@containedEdges.8"/>
+  </tripleMatches>
+  <tripleMatches createdElements="//@tripleMatches.9/@containedEdges.15 //@tripleMatches.9/@containedEdges.16 //@tripleMatches.9/@containedEdges.17 //@tripleMatches.9/@containedEdges.18 //@tripleMatches.9/@containedEdges.19 //@tripleMatches.9/@containedEdges.20 //@tripleMatches.9/@containedEdges.21 //@tripleMatches.9/@containedEdges.22" ruleName="XSimplexConnectionToConnectionRule" number="24">
+    <sourceElements href="bwd.trg.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.9/@containedEdges.0"/>
+    <sourceElements href="#//@tripleMatches.9/@containedEdges.7"/>
+    <sourceElements href="#//@tripleMatches.9/@containedEdges.1"/>
+    <sourceElements href="#//@tripleMatches.9/@containedEdges.2"/>
+    <sourceElements href="#//@tripleMatches.9/@containedEdges.8"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.2"/>
+    <sourceElements href="#//@tripleMatches.9/@containedEdges.19"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.6"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.2/@cableAttributes"/>
+    <sourceElements href="#//@tripleMatches.9/@containedEdges.15"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.6/@connections"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.4"/>
+    <sourceElements href="#//@tripleMatches.9/@containedEdges.5"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.4/@connections"/>
+    <sourceElements href="#//@tripleMatches.9/@containedEdges.20"/>
+    <sourceElements href="#//@tripleMatches.9/@containedEdges.22"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.0"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.1"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.2"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.3"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.4"/>
+    <contextElements href="bwd.trg.xmi#//@elements.2/@cableAttributes"/>
+    <contextElements href="bwd.src.xmi#//@devices.4"/>
+    <contextElements href="bwd.src.xmi#/"/>
+    <contextElements href="bwd.src.xmi#//@cables.0"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.5"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.3"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.5"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.6"/>
+    <contextElements href="bwd.src.xmi#//@devices.3"/>
+    <contextElements href="bwd.trg.xmi#/"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.7"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.8"/>
+    <contextElements href="bwd.trg.xmi#//@elements.2"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.9"/>
+    <contextElements href="bwd.trg.xmi#//@elements.6"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.10"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.11"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.8"/>
+    <contextElements href="bwd.trg.xmi#//@elements.6/@connections"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.12"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.13"/>
+    <contextElements href="bwd.trg.xmi#//@elements.4"/>
+    <contextElements href="#//@tripleMatches.9/@containedEdges.14"/>
+    <contextElements href="bwd.trg.xmi#//@elements.4/@connections"/>
+    <nodeMappings nodeName="container">
+      <node href="bwd.src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="device1">
+      <node href="bwd.src.xmi#//@devices.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cableAttributes">
+      <node href="bwd.trg.xmi#//@elements.2/@cableAttributes"/>
+    </nodeMappings>
+    <nodeMappings nodeName="device2">
+      <node href="bwd.src.xmi#//@devices.4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xCable">
+      <node href="bwd.trg.xmi#//@elements.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainer">
+      <node href="bwd.trg.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xCableToCable">
+      <node href="bwd.corr.xmi#//@correspondences.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDeviceToDevice2">
+      <node href="bwd.corr.xmi#//@correspondences.8"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDeviceToDevice">
+      <node href="bwd.corr.xmi#//@correspondences.5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="connection1">
+      <node href="bwd.trg.xmi#//@elements.4/@connections"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDevice2">
+      <node href="bwd.trg.xmi#//@elements.6"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cable">
+      <node href="bwd.src.xmi#//@cables.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDevice1">
+      <node href="bwd.trg.xmi#//@elements.4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="connection2">
+      <node href="bwd.trg.xmi#//@elements.6/@connections"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.6"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.5"/>
+      <trg href="bwd.trg.xmi#//@elements.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="connections">
+      <src href="bwd.trg.xmi#//@elements.4"/>
+      <trg href="bwd.trg.xmi#//@elements.4/@connections"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.8"/>
+      <trg href="bwd.src.xmi#//@devices.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="connections">
+      <src href="bwd.trg.xmi#//@elements.6"/>
+      <trg href="bwd.trg.xmi#//@elements.6/@connections"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cableAttributes">
+      <src href="bwd.trg.xmi#//@elements.2"/>
+      <trg href="bwd.trg.xmi#//@elements.2/@cableAttributes"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.8"/>
+      <trg href="bwd.trg.xmi#//@elements.6"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.3"/>
+      <trg href="bwd.trg.xmi#//@elements.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.3"/>
+      <trg href="bwd.src.xmi#//@cables.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@cables.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.5"/>
+      <trg href="bwd.src.xmi#//@devices.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="incoming">
+      <src href="bwd.trg.xmi#//@elements.6/@connections"/>
+      <trg href="bwd.trg.xmi#//@elements.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.src.xmi#//@cables.0"/>
+      <trg href="bwd.src.xmi#//@devices.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="outgoing">
+      <src href="bwd.src.xmi#//@devices.3"/>
+      <trg href="bwd.src.xmi#//@cables.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.src.xmi#//@cables.0"/>
+      <trg href="bwd.src.xmi#//@devices.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="endPoint1">
+      <src href="bwd.trg.xmi#//@elements.2/@cableAttributes"/>
+      <trg href="bwd.trg.xmi#//@elements.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="outgoing">
+      <src href="bwd.trg.xmi#//@elements.4/@connections"/>
+      <trg href="bwd.trg.xmi#//@elements.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="incoming">
+      <src href="bwd.src.xmi#//@devices.4"/>
+      <trg href="bwd.src.xmi#//@cables.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="endPoint2">
+      <src href="bwd.trg.xmi#//@elements.2/@cableAttributes"/>
+      <trg href="bwd.trg.xmi#//@elements.6"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.src.xmi#//@cables.0"/>
+      <trg href="bwd.src.xmi#//@devices.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="outgoing">
+      <src href="bwd.src.xmi#//@devices.3"/>
+      <trg href="bwd.src.xmi#//@cables.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@cables.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.src.xmi#//@cables.0"/>
+      <trg href="bwd.src.xmi#//@devices.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="incoming">
+      <src href="bwd.src.xmi#//@devices.4"/>
+      <trg href="bwd.src.xmi#//@cables.0"/>
+    </containedEdges>
+    <targetElements href="bwd.src.xmi#//@devices.3"/>
+    <targetElements href="bwd.src.xmi#//@devices.4"/>
+    <targetElements href="#//@tripleMatches.9/@containedEdges.23"/>
+    <targetElements href="bwd.src.xmi#/"/>
+    <targetElements href="#//@tripleMatches.9/@containedEdges.24"/>
+    <targetElements href="#//@tripleMatches.9/@containedEdges.25"/>
+    <targetElements href="bwd.src.xmi#//@cables.0"/>
+    <targetElements href="#//@tripleMatches.9/@containedEdges.26"/>
+    <targetElements href="#//@tripleMatches.9/@containedEdges.27"/>
+    <targetElements href="#//@tripleMatches.9/@containedEdges.28"/>
+    <targetElements href="#//@tripleMatches.9/@containedEdges.29"/>
+    <correspondenceElements href="#//@tripleMatches.9/@containedEdges.11"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.8"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.5"/>
+    <correspondenceElements href="#//@tripleMatches.9/@containedEdges.4"/>
+    <correspondenceElements href="#//@tripleMatches.9/@containedEdges.9"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.3"/>
+    <correspondenceElements href="#//@tripleMatches.9/@containedEdges.14"/>
+    <correspondenceElements href="#//@tripleMatches.9/@containedEdges.6"/>
+    <correspondenceElements href="#//@tripleMatches.9/@containedEdges.10"/>
+  </tripleMatches>
+  <tripleMatches createdElements="//@tripleMatches.10/@containedEdges.15 //@tripleMatches.10/@containedEdges.16 //@tripleMatches.10/@containedEdges.17 //@tripleMatches.10/@containedEdges.18 //@tripleMatches.10/@containedEdges.19 //@tripleMatches.10/@containedEdges.20 //@tripleMatches.10/@containedEdges.21 //@tripleMatches.10/@containedEdges.22" ruleName="XSimplexConnectionToConnectionRule" number="25">
+    <sourceElements href="bwd.trg.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.10/@containedEdges.0"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.1/@connections"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.7/@cableAttributes"/>
+    <sourceElements href="#//@tripleMatches.10/@containedEdges.22"/>
+    <sourceElements href="#//@tripleMatches.10/@containedEdges.4"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.1"/>
+    <sourceElements href="#//@tripleMatches.10/@containedEdges.11"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.7"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.0"/>
+    <sourceElements href="#//@tripleMatches.10/@containedEdges.15"/>
+    <sourceElements href="#//@tripleMatches.10/@containedEdges.19"/>
+    <sourceElements href="#//@tripleMatches.10/@containedEdges.7"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.0/@connections"/>
+    <sourceElements href="#//@tripleMatches.10/@containedEdges.21"/>
+    <sourceElements href="#//@tripleMatches.10/@containedEdges.8"/>
+    <sourceElements href="#//@tripleMatches.10/@containedEdges.9"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.0"/>
+    <contextElements href="bwd.src.xmi#//@devices.2"/>
+    <contextElements href="bwd.src.xmi#//@cables.1"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.1"/>
+    <contextElements href="bwd.trg.xmi#//@elements.1/@connections"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.2"/>
+    <contextElements href="bwd.trg.xmi#//@elements.7/@cableAttributes"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.3"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.4"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.5"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.6"/>
+    <contextElements href="bwd.trg.xmi#//@elements.0"/>
+    <contextElements href="bwd.src.xmi#/"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.7"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.8"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.9"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.10"/>
+    <contextElements href="bwd.trg.xmi#/"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.9"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.2"/>
+    <contextElements href="bwd.trg.xmi#//@elements.1"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.11"/>
+    <contextElements href="bwd.trg.xmi#//@elements.7"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.12"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.13"/>
+    <contextElements href="bwd.trg.xmi#//@elements.0/@connections"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.1"/>
+    <contextElements href="#//@tripleMatches.10/@containedEdges.14"/>
+    <contextElements href="bwd.src.xmi#//@devices.1"/>
+    <nodeMappings nodeName="container">
+      <node href="bwd.src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="device1">
+      <node href="bwd.src.xmi#//@devices.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cableAttributes">
+      <node href="bwd.trg.xmi#//@elements.7/@cableAttributes"/>
+    </nodeMappings>
+    <nodeMappings nodeName="device2">
+      <node href="bwd.src.xmi#//@devices.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xCable">
+      <node href="bwd.trg.xmi#//@elements.7"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainer">
+      <node href="bwd.trg.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xCableToCable">
+      <node href="bwd.corr.xmi#//@correspondences.9"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDeviceToDevice2">
+      <node href="bwd.corr.xmi#//@correspondences.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDeviceToDevice">
+      <node href="bwd.corr.xmi#//@correspondences.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="connection1">
+      <node href="bwd.trg.xmi#//@elements.0/@connections"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDevice2">
+      <node href="bwd.trg.xmi#//@elements.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cable">
+      <node href="bwd.src.xmi#//@cables.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDevice1">
+      <node href="bwd.trg.xmi#//@elements.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="connection2">
+      <node href="bwd.trg.xmi#//@elements.1/@connections"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="connections">
+      <src href="bwd.trg.xmi#//@elements.0"/>
+      <trg href="bwd.trg.xmi#//@elements.0/@connections"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@cables.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.9"/>
+      <trg href="bwd.trg.xmi#//@elements.7"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.2"/>
+      <trg href="bwd.trg.xmi#//@elements.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.9"/>
+      <trg href="bwd.src.xmi#//@cables.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cableAttributes">
+      <src href="bwd.trg.xmi#//@elements.7"/>
+      <trg href="bwd.trg.xmi#//@elements.7/@cableAttributes"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="connections">
+      <src href="bwd.trg.xmi#//@elements.1"/>
+      <trg href="bwd.trg.xmi#//@elements.1/@connections"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.2"/>
+      <trg href="bwd.src.xmi#//@devices.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.7"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.1"/>
+      <trg href="bwd.trg.xmi#//@elements.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.1"/>
+      <trg href="bwd.src.xmi#//@devices.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="endPoint1">
+      <src href="bwd.trg.xmi#//@elements.7/@cableAttributes"/>
+      <trg href="bwd.trg.xmi#//@elements.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.src.xmi#//@cables.1"/>
+      <trg href="bwd.src.xmi#//@devices.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.src.xmi#//@cables.1"/>
+      <trg href="bwd.src.xmi#//@devices.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="incoming">
+      <src href="bwd.src.xmi#//@devices.1"/>
+      <trg href="bwd.src.xmi#//@cables.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="incoming">
+      <src href="bwd.trg.xmi#//@elements.1/@connections"/>
+      <trg href="bwd.trg.xmi#//@elements.7"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="outgoing">
+      <src href="bwd.src.xmi#//@devices.2"/>
+      <trg href="bwd.src.xmi#//@cables.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="endPoint2">
+      <src href="bwd.trg.xmi#//@elements.7/@cableAttributes"/>
+      <trg href="bwd.trg.xmi#//@elements.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="outgoing">
+      <src href="bwd.trg.xmi#//@elements.0/@connections"/>
+      <trg href="bwd.trg.xmi#//@elements.7"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.src.xmi#//@cables.1"/>
+      <trg href="bwd.src.xmi#//@devices.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.src.xmi#//@cables.1"/>
+      <trg href="bwd.src.xmi#//@devices.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="incoming">
+      <src href="bwd.src.xmi#//@devices.1"/>
+      <trg href="bwd.src.xmi#//@cables.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="outgoing">
+      <src href="bwd.src.xmi#//@devices.2"/>
+      <trg href="bwd.src.xmi#//@cables.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@cables.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.2"/>
+    </containedEdges>
+    <targetElements href="#//@tripleMatches.10/@containedEdges.23"/>
+    <targetElements href="#//@tripleMatches.10/@containedEdges.24"/>
+    <targetElements href="bwd.src.xmi#//@devices.2"/>
+    <targetElements href="#//@tripleMatches.10/@containedEdges.25"/>
+    <targetElements href="bwd.src.xmi#//@cables.1"/>
+    <targetElements href="#//@tripleMatches.10/@containedEdges.26"/>
+    <targetElements href="bwd.src.xmi#/"/>
+    <targetElements href="#//@tripleMatches.10/@containedEdges.27"/>
+    <targetElements href="#//@tripleMatches.10/@containedEdges.28"/>
+    <targetElements href="#//@tripleMatches.10/@containedEdges.29"/>
+    <targetElements href="bwd.src.xmi#//@devices.1"/>
+    <correspondenceElements href="#//@tripleMatches.10/@containedEdges.12"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.9"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.1"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.2"/>
+    <correspondenceElements href="#//@tripleMatches.10/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.10/@containedEdges.14"/>
+    <correspondenceElements href="#//@tripleMatches.10/@containedEdges.10"/>
+    <correspondenceElements href="#//@tripleMatches.10/@containedEdges.5"/>
+    <correspondenceElements href="#//@tripleMatches.10/@containedEdges.6"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.14 //@tripleMatches.13" ruleName="XServerToServer" number="26">
+    <sourceElements href="bwd.trg.xmi#/"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.8"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.8/@connections"/>
+    <sourceElements href="#//@tripleMatches.11/@containedEdges.5"/>
+    <sourceElements href="#//@tripleMatches.11/@containedEdges.6"/>
+    <contextElements href="bwd.trg.xmi#/"/>
+    <contextElements href="#//@tripleMatches.11/@containedEdges.0"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <contextElements href="bwd.src.xmi#/"/>
+    <contextElements href="#//@tripleMatches.11/@containedEdges.1"/>
+    <nodeMappings nodeName="container">
+      <node href="bwd.src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainerToContainer">
+      <node href="bwd.corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDevice">
+      <node href="bwd.trg.xmi#//@elements.8"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainer">
+      <node href="bwd.trg.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="connection">
+      <node href="bwd.trg.xmi#//@elements.8/@connections"/>
+    </nodeMappings>
+    <nodeMappings nodeName="device">
+      <node href="bwd.src.xmi#//@devices.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDeviceToDevice">
+      <node href="bwd.corr.xmi#//@correspondences.10"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.src.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.trg.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.10"/>
+      <trg href="bwd.src.xmi#//@devices.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.10"/>
+      <trg href="bwd.trg.xmi#//@elements.8"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="connections">
+      <src href="bwd.trg.xmi#//@elements.8"/>
+      <trg href="bwd.trg.xmi#//@elements.8/@connections"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.8"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.0"/>
+    </containedEdges>
+    <targetElements href="#//@tripleMatches.11/@containedEdges.7"/>
+    <targetElements href="bwd.src.xmi#/"/>
+    <targetElements href="bwd.src.xmi#//@devices.0"/>
+    <correspondenceElements href="#//@tripleMatches.11/@containedEdges.2"/>
+    <correspondenceElements href="#//@tripleMatches.11/@containedEdges.0"/>
+    <correspondenceElements href="#//@tripleMatches.11/@containedEdges.4"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.10"/>
+    <correspondenceElements href="#//@tripleMatches.11/@containedEdges.1"/>
+    <createdElements href="#//@tripleMatches.11/@containedEdges.2"/>
+    <createdElements href="#//@tripleMatches.11/@containedEdges.3"/>
+    <createdElements href="bwd.trg.xmi#//@elements.8"/>
+    <createdElements href="bwd.trg.xmi#//@elements.8/@connections"/>
+    <createdElements href="#//@tripleMatches.11/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.11/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.11/@containedEdges.6"/>
+    <createdElements href="bwd.src.xmi#//@devices.0"/>
+    <createdElements href="bwd.corr.xmi#//@correspondences.10"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.15" ruleName="XServerToServer" number="27">
+    <sourceElements href="bwd.trg.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.12/@containedEdges.2"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.9"/>
+    <sourceElements href="#//@tripleMatches.12/@containedEdges.5"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.9/@connections"/>
+    <contextElements href="bwd.trg.xmi#/"/>
+    <contextElements href="#//@tripleMatches.12/@containedEdges.0"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <contextElements href="bwd.src.xmi#/"/>
+    <contextElements href="#//@tripleMatches.12/@containedEdges.1"/>
+    <nodeMappings nodeName="container">
+      <node href="bwd.src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainerToContainer">
+      <node href="bwd.corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDevice">
+      <node href="bwd.trg.xmi#//@elements.9"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainer">
+      <node href="bwd.trg.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="connection">
+      <node href="bwd.trg.xmi#//@elements.9/@connections"/>
+    </nodeMappings>
+    <nodeMappings nodeName="device">
+      <node href="bwd.src.xmi#//@devices.5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDeviceToDevice">
+      <node href="bwd.corr.xmi#//@correspondences.11"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.src.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.trg.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="connections">
+      <src href="bwd.trg.xmi#//@elements.9"/>
+      <trg href="bwd.trg.xmi#//@elements.9/@connections"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.11"/>
+      <trg href="bwd.trg.xmi#//@elements.9"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.5"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.9"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.11"/>
+      <trg href="bwd.src.xmi#//@devices.5"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.5"/>
+    </containedEdges>
+    <targetElements href="bwd.src.xmi#/"/>
+    <targetElements href="#//@tripleMatches.12/@containedEdges.7"/>
+    <targetElements href="bwd.src.xmi#//@devices.5"/>
+    <correspondenceElements href="#//@tripleMatches.12/@containedEdges.0"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.11"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.12/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.12/@containedEdges.6"/>
+    <correspondenceElements href="#//@tripleMatches.12/@containedEdges.1"/>
+    <createdElements href="bwd.corr.xmi#//@correspondences.11"/>
+    <createdElements href="#//@tripleMatches.12/@containedEdges.2"/>
+    <createdElements href="#//@tripleMatches.12/@containedEdges.3"/>
+    <createdElements href="#//@tripleMatches.12/@containedEdges.4"/>
+    <createdElements href="bwd.trg.xmi#//@elements.9"/>
+    <createdElements href="#//@tripleMatches.12/@containedEdges.5"/>
+    <createdElements href="bwd.src.xmi#//@devices.5"/>
+    <createdElements href="bwd.trg.xmi#//@elements.9/@connections"/>
+    <createdElements href="#//@tripleMatches.12/@containedEdges.6"/>
+  </tripleMatches>
+  <tripleMatches createdElements="//@tripleMatches.13/@containedEdges.15 //@tripleMatches.13/@containedEdges.16 //@tripleMatches.13/@containedEdges.17 //@tripleMatches.13/@containedEdges.18 //@tripleMatches.13/@containedEdges.19 //@tripleMatches.13/@containedEdges.20 //@tripleMatches.13/@containedEdges.21 //@tripleMatches.13/@containedEdges.22" ruleName="XSimplexConnectionToConnectionRule" number="28">
+    <sourceElements href="bwd.trg.xmi#//@elements.3"/>
+    <sourceElements href="bwd.trg.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.13/@containedEdges.0"/>
+    <sourceElements href="#//@tripleMatches.13/@containedEdges.17"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.8"/>
+    <sourceElements href="#//@tripleMatches.13/@containedEdges.3"/>
+    <sourceElements href="#//@tripleMatches.13/@containedEdges.5"/>
+    <sourceElements href="#//@tripleMatches.13/@containedEdges.7"/>
+    <sourceElements href="#//@tripleMatches.13/@containedEdges.8"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.3/@cableAttributes"/>
+    <sourceElements href="#//@tripleMatches.13/@containedEdges.22"/>
+    <sourceElements href="#//@tripleMatches.13/@containedEdges.16"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.8/@connections"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.4"/>
+    <sourceElements href="#//@tripleMatches.13/@containedEdges.19"/>
+    <sourceElements href="#//@tripleMatches.13/@containedEdges.11"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.4/@connections"/>
+    <contextElements href="#//@tripleMatches.13/@containedEdges.0"/>
+    <contextElements href="#//@tripleMatches.13/@containedEdges.1"/>
+    <contextElements href="#//@tripleMatches.13/@containedEdges.2"/>
+    <contextElements href="#//@tripleMatches.13/@containedEdges.3"/>
+    <contextElements href="#//@tripleMatches.13/@containedEdges.4"/>
+    <contextElements href="#//@tripleMatches.13/@containedEdges.5"/>
+    <contextElements href="#//@tripleMatches.13/@containedEdges.6"/>
+    <contextElements href="#//@tripleMatches.13/@containedEdges.7"/>
+    <contextElements href="#//@tripleMatches.13/@containedEdges.8"/>
+    <contextElements href="bwd.src.xmi#//@cables.4"/>
+    <contextElements href="#//@tripleMatches.13/@containedEdges.9"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.4"/>
+    <contextElements href="bwd.src.xmi#/"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.5"/>
+    <contextElements href="#//@tripleMatches.13/@containedEdges.10"/>
+    <contextElements href="#//@tripleMatches.13/@containedEdges.11"/>
+    <contextElements href="bwd.src.xmi#//@devices.3"/>
+    <contextElements href="bwd.trg.xmi#//@elements.3"/>
+    <contextElements href="bwd.trg.xmi#/"/>
+    <contextElements href="bwd.trg.xmi#//@elements.8"/>
+    <contextElements href="bwd.trg.xmi#//@elements.3/@cableAttributes"/>
+    <contextElements href="#//@tripleMatches.13/@containedEdges.12"/>
+    <contextElements href="bwd.trg.xmi#//@elements.8/@connections"/>
+    <contextElements href="#//@tripleMatches.13/@containedEdges.13"/>
+    <contextElements href="bwd.trg.xmi#//@elements.4"/>
+    <contextElements href="#//@tripleMatches.13/@containedEdges.14"/>
+    <contextElements href="bwd.src.xmi#//@devices.0"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.10"/>
+    <contextElements href="bwd.trg.xmi#//@elements.4/@connections"/>
+    <nodeMappings nodeName="container">
+      <node href="bwd.src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="device1">
+      <node href="bwd.src.xmi#//@devices.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cableAttributes">
+      <node href="bwd.trg.xmi#//@elements.3/@cableAttributes"/>
+    </nodeMappings>
+    <nodeMappings nodeName="device2">
+      <node href="bwd.src.xmi#//@devices.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xCable">
+      <node href="bwd.trg.xmi#//@elements.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainer">
+      <node href="bwd.trg.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xCableToCable">
+      <node href="bwd.corr.xmi#//@correspondences.4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDeviceToDevice2">
+      <node href="bwd.corr.xmi#//@correspondences.5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDeviceToDevice">
+      <node href="bwd.corr.xmi#//@correspondences.10"/>
+    </nodeMappings>
+    <nodeMappings nodeName="connection1">
+      <node href="bwd.trg.xmi#//@elements.8/@connections"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDevice2">
+      <node href="bwd.trg.xmi#//@elements.4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cable">
+      <node href="bwd.src.xmi#//@cables.4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDevice1">
+      <node href="bwd.trg.xmi#//@elements.8"/>
+    </nodeMappings>
+    <nodeMappings nodeName="connection2">
+      <node href="bwd.trg.xmi#//@elements.4/@connections"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cableAttributes">
+      <src href="bwd.trg.xmi#//@elements.3"/>
+      <trg href="bwd.trg.xmi#//@elements.3/@cableAttributes"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.10"/>
+      <trg href="bwd.src.xmi#//@devices.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.10"/>
+      <trg href="bwd.trg.xmi#//@elements.8"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.4"/>
+      <trg href="bwd.src.xmi#//@cables.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="connections">
+      <src href="bwd.trg.xmi#//@elements.8"/>
+      <trg href="bwd.trg.xmi#//@elements.8/@connections"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.5"/>
+      <trg href="bwd.trg.xmi#//@elements.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.8"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@cables.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.4"/>
+      <trg href="bwd.trg.xmi#//@elements.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="connections">
+      <src href="bwd.trg.xmi#//@elements.4"/>
+      <trg href="bwd.trg.xmi#//@elements.4/@connections"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.5"/>
+      <trg href="bwd.src.xmi#//@devices.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.src.xmi#//@cables.4"/>
+      <trg href="bwd.src.xmi#//@devices.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="outgoing">
+      <src href="bwd.trg.xmi#//@elements.8/@connections"/>
+      <trg href="bwd.trg.xmi#//@elements.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="endPoint1">
+      <src href="bwd.trg.xmi#//@elements.3/@cableAttributes"/>
+      <trg href="bwd.trg.xmi#//@elements.8"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.src.xmi#//@cables.4"/>
+      <trg href="bwd.src.xmi#//@devices.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="incoming">
+      <src href="bwd.trg.xmi#//@elements.4/@connections"/>
+      <trg href="bwd.trg.xmi#//@elements.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="incoming">
+      <src href="bwd.src.xmi#//@devices.3"/>
+      <trg href="bwd.src.xmi#//@cables.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="outgoing">
+      <src href="bwd.src.xmi#//@devices.0"/>
+      <trg href="bwd.src.xmi#//@cables.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="endPoint2">
+      <src href="bwd.trg.xmi#//@elements.3/@cableAttributes"/>
+      <trg href="bwd.trg.xmi#//@elements.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.src.xmi#//@cables.4"/>
+      <trg href="bwd.src.xmi#//@devices.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@cables.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.src.xmi#//@cables.4"/>
+      <trg href="bwd.src.xmi#//@devices.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="incoming">
+      <src href="bwd.src.xmi#//@devices.3"/>
+      <trg href="bwd.src.xmi#//@cables.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="outgoing">
+      <src href="bwd.src.xmi#//@devices.0"/>
+      <trg href="bwd.src.xmi#//@cables.4"/>
+    </containedEdges>
+    <targetElements href="bwd.src.xmi#//@devices.3"/>
+    <targetElements href="#//@tripleMatches.13/@containedEdges.23"/>
+    <targetElements href="#//@tripleMatches.13/@containedEdges.24"/>
+    <targetElements href="#//@tripleMatches.13/@containedEdges.25"/>
+    <targetElements href="#//@tripleMatches.13/@containedEdges.26"/>
+    <targetElements href="bwd.src.xmi#/"/>
+    <targetElements href="#//@tripleMatches.13/@containedEdges.27"/>
+    <targetElements href="bwd.src.xmi#//@devices.0"/>
+    <targetElements href="#//@tripleMatches.13/@containedEdges.28"/>
+    <targetElements href="bwd.src.xmi#//@cables.4"/>
+    <targetElements href="#//@tripleMatches.13/@containedEdges.29"/>
+    <correspondenceElements href="#//@tripleMatches.13/@containedEdges.1"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.4"/>
+    <correspondenceElements href="#//@tripleMatches.13/@containedEdges.2"/>
+    <correspondenceElements href="#//@tripleMatches.13/@containedEdges.4"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.5"/>
+    <correspondenceElements href="#//@tripleMatches.13/@containedEdges.6"/>
+    <correspondenceElements href="#//@tripleMatches.13/@containedEdges.10"/>
+    <correspondenceElements href="#//@tripleMatches.13/@containedEdges.14"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.10"/>
+  </tripleMatches>
+  <tripleMatches createdElements="//@tripleMatches.14/@containedEdges.15 //@tripleMatches.14/@containedEdges.16 //@tripleMatches.14/@containedEdges.17 //@tripleMatches.14/@containedEdges.18 //@tripleMatches.14/@containedEdges.19 //@tripleMatches.14/@containedEdges.20 //@tripleMatches.14/@containedEdges.21 //@tripleMatches.14/@containedEdges.22" ruleName="XSimplexConnectionToConnectionRule" number="29">
+    <sourceElements href="bwd.trg.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.14/@containedEdges.15"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.8"/>
+    <sourceElements href="#//@tripleMatches.14/@containedEdges.16"/>
+    <sourceElements href="#//@tripleMatches.14/@containedEdges.2"/>
+    <sourceElements href="#//@tripleMatches.14/@containedEdges.17"/>
+    <sourceElements href="#//@tripleMatches.14/@containedEdges.3"/>
+    <sourceElements href="#//@tripleMatches.14/@containedEdges.6"/>
+    <sourceElements href="#//@tripleMatches.14/@containedEdges.10"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.8/@connections"/>
+    <sourceElements href="#//@tripleMatches.14/@containedEdges.12"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.5"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.4"/>
+    <sourceElements href="#//@tripleMatches.14/@containedEdges.8"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.4/@connections"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.5/@cableAttributes"/>
+    <sourceElements href="#//@tripleMatches.14/@containedEdges.22"/>
+    <contextElements href="#//@tripleMatches.14/@containedEdges.0"/>
+    <contextElements href="#//@tripleMatches.14/@containedEdges.1"/>
+    <contextElements href="#//@tripleMatches.14/@containedEdges.2"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.6"/>
+    <contextElements href="#//@tripleMatches.14/@containedEdges.3"/>
+    <contextElements href="#//@tripleMatches.14/@containedEdges.4"/>
+    <contextElements href="#//@tripleMatches.14/@containedEdges.5"/>
+    <contextElements href="#//@tripleMatches.14/@containedEdges.6"/>
+    <contextElements href="#//@tripleMatches.14/@containedEdges.7"/>
+    <contextElements href="bwd.src.xmi#//@cables.3"/>
+    <contextElements href="bwd.src.xmi#/"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.5"/>
+    <contextElements href="#//@tripleMatches.14/@containedEdges.8"/>
+    <contextElements href="bwd.trg.xmi#//@elements.5/@cableAttributes"/>
+    <contextElements href="#//@tripleMatches.14/@containedEdges.9"/>
+    <contextElements href="bwd.src.xmi#//@devices.3"/>
+    <contextElements href="bwd.trg.xmi#/"/>
+    <contextElements href="bwd.trg.xmi#//@elements.8"/>
+    <contextElements href="#//@tripleMatches.14/@containedEdges.10"/>
+    <contextElements href="#//@tripleMatches.14/@containedEdges.11"/>
+    <contextElements href="bwd.trg.xmi#//@elements.8/@connections"/>
+    <contextElements href="#//@tripleMatches.14/@containedEdges.12"/>
+    <contextElements href="#//@tripleMatches.14/@containedEdges.13"/>
+    <contextElements href="bwd.trg.xmi#//@elements.5"/>
+    <contextElements href="bwd.trg.xmi#//@elements.4"/>
+    <contextElements href="#//@tripleMatches.14/@containedEdges.14"/>
+    <contextElements href="bwd.src.xmi#//@devices.0"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.10"/>
+    <contextElements href="bwd.trg.xmi#//@elements.4/@connections"/>
+    <nodeMappings nodeName="container">
+      <node href="bwd.src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="device1">
+      <node href="bwd.src.xmi#//@devices.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cableAttributes">
+      <node href="bwd.trg.xmi#//@elements.5/@cableAttributes"/>
+    </nodeMappings>
+    <nodeMappings nodeName="device2">
+      <node href="bwd.src.xmi#//@devices.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xCable">
+      <node href="bwd.trg.xmi#//@elements.5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainer">
+      <node href="bwd.trg.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xCableToCable">
+      <node href="bwd.corr.xmi#//@correspondences.6"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDeviceToDevice2">
+      <node href="bwd.corr.xmi#//@correspondences.10"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDeviceToDevice">
+      <node href="bwd.corr.xmi#//@correspondences.5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="connection1">
+      <node href="bwd.trg.xmi#//@elements.4/@connections"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDevice2">
+      <node href="bwd.trg.xmi#//@elements.8"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cable">
+      <node href="bwd.src.xmi#//@cables.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDevice1">
+      <node href="bwd.trg.xmi#//@elements.4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="connection2">
+      <node href="bwd.trg.xmi#//@elements.8/@connections"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.10"/>
+      <trg href="bwd.src.xmi#//@devices.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.10"/>
+      <trg href="bwd.trg.xmi#//@elements.8"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="connections">
+      <src href="bwd.trg.xmi#//@elements.8"/>
+      <trg href="bwd.trg.xmi#//@elements.8/@connections"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.6"/>
+      <trg href="bwd.trg.xmi#//@elements.5"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.5"/>
+      <trg href="bwd.trg.xmi#//@elements.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.8"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.6"/>
+      <trg href="bwd.src.xmi#//@cables.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="connections">
+      <src href="bwd.trg.xmi#//@elements.4"/>
+      <trg href="bwd.trg.xmi#//@elements.4/@connections"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@cables.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cableAttributes">
+      <src href="bwd.trg.xmi#//@elements.5"/>
+      <trg href="bwd.trg.xmi#//@elements.5/@cableAttributes"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.5"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.5"/>
+      <trg href="bwd.src.xmi#//@devices.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="endPoint2">
+      <src href="bwd.trg.xmi#//@elements.5/@cableAttributes"/>
+      <trg href="bwd.trg.xmi#//@elements.8"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="outgoing">
+      <src href="bwd.trg.xmi#//@elements.4/@connections"/>
+      <trg href="bwd.trg.xmi#//@elements.5"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="incoming">
+      <src href="bwd.trg.xmi#//@elements.8/@connections"/>
+      <trg href="bwd.trg.xmi#//@elements.5"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.src.xmi#//@cables.3"/>
+      <trg href="bwd.src.xmi#//@devices.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="incoming">
+      <src href="bwd.src.xmi#//@devices.0"/>
+      <trg href="bwd.src.xmi#//@cables.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="outgoing">
+      <src href="bwd.src.xmi#//@devices.3"/>
+      <trg href="bwd.src.xmi#//@cables.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.src.xmi#//@cables.3"/>
+      <trg href="bwd.src.xmi#//@devices.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="endPoint1">
+      <src href="bwd.trg.xmi#//@elements.5/@cableAttributes"/>
+      <trg href="bwd.trg.xmi#//@elements.4"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.src.xmi#//@cables.3"/>
+      <trg href="bwd.src.xmi#//@devices.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="incoming">
+      <src href="bwd.src.xmi#//@devices.0"/>
+      <trg href="bwd.src.xmi#//@cables.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="outgoing">
+      <src href="bwd.src.xmi#//@devices.3"/>
+      <trg href="bwd.src.xmi#//@cables.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.src.xmi#//@cables.3"/>
+      <trg href="bwd.src.xmi#//@devices.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@cables.3"/>
+    </containedEdges>
+    <targetElements href="bwd.src.xmi#//@devices.3"/>
+    <targetElements href="#//@tripleMatches.14/@containedEdges.23"/>
+    <targetElements href="bwd.src.xmi#/"/>
+    <targetElements href="#//@tripleMatches.14/@containedEdges.24"/>
+    <targetElements href="#//@tripleMatches.14/@containedEdges.25"/>
+    <targetElements href="#//@tripleMatches.14/@containedEdges.26"/>
+    <targetElements href="#//@tripleMatches.14/@containedEdges.27"/>
+    <targetElements href="bwd.src.xmi#//@devices.0"/>
+    <targetElements href="#//@tripleMatches.14/@containedEdges.28"/>
+    <targetElements href="#//@tripleMatches.14/@containedEdges.29"/>
+    <targetElements href="bwd.src.xmi#//@cables.3"/>
+    <correspondenceElements href="#//@tripleMatches.14/@containedEdges.0"/>
+    <correspondenceElements href="#//@tripleMatches.14/@containedEdges.1"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.6"/>
+    <correspondenceElements href="#//@tripleMatches.14/@containedEdges.4"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.5"/>
+    <correspondenceElements href="#//@tripleMatches.14/@containedEdges.5"/>
+    <correspondenceElements href="#//@tripleMatches.14/@containedEdges.7"/>
+    <correspondenceElements href="#//@tripleMatches.14/@containedEdges.14"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.10"/>
+  </tripleMatches>
+  <tripleMatches createdElements="//@tripleMatches.15/@containedEdges.15 //@tripleMatches.15/@containedEdges.16 //@tripleMatches.15/@containedEdges.17 //@tripleMatches.15/@containedEdges.18 //@tripleMatches.15/@containedEdges.19 //@tripleMatches.15/@containedEdges.20 //@tripleMatches.15/@containedEdges.21 //@tripleMatches.15/@containedEdges.22" ruleName="XSimplexConnectionToConnectionRule" number="30">
+    <sourceElements href="bwd.trg.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.15/@containedEdges.0"/>
+    <sourceElements href="#//@tripleMatches.15/@containedEdges.8"/>
+    <sourceElements href="#//@tripleMatches.15/@containedEdges.9"/>
+    <sourceElements href="#//@tripleMatches.15/@containedEdges.4"/>
+    <sourceElements href="#//@tripleMatches.15/@containedEdges.21"/>
+    <sourceElements href="#//@tripleMatches.15/@containedEdges.10"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.0"/>
+    <sourceElements href="#//@tripleMatches.15/@containedEdges.16"/>
+    <sourceElements href="#//@tripleMatches.15/@containedEdges.13"/>
+    <sourceElements href="#//@tripleMatches.15/@containedEdges.17"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.9"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.0/@connections"/>
+    <sourceElements href="#//@tripleMatches.15/@containedEdges.20"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.5"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.9/@connections"/>
+    <sourceElements href="bwd.trg.xmi#//@elements.5/@cableAttributes"/>
+    <contextElements href="#//@tripleMatches.15/@containedEdges.0"/>
+    <contextElements href="bwd.src.xmi#//@devices.2"/>
+    <contextElements href="#//@tripleMatches.15/@containedEdges.1"/>
+    <contextElements href="#//@tripleMatches.15/@containedEdges.2"/>
+    <contextElements href="#//@tripleMatches.15/@containedEdges.3"/>
+    <contextElements href="#//@tripleMatches.15/@containedEdges.4"/>
+    <contextElements href="#//@tripleMatches.15/@containedEdges.5"/>
+    <contextElements href="bwd.trg.xmi#//@elements.0"/>
+    <contextElements href="bwd.src.xmi#/"/>
+    <contextElements href="#//@tripleMatches.15/@containedEdges.6"/>
+    <contextElements href="bwd.src.xmi#//@devices.5"/>
+    <contextElements href="bwd.trg.xmi#//@elements.5/@cableAttributes"/>
+    <contextElements href="#//@tripleMatches.15/@containedEdges.7"/>
+    <contextElements href="bwd.trg.xmi#/"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.11"/>
+    <contextElements href="#//@tripleMatches.15/@containedEdges.8"/>
+    <contextElements href="#//@tripleMatches.15/@containedEdges.9"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.7"/>
+    <contextElements href="#//@tripleMatches.15/@containedEdges.10"/>
+    <contextElements href="#//@tripleMatches.15/@containedEdges.11"/>
+    <contextElements href="#//@tripleMatches.15/@containedEdges.12"/>
+    <contextElements href="#//@tripleMatches.15/@containedEdges.13"/>
+    <contextElements href="bwd.src.xmi#//@cables.2"/>
+    <contextElements href="bwd.trg.xmi#//@elements.9"/>
+    <contextElements href="bwd.trg.xmi#//@elements.0/@connections"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.1"/>
+    <contextElements href="bwd.trg.xmi#//@elements.5"/>
+    <contextElements href="#//@tripleMatches.15/@containedEdges.14"/>
+    <contextElements href="bwd.trg.xmi#//@elements.9/@connections"/>
+    <nodeMappings nodeName="container">
+      <node href="bwd.src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="device1">
+      <node href="bwd.src.xmi#//@devices.5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cableAttributes">
+      <node href="bwd.trg.xmi#//@elements.5/@cableAttributes"/>
+    </nodeMappings>
+    <nodeMappings nodeName="device2">
+      <node href="bwd.src.xmi#//@devices.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xCable">
+      <node href="bwd.trg.xmi#//@elements.5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xContainer">
+      <node href="bwd.trg.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xCableToCable">
+      <node href="bwd.corr.xmi#//@correspondences.7"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDeviceToDevice2">
+      <node href="bwd.corr.xmi#//@correspondences.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDeviceToDevice">
+      <node href="bwd.corr.xmi#//@correspondences.11"/>
+    </nodeMappings>
+    <nodeMappings nodeName="connection1">
+      <node href="bwd.trg.xmi#//@elements.9/@connections"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDevice2">
+      <node href="bwd.trg.xmi#//@elements.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cable">
+      <node href="bwd.src.xmi#//@cables.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="xDevice1">
+      <node href="bwd.trg.xmi#//@elements.9"/>
+    </nodeMappings>
+    <nodeMappings nodeName="connection2">
+      <node href="bwd.trg.xmi#//@elements.0/@connections"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="connections">
+      <src href="bwd.trg.xmi#//@elements.0"/>
+      <trg href="bwd.trg.xmi#//@elements.0/@connections"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.11"/>
+      <trg href="bwd.trg.xmi#//@elements.9"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@cables.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.11"/>
+      <trg href="bwd.src.xmi#//@devices.5"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.5"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.7"/>
+      <trg href="bwd.trg.xmi#//@elements.5"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="connections">
+      <src href="bwd.trg.xmi#//@elements.9"/>
+      <trg href="bwd.trg.xmi#//@elements.9/@connections"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.9"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cableAttributes">
+      <src href="bwd.trg.xmi#//@elements.5"/>
+      <trg href="bwd.trg.xmi#//@elements.5/@cableAttributes"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.1"/>
+      <trg href="bwd.trg.xmi#//@elements.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.7"/>
+      <trg href="bwd.src.xmi#//@cables.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="elements">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@elements.5"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.1"/>
+      <trg href="bwd.src.xmi#//@devices.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="outgoing">
+      <src href="bwd.src.xmi#//@devices.5"/>
+      <trg href="bwd.src.xmi#//@cables.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="endPoint1">
+      <src href="bwd.trg.xmi#//@elements.5/@cableAttributes"/>
+      <trg href="bwd.trg.xmi#//@elements.9"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="endPoint2">
+      <src href="bwd.trg.xmi#//@elements.5/@cableAttributes"/>
+      <trg href="bwd.trg.xmi#//@elements.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.src.xmi#//@cables.2"/>
+      <trg href="bwd.src.xmi#//@devices.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="incoming">
+      <src href="bwd.src.xmi#//@devices.2"/>
+      <trg href="bwd.src.xmi#//@cables.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="outgoing">
+      <src href="bwd.trg.xmi#//@elements.9/@connections"/>
+      <trg href="bwd.trg.xmi#//@elements.5"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="incoming">
+      <src href="bwd.trg.xmi#//@elements.0/@connections"/>
+      <trg href="bwd.trg.xmi#//@elements.5"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.src.xmi#//@cables.2"/>
+      <trg href="bwd.src.xmi#//@devices.5"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="outgoing">
+      <src href="bwd.src.xmi#//@devices.5"/>
+      <trg href="bwd.src.xmi#//@cables.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.src.xmi#//@cables.2"/>
+      <trg href="bwd.src.xmi#//@devices.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.5"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@cables.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="incoming">
+      <src href="bwd.src.xmi#//@devices.2"/>
+      <trg href="bwd.src.xmi#//@cables.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@devices.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.src.xmi#//@cables.2"/>
+      <trg href="bwd.src.xmi#//@devices.5"/>
+    </containedEdges>
+    <targetElements href="bwd.src.xmi#//@devices.2"/>
+    <targetElements href="#//@tripleMatches.15/@containedEdges.23"/>
+    <targetElements href="bwd.src.xmi#/"/>
+    <targetElements href="#//@tripleMatches.15/@containedEdges.24"/>
+    <targetElements href="#//@tripleMatches.15/@containedEdges.25"/>
+    <targetElements href="bwd.src.xmi#//@cables.2"/>
+    <targetElements href="#//@tripleMatches.15/@containedEdges.26"/>
+    <targetElements href="#//@tripleMatches.15/@containedEdges.27"/>
+    <targetElements href="#//@tripleMatches.15/@containedEdges.28"/>
+    <targetElements href="bwd.src.xmi#//@devices.5"/>
+    <targetElements href="#//@tripleMatches.15/@containedEdges.29"/>
+    <correspondenceElements href="#//@tripleMatches.15/@containedEdges.11"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.11"/>
+    <correspondenceElements href="#//@tripleMatches.15/@containedEdges.1"/>
+    <correspondenceElements href="#//@tripleMatches.15/@containedEdges.12"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.1"/>
+    <correspondenceElements href="#//@tripleMatches.15/@containedEdges.14"/>
+    <correspondenceElements href="#//@tripleMatches.15/@containedEdges.5"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.7"/>
+    <correspondenceElements href="#//@tripleMatches.15/@containedEdges.7"/>
+  </tripleMatches>
+</org.moflon.tgg.runtime:PrecedenceStructure>

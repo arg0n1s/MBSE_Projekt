@@ -1,0 +1,20 @@
+#using ImplementationTransformator.*
+#using AttrCondDefLibrary.*
+
+#rule XSimplexCopperCableRule #extends XSimplexCableToCableRule #with ImplementationTransformator
+
+#source { 
+	++ xCable : XCopperCable
+}
+
+#target {
+	++ cable : CopperCable
+}
+
+#correspondence {
+	
+}
+
+#attributeConditions {
+	
+}

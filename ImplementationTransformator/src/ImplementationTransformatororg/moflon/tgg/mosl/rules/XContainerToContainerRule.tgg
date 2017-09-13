@@ -1,0 +1,23 @@
+#using ImplementationTransformator.*
+#using AttrCondDefLibrary.*
+
+#rule XContainerToContainerRule #with ImplementationTransformator
+
+#source { 
+	++ xContainer : XContainer
+}
+
+#target {
+	++ container : Container
+}
+
+#correspondence {
+	++ xContainerToContainer : XContainerToContainer {
+		#src->xContainer
+		#trg->container
+	}
+}
+
+#attributeConditions {
+	
+}

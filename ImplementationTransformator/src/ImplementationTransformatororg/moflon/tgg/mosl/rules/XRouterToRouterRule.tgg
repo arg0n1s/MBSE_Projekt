@@ -1,0 +1,21 @@
+#using ImplementationTransformator.*
+#using AttrCondDefLibrary.*
+
+#rule XRouterToRouterRule #extends XDeviceToDeviceRule #with ImplementationTransformator
+
+#source { 
+	++ xDevice : XRouter
+}
+
+#target {
+	
+	++ device : Router
+}
+
+#correspondence {
+	
+}
+
+#attributeConditions {
+	eq(xDevice.maxSpeed, device.maxSpeed)
+}

@@ -1,0 +1,21 @@
+#using ImplementationTransformator.*
+#using AttrCondDefLibrary.*
+
+#rule XDuplexGlassFiberCableRule #extends XDuplexCableToCablesRule #with ImplementationTransformator
+
+#source { 
+	++ xCable : XGlassFiberCable
+}
+
+#target {
+	++ cable1 : GlassFiberCable
+	++ cable2 : GlassFiberCable
+}
+
+#correspondence {
+	
+}
+
+#attributeConditions {
+	
+}

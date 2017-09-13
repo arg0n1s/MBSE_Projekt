@@ -1,0 +1,20 @@
+#using ImplementationTransformator.*
+#using AttrCondDefLibrary.*
+
+#rule XSimplexGlassFiberCableRule #extends XSimplexCableToCableRule #with ImplementationTransformator
+
+#source { 
+	++ xCable : XGlassFiberCable
+}
+
+#target {
+	++ cable : GlassFiberCable
+}
+
+#correspondence {
+	
+}
+
+#attributeConditions {
+	
+}

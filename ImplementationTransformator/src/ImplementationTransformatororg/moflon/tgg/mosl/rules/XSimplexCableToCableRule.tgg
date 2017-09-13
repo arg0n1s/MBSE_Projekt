@@ -1,0 +1,52 @@
+#using ImplementationTransformator.*
+#using AttrCondDefLibrary.*
+
+#abstract #rule XSimplexCableToCableRule #with ImplementationTransformator
+
+#source {
+	xContainer : XContainer {
+			-elements->xDevice
+	 	++	-elements->xCable 	
+	}
+	
+	xDevice : XDevice
+	
+	++ xCable : XCable {
+		++ -cableAttributes->cableAttributes
+	}
+	
+	++ cableAttributes : CableAttributes {
+		isDuplex := false
+	}
+	
+}
+
+#target {
+	
+	container : Container {
+			-devices->device
+		++ 	-cables->cable
+	}
+	
+	device : Device
+	
+	++ cable : Cable
+	
+}
+
+#correspondence {
+	
+	xDeviceToDevice : XDeviceToDevice {
+		#src->xDevice
+		#trg->device
+	}
+	
+	++ xCableToCable : XCableToCable {
+		#src->xCable
+		#trg->cable
+	}
+}
+
+#attributeConditions {
+	eq(cableAttributes.speed, cable.speed)
+}

@@ -1,0 +1,21 @@
+#using ImplementationTransformator.*
+#using AttrCondDefLibrary.*
+
+#rule XComputerToComputer #extends XDeviceToDeviceRule #with ImplementationTransformator
+
+#source { 
+	++ xDevice : XComputer
+}
+
+#target {
+	
+	++ device : Computer
+}
+
+#correspondence {
+	
+}
+
+#attributeConditions {
+	
+}

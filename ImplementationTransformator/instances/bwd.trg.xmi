@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xtextImpl:XContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xtextImpl="platform:/plugin/xtextImplementation/model/generated/XtextImpl.ecore">
+  <elements xsi:type="xtextImpl:XRouter" name="r2" maxSpeed="10">
+    <connections incoming="//@elements.5" outgoing="//@elements.7"/>
+  </elements>
+  <elements xsi:type="xtextImpl:XComputer" name="pc3">
+    <connections incoming="//@elements.7"/>
+  </elements>
+  <elements xsi:type="xtextImpl:XCopperCable">
+    <cableAttributes speed="2" endPoint1="//@elements.4" endPoint2="//@elements.6"/>
+  </elements>
+  <elements xsi:type="xtextImpl:XGlassFiberCable">
+    <cableAttributes speed="4" endPoint1="//@elements.8" endPoint2="//@elements.4"/>
+  </elements>
+  <elements xsi:type="xtextImpl:XRouter" name="r1" maxSpeed="10">
+    <connections incoming="//@elements.3" outgoing="//@elements.2 //@elements.5"/>
+  </elements>
+  <elements xsi:type="xtextImpl:XGlassFiberCable">
+    <cableAttributes speed="4" endPoint1="//@elements.9" endPoint2="//@elements.0"/>
+  </elements>
+  <elements xsi:type="xtextImpl:XComputer" name="pc1">
+    <connections incoming="//@elements.2"/>
+  </elements>
+  <elements xsi:type="xtextImpl:XCopperCable">
+    <cableAttributes speed="2" endPoint1="//@elements.0" endPoint2="//@elements.1"/>
+  </elements>
+  <elements xsi:type="xtextImpl:XServer" name="s1" maxSlots="1" MTBF="1000">
+    <connections incoming="//@elements.5" outgoing="//@elements.3"/>
+  </elements>
+  <elements xsi:type="xtextImpl:XServer" name="s2" maxSlots="2" MTBF="300">
+    <connections outgoing="//@elements.5"/>
+  </elements>
+</xtextImpl:XContainer>

@@ -1,0 +1,46 @@
+#using ImplementationTransformator.*
+#using AttrCondDefLibrary.*
+
+#abstract #rule XDeviceToDeviceRule #with ImplementationTransformator
+
+#source {
+	
+	xContainer : XContainer {
+	 ++	-elements->xDevice 	
+	}
+	
+	 ++ xDevice : XDevice {
+	 	++ -connections->connection
+	 }
+	 
+	 ++ connection : Connections
+	
+}
+
+#target {
+	
+	container : Container {
+		++ -devices->device
+	}
+	
+	++ device : Device
+	
+}
+
+#correspondence {
+	
+	xContainerToContainer : XContainerToContainer {
+		#src->xContainer
+		#trg->container
+	}
+	
+	++ xDeviceToDevice : XDeviceToDevice {
+		#src->xDevice
+		#trg->device
+	}
+	
+}
+
+#attributeConditions {
+	eq(xDevice.name, device.name)
+}

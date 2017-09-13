@@ -1,0 +1,22 @@
+#using ImplementationTransformator.*
+#using AttrCondDefLibrary.*
+
+#rule XServerToServer #extends XDeviceToDeviceRule #with ImplementationTransformator
+
+#source { 
+	++ xDevice : XServer
+}
+
+#target {
+	
+	++ device : Server
+}
+
+#correspondence {
+	
+}
+
+#attributeConditions {
+	eq(xDevice.maxSlots, device.maxSlots)
+	eq(xDevice.MTBF, device.MTBF)
+}

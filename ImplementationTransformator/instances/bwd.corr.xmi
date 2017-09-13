@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.moflon.tgg.runtime:CorrespondenceModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ImplementationTransformator="platform:/plugin/ImplementationTransformator/model/ImplementationTransformator.ecore" xmlns:org.moflon.tgg.runtime="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore">
+  <correspondences xsi:type="ImplementationTransformator:XContainerToContainer">
+    <source href="bwd.trg.xmi#/"/>
+    <target href="bwd.src.xmi#/"/>
+  </correspondences>
+  <correspondences xsi:type="ImplementationTransformator:XDeviceToDevice">
+    <source href="bwd.trg.xmi#//@elements.0"/>
+    <target href="bwd.src.xmi#//@devices.2"/>
+  </correspondences>
+  <correspondences xsi:type="ImplementationTransformator:XDeviceToDevice">
+    <source href="bwd.trg.xmi#//@elements.1"/>
+    <target href="bwd.src.xmi#//@devices.1"/>
+  </correspondences>
+  <correspondences xsi:type="ImplementationTransformator:XCableToCable">
+    <source href="bwd.trg.xmi#//@elements.2"/>
+    <target href="bwd.src.xmi#//@cables.0"/>
+  </correspondences>
+  <correspondences xsi:type="ImplementationTransformator:XCableToCable">
+    <source href="bwd.trg.xmi#//@elements.3"/>
+    <target href="bwd.src.xmi#//@cables.4"/>
+  </correspondences>
+  <correspondences xsi:type="ImplementationTransformator:XDeviceToDevice">
+    <source href="bwd.trg.xmi#//@elements.4"/>
+    <target href="bwd.src.xmi#//@devices.3"/>
+  </correspondences>
+  <correspondences xsi:type="ImplementationTransformator:XCableToCable">
+    <source href="bwd.trg.xmi#//@elements.5"/>
+    <target href="bwd.src.xmi#//@cables.3"/>
+  </correspondences>
+  <correspondences xsi:type="ImplementationTransformator:XCableToCable">
+    <source href="bwd.trg.xmi#//@elements.5"/>
+    <target href="bwd.src.xmi#//@cables.2"/>
+  </correspondences>
+  <correspondences xsi:type="ImplementationTransformator:XDeviceToDevice">
+    <source href="bwd.trg.xmi#//@elements.6"/>
+    <target href="bwd.src.xmi#//@devices.4"/>
+  </correspondences>
+  <correspondences xsi:type="ImplementationTransformator:XCableToCable">
+    <source href="bwd.trg.xmi#//@elements.7"/>
+    <target href="bwd.src.xmi#//@cables.1"/>
+  </correspondences>
+  <correspondences xsi:type="ImplementationTransformator:XDeviceToDevice">
+    <source href="bwd.trg.xmi#//@elements.8"/>
+    <target href="bwd.src.xmi#//@devices.0"/>
+  </correspondences>
+  <correspondences xsi:type="ImplementationTransformator:XDeviceToDevice">
+    <source href="bwd.trg.xmi#//@elements.9"/>
+    <target href="bwd.src.xmi#//@devices.5"/>
+  </correspondences>
+  <source href="bwd.trg.xmi#/"/>
+  <target href="bwd.src.xmi#/"/>
+</org.moflon.tgg.runtime:CorrespondenceModel>

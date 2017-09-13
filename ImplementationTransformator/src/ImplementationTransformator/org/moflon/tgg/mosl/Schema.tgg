@@ -1,0 +1,35 @@
+#import "platform:/plugin/mbse_metamodels/model/implementation.ecore"
+#import "platform:/plugin/xtextImplementation/model/generated/XtextImpl.ecore"
+
+#schema ImplementationTransformator
+	
+#source {
+	xtextImpl
+}
+
+#target { 
+	implementation
+} 
+
+#correspondence {
+	
+	XContainerToContainer{
+		#src->XContainer
+		#trg->Container
+	}
+	
+	XDeviceToDevice {
+		#src->XDevice
+		#trg->Device
+	}
+	
+	XCableToCable {
+		#src->XCable
+		#trg->Cable
+	}
+		
+}
+
+#attributeConditions {
+	
+}

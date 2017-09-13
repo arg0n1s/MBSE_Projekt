@@ -1,0 +1,96 @@
+#using ImplementationTransformator.*
+#using AttrCondDefLibrary.*
+
+#rule XDuplexConnectionToConnectionRule #with ImplementationTransformator
+
+#source { 
+	
+	xContainer : XContainer {
+		-elements->xDevice1
+		-elements->xDevice2
+	 	-elements->xCable 	
+	} 
+	
+	xDevice1 : XDevice {
+		-connections->connection1
+	}
+	
+	xDevice2 : XDevice {
+		-connections->connection2
+	}
+	
+	connection1 : Connections {
+		++ -outgoing->xCable
+	}
+	
+	connection2 : Connections {
+		++ -incoming->xCable
+	}
+	
+	 xCable : XCable {
+		-cableAttributes->cableAttributes
+	}
+	
+	 cableAttributes : CableAttributes {
+	 	isDuplex := true
+	 	++ -endPoint1->xDevice1
+	 	++ -endPoint2->xDevice2
+	 }
+
+}
+
+#target {
+	
+	container : Container {
+		-devices->device1
+		-devices->device2
+		-cables->cable1
+		-cables->cable2
+	}
+	
+	cable1 : Cable {
+		++ -source->device1
+		++ -target->device2
+	}
+	
+	cable2 : Cable {
+		++ -source->device2
+		++ -target->device1
+	}
+	
+	device1 : implementation.Device
+	
+	device2 : implementation.Device
+	
+}
+
+#correspondence {
+	
+	xDeviceToDevice : XDeviceToDevice {
+		#src->xDevice1
+		#trg->device1
+	}
+	
+	xDeviceToDevice2 : XDeviceToDevice {
+		#src->xDevice2
+		#trg->device2
+	}
+	
+	xCableToCable1 : XCableToCable {
+		#src->xCable
+		#trg->cable1
+	}
+	
+	xCableToCable2 : XCableToCable {
+		#src->xCable
+		#trg->cable2
+	}
+	
+}
+
+#attributeConditions {
+	
+	eq(cableAttributes.speed, cable1.speed)
+	eq(cableAttributes.speed, cable2.speed)
+	
+}
