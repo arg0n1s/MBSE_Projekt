@@ -8,14 +8,6 @@
   <foreignModel>RequirementsTransformator.ecore</foreignModel>
   <genPackages prefix="RequirementsTransformator" disposableProviderFactory="true"
       ecorePackage="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#/">
-    <genClasses ecoreClass="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//XConsumerToConsumer">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//XConsumerToConsumer/source"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//XConsumerToConsumer/target"/>
-    </genClasses>
-    <genClasses ecoreClass="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//XAgentToAgent">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//XAgentToAgent/source"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//XAgentToAgent/target"/>
-    </genClasses>
     <genClasses ecoreClass="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//XContainerToContainer">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//XContainerToContainer/source"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//XContainerToContainer/target"/>
@@ -24,133 +16,15 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//XProviderToProvider/source"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//XProviderToProvider/target"/>
     </genClasses>
+    <genClasses ecoreClass="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//XConsumerToConsumer">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//XConsumerToConsumer/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//XConsumerToConsumer/target"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//XAgentToAgent">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//XAgentToAgent/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//XAgentToAgent/target"/>
+    </genClasses>
     <nestedGenPackages prefix="Rules" disposableProviderFactory="true" ecorePackage="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules">
-      <genClasses ecoreClass="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule">
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_FWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_FWD/match"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_FWD/xContainer"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/perform_FWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/perform_FWD/isApplicableMatch"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_FWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_FWD/match"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjectsToMatch_FWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjectsToMatch_FWD/match"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjectsToMatch_FWD/xContainer"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_solveCsp_FWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_solveCsp_FWD/match"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_solveCsp_FWD/xContainer"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_checkCsp_FWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_checkCsp_FWD/csp"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_FWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_FWD/isApplicableMatch"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_FWD/xContainer"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_checkCsp_FWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_checkCsp_FWD/csp"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_FWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_FWD/ruleresult"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_FWD/xContainerToContainer"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_FWD/virtualNode"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_FWD/container"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_FWD/xContainer"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkTypes_FWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkTypes_FWD/match"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_BWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_BWD/match"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_BWD/virtualNode"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_BWD/container"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/perform_BWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/perform_BWD/isApplicableMatch"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_BWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_BWD/match"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjectsToMatch_BWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjectsToMatch_BWD/match"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjectsToMatch_BWD/virtualNode"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjectsToMatch_BWD/container"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_solveCsp_BWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_solveCsp_BWD/match"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_solveCsp_BWD/virtualNode"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_solveCsp_BWD/container"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_checkCsp_BWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_checkCsp_BWD/csp"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_BWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_BWD/isApplicableMatch"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_BWD/virtualNode"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_BWD/container"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_checkCsp_BWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_checkCsp_BWD/csp"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_BWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_BWD/ruleresult"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_BWD/xContainerToContainer"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_BWD/virtualNode"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_BWD/container"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_BWD/xContainer"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkTypes_BWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkTypes_BWD/match"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_FWD_XContainer_3">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_FWD_XContainer_3/xContainer"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_BWD_EMoflonEdge_21">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_BWD_EMoflonEdge_21/_edge_networkSpan"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkAttributes_FWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkAttributes_FWD/__tripleMatch"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkAttributes_BWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkAttributes_BWD/__tripleMatch"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_CC">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_CC/sourceMatch"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_CC/targetMatch"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_CC">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_CC/virtualNode"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_CC/container"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_CC/xContainer"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_CC/sourceMatch"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_CC/targetMatch"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_checkCsp_CC">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_checkCsp_CC/csp"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkDEC_FWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkDEC_FWD/xContainer"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkDEC_BWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkDEC_BWD/virtualNode"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkDEC_BWD/container"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/generateModel">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/generateModel/ruleEntryContainer"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/generateModel_solveCsp_BWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/generateModel_solveCsp_BWD/isApplicableMatch"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/generateModel_solveCsp_BWD/ruleResult"/>
-        </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/generateModel_checkCsp_BWD">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/generateModel_checkCsp_BWD/csp"/>
-        </genOperations>
-      </genClasses>
-      <genClasses ecoreClass="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XAgentToAgentRule"/>
       <genClasses ecoreClass="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule">
         <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isAppropriate_FWD">
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isAppropriate_FWD/match"/>
@@ -188,8 +62,8 @@
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/registerObjects_FWD">
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/registerObjects_FWD/ruleresult"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/registerObjects_FWD/xAgentToAgent"/>
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/registerObjects_FWD/container"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/registerObjects_FWD/xAgentToAgent"/>
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/registerObjects_FWD/agent"/>
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/registerObjects_FWD/xAgent"/>
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/registerObjects_FWD/xContainerToContainer"/>
@@ -234,8 +108,8 @@
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/registerObjects_BWD">
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/registerObjects_BWD/ruleresult"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/registerObjects_BWD/xAgentToAgent"/>
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/registerObjects_BWD/container"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/registerObjects_BWD/xAgentToAgent"/>
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/registerObjects_BWD/agent"/>
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/registerObjects_BWD/xAgent"/>
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/registerObjects_BWD/xContainerToContainer"/>
@@ -244,11 +118,11 @@
         <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/checkTypes_BWD">
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/checkTypes_BWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isAppropriate_BWD_EMoflonEdge_22">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isAppropriate_BWD_EMoflonEdge_22/_edge_agents"/>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isAppropriate_BWD_EMoflonEdge_6">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isAppropriate_BWD_EMoflonEdge_6/_edge_agents"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isAppropriate_FWD_EMoflonEdge_20">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isAppropriate_FWD_EMoflonEdge_20/_edge_agents"/>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isAppropriate_FWD_EMoflonEdge_3">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isAppropriate_FWD_EMoflonEdge_3/_edge_agents"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/checkAttributes_FWD">
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/checkAttributes_FWD/__tripleMatch"/>
@@ -294,6 +168,132 @@
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/generateModel_checkCsp_BWD/csp"/>
         </genOperations>
       </genClasses>
+      <genClasses ecoreClass="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XAgentToAgentRule"/>
+      <genClasses ecoreClass="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule">
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_FWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_FWD/xContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/perform_FWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/perform_FWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_FWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjectsToMatch_FWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjectsToMatch_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjectsToMatch_FWD/xContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_solveCsp_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_solveCsp_FWD/xContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_FWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_FWD/xContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_checkCsp_FWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_FWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_FWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_FWD/xContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_FWD/xContainerToContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_FWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_FWD/container"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkTypes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkTypes_FWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_BWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_BWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_BWD/container"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/perform_BWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/perform_BWD/isApplicableMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_BWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjectsToMatch_BWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjectsToMatch_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjectsToMatch_BWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjectsToMatch_BWD/container"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_solveCsp_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_solveCsp_BWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_solveCsp_BWD/container"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_BWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_BWD/container"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_BWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_BWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_BWD/xContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_BWD/xContainerToContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_BWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/registerObjects_BWD/container"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkTypes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkTypes_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_FWD_XContainer_0">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_FWD_XContainer_0/xContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_BWD_EMoflonEdge_7">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_BWD_EMoflonEdge_7/_edge_networkSpan"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkAttributes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkAttributes_FWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkAttributes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkAttributes_BWD/__tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_CC">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_CC/xContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_CC/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_CC/container"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_CC/sourceMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_solveCsp_CC/targetMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_checkCsp_CC">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isApplicable_checkCsp_CC/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkDEC_FWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkDEC_FWD/xContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkDEC_BWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkDEC_BWD/virtualNode"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkDEC_BWD/container"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/generateModel">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/generateModel/ruleEntryContainer"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/generateModel_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/generateModel_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/generateModel_solveCsp_BWD/ruleResult"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/generateModel_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/generateModel_checkCsp_BWD/csp"/>
+        </genOperations>
+      </genClasses>
       <genClasses ecoreClass="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule">
         <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isAppropriate_FWD">
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isAppropriate_FWD/match"/>
@@ -331,8 +331,8 @@
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/registerObjects_FWD">
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/registerObjects_FWD/ruleresult"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/registerObjects_FWD/xAgentToAgent"/>
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/registerObjects_FWD/container"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/registerObjects_FWD/xAgentToAgent"/>
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/registerObjects_FWD/agent"/>
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/registerObjects_FWD/xAgent"/>
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/registerObjects_FWD/xContainerToContainer"/>
@@ -377,8 +377,8 @@
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/registerObjects_BWD">
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/registerObjects_BWD/ruleresult"/>
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/registerObjects_BWD/xAgentToAgent"/>
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/registerObjects_BWD/container"/>
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/registerObjects_BWD/xAgentToAgent"/>
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/registerObjects_BWD/agent"/>
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/registerObjects_BWD/xAgent"/>
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/registerObjects_BWD/xContainerToContainer"/>
@@ -387,11 +387,11 @@
         <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/checkTypes_BWD">
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/checkTypes_BWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isAppropriate_BWD_EMoflonEdge_23">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isAppropriate_BWD_EMoflonEdge_23/_edge_agents"/>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isAppropriate_BWD_EMoflonEdge_8">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isAppropriate_BWD_EMoflonEdge_8/_edge_agents"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isAppropriate_FWD_EMoflonEdge_21">
-          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isAppropriate_FWD_EMoflonEdge_21/_edge_agents"/>
+        <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isAppropriate_FWD_EMoflonEdge_4">
+          <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isAppropriate_FWD_EMoflonEdge_4/_edge_agents"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/checkAttributes_FWD">
           <genParameters ecoreParameter="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/checkAttributes_FWD/__tripleMatch"/>

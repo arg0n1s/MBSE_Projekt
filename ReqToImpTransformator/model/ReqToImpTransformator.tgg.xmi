@@ -3,392 +3,412 @@
   <domain name="Target" metamodel="//@metamodel.2" type="TARGET"/>
   <domain name="Correspondence" metamodel="//@metamodel.1"/>
   <domain name="Source" metamodel="//@metamodel.0" type="SOURCE"/>
-  <tggRule name="VirtualNodeToRouterRule1" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="implContainer" incomingLink="//@tggRule.0/@linkVariable.0" outgoingLink="//@tggRule.0/@linkVariable.4" domain="//@domain.0">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainerToImplContainer" outgoingLink="//@tggRule.0/@linkVariable.0 //@tggRule.0/@linkVariable.2" domain="//@domain.1">
-      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNode" incomingLink="//@tggRule.0/@linkVariable.3 //@tggRule.0/@linkVariable.1" domain="//@domain.2">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//NetworkSpan"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNodeToRouter" outgoingLink="//@tggRule.0/@linkVariable.3 //@tggRule.0/@linkVariable.5" bindingOperator="CREATE" domain="//@domain.1">
-      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToRouter"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainer" incomingLink="//@tggRule.0/@linkVariable.2" outgoingLink="//@tggRule.0/@linkVariable.1" domain="//@domain.2">
+  <tggRule name="ImplGlassIgnoreRule" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainer" incomingLink="//@tggRule.0/@linkVariable.1" domain="//@domain.2">
       <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container"/>
     </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="router" incomingLink="//@tggRule.0/@linkVariable.5 //@tggRule.0/@linkVariable.4" bindingOperator="CREATE" domain="//@domain.0">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Router"/>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="cable" incomingLink="//@tggRule.0/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//GlassFiberCable"/>
     </objectVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.0/@objectVariable.0" source="//@tggRule.0/@objectVariable.1" domain="//@domain.1"/>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="networkSpan" target="//@tggRule.0/@objectVariable.2" source="//@tggRule.0/@objectVariable.4" domain="//@domain.2">
-      <type href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container/networkSpan"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.0/@objectVariable.4" source="//@tggRule.0/@objectVariable.1" domain="//@domain.1"/>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.0/@objectVariable.2" source="//@tggRule.0/@objectVariable.3" bindingOperator="CREATE" domain="//@domain.1"/>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="devices" target="//@tggRule.0/@objectVariable.5" source="//@tggRule.0/@objectVariable.0" bindingOperator="CREATE" domain="//@domain.0">
-      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/devices"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.0/@objectVariable.5" source="//@tggRule.0/@objectVariable.3" bindingOperator="CREATE" domain="//@domain.1"/>
-    <csp/>
-  </tggRule>
-  <tggRule name="ImplCopperIgnoreRule" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainer" incomingLink="//@tggRule.1/@linkVariable.1" domain="//@domain.2">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="cable" incomingLink="//@tggRule.1/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.0">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//CopperCable"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="implContainer" incomingLink="//@tggRule.1/@linkVariable.2" outgoingLink="//@tggRule.1/@linkVariable.0" domain="//@domain.0">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="implContainer" incomingLink="//@tggRule.0/@linkVariable.2" outgoingLink="//@tggRule.0/@linkVariable.0" domain="//@domain.0">
       <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container"/>
     </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainerToImplContainer" outgoingLink="//@tggRule.1/@linkVariable.2 //@tggRule.1/@linkVariable.1" domain="//@domain.1">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainerToImplContainer" outgoingLink="//@tggRule.0/@linkVariable.1 //@tggRule.0/@linkVariable.2" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer"/>
     </objectVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="cables" target="//@tggRule.1/@objectVariable.1" source="//@tggRule.1/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.0">
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="cables" target="//@tggRule.0/@objectVariable.1" source="//@tggRule.0/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.0">
       <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/cables"/>
     </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.1/@objectVariable.0" source="//@tggRule.1/@objectVariable.3" domain="//@domain.1"/>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.1/@objectVariable.2" source="//@tggRule.1/@objectVariable.3" domain="//@domain.1"/>
-    <csp/>
-  </tggRule>
-  <tggRule name="ReqProviderToServerRule" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNodeToServer" outgoingLink="//@tggRule.2/@linkVariable.4 //@tggRule.2/@linkVariable.6" domain="//@domain.1">
-      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToServer"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqAgentToImplDevice" outgoingLink="//@tggRule.2/@linkVariable.1 //@tggRule.2/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.1">
-      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqAgentToImplDevice"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="implDevice" incomingLink="//@tggRule.2/@linkVariable.1 //@tggRule.2/@linkVariable.4 //@tggRule.2/@linkVariable.9" domain="//@domain.0">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Server"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqAgent" incomingLink="//@tggRule.2/@linkVariable.0 //@tggRule.2/@linkVariable.5" bindingOperator="CREATE" domain="//@domain.2">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Provider"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainer" incomingLink="//@tggRule.2/@linkVariable.7" outgoingLink="//@tggRule.2/@linkVariable.3 //@tggRule.2/@linkVariable.5" domain="//@domain.2">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNode" incomingLink="//@tggRule.2/@linkVariable.3 //@tggRule.2/@linkVariable.6" domain="//@domain.2">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//NetworkSpan"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="cable" incomingLink="//@tggRule.2/@linkVariable.2" domain="//@domain.0">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Cable"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainerToImplContainer" outgoingLink="//@tggRule.2/@linkVariable.8 //@tggRule.2/@linkVariable.7" domain="//@domain.1">
-      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="implContainer" incomingLink="//@tggRule.2/@linkVariable.8" outgoingLink="//@tggRule.2/@linkVariable.9 //@tggRule.2/@linkVariable.2" domain="//@domain.0">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container"/>
-    </objectVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.2/@objectVariable.3" source="//@tggRule.2/@objectVariable.1" bindingOperator="CREATE" domain="//@domain.1"/>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.2/@objectVariable.2" source="//@tggRule.2/@objectVariable.1" bindingOperator="CREATE" domain="//@domain.1"/>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="cables" target="//@tggRule.2/@objectVariable.6" source="//@tggRule.2/@objectVariable.8" domain="//@domain.0">
-      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/cables"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="networkSpan" target="//@tggRule.2/@objectVariable.5" source="//@tggRule.2/@objectVariable.4" domain="//@domain.2">
-      <type href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container/networkSpan"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.2/@objectVariable.2" source="//@tggRule.2/@objectVariable.0" domain="//@domain.1">
-      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToServer/target"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="agents" target="//@tggRule.2/@objectVariable.3" source="//@tggRule.2/@objectVariable.4" bindingOperator="CREATE" domain="//@domain.2">
-      <type href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container/agents"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.2/@objectVariable.5" source="//@tggRule.2/@objectVariable.0" domain="//@domain.1">
-      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToServer/source"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.2/@objectVariable.4" source="//@tggRule.2/@objectVariable.7" domain="//@domain.1">
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.0/@objectVariable.0" source="//@tggRule.0/@objectVariable.3" domain="//@domain.1">
       <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer/source"/>
     </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.2/@objectVariable.8" source="//@tggRule.2/@objectVariable.7" domain="//@domain.1">
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.0/@objectVariable.2" source="//@tggRule.0/@objectVariable.3" domain="//@domain.1">
       <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer/target"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="devices" target="//@tggRule.2/@objectVariable.2" source="//@tggRule.2/@objectVariable.8" domain="//@domain.0">
-      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/devices"/>
-    </linkVariable>
-    <csp/>
-  </tggRule>
-  <tggRule name="VirtualNodeToServerRule" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainerToImplContainer" outgoingLink="//@tggRule.3/@linkVariable.3 //@tggRule.3/@linkVariable.8" domain="//@domain.1">
-      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNode" incomingLink="//@tggRule.3/@linkVariable.0 //@tggRule.3/@linkVariable.5 //@tggRule.3/@linkVariable.10" domain="//@domain.2">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//NetworkSpan"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="implContainer" incomingLink="//@tggRule.3/@linkVariable.3" outgoingLink="//@tggRule.3/@linkVariable.4 //@tggRule.3/@linkVariable.7 //@tggRule.3/@linkVariable.11" domain="//@domain.0">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNodeToRouter" outgoingLink="//@tggRule.3/@linkVariable.0 //@tggRule.3/@linkVariable.2" domain="//@domain.1">
-      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToRouter"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="cable" incomingLink="//@tggRule.3/@linkVariable.1 //@tggRule.3/@linkVariable.6 //@tggRule.3/@linkVariable.7" domain="//@domain.0">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Cable"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="server" incomingLink="//@tggRule.3/@linkVariable.4 //@tggRule.3/@linkVariable.9" outgoingLink="//@tggRule.3/@linkVariable.6" bindingOperator="CREATE" domain="//@domain.0">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Server"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="router" incomingLink="//@tggRule.3/@linkVariable.2 //@tggRule.3/@linkVariable.11" outgoingLink="//@tggRule.3/@linkVariable.1" domain="//@domain.0">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Router"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainer" incomingLink="//@tggRule.3/@linkVariable.8" outgoingLink="//@tggRule.3/@linkVariable.5" domain="//@domain.2">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNodeToServer" outgoingLink="//@tggRule.3/@linkVariable.9 //@tggRule.3/@linkVariable.10" bindingOperator="CREATE" domain="//@domain.1">
-      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToServer"/>
-    </objectVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.3/@objectVariable.1" source="//@tggRule.3/@objectVariable.3" domain="//@domain.1"/>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="incoming" target="//@tggRule.3/@objectVariable.4" source="//@tggRule.3/@objectVariable.6" bindingOperator="CREATE" domain="//@domain.0">
-      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Device/incoming"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.3/@objectVariable.6" source="//@tggRule.3/@objectVariable.3" domain="//@domain.1"/>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.3/@objectVariable.2" source="//@tggRule.3/@objectVariable.0" domain="//@domain.1"/>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="devices" target="//@tggRule.3/@objectVariable.5" source="//@tggRule.3/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.0">
-      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/devices"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="networkSpan" target="//@tggRule.3/@objectVariable.1" source="//@tggRule.3/@objectVariable.7" domain="//@domain.2">
-      <type href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container/networkSpan"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="outgoing" target="//@tggRule.3/@objectVariable.4" source="//@tggRule.3/@objectVariable.5" bindingOperator="CREATE" domain="//@domain.0">
-      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Device/outgoing"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="cables" target="//@tggRule.3/@objectVariable.4" source="//@tggRule.3/@objectVariable.2" domain="//@domain.0">
-      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/cables"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.3/@objectVariable.7" source="//@tggRule.3/@objectVariable.0" domain="//@domain.1"/>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.3/@objectVariable.5" source="//@tggRule.3/@objectVariable.8" bindingOperator="CREATE" domain="//@domain.1">
-      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToServer/target"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.3/@objectVariable.1" source="//@tggRule.3/@objectVariable.8" bindingOperator="CREATE" domain="//@domain.1">
-      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToServer/source"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="devices" target="//@tggRule.3/@objectVariable.6" source="//@tggRule.3/@objectVariable.2" domain="//@domain.0">
-      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/devices"/>
     </linkVariable>
     <csp/>
   </tggRule>
   <tggRule name="VirtualNodeToComputerRule" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="router" incomingLink="//@tggRule.4/@linkVariable.4 //@tggRule.4/@linkVariable.6" outgoingLink="//@tggRule.4/@linkVariable.0" domain="//@domain.0">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Router"/>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNode" incomingLink="//@tggRule.1/@linkVariable.7 //@tggRule.1/@linkVariable.8 //@tggRule.1/@linkVariable.11" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//NetworkSpan"/>
     </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="computer" incomingLink="//@tggRule.4/@linkVariable.3 //@tggRule.4/@linkVariable.9" outgoingLink="//@tggRule.4/@linkVariable.1" bindingOperator="CREATE" domain="//@domain.0">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Computer"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="implContainer" incomingLink="//@tggRule.4/@linkVariable.11" outgoingLink="//@tggRule.4/@linkVariable.2 //@tggRule.4/@linkVariable.4 //@tggRule.4/@linkVariable.9" domain="//@domain.0">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="cable" incomingLink="//@tggRule.4/@linkVariable.1 //@tggRule.4/@linkVariable.0 //@tggRule.4/@linkVariable.2" domain="//@domain.0">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="cable" incomingLink="//@tggRule.1/@linkVariable.4 //@tggRule.1/@linkVariable.5 //@tggRule.1/@linkVariable.1" domain="//@domain.0">
       <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Cable"/>
     </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNodeToComputer" outgoingLink="//@tggRule.4/@linkVariable.3 //@tggRule.4/@linkVariable.8" bindingOperator="CREATE" domain="//@domain.1">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="router" incomingLink="//@tggRule.1/@linkVariable.6 //@tggRule.1/@linkVariable.0" outgoingLink="//@tggRule.1/@linkVariable.4" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Router"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="implContainer" incomingLink="//@tggRule.1/@linkVariable.9" outgoingLink="//@tggRule.1/@linkVariable.0 //@tggRule.1/@linkVariable.1 //@tggRule.1/@linkVariable.3" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNodeToComputer" outgoingLink="//@tggRule.1/@linkVariable.2 //@tggRule.1/@linkVariable.8" bindingOperator="CREATE" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToComputer"/>
     </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainer" incomingLink="//@tggRule.4/@linkVariable.10" outgoingLink="//@tggRule.4/@linkVariable.5" domain="//@domain.2">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container"/>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="computer" incomingLink="//@tggRule.1/@linkVariable.2 //@tggRule.1/@linkVariable.3" outgoingLink="//@tggRule.1/@linkVariable.5" bindingOperator="CREATE" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Computer"/>
     </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNodeToRouter" outgoingLink="//@tggRule.4/@linkVariable.6 //@tggRule.4/@linkVariable.7" domain="//@domain.1">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNodeToRouter" outgoingLink="//@tggRule.1/@linkVariable.6 //@tggRule.1/@linkVariable.7" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToRouter"/>
     </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNode" incomingLink="//@tggRule.4/@linkVariable.7 //@tggRule.4/@linkVariable.8 //@tggRule.4/@linkVariable.5" domain="//@domain.2">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//NetworkSpan"/>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainer" incomingLink="//@tggRule.1/@linkVariable.10" outgoingLink="//@tggRule.1/@linkVariable.11" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container"/>
     </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainerToImplContainer" outgoingLink="//@tggRule.4/@linkVariable.10 //@tggRule.4/@linkVariable.11" domain="//@domain.1">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainerToImplContainer" outgoingLink="//@tggRule.1/@linkVariable.9 //@tggRule.1/@linkVariable.10" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer"/>
     </objectVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="outgoing" target="//@tggRule.4/@objectVariable.3" source="//@tggRule.4/@objectVariable.0" bindingOperator="CREATE" domain="//@domain.0">
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="devices" target="//@tggRule.1/@objectVariable.2" source="//@tggRule.1/@objectVariable.3" domain="//@domain.0">
+      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/devices"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="cables" target="//@tggRule.1/@objectVariable.1" source="//@tggRule.1/@objectVariable.3" domain="//@domain.0">
+      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/cables"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.1/@objectVariable.5" source="//@tggRule.1/@objectVariable.4" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToComputer/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="devices" target="//@tggRule.1/@objectVariable.5" source="//@tggRule.1/@objectVariable.3" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/devices"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="outgoing" target="//@tggRule.1/@objectVariable.1" source="//@tggRule.1/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.0">
       <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Device/outgoing"/>
     </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="incoming" target="//@tggRule.4/@objectVariable.3" source="//@tggRule.4/@objectVariable.1" bindingOperator="CREATE" domain="//@domain.0">
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="incoming" target="//@tggRule.1/@objectVariable.1" source="//@tggRule.1/@objectVariable.5" bindingOperator="CREATE" domain="//@domain.0">
       <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Device/incoming"/>
     </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="cables" target="//@tggRule.4/@objectVariable.3" source="//@tggRule.4/@objectVariable.2" domain="//@domain.0">
-      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/cables"/>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.1/@objectVariable.2" source="//@tggRule.1/@objectVariable.6" domain="//@domain.1"/>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.1/@objectVariable.0" source="//@tggRule.1/@objectVariable.6" domain="//@domain.1"/>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.1/@objectVariable.0" source="//@tggRule.1/@objectVariable.4" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToComputer/source"/>
     </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.4/@objectVariable.1" source="//@tggRule.4/@objectVariable.4" bindingOperator="CREATE" domain="//@domain.1"/>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="devices" target="//@tggRule.4/@objectVariable.0" source="//@tggRule.4/@objectVariable.2" domain="//@domain.0">
-      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/devices"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="networkSpan" target="//@tggRule.4/@objectVariable.7" source="//@tggRule.4/@objectVariable.5" domain="//@domain.2">
-      <type href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container/networkSpan"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.4/@objectVariable.0" source="//@tggRule.4/@objectVariable.6" domain="//@domain.1">
-      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToRouter/target"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.4/@objectVariable.7" source="//@tggRule.4/@objectVariable.6" domain="//@domain.1">
-      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToRouter/source"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.4/@objectVariable.7" source="//@tggRule.4/@objectVariable.4" bindingOperator="CREATE" domain="//@domain.1"/>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="devices" target="//@tggRule.4/@objectVariable.1" source="//@tggRule.4/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.0">
-      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/devices"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.4/@objectVariable.5" source="//@tggRule.4/@objectVariable.8" domain="//@domain.1">
-      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer/source"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.4/@objectVariable.2" source="//@tggRule.4/@objectVariable.8" domain="//@domain.1">
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.1/@objectVariable.3" source="//@tggRule.1/@objectVariable.8" domain="//@domain.1">
       <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer/target"/>
     </linkVariable>
-    <csp/>
-  </tggRule>
-  <tggRule name="ImplGlassIgnoreRule" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainer" incomingLink="//@tggRule.5/@linkVariable.1" domain="//@domain.2">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="cable" incomingLink="//@tggRule.5/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.0">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//GlassFiberCable"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="implContainer" incomingLink="//@tggRule.5/@linkVariable.2" outgoingLink="//@tggRule.5/@linkVariable.0" domain="//@domain.0">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainerToImplContainer" outgoingLink="//@tggRule.5/@linkVariable.2 //@tggRule.5/@linkVariable.1" domain="//@domain.1">
-      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer"/>
-    </objectVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="cables" target="//@tggRule.5/@objectVariable.1" source="//@tggRule.5/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.0">
-      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/cables"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.5/@objectVariable.0" source="//@tggRule.5/@objectVariable.3" domain="//@domain.1"/>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.5/@objectVariable.2" source="//@tggRule.5/@objectVariable.3" domain="//@domain.1"/>
-    <csp/>
-  </tggRule>
-  <tggRule name="ReqContainerToImplContainerRule" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainer" incomingLink="//@tggRule.6/@linkVariable.1" outgoingLink="//@tggRule.6/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.2">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNode" incomingLink="//@tggRule.6/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.2">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//NetworkSpan"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainerToImplContainer" outgoingLink="//@tggRule.6/@linkVariable.1 //@tggRule.6/@linkVariable.2" bindingOperator="CREATE" domain="//@domain.1">
-      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="implContainer" incomingLink="//@tggRule.6/@linkVariable.2" bindingOperator="CREATE" domain="//@domain.0">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container"/>
-    </objectVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="networkSpan" target="//@tggRule.6/@objectVariable.1" source="//@tggRule.6/@objectVariable.0" bindingOperator="CREATE" domain="//@domain.2">
-      <type href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container/networkSpan"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.6/@objectVariable.0" source="//@tggRule.6/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.1">
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.1/@objectVariable.7" source="//@tggRule.1/@objectVariable.8" domain="//@domain.1">
       <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer/source"/>
     </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.6/@objectVariable.3" source="//@tggRule.6/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.1">
-      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer/target"/>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="networkSpan" target="//@tggRule.1/@objectVariable.0" source="//@tggRule.1/@objectVariable.7" domain="//@domain.2">
+      <type href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container/networkSpan"/>
     </linkVariable>
     <csp/>
   </tggRule>
-  <tggRule name="VirtualNodeToRouterRule2" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNode" incomingLink="//@tggRule.7/@linkVariable.6 //@tggRule.7/@linkVariable.8 //@tggRule.7/@linkVariable.7" domain="//@domain.2">
+  <tggRule name="VirtualNodeToServerRule" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="implContainer" incomingLink="//@tggRule.2/@linkVariable.6" outgoingLink="//@tggRule.2/@linkVariable.0 //@tggRule.2/@linkVariable.1 //@tggRule.2/@linkVariable.3" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNode" incomingLink="//@tggRule.2/@linkVariable.9 //@tggRule.2/@linkVariable.11 //@tggRule.2/@linkVariable.2" domain="//@domain.2">
       <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//NetworkSpan"/>
     </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainerToImplContainer" outgoingLink="//@tggRule.7/@linkVariable.4 //@tggRule.7/@linkVariable.10" domain="//@domain.1">
-      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer"/>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="router" incomingLink="//@tggRule.2/@linkVariable.3 //@tggRule.2/@linkVariable.8" outgoingLink="//@tggRule.2/@linkVariable.5" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Router"/>
     </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNodeToRouter" outgoingLink="//@tggRule.7/@linkVariable.2 //@tggRule.7/@linkVariable.6" bindingOperator="CREATE" domain="//@domain.1">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainer" incomingLink="//@tggRule.2/@linkVariable.7" outgoingLink="//@tggRule.2/@linkVariable.2" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNodeToRouter" outgoingLink="//@tggRule.2/@linkVariable.8 //@tggRule.2/@linkVariable.9" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToRouter"/>
     </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="implContainer" incomingLink="//@tggRule.7/@linkVariable.4" outgoingLink="//@tggRule.7/@linkVariable.0 //@tggRule.7/@linkVariable.1 //@tggRule.7/@linkVariable.9" domain="//@domain.0">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container"/>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="server" incomingLink="//@tggRule.2/@linkVariable.1 //@tggRule.2/@linkVariable.10" outgoingLink="//@tggRule.2/@linkVariable.4" bindingOperator="CREATE" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Server"/>
     </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="router2" incomingLink="//@tggRule.7/@linkVariable.2 //@tggRule.7/@linkVariable.0" outgoingLink="//@tggRule.7/@linkVariable.3" bindingOperator="CREATE" domain="//@domain.0">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Router"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="router" incomingLink="//@tggRule.7/@linkVariable.9 //@tggRule.7/@linkVariable.11" outgoingLink="//@tggRule.7/@linkVariable.5" domain="//@domain.0">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Router"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="cable" incomingLink="//@tggRule.7/@linkVariable.3 //@tggRule.7/@linkVariable.1 //@tggRule.7/@linkVariable.5" domain="//@domain.0">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="cable" incomingLink="//@tggRule.2/@linkVariable.4 //@tggRule.2/@linkVariable.5 //@tggRule.2/@linkVariable.0" domain="//@domain.0">
       <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Cable"/>
     </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNodeToRouter1" outgoingLink="//@tggRule.7/@linkVariable.8 //@tggRule.7/@linkVariable.11" domain="//@domain.1">
-      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToRouter"/>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainerToImplContainer" outgoingLink="//@tggRule.2/@linkVariable.6 //@tggRule.2/@linkVariable.7" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer"/>
     </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainer" incomingLink="//@tggRule.7/@linkVariable.10" outgoingLink="//@tggRule.7/@linkVariable.7" domain="//@domain.2">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container"/>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNodeToServer" outgoingLink="//@tggRule.2/@linkVariable.10 //@tggRule.2/@linkVariable.11" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToServer"/>
     </objectVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="devices" target="//@tggRule.7/@objectVariable.4" source="//@tggRule.7/@objectVariable.3" bindingOperator="CREATE" domain="//@domain.0">
-      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/devices"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="cables" target="//@tggRule.7/@objectVariable.6" source="//@tggRule.7/@objectVariable.3" domain="//@domain.0">
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="cables" target="//@tggRule.2/@objectVariable.6" source="//@tggRule.2/@objectVariable.0" domain="//@domain.0">
       <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/cables"/>
     </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.7/@objectVariable.4" source="//@tggRule.7/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.1"/>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="incoming" target="//@tggRule.7/@objectVariable.6" source="//@tggRule.7/@objectVariable.4" bindingOperator="CREATE" domain="//@domain.0">
-      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Device/incoming"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.7/@objectVariable.3" source="//@tggRule.7/@objectVariable.1" domain="//@domain.1"/>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="outgoing" target="//@tggRule.7/@objectVariable.6" source="//@tggRule.7/@objectVariable.5" bindingOperator="CREATE" domain="//@domain.0">
-      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Device/outgoing"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.7/@objectVariable.0" source="//@tggRule.7/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.1"/>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="networkSpan" target="//@tggRule.7/@objectVariable.0" source="//@tggRule.7/@objectVariable.8" domain="//@domain.2">
-      <type href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container/networkSpan"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.7/@objectVariable.0" source="//@tggRule.7/@objectVariable.7" domain="//@domain.1">
-      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToRouter/source"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="devices" target="//@tggRule.7/@objectVariable.5" source="//@tggRule.7/@objectVariable.3" domain="//@domain.0">
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="devices" target="//@tggRule.2/@objectVariable.5" source="//@tggRule.2/@objectVariable.0" bindingOperator="CREATE" domain="//@domain.0">
       <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/devices"/>
     </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.7/@objectVariable.8" source="//@tggRule.7/@objectVariable.1" domain="//@domain.1"/>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.7/@objectVariable.5" source="//@tggRule.7/@objectVariable.7" domain="//@domain.1">
-      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToRouter/target"/>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="networkSpan" target="//@tggRule.2/@objectVariable.1" source="//@tggRule.2/@objectVariable.3" domain="//@domain.2">
+      <type href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container/networkSpan"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="devices" target="//@tggRule.2/@objectVariable.2" source="//@tggRule.2/@objectVariable.0" domain="//@domain.0">
+      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/devices"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="outgoing" target="//@tggRule.2/@objectVariable.6" source="//@tggRule.2/@objectVariable.5" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Device/outgoing"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="incoming" target="//@tggRule.2/@objectVariable.6" source="//@tggRule.2/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Device/incoming"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.2/@objectVariable.0" source="//@tggRule.2/@objectVariable.7" domain="//@domain.1">
+      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.2/@objectVariable.3" source="//@tggRule.2/@objectVariable.7" domain="//@domain.1">
+      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.2/@objectVariable.2" source="//@tggRule.2/@objectVariable.4" domain="//@domain.1"/>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.2/@objectVariable.1" source="//@tggRule.2/@objectVariable.4" domain="//@domain.1"/>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.2/@objectVariable.5" source="//@tggRule.2/@objectVariable.8" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToServer/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.2/@objectVariable.1" source="//@tggRule.2/@objectVariable.8" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToServer/source"/>
+    </linkVariable>
+    <csp/>
+  </tggRule>
+  <tggRule name="ImplCopperIgnoreRule" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainer" incomingLink="//@tggRule.3/@linkVariable.1" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="cable" incomingLink="//@tggRule.3/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//CopperCable"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="implContainer" incomingLink="//@tggRule.3/@linkVariable.2" outgoingLink="//@tggRule.3/@linkVariable.0" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainerToImplContainer" outgoingLink="//@tggRule.3/@linkVariable.1 //@tggRule.3/@linkVariable.2" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer"/>
+    </objectVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="cables" target="//@tggRule.3/@objectVariable.1" source="//@tggRule.3/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/cables"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.3/@objectVariable.0" source="//@tggRule.3/@objectVariable.3" domain="//@domain.1">
+      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.3/@objectVariable.2" source="//@tggRule.3/@objectVariable.3" domain="//@domain.1">
+      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer/target"/>
     </linkVariable>
     <csp/>
   </tggRule>
   <tggRule name="ReqConsumerToComputerRule" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqAgentToImplDevice" outgoingLink="//@tggRule.8/@linkVariable.0 //@tggRule.8/@linkVariable.2" bindingOperator="CREATE" domain="//@domain.1">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqAgentToImplDevice" outgoingLink="//@tggRule.4/@linkVariable.0 //@tggRule.4/@linkVariable.2" bindingOperator="CREATE" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqAgentToImplDevice"/>
     </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="implDevice" incomingLink="//@tggRule.8/@linkVariable.2 //@tggRule.8/@linkVariable.7 //@tggRule.8/@linkVariable.9" domain="//@domain.0">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="implDevice" incomingLink="//@tggRule.4/@linkVariable.2 //@tggRule.4/@linkVariable.7 //@tggRule.4/@linkVariable.9" domain="//@domain.0">
       <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Computer"/>
     </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqAgent" incomingLink="//@tggRule.8/@linkVariable.0 //@tggRule.8/@linkVariable.5" bindingOperator="CREATE" domain="//@domain.2">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqAgent" incomingLink="//@tggRule.4/@linkVariable.0 //@tggRule.4/@linkVariable.5" bindingOperator="CREATE" domain="//@domain.2">
       <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Consumer"/>
     </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainer" incomingLink="//@tggRule.8/@linkVariable.6" outgoingLink="//@tggRule.8/@linkVariable.5 //@tggRule.8/@linkVariable.4" domain="//@domain.2">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainer" incomingLink="//@tggRule.4/@linkVariable.6" outgoingLink="//@tggRule.4/@linkVariable.5 //@tggRule.4/@linkVariable.4" domain="//@domain.2">
       <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container"/>
     </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNode" incomingLink="//@tggRule.8/@linkVariable.4 //@tggRule.8/@linkVariable.1" domain="//@domain.2">
-      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//NetworkSpan"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNodeToComputer" outgoingLink="//@tggRule.8/@linkVariable.1 //@tggRule.8/@linkVariable.7" domain="//@domain.1">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNodeToComputer" outgoingLink="//@tggRule.4/@linkVariable.1 //@tggRule.4/@linkVariable.7" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToComputer"/>
     </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="cable" incomingLink="//@tggRule.8/@linkVariable.3" domain="//@domain.0">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNode" incomingLink="//@tggRule.4/@linkVariable.1 //@tggRule.4/@linkVariable.4" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//NetworkSpan"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="cable" incomingLink="//@tggRule.4/@linkVariable.3" domain="//@domain.0">
       <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Cable"/>
     </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainerToImplContainer" outgoingLink="//@tggRule.8/@linkVariable.8 //@tggRule.8/@linkVariable.6" domain="//@domain.1">
-      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer"/>
-    </objectVariable>
-    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="implContainer" incomingLink="//@tggRule.8/@linkVariable.8" outgoingLink="//@tggRule.8/@linkVariable.9 //@tggRule.8/@linkVariable.3" domain="//@domain.0">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="implContainer" incomingLink="//@tggRule.4/@linkVariable.8" outgoingLink="//@tggRule.4/@linkVariable.3 //@tggRule.4/@linkVariable.9" domain="//@domain.0">
       <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container"/>
     </objectVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.8/@objectVariable.2" source="//@tggRule.8/@objectVariable.0" bindingOperator="CREATE" domain="//@domain.1">
-      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqAgentToImplDevice/source"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.8/@objectVariable.4" source="//@tggRule.8/@objectVariable.5" domain="//@domain.1">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainerToImplContainer" outgoingLink="//@tggRule.4/@linkVariable.8 //@tggRule.4/@linkVariable.6" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer"/>
+    </objectVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.4/@objectVariable.2" source="//@tggRule.4/@objectVariable.0" bindingOperator="CREATE" domain="//@domain.1"/>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.4/@objectVariable.5" source="//@tggRule.4/@objectVariable.4" domain="//@domain.1">
       <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToComputer/source"/>
     </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.8/@objectVariable.1" source="//@tggRule.8/@objectVariable.0" bindingOperator="CREATE" domain="//@domain.1">
-      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqAgentToImplDevice/target"/>
-    </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="cables" target="//@tggRule.8/@objectVariable.6" source="//@tggRule.8/@objectVariable.8" domain="//@domain.0">
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.4/@objectVariable.1" source="//@tggRule.4/@objectVariable.0" bindingOperator="CREATE" domain="//@domain.1"/>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="cables" target="//@tggRule.4/@objectVariable.6" source="//@tggRule.4/@objectVariable.7" domain="//@domain.0">
       <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/cables"/>
     </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="networkSpan" target="//@tggRule.8/@objectVariable.4" source="//@tggRule.8/@objectVariable.3" domain="//@domain.2">
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="networkSpan" target="//@tggRule.4/@objectVariable.5" source="//@tggRule.4/@objectVariable.3" domain="//@domain.2">
       <type href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container/networkSpan"/>
     </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="agents" target="//@tggRule.8/@objectVariable.2" source="//@tggRule.8/@objectVariable.3" bindingOperator="CREATE" domain="//@domain.2">
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="agents" target="//@tggRule.4/@objectVariable.2" source="//@tggRule.4/@objectVariable.3" bindingOperator="CREATE" domain="//@domain.2">
       <type href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container/agents"/>
     </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.8/@objectVariable.3" source="//@tggRule.8/@objectVariable.7" domain="//@domain.1">
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.4/@objectVariable.3" source="//@tggRule.4/@objectVariable.8" domain="//@domain.1">
       <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer/source"/>
     </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.8/@objectVariable.1" source="//@tggRule.8/@objectVariable.5" domain="//@domain.1">
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.4/@objectVariable.1" source="//@tggRule.4/@objectVariable.4" domain="//@domain.1">
       <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToComputer/target"/>
     </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.8/@objectVariable.8" source="//@tggRule.8/@objectVariable.7" domain="//@domain.1">
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.4/@objectVariable.7" source="//@tggRule.4/@objectVariable.8" domain="//@domain.1">
       <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer/target"/>
     </linkVariable>
-    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="devices" target="//@tggRule.8/@objectVariable.1" source="//@tggRule.8/@objectVariable.8" domain="//@domain.0">
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="devices" target="//@tggRule.4/@objectVariable.1" source="//@tggRule.4/@objectVariable.7" domain="//@domain.0">
       <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/devices"/>
+    </linkVariable>
+    <csp/>
+  </tggRule>
+  <tggRule name="VirtualNodeToRouterRule2" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="cable" incomingLink="//@tggRule.5/@linkVariable.4 //@tggRule.5/@linkVariable.5 //@tggRule.5/@linkVariable.7" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Cable"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNode" incomingLink="//@tggRule.5/@linkVariable.1 //@tggRule.5/@linkVariable.2 //@tggRule.5/@linkVariable.11" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//NetworkSpan"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainerToImplContainer" outgoingLink="//@tggRule.5/@linkVariable.0 //@tggRule.5/@linkVariable.8" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainer" incomingLink="//@tggRule.5/@linkVariable.0" outgoingLink="//@tggRule.5/@linkVariable.1" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNodeToRouter1" outgoingLink="//@tggRule.5/@linkVariable.2 //@tggRule.5/@linkVariable.3" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToRouter"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="router" incomingLink="//@tggRule.5/@linkVariable.3 //@tggRule.5/@linkVariable.6" outgoingLink="//@tggRule.5/@linkVariable.4" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Router"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="router2" incomingLink="//@tggRule.5/@linkVariable.9 //@tggRule.5/@linkVariable.10" outgoingLink="//@tggRule.5/@linkVariable.7" bindingOperator="CREATE" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Router"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="implContainer" incomingLink="//@tggRule.5/@linkVariable.8" outgoingLink="//@tggRule.5/@linkVariable.5 //@tggRule.5/@linkVariable.6 //@tggRule.5/@linkVariable.9" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNodeToRouter" outgoingLink="//@tggRule.5/@linkVariable.10 //@tggRule.5/@linkVariable.11" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToRouter"/>
+    </objectVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.5/@objectVariable.3" source="//@tggRule.5/@objectVariable.2" domain="//@domain.1">
+      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="networkSpan" target="//@tggRule.5/@objectVariable.1" source="//@tggRule.5/@objectVariable.3" domain="//@domain.2">
+      <type href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container/networkSpan"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.5/@objectVariable.1" source="//@tggRule.5/@objectVariable.4" domain="//@domain.1"/>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.5/@objectVariable.5" source="//@tggRule.5/@objectVariable.4" domain="//@domain.1"/>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="outgoing" target="//@tggRule.5/@objectVariable.0" source="//@tggRule.5/@objectVariable.5" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Device/outgoing"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="cables" target="//@tggRule.5/@objectVariable.0" source="//@tggRule.5/@objectVariable.7" domain="//@domain.0">
+      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/cables"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="devices" target="//@tggRule.5/@objectVariable.5" source="//@tggRule.5/@objectVariable.7" domain="//@domain.0">
+      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/devices"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="incoming" target="//@tggRule.5/@objectVariable.0" source="//@tggRule.5/@objectVariable.6" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Device/incoming"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.5/@objectVariable.7" source="//@tggRule.5/@objectVariable.2" domain="//@domain.1">
+      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="devices" target="//@tggRule.5/@objectVariable.6" source="//@tggRule.5/@objectVariable.7" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/devices"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.5/@objectVariable.6" source="//@tggRule.5/@objectVariable.8" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToRouter/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.5/@objectVariable.1" source="//@tggRule.5/@objectVariable.8" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToRouter/source"/>
+    </linkVariable>
+    <csp/>
+  </tggRule>
+  <tggRule name="ReqProviderToServerRule" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNodeToServer" outgoingLink="//@tggRule.6/@linkVariable.6 //@tggRule.6/@linkVariable.4" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToServer"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqAgentToImplDevice" outgoingLink="//@tggRule.6/@linkVariable.1 //@tggRule.6/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqAgentToImplDevice"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="implDevice" incomingLink="//@tggRule.6/@linkVariable.1 //@tggRule.6/@linkVariable.4 //@tggRule.6/@linkVariable.9" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Server"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqAgent" incomingLink="//@tggRule.6/@linkVariable.5 //@tggRule.6/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Provider"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainer" incomingLink="//@tggRule.6/@linkVariable.7" outgoingLink="//@tggRule.6/@linkVariable.5 //@tggRule.6/@linkVariable.3" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNode" incomingLink="//@tggRule.6/@linkVariable.6 //@tggRule.6/@linkVariable.3" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//NetworkSpan"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="cable" incomingLink="//@tggRule.6/@linkVariable.2" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Cable"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="implContainer" incomingLink="//@tggRule.6/@linkVariable.8" outgoingLink="//@tggRule.6/@linkVariable.2 //@tggRule.6/@linkVariable.9" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainerToImplContainer" outgoingLink="//@tggRule.6/@linkVariable.8 //@tggRule.6/@linkVariable.7" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer"/>
+    </objectVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.6/@objectVariable.3" source="//@tggRule.6/@objectVariable.1" bindingOperator="CREATE" domain="//@domain.1"/>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.6/@objectVariable.2" source="//@tggRule.6/@objectVariable.1" bindingOperator="CREATE" domain="//@domain.1"/>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="cables" target="//@tggRule.6/@objectVariable.6" source="//@tggRule.6/@objectVariable.7" domain="//@domain.0">
+      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/cables"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="networkSpan" target="//@tggRule.6/@objectVariable.5" source="//@tggRule.6/@objectVariable.4" domain="//@domain.2">
+      <type href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container/networkSpan"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.6/@objectVariable.2" source="//@tggRule.6/@objectVariable.0" domain="//@domain.1">
+      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToServer/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="agents" target="//@tggRule.6/@objectVariable.3" source="//@tggRule.6/@objectVariable.4" bindingOperator="CREATE" domain="//@domain.2">
+      <type href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container/agents"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.6/@objectVariable.5" source="//@tggRule.6/@objectVariable.0" domain="//@domain.1">
+      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToServer/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.6/@objectVariable.4" source="//@tggRule.6/@objectVariable.8" domain="//@domain.1">
+      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.6/@objectVariable.7" source="//@tggRule.6/@objectVariable.8" domain="//@domain.1">
+      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="devices" target="//@tggRule.6/@objectVariable.2" source="//@tggRule.6/@objectVariable.7" domain="//@domain.0">
+      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/devices"/>
+    </linkVariable>
+    <csp/>
+  </tggRule>
+  <tggRule name="ReqContainerToImplContainerRule" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNode" incomingLink="//@tggRule.7/@linkVariable.1" bindingOperator="CREATE" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//NetworkSpan"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainerToImplContainer" outgoingLink="//@tggRule.7/@linkVariable.0 //@tggRule.7/@linkVariable.2" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainer" incomingLink="//@tggRule.7/@linkVariable.0" outgoingLink="//@tggRule.7/@linkVariable.1" bindingOperator="CREATE" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="implContainer" incomingLink="//@tggRule.7/@linkVariable.2" bindingOperator="CREATE" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container"/>
+    </objectVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.7/@objectVariable.2" source="//@tggRule.7/@objectVariable.1" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="networkSpan" target="//@tggRule.7/@objectVariable.0" source="//@tggRule.7/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.2">
+      <type href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container/networkSpan"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.7/@objectVariable.3" source="//@tggRule.7/@objectVariable.1" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer/target"/>
+    </linkVariable>
+    <csp/>
+  </tggRule>
+  <tggRule name="VirtualNodeToRouterRule1" correspondence="//@domain.1" source="//@domain.2" target="//@domain.0">
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNode" incomingLink="//@tggRule.8/@linkVariable.0 //@tggRule.8/@linkVariable.1" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//NetworkSpan"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainer" incomingLink="//@tggRule.8/@linkVariable.5" outgoingLink="//@tggRule.8/@linkVariable.0" domain="//@domain.2">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="virtualNodeToRouter" outgoingLink="//@tggRule.8/@linkVariable.1 //@tggRule.8/@linkVariable.3" bindingOperator="CREATE" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToRouter"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="implContainer" incomingLink="//@tggRule.8/@linkVariable.4" outgoingLink="//@tggRule.8/@linkVariable.2" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="router" incomingLink="//@tggRule.8/@linkVariable.3 //@tggRule.8/@linkVariable.2" bindingOperator="CREATE" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Router"/>
+    </objectVariable>
+    <objectVariable xsi:type="org.moflon.tgg.language:TGGObjectVariable" name="reqContainerToImplContainer" outgoingLink="//@tggRule.8/@linkVariable.4 //@tggRule.8/@linkVariable.5" domain="//@domain.1">
+      <type xsi:type="ecore:EClass" href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer"/>
+    </objectVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="networkSpan" target="//@tggRule.8/@objectVariable.0" source="//@tggRule.8/@objectVariable.1" domain="//@domain.2">
+      <type href="../../../plugin/mbse_metamodels/model/requirements.ecore#//Container/networkSpan"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.8/@objectVariable.0" source="//@tggRule.8/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToRouter/source"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="devices" target="//@tggRule.8/@objectVariable.4" source="//@tggRule.8/@objectVariable.3" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="../../../plugin/mbse_metamodels/model/implementation.ecore#//Container/devices"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.8/@objectVariable.4" source="//@tggRule.8/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.1">
+      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//VirtualNodeToRouter/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="target" target="//@tggRule.8/@objectVariable.3" source="//@tggRule.8/@objectVariable.5" domain="//@domain.1">
+      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer/target"/>
+    </linkVariable>
+    <linkVariable xsi:type="org.moflon.tgg.language:TGGLinkVariable" name="source" target="//@tggRule.8/@objectVariable.1" source="//@tggRule.8/@objectVariable.5" domain="//@domain.1">
+      <type href="../../../plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//ReqContainerToImplContainer/source"/>
     </linkVariable>
     <csp/>
   </tggRule>

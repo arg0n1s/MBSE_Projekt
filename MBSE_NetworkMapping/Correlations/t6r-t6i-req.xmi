@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ASCII"?>
 <req:Container xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:req="platform:/plugin/mbse_metamodels/model/requirements.ecore">
-  <agents xsi:type="req:Provider" name="p2" speed="3"/>
   <agents xsi:type="req:Consumer" name="c2" speed="2"/>
-  <agents xsi:type="req:Consumer" name="c1" speed="2"/>
   <agents xsi:type="req:Provider" name="p1" speed="3"/>
+  <agents xsi:type="req:Provider" name="p2" speed="3"/>
+  <agents xsi:type="req:Consumer" name="c1" speed="2"/>
   <networkSpan/>
 </req:Container>

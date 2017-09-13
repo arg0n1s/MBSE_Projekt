@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="ASCII"?>
 <impl:Container xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:impl="platform:/plugin/mbse_metamodels/model/implementation.ecore">
-  <devices xsi:type="impl:Router" outgoing="//@cables.1" incoming="//@cables.2" name="r3" maxSpeed="10"/>
-  <devices xsi:type="impl:Computer" incoming="//@cables.1" name="c2"/>
-  <devices xsi:type="impl:Server" outgoing="//@cables.2" name="s1" maxSlots="10" MTBF="20"/>
+  <devices xsi:type="impl:Computer" incoming="//@cables.3" name="c2"/>
+  <devices xsi:type="impl:Server" outgoing="//@cables.4" name="s1" maxSlots="10" MTBF="20"/>
+  <devices xsi:type="impl:Router" outgoing="//@cables.3" incoming="//@cables.4" name="r3" maxSpeed="10"/>
   <cables xsi:type="impl:GlassFiberCable" speed="10"/>
-  <cables xsi:type="impl:GlassFiberCable" speed="10" source="//@devices.0" target="//@devices.1"/>
+  <cables xsi:type="impl:GlassFiberCable" speed="10"/>
+  <cables xsi:type="impl:GlassFiberCable" speed="10"/>
   <cables xsi:type="impl:GlassFiberCable" speed="10" source="//@devices.2" target="//@devices.0"/>
-  <cables xsi:type="impl:GlassFiberCable" speed="10"/>
-  <cables xsi:type="impl:GlassFiberCable" speed="10"/>
+  <cables xsi:type="impl:GlassFiberCable" speed="10" source="//@devices.1" target="//@devices.2"/>
   <cables xsi:type="impl:GlassFiberCable" speed="10"/>
 </impl:Container>

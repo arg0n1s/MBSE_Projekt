@@ -1,6 +1,384 @@
 <?xml version="1.0" encoding="ASCII"?>
 <org.moflon.tgg.runtime:PrecedenceStructure xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.moflon.tgg.runtime="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore">
-  <tripleMatches children="//@tripleMatches.15" ruleName="ImplGlassIgnoreRule">
+  <tripleMatches ruleName="ReqProviderToServerRule">
+    <sourceElements href="src.xmi#//@networkSpan"/>
+    <sourceElements href="#//@tripleMatches.0/@containedEdges.0"/>
+    <sourceElements href="src.xmi#/"/>
+    <sourceElements href="src.xmi#//@agents.0"/>
+    <sourceElements href="#//@tripleMatches.0/@containedEdges.1"/>
+    <contextElements href="src.xmi#//@networkSpan"/>
+    <contextElements href="corr.xmi#//@correspondences.2"/>
+    <contextElements href="#//@tripleMatches.0/@containedEdges.0"/>
+    <contextElements href="src.xmi#/"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.1"/>
+    <contextElements href="trg.xmi#//@cables.6"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.2"/>
+    <contextElements href="trg.xmi#//@devices.0"/>
+    <contextElements href="trg.xmi#/"/>
+    <contextElements href="corr.xmi#//@correspondences.0"/>
+    <nodeMappings nodeName="reqAgent">
+      <node href="src.xmi#//@agents.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="reqContainer">
+      <node href="src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="virtualNode">
+      <node href="src.xmi#//@networkSpan"/>
+    </nodeMappings>
+    <nodeMappings nodeName="implDevice">
+      <node href="trg.xmi#//@devices.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cable">
+      <node href="trg.xmi#//@cables.6"/>
+    </nodeMappings>
+    <nodeMappings nodeName="implContainer">
+      <node href="trg.xmi#/"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="networkSpan">
+      <src href="src.xmi#/"/>
+      <trg href="src.xmi#//@networkSpan"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
+      <src href="src.xmi#/"/>
+      <trg href="src.xmi#//@agents.0"/>
+    </containedEdges>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.1"/>
+    <targetElements href="trg.xmi#//@cables.6"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.2"/>
+    <targetElements href="trg.xmi#//@devices.0"/>
+    <targetElements href="trg.xmi#/"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.2"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.4"/>
+    <createdElements href="src.xmi#//@agents.0"/>
+    <createdElements href="corr.xmi#//@correspondences.4"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.1"/>
+  </tripleMatches>
+  <tripleMatches ruleName="ImplGlassIgnoreRule">
+    <sourceElements href="src.xmi#/"/>
+    <contextElements href="src.xmi#/"/>
+    <contextElements href="trg.xmi#/"/>
+    <contextElements href="corr.xmi#//@correspondences.0"/>
+    <nodeMappings nodeName="reqContainer">
+      <node href="src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cable">
+      <node href="trg.xmi#//@cables.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="implContainer">
+      <node href="trg.xmi#/"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="trg.xmi#/"/>
+      <trg href="trg.xmi#//@cables.2"/>
+    </containedEdges>
+    <targetElements href="trg.xmi#/"/>
+    <targetElements href="trg.xmi#//@cables.2"/>
+    <targetElements href="#//@tripleMatches.1/@containedEdges.0"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
+    <createdElements href="trg.xmi#//@cables.2"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.0"/>
+  </tripleMatches>
+  <tripleMatches ruleName="ReqProviderToServerRule">
+    <sourceElements href="src.xmi#//@networkSpan"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.0"/>
+    <sourceElements href="src.xmi#/"/>
+    <sourceElements href="src.xmi#//@agents.4"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <contextElements href="src.xmi#//@networkSpan"/>
+    <contextElements href="corr.xmi#//@correspondences.2"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.0"/>
+    <contextElements href="src.xmi#/"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.1"/>
+    <contextElements href="trg.xmi#//@cables.6"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.2"/>
+    <contextElements href="trg.xmi#//@devices.0"/>
+    <contextElements href="trg.xmi#/"/>
+    <contextElements href="corr.xmi#//@correspondences.0"/>
+    <nodeMappings nodeName="reqAgent">
+      <node href="src.xmi#//@agents.4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="reqContainer">
+      <node href="src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="virtualNode">
+      <node href="src.xmi#//@networkSpan"/>
+    </nodeMappings>
+    <nodeMappings nodeName="implDevice">
+      <node href="trg.xmi#//@devices.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cable">
+      <node href="trg.xmi#//@cables.6"/>
+    </nodeMappings>
+    <nodeMappings nodeName="implContainer">
+      <node href="trg.xmi#/"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="networkSpan">
+      <src href="src.xmi#/"/>
+      <trg href="src.xmi#//@networkSpan"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="trg.xmi#/"/>
+      <trg href="trg.xmi#//@cables.6"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="trg.xmi#/"/>
+      <trg href="trg.xmi#//@devices.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
+      <src href="src.xmi#/"/>
+      <trg href="src.xmi#//@agents.4"/>
+    </containedEdges>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.1"/>
+    <targetElements href="trg.xmi#//@cables.6"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.2"/>
+    <targetElements href="trg.xmi#//@devices.0"/>
+    <targetElements href="trg.xmi#/"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.2"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.6"/>
+    <createdElements href="src.xmi#//@agents.4"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <createdElements href="corr.xmi#//@correspondences.6"/>
+  </tripleMatches>
+  <tripleMatches ruleName="ReqConsumerToComputerRule">
+    <sourceElements href="src.xmi#//@networkSpan"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.0"/>
+    <sourceElements href="src.xmi#/"/>
+    <sourceElements href="src.xmi#//@agents.5"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.3"/>
+    <contextElements href="src.xmi#//@networkSpan"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.0"/>
+    <contextElements href="corr.xmi#//@correspondences.3"/>
+    <contextElements href="src.xmi#/"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.1"/>
+    <contextElements href="trg.xmi#//@cables.7"/>
+    <contextElements href="trg.xmi#//@devices.1"/>
+    <contextElements href="trg.xmi#/"/>
+    <contextElements href="corr.xmi#//@correspondences.0"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.2"/>
+    <nodeMappings nodeName="reqAgent">
+      <node href="src.xmi#//@agents.5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="reqContainer">
+      <node href="src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="virtualNode">
+      <node href="src.xmi#//@networkSpan"/>
+    </nodeMappings>
+    <nodeMappings nodeName="implDevice">
+      <node href="trg.xmi#//@devices.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cable">
+      <node href="trg.xmi#//@cables.7"/>
+    </nodeMappings>
+    <nodeMappings nodeName="implContainer">
+      <node href="trg.xmi#/"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="networkSpan">
+      <src href="src.xmi#/"/>
+      <trg href="src.xmi#//@networkSpan"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="trg.xmi#/"/>
+      <trg href="trg.xmi#//@cables.7"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="trg.xmi#/"/>
+      <trg href="trg.xmi#//@devices.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
+      <src href="src.xmi#/"/>
+      <trg href="src.xmi#//@agents.5"/>
+    </containedEdges>
+    <targetElements href="#//@tripleMatches.3/@containedEdges.1"/>
+    <targetElements href="trg.xmi#//@cables.7"/>
+    <targetElements href="trg.xmi#//@devices.1"/>
+    <targetElements href="trg.xmi#/"/>
+    <targetElements href="#//@tripleMatches.3/@containedEdges.2"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.3"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.9"/>
+    <createdElements href="src.xmi#//@agents.5"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.3"/>
+    <createdElements href="corr.xmi#//@correspondences.9"/>
+  </tripleMatches>
+  <tripleMatches ruleName="ImplGlassIgnoreRule">
+    <sourceElements href="src.xmi#/"/>
+    <contextElements href="src.xmi#/"/>
+    <contextElements href="trg.xmi#/"/>
+    <contextElements href="corr.xmi#//@correspondences.0"/>
+    <nodeMappings nodeName="reqContainer">
+      <node href="src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cable">
+      <node href="trg.xmi#//@cables.5"/>
+    </nodeMappings>
+    <nodeMappings nodeName="implContainer">
+      <node href="trg.xmi#/"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="trg.xmi#/"/>
+      <trg href="trg.xmi#//@cables.5"/>
+    </containedEdges>
+    <targetElements href="trg.xmi#/"/>
+    <targetElements href="trg.xmi#//@cables.5"/>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.0"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
+    <createdElements href="trg.xmi#//@cables.5"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.0"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.17" ruleName="ImplGlassIgnoreRule">
+    <sourceElements href="src.xmi#/"/>
+    <contextElements href="src.xmi#/"/>
+    <contextElements href="trg.xmi#/"/>
+    <contextElements href="corr.xmi#//@correspondences.0"/>
+    <nodeMappings nodeName="reqContainer">
+      <node href="src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cable">
+      <node href="trg.xmi#//@cables.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="implContainer">
+      <node href="trg.xmi#/"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="trg.xmi#/"/>
+      <trg href="trg.xmi#//@cables.3"/>
+    </containedEdges>
+    <targetElements href="trg.xmi#/"/>
+    <targetElements href="#//@tripleMatches.5/@containedEdges.0"/>
+    <targetElements href="trg.xmi#//@cables.3"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
+    <createdElements href="#//@tripleMatches.5/@containedEdges.0"/>
+    <createdElements href="trg.xmi#//@cables.3"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.11 //@tripleMatches.13" ruleName="VirtualNodeToRouterRule1">
+    <sourceElements href="src.xmi#//@networkSpan"/>
+    <sourceElements href="#//@tripleMatches.6/@containedEdges.0"/>
+    <sourceElements href="src.xmi#/"/>
+    <contextElements href="src.xmi#//@networkSpan"/>
+    <contextElements href="#//@tripleMatches.6/@containedEdges.0"/>
+    <contextElements href="src.xmi#/"/>
+    <contextElements href="trg.xmi#/"/>
+    <contextElements href="corr.xmi#//@correspondences.0"/>
+    <nodeMappings nodeName="reqContainer">
+      <node href="src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="virtualNode">
+      <node href="src.xmi#//@networkSpan"/>
+    </nodeMappings>
+    <nodeMappings nodeName="router">
+      <node href="trg.xmi#//@devices.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="implContainer">
+      <node href="trg.xmi#/"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="networkSpan">
+      <src href="src.xmi#/"/>
+      <trg href="src.xmi#//@networkSpan"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="trg.xmi#/"/>
+      <trg href="trg.xmi#//@devices.2"/>
+    </containedEdges>
+    <targetElements href="trg.xmi#/"/>
+    <targetElements href="trg.xmi#//@devices.2"/>
+    <targetElements href="#//@tripleMatches.6/@containedEdges.1"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.1"/>
+    <createdElements href="corr.xmi#//@correspondences.1"/>
+    <createdElements href="trg.xmi#//@devices.2"/>
+    <createdElements href="#//@tripleMatches.6/@containedEdges.1"/>
+  </tripleMatches>
+  <tripleMatches ruleName="ReqConsumerToComputerRule">
+    <sourceElements href="src.xmi#//@networkSpan"/>
+    <sourceElements href="#//@tripleMatches.7/@containedEdges.0"/>
+    <sourceElements href="src.xmi#/"/>
+    <sourceElements href="src.xmi#//@agents.2"/>
+    <sourceElements href="#//@tripleMatches.7/@containedEdges.3"/>
+    <contextElements href="src.xmi#//@networkSpan"/>
+    <contextElements href="#//@tripleMatches.7/@containedEdges.0"/>
+    <contextElements href="corr.xmi#//@correspondences.3"/>
+    <contextElements href="trg.xmi#//@cables.1"/>
+    <contextElements href="src.xmi#/"/>
+    <contextElements href="trg.xmi#//@devices.1"/>
+    <contextElements href="trg.xmi#/"/>
+    <contextElements href="corr.xmi#//@correspondences.0"/>
+    <contextElements href="#//@tripleMatches.7/@containedEdges.1"/>
+    <contextElements href="#//@tripleMatches.7/@containedEdges.2"/>
+    <nodeMappings nodeName="reqAgent">
+      <node href="src.xmi#//@agents.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="reqContainer">
+      <node href="src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="virtualNode">
+      <node href="src.xmi#//@networkSpan"/>
+    </nodeMappings>
+    <nodeMappings nodeName="implDevice">
+      <node href="trg.xmi#//@devices.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cable">
+      <node href="trg.xmi#//@cables.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="implContainer">
+      <node href="trg.xmi#/"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="networkSpan">
+      <src href="src.xmi#/"/>
+      <trg href="src.xmi#//@networkSpan"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
+      <src href="trg.xmi#/"/>
+      <trg href="trg.xmi#//@devices.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="trg.xmi#/"/>
+      <trg href="trg.xmi#//@cables.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
+      <src href="src.xmi#/"/>
+      <trg href="src.xmi#//@agents.2"/>
+    </containedEdges>
+    <targetElements href="trg.xmi#//@cables.1"/>
+    <targetElements href="trg.xmi#//@devices.1"/>
+    <targetElements href="trg.xmi#/"/>
+    <targetElements href="#//@tripleMatches.7/@containedEdges.1"/>
+    <targetElements href="#//@tripleMatches.7/@containedEdges.2"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.3"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.8"/>
+    <createdElements href="corr.xmi#//@correspondences.8"/>
+    <createdElements href="src.xmi#//@agents.2"/>
+    <createdElements href="#//@tripleMatches.7/@containedEdges.3"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.3" ruleName="ImplCopperIgnoreRule">
+    <sourceElements href="src.xmi#/"/>
+    <contextElements href="src.xmi#/"/>
+    <contextElements href="trg.xmi#/"/>
+    <contextElements href="corr.xmi#//@correspondences.0"/>
+    <nodeMappings nodeName="reqContainer">
+      <node href="src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cable">
+      <node href="trg.xmi#//@cables.7"/>
+    </nodeMappings>
+    <nodeMappings nodeName="implContainer">
+      <node href="trg.xmi#/"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="trg.xmi#/"/>
+      <trg href="trg.xmi#//@cables.7"/>
+    </containedEdges>
+    <targetElements href="trg.xmi#/"/>
+    <targetElements href="#//@tripleMatches.8/@containedEdges.0"/>
+    <targetElements href="trg.xmi#//@cables.7"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
+    <createdElements href="#//@tripleMatches.8/@containedEdges.0"/>
+    <createdElements href="trg.xmi#//@cables.7"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.13 //@tripleMatches.7" ruleName="ImplGlassIgnoreRule">
     <sourceElements href="src.xmi#/"/>
     <contextElements href="src.xmi#/"/>
     <contextElements href="trg.xmi#/"/>
@@ -20,25 +398,50 @@
     </containedEdges>
     <targetElements href="trg.xmi#/"/>
     <targetElements href="trg.xmi#//@cables.1"/>
-    <targetElements href="#//@tripleMatches.0/@containedEdges.0"/>
+    <targetElements href="#//@tripleMatches.9/@containedEdges.0"/>
     <correspondenceElements href="corr.xmi#//@correspondences.0"/>
     <createdElements href="trg.xmi#//@cables.1"/>
-    <createdElements href="#//@tripleMatches.0/@containedEdges.0"/>
+    <createdElements href="#//@tripleMatches.9/@containedEdges.0"/>
   </tripleMatches>
-  <tripleMatches children="//@tripleMatches.3 //@tripleMatches.17 //@tripleMatches.6" ruleName="VirtualNodeToComputerRule">
-    <sourceElements href="src.xmi#//@networkSpan"/>
-    <sourceElements href="#//@tripleMatches.1/@containedEdges.0"/>
+  <tripleMatches ruleName="ImplCopperIgnoreRule">
     <sourceElements href="src.xmi#/"/>
-    <contextElements href="src.xmi#//@networkSpan"/>
-    <contextElements href="#//@tripleMatches.1/@containedEdges.0"/>
     <contextElements href="src.xmi#/"/>
-    <contextElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <contextElements href="trg.xmi#/"/>
+    <contextElements href="corr.xmi#//@correspondences.0"/>
+    <nodeMappings nodeName="reqContainer">
+      <node href="src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cable">
+      <node href="trg.xmi#//@cables.8"/>
+    </nodeMappings>
+    <nodeMappings nodeName="implContainer">
+      <node href="trg.xmi#/"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="trg.xmi#/"/>
+      <trg href="trg.xmi#//@cables.8"/>
+    </containedEdges>
+    <targetElements href="trg.xmi#/"/>
+    <targetElements href="#//@tripleMatches.10/@containedEdges.0"/>
+    <targetElements href="trg.xmi#//@cables.8"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
+    <createdElements href="#//@tripleMatches.10/@containedEdges.0"/>
+    <createdElements href="trg.xmi#//@cables.8"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.3 //@tripleMatches.17 //@tripleMatches.7" ruleName="VirtualNodeToComputerRule">
+    <sourceElements href="src.xmi#//@networkSpan"/>
+    <sourceElements href="#//@tripleMatches.11/@containedEdges.0"/>
+    <sourceElements href="src.xmi#/"/>
     <contextElements href="corr.xmi#//@correspondences.1"/>
+    <contextElements href="src.xmi#//@networkSpan"/>
+    <contextElements href="#//@tripleMatches.11/@containedEdges.0"/>
+    <contextElements href="src.xmi#/"/>
+    <contextElements href="#//@tripleMatches.11/@containedEdges.1"/>
     <contextElements href="trg.xmi#/"/>
     <contextElements href="corr.xmi#//@correspondences.0"/>
     <contextElements href="trg.xmi#//@devices.2"/>
     <contextElements href="trg.xmi#//@cables.4"/>
-    <contextElements href="#//@tripleMatches.1/@containedEdges.2"/>
+    <contextElements href="#//@tripleMatches.11/@containedEdges.2"/>
     <nodeMappings nodeName="reqContainer">
       <node href="src.xmi#/"/>
     </nodeMappings>
@@ -89,44 +492,44 @@
       <src href="trg.xmi#/"/>
       <trg href="trg.xmi#//@devices.1"/>
     </containedEdges>
-    <targetElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <targetElements href="#//@tripleMatches.11/@containedEdges.1"/>
     <targetElements href="trg.xmi#/"/>
     <targetElements href="trg.xmi#//@devices.2"/>
     <targetElements href="trg.xmi#//@cables.4"/>
-    <targetElements href="#//@tripleMatches.1/@containedEdges.2"/>
-    <targetElements href="#//@tripleMatches.1/@containedEdges.3"/>
-    <targetElements href="#//@tripleMatches.1/@containedEdges.4"/>
-    <targetElements href="#//@tripleMatches.1/@containedEdges.5"/>
+    <targetElements href="#//@tripleMatches.11/@containedEdges.2"/>
+    <targetElements href="#//@tripleMatches.11/@containedEdges.3"/>
+    <targetElements href="#//@tripleMatches.11/@containedEdges.4"/>
+    <targetElements href="#//@tripleMatches.11/@containedEdges.5"/>
     <targetElements href="trg.xmi#//@devices.1"/>
-    <targetElements href="#//@tripleMatches.1/@containedEdges.6"/>
-    <targetElements href="#//@tripleMatches.1/@containedEdges.7"/>
+    <targetElements href="#//@tripleMatches.11/@containedEdges.6"/>
+    <targetElements href="#//@tripleMatches.11/@containedEdges.7"/>
     <correspondenceElements href="corr.xmi#//@correspondences.1"/>
     <correspondenceElements href="corr.xmi#//@correspondences.0"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.2"/>
-    <createdElements href="#//@tripleMatches.1/@containedEdges.3"/>
-    <createdElements href="#//@tripleMatches.1/@containedEdges.4"/>
-    <createdElements href="#//@tripleMatches.1/@containedEdges.5"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.3"/>
+    <createdElements href="#//@tripleMatches.11/@containedEdges.3"/>
+    <createdElements href="corr.xmi#//@correspondences.3"/>
+    <createdElements href="#//@tripleMatches.11/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.11/@containedEdges.5"/>
     <createdElements href="trg.xmi#//@devices.1"/>
-    <createdElements href="#//@tripleMatches.1/@containedEdges.6"/>
-    <createdElements href="#//@tripleMatches.1/@containedEdges.7"/>
-    <createdElements href="corr.xmi#//@correspondences.2"/>
+    <createdElements href="#//@tripleMatches.11/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.11/@containedEdges.7"/>
   </tripleMatches>
   <tripleMatches ruleName="ReqProviderToServerRule">
     <sourceElements href="src.xmi#//@networkSpan"/>
-    <sourceElements href="#//@tripleMatches.2/@containedEdges.0"/>
+    <sourceElements href="#//@tripleMatches.12/@containedEdges.0"/>
     <sourceElements href="src.xmi#/"/>
-    <sourceElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <sourceElements href="#//@tripleMatches.12/@containedEdges.1"/>
     <sourceElements href="src.xmi#//@agents.1"/>
     <contextElements href="src.xmi#//@networkSpan"/>
-    <contextElements href="#//@tripleMatches.2/@containedEdges.0"/>
-    <contextElements href="corr.xmi#//@correspondences.3"/>
-    <contextElements href="#//@tripleMatches.2/@containedEdges.1"/>
+    <contextElements href="corr.xmi#//@correspondences.2"/>
+    <contextElements href="#//@tripleMatches.12/@containedEdges.0"/>
     <contextElements href="src.xmi#/"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.1"/>
+    <contextElements href="trg.xmi#//@cables.6"/>
     <contextElements href="#//@tripleMatches.2/@containedEdges.2"/>
     <contextElements href="trg.xmi#//@devices.0"/>
     <contextElements href="trg.xmi#/"/>
     <contextElements href="corr.xmi#//@correspondences.0"/>
-    <contextElements href="trg.xmi#//@cables.8"/>
     <nodeMappings nodeName="reqAgent">
       <node href="src.xmi#//@agents.1"/>
     </nodeMappings>
@@ -140,7 +543,7 @@
       <node href="trg.xmi#//@devices.0"/>
     </nodeMappings>
     <nodeMappings nodeName="cable">
-      <node href="trg.xmi#//@cables.8"/>
+      <node href="trg.xmi#//@cables.6"/>
     </nodeMappings>
     <nodeMappings nodeName="implContainer">
       <node href="trg.xmi#/"/>
@@ -148,498 +551,37 @@
     <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="networkSpan">
       <src href="src.xmi#/"/>
       <trg href="src.xmi#//@networkSpan"/>
-    </containedEdges>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
-      <src href="trg.xmi#/"/>
-      <trg href="trg.xmi#//@cables.8"/>
-    </containedEdges>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
-      <src href="trg.xmi#/"/>
-      <trg href="trg.xmi#//@devices.0"/>
     </containedEdges>
     <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
       <src href="src.xmi#/"/>
       <trg href="src.xmi#//@agents.1"/>
     </containedEdges>
     <targetElements href="#//@tripleMatches.2/@containedEdges.1"/>
+    <targetElements href="trg.xmi#//@cables.6"/>
     <targetElements href="#//@tripleMatches.2/@containedEdges.2"/>
     <targetElements href="trg.xmi#//@devices.0"/>
     <targetElements href="trg.xmi#/"/>
-    <targetElements href="trg.xmi#//@cables.8"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.3"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.2"/>
     <correspondenceElements href="corr.xmi#//@correspondences.0"/>
     <correspondenceElements href="corr.xmi#//@correspondences.5"/>
-    <createdElements href="#//@tripleMatches.2/@containedEdges.3"/>
-    <createdElements href="corr.xmi#//@correspondences.5"/>
+    <createdElements href="#//@tripleMatches.12/@containedEdges.1"/>
     <createdElements href="src.xmi#//@agents.1"/>
+    <createdElements href="corr.xmi#//@correspondences.5"/>
   </tripleMatches>
-  <tripleMatches ruleName="ReqConsumerToComputerRule">
-    <sourceElements href="src.xmi#//@networkSpan"/>
-    <sourceElements href="#//@tripleMatches.3/@containedEdges.0"/>
-    <sourceElements href="src.xmi#/"/>
-    <sourceElements href="src.xmi#//@agents.5"/>
-    <sourceElements href="#//@tripleMatches.3/@containedEdges.3"/>
-    <contextElements href="src.xmi#//@networkSpan"/>
-    <contextElements href="#//@tripleMatches.3/@containedEdges.0"/>
-    <contextElements href="src.xmi#/"/>
-    <contextElements href="#//@tripleMatches.3/@containedEdges.1"/>
-    <contextElements href="trg.xmi#//@devices.1"/>
-    <contextElements href="trg.xmi#/"/>
-    <contextElements href="corr.xmi#//@correspondences.0"/>
-    <contextElements href="#//@tripleMatches.3/@containedEdges.2"/>
-    <contextElements href="corr.xmi#//@correspondences.2"/>
-    <contextElements href="trg.xmi#//@cables.4"/>
-    <nodeMappings nodeName="reqAgent">
-      <node href="src.xmi#//@agents.5"/>
-    </nodeMappings>
-    <nodeMappings nodeName="reqContainer">
-      <node href="src.xmi#/"/>
-    </nodeMappings>
-    <nodeMappings nodeName="virtualNode">
-      <node href="src.xmi#//@networkSpan"/>
-    </nodeMappings>
-    <nodeMappings nodeName="implDevice">
-      <node href="trg.xmi#//@devices.1"/>
-    </nodeMappings>
-    <nodeMappings nodeName="cable">
-      <node href="trg.xmi#//@cables.4"/>
-    </nodeMappings>
-    <nodeMappings nodeName="implContainer">
-      <node href="trg.xmi#/"/>
-    </nodeMappings>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="networkSpan">
-      <src href="src.xmi#/"/>
-      <trg href="src.xmi#//@networkSpan"/>
-    </containedEdges>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
-      <src href="trg.xmi#/"/>
-      <trg href="trg.xmi#//@cables.4"/>
-    </containedEdges>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
-      <src href="trg.xmi#/"/>
-      <trg href="trg.xmi#//@devices.1"/>
-    </containedEdges>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
-      <src href="src.xmi#/"/>
-      <trg href="src.xmi#//@agents.5"/>
-    </containedEdges>
-    <targetElements href="#//@tripleMatches.3/@containedEdges.1"/>
-    <targetElements href="trg.xmi#//@devices.1"/>
-    <targetElements href="trg.xmi#/"/>
-    <targetElements href="#//@tripleMatches.3/@containedEdges.2"/>
-    <targetElements href="trg.xmi#//@cables.4"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.2"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.9"/>
-    <createdElements href="src.xmi#//@agents.5"/>
-    <createdElements href="#//@tripleMatches.3/@containedEdges.3"/>
-    <createdElements href="corr.xmi#//@correspondences.9"/>
-  </tripleMatches>
-  <tripleMatches ruleName="ImplCopperIgnoreRule">
-    <sourceElements href="src.xmi#/"/>
-    <contextElements href="src.xmi#/"/>
-    <contextElements href="trg.xmi#/"/>
-    <contextElements href="corr.xmi#//@correspondences.0"/>
-    <nodeMappings nodeName="reqContainer">
-      <node href="src.xmi#/"/>
-    </nodeMappings>
-    <nodeMappings nodeName="cable">
-      <node href="trg.xmi#//@cables.6"/>
-    </nodeMappings>
-    <nodeMappings nodeName="implContainer">
-      <node href="trg.xmi#/"/>
-    </nodeMappings>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
-      <src href="trg.xmi#/"/>
-      <trg href="trg.xmi#//@cables.6"/>
-    </containedEdges>
-    <targetElements href="trg.xmi#/"/>
-    <targetElements href="#//@tripleMatches.4/@containedEdges.0"/>
-    <targetElements href="trg.xmi#//@cables.6"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
-    <createdElements href="#//@tripleMatches.4/@containedEdges.0"/>
-    <createdElements href="trg.xmi#//@cables.6"/>
-  </tripleMatches>
-  <tripleMatches children="//@tripleMatches.2 //@tripleMatches.13" ruleName="ImplCopperIgnoreRule">
-    <sourceElements href="src.xmi#/"/>
-    <contextElements href="src.xmi#/"/>
-    <contextElements href="trg.xmi#/"/>
-    <contextElements href="corr.xmi#//@correspondences.0"/>
-    <nodeMappings nodeName="reqContainer">
-      <node href="src.xmi#/"/>
-    </nodeMappings>
-    <nodeMappings nodeName="cable">
-      <node href="trg.xmi#//@cables.8"/>
-    </nodeMappings>
-    <nodeMappings nodeName="implContainer">
-      <node href="trg.xmi#/"/>
-    </nodeMappings>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
-      <src href="trg.xmi#/"/>
-      <trg href="trg.xmi#//@cables.8"/>
-    </containedEdges>
-    <targetElements href="trg.xmi#/"/>
-    <targetElements href="#//@tripleMatches.5/@containedEdges.0"/>
-    <targetElements href="trg.xmi#//@cables.8"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
-    <createdElements href="#//@tripleMatches.5/@containedEdges.0"/>
-    <createdElements href="trg.xmi#//@cables.8"/>
-  </tripleMatches>
-  <tripleMatches ruleName="ReqConsumerToComputerRule">
-    <sourceElements href="src.xmi#//@networkSpan"/>
-    <sourceElements href="#//@tripleMatches.6/@containedEdges.0"/>
-    <sourceElements href="src.xmi#/"/>
-    <sourceElements href="src.xmi#//@agents.2"/>
-    <sourceElements href="#//@tripleMatches.6/@containedEdges.3"/>
-    <contextElements href="src.xmi#//@networkSpan"/>
-    <contextElements href="trg.xmi#//@cables.5"/>
-    <contextElements href="#//@tripleMatches.6/@containedEdges.0"/>
-    <contextElements href="src.xmi#/"/>
-    <contextElements href="#//@tripleMatches.6/@containedEdges.1"/>
-    <contextElements href="trg.xmi#//@devices.1"/>
-    <contextElements href="trg.xmi#/"/>
-    <contextElements href="corr.xmi#//@correspondences.0"/>
-    <contextElements href="#//@tripleMatches.6/@containedEdges.2"/>
-    <contextElements href="corr.xmi#//@correspondences.2"/>
-    <nodeMappings nodeName="reqAgent">
-      <node href="src.xmi#//@agents.2"/>
-    </nodeMappings>
-    <nodeMappings nodeName="reqContainer">
-      <node href="src.xmi#/"/>
-    </nodeMappings>
-    <nodeMappings nodeName="virtualNode">
-      <node href="src.xmi#//@networkSpan"/>
-    </nodeMappings>
-    <nodeMappings nodeName="implDevice">
-      <node href="trg.xmi#//@devices.1"/>
-    </nodeMappings>
-    <nodeMappings nodeName="cable">
-      <node href="trg.xmi#//@cables.5"/>
-    </nodeMappings>
-    <nodeMappings nodeName="implContainer">
-      <node href="trg.xmi#/"/>
-    </nodeMappings>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="networkSpan">
-      <src href="src.xmi#/"/>
-      <trg href="src.xmi#//@networkSpan"/>
-    </containedEdges>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
-      <src href="trg.xmi#/"/>
-      <trg href="trg.xmi#//@cables.5"/>
-    </containedEdges>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
-      <src href="trg.xmi#/"/>
-      <trg href="trg.xmi#//@devices.1"/>
-    </containedEdges>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
-      <src href="src.xmi#/"/>
-      <trg href="src.xmi#//@agents.2"/>
-    </containedEdges>
-    <targetElements href="trg.xmi#//@cables.5"/>
-    <targetElements href="#//@tripleMatches.6/@containedEdges.1"/>
-    <targetElements href="trg.xmi#//@devices.1"/>
-    <targetElements href="trg.xmi#/"/>
-    <targetElements href="#//@tripleMatches.6/@containedEdges.2"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.2"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.8"/>
-    <createdElements href="corr.xmi#//@correspondences.8"/>
-    <createdElements href="src.xmi#//@agents.2"/>
-    <createdElements href="#//@tripleMatches.6/@containedEdges.3"/>
-  </tripleMatches>
-  <tripleMatches ruleName="ImplGlassIgnoreRule">
-    <sourceElements href="src.xmi#/"/>
-    <contextElements href="src.xmi#/"/>
-    <contextElements href="trg.xmi#/"/>
-    <contextElements href="corr.xmi#//@correspondences.0"/>
-    <nodeMappings nodeName="reqContainer">
-      <node href="src.xmi#/"/>
-    </nodeMappings>
-    <nodeMappings nodeName="cable">
-      <node href="trg.xmi#//@cables.0"/>
-    </nodeMappings>
-    <nodeMappings nodeName="implContainer">
-      <node href="trg.xmi#/"/>
-    </nodeMappings>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
-      <src href="trg.xmi#/"/>
-      <trg href="trg.xmi#//@cables.0"/>
-    </containedEdges>
-    <targetElements href="trg.xmi#/"/>
-    <targetElements href="trg.xmi#//@cables.0"/>
-    <targetElements href="#//@tripleMatches.7/@containedEdges.0"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
-    <createdElements href="trg.xmi#//@cables.0"/>
-    <createdElements href="#//@tripleMatches.7/@containedEdges.0"/>
-  </tripleMatches>
-  <tripleMatches children="//@tripleMatches.15 //@tripleMatches.1" ruleName="VirtualNodeToRouterRule1">
-    <sourceElements href="src.xmi#//@networkSpan"/>
-    <sourceElements href="#//@tripleMatches.8/@containedEdges.0"/>
-    <sourceElements href="src.xmi#/"/>
-    <contextElements href="src.xmi#//@networkSpan"/>
-    <contextElements href="#//@tripleMatches.8/@containedEdges.0"/>
-    <contextElements href="src.xmi#/"/>
-    <contextElements href="trg.xmi#/"/>
-    <contextElements href="corr.xmi#//@correspondences.0"/>
-    <nodeMappings nodeName="reqContainer">
-      <node href="src.xmi#/"/>
-    </nodeMappings>
-    <nodeMappings nodeName="virtualNode">
-      <node href="src.xmi#//@networkSpan"/>
-    </nodeMappings>
-    <nodeMappings nodeName="router">
-      <node href="trg.xmi#//@devices.2"/>
-    </nodeMappings>
-    <nodeMappings nodeName="implContainer">
-      <node href="trg.xmi#/"/>
-    </nodeMappings>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="networkSpan">
-      <src href="src.xmi#/"/>
-      <trg href="src.xmi#//@networkSpan"/>
-    </containedEdges>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
-      <src href="trg.xmi#/"/>
-      <trg href="trg.xmi#//@devices.2"/>
-    </containedEdges>
-    <targetElements href="trg.xmi#/"/>
-    <targetElements href="trg.xmi#//@devices.2"/>
-    <targetElements href="#//@tripleMatches.8/@containedEdges.1"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.1"/>
-    <createdElements href="corr.xmi#//@correspondences.1"/>
-    <createdElements href="trg.xmi#//@devices.2"/>
-    <createdElements href="#//@tripleMatches.8/@containedEdges.1"/>
-  </tripleMatches>
-  <tripleMatches ruleName="ReqProviderToServerRule">
-    <sourceElements href="src.xmi#//@networkSpan"/>
-    <sourceElements href="#//@tripleMatches.9/@containedEdges.0"/>
-    <sourceElements href="src.xmi#/"/>
-    <sourceElements href="src.xmi#//@agents.4"/>
-    <sourceElements href="#//@tripleMatches.9/@containedEdges.3"/>
-    <contextElements href="src.xmi#//@networkSpan"/>
-    <contextElements href="#//@tripleMatches.9/@containedEdges.0"/>
-    <contextElements href="corr.xmi#//@correspondences.3"/>
-    <contextElements href="src.xmi#/"/>
-    <contextElements href="#//@tripleMatches.9/@containedEdges.1"/>
-    <contextElements href="#//@tripleMatches.9/@containedEdges.2"/>
-    <contextElements href="trg.xmi#//@devices.0"/>
-    <contextElements href="trg.xmi#/"/>
-    <contextElements href="corr.xmi#//@correspondences.0"/>
-    <contextElements href="trg.xmi#//@cables.4"/>
-    <nodeMappings nodeName="reqAgent">
-      <node href="src.xmi#//@agents.4"/>
-    </nodeMappings>
-    <nodeMappings nodeName="reqContainer">
-      <node href="src.xmi#/"/>
-    </nodeMappings>
-    <nodeMappings nodeName="virtualNode">
-      <node href="src.xmi#//@networkSpan"/>
-    </nodeMappings>
-    <nodeMappings nodeName="implDevice">
-      <node href="trg.xmi#//@devices.0"/>
-    </nodeMappings>
-    <nodeMappings nodeName="cable">
-      <node href="trg.xmi#//@cables.4"/>
-    </nodeMappings>
-    <nodeMappings nodeName="implContainer">
-      <node href="trg.xmi#/"/>
-    </nodeMappings>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="networkSpan">
-      <src href="src.xmi#/"/>
-      <trg href="src.xmi#//@networkSpan"/>
-    </containedEdges>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
-      <src href="trg.xmi#/"/>
-      <trg href="trg.xmi#//@cables.4"/>
-    </containedEdges>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="devices">
-      <src href="trg.xmi#/"/>
-      <trg href="trg.xmi#//@devices.0"/>
-    </containedEdges>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
-      <src href="src.xmi#/"/>
-      <trg href="src.xmi#//@agents.4"/>
-    </containedEdges>
-    <targetElements href="#//@tripleMatches.9/@containedEdges.1"/>
-    <targetElements href="#//@tripleMatches.9/@containedEdges.2"/>
-    <targetElements href="trg.xmi#//@devices.0"/>
-    <targetElements href="trg.xmi#/"/>
-    <targetElements href="trg.xmi#//@cables.4"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.3"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.6"/>
-    <createdElements href="src.xmi#//@agents.4"/>
-    <createdElements href="corr.xmi#//@correspondences.6"/>
-    <createdElements href="#//@tripleMatches.9/@containedEdges.3"/>
-  </tripleMatches>
-  <tripleMatches ruleName="ImplCopperIgnoreRule">
-    <sourceElements href="src.xmi#/"/>
-    <contextElements href="src.xmi#/"/>
-    <contextElements href="trg.xmi#/"/>
-    <contextElements href="corr.xmi#//@correspondences.0"/>
-    <nodeMappings nodeName="reqContainer">
-      <node href="src.xmi#/"/>
-    </nodeMappings>
-    <nodeMappings nodeName="cable">
-      <node href="trg.xmi#//@cables.7"/>
-    </nodeMappings>
-    <nodeMappings nodeName="implContainer">
-      <node href="trg.xmi#/"/>
-    </nodeMappings>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
-      <src href="trg.xmi#/"/>
-      <trg href="trg.xmi#//@cables.7"/>
-    </containedEdges>
-    <targetElements href="trg.xmi#/"/>
-    <targetElements href="#//@tripleMatches.10/@containedEdges.0"/>
-    <targetElements href="trg.xmi#//@cables.7"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
-    <createdElements href="#//@tripleMatches.10/@containedEdges.0"/>
-    <createdElements href="trg.xmi#//@cables.7"/>
-  </tripleMatches>
-  <tripleMatches children="//@tripleMatches.3 //@tripleMatches.9 //@tripleMatches.1" ruleName="ImplGlassIgnoreRule">
-    <sourceElements href="src.xmi#/"/>
-    <contextElements href="src.xmi#/"/>
-    <contextElements href="trg.xmi#/"/>
-    <contextElements href="corr.xmi#//@correspondences.0"/>
-    <nodeMappings nodeName="reqContainer">
-      <node href="src.xmi#/"/>
-    </nodeMappings>
-    <nodeMappings nodeName="cable">
-      <node href="trg.xmi#//@cables.4"/>
-    </nodeMappings>
-    <nodeMappings nodeName="implContainer">
-      <node href="trg.xmi#/"/>
-    </nodeMappings>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
-      <src href="trg.xmi#/"/>
-      <trg href="trg.xmi#//@cables.4"/>
-    </containedEdges>
-    <targetElements href="trg.xmi#/"/>
-    <targetElements href="#//@tripleMatches.11/@containedEdges.0"/>
-    <targetElements href="trg.xmi#//@cables.4"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
-    <createdElements href="#//@tripleMatches.11/@containedEdges.0"/>
-    <createdElements href="trg.xmi#//@cables.4"/>
-  </tripleMatches>
-  <tripleMatches ruleName="ImplGlassIgnoreRule">
-    <sourceElements href="src.xmi#/"/>
-    <contextElements href="src.xmi#/"/>
-    <contextElements href="trg.xmi#/"/>
-    <contextElements href="corr.xmi#//@correspondences.0"/>
-    <nodeMappings nodeName="reqContainer">
-      <node href="src.xmi#/"/>
-    </nodeMappings>
-    <nodeMappings nodeName="cable">
-      <node href="trg.xmi#//@cables.2"/>
-    </nodeMappings>
-    <nodeMappings nodeName="implContainer">
-      <node href="trg.xmi#/"/>
-    </nodeMappings>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
-      <src href="trg.xmi#/"/>
-      <trg href="trg.xmi#//@cables.2"/>
-    </containedEdges>
-    <targetElements href="trg.xmi#/"/>
-    <targetElements href="trg.xmi#//@cables.2"/>
-    <targetElements href="#//@tripleMatches.12/@containedEdges.0"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
-    <createdElements href="trg.xmi#//@cables.2"/>
-    <createdElements href="#//@tripleMatches.12/@containedEdges.0"/>
-  </tripleMatches>
-  <tripleMatches ruleName="ReqProviderToServerRule">
+  <tripleMatches children="//@tripleMatches.2 //@tripleMatches.0 //@tripleMatches.12" ruleName="VirtualNodeToServerRule">
     <sourceElements href="src.xmi#//@networkSpan"/>
     <sourceElements href="#//@tripleMatches.13/@containedEdges.0"/>
     <sourceElements href="src.xmi#/"/>
-    <sourceElements href="src.xmi#//@agents.0"/>
-    <sourceElements href="#//@tripleMatches.13/@containedEdges.1"/>
+    <contextElements href="corr.xmi#//@correspondences.1"/>
     <contextElements href="src.xmi#//@networkSpan"/>
     <contextElements href="#//@tripleMatches.13/@containedEdges.0"/>
-    <contextElements href="corr.xmi#//@correspondences.3"/>
-    <contextElements href="#//@tripleMatches.2/@containedEdges.1"/>
-    <contextElements href="src.xmi#/"/>
-    <contextElements href="#//@tripleMatches.2/@containedEdges.2"/>
-    <contextElements href="trg.xmi#//@devices.0"/>
-    <contextElements href="trg.xmi#/"/>
-    <contextElements href="corr.xmi#//@correspondences.0"/>
-    <contextElements href="trg.xmi#//@cables.8"/>
-    <nodeMappings nodeName="reqAgent">
-      <node href="src.xmi#//@agents.0"/>
-    </nodeMappings>
-    <nodeMappings nodeName="reqContainer">
-      <node href="src.xmi#/"/>
-    </nodeMappings>
-    <nodeMappings nodeName="virtualNode">
-      <node href="src.xmi#//@networkSpan"/>
-    </nodeMappings>
-    <nodeMappings nodeName="implDevice">
-      <node href="trg.xmi#//@devices.0"/>
-    </nodeMappings>
-    <nodeMappings nodeName="cable">
-      <node href="trg.xmi#//@cables.8"/>
-    </nodeMappings>
-    <nodeMappings nodeName="implContainer">
-      <node href="trg.xmi#/"/>
-    </nodeMappings>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="networkSpan">
-      <src href="src.xmi#/"/>
-      <trg href="src.xmi#//@networkSpan"/>
-    </containedEdges>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="agents">
-      <src href="src.xmi#/"/>
-      <trg href="src.xmi#//@agents.0"/>
-    </containedEdges>
-    <targetElements href="#//@tripleMatches.2/@containedEdges.1"/>
-    <targetElements href="#//@tripleMatches.2/@containedEdges.2"/>
-    <targetElements href="trg.xmi#//@devices.0"/>
-    <targetElements href="trg.xmi#/"/>
-    <targetElements href="trg.xmi#//@cables.8"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.3"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.4"/>
-    <createdElements href="src.xmi#//@agents.0"/>
-    <createdElements href="#//@tripleMatches.13/@containedEdges.1"/>
-    <createdElements href="corr.xmi#//@correspondences.4"/>
-  </tripleMatches>
-  <tripleMatches children="//@tripleMatches.18 //@tripleMatches.11 //@tripleMatches.0 //@tripleMatches.1 //@tripleMatches.7 //@tripleMatches.17 //@tripleMatches.6 //@tripleMatches.13 //@tripleMatches.15 //@tripleMatches.3 //@tripleMatches.9 //@tripleMatches.10 //@tripleMatches.5 //@tripleMatches.4 //@tripleMatches.8 //@tripleMatches.2 //@tripleMatches.16 //@tripleMatches.12" ruleName="ReqContainerToImplContainerRule">
-    <sourceElements href="src.xmi#//@networkSpan"/>
-    <sourceElements href="#//@tripleMatches.14/@containedEdges.0"/>
-    <sourceElements href="src.xmi#/"/>
-    <nodeMappings nodeName="reqContainer">
-      <node href="src.xmi#/"/>
-    </nodeMappings>
-    <nodeMappings nodeName="virtualNode">
-      <node href="src.xmi#//@networkSpan"/>
-    </nodeMappings>
-    <nodeMappings nodeName="implContainer">
-      <node href="trg.xmi#/"/>
-    </nodeMappings>
-    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="networkSpan">
-      <src href="src.xmi#/"/>
-      <trg href="src.xmi#//@networkSpan"/>
-    </containedEdges>
-    <targetElements href="trg.xmi#/"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
-    <createdElements href="src.xmi#//@networkSpan"/>
-    <createdElements href="#//@tripleMatches.14/@containedEdges.0"/>
-    <createdElements href="src.xmi#/"/>
-    <createdElements href="trg.xmi#/"/>
-    <createdElements href="corr.xmi#//@correspondences.0"/>
-  </tripleMatches>
-  <tripleMatches children="//@tripleMatches.2 //@tripleMatches.9 //@tripleMatches.13" ruleName="VirtualNodeToServerRule">
-    <sourceElements href="src.xmi#//@networkSpan"/>
-    <sourceElements href="#//@tripleMatches.15/@containedEdges.0"/>
-    <sourceElements href="src.xmi#/"/>
-    <contextElements href="src.xmi#//@networkSpan"/>
-    <contextElements href="#//@tripleMatches.15/@containedEdges.0"/>
     <contextElements href="trg.xmi#//@cables.1"/>
     <contextElements href="src.xmi#/"/>
-    <contextElements href="corr.xmi#//@correspondences.1"/>
     <contextElements href="trg.xmi#/"/>
     <contextElements href="corr.xmi#//@correspondences.0"/>
     <contextElements href="trg.xmi#//@devices.2"/>
-    <contextElements href="#//@tripleMatches.15/@containedEdges.1"/>
-    <contextElements href="#//@tripleMatches.15/@containedEdges.2"/>
+    <contextElements href="#//@tripleMatches.13/@containedEdges.1"/>
+    <contextElements href="#//@tripleMatches.13/@containedEdges.2"/>
     <nodeMappings nodeName="reqContainer">
       <node href="src.xmi#/"/>
     </nodeMappings>
@@ -693,26 +635,51 @@
     <targetElements href="trg.xmi#//@cables.1"/>
     <targetElements href="trg.xmi#/"/>
     <targetElements href="trg.xmi#//@devices.2"/>
-    <targetElements href="#//@tripleMatches.15/@containedEdges.1"/>
-    <targetElements href="#//@tripleMatches.15/@containedEdges.2"/>
-    <targetElements href="#//@tripleMatches.15/@containedEdges.3"/>
-    <targetElements href="#//@tripleMatches.15/@containedEdges.4"/>
-    <targetElements href="#//@tripleMatches.15/@containedEdges.5"/>
-    <targetElements href="#//@tripleMatches.15/@containedEdges.6"/>
-    <targetElements href="#//@tripleMatches.15/@containedEdges.7"/>
+    <targetElements href="#//@tripleMatches.13/@containedEdges.1"/>
+    <targetElements href="#//@tripleMatches.13/@containedEdges.2"/>
+    <targetElements href="#//@tripleMatches.13/@containedEdges.3"/>
+    <targetElements href="#//@tripleMatches.13/@containedEdges.4"/>
+    <targetElements href="#//@tripleMatches.13/@containedEdges.5"/>
+    <targetElements href="#//@tripleMatches.13/@containedEdges.6"/>
+    <targetElements href="#//@tripleMatches.13/@containedEdges.7"/>
     <targetElements href="trg.xmi#//@devices.0"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
     <correspondenceElements href="corr.xmi#//@correspondences.1"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.3"/>
-    <createdElements href="#//@tripleMatches.15/@containedEdges.3"/>
-    <createdElements href="#//@tripleMatches.15/@containedEdges.4"/>
-    <createdElements href="corr.xmi#//@correspondences.3"/>
-    <createdElements href="#//@tripleMatches.15/@containedEdges.5"/>
-    <createdElements href="#//@tripleMatches.15/@containedEdges.6"/>
-    <createdElements href="#//@tripleMatches.15/@containedEdges.7"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.2"/>
+    <createdElements href="#//@tripleMatches.13/@containedEdges.3"/>
+    <createdElements href="corr.xmi#//@correspondences.2"/>
+    <createdElements href="#//@tripleMatches.13/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.13/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.13/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.13/@containedEdges.7"/>
     <createdElements href="trg.xmi#//@devices.0"/>
   </tripleMatches>
-  <tripleMatches children="//@tripleMatches.6" ruleName="ImplGlassIgnoreRule">
+  <tripleMatches children="//@tripleMatches.18 //@tripleMatches.10 //@tripleMatches.12 //@tripleMatches.8 //@tripleMatches.0 //@tripleMatches.7 //@tripleMatches.2 //@tripleMatches.11 //@tripleMatches.13 //@tripleMatches.3 //@tripleMatches.9 //@tripleMatches.5 //@tripleMatches.4 //@tripleMatches.1 //@tripleMatches.15 //@tripleMatches.16 //@tripleMatches.6 //@tripleMatches.17" ruleName="ReqContainerToImplContainerRule">
+    <sourceElements href="src.xmi#//@networkSpan"/>
+    <sourceElements href="#//@tripleMatches.14/@containedEdges.0"/>
+    <sourceElements href="src.xmi#/"/>
+    <nodeMappings nodeName="reqContainer">
+      <node href="src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="virtualNode">
+      <node href="src.xmi#//@networkSpan"/>
+    </nodeMappings>
+    <nodeMappings nodeName="implContainer">
+      <node href="trg.xmi#/"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="networkSpan">
+      <src href="src.xmi#/"/>
+      <trg href="src.xmi#//@networkSpan"/>
+    </containedEdges>
+    <targetElements href="trg.xmi#/"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
+    <createdElements href="src.xmi#//@networkSpan"/>
+    <createdElements href="#//@tripleMatches.14/@containedEdges.0"/>
+    <createdElements href="src.xmi#/"/>
+    <createdElements href="trg.xmi#/"/>
+    <createdElements href="corr.xmi#//@correspondences.0"/>
+  </tripleMatches>
+  <tripleMatches ruleName="ImplGlassIgnoreRule">
     <sourceElements href="src.xmi#/"/>
     <contextElements href="src.xmi#/"/>
     <contextElements href="trg.xmi#/"/>
@@ -721,21 +688,46 @@
       <node href="src.xmi#/"/>
     </nodeMappings>
     <nodeMappings nodeName="cable">
-      <node href="trg.xmi#//@cables.5"/>
+      <node href="trg.xmi#//@cables.0"/>
     </nodeMappings>
     <nodeMappings nodeName="implContainer">
       <node href="trg.xmi#/"/>
     </nodeMappings>
     <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
       <src href="trg.xmi#/"/>
-      <trg href="trg.xmi#//@cables.5"/>
+      <trg href="trg.xmi#//@cables.0"/>
     </containedEdges>
     <targetElements href="trg.xmi#/"/>
-    <targetElements href="trg.xmi#//@cables.5"/>
-    <targetElements href="#//@tripleMatches.16/@containedEdges.0"/>
+    <targetElements href="trg.xmi#//@cables.0"/>
+    <targetElements href="#//@tripleMatches.15/@containedEdges.0"/>
     <correspondenceElements href="corr.xmi#//@correspondences.0"/>
-    <createdElements href="trg.xmi#//@cables.5"/>
+    <createdElements href="trg.xmi#//@cables.0"/>
+    <createdElements href="#//@tripleMatches.15/@containedEdges.0"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.11" ruleName="ImplGlassIgnoreRule">
+    <sourceElements href="src.xmi#/"/>
+    <contextElements href="src.xmi#/"/>
+    <contextElements href="trg.xmi#/"/>
+    <contextElements href="corr.xmi#//@correspondences.0"/>
+    <nodeMappings nodeName="reqContainer">
+      <node href="src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cable">
+      <node href="trg.xmi#//@cables.4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="implContainer">
+      <node href="trg.xmi#/"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
+      <src href="trg.xmi#/"/>
+      <trg href="trg.xmi#//@cables.4"/>
+    </containedEdges>
+    <targetElements href="trg.xmi#/"/>
+    <targetElements href="#//@tripleMatches.16/@containedEdges.0"/>
+    <targetElements href="trg.xmi#//@cables.4"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.0"/>
     <createdElements href="#//@tripleMatches.16/@containedEdges.0"/>
+    <createdElements href="trg.xmi#//@cables.4"/>
   </tripleMatches>
   <tripleMatches ruleName="ReqConsumerToComputerRule">
     <sourceElements href="src.xmi#//@networkSpan"/>
@@ -745,6 +737,7 @@
     <sourceElements href="src.xmi#//@agents.3"/>
     <contextElements href="src.xmi#//@networkSpan"/>
     <contextElements href="#//@tripleMatches.17/@containedEdges.0"/>
+    <contextElements href="corr.xmi#//@correspondences.3"/>
     <contextElements href="src.xmi#/"/>
     <contextElements href="#//@tripleMatches.17/@containedEdges.1"/>
     <contextElements href="trg.xmi#//@cables.3"/>
@@ -752,7 +745,6 @@
     <contextElements href="trg.xmi#/"/>
     <contextElements href="corr.xmi#//@correspondences.0"/>
     <contextElements href="#//@tripleMatches.17/@containedEdges.2"/>
-    <contextElements href="corr.xmi#//@correspondences.2"/>
     <nodeMappings nodeName="reqAgent">
       <node href="src.xmi#//@agents.3"/>
     </nodeMappings>
@@ -792,14 +784,14 @@
     <targetElements href="trg.xmi#//@devices.1"/>
     <targetElements href="trg.xmi#/"/>
     <targetElements href="#//@tripleMatches.17/@containedEdges.2"/>
-    <correspondenceElements href="corr.xmi#//@correspondences.2"/>
+    <correspondenceElements href="corr.xmi#//@correspondences.3"/>
     <correspondenceElements href="corr.xmi#//@correspondences.0"/>
     <correspondenceElements href="corr.xmi#//@correspondences.7"/>
     <createdElements href="#//@tripleMatches.17/@containedEdges.3"/>
     <createdElements href="corr.xmi#//@correspondences.7"/>
     <createdElements href="src.xmi#//@agents.3"/>
   </tripleMatches>
-  <tripleMatches children="//@tripleMatches.17" ruleName="ImplGlassIgnoreRule">
+  <tripleMatches children="//@tripleMatches.2 //@tripleMatches.0 //@tripleMatches.12" ruleName="ImplCopperIgnoreRule">
     <sourceElements href="src.xmi#/"/>
     <contextElements href="src.xmi#/"/>
     <contextElements href="trg.xmi#/"/>
@@ -808,20 +800,20 @@
       <node href="src.xmi#/"/>
     </nodeMappings>
     <nodeMappings nodeName="cable">
-      <node href="trg.xmi#//@cables.3"/>
+      <node href="trg.xmi#//@cables.6"/>
     </nodeMappings>
     <nodeMappings nodeName="implContainer">
       <node href="trg.xmi#/"/>
     </nodeMappings>
     <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cables">
       <src href="trg.xmi#/"/>
-      <trg href="trg.xmi#//@cables.3"/>
+      <trg href="trg.xmi#//@cables.6"/>
     </containedEdges>
     <targetElements href="trg.xmi#/"/>
     <targetElements href="#//@tripleMatches.18/@containedEdges.0"/>
-    <targetElements href="trg.xmi#//@cables.3"/>
+    <targetElements href="trg.xmi#//@cables.6"/>
     <correspondenceElements href="corr.xmi#//@correspondences.0"/>
     <createdElements href="#//@tripleMatches.18/@containedEdges.0"/>
-    <createdElements href="trg.xmi#//@cables.3"/>
+    <createdElements href="trg.xmi#//@cables.6"/>
   </tripleMatches>
 </org.moflon.tgg.runtime:PrecedenceStructure>

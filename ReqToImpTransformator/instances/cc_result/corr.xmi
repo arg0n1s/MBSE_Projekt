@@ -8,13 +8,13 @@
     <source href="src.xmi#//@networkSpan"/>
     <target href="trg.xmi#//@devices.2"/>
   </correspondences>
-  <correspondences xsi:type="ReqToImpTransformator:VirtualNodeToComputer">
-    <source href="src.xmi#//@networkSpan"/>
-    <target href="trg.xmi#//@devices.1"/>
-  </correspondences>
   <correspondences xsi:type="ReqToImpTransformator:VirtualNodeToServer">
     <source href="src.xmi#//@networkSpan"/>
     <target href="trg.xmi#//@devices.0"/>
+  </correspondences>
+  <correspondences xsi:type="ReqToImpTransformator:VirtualNodeToComputer">
+    <source href="src.xmi#//@networkSpan"/>
+    <target href="trg.xmi#//@devices.1"/>
   </correspondences>
   <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
     <source href="src.xmi#//@agents.0"/>

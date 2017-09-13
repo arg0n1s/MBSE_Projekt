@@ -15,7 +15,7 @@ Server s2{
 	outgoing(gfc22)
 }
 Router r3{
-	maxSpeed 10 
+	maxSpeed 10
 	incoming(gfc13)
 	outgoing(gfc32, gfcr3r2)
 }

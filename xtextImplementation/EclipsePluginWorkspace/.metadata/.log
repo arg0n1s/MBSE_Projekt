@@ -5880,3 +5880,13 @@ Command-line arguments:  -product org.eclipse.platform.ide -data /Users/Basti/Do
 
 !ENTRY org.eclipse.core.net 1 0 2017-09-06 18:19:13.409
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2017-09-13 21:53:46.541 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=de_DE
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /Users/Basti/Documents/MBSE/MBSE_Projekt/xtextImplementation/EclipsePluginWorkspace -dev file:/Users/Basti/Documents/Test_Workspace/.metadata/.plugins/org.eclipse.pde.core/Launch Runtime Eclipse/dev.properties -os macosx -ws cocoa -arch x86_64
+
+!ENTRY org.eclipse.core.net 1 0 2017-09-13 21:54:00.132
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences

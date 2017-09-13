@@ -1,79 +1,79 @@
 <?xml version="1.0" encoding="ASCII"?>
 <analysis:StaticAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:analysis="platform:/plugin/org.moflon.tgg.language/model/Language.ecore#//analysis">
   <sourceRules>
+    <rules ruleName="ImplGlassIgnoreRule" ignore="true">
+      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_FWD_Container_0"/>
+      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/checkDEC_FWD"/>
+    </rules>
+    <rules ruleName="VirtualNodeToComputerRule" ignore="true">
+      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_FWD_NetworkSpan_0"/>
+      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkDEC_FWD"/>
+    </rules>
+    <rules ruleName="VirtualNodeToServerRule" ignore="true">
+      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_FWD_NetworkSpan_1"/>
+      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkDEC_FWD"/>
+    </rules>
+    <rules ruleName="ImplCopperIgnoreRule" ignore="true">
+      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_FWD_Container_1"/>
+      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkDEC_FWD"/>
+    </rules>
+    <rules ruleName="ReqConsumerToComputerRule">
+      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_FWD_EMoflonEdge_0"/>
+      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkDEC_FWD"/>
+    </rules>
+    <rules ruleName="VirtualNodeToRouterRule2" ignore="true">
+      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_FWD_NetworkSpan_2"/>
+      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkDEC_FWD"/>
+    </rules>
+    <rules ruleName="ReqProviderToServerRule">
+      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_FWD_EMoflonEdge_1"/>
+      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/checkDEC_FWD"/>
+    </rules>
+    <rules ruleName="ReqContainerToImplContainerRule">
+      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_FWD_EMoflonEdge_2"/>
+      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/checkDEC_FWD"/>
+    </rules>
     <rules ruleName="VirtualNodeToRouterRule1" ignore="true">
       <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_FWD_NetworkSpan_3"/>
       <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkDEC_FWD"/>
     </rules>
-    <rules ruleName="ImplCopperIgnoreRule" ignore="true">
-      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_FWD_Container_15"/>
-      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkDEC_FWD"/>
-    </rules>
-    <rules ruleName="ReqProviderToServerRule">
-      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_FWD_EMoflonEdge_9"/>
-      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/checkDEC_FWD"/>
-    </rules>
-    <rules ruleName="VirtualNodeToServerRule" ignore="true">
-      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_FWD_NetworkSpan_4"/>
-      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkDEC_FWD"/>
-    </rules>
-    <rules ruleName="VirtualNodeToComputerRule" ignore="true">
-      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_FWD_Container_16"/>
-      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkDEC_FWD"/>
-    </rules>
-    <rules ruleName="ImplGlassIgnoreRule" ignore="true">
-      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_FWD_Container_17"/>
-      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/checkDEC_FWD"/>
-    </rules>
-    <rules ruleName="ReqContainerToImplContainerRule">
-      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_FWD_EMoflonEdge_10"/>
-      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/checkDEC_FWD"/>
-    </rules>
-    <rules ruleName="VirtualNodeToRouterRule2" ignore="true">
-      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_FWD_NetworkSpan_5"/>
-      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkDEC_FWD"/>
-    </rules>
-    <rules ruleName="ReqConsumerToComputerRule">
-      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_FWD_EMoflonEdge_11"/>
-      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkDEC_FWD"/>
-    </rules>
   </sourceRules>
   <targetRules>
-    <rules ruleName="VirtualNodeToRouterRule1">
-      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_BWD_EMoflonEdge_18"/>
-      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkDEC_BWD"/>
-    </rules>
-    <rules ruleName="ImplCopperIgnoreRule">
-      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_BWD_EMoflonEdge_19"/>
-      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkDEC_BWD"/>
-    </rules>
-    <rules ruleName="ReqProviderToServerRule" ignore="true">
-      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_BWD_Server_2"/>
-      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/checkDEC_BWD"/>
-    </rules>
-    <rules ruleName="VirtualNodeToServerRule">
-      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_BWD_EMoflonEdge_20"/>
-      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkDEC_BWD"/>
-    </rules>
-    <rules ruleName="VirtualNodeToComputerRule">
-      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_BWD_EMoflonEdge_21"/>
-      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkDEC_BWD"/>
-    </rules>
     <rules ruleName="ImplGlassIgnoreRule">
-      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_BWD_EMoflonEdge_22"/>
+      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_BWD_EMoflonEdge_0"/>
       <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/checkDEC_BWD"/>
     </rules>
-    <rules ruleName="ReqContainerToImplContainerRule">
-      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_BWD_Container_5"/>
-      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/checkDEC_BWD"/>
+    <rules ruleName="VirtualNodeToComputerRule">
+      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_BWD_EMoflonEdge_1"/>
+      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkDEC_BWD"/>
     </rules>
-    <rules ruleName="VirtualNodeToRouterRule2">
-      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_BWD_EMoflonEdge_23"/>
-      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkDEC_BWD"/>
+    <rules ruleName="VirtualNodeToServerRule">
+      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_BWD_EMoflonEdge_2"/>
+      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkDEC_BWD"/>
+    </rules>
+    <rules ruleName="ImplCopperIgnoreRule">
+      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_BWD_EMoflonEdge_3"/>
+      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkDEC_BWD"/>
     </rules>
     <rules ruleName="ReqConsumerToComputerRule" ignore="true">
-      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_BWD_Computer_2"/>
+      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_BWD_Computer_0"/>
       <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkDEC_BWD"/>
+    </rules>
+    <rules ruleName="VirtualNodeToRouterRule2">
+      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_BWD_EMoflonEdge_4"/>
+      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkDEC_BWD"/>
+    </rules>
+    <rules ruleName="ReqProviderToServerRule" ignore="true">
+      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_BWD_Server_0"/>
+      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/checkDEC_BWD"/>
+    </rules>
+    <rules ruleName="ReqContainerToImplContainerRule">
+      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_BWD_Container_0"/>
+      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/checkDEC_BWD"/>
+    </rules>
+    <rules ruleName="VirtualNodeToRouterRule1">
+      <isAppropriateMethods href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_BWD_EMoflonEdge_5"/>
+      <checkDECMethod href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkDEC_BWD"/>
     </rules>
   </targetRules>
 </analysis:StaticAnalysis>
