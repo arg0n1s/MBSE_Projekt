@@ -97,8 +97,8 @@ public interface ReqConsumerToComputerRule extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, Computer implDevice, Consumer reqAgent,
-			Container reqContainer, VirtualNodeToComputer virtualNodeToComputer, NetworkSpan virtualNode, Cable cable,
-			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer);
+			Container reqContainer, NetworkSpan virtualNode, VirtualNodeToComputer virtualNodeToComputer, Cable cable,
+			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -114,9 +114,9 @@ public interface ReqConsumerToComputerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_FWD(PerformRuleResult ruleresult, EObject reqAgentToImplDevice, EObject implDevice,
-			EObject reqAgent, EObject reqContainer, EObject virtualNodeToComputer, EObject virtualNode, EObject cable,
-			EObject implContainer, EObject reqContainerToImplContainer);
+	void registerObjects_FWD(PerformRuleResult ruleresult, EObject implDevice, EObject reqAgentToImplDevice,
+			EObject reqAgent, EObject reqContainer, EObject virtualNode, EObject virtualNodeToComputer, EObject cable,
+			EObject reqContainerToImplContainer, EObject implContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -274,8 +274,8 @@ public interface ReqConsumerToComputerRule extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Computer implDevice, Container reqContainer,
-			VirtualNodeToComputer virtualNodeToComputer, NetworkSpan virtualNode, Cable cable,
-			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer,
+			NetworkSpan virtualNode, VirtualNodeToComputer virtualNodeToComputer, Cable cable,
+			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer,
 			ModelgeneratorRuleResult ruleResult);
 
 	/**

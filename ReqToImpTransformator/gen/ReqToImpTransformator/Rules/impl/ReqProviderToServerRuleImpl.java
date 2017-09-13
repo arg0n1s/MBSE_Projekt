@@ -175,12 +175,12 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 		Container reqContainer = (Container) result1_bindingAndBlack[3];
 		NetworkSpan virtualNode = (NetworkSpan) result1_bindingAndBlack[4];
 		Cable cable = (Cable) result1_bindingAndBlack[5];
-		implementation.Container implContainer = (implementation.Container) result1_bindingAndBlack[6];
-		ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result1_bindingAndBlack[7];
+		ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result1_bindingAndBlack[6];
+		implementation.Container implContainer = (implementation.Container) result1_bindingAndBlack[7];
 		//nothing CSP csp = (CSP) result1_bindingAndBlack[8];
 		Object[] result1_green = ReqProviderToServerRuleImpl
-				.pattern_ReqProviderToServerRule_1_1_performtransformation_greenFBB(implDevice, reqAgent);
-		ReqAgentToImplDevice reqAgentToImplDevice = (ReqAgentToImplDevice) result1_green[0];
+				.pattern_ReqProviderToServerRule_1_1_performtransformation_greenBFB(implDevice, reqAgent);
+		ReqAgentToImplDevice reqAgentToImplDevice = (ReqAgentToImplDevice) result1_green[1];
 
 		Object[] result2_black = ReqProviderToServerRuleImpl
 				.pattern_ReqProviderToServerRule_1_2_collecttranslatedelements_blackBB(reqAgentToImplDevice, reqAgent);
@@ -194,18 +194,18 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 
 		Object[] result3_black = ReqProviderToServerRuleImpl
 				.pattern_ReqProviderToServerRule_1_3_bookkeepingforedges_blackBBBBBBBBBB(ruleresult,
-						virtualNodeToServer, reqAgentToImplDevice, implDevice, reqAgent, reqContainer, virtualNode,
-						cable, implContainer, reqContainerToImplContainer);
+						virtualNodeToServer, implDevice, reqAgentToImplDevice, reqAgent, reqContainer, virtualNode,
+						cable, reqContainerToImplContainer, implContainer);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[ruleresult] = " + ruleresult
-					+ ", " + "[virtualNodeToServer] = " + virtualNodeToServer + ", " + "[reqAgentToImplDevice] = "
-					+ reqAgentToImplDevice + ", " + "[implDevice] = " + implDevice + ", " + "[reqAgent] = " + reqAgent
+					+ ", " + "[virtualNodeToServer] = " + virtualNodeToServer + ", " + "[implDevice] = " + implDevice
+					+ ", " + "[reqAgentToImplDevice] = " + reqAgentToImplDevice + ", " + "[reqAgent] = " + reqAgent
 					+ ", " + "[reqContainer] = " + reqContainer + ", " + "[virtualNode] = " + virtualNode + ", "
-					+ "[cable] = " + cable + ", " + "[implContainer] = " + implContainer + ", "
-					+ "[reqContainerToImplContainer] = " + reqContainerToImplContainer + ".");
+					+ "[cable] = " + cable + ", " + "[reqContainerToImplContainer] = " + reqContainerToImplContainer
+					+ ", " + "[implContainer] = " + implContainer + ".");
 		}
 		ReqProviderToServerRuleImpl.pattern_ReqProviderToServerRule_1_3_bookkeepingforedges_greenBBBBBFFF(ruleresult,
-				reqAgentToImplDevice, implDevice, reqAgent, reqContainer);
+				implDevice, reqAgentToImplDevice, reqAgent, reqContainer);
 		//nothing EMoflonEdge reqAgentToImplDevice__reqAgent____source = (EMoflonEdge) result3_green[5];
 		//nothing EMoflonEdge reqAgentToImplDevice__implDevice____target = (EMoflonEdge) result3_green[6];
 		//nothing EMoflonEdge reqContainer__reqAgent____agents = (EMoflonEdge) result3_green[7];
@@ -213,8 +213,8 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 		// 
 		// 
 		ReqProviderToServerRuleImpl.pattern_ReqProviderToServerRule_1_5_registerobjects_expressionBBBBBBBBBBB(this,
-				ruleresult, virtualNodeToServer, reqAgentToImplDevice, implDevice, reqAgent, reqContainer, virtualNode,
-				cable, implContainer, reqContainerToImplContainer);
+				ruleresult, virtualNodeToServer, implDevice, reqAgentToImplDevice, reqAgent, reqContainer, virtualNode,
+				cable, reqContainerToImplContainer, implContainer);
 		return ReqProviderToServerRuleImpl.pattern_ReqProviderToServerRule_1_6_expressionFB(ruleresult);
 	}
 
@@ -251,17 +251,17 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 						match)) {
 			VirtualNodeToServer virtualNodeToServer = (VirtualNodeToServer) result2_black[0];
 			Server implDevice = (Server) result2_black[1];
-			implementation.Container implContainer = (implementation.Container) result2_black[5];
-			ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result2_black[6];
+			ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result2_black[5];
+			implementation.Container implContainer = (implementation.Container) result2_black[6];
 			// ForEach 
 			for (Object[] result3_black : ReqProviderToServerRuleImpl
 					.pattern_ReqProviderToServerRule_2_3_findcontext_blackBBBBBFBB(virtualNodeToServer, implDevice,
-							reqAgent, reqContainer, virtualNode, implContainer, reqContainerToImplContainer)) {
+							reqAgent, reqContainer, virtualNode, reqContainerToImplContainer, implContainer)) {
 				Cable cable = (Cable) result3_black[5];
 				Object[] result3_green = ReqProviderToServerRuleImpl
 						.pattern_ReqProviderToServerRule_2_3_findcontext_greenBBBBBBBBFFFFFFFFF(virtualNodeToServer,
-								implDevice, reqAgent, reqContainer, virtualNode, cable, implContainer,
-								reqContainerToImplContainer);
+								implDevice, reqAgent, reqContainer, virtualNode, cable, reqContainerToImplContainer,
+								implContainer);
 				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[8];
 				//nothing EMoflonEdge implContainer__cable____cables = (EMoflonEdge) result3_green[9];
 				//nothing EMoflonEdge reqContainer__virtualNode____networkSpan = (EMoflonEdge) result3_green[10];
@@ -275,14 +275,14 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 				Object[] result4_bindingAndBlack = ReqProviderToServerRuleImpl
 						.pattern_ReqProviderToServerRule_2_4_solveCSP_bindingAndBlackFBBBBBBBBBB(this,
 								isApplicableMatch, virtualNodeToServer, implDevice, reqAgent, reqContainer, virtualNode,
-								cable, implContainer, reqContainerToImplContainer);
+								cable, reqContainerToImplContainer, implContainer);
 				if (result4_bindingAndBlack == null) {
 					throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
 							+ "[isApplicableMatch] = " + isApplicableMatch + ", " + "[virtualNodeToServer] = "
 							+ virtualNodeToServer + ", " + "[implDevice] = " + implDevice + ", " + "[reqAgent] = "
 							+ reqAgent + ", " + "[reqContainer] = " + reqContainer + ", " + "[virtualNode] = "
-							+ virtualNode + ", " + "[cable] = " + cable + ", " + "[implContainer] = " + implContainer
-							+ ", " + "[reqContainerToImplContainer] = " + reqContainerToImplContainer + ".");
+							+ virtualNode + ", " + "[cable] = " + cable + ", " + "[reqContainerToImplContainer] = "
+							+ reqContainerToImplContainer + ", " + "[implContainer] = " + implContainer + ".");
 				}
 				CSP csp = (CSP) result4_bindingAndBlack[0];
 				// 
@@ -357,7 +357,7 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 	 */
 	public CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, VirtualNodeToServer virtualNodeToServer,
 			Server implDevice, Provider reqAgent, Container reqContainer, NetworkSpan virtualNode, Cable cable,
-			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer) {// Create CSP
+			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -378,8 +378,8 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 		isApplicableMatch.registerObject("reqContainer", reqContainer);
 		isApplicableMatch.registerObject("virtualNode", virtualNode);
 		isApplicableMatch.registerObject("cable", cable);
-		isApplicableMatch.registerObject("implContainer", implContainer);
 		isApplicableMatch.registerObject("reqContainerToImplContainer", reqContainerToImplContainer);
+		isApplicableMatch.registerObject("implContainer", implContainer);
 		return csp;
 	}
 
@@ -397,18 +397,18 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjects_FWD(PerformRuleResult ruleresult, EObject virtualNodeToServer,
-			EObject reqAgentToImplDevice, EObject implDevice, EObject reqAgent, EObject reqContainer,
-			EObject virtualNode, EObject cable, EObject implContainer, EObject reqContainerToImplContainer) {
+	public void registerObjects_FWD(PerformRuleResult ruleresult, EObject virtualNodeToServer, EObject implDevice,
+			EObject reqAgentToImplDevice, EObject reqAgent, EObject reqContainer, EObject virtualNode, EObject cable,
+			EObject reqContainerToImplContainer, EObject implContainer) {
 		ruleresult.registerObject("virtualNodeToServer", virtualNodeToServer);
-		ruleresult.registerObject("reqAgentToImplDevice", reqAgentToImplDevice);
 		ruleresult.registerObject("implDevice", implDevice);
+		ruleresult.registerObject("reqAgentToImplDevice", reqAgentToImplDevice);
 		ruleresult.registerObject("reqAgent", reqAgent);
 		ruleresult.registerObject("reqContainer", reqContainer);
 		ruleresult.registerObject("virtualNode", virtualNode);
 		ruleresult.registerObject("cable", cable);
-		ruleresult.registerObject("implContainer", implContainer);
 		ruleresult.registerObject("reqContainerToImplContainer", reqContainerToImplContainer);
+		ruleresult.registerObject("implContainer", implContainer);
 
 	}
 
@@ -779,10 +779,10 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 		if (ReqProviderToServerRuleImpl.pattern_ReqProviderToServerRule_21_4_checkCSP_expressionFB(csp)) {
 			// ForEach 
 			for (Object[] result5_black : ReqProviderToServerRuleImpl
-					.pattern_ReqProviderToServerRule_21_5_matchcorrcontext_blackFBBBBFBB(implDevice, reqContainer,
+					.pattern_ReqProviderToServerRule_21_5_matchcorrcontext_blackFBBBFBBB(implDevice, reqContainer,
 							virtualNode, implContainer, sourceMatch, targetMatch)) {
 				VirtualNodeToServer virtualNodeToServer = (VirtualNodeToServer) result5_black[0];
-				ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result5_black[5];
+				ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result5_black[4];
 				Object[] result5_green = ReqProviderToServerRuleImpl
 						.pattern_ReqProviderToServerRule_21_5_matchcorrcontext_greenBBBBF(virtualNodeToServer,
 								reqContainerToImplContainer, sourceMatch, targetMatch);
@@ -797,9 +797,9 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 							+ ", " + "[virtualNode] = " + virtualNode + ", " + "[cable] = " + cable + ", "
 							+ "[implContainer] = " + implContainer + ", " + "[ccMatch] = " + ccMatch + ".");
 				}
-				ReqProviderToServerRuleImpl.pattern_ReqProviderToServerRule_21_6_createcorrespondence_greenFBBB(
+				ReqProviderToServerRuleImpl.pattern_ReqProviderToServerRule_21_6_createcorrespondence_greenBFBB(
 						implDevice, reqAgent, ccMatch);
-				//nothing ReqAgentToImplDevice reqAgentToImplDevice = (ReqAgentToImplDevice) result6_green[0];
+				//nothing ReqAgentToImplDevice reqAgentToImplDevice = (ReqAgentToImplDevice) result6_green[1];
 
 				Object[] result7_black = ReqProviderToServerRuleImpl
 						.pattern_ReqProviderToServerRule_21_7_addtoreturnedresult_blackBB(result, ccMatch);
@@ -908,20 +908,20 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 			Container reqContainer = (Container) result2_black[3];
 			ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result2_black[4];
 			implementation.Container implContainer = (implementation.Container) result2_black[5];
-			Cable cable = (Cable) result2_black[6];
-			Server implDevice = (Server) result2_black[7];
+			Server implDevice = (Server) result2_black[6];
+			Cable cable = (Cable) result2_black[7];
 
 			Object[] result3_bindingAndBlack = ReqProviderToServerRuleImpl
 					.pattern_ReqProviderToServerRule_26_3_solveCSP_bindingAndBlackFBBBBBBBBBB(this, isApplicableMatch,
-							virtualNodeToServer, implDevice, reqContainer, virtualNode, cable, implContainer,
-							reqContainerToImplContainer, ruleResult);
+							virtualNodeToServer, implDevice, reqContainer, virtualNode, cable,
+							reqContainerToImplContainer, implContainer, ruleResult);
 			if (result3_bindingAndBlack == null) {
 				throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
 						+ "[isApplicableMatch] = " + isApplicableMatch + ", " + "[virtualNodeToServer] = "
 						+ virtualNodeToServer + ", " + "[implDevice] = " + implDevice + ", " + "[reqContainer] = "
 						+ reqContainer + ", " + "[virtualNode] = " + virtualNode + ", " + "[cable] = " + cable + ", "
-						+ "[implContainer] = " + implContainer + ", " + "[reqContainerToImplContainer] = "
-						+ reqContainerToImplContainer + ", " + "[ruleResult] = " + ruleResult + ".");
+						+ "[reqContainerToImplContainer] = " + reqContainerToImplContainer + ", " + "[implContainer] = "
+						+ implContainer + ", " + "[ruleResult] = " + ruleResult + ".");
 			}
 			CSP csp = (CSP) result3_bindingAndBlack[0];
 			// 
@@ -929,24 +929,24 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 				// 
 				Object[] result5_black = ReqProviderToServerRuleImpl
 						.pattern_ReqProviderToServerRule_26_5_checknacs_blackBBBBBBB(virtualNodeToServer, implDevice,
-								reqContainer, virtualNode, cable, implContainer, reqContainerToImplContainer);
+								reqContainer, virtualNode, cable, reqContainerToImplContainer, implContainer);
 				if (result5_black != null) {
 
 					Object[] result6_black = ReqProviderToServerRuleImpl
 							.pattern_ReqProviderToServerRule_26_6_perform_blackBBBBBBBB(virtualNodeToServer, implDevice,
-									reqContainer, virtualNode, cable, implContainer, reqContainerToImplContainer,
+									reqContainer, virtualNode, cable, reqContainerToImplContainer, implContainer,
 									ruleResult);
 					if (result6_black == null) {
 						throw new RuntimeException("Pattern matching failed." + " Variables: "
 								+ "[virtualNodeToServer] = " + virtualNodeToServer + ", " + "[implDevice] = "
 								+ implDevice + ", " + "[reqContainer] = " + reqContainer + ", " + "[virtualNode] = "
-								+ virtualNode + ", " + "[cable] = " + cable + ", " + "[implContainer] = "
-								+ implContainer + ", " + "[reqContainerToImplContainer] = "
-								+ reqContainerToImplContainer + ", " + "[ruleResult] = " + ruleResult + ".");
+								+ virtualNode + ", " + "[cable] = " + cable + ", " + "[reqContainerToImplContainer] = "
+								+ reqContainerToImplContainer + ", " + "[implContainer] = " + implContainer + ", "
+								+ "[ruleResult] = " + ruleResult + ".");
 					}
-					ReqProviderToServerRuleImpl.pattern_ReqProviderToServerRule_26_6_perform_greenFBFBB(implDevice,
+					ReqProviderToServerRuleImpl.pattern_ReqProviderToServerRule_26_6_perform_greenBFFBB(implDevice,
 							reqContainer, ruleResult);
-					//nothing ReqAgentToImplDevice reqAgentToImplDevice = (ReqAgentToImplDevice) result6_green[0];
+					//nothing ReqAgentToImplDevice reqAgentToImplDevice = (ReqAgentToImplDevice) result6_green[1];
 					//nothing Provider reqAgent = (Provider) result6_green[2];
 
 				} else {
@@ -966,7 +966,7 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 	 */
 	public CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, VirtualNodeToServer virtualNodeToServer,
 			Server implDevice, Container reqContainer, NetworkSpan virtualNode, Cable cable,
-			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer,
+			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer,
 			ModelgeneratorRuleResult ruleResult) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
@@ -987,8 +987,8 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 		isApplicableMatch.registerObject("reqContainer", reqContainer);
 		isApplicableMatch.registerObject("virtualNode", virtualNode);
 		isApplicableMatch.registerObject("cable", cable);
-		isApplicableMatch.registerObject("implContainer", implContainer);
 		isApplicableMatch.registerObject("reqContainerToImplContainer", reqContainerToImplContainer);
+		isApplicableMatch.registerObject("implContainer", implContainer);
 		return csp;
 	}
 
@@ -1025,11 +1025,11 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 					(Container) arguments.get(2), (NetworkSpan) arguments.get(3));
 		case RulesPackage.REQ_PROVIDER_TO_SERVER_RULE___IS_APPROPRIATE_CHECK_CSP_FWD__CSP:
 			return isAppropriate_checkCsp_FWD((CSP) arguments.get(0));
-		case RulesPackage.REQ_PROVIDER_TO_SERVER_RULE___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_VIRTUALNODETOSERVER_SERVER_PROVIDER_CONTAINER_NETWORKSPAN_CABLE_CONTAINER_REQCONTAINERTOIMPLCONTAINER:
+		case RulesPackage.REQ_PROVIDER_TO_SERVER_RULE___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_VIRTUALNODETOSERVER_SERVER_PROVIDER_CONTAINER_NETWORKSPAN_CABLE_REQCONTAINERTOIMPLCONTAINER_CONTAINER:
 			return isApplicable_solveCsp_FWD((IsApplicableMatch) arguments.get(0),
 					(VirtualNodeToServer) arguments.get(1), (Server) arguments.get(2), (Provider) arguments.get(3),
 					(Container) arguments.get(4), (NetworkSpan) arguments.get(5), (Cable) arguments.get(6),
-					(implementation.Container) arguments.get(7), (ReqContainerToImplContainer) arguments.get(8));
+					(ReqContainerToImplContainer) arguments.get(7), (implementation.Container) arguments.get(8));
 		case RulesPackage.REQ_PROVIDER_TO_SERVER_RULE___IS_APPLICABLE_CHECK_CSP_FWD__CSP:
 			return isApplicable_checkCsp_FWD((CSP) arguments.get(0));
 		case RulesPackage.REQ_PROVIDER_TO_SERVER_RULE___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
@@ -1082,11 +1082,11 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 					(implementation.Container) arguments.get(2));
 		case RulesPackage.REQ_PROVIDER_TO_SERVER_RULE___GENERATE_MODEL__RULEENTRYCONTAINER_VIRTUALNODETOSERVER:
 			return generateModel((RuleEntryContainer) arguments.get(0), (VirtualNodeToServer) arguments.get(1));
-		case RulesPackage.REQ_PROVIDER_TO_SERVER_RULE___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_VIRTUALNODETOSERVER_SERVER_CONTAINER_NETWORKSPAN_CABLE_CONTAINER_REQCONTAINERTOIMPLCONTAINER_MODELGENERATORRULERESULT:
+		case RulesPackage.REQ_PROVIDER_TO_SERVER_RULE___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_VIRTUALNODETOSERVER_SERVER_CONTAINER_NETWORKSPAN_CABLE_REQCONTAINERTOIMPLCONTAINER_CONTAINER_MODELGENERATORRULERESULT:
 			return generateModel_solveCsp_BWD((IsApplicableMatch) arguments.get(0),
 					(VirtualNodeToServer) arguments.get(1), (Server) arguments.get(2), (Container) arguments.get(3),
 					(NetworkSpan) arguments.get(4), (Cable) arguments.get(5),
-					(implementation.Container) arguments.get(6), (ReqContainerToImplContainer) arguments.get(7),
+					(ReqContainerToImplContainer) arguments.get(6), (implementation.Container) arguments.get(7),
 					(ModelgeneratorRuleResult) arguments.get(8));
 		case RulesPackage.REQ_PROVIDER_TO_SERVER_RULE___GENERATE_MODEL_CHECK_CSP_BWD__CSP:
 			return generateModel_checkCsp_BWD((CSP) arguments.get(0));
@@ -1200,16 +1200,16 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 		EObject _localVariable_3 = isApplicableMatch.getObject("reqContainer");
 		EObject _localVariable_4 = isApplicableMatch.getObject("virtualNode");
 		EObject _localVariable_5 = isApplicableMatch.getObject("cable");
-		EObject _localVariable_6 = isApplicableMatch.getObject("implContainer");
-		EObject _localVariable_7 = isApplicableMatch.getObject("reqContainerToImplContainer");
+		EObject _localVariable_6 = isApplicableMatch.getObject("reqContainerToImplContainer");
+		EObject _localVariable_7 = isApplicableMatch.getObject("implContainer");
 		EObject tmpVirtualNodeToServer = _localVariable_0;
 		EObject tmpImplDevice = _localVariable_1;
 		EObject tmpReqAgent = _localVariable_2;
 		EObject tmpReqContainer = _localVariable_3;
 		EObject tmpVirtualNode = _localVariable_4;
 		EObject tmpCable = _localVariable_5;
-		EObject tmpImplContainer = _localVariable_6;
-		EObject tmpReqContainerToImplContainer = _localVariable_7;
+		EObject tmpReqContainerToImplContainer = _localVariable_6;
+		EObject tmpImplContainer = _localVariable_7;
 		if (tmpVirtualNodeToServer instanceof VirtualNodeToServer) {
 			VirtualNodeToServer virtualNodeToServer = (VirtualNodeToServer) tmpVirtualNodeToServer;
 			if (tmpImplDevice instanceof Server) {
@@ -1222,12 +1222,12 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 							NetworkSpan virtualNode = (NetworkSpan) tmpVirtualNode;
 							if (tmpCable instanceof Cable) {
 								Cable cable = (Cable) tmpCable;
-								if (tmpImplContainer instanceof implementation.Container) {
-									implementation.Container implContainer = (implementation.Container) tmpImplContainer;
-									if (tmpReqContainerToImplContainer instanceof ReqContainerToImplContainer) {
-										ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) tmpReqContainerToImplContainer;
+								if (tmpReqContainerToImplContainer instanceof ReqContainerToImplContainer) {
+									ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) tmpReqContainerToImplContainer;
+									if (tmpImplContainer instanceof implementation.Container) {
+										implementation.Container implContainer = (implementation.Container) tmpImplContainer;
 										return new Object[] { virtualNodeToServer, implDevice, reqAgent, reqContainer,
-												virtualNode, cable, implContainer, reqContainerToImplContainer,
+												virtualNode, cable, reqContainerToImplContainer, implContainer,
 												isApplicableMatch };
 									}
 								}
@@ -1242,14 +1242,14 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 
 	public static final Object[] pattern_ReqProviderToServerRule_1_1_performtransformation_blackBBBBBBBBFBB(
 			VirtualNodeToServer virtualNodeToServer, Server implDevice, Provider reqAgent, Container reqContainer,
-			NetworkSpan virtualNode, Cable cable, implementation.Container implContainer,
-			ReqContainerToImplContainer reqContainerToImplContainer, ReqProviderToServerRule _this,
+			NetworkSpan virtualNode, Cable cable, ReqContainerToImplContainer reqContainerToImplContainer,
+			implementation.Container implContainer, ReqProviderToServerRule _this,
 			IsApplicableMatch isApplicableMatch) {
 		for (EObject tmpCsp : isApplicableMatch.getAttributeInfo()) {
 			if (tmpCsp instanceof CSP) {
 				CSP csp = (CSP) tmpCsp;
 				return new Object[] { virtualNodeToServer, implDevice, reqAgent, reqContainer, virtualNode, cable,
-						implContainer, reqContainerToImplContainer, csp, _this, isApplicableMatch };
+						reqContainerToImplContainer, implContainer, csp, _this, isApplicableMatch };
 			}
 		}
 		return null;
@@ -1266,28 +1266,28 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 			Container reqContainer = (Container) result_pattern_ReqProviderToServerRule_1_1_performtransformation_binding[3];
 			NetworkSpan virtualNode = (NetworkSpan) result_pattern_ReqProviderToServerRule_1_1_performtransformation_binding[4];
 			Cable cable = (Cable) result_pattern_ReqProviderToServerRule_1_1_performtransformation_binding[5];
-			implementation.Container implContainer = (implementation.Container) result_pattern_ReqProviderToServerRule_1_1_performtransformation_binding[6];
-			ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result_pattern_ReqProviderToServerRule_1_1_performtransformation_binding[7];
+			ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result_pattern_ReqProviderToServerRule_1_1_performtransformation_binding[6];
+			implementation.Container implContainer = (implementation.Container) result_pattern_ReqProviderToServerRule_1_1_performtransformation_binding[7];
 
 			Object[] result_pattern_ReqProviderToServerRule_1_1_performtransformation_black = pattern_ReqProviderToServerRule_1_1_performtransformation_blackBBBBBBBBFBB(
-					virtualNodeToServer, implDevice, reqAgent, reqContainer, virtualNode, cable, implContainer,
-					reqContainerToImplContainer, _this, isApplicableMatch);
+					virtualNodeToServer, implDevice, reqAgent, reqContainer, virtualNode, cable,
+					reqContainerToImplContainer, implContainer, _this, isApplicableMatch);
 			if (result_pattern_ReqProviderToServerRule_1_1_performtransformation_black != null) {
 				CSP csp = (CSP) result_pattern_ReqProviderToServerRule_1_1_performtransformation_black[8];
 
 				return new Object[] { virtualNodeToServer, implDevice, reqAgent, reqContainer, virtualNode, cable,
-						implContainer, reqContainerToImplContainer, csp, _this, isApplicableMatch };
+						reqContainerToImplContainer, implContainer, csp, _this, isApplicableMatch };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_ReqProviderToServerRule_1_1_performtransformation_greenFBB(Server implDevice,
+	public static final Object[] pattern_ReqProviderToServerRule_1_1_performtransformation_greenBFB(Server implDevice,
 			Provider reqAgent) {
 		ReqAgentToImplDevice reqAgentToImplDevice = ReqToImpTransformatorFactory.eINSTANCE.createReqAgentToImplDevice();
 		reqAgentToImplDevice.setSource(reqAgent);
 		reqAgentToImplDevice.setTarget(implDevice);
-		return new Object[] { reqAgentToImplDevice, implDevice, reqAgent };
+		return new Object[] { implDevice, reqAgentToImplDevice, reqAgent };
 	}
 
 	public static final Object[] pattern_ReqProviderToServerRule_1_2_collecttranslatedelements_blackBB(
@@ -1304,19 +1304,19 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 	}
 
 	public static final Object[] pattern_ReqProviderToServerRule_1_3_bookkeepingforedges_blackBBBBBBBBBB(
-			PerformRuleResult ruleresult, EObject virtualNodeToServer, EObject reqAgentToImplDevice, EObject implDevice,
-			EObject reqAgent, EObject reqContainer, EObject virtualNode, EObject cable, EObject implContainer,
-			EObject reqContainerToImplContainer) {
-		if (!reqAgentToImplDevice.equals(virtualNodeToServer)) {
-			if (!reqAgentToImplDevice.equals(reqContainer)) {
-				if (!reqAgentToImplDevice.equals(virtualNode)) {
-					if (!reqAgentToImplDevice.equals(reqContainerToImplContainer)) {
-						if (!implDevice.equals(virtualNodeToServer)) {
-							if (!implDevice.equals(reqAgentToImplDevice)) {
-								if (!implDevice.equals(reqAgent)) {
-									if (!implDevice.equals(reqContainer)) {
-										if (!implDevice.equals(virtualNode)) {
-											if (!implDevice.equals(reqContainerToImplContainer)) {
+			PerformRuleResult ruleresult, EObject virtualNodeToServer, EObject implDevice, EObject reqAgentToImplDevice,
+			EObject reqAgent, EObject reqContainer, EObject virtualNode, EObject cable,
+			EObject reqContainerToImplContainer, EObject implContainer) {
+		if (!implDevice.equals(virtualNodeToServer)) {
+			if (!implDevice.equals(reqAgentToImplDevice)) {
+				if (!implDevice.equals(reqAgent)) {
+					if (!implDevice.equals(reqContainer)) {
+						if (!implDevice.equals(virtualNode)) {
+							if (!implDevice.equals(reqContainerToImplContainer)) {
+								if (!reqAgentToImplDevice.equals(virtualNodeToServer)) {
+									if (!reqAgentToImplDevice.equals(reqContainer)) {
+										if (!reqAgentToImplDevice.equals(virtualNode)) {
+											if (!reqAgentToImplDevice.equals(reqContainerToImplContainer)) {
 												if (!reqAgent.equals(virtualNodeToServer)) {
 													if (!reqAgent.equals(reqAgentToImplDevice)) {
 														if (!reqAgent.equals(reqContainer)) {
@@ -1330,10 +1330,9 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 																						.equals(virtualNodeToServer)) {
 																					if (!cable.equals(
 																							virtualNodeToServer)) {
-																						if (!cable.equals(
-																								reqAgentToImplDevice)) {
+																						if (!cable.equals(implDevice)) {
 																							if (!cable.equals(
-																									implDevice)) {
+																									reqAgentToImplDevice)) {
 																								if (!cable.equals(
 																										reqAgent)) {
 																									if (!cable.equals(
@@ -1341,38 +1340,38 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 																										if (!cable
 																												.equals(virtualNode)) {
 																											if (!cable
-																													.equals(implContainer)) {
+																													.equals(reqContainerToImplContainer)) {
 																												if (!cable
-																														.equals(reqContainerToImplContainer)) {
-																													if (!implContainer
+																														.equals(implContainer)) {
+																													if (!reqContainerToImplContainer
 																															.equals(virtualNodeToServer)) {
-																														if (!implContainer
-																																.equals(reqAgentToImplDevice)) {
+																														if (!reqContainerToImplContainer
+																																.equals(virtualNode)) {
 																															if (!implContainer
-																																	.equals(implDevice)) {
+																																	.equals(virtualNodeToServer)) {
 																																if (!implContainer
-																																		.equals(reqAgent)) {
+																																		.equals(implDevice)) {
 																																	if (!implContainer
-																																			.equals(reqContainer)) {
+																																			.equals(reqAgentToImplDevice)) {
 																																		if (!implContainer
-																																				.equals(virtualNode)) {
+																																				.equals(reqAgent)) {
 																																			if (!implContainer
-																																					.equals(reqContainerToImplContainer)) {
-																																				if (!reqContainerToImplContainer
-																																						.equals(virtualNodeToServer)) {
-																																					if (!reqContainerToImplContainer
-																																							.equals(virtualNode)) {
+																																					.equals(reqContainer)) {
+																																				if (!implContainer
+																																						.equals(virtualNode)) {
+																																					if (!implContainer
+																																							.equals(reqContainerToImplContainer)) {
 																																						return new Object[] {
 																																								ruleresult,
 																																								virtualNodeToServer,
-																																								reqAgentToImplDevice,
 																																								implDevice,
+																																								reqAgentToImplDevice,
 																																								reqAgent,
 																																								reqContainer,
 																																								virtualNode,
 																																								cable,
-																																								implContainer,
-																																								reqContainerToImplContainer };
+																																								reqContainerToImplContainer,
+																																								implContainer };
 																																					}
 																																				}
 																																			}
@@ -1413,7 +1412,7 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 	}
 
 	public static final Object[] pattern_ReqProviderToServerRule_1_3_bookkeepingforedges_greenBBBBBFFF(
-			PerformRuleResult ruleresult, EObject reqAgentToImplDevice, EObject implDevice, EObject reqAgent,
+			PerformRuleResult ruleresult, EObject implDevice, EObject reqAgentToImplDevice, EObject reqAgent,
 			EObject reqContainer) {
 		EMoflonEdge reqAgentToImplDevice__reqAgent____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge reqAgentToImplDevice__implDevice____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
@@ -1435,17 +1434,17 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 		reqAgentToImplDevice__reqAgent____source.setName(reqAgentToImplDevice__reqAgent____source_name_prime);
 		reqAgentToImplDevice__implDevice____target.setName(reqAgentToImplDevice__implDevice____target_name_prime);
 		reqContainer__reqAgent____agents.setName(reqContainer__reqAgent____agents_name_prime);
-		return new Object[] { ruleresult, reqAgentToImplDevice, implDevice, reqAgent, reqContainer,
+		return new Object[] { ruleresult, implDevice, reqAgentToImplDevice, reqAgent, reqContainer,
 				reqAgentToImplDevice__reqAgent____source, reqAgentToImplDevice__implDevice____target,
 				reqContainer__reqAgent____agents };
 	}
 
 	public static final void pattern_ReqProviderToServerRule_1_5_registerobjects_expressionBBBBBBBBBBB(
 			ReqProviderToServerRule _this, PerformRuleResult ruleresult, EObject virtualNodeToServer,
-			EObject reqAgentToImplDevice, EObject implDevice, EObject reqAgent, EObject reqContainer,
-			EObject virtualNode, EObject cable, EObject implContainer, EObject reqContainerToImplContainer) {
-		_this.registerObjects_FWD(ruleresult, virtualNodeToServer, reqAgentToImplDevice, implDevice, reqAgent,
-				reqContainer, virtualNode, cable, implContainer, reqContainerToImplContainer);
+			EObject implDevice, EObject reqAgentToImplDevice, EObject reqAgent, EObject reqContainer,
+			EObject virtualNode, EObject cable, EObject reqContainerToImplContainer, EObject implContainer) {
+		_this.registerObjects_FWD(ruleresult, virtualNodeToServer, implDevice, reqAgentToImplDevice, reqAgent,
+				reqContainer, virtualNode, cable, reqContainerToImplContainer, implContainer);
 
 	}
 
@@ -1538,7 +1537,7 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 					implementation.Container implContainer = reqContainerToImplContainer.getTarget();
 					if (implContainer != null) {
 						_result.add(new Object[] { virtualNodeToServer, implDevice, reqAgent, reqContainer, virtualNode,
-								implContainer, reqContainerToImplContainer, match });
+								reqContainerToImplContainer, implContainer, match });
 					}
 
 				}
@@ -1550,8 +1549,8 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 
 	public static final Iterable<Object[]> pattern_ReqProviderToServerRule_2_3_findcontext_blackBBBBBFBB(
 			VirtualNodeToServer virtualNodeToServer, Server implDevice, Provider reqAgent, Container reqContainer,
-			NetworkSpan virtualNode, implementation.Container implContainer,
-			ReqContainerToImplContainer reqContainerToImplContainer) {
+			NetworkSpan virtualNode, ReqContainerToImplContainer reqContainerToImplContainer,
+			implementation.Container implContainer) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		if (virtualNode.equals(reqContainer.getNetworkSpan())) {
 			if (implDevice.equals(virtualNodeToServer.getTarget())) {
@@ -1562,8 +1561,8 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 								if (implContainer.getDevices().contains(implDevice)) {
 									for (Cable cable : implContainer.getCables()) {
 										_result.add(new Object[] { virtualNodeToServer, implDevice, reqAgent,
-												reqContainer, virtualNode, cable, implContainer,
-												reqContainerToImplContainer });
+												reqContainer, virtualNode, cable, reqContainerToImplContainer,
+												implContainer });
 									}
 								}
 							}
@@ -1577,8 +1576,8 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 
 	public static final Object[] pattern_ReqProviderToServerRule_2_3_findcontext_greenBBBBBBBBFFFFFFFFF(
 			VirtualNodeToServer virtualNodeToServer, Server implDevice, Provider reqAgent, Container reqContainer,
-			NetworkSpan virtualNode, Cable cable, implementation.Container implContainer,
-			ReqContainerToImplContainer reqContainerToImplContainer) {
+			NetworkSpan virtualNode, Cable cable, ReqContainerToImplContainer reqContainerToImplContainer,
+			implementation.Container implContainer) {
 		IsApplicableMatch isApplicableMatch = RuntimeFactory.eINSTANCE.createIsApplicableMatch();
 		EMoflonEdge implContainer__cable____cables = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge reqContainer__virtualNode____networkSpan = RuntimeFactory.eINSTANCE.createEMoflonEdge();
@@ -1602,8 +1601,8 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 		isApplicableMatch.getAllContextElements().add(reqContainer);
 		isApplicableMatch.getAllContextElements().add(virtualNode);
 		isApplicableMatch.getAllContextElements().add(cable);
-		isApplicableMatch.getAllContextElements().add(implContainer);
 		isApplicableMatch.getAllContextElements().add(reqContainerToImplContainer);
+		isApplicableMatch.getAllContextElements().add(implContainer);
 		implContainer__cable____cables.setSrc(implContainer);
 		implContainer__cable____cables.setTrg(cable);
 		isApplicableMatch.getAllContextElements().add(implContainer__cable____cables);
@@ -1639,7 +1638,7 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 				.setName(reqContainerToImplContainer__implContainer____target_name_prime);
 		implContainer__implDevice____devices.setName(implContainer__implDevice____devices_name_prime);
 		return new Object[] { virtualNodeToServer, implDevice, reqAgent, reqContainer, virtualNode, cable,
-				implContainer, reqContainerToImplContainer, isApplicableMatch, implContainer__cable____cables,
+				reqContainerToImplContainer, implContainer, isApplicableMatch, implContainer__cable____cables,
 				reqContainer__virtualNode____networkSpan, virtualNodeToServer__implDevice____target,
 				reqContainer__reqAgent____agents, virtualNodeToServer__virtualNode____source,
 				reqContainerToImplContainer__reqContainer____source,
@@ -1649,13 +1648,13 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 	public static final Object[] pattern_ReqProviderToServerRule_2_4_solveCSP_bindingFBBBBBBBBBB(
 			ReqProviderToServerRule _this, IsApplicableMatch isApplicableMatch, VirtualNodeToServer virtualNodeToServer,
 			Server implDevice, Provider reqAgent, Container reqContainer, NetworkSpan virtualNode, Cable cable,
-			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer) {
+			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer) {
 		CSP _localVariable_0 = _this.isApplicable_solveCsp_FWD(isApplicableMatch, virtualNodeToServer, implDevice,
-				reqAgent, reqContainer, virtualNode, cable, implContainer, reqContainerToImplContainer);
+				reqAgent, reqContainer, virtualNode, cable, reqContainerToImplContainer, implContainer);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
 			return new Object[] { csp, _this, isApplicableMatch, virtualNodeToServer, implDevice, reqAgent,
-					reqContainer, virtualNode, cable, implContainer, reqContainerToImplContainer };
+					reqContainer, virtualNode, cable, reqContainerToImplContainer, implContainer };
 		}
 		return null;
 	}
@@ -1667,10 +1666,10 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 	public static final Object[] pattern_ReqProviderToServerRule_2_4_solveCSP_bindingAndBlackFBBBBBBBBBB(
 			ReqProviderToServerRule _this, IsApplicableMatch isApplicableMatch, VirtualNodeToServer virtualNodeToServer,
 			Server implDevice, Provider reqAgent, Container reqContainer, NetworkSpan virtualNode, Cable cable,
-			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer) {
+			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer) {
 		Object[] result_pattern_ReqProviderToServerRule_2_4_solveCSP_binding = pattern_ReqProviderToServerRule_2_4_solveCSP_bindingFBBBBBBBBBB(
 				_this, isApplicableMatch, virtualNodeToServer, implDevice, reqAgent, reqContainer, virtualNode, cable,
-				implContainer, reqContainerToImplContainer);
+				reqContainerToImplContainer, implContainer);
 		if (result_pattern_ReqProviderToServerRule_2_4_solveCSP_binding != null) {
 			CSP csp = (CSP) result_pattern_ReqProviderToServerRule_2_4_solveCSP_binding[0];
 
@@ -1679,7 +1678,7 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 			if (result_pattern_ReqProviderToServerRule_2_4_solveCSP_black != null) {
 
 				return new Object[] { csp, _this, isApplicableMatch, virtualNodeToServer, implDevice, reqAgent,
-						reqContainer, virtualNode, cable, implContainer, reqContainerToImplContainer };
+						reqContainer, virtualNode, cable, reqContainerToImplContainer, implContainer };
 			}
 		}
 		return null;
@@ -2163,7 +2162,7 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 		return _result;
 	}
 
-	public static final Iterable<Object[]> pattern_ReqProviderToServerRule_21_5_matchcorrcontext_blackFBBBBFBB(
+	public static final Iterable<Object[]> pattern_ReqProviderToServerRule_21_5_matchcorrcontext_blackFBBBFBBB(
 			Server implDevice, Container reqContainer, NetworkSpan virtualNode, implementation.Container implContainer,
 			Match sourceMatch, Match targetMatch) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
@@ -2175,7 +2174,7 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 							.getOppositeReferenceTyped(reqContainer, ReqContainerToImplContainer.class, "source")) {
 						if (implContainer.equals(reqContainerToImplContainer.getTarget())) {
 							_result.add(new Object[] { virtualNodeToServer, implDevice, reqContainer, virtualNode,
-									implContainer, reqContainerToImplContainer, sourceMatch, targetMatch });
+									reqContainerToImplContainer, implContainer, sourceMatch, targetMatch });
 						}
 					}
 				}
@@ -2203,13 +2202,13 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 		return new Object[] { implDevice, reqAgent, reqContainer, virtualNode, cable, implContainer, ccMatch };
 	}
 
-	public static final Object[] pattern_ReqProviderToServerRule_21_6_createcorrespondence_greenFBBB(Server implDevice,
+	public static final Object[] pattern_ReqProviderToServerRule_21_6_createcorrespondence_greenBFBB(Server implDevice,
 			Provider reqAgent, CCMatch ccMatch) {
 		ReqAgentToImplDevice reqAgentToImplDevice = ReqToImpTransformatorFactory.eINSTANCE.createReqAgentToImplDevice();
 		reqAgentToImplDevice.setSource(reqAgent);
 		reqAgentToImplDevice.setTarget(implDevice);
 		ccMatch.getCreateCorr().add(reqAgentToImplDevice);
-		return new Object[] { reqAgentToImplDevice, implDevice, reqAgent, ccMatch };
+		return new Object[] { implDevice, reqAgentToImplDevice, reqAgent, ccMatch };
 	}
 
 	public static final Object[] pattern_ReqProviderToServerRule_21_7_addtoreturnedresult_blackBB(
@@ -2327,17 +2326,17 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 	}
 
 	public static final Object[] pattern_ReqProviderToServerRule_26_2_isapplicablecore_black_nac_5BB(
-			ModelgeneratorRuleResult ruleResult, Cable cable) {
-		if (ruleResult.getTargetObjects().contains(cable)) {
-			return new Object[] { ruleResult, cable };
+			ModelgeneratorRuleResult ruleResult, Server implDevice) {
+		if (ruleResult.getTargetObjects().contains(implDevice)) {
+			return new Object[] { ruleResult, implDevice };
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_ReqProviderToServerRule_26_2_isapplicablecore_black_nac_6BB(
-			ModelgeneratorRuleResult ruleResult, Server implDevice) {
-		if (ruleResult.getTargetObjects().contains(implDevice)) {
-			return new Object[] { ruleResult, implDevice };
+			ModelgeneratorRuleResult ruleResult, Cable cable) {
+		if (ruleResult.getTargetObjects().contains(cable)) {
+			return new Object[] { ruleResult, cable };
 		}
 		return null;
 	}
@@ -2357,7 +2356,7 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 									virtualNodeToServer) == null) {
 								if (pattern_ReqProviderToServerRule_26_2_isapplicablecore_black_nac_1BB(ruleResult,
 										virtualNode) == null) {
-									if (pattern_ReqProviderToServerRule_26_2_isapplicablecore_black_nac_6BB(ruleResult,
+									if (pattern_ReqProviderToServerRule_26_2_isapplicablecore_black_nac_5BB(ruleResult,
 											implDevice) == null) {
 										for (Container reqContainer : org.moflon.core.utilities.eMoflonEMFUtil
 												.getOppositeReferenceTyped(virtualNode, Container.class,
@@ -2370,7 +2369,7 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 													if (pattern_ReqProviderToServerRule_26_2_isapplicablecore_black_nac_4BB(
 															ruleResult, implContainer) == null) {
 														for (Cable cable : implContainer.getCables()) {
-															if (pattern_ReqProviderToServerRule_26_2_isapplicablecore_black_nac_5BB(
+															if (pattern_ReqProviderToServerRule_26_2_isapplicablecore_black_nac_6BB(
 																	ruleResult, cable) == null) {
 																for (ReqContainerToImplContainer reqContainerToImplContainer : org.moflon.core.utilities.eMoflonEMFUtil
 																		.getOppositeReferenceTyped(reqContainer,
@@ -2386,7 +2385,7 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 																					virtualNodeToServer, virtualNode,
 																					reqContainer,
 																					reqContainerToImplContainer,
-																					implContainer, cable, implDevice,
+																					implContainer, implDevice, cable,
 																					ruleEntryContainer, ruleResult });
 																		}
 																	}
@@ -2413,14 +2412,14 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 	public static final Object[] pattern_ReqProviderToServerRule_26_3_solveCSP_bindingFBBBBBBBBBB(
 			ReqProviderToServerRule _this, IsApplicableMatch isApplicableMatch, VirtualNodeToServer virtualNodeToServer,
 			Server implDevice, Container reqContainer, NetworkSpan virtualNode, Cable cable,
-			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer,
+			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer,
 			ModelgeneratorRuleResult ruleResult) {
 		CSP _localVariable_0 = _this.generateModel_solveCsp_BWD(isApplicableMatch, virtualNodeToServer, implDevice,
-				reqContainer, virtualNode, cable, implContainer, reqContainerToImplContainer, ruleResult);
+				reqContainer, virtualNode, cable, reqContainerToImplContainer, implContainer, ruleResult);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
 			return new Object[] { csp, _this, isApplicableMatch, virtualNodeToServer, implDevice, reqContainer,
-					virtualNode, cable, implContainer, reqContainerToImplContainer, ruleResult };
+					virtualNode, cable, reqContainerToImplContainer, implContainer, ruleResult };
 		}
 		return null;
 	}
@@ -2432,11 +2431,11 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 	public static final Object[] pattern_ReqProviderToServerRule_26_3_solveCSP_bindingAndBlackFBBBBBBBBBB(
 			ReqProviderToServerRule _this, IsApplicableMatch isApplicableMatch, VirtualNodeToServer virtualNodeToServer,
 			Server implDevice, Container reqContainer, NetworkSpan virtualNode, Cable cable,
-			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer,
+			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer,
 			ModelgeneratorRuleResult ruleResult) {
 		Object[] result_pattern_ReqProviderToServerRule_26_3_solveCSP_binding = pattern_ReqProviderToServerRule_26_3_solveCSP_bindingFBBBBBBBBBB(
 				_this, isApplicableMatch, virtualNodeToServer, implDevice, reqContainer, virtualNode, cable,
-				implContainer, reqContainerToImplContainer, ruleResult);
+				reqContainerToImplContainer, implContainer, ruleResult);
 		if (result_pattern_ReqProviderToServerRule_26_3_solveCSP_binding != null) {
 			CSP csp = (CSP) result_pattern_ReqProviderToServerRule_26_3_solveCSP_binding[0];
 
@@ -2445,7 +2444,7 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 			if (result_pattern_ReqProviderToServerRule_26_3_solveCSP_black != null) {
 
 				return new Object[] { csp, _this, isApplicableMatch, virtualNodeToServer, implDevice, reqContainer,
-						virtualNode, cable, implContainer, reqContainerToImplContainer, ruleResult };
+						virtualNode, cable, reqContainerToImplContainer, implContainer, ruleResult };
 			}
 		}
 		return null;
@@ -2460,21 +2459,21 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 
 	public static final Object[] pattern_ReqProviderToServerRule_26_5_checknacs_blackBBBBBBB(
 			VirtualNodeToServer virtualNodeToServer, Server implDevice, Container reqContainer, NetworkSpan virtualNode,
-			Cable cable, implementation.Container implContainer,
-			ReqContainerToImplContainer reqContainerToImplContainer) {
-		return new Object[] { virtualNodeToServer, implDevice, reqContainer, virtualNode, cable, implContainer,
-				reqContainerToImplContainer };
+			Cable cable, ReqContainerToImplContainer reqContainerToImplContainer,
+			implementation.Container implContainer) {
+		return new Object[] { virtualNodeToServer, implDevice, reqContainer, virtualNode, cable,
+				reqContainerToImplContainer, implContainer };
 	}
 
 	public static final Object[] pattern_ReqProviderToServerRule_26_6_perform_blackBBBBBBBB(
 			VirtualNodeToServer virtualNodeToServer, Server implDevice, Container reqContainer, NetworkSpan virtualNode,
-			Cable cable, implementation.Container implContainer,
-			ReqContainerToImplContainer reqContainerToImplContainer, ModelgeneratorRuleResult ruleResult) {
-		return new Object[] { virtualNodeToServer, implDevice, reqContainer, virtualNode, cable, implContainer,
-				reqContainerToImplContainer, ruleResult };
+			Cable cable, ReqContainerToImplContainer reqContainerToImplContainer,
+			implementation.Container implContainer, ModelgeneratorRuleResult ruleResult) {
+		return new Object[] { virtualNodeToServer, implDevice, reqContainer, virtualNode, cable,
+				reqContainerToImplContainer, implContainer, ruleResult };
 	}
 
-	public static final Object[] pattern_ReqProviderToServerRule_26_6_perform_greenFBFBB(Server implDevice,
+	public static final Object[] pattern_ReqProviderToServerRule_26_6_perform_greenBFFBB(Server implDevice,
 			Container reqContainer, ModelgeneratorRuleResult ruleResult) {
 		ReqAgentToImplDevice reqAgentToImplDevice = ReqToImpTransformatorFactory.eINSTANCE.createReqAgentToImplDevice();
 		Provider reqAgent = RequirementsFactory.eINSTANCE.createProvider();
@@ -2488,7 +2487,7 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 		ruleResult.setSuccess(Boolean.valueOf(ruleResult_success_prime));
 		int ruleResult_performCount_prime = Integer.valueOf(_localVariable_0);
 		ruleResult.setPerformCount(Integer.valueOf(ruleResult_performCount_prime));
-		return new Object[] { reqAgentToImplDevice, implDevice, reqAgent, reqContainer, ruleResult };
+		return new Object[] { implDevice, reqAgentToImplDevice, reqAgent, reqContainer, ruleResult };
 	}
 
 	public static final ModelgeneratorRuleResult pattern_ReqProviderToServerRule_26_7_expressionFB(

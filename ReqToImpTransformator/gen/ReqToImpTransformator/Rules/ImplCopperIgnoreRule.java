@@ -149,7 +149,7 @@ public interface ImplCopperIgnoreRule extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Container reqContainer, CopperCable cable,
-			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer);
+			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -165,8 +165,8 @@ public interface ImplCopperIgnoreRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_BWD(PerformRuleResult ruleresult, EObject reqContainer, EObject cable, EObject implContainer,
-			EObject reqContainerToImplContainer);
+	void registerObjects_BWD(PerformRuleResult ruleresult, EObject reqContainer, EObject cable,
+			EObject reqContainerToImplContainer, EObject implContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -182,7 +182,7 @@ public interface ImplCopperIgnoreRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_Container_1(Container reqContainer);
+	EObjectContainer isAppropriate_FWD_Container_2(Container reqContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -265,7 +265,7 @@ public interface ImplCopperIgnoreRule extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Container reqContainer,
-			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer,
+			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer,
 			ModelgeneratorRuleResult ruleResult);
 
 	/**

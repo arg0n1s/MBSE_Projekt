@@ -22,6 +22,24 @@ public interface ReqToImpTransformatorFactory extends EFactory {
 	ReqToImpTransformatorFactory eINSTANCE = ReqToImpTransformator.impl.ReqToImpTransformatorFactoryImpl.init();
 
 	/**
+	 * Returns a new object of class '<em>Virtual Node To Router</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Virtual Node To Router</em>'.
+	 * @generated
+	 */
+	VirtualNodeToRouter createVirtualNodeToRouter();
+
+	/**
+	 * Returns a new object of class '<em>Req Agent To Impl Device</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Req Agent To Impl Device</em>'.
+	 * @generated
+	 */
+	ReqAgentToImplDevice createReqAgentToImplDevice();
+
+	/**
 	 * Returns a new object of class '<em>Virtual Node To Computer</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -47,24 +65,6 @@ public interface ReqToImpTransformatorFactory extends EFactory {
 	 * @generated
 	 */
 	VirtualNodeToServer createVirtualNodeToServer();
-
-	/**
-	 * Returns a new object of class '<em>Virtual Node To Router</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Virtual Node To Router</em>'.
-	 * @generated
-	 */
-	VirtualNodeToRouter createVirtualNodeToRouter();
-
-	/**
-	 * Returns a new object of class '<em>Req Agent To Impl Device</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Req Agent To Impl Device</em>'.
-	 * @generated
-	 */
-	ReqAgentToImplDevice createReqAgentToImplDevice();
 
 	/**
 	 * Returns the package supported by this factory.

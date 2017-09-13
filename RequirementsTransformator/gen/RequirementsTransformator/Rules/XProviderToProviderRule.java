@@ -210,7 +210,7 @@ public interface XProviderToProviderRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_8(EMoflonEdge _edge_agents);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_7(EMoflonEdge _edge_agents);
 
 	/**
 	 * <!-- begin-user-doc -->

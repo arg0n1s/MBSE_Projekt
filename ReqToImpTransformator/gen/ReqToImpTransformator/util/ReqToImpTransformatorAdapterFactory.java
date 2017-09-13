@@ -69,6 +69,16 @@ public class ReqToImpTransformatorAdapterFactory extends AdapterFactoryImpl {
 	 */
 	protected ReqToImpTransformatorSwitch<Adapter> modelSwitch = new ReqToImpTransformatorSwitch<Adapter>() {
 		@Override
+		public Adapter caseVirtualNodeToRouter(VirtualNodeToRouter object) {
+			return createVirtualNodeToRouterAdapter();
+		}
+
+		@Override
+		public Adapter caseReqAgentToImplDevice(ReqAgentToImplDevice object) {
+			return createReqAgentToImplDeviceAdapter();
+		}
+
+		@Override
 		public Adapter caseVirtualNodeToComputer(VirtualNodeToComputer object) {
 			return createVirtualNodeToComputerAdapter();
 		}
@@ -81,16 +91,6 @@ public class ReqToImpTransformatorAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseVirtualNodeToServer(VirtualNodeToServer object) {
 			return createVirtualNodeToServerAdapter();
-		}
-
-		@Override
-		public Adapter caseVirtualNodeToRouter(VirtualNodeToRouter object) {
-			return createVirtualNodeToRouterAdapter();
-		}
-
-		@Override
-		public Adapter caseReqAgentToImplDevice(ReqAgentToImplDevice object) {
-			return createReqAgentToImplDeviceAdapter();
 		}
 
 		@Override
@@ -115,6 +115,34 @@ public class ReqToImpTransformatorAdapterFactory extends AdapterFactoryImpl {
 	@Override
 	public Adapter createAdapter(Notifier target) {
 		return modelSwitch.doSwitch((EObject) target);
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.VirtualNodeToRouter <em>Virtual Node To Router</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ReqToImpTransformator.VirtualNodeToRouter
+	 * @generated
+	 */
+	public Adapter createVirtualNodeToRouterAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.ReqAgentToImplDevice <em>Req Agent To Impl Device</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ReqToImpTransformator.ReqAgentToImplDevice
+	 * @generated
+	 */
+	public Adapter createReqAgentToImplDeviceAdapter() {
+		return null;
 	}
 
 	/**
@@ -156,34 +184,6 @@ public class ReqToImpTransformatorAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createVirtualNodeToServerAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.VirtualNodeToRouter <em>Virtual Node To Router</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ReqToImpTransformator.VirtualNodeToRouter
-	 * @generated
-	 */
-	public Adapter createVirtualNodeToRouterAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.ReqAgentToImplDevice <em>Req Agent To Impl Device</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ReqToImpTransformator.ReqAgentToImplDevice
-	 * @generated
-	 */
-	public Adapter createReqAgentToImplDeviceAdapter() {
 		return null;
 	}
 

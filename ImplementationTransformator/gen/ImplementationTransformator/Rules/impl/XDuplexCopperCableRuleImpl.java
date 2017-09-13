@@ -386,10 +386,10 @@ public class XDuplexCopperCableRuleImpl extends AbstractRuleImpl implements XDup
 		var_cableAttributes_speed.setType("BigInteger");
 
 		// Create unbound variables
-		Variable var_cable1_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable1.speed", csp);
-		var_cable1_speed.setType("BigInteger");
 		Variable var_cable2_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable2.speed", csp);
 		var_cable2_speed.setType("BigInteger");
+		Variable var_cable1_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable1.speed", csp);
+		var_cable1_speed.setType("BigInteger");
 
 		// Create constraints
 		Eq eq = new Eq();
@@ -400,9 +400,9 @@ public class XDuplexCopperCableRuleImpl extends AbstractRuleImpl implements XDup
 
 		// Solve CSP
 		eq.setRuleName("NoRuleName");
-		eq.solve(var_cableAttributes_speed, var_cable1_speed);
+		eq.solve(var_cableAttributes_speed, var_cable2_speed);
 		eq_0.setRuleName("NoRuleName");
-		eq_0.solve(var_cableAttributes_speed, var_cable2_speed);
+		eq_0.solve(var_cableAttributes_speed, var_cable1_speed);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("container", container);
@@ -739,12 +739,12 @@ public class XDuplexCopperCableRuleImpl extends AbstractRuleImpl implements XDup
 		// Create literals
 
 		// Create attribute variables
-		Variable var_cable1_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable1.speed", true, csp);
-		var_cable1_speed.setValue(cable1.getSpeed());
-		var_cable1_speed.setType("BigInteger");
 		Variable var_cable2_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable2.speed", true, csp);
 		var_cable2_speed.setValue(cable2.getSpeed());
 		var_cable2_speed.setType("BigInteger");
+		Variable var_cable1_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable1.speed", true, csp);
+		var_cable1_speed.setValue(cable1.getSpeed());
+		var_cable1_speed.setType("BigInteger");
 
 		// Create unbound variables
 		Variable var_cableAttributes_speed = CSPFactoryHelper.eINSTANCE.createVariable("cableAttributes.speed", csp);
@@ -759,9 +759,9 @@ public class XDuplexCopperCableRuleImpl extends AbstractRuleImpl implements XDup
 
 		// Solve CSP
 		eq.setRuleName("NoRuleName");
-		eq.solve(var_cableAttributes_speed, var_cable1_speed);
+		eq.solve(var_cableAttributes_speed, var_cable2_speed);
 		eq_0.setRuleName("NoRuleName");
-		eq_0.solve(var_cableAttributes_speed, var_cable2_speed);
+		eq_0.solve(var_cableAttributes_speed, var_cable1_speed);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("cable1", cable1);
@@ -823,7 +823,7 @@ public class XDuplexCopperCableRuleImpl extends AbstractRuleImpl implements XDup
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_14(EMoflonEdge _edge_cables) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_16(EMoflonEdge _edge_cables) {
 
 		Object[] result1_bindingAndBlack = XDuplexCopperCableRuleImpl
 				.pattern_XDuplexCopperCableRule_20_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -883,7 +883,7 @@ public class XDuplexCopperCableRuleImpl extends AbstractRuleImpl implements XDup
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_10(EMoflonEdge _edge_elements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_12(EMoflonEdge _edge_elements) {
 
 		Object[] result1_bindingAndBlack = XDuplexCopperCableRuleImpl
 				.pattern_XDuplexCopperCableRule_21_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -958,10 +958,6 @@ public class XDuplexCopperCableRuleImpl extends AbstractRuleImpl implements XDup
 			return ruleResult;
 		}
 
-		Variable var_cable1_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable1", true, csp);
-		var_cable1_speed.setValue(__helper.getValue("cable1", "speed"));
-		var_cable1_speed.setType("BigInteger");
-
 		Variable var_cableAttributes_speed = CSPFactoryHelper.eINSTANCE.createVariable("cableAttributes", true, csp);
 		var_cableAttributes_speed.setValue(__helper.getValue("cableAttributes", "speed"));
 		var_cableAttributes_speed.setType("BigInteger");
@@ -970,6 +966,10 @@ public class XDuplexCopperCableRuleImpl extends AbstractRuleImpl implements XDup
 		var_cable2_speed.setValue(__helper.getValue("cable2", "speed"));
 		var_cable2_speed.setType("BigInteger");
 
+		Variable var_cable1_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable1", true, csp);
+		var_cable1_speed.setValue(__helper.getValue("cable1", "speed"));
+		var_cable1_speed.setType("BigInteger");
+
 		Eq eq0 = new Eq();
 		csp.getConstraints().add(eq0);
 
@@ -977,23 +977,23 @@ public class XDuplexCopperCableRuleImpl extends AbstractRuleImpl implements XDup
 		csp.getConstraints().add(eq1);
 
 		eq0.setRuleName("XDuplexCopperCableRule");
-		eq0.solve(var_cableAttributes_speed, var_cable1_speed);
+		eq0.solve(var_cableAttributes_speed, var_cable2_speed);
 
 		eq1.setRuleName("XDuplexCopperCableRule");
-		eq1.solve(var_cableAttributes_speed, var_cable2_speed);
+		eq1.solve(var_cableAttributes_speed, var_cable1_speed);
 
 		if (csp.check()) {
 			ruleResult.setSuccess(true);
 		} else {
-			var_cable1_speed.setBound(false);
 			var_cable2_speed.setBound(false);
-			eq0.solve(var_cableAttributes_speed, var_cable1_speed);
-			eq1.solve(var_cableAttributes_speed, var_cable2_speed);
+			var_cable1_speed.setBound(false);
+			eq0.solve(var_cableAttributes_speed, var_cable2_speed);
+			eq1.solve(var_cableAttributes_speed, var_cable1_speed);
 			if (csp.check()) {
 				ruleResult.setSuccess(true);
 				ruleResult.setRequiredChange(true);
-				__helper.setValue("cable1", "speed", var_cable1_speed.getValue());
 				__helper.setValue("cable2", "speed", var_cable2_speed.getValue());
+				__helper.setValue("cable1", "speed", var_cable1_speed.getValue());
 			} else {
 				ruleResult.setSuccess(false);
 				return ruleResult;
@@ -1023,10 +1023,6 @@ public class XDuplexCopperCableRuleImpl extends AbstractRuleImpl implements XDup
 			return ruleResult;
 		}
 
-		Variable var_cable1_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable1", true, csp);
-		var_cable1_speed.setValue(__helper.getValue("cable1", "speed"));
-		var_cable1_speed.setType("BigInteger");
-
 		Variable var_cableAttributes_speed = CSPFactoryHelper.eINSTANCE.createVariable("cableAttributes", true, csp);
 		var_cableAttributes_speed.setValue(__helper.getValue("cableAttributes", "speed"));
 		var_cableAttributes_speed.setType("BigInteger");
@@ -1035,6 +1031,10 @@ public class XDuplexCopperCableRuleImpl extends AbstractRuleImpl implements XDup
 		var_cable2_speed.setValue(__helper.getValue("cable2", "speed"));
 		var_cable2_speed.setType("BigInteger");
 
+		Variable var_cable1_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable1", true, csp);
+		var_cable1_speed.setValue(__helper.getValue("cable1", "speed"));
+		var_cable1_speed.setType("BigInteger");
+
 		Eq eq0 = new Eq();
 		csp.getConstraints().add(eq0);
 
@@ -1042,18 +1042,18 @@ public class XDuplexCopperCableRuleImpl extends AbstractRuleImpl implements XDup
 		csp.getConstraints().add(eq1);
 
 		eq0.setRuleName("XDuplexCopperCableRule");
-		eq0.solve(var_cableAttributes_speed, var_cable1_speed);
+		eq0.solve(var_cableAttributes_speed, var_cable2_speed);
 
 		eq1.setRuleName("XDuplexCopperCableRule");
-		eq1.solve(var_cableAttributes_speed, var_cable2_speed);
+		eq1.solve(var_cableAttributes_speed, var_cable1_speed);
 
 		if (csp.check()) {
 			ruleResult.setSuccess(true);
 		} else {
 			var_cableAttributes_speed.setBound(false);
 			var_cableAttributes_speed.setBound(false);
-			eq0.solve(var_cableAttributes_speed, var_cable1_speed);
-			eq1.solve(var_cableAttributes_speed, var_cable2_speed);
+			eq0.solve(var_cableAttributes_speed, var_cable2_speed);
+			eq1.solve(var_cableAttributes_speed, var_cable1_speed);
 			if (csp.check()) {
 				ruleResult.setSuccess(true);
 				ruleResult.setRequiredChange(true);
@@ -1169,12 +1169,12 @@ public class XDuplexCopperCableRuleImpl extends AbstractRuleImpl implements XDup
 				csp);
 		var_cableAttributes_speed.setValue(cableAttributes.getSpeed());
 		var_cableAttributes_speed.setType("BigInteger");
-		Variable var_cable1_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable1.speed", true, csp);
-		var_cable1_speed.setValue(cable1.getSpeed());
-		var_cable1_speed.setType("BigInteger");
 		Variable var_cable2_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable2.speed", true, csp);
 		var_cable2_speed.setValue(cable2.getSpeed());
 		var_cable2_speed.setType("BigInteger");
+		Variable var_cable1_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable1.speed", true, csp);
+		var_cable1_speed.setValue(cable1.getSpeed());
+		var_cable1_speed.setType("BigInteger");
 
 		// Create unbound variables
 
@@ -1187,9 +1187,9 @@ public class XDuplexCopperCableRuleImpl extends AbstractRuleImpl implements XDup
 
 		// Solve CSP
 		eq.setRuleName("NoRuleName");
-		eq.solve(var_cableAttributes_speed, var_cable1_speed);
+		eq.solve(var_cableAttributes_speed, var_cable2_speed);
 		eq_0.setRuleName("NoRuleName");
-		eq_0.solve(var_cableAttributes_speed, var_cable2_speed);
+		eq_0.solve(var_cableAttributes_speed, var_cable1_speed);
 		return csp;
 	}
 
@@ -1330,10 +1330,10 @@ public class XDuplexCopperCableRuleImpl extends AbstractRuleImpl implements XDup
 		// Create unbound variables
 		Variable var_cableAttributes_speed = CSPFactoryHelper.eINSTANCE.createVariable("cableAttributes.speed", csp);
 		var_cableAttributes_speed.setType("BigInteger");
-		Variable var_cable1_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable1.speed", csp);
-		var_cable1_speed.setType("BigInteger");
 		Variable var_cable2_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable2.speed", csp);
 		var_cable2_speed.setType("BigInteger");
+		Variable var_cable1_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable1.speed", csp);
+		var_cable1_speed.setType("BigInteger");
 
 		// Create constraints
 		Eq eq = new Eq();
@@ -1344,9 +1344,9 @@ public class XDuplexCopperCableRuleImpl extends AbstractRuleImpl implements XDup
 
 		// Solve CSP
 		eq.setRuleName("NoRuleName");
-		eq.solve(var_cableAttributes_speed, var_cable1_speed);
+		eq.solve(var_cableAttributes_speed, var_cable2_speed);
 		eq_0.setRuleName("NoRuleName");
-		eq_0.solve(var_cableAttributes_speed, var_cable2_speed);
+		eq_0.solve(var_cableAttributes_speed, var_cable1_speed);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("container", container);
@@ -1436,10 +1436,10 @@ public class XDuplexCopperCableRuleImpl extends AbstractRuleImpl implements XDup
 			return null;
 		case RulesPackage.XDUPLEX_COPPER_CABLE_RULE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.XDUPLEX_COPPER_CABLE_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_14__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_14((EMoflonEdge) arguments.get(0));
-		case RulesPackage.XDUPLEX_COPPER_CABLE_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_10__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_10((EMoflonEdge) arguments.get(0));
+		case RulesPackage.XDUPLEX_COPPER_CABLE_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_16__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_16((EMoflonEdge) arguments.get(0));
+		case RulesPackage.XDUPLEX_COPPER_CABLE_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_12__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_12((EMoflonEdge) arguments.get(0));
 		case RulesPackage.XDUPLEX_COPPER_CABLE_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.XDUPLEX_COPPER_CABLE_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:

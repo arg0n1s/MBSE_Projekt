@@ -69,8 +69,8 @@ public class RequirementsTransformatorAdapterFactory extends AdapterFactoryImpl 
 	 */
 	protected RequirementsTransformatorSwitch<Adapter> modelSwitch = new RequirementsTransformatorSwitch<Adapter>() {
 		@Override
-		public Adapter caseXContainerToContainer(XContainerToContainer object) {
-			return createXContainerToContainerAdapter();
+		public Adapter caseXConsumerToConsumer(XConsumerToConsumer object) {
+			return createXConsumerToConsumerAdapter();
 		}
 
 		@Override
@@ -79,8 +79,8 @@ public class RequirementsTransformatorAdapterFactory extends AdapterFactoryImpl 
 		}
 
 		@Override
-		public Adapter caseXConsumerToConsumer(XConsumerToConsumer object) {
-			return createXConsumerToConsumerAdapter();
+		public Adapter caseXContainerToContainer(XContainerToContainer object) {
+			return createXContainerToContainerAdapter();
 		}
 
 		@Override
@@ -113,16 +113,16 @@ public class RequirementsTransformatorAdapterFactory extends AdapterFactoryImpl 
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link RequirementsTransformator.XContainerToContainer <em>XContainer To Container</em>}'.
+	 * Creates a new adapter for an object of class '{@link RequirementsTransformator.XConsumerToConsumer <em>XConsumer To Consumer</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see RequirementsTransformator.XContainerToContainer
+	 * @see RequirementsTransformator.XConsumerToConsumer
 	 * @generated
 	 */
-	public Adapter createXContainerToContainerAdapter() {
+	public Adapter createXConsumerToConsumerAdapter() {
 		return null;
 	}
 
@@ -141,16 +141,16 @@ public class RequirementsTransformatorAdapterFactory extends AdapterFactoryImpl 
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link RequirementsTransformator.XConsumerToConsumer <em>XConsumer To Consumer</em>}'.
+	 * Creates a new adapter for an object of class '{@link RequirementsTransformator.XContainerToContainer <em>XContainer To Container</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see RequirementsTransformator.XConsumerToConsumer
+	 * @see RequirementsTransformator.XContainerToContainer
 	 * @generated
 	 */
-	public Adapter createXConsumerToConsumerAdapter() {
+	public Adapter createXContainerToContainerAdapter() {
 		return null;
 	}
 

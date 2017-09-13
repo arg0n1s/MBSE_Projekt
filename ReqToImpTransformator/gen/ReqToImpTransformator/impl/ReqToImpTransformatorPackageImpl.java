@@ -52,6 +52,20 @@ public class ReqToImpTransformatorPackageImpl extends EPackageImpl implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass virtualNodeToRouterEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass reqAgentToImplDeviceEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass virtualNodeToComputerEClass = null;
 
 	/**
@@ -67,20 +81,6 @@ public class ReqToImpTransformatorPackageImpl extends EPackageImpl implements Re
 	 * @generated
 	 */
 	private EClass virtualNodeToServerEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass virtualNodeToRouterEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass reqAgentToImplDeviceEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -162,103 +162,10 @@ public class ReqToImpTransformatorPackageImpl extends EPackageImpl implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getVirtualNodeToComputer() {
-		if (virtualNodeToComputerEClass == null) {
-			virtualNodeToComputerEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(ReqToImpTransformatorPackage.eNS_URI).getEClassifiers().get(0);
-		}
-		return virtualNodeToComputerEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getVirtualNodeToComputer_Source() {
-		return (EReference) getVirtualNodeToComputer().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getVirtualNodeToComputer_Target() {
-		return (EReference) getVirtualNodeToComputer().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getReqContainerToImplContainer() {
-		if (reqContainerToImplContainerEClass == null) {
-			reqContainerToImplContainerEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(ReqToImpTransformatorPackage.eNS_URI).getEClassifiers().get(1);
-		}
-		return reqContainerToImplContainerEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getReqContainerToImplContainer_Source() {
-		return (EReference) getReqContainerToImplContainer().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getReqContainerToImplContainer_Target() {
-		return (EReference) getReqContainerToImplContainer().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getVirtualNodeToServer() {
-		if (virtualNodeToServerEClass == null) {
-			virtualNodeToServerEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(ReqToImpTransformatorPackage.eNS_URI).getEClassifiers().get(2);
-		}
-		return virtualNodeToServerEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getVirtualNodeToServer_Source() {
-		return (EReference) getVirtualNodeToServer().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getVirtualNodeToServer_Target() {
-		return (EReference) getVirtualNodeToServer().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getVirtualNodeToRouter() {
 		if (virtualNodeToRouterEClass == null) {
 			virtualNodeToRouterEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(ReqToImpTransformatorPackage.eNS_URI).getEClassifiers().get(3);
+					.getEPackage(ReqToImpTransformatorPackage.eNS_URI).getEClassifiers().get(0);
 		}
 		return virtualNodeToRouterEClass;
 	}
@@ -289,7 +196,7 @@ public class ReqToImpTransformatorPackageImpl extends EPackageImpl implements Re
 	public EClass getReqAgentToImplDevice() {
 		if (reqAgentToImplDeviceEClass == null) {
 			reqAgentToImplDeviceEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(ReqToImpTransformatorPackage.eNS_URI).getEClassifiers().get(4);
+					.getEPackage(ReqToImpTransformatorPackage.eNS_URI).getEClassifiers().get(1);
 		}
 		return reqAgentToImplDeviceEClass;
 	}
@@ -310,6 +217,99 @@ public class ReqToImpTransformatorPackageImpl extends EPackageImpl implements Re
 	 */
 	public EReference getReqAgentToImplDevice_Target() {
 		return (EReference) getReqAgentToImplDevice().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getVirtualNodeToComputer() {
+		if (virtualNodeToComputerEClass == null) {
+			virtualNodeToComputerEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(ReqToImpTransformatorPackage.eNS_URI).getEClassifiers().get(2);
+		}
+		return virtualNodeToComputerEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getVirtualNodeToComputer_Source() {
+		return (EReference) getVirtualNodeToComputer().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getVirtualNodeToComputer_Target() {
+		return (EReference) getVirtualNodeToComputer().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getReqContainerToImplContainer() {
+		if (reqContainerToImplContainerEClass == null) {
+			reqContainerToImplContainerEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(ReqToImpTransformatorPackage.eNS_URI).getEClassifiers().get(3);
+		}
+		return reqContainerToImplContainerEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getReqContainerToImplContainer_Source() {
+		return (EReference) getReqContainerToImplContainer().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getReqContainerToImplContainer_Target() {
+		return (EReference) getReqContainerToImplContainer().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getVirtualNodeToServer() {
+		if (virtualNodeToServerEClass == null) {
+			virtualNodeToServerEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(ReqToImpTransformatorPackage.eNS_URI).getEClassifiers().get(4);
+		}
+		return virtualNodeToServerEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getVirtualNodeToServer_Source() {
+		return (EReference) getVirtualNodeToServer().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getVirtualNodeToServer_Target() {
+		return (EReference) getVirtualNodeToServer().getEStructuralFeatures().get(1);
 	}
 
 	/**

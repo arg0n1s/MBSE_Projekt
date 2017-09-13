@@ -279,8 +279,8 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 		}
 		Container reqContainer = (Container) result1_bindingAndBlack[0];
 		CopperCable cable = (CopperCable) result1_bindingAndBlack[1];
-		implementation.Container implContainer = (implementation.Container) result1_bindingAndBlack[2];
-		ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result1_bindingAndBlack[3];
+		ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result1_bindingAndBlack[2];
+		implementation.Container implContainer = (implementation.Container) result1_bindingAndBlack[3];
 		//nothing CSP csp = (CSP) result1_bindingAndBlack[4];
 
 		Object[] result2_black = ImplCopperIgnoreRuleImpl
@@ -294,12 +294,12 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 
 		Object[] result3_black = ImplCopperIgnoreRuleImpl
 				.pattern_ImplCopperIgnoreRule_8_3_bookkeepingforedges_blackBBBBB(ruleresult, reqContainer, cable,
-						implContainer, reqContainerToImplContainer);
+						reqContainerToImplContainer, implContainer);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[ruleresult] = " + ruleresult
 					+ ", " + "[reqContainer] = " + reqContainer + ", " + "[cable] = " + cable + ", "
-					+ "[implContainer] = " + implContainer + ", " + "[reqContainerToImplContainer] = "
-					+ reqContainerToImplContainer + ".");
+					+ "[reqContainerToImplContainer] = " + reqContainerToImplContainer + ", " + "[implContainer] = "
+					+ implContainer + ".");
 		}
 		ImplCopperIgnoreRuleImpl.pattern_ImplCopperIgnoreRule_8_3_bookkeepingforedges_greenBBBF(ruleresult, cable,
 				implContainer);
@@ -308,7 +308,7 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 		// 
 		// 
 		ImplCopperIgnoreRuleImpl.pattern_ImplCopperIgnoreRule_8_5_registerobjects_expressionBBBBBB(this, ruleresult,
-				reqContainer, cable, implContainer, reqContainerToImplContainer);
+				reqContainer, cable, reqContainerToImplContainer, implContainer);
 		return ImplCopperIgnoreRuleImpl.pattern_ImplCopperIgnoreRule_8_6_expressionFB(ruleresult);
 	}
 
@@ -340,16 +340,16 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 		CopperCable cable = (CopperCable) result2_binding[0];
 		implementation.Container implContainer = (implementation.Container) result2_binding[1];
 		for (Object[] result2_black : ImplCopperIgnoreRuleImpl
-				.pattern_ImplCopperIgnoreRule_9_2_corematch_blackFBBFB(cable, implContainer, match)) {
+				.pattern_ImplCopperIgnoreRule_9_2_corematch_blackFBFBB(cable, implContainer, match)) {
 			Container reqContainer = (Container) result2_black[0];
-			ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result2_black[3];
+			ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result2_black[2];
 			// ForEach 
 			for (Object[] result3_black : ImplCopperIgnoreRuleImpl
-					.pattern_ImplCopperIgnoreRule_9_3_findcontext_blackBBBB(reqContainer, cable, implContainer,
-							reqContainerToImplContainer)) {
+					.pattern_ImplCopperIgnoreRule_9_3_findcontext_blackBBBB(reqContainer, cable,
+							reqContainerToImplContainer, implContainer)) {
 				Object[] result3_green = ImplCopperIgnoreRuleImpl
-						.pattern_ImplCopperIgnoreRule_9_3_findcontext_greenBBBBFFFF(reqContainer, cable, implContainer,
-								reqContainerToImplContainer);
+						.pattern_ImplCopperIgnoreRule_9_3_findcontext_greenBBBBFFFF(reqContainer, cable,
+								reqContainerToImplContainer, implContainer);
 				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[4];
 				//nothing EMoflonEdge implContainer__cable____cables = (EMoflonEdge) result3_green[5];
 				//nothing EMoflonEdge reqContainerToImplContainer__reqContainer____source = (EMoflonEdge) result3_green[6];
@@ -357,12 +357,12 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 
 				Object[] result4_bindingAndBlack = ImplCopperIgnoreRuleImpl
 						.pattern_ImplCopperIgnoreRule_9_4_solveCSP_bindingAndBlackFBBBBBB(this, isApplicableMatch,
-								reqContainer, cable, implContainer, reqContainerToImplContainer);
+								reqContainer, cable, reqContainerToImplContainer, implContainer);
 				if (result4_bindingAndBlack == null) {
 					throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
 							+ "[isApplicableMatch] = " + isApplicableMatch + ", " + "[reqContainer] = " + reqContainer
-							+ ", " + "[cable] = " + cable + ", " + "[implContainer] = " + implContainer + ", "
-							+ "[reqContainerToImplContainer] = " + reqContainerToImplContainer + ".");
+							+ ", " + "[cable] = " + cable + ", " + "[reqContainerToImplContainer] = "
+							+ reqContainerToImplContainer + ", " + "[implContainer] = " + implContainer + ".");
 				}
 				CSP csp = (CSP) result4_bindingAndBlack[0];
 				// 
@@ -433,7 +433,7 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 	 * @generated
 	 */
 	public CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Container reqContainer, CopperCable cable,
-			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer) {// Create CSP
+			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -450,8 +450,8 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("reqContainer", reqContainer);
 		isApplicableMatch.registerObject("cable", cable);
-		isApplicableMatch.registerObject("implContainer", implContainer);
 		isApplicableMatch.registerObject("reqContainerToImplContainer", reqContainerToImplContainer);
+		isApplicableMatch.registerObject("implContainer", implContainer);
 		return csp;
 	}
 
@@ -470,11 +470,11 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 	 * @generated
 	 */
 	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject reqContainer, EObject cable,
-			EObject implContainer, EObject reqContainerToImplContainer) {
+			EObject reqContainerToImplContainer, EObject implContainer) {
 		ruleresult.registerObject("reqContainer", reqContainer);
 		ruleresult.registerObject("cable", cable);
-		ruleresult.registerObject("implContainer", implContainer);
 		ruleresult.registerObject("reqContainerToImplContainer", reqContainerToImplContainer);
+		ruleresult.registerObject("implContainer", implContainer);
 
 	}
 
@@ -493,7 +493,7 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_Container_1(Container reqContainer) {
+	public EObjectContainer isAppropriate_FWD_Container_2(Container reqContainer) {
 
 		Object[] result1_bindingAndBlack = ImplCopperIgnoreRuleImpl
 				.pattern_ImplCopperIgnoreRule_17_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -698,9 +698,9 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 		if (ImplCopperIgnoreRuleImpl.pattern_ImplCopperIgnoreRule_21_4_checkCSP_expressionFB(csp)) {
 			// ForEach 
 			for (Object[] result5_black : ImplCopperIgnoreRuleImpl
-					.pattern_ImplCopperIgnoreRule_21_5_matchcorrcontext_blackBBFBB(reqContainer, implContainer,
+					.pattern_ImplCopperIgnoreRule_21_5_matchcorrcontext_blackBFBBB(reqContainer, implContainer,
 							sourceMatch, targetMatch)) {
-				ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result5_black[2];
+				ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result5_black[1];
 				Object[] result5_green = ImplCopperIgnoreRuleImpl
 						.pattern_ImplCopperIgnoreRule_21_5_matchcorrcontext_greenBBBF(reqContainerToImplContainer,
 								sourceMatch, targetMatch);
@@ -818,29 +818,29 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 
 			Object[] result3_bindingAndBlack = ImplCopperIgnoreRuleImpl
 					.pattern_ImplCopperIgnoreRule_26_3_solveCSP_bindingAndBlackFBBBBBB(this, isApplicableMatch,
-							reqContainer, implContainer, reqContainerToImplContainer, ruleResult);
+							reqContainer, reqContainerToImplContainer, implContainer, ruleResult);
 			if (result3_bindingAndBlack == null) {
 				throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
 						+ "[isApplicableMatch] = " + isApplicableMatch + ", " + "[reqContainer] = " + reqContainer
-						+ ", " + "[implContainer] = " + implContainer + ", " + "[reqContainerToImplContainer] = "
-						+ reqContainerToImplContainer + ", " + "[ruleResult] = " + ruleResult + ".");
+						+ ", " + "[reqContainerToImplContainer] = " + reqContainerToImplContainer + ", "
+						+ "[implContainer] = " + implContainer + ", " + "[ruleResult] = " + ruleResult + ".");
 			}
 			CSP csp = (CSP) result3_bindingAndBlack[0];
 			// 
 			if (ImplCopperIgnoreRuleImpl.pattern_ImplCopperIgnoreRule_26_4_checkCSP_expressionFBB(this, csp)) {
 				// 
 				Object[] result5_black = ImplCopperIgnoreRuleImpl.pattern_ImplCopperIgnoreRule_26_5_checknacs_blackBBB(
-						reqContainer, implContainer, reqContainerToImplContainer);
+						reqContainer, reqContainerToImplContainer, implContainer);
 				if (result5_black != null) {
 
 					Object[] result6_black = ImplCopperIgnoreRuleImpl
-							.pattern_ImplCopperIgnoreRule_26_6_perform_blackBBBB(reqContainer, implContainer,
-									reqContainerToImplContainer, ruleResult);
+							.pattern_ImplCopperIgnoreRule_26_6_perform_blackBBBB(reqContainer,
+									reqContainerToImplContainer, implContainer, ruleResult);
 					if (result6_black == null) {
 						throw new RuntimeException("Pattern matching failed." + " Variables: " + "[reqContainer] = "
-								+ reqContainer + ", " + "[implContainer] = " + implContainer + ", "
-								+ "[reqContainerToImplContainer] = " + reqContainerToImplContainer + ", "
-								+ "[ruleResult] = " + ruleResult + ".");
+								+ reqContainer + ", " + "[reqContainerToImplContainer] = " + reqContainerToImplContainer
+								+ ", " + "[implContainer] = " + implContainer + ", " + "[ruleResult] = " + ruleResult
+								+ ".");
 					}
 					ImplCopperIgnoreRuleImpl.pattern_ImplCopperIgnoreRule_26_6_perform_greenFBB(implContainer,
 							ruleResult);
@@ -862,7 +862,7 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 	 * @generated
 	 */
 	public CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Container reqContainer,
-			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer,
+			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer,
 			ModelgeneratorRuleResult ruleResult) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
@@ -879,8 +879,8 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("reqContainer", reqContainer);
-		isApplicableMatch.registerObject("implContainer", implContainer);
 		isApplicableMatch.registerObject("reqContainerToImplContainer", reqContainerToImplContainer);
+		isApplicableMatch.registerObject("implContainer", implContainer);
 		return csp;
 	}
 
@@ -932,10 +932,10 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 					(implementation.Container) arguments.get(2));
 		case RulesPackage.IMPL_COPPER_IGNORE_RULE___IS_APPROPRIATE_CHECK_CSP_BWD__CSP:
 			return isAppropriate_checkCsp_BWD((CSP) arguments.get(0));
-		case RulesPackage.IMPL_COPPER_IGNORE_RULE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_CONTAINER_COPPERCABLE_CONTAINER_REQCONTAINERTOIMPLCONTAINER:
+		case RulesPackage.IMPL_COPPER_IGNORE_RULE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_CONTAINER_COPPERCABLE_REQCONTAINERTOIMPLCONTAINER_CONTAINER:
 			return isApplicable_solveCsp_BWD((IsApplicableMatch) arguments.get(0), (Container) arguments.get(1),
-					(CopperCable) arguments.get(2), (implementation.Container) arguments.get(3),
-					(ReqContainerToImplContainer) arguments.get(4));
+					(CopperCable) arguments.get(2), (ReqContainerToImplContainer) arguments.get(3),
+					(implementation.Container) arguments.get(4));
 		case RulesPackage.IMPL_COPPER_IGNORE_RULE___IS_APPLICABLE_CHECK_CSP_BWD__CSP:
 			return isApplicable_checkCsp_BWD((CSP) arguments.get(0));
 		case RulesPackage.IMPL_COPPER_IGNORE_RULE___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
@@ -944,8 +944,8 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 			return null;
 		case RulesPackage.IMPL_COPPER_IGNORE_RULE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.IMPL_COPPER_IGNORE_RULE___IS_APPROPRIATE_FWD_CONTAINER_1__CONTAINER:
-			return isAppropriate_FWD_Container_1((Container) arguments.get(0));
+		case RulesPackage.IMPL_COPPER_IGNORE_RULE___IS_APPROPRIATE_FWD_CONTAINER_2__CONTAINER:
+			return isAppropriate_FWD_Container_2((Container) arguments.get(0));
 		case RulesPackage.IMPL_COPPER_IGNORE_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_3__EMOFLONEDGE:
 			return isAppropriate_BWD_EMoflonEdge_3((EMoflonEdge) arguments.get(0));
 		case RulesPackage.IMPL_COPPER_IGNORE_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
@@ -965,9 +965,9 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 			return checkDEC_BWD((CopperCable) arguments.get(0), (implementation.Container) arguments.get(1));
 		case RulesPackage.IMPL_COPPER_IGNORE_RULE___GENERATE_MODEL__RULEENTRYCONTAINER_REQCONTAINERTOIMPLCONTAINER:
 			return generateModel((RuleEntryContainer) arguments.get(0), (ReqContainerToImplContainer) arguments.get(1));
-		case RulesPackage.IMPL_COPPER_IGNORE_RULE___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_CONTAINER_CONTAINER_REQCONTAINERTOIMPLCONTAINER_MODELGENERATORRULERESULT:
+		case RulesPackage.IMPL_COPPER_IGNORE_RULE___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_CONTAINER_REQCONTAINERTOIMPLCONTAINER_CONTAINER_MODELGENERATORRULERESULT:
 			return generateModel_solveCsp_BWD((IsApplicableMatch) arguments.get(0), (Container) arguments.get(1),
-					(implementation.Container) arguments.get(2), (ReqContainerToImplContainer) arguments.get(3),
+					(ReqContainerToImplContainer) arguments.get(2), (implementation.Container) arguments.get(3),
 					(ModelgeneratorRuleResult) arguments.get(4));
 		case RulesPackage.IMPL_COPPER_IGNORE_RULE___GENERATE_MODEL_CHECK_CSP_BWD__CSP:
 			return generateModel_checkCsp_BWD((CSP) arguments.get(0));
@@ -1141,21 +1141,21 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 			IsApplicableMatch isApplicableMatch) {
 		EObject _localVariable_0 = isApplicableMatch.getObject("reqContainer");
 		EObject _localVariable_1 = isApplicableMatch.getObject("cable");
-		EObject _localVariable_2 = isApplicableMatch.getObject("implContainer");
-		EObject _localVariable_3 = isApplicableMatch.getObject("reqContainerToImplContainer");
+		EObject _localVariable_2 = isApplicableMatch.getObject("reqContainerToImplContainer");
+		EObject _localVariable_3 = isApplicableMatch.getObject("implContainer");
 		EObject tmpReqContainer = _localVariable_0;
 		EObject tmpCable = _localVariable_1;
-		EObject tmpImplContainer = _localVariable_2;
-		EObject tmpReqContainerToImplContainer = _localVariable_3;
+		EObject tmpReqContainerToImplContainer = _localVariable_2;
+		EObject tmpImplContainer = _localVariable_3;
 		if (tmpReqContainer instanceof Container) {
 			Container reqContainer = (Container) tmpReqContainer;
 			if (tmpCable instanceof CopperCable) {
 				CopperCable cable = (CopperCable) tmpCable;
-				if (tmpImplContainer instanceof implementation.Container) {
-					implementation.Container implContainer = (implementation.Container) tmpImplContainer;
-					if (tmpReqContainerToImplContainer instanceof ReqContainerToImplContainer) {
-						ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) tmpReqContainerToImplContainer;
-						return new Object[] { reqContainer, cable, implContainer, reqContainerToImplContainer,
+				if (tmpReqContainerToImplContainer instanceof ReqContainerToImplContainer) {
+					ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) tmpReqContainerToImplContainer;
+					if (tmpImplContainer instanceof implementation.Container) {
+						implementation.Container implContainer = (implementation.Container) tmpImplContainer;
+						return new Object[] { reqContainer, cable, reqContainerToImplContainer, implContainer,
 								isApplicableMatch };
 					}
 				}
@@ -1165,13 +1165,12 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 	}
 
 	public static final Object[] pattern_ImplCopperIgnoreRule_8_1_performtransformation_blackBBBBFBB(
-			Container reqContainer, CopperCable cable, implementation.Container implContainer,
-			ReqContainerToImplContainer reqContainerToImplContainer, ImplCopperIgnoreRule _this,
-			IsApplicableMatch isApplicableMatch) {
+			Container reqContainer, CopperCable cable, ReqContainerToImplContainer reqContainerToImplContainer,
+			implementation.Container implContainer, ImplCopperIgnoreRule _this, IsApplicableMatch isApplicableMatch) {
 		for (EObject tmpCsp : isApplicableMatch.getAttributeInfo()) {
 			if (tmpCsp instanceof CSP) {
 				CSP csp = (CSP) tmpCsp;
-				return new Object[] { reqContainer, cable, implContainer, reqContainerToImplContainer, csp, _this,
+				return new Object[] { reqContainer, cable, reqContainerToImplContainer, implContainer, csp, _this,
 						isApplicableMatch };
 			}
 		}
@@ -1185,15 +1184,15 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 		if (result_pattern_ImplCopperIgnoreRule_8_1_performtransformation_binding != null) {
 			Container reqContainer = (Container) result_pattern_ImplCopperIgnoreRule_8_1_performtransformation_binding[0];
 			CopperCable cable = (CopperCable) result_pattern_ImplCopperIgnoreRule_8_1_performtransformation_binding[1];
-			implementation.Container implContainer = (implementation.Container) result_pattern_ImplCopperIgnoreRule_8_1_performtransformation_binding[2];
-			ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result_pattern_ImplCopperIgnoreRule_8_1_performtransformation_binding[3];
+			ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result_pattern_ImplCopperIgnoreRule_8_1_performtransformation_binding[2];
+			implementation.Container implContainer = (implementation.Container) result_pattern_ImplCopperIgnoreRule_8_1_performtransformation_binding[3];
 
 			Object[] result_pattern_ImplCopperIgnoreRule_8_1_performtransformation_black = pattern_ImplCopperIgnoreRule_8_1_performtransformation_blackBBBBFBB(
-					reqContainer, cable, implContainer, reqContainerToImplContainer, _this, isApplicableMatch);
+					reqContainer, cable, reqContainerToImplContainer, implContainer, _this, isApplicableMatch);
 			if (result_pattern_ImplCopperIgnoreRule_8_1_performtransformation_black != null) {
 				CSP csp = (CSP) result_pattern_ImplCopperIgnoreRule_8_1_performtransformation_black[4];
 
-				return new Object[] { reqContainer, cable, implContainer, reqContainerToImplContainer, csp, _this,
+				return new Object[] { reqContainer, cable, reqContainerToImplContainer, implContainer, csp, _this,
 						isApplicableMatch };
 			}
 		}
@@ -1211,16 +1210,16 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 	}
 
 	public static final Object[] pattern_ImplCopperIgnoreRule_8_3_bookkeepingforedges_blackBBBBB(
-			PerformRuleResult ruleresult, EObject reqContainer, EObject cable, EObject implContainer,
-			EObject reqContainerToImplContainer) {
+			PerformRuleResult ruleresult, EObject reqContainer, EObject cable, EObject reqContainerToImplContainer,
+			EObject implContainer) {
 		if (!reqContainer.equals(reqContainerToImplContainer)) {
 			if (!cable.equals(reqContainer)) {
-				if (!cable.equals(implContainer)) {
-					if (!cable.equals(reqContainerToImplContainer)) {
+				if (!cable.equals(reqContainerToImplContainer)) {
+					if (!cable.equals(implContainer)) {
 						if (!implContainer.equals(reqContainer)) {
 							if (!implContainer.equals(reqContainerToImplContainer)) {
-								return new Object[] { ruleresult, reqContainer, cable, implContainer,
-										reqContainerToImplContainer };
+								return new Object[] { ruleresult, reqContainer, cable, reqContainerToImplContainer,
+										implContainer };
 							}
 						}
 					}
@@ -1245,8 +1244,8 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 
 	public static final void pattern_ImplCopperIgnoreRule_8_5_registerobjects_expressionBBBBBB(
 			ImplCopperIgnoreRule _this, PerformRuleResult ruleresult, EObject reqContainer, EObject cable,
-			EObject implContainer, EObject reqContainerToImplContainer) {
-		_this.registerObjects_BWD(ruleresult, reqContainer, cable, implContainer, reqContainerToImplContainer);
+			EObject reqContainerToImplContainer, EObject implContainer) {
+		_this.registerObjects_BWD(ruleresult, reqContainer, cable, reqContainerToImplContainer, implContainer);
 
 	}
 
@@ -1321,14 +1320,14 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_ImplCopperIgnoreRule_9_2_corematch_blackFBBFB(CopperCable cable,
+	public static final Iterable<Object[]> pattern_ImplCopperIgnoreRule_9_2_corematch_blackFBFBB(CopperCable cable,
 			implementation.Container implContainer, Match match) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		for (ReqContainerToImplContainer reqContainerToImplContainer : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(implContainer, ReqContainerToImplContainer.class, "target")) {
 			Container reqContainer = reqContainerToImplContainer.getSource();
 			if (reqContainer != null) {
-				_result.add(new Object[] { reqContainer, cable, implContainer, reqContainerToImplContainer, match });
+				_result.add(new Object[] { reqContainer, cable, reqContainerToImplContainer, implContainer, match });
 			}
 
 		}
@@ -1336,13 +1335,13 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 	}
 
 	public static final Iterable<Object[]> pattern_ImplCopperIgnoreRule_9_3_findcontext_blackBBBB(
-			Container reqContainer, CopperCable cable, implementation.Container implContainer,
-			ReqContainerToImplContainer reqContainerToImplContainer) {
+			Container reqContainer, CopperCable cable, ReqContainerToImplContainer reqContainerToImplContainer,
+			implementation.Container implContainer) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		if (implContainer.getCables().contains(cable)) {
 			if (reqContainer.equals(reqContainerToImplContainer.getSource())) {
 				if (implContainer.equals(reqContainerToImplContainer.getTarget())) {
-					_result.add(new Object[] { reqContainer, cable, implContainer, reqContainerToImplContainer });
+					_result.add(new Object[] { reqContainer, cable, reqContainerToImplContainer, implContainer });
 				}
 			}
 		}
@@ -1350,8 +1349,8 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 	}
 
 	public static final Object[] pattern_ImplCopperIgnoreRule_9_3_findcontext_greenBBBBFFFF(Container reqContainer,
-			CopperCable cable, implementation.Container implContainer,
-			ReqContainerToImplContainer reqContainerToImplContainer) {
+			CopperCable cable, ReqContainerToImplContainer reqContainerToImplContainer,
+			implementation.Container implContainer) {
 		IsApplicableMatch isApplicableMatch = RuntimeFactory.eINSTANCE.createIsApplicableMatch();
 		EMoflonEdge implContainer__cable____cables = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge reqContainerToImplContainer__reqContainer____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
@@ -1361,8 +1360,8 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 		String reqContainerToImplContainer__implContainer____target_name_prime = "target";
 		isApplicableMatch.getAllContextElements().add(reqContainer);
 		isApplicableMatch.getAllContextElements().add(cable);
-		isApplicableMatch.getAllContextElements().add(implContainer);
 		isApplicableMatch.getAllContextElements().add(reqContainerToImplContainer);
+		isApplicableMatch.getAllContextElements().add(implContainer);
 		implContainer__cable____cables.setSrc(implContainer);
 		implContainer__cable____cables.setTrg(cable);
 		isApplicableMatch.getAllContextElements().add(implContainer__cable____cables);
@@ -1377,20 +1376,20 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 				.setName(reqContainerToImplContainer__reqContainer____source_name_prime);
 		reqContainerToImplContainer__implContainer____target
 				.setName(reqContainerToImplContainer__implContainer____target_name_prime);
-		return new Object[] { reqContainer, cable, implContainer, reqContainerToImplContainer, isApplicableMatch,
+		return new Object[] { reqContainer, cable, reqContainerToImplContainer, implContainer, isApplicableMatch,
 				implContainer__cable____cables, reqContainerToImplContainer__reqContainer____source,
 				reqContainerToImplContainer__implContainer____target };
 	}
 
 	public static final Object[] pattern_ImplCopperIgnoreRule_9_4_solveCSP_bindingFBBBBBB(ImplCopperIgnoreRule _this,
 			IsApplicableMatch isApplicableMatch, Container reqContainer, CopperCable cable,
-			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer) {
-		CSP _localVariable_0 = _this.isApplicable_solveCsp_BWD(isApplicableMatch, reqContainer, cable, implContainer,
-				reqContainerToImplContainer);
+			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer) {
+		CSP _localVariable_0 = _this.isApplicable_solveCsp_BWD(isApplicableMatch, reqContainer, cable,
+				reqContainerToImplContainer, implContainer);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, reqContainer, cable, implContainer,
-					reqContainerToImplContainer };
+			return new Object[] { csp, _this, isApplicableMatch, reqContainer, cable, reqContainerToImplContainer,
+					implContainer };
 		}
 		return null;
 	}
@@ -1401,9 +1400,9 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 
 	public static final Object[] pattern_ImplCopperIgnoreRule_9_4_solveCSP_bindingAndBlackFBBBBBB(
 			ImplCopperIgnoreRule _this, IsApplicableMatch isApplicableMatch, Container reqContainer, CopperCable cable,
-			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer) {
+			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer) {
 		Object[] result_pattern_ImplCopperIgnoreRule_9_4_solveCSP_binding = pattern_ImplCopperIgnoreRule_9_4_solveCSP_bindingFBBBBBB(
-				_this, isApplicableMatch, reqContainer, cable, implContainer, reqContainerToImplContainer);
+				_this, isApplicableMatch, reqContainer, cable, reqContainerToImplContainer, implContainer);
 		if (result_pattern_ImplCopperIgnoreRule_9_4_solveCSP_binding != null) {
 			CSP csp = (CSP) result_pattern_ImplCopperIgnoreRule_9_4_solveCSP_binding[0];
 
@@ -1411,8 +1410,8 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 					csp);
 			if (result_pattern_ImplCopperIgnoreRule_9_4_solveCSP_black != null) {
 
-				return new Object[] { csp, _this, isApplicableMatch, reqContainer, cable, implContainer,
-						reqContainerToImplContainer };
+				return new Object[] { csp, _this, isApplicableMatch, reqContainer, cable, reqContainerToImplContainer,
+						implContainer };
 			}
 		}
 		return null;
@@ -1765,14 +1764,14 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 		return _result;
 	}
 
-	public static final Iterable<Object[]> pattern_ImplCopperIgnoreRule_21_5_matchcorrcontext_blackBBFBB(
+	public static final Iterable<Object[]> pattern_ImplCopperIgnoreRule_21_5_matchcorrcontext_blackBFBBB(
 			Container reqContainer, implementation.Container implContainer, Match sourceMatch, Match targetMatch) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		if (!sourceMatch.equals(targetMatch)) {
 			for (ReqContainerToImplContainer reqContainerToImplContainer : org.moflon.core.utilities.eMoflonEMFUtil
 					.getOppositeReferenceTyped(reqContainer, ReqContainerToImplContainer.class, "source")) {
 				if (implContainer.equals(reqContainerToImplContainer.getTarget())) {
-					_result.add(new Object[] { reqContainer, implContainer, reqContainerToImplContainer, sourceMatch,
+					_result.add(new Object[] { reqContainer, reqContainerToImplContainer, implContainer, sourceMatch,
 							targetMatch });
 				}
 			}
@@ -1919,14 +1918,15 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 	}
 
 	public static final Object[] pattern_ImplCopperIgnoreRule_26_3_solveCSP_bindingFBBBBBB(ImplCopperIgnoreRule _this,
-			IsApplicableMatch isApplicableMatch, Container reqContainer, implementation.Container implContainer,
-			ReqContainerToImplContainer reqContainerToImplContainer, ModelgeneratorRuleResult ruleResult) {
-		CSP _localVariable_0 = _this.generateModel_solveCsp_BWD(isApplicableMatch, reqContainer, implContainer,
-				reqContainerToImplContainer, ruleResult);
+			IsApplicableMatch isApplicableMatch, Container reqContainer,
+			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer,
+			ModelgeneratorRuleResult ruleResult) {
+		CSP _localVariable_0 = _this.generateModel_solveCsp_BWD(isApplicableMatch, reqContainer,
+				reqContainerToImplContainer, implContainer, ruleResult);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, reqContainer, implContainer,
-					reqContainerToImplContainer, ruleResult };
+			return new Object[] { csp, _this, isApplicableMatch, reqContainer, reqContainerToImplContainer,
+					implContainer, ruleResult };
 		}
 		return null;
 	}
@@ -1937,10 +1937,10 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 
 	public static final Object[] pattern_ImplCopperIgnoreRule_26_3_solveCSP_bindingAndBlackFBBBBBB(
 			ImplCopperIgnoreRule _this, IsApplicableMatch isApplicableMatch, Container reqContainer,
-			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer,
+			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer,
 			ModelgeneratorRuleResult ruleResult) {
 		Object[] result_pattern_ImplCopperIgnoreRule_26_3_solveCSP_binding = pattern_ImplCopperIgnoreRule_26_3_solveCSP_bindingFBBBBBB(
-				_this, isApplicableMatch, reqContainer, implContainer, reqContainerToImplContainer, ruleResult);
+				_this, isApplicableMatch, reqContainer, reqContainerToImplContainer, implContainer, ruleResult);
 		if (result_pattern_ImplCopperIgnoreRule_26_3_solveCSP_binding != null) {
 			CSP csp = (CSP) result_pattern_ImplCopperIgnoreRule_26_3_solveCSP_binding[0];
 
@@ -1948,8 +1948,8 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 					csp);
 			if (result_pattern_ImplCopperIgnoreRule_26_3_solveCSP_black != null) {
 
-				return new Object[] { csp, _this, isApplicableMatch, reqContainer, implContainer,
-						reqContainerToImplContainer, ruleResult };
+				return new Object[] { csp, _this, isApplicableMatch, reqContainer, reqContainerToImplContainer,
+						implContainer, ruleResult };
 			}
 		}
 		return null;
@@ -1963,14 +1963,14 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 	}
 
 	public static final Object[] pattern_ImplCopperIgnoreRule_26_5_checknacs_blackBBB(Container reqContainer,
-			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer) {
-		return new Object[] { reqContainer, implContainer, reqContainerToImplContainer };
+			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer) {
+		return new Object[] { reqContainer, reqContainerToImplContainer, implContainer };
 	}
 
 	public static final Object[] pattern_ImplCopperIgnoreRule_26_6_perform_blackBBBB(Container reqContainer,
-			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer,
+			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer,
 			ModelgeneratorRuleResult ruleResult) {
-		return new Object[] { reqContainer, implContainer, reqContainerToImplContainer, ruleResult };
+		return new Object[] { reqContainer, reqContainerToImplContainer, implContainer, ruleResult };
 	}
 
 	public static final Object[] pattern_ImplCopperIgnoreRule_26_6_perform_greenFBB(

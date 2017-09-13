@@ -42,7 +42,7 @@ public class RequirementsTransformatorPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass xContainerToContainerEClass = null;
+	private EClass xConsumerToConsumerEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -56,7 +56,7 @@ public class RequirementsTransformatorPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass xConsumerToConsumerEClass = null;
+	private EClass xContainerToContainerEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -149,8 +149,8 @@ public class RequirementsTransformatorPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getXContainerToContainer() {
-		return xContainerToContainerEClass;
+	public EClass getXConsumerToConsumer() {
+		return xConsumerToConsumerEClass;
 	}
 
 	/**
@@ -158,8 +158,8 @@ public class RequirementsTransformatorPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getXContainerToContainer_Source() {
-		return (EReference) xContainerToContainerEClass.getEStructuralFeatures().get(0);
+	public EReference getXConsumerToConsumer_Source() {
+		return (EReference) xConsumerToConsumerEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -167,8 +167,8 @@ public class RequirementsTransformatorPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getXContainerToContainer_Target() {
-		return (EReference) xContainerToContainerEClass.getEStructuralFeatures().get(1);
+	public EReference getXConsumerToConsumer_Target() {
+		return (EReference) xConsumerToConsumerEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -203,8 +203,8 @@ public class RequirementsTransformatorPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getXConsumerToConsumer() {
-		return xConsumerToConsumerEClass;
+	public EClass getXContainerToContainer() {
+		return xContainerToContainerEClass;
 	}
 
 	/**
@@ -212,8 +212,8 @@ public class RequirementsTransformatorPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getXConsumerToConsumer_Source() {
-		return (EReference) xConsumerToConsumerEClass.getEStructuralFeatures().get(0);
+	public EReference getXContainerToContainer_Source() {
+		return (EReference) xContainerToContainerEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -221,8 +221,8 @@ public class RequirementsTransformatorPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getXConsumerToConsumer_Target() {
-		return (EReference) xConsumerToConsumerEClass.getEStructuralFeatures().get(1);
+	public EReference getXContainerToContainer_Target() {
+		return (EReference) xContainerToContainerEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -281,17 +281,17 @@ public class RequirementsTransformatorPackageImpl extends EPackageImpl implement
 		isCreated = true;
 
 		// Create classes and their features
-		xContainerToContainerEClass = createEClass(XCONTAINER_TO_CONTAINER);
-		createEReference(xContainerToContainerEClass, XCONTAINER_TO_CONTAINER__SOURCE);
-		createEReference(xContainerToContainerEClass, XCONTAINER_TO_CONTAINER__TARGET);
+		xConsumerToConsumerEClass = createEClass(XCONSUMER_TO_CONSUMER);
+		createEReference(xConsumerToConsumerEClass, XCONSUMER_TO_CONSUMER__SOURCE);
+		createEReference(xConsumerToConsumerEClass, XCONSUMER_TO_CONSUMER__TARGET);
 
 		xProviderToProviderEClass = createEClass(XPROVIDER_TO_PROVIDER);
 		createEReference(xProviderToProviderEClass, XPROVIDER_TO_PROVIDER__SOURCE);
 		createEReference(xProviderToProviderEClass, XPROVIDER_TO_PROVIDER__TARGET);
 
-		xConsumerToConsumerEClass = createEClass(XCONSUMER_TO_CONSUMER);
-		createEReference(xConsumerToConsumerEClass, XCONSUMER_TO_CONSUMER__SOURCE);
-		createEReference(xConsumerToConsumerEClass, XCONSUMER_TO_CONSUMER__TARGET);
+		xContainerToContainerEClass = createEClass(XCONTAINER_TO_CONTAINER);
+		createEReference(xContainerToContainerEClass, XCONTAINER_TO_CONTAINER__SOURCE);
+		createEReference(xContainerToContainerEClass, XCONTAINER_TO_CONTAINER__TARGET);
 
 		xAgentToAgentEClass = createEClass(XAGENT_TO_AGENT);
 		createEReference(xAgentToAgentEClass, XAGENT_TO_AGENT__SOURCE);
@@ -339,19 +339,19 @@ public class RequirementsTransformatorPackageImpl extends EPackageImpl implement
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		xContainerToContainerEClass.getESuperTypes().add(theRuntimePackage.getAbstractCorrespondence());
-		xProviderToProviderEClass.getESuperTypes().add(theRuntimePackage.getAbstractCorrespondence());
 		xConsumerToConsumerEClass.getESuperTypes().add(theRuntimePackage.getAbstractCorrespondence());
+		xProviderToProviderEClass.getESuperTypes().add(theRuntimePackage.getAbstractCorrespondence());
+		xContainerToContainerEClass.getESuperTypes().add(theRuntimePackage.getAbstractCorrespondence());
 		xAgentToAgentEClass.getESuperTypes().add(theRuntimePackage.getAbstractCorrespondence());
 
 		// Initialize classes, features, and operations; add parameters
-		initEClass(xContainerToContainerEClass, XContainerToContainer.class, "XContainerToContainer", !IS_ABSTRACT,
+		initEClass(xConsumerToConsumerEClass, XConsumerToConsumer.class, "XConsumerToConsumer", !IS_ABSTRACT,
 				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getXContainerToContainer_Source(), theReqXtextPackage.getXContainer(), null, "source", null, 1,
-				1, XContainerToContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
+		initEReference(getXConsumerToConsumer_Source(), theReqXtextPackage.getXConsumer(), null, "source", null, 1, 1,
+				XConsumerToConsumer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
 				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getXContainerToContainer_Target(), theRequirementsPackage.getContainer(), null, "target", null,
-				1, 1, XContainerToContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
+		initEReference(getXConsumerToConsumer_Target(), theRequirementsPackage.getConsumer(), null, "target", null, 1,
+				1, XConsumerToConsumer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
 				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(xProviderToProviderEClass, XProviderToProvider.class, "XProviderToProvider", !IS_ABSTRACT,
@@ -363,13 +363,13 @@ public class RequirementsTransformatorPackageImpl extends EPackageImpl implement
 				1, XProviderToProvider.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
 				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(xConsumerToConsumerEClass, XConsumerToConsumer.class, "XConsumerToConsumer", !IS_ABSTRACT,
+		initEClass(xContainerToContainerEClass, XContainerToContainer.class, "XContainerToContainer", !IS_ABSTRACT,
 				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getXConsumerToConsumer_Source(), theReqXtextPackage.getXConsumer(), null, "source", null, 1, 1,
-				XConsumerToConsumer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
+		initEReference(getXContainerToContainer_Source(), theReqXtextPackage.getXContainer(), null, "source", null, 1,
+				1, XContainerToContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
 				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getXConsumerToConsumer_Target(), theRequirementsPackage.getConsumer(), null, "target", null, 1,
-				1, XConsumerToConsumer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
+		initEReference(getXContainerToContainer_Target(), theRequirementsPackage.getContainer(), null, "target", null,
+				1, 1, XContainerToContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
 				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(xAgentToAgentEClass, XAgentToAgent.class, "XAgentToAgent", !IS_ABSTRACT, !IS_INTERFACE,

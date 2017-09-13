@@ -98,7 +98,7 @@ public interface ReqProviderToServerRule extends EObject, AbstractRule {
 	 */
 	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, VirtualNodeToServer virtualNodeToServer,
 			Server implDevice, Provider reqAgent, Container reqContainer, NetworkSpan virtualNode, Cable cable,
-			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer);
+			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -114,9 +114,9 @@ public interface ReqProviderToServerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_FWD(PerformRuleResult ruleresult, EObject virtualNodeToServer, EObject reqAgentToImplDevice,
-			EObject implDevice, EObject reqAgent, EObject reqContainer, EObject virtualNode, EObject cable,
-			EObject implContainer, EObject reqContainerToImplContainer);
+	void registerObjects_FWD(PerformRuleResult ruleresult, EObject virtualNodeToServer, EObject implDevice,
+			EObject reqAgentToImplDevice, EObject reqAgent, EObject reqContainer, EObject virtualNode, EObject cable,
+			EObject reqContainerToImplContainer, EObject implContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -273,7 +273,7 @@ public interface ReqProviderToServerRule extends EObject, AbstractRule {
 	 */
 	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, VirtualNodeToServer virtualNodeToServer,
 			Server implDevice, Container reqContainer, NetworkSpan virtualNode, Cable cable,
-			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer,
+			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer,
 			ModelgeneratorRuleResult ruleResult);
 
 	/**

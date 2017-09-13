@@ -720,7 +720,7 @@ public class XComputerToComputerImpl extends AbstractRuleImpl implements XComput
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_10(EMoflonEdge _edge_devices) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_11(EMoflonEdge _edge_devices) {
 
 		Object[] result1_bindingAndBlack = XComputerToComputerImpl
 				.pattern_XComputerToComputer_20_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -777,7 +777,7 @@ public class XComputerToComputerImpl extends AbstractRuleImpl implements XComput
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_6(EMoflonEdge _edge_elements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_7(EMoflonEdge _edge_elements) {
 
 		Object[] result1_bindingAndBlack = XComputerToComputerImpl
 				.pattern_XComputerToComputer_21_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -1249,10 +1249,10 @@ public class XComputerToComputerImpl extends AbstractRuleImpl implements XComput
 			return null;
 		case RulesPackage.XCOMPUTER_TO_COMPUTER___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.XCOMPUTER_TO_COMPUTER___IS_APPROPRIATE_BWD_EMOFLON_EDGE_10__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_10((EMoflonEdge) arguments.get(0));
-		case RulesPackage.XCOMPUTER_TO_COMPUTER___IS_APPROPRIATE_FWD_EMOFLON_EDGE_6__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_6((EMoflonEdge) arguments.get(0));
+		case RulesPackage.XCOMPUTER_TO_COMPUTER___IS_APPROPRIATE_BWD_EMOFLON_EDGE_11__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_11((EMoflonEdge) arguments.get(0));
+		case RulesPackage.XCOMPUTER_TO_COMPUTER___IS_APPROPRIATE_FWD_EMOFLON_EDGE_7__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_7((EMoflonEdge) arguments.get(0));
 		case RulesPackage.XCOMPUTER_TO_COMPUTER___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.XCOMPUTER_TO_COMPUTER___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:

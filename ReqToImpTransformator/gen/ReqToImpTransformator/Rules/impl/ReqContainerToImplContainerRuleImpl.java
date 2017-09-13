@@ -92,24 +92,24 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isAppropriate_FWD(Match match, NetworkSpan virtualNode, Container reqContainer) {
+	public boolean isAppropriate_FWD(Match match, Container reqContainer, NetworkSpan virtualNode) {
 
 		Object[] result1_black = ReqContainerToImplContainerRuleImpl
-				.pattern_ReqContainerToImplContainerRule_0_1_initialbindings_blackBBBB(this, match, virtualNode,
-						reqContainer);
+				.pattern_ReqContainerToImplContainerRule_0_1_initialbindings_blackBBBB(this, match, reqContainer,
+						virtualNode);
 		if (result1_black == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
-					+ "[match] = " + match + ", " + "[virtualNode] = " + virtualNode + ", " + "[reqContainer] = "
-					+ reqContainer + ".");
+					+ "[match] = " + match + ", " + "[reqContainer] = " + reqContainer + ", " + "[virtualNode] = "
+					+ virtualNode + ".");
 		}
 
 		Object[] result2_bindingAndBlack = ReqContainerToImplContainerRuleImpl
-				.pattern_ReqContainerToImplContainerRule_0_2_SolveCSP_bindingAndBlackFBBBB(this, match, virtualNode,
-						reqContainer);
+				.pattern_ReqContainerToImplContainerRule_0_2_SolveCSP_bindingAndBlackFBBBB(this, match, reqContainer,
+						virtualNode);
 		if (result2_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
-					+ "[match] = " + match + ", " + "[virtualNode] = " + virtualNode + ", " + "[reqContainer] = "
-					+ reqContainer + ".");
+					+ "[match] = " + match + ", " + "[reqContainer] = " + reqContainer + ", " + "[virtualNode] = "
+					+ virtualNode + ".");
 		}
 		CSP csp = (CSP) result2_bindingAndBlack[0];
 		// 
@@ -118,27 +118,27 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 
 			Object[] result4_black = ReqContainerToImplContainerRuleImpl
 					.pattern_ReqContainerToImplContainerRule_0_4_collectelementstobetranslated_blackBBB(match,
-							virtualNode, reqContainer);
+							reqContainer, virtualNode);
 			if (result4_black == null) {
 				throw new RuntimeException("Pattern matching failed." + " Variables: " + "[match] = " + match + ", "
-						+ "[virtualNode] = " + virtualNode + ", " + "[reqContainer] = " + reqContainer + ".");
+						+ "[reqContainer] = " + reqContainer + ", " + "[virtualNode] = " + virtualNode + ".");
 			}
 			ReqContainerToImplContainerRuleImpl
 					.pattern_ReqContainerToImplContainerRule_0_4_collectelementstobetranslated_greenBBBF(match,
-							virtualNode, reqContainer);
+							reqContainer, virtualNode);
 			//nothing EMoflonEdge reqContainer__virtualNode____networkSpan = (EMoflonEdge) result4_green[3];
 
 			Object[] result5_black = ReqContainerToImplContainerRuleImpl
-					.pattern_ReqContainerToImplContainerRule_0_5_collectcontextelements_blackBBB(match, virtualNode,
-							reqContainer);
+					.pattern_ReqContainerToImplContainerRule_0_5_collectcontextelements_blackBBB(match, reqContainer,
+							virtualNode);
 			if (result5_black == null) {
 				throw new RuntimeException("Pattern matching failed." + " Variables: " + "[match] = " + match + ", "
-						+ "[virtualNode] = " + virtualNode + ", " + "[reqContainer] = " + reqContainer + ".");
+						+ "[reqContainer] = " + reqContainer + ", " + "[virtualNode] = " + virtualNode + ".");
 			}
 			// 
 			ReqContainerToImplContainerRuleImpl
 					.pattern_ReqContainerToImplContainerRule_0_6_registerobjectstomatch_expressionBBBB(this, match,
-							virtualNode, reqContainer);
+							reqContainer, virtualNode);
 			return ReqContainerToImplContainerRuleImpl.pattern_ReqContainerToImplContainerRule_0_7_expressionF();
 		} else {
 			return ReqContainerToImplContainerRuleImpl.pattern_ReqContainerToImplContainerRule_0_8_expressionF();
@@ -160,48 +160,48 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
 					+ "[isApplicableMatch] = " + isApplicableMatch + ".");
 		}
-		NetworkSpan virtualNode = (NetworkSpan) result1_bindingAndBlack[0];
-		Container reqContainer = (Container) result1_bindingAndBlack[1];
+		Container reqContainer = (Container) result1_bindingAndBlack[0];
+		NetworkSpan virtualNode = (NetworkSpan) result1_bindingAndBlack[1];
 		//nothing CSP csp = (CSP) result1_bindingAndBlack[2];
 		Object[] result1_green = ReqContainerToImplContainerRuleImpl
-				.pattern_ReqContainerToImplContainerRule_1_1_performtransformation_greenFBF(reqContainer);
-		ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result1_green[0];
-		implementation.Container implContainer = (implementation.Container) result1_green[2];
+				.pattern_ReqContainerToImplContainerRule_1_1_performtransformation_greenBFF(reqContainer);
+		implementation.Container implContainer = (implementation.Container) result1_green[1];
+		ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result1_green[2];
 
 		Object[] result2_black = ReqContainerToImplContainerRuleImpl
-				.pattern_ReqContainerToImplContainerRule_1_2_collecttranslatedelements_blackBBBB(virtualNode,
-						reqContainerToImplContainer, reqContainer, implContainer);
+				.pattern_ReqContainerToImplContainerRule_1_2_collecttranslatedelements_blackBBBB(reqContainer,
+						virtualNode, implContainer, reqContainerToImplContainer);
 		if (result2_black == null) {
-			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[virtualNode] = " + virtualNode
-					+ ", " + "[reqContainerToImplContainer] = " + reqContainerToImplContainer + ", "
-					+ "[reqContainer] = " + reqContainer + ", " + "[implContainer] = " + implContainer + ".");
+			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[reqContainer] = " + reqContainer
+					+ ", " + "[virtualNode] = " + virtualNode + ", " + "[implContainer] = " + implContainer + ", "
+					+ "[reqContainerToImplContainer] = " + reqContainerToImplContainer + ".");
 		}
 		Object[] result2_green = ReqContainerToImplContainerRuleImpl
-				.pattern_ReqContainerToImplContainerRule_1_2_collecttranslatedelements_greenFBBBB(virtualNode,
-						reqContainerToImplContainer, reqContainer, implContainer);
+				.pattern_ReqContainerToImplContainerRule_1_2_collecttranslatedelements_greenFBBBB(reqContainer,
+						virtualNode, implContainer, reqContainerToImplContainer);
 		PerformRuleResult ruleresult = (PerformRuleResult) result2_green[0];
 
 		Object[] result3_black = ReqContainerToImplContainerRuleImpl
-				.pattern_ReqContainerToImplContainerRule_1_3_bookkeepingforedges_blackBBBBB(ruleresult, virtualNode,
-						reqContainerToImplContainer, reqContainer, implContainer);
+				.pattern_ReqContainerToImplContainerRule_1_3_bookkeepingforedges_blackBBBBB(ruleresult, reqContainer,
+						virtualNode, implContainer, reqContainerToImplContainer);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[ruleresult] = " + ruleresult
-					+ ", " + "[virtualNode] = " + virtualNode + ", " + "[reqContainerToImplContainer] = "
-					+ reqContainerToImplContainer + ", " + "[reqContainer] = " + reqContainer + ", "
-					+ "[implContainer] = " + implContainer + ".");
+					+ ", " + "[reqContainer] = " + reqContainer + ", " + "[virtualNode] = " + virtualNode + ", "
+					+ "[implContainer] = " + implContainer + ", " + "[reqContainerToImplContainer] = "
+					+ reqContainerToImplContainer + ".");
 		}
 		ReqContainerToImplContainerRuleImpl
-				.pattern_ReqContainerToImplContainerRule_1_3_bookkeepingforedges_greenBBBBBFFF(ruleresult, virtualNode,
-						reqContainerToImplContainer, reqContainer, implContainer);
-		//nothing EMoflonEdge reqContainerToImplContainer__reqContainer____source = (EMoflonEdge) result3_green[5];
-		//nothing EMoflonEdge reqContainer__virtualNode____networkSpan = (EMoflonEdge) result3_green[6];
-		//nothing EMoflonEdge reqContainerToImplContainer__implContainer____target = (EMoflonEdge) result3_green[7];
+				.pattern_ReqContainerToImplContainerRule_1_3_bookkeepingforedges_greenBBBBBFFF(ruleresult, reqContainer,
+						virtualNode, implContainer, reqContainerToImplContainer);
+		//nothing EMoflonEdge reqContainer__virtualNode____networkSpan = (EMoflonEdge) result3_green[5];
+		//nothing EMoflonEdge reqContainerToImplContainer__implContainer____target = (EMoflonEdge) result3_green[6];
+		//nothing EMoflonEdge reqContainerToImplContainer__reqContainer____source = (EMoflonEdge) result3_green[7];
 
 		// 
 		// 
 		ReqContainerToImplContainerRuleImpl
 				.pattern_ReqContainerToImplContainerRule_1_5_registerobjects_expressionBBBBBB(this, ruleresult,
-						virtualNode, reqContainerToImplContainer, reqContainer, implContainer);
+						reqContainer, virtualNode, implContainer, reqContainerToImplContainer);
 		return ReqContainerToImplContainerRuleImpl.pattern_ReqContainerToImplContainerRule_1_6_expressionFB(ruleresult);
 	}
 
@@ -230,25 +230,25 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 			throw new RuntimeException(
 					"Binding in node core match failed." + " Variables: " + "[match] = " + match + ".");
 		}
-		NetworkSpan virtualNode = (NetworkSpan) result2_binding[0];
-		Container reqContainer = (Container) result2_binding[1];
+		Container reqContainer = (Container) result2_binding[0];
+		NetworkSpan virtualNode = (NetworkSpan) result2_binding[1];
 		for (Object[] result2_black : ReqContainerToImplContainerRuleImpl
-				.pattern_ReqContainerToImplContainerRule_2_2_corematch_blackBBB(virtualNode, reqContainer, match)) {
+				.pattern_ReqContainerToImplContainerRule_2_2_corematch_blackBBB(reqContainer, virtualNode, match)) {
 			// ForEach 
 			for (Object[] result3_black : ReqContainerToImplContainerRuleImpl
-					.pattern_ReqContainerToImplContainerRule_2_3_findcontext_blackBB(virtualNode, reqContainer)) {
+					.pattern_ReqContainerToImplContainerRule_2_3_findcontext_blackBB(reqContainer, virtualNode)) {
 				Object[] result3_green = ReqContainerToImplContainerRuleImpl
-						.pattern_ReqContainerToImplContainerRule_2_3_findcontext_greenBBFF(virtualNode, reqContainer);
+						.pattern_ReqContainerToImplContainerRule_2_3_findcontext_greenBBFF(reqContainer, virtualNode);
 				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[2];
 				//nothing EMoflonEdge reqContainer__virtualNode____networkSpan = (EMoflonEdge) result3_green[3];
 
 				Object[] result4_bindingAndBlack = ReqContainerToImplContainerRuleImpl
 						.pattern_ReqContainerToImplContainerRule_2_4_solveCSP_bindingAndBlackFBBBB(this,
-								isApplicableMatch, virtualNode, reqContainer);
+								isApplicableMatch, reqContainer, virtualNode);
 				if (result4_bindingAndBlack == null) {
 					throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
-							+ "[isApplicableMatch] = " + isApplicableMatch + ", " + "[virtualNode] = " + virtualNode
-							+ ", " + "[reqContainer] = " + reqContainer + ".");
+							+ "[isApplicableMatch] = " + isApplicableMatch + ", " + "[reqContainer] = " + reqContainer
+							+ ", " + "[virtualNode] = " + virtualNode + ".");
 				}
 				CSP csp = (CSP) result4_bindingAndBlack[0];
 				// 
@@ -280,9 +280,9 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjectsToMatch_FWD(Match match, NetworkSpan virtualNode, Container reqContainer) {
-		match.registerObject("virtualNode", virtualNode);
+	public void registerObjectsToMatch_FWD(Match match, Container reqContainer, NetworkSpan virtualNode) {
 		match.registerObject("reqContainer", reqContainer);
+		match.registerObject("virtualNode", virtualNode);
 
 	}
 
@@ -291,7 +291,7 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isAppropriate_solveCsp_FWD(Match match, NetworkSpan virtualNode, Container reqContainer) {// Create CSP
+	public CSP isAppropriate_solveCsp_FWD(Match match, Container reqContainer, NetworkSpan virtualNode) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 
 		// Create literals
@@ -320,8 +320,8 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, NetworkSpan virtualNode,
-			Container reqContainer) {// Create CSP
+	public CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, Container reqContainer,
+			NetworkSpan virtualNode) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -336,8 +336,8 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 		// Solve CSP
 
 		// Snapshot pattern match on which CSP is solved
-		isApplicableMatch.registerObject("virtualNode", virtualNode);
 		isApplicableMatch.registerObject("reqContainer", reqContainer);
+		isApplicableMatch.registerObject("virtualNode", virtualNode);
 		return csp;
 	}
 
@@ -355,12 +355,12 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjects_FWD(PerformRuleResult ruleresult, EObject virtualNode,
-			EObject reqContainerToImplContainer, EObject reqContainer, EObject implContainer) {
-		ruleresult.registerObject("virtualNode", virtualNode);
-		ruleresult.registerObject("reqContainerToImplContainer", reqContainerToImplContainer);
+	public void registerObjects_FWD(PerformRuleResult ruleresult, EObject reqContainer, EObject virtualNode,
+			EObject implContainer, EObject reqContainerToImplContainer) {
 		ruleresult.registerObject("reqContainer", reqContainer);
+		ruleresult.registerObject("virtualNode", virtualNode);
 		ruleresult.registerObject("implContainer", implContainer);
+		ruleresult.registerObject("reqContainerToImplContainer", reqContainerToImplContainer);
 
 	}
 
@@ -371,10 +371,10 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	 */
 	public boolean checkTypes_FWD(Match match) {
 		return true
-				&& org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject("virtualNode").eClass())
-						.equals("requirements.NetworkSpan.")
 				&& org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject("reqContainer").eClass())
-						.equals("requirements.Container.");
+						.equals("requirements.Container.")
+				&& org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject("virtualNode").eClass())
+						.equals("requirements.NetworkSpan.");
 	}
 
 	/**
@@ -447,45 +447,45 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 		implementation.Container implContainer = (implementation.Container) result1_bindingAndBlack[0];
 		//nothing CSP csp = (CSP) result1_bindingAndBlack[1];
 		Object[] result1_green = ReqContainerToImplContainerRuleImpl
-				.pattern_ReqContainerToImplContainerRule_11_1_performtransformation_greenFFFB(implContainer);
-		NetworkSpan virtualNode = (NetworkSpan) result1_green[0];
-		ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result1_green[1];
-		Container reqContainer = (Container) result1_green[2];
+				.pattern_ReqContainerToImplContainerRule_11_1_performtransformation_greenFFBF(implContainer);
+		Container reqContainer = (Container) result1_green[0];
+		NetworkSpan virtualNode = (NetworkSpan) result1_green[1];
+		ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result1_green[3];
 
 		Object[] result2_black = ReqContainerToImplContainerRuleImpl
-				.pattern_ReqContainerToImplContainerRule_11_2_collecttranslatedelements_blackBBBB(virtualNode,
-						reqContainerToImplContainer, reqContainer, implContainer);
+				.pattern_ReqContainerToImplContainerRule_11_2_collecttranslatedelements_blackBBBB(reqContainer,
+						virtualNode, implContainer, reqContainerToImplContainer);
 		if (result2_black == null) {
-			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[virtualNode] = " + virtualNode
-					+ ", " + "[reqContainerToImplContainer] = " + reqContainerToImplContainer + ", "
-					+ "[reqContainer] = " + reqContainer + ", " + "[implContainer] = " + implContainer + ".");
+			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[reqContainer] = " + reqContainer
+					+ ", " + "[virtualNode] = " + virtualNode + ", " + "[implContainer] = " + implContainer + ", "
+					+ "[reqContainerToImplContainer] = " + reqContainerToImplContainer + ".");
 		}
 		Object[] result2_green = ReqContainerToImplContainerRuleImpl
-				.pattern_ReqContainerToImplContainerRule_11_2_collecttranslatedelements_greenFBBBB(virtualNode,
-						reqContainerToImplContainer, reqContainer, implContainer);
+				.pattern_ReqContainerToImplContainerRule_11_2_collecttranslatedelements_greenFBBBB(reqContainer,
+						virtualNode, implContainer, reqContainerToImplContainer);
 		PerformRuleResult ruleresult = (PerformRuleResult) result2_green[0];
 
 		Object[] result3_black = ReqContainerToImplContainerRuleImpl
-				.pattern_ReqContainerToImplContainerRule_11_3_bookkeepingforedges_blackBBBBB(ruleresult, virtualNode,
-						reqContainerToImplContainer, reqContainer, implContainer);
+				.pattern_ReqContainerToImplContainerRule_11_3_bookkeepingforedges_blackBBBBB(ruleresult, reqContainer,
+						virtualNode, implContainer, reqContainerToImplContainer);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[ruleresult] = " + ruleresult
-					+ ", " + "[virtualNode] = " + virtualNode + ", " + "[reqContainerToImplContainer] = "
-					+ reqContainerToImplContainer + ", " + "[reqContainer] = " + reqContainer + ", "
-					+ "[implContainer] = " + implContainer + ".");
+					+ ", " + "[reqContainer] = " + reqContainer + ", " + "[virtualNode] = " + virtualNode + ", "
+					+ "[implContainer] = " + implContainer + ", " + "[reqContainerToImplContainer] = "
+					+ reqContainerToImplContainer + ".");
 		}
 		ReqContainerToImplContainerRuleImpl
-				.pattern_ReqContainerToImplContainerRule_11_3_bookkeepingforedges_greenBBBBBFFF(ruleresult, virtualNode,
-						reqContainerToImplContainer, reqContainer, implContainer);
-		//nothing EMoflonEdge reqContainerToImplContainer__reqContainer____source = (EMoflonEdge) result3_green[5];
-		//nothing EMoflonEdge reqContainer__virtualNode____networkSpan = (EMoflonEdge) result3_green[6];
-		//nothing EMoflonEdge reqContainerToImplContainer__implContainer____target = (EMoflonEdge) result3_green[7];
+				.pattern_ReqContainerToImplContainerRule_11_3_bookkeepingforedges_greenBBBBBFFF(ruleresult,
+						reqContainer, virtualNode, implContainer, reqContainerToImplContainer);
+		//nothing EMoflonEdge reqContainer__virtualNode____networkSpan = (EMoflonEdge) result3_green[5];
+		//nothing EMoflonEdge reqContainerToImplContainer__implContainer____target = (EMoflonEdge) result3_green[6];
+		//nothing EMoflonEdge reqContainerToImplContainer__reqContainer____source = (EMoflonEdge) result3_green[7];
 
 		// 
 		// 
 		ReqContainerToImplContainerRuleImpl
 				.pattern_ReqContainerToImplContainerRule_11_5_registerobjects_expressionBBBBBB(this, ruleresult,
-						virtualNode, reqContainerToImplContainer, reqContainer, implContainer);
+						reqContainer, virtualNode, implContainer, reqContainerToImplContainer);
 		return ReqContainerToImplContainerRuleImpl
 				.pattern_ReqContainerToImplContainerRule_11_6_expressionFB(ruleresult);
 	}
@@ -636,12 +636,12 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject virtualNode,
-			EObject reqContainerToImplContainer, EObject reqContainer, EObject implContainer) {
-		ruleresult.registerObject("virtualNode", virtualNode);
-		ruleresult.registerObject("reqContainerToImplContainer", reqContainerToImplContainer);
+	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject reqContainer, EObject virtualNode,
+			EObject implContainer, EObject reqContainerToImplContainer) {
 		ruleresult.registerObject("reqContainer", reqContainer);
+		ruleresult.registerObject("virtualNode", virtualNode);
 		ruleresult.registerObject("implContainer", implContainer);
+		ruleresult.registerObject("reqContainerToImplContainer", reqContainerToImplContainer);
 
 	}
 
@@ -734,8 +734,8 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 		// ForEach 
 		for (Object[] result2_black : ReqContainerToImplContainerRuleImpl
 				.pattern_ReqContainerToImplContainerRule_21_2_testcorematchandDECs_blackFFB(_edge_networkSpan)) {
-			NetworkSpan virtualNode = (NetworkSpan) result2_black[0];
-			Container reqContainer = (Container) result2_black[1];
+			Container reqContainer = (Container) result2_black[0];
+			NetworkSpan virtualNode = (NetworkSpan) result2_black[1];
 			Object[] result2_green = ReqContainerToImplContainerRuleImpl
 					.pattern_ReqContainerToImplContainerRule_21_2_testcorematchandDECs_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
@@ -743,7 +743,7 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 			// 
 			if (ReqContainerToImplContainerRuleImpl
 					.pattern_ReqContainerToImplContainerRule_21_3_bookkeepingwithgenericisAppropriatemethod_expressionFBBBB(
-							this, match, virtualNode, reqContainer)) {
+							this, match, reqContainer, virtualNode)) {
 				// 
 				if (ReqContainerToImplContainerRuleImpl
 						.pattern_ReqContainerToImplContainerRule_21_4_Ensurethatthecorrecttypesofelementsarematched_expressionFBB(
@@ -854,16 +854,16 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[sourceMatch] = " + sourceMatch
 					+ ", " + "[targetMatch] = " + targetMatch + ".");
 		}
-		NetworkSpan virtualNode = (NetworkSpan) result2_bindingAndBlack[0];
-		Container reqContainer = (Container) result2_bindingAndBlack[1];
+		Container reqContainer = (Container) result2_bindingAndBlack[0];
+		NetworkSpan virtualNode = (NetworkSpan) result2_bindingAndBlack[1];
 		implementation.Container implContainer = (implementation.Container) result2_bindingAndBlack[2];
 
 		Object[] result3_bindingAndBlack = ReqContainerToImplContainerRuleImpl
-				.pattern_ReqContainerToImplContainerRule_24_3_solvecsp_bindingAndBlackFBBBBBB(this, virtualNode,
-						reqContainer, implContainer, sourceMatch, targetMatch);
+				.pattern_ReqContainerToImplContainerRule_24_3_solvecsp_bindingAndBlackFBBBBBB(this, reqContainer,
+						virtualNode, implContainer, sourceMatch, targetMatch);
 		if (result3_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
-					+ "[virtualNode] = " + virtualNode + ", " + "[reqContainer] = " + reqContainer + ", "
+					+ "[reqContainer] = " + reqContainer + ", " + "[virtualNode] = " + virtualNode + ", "
 					+ "[implContainer] = " + implContainer + ", " + "[sourceMatch] = " + sourceMatch + ", "
 					+ "[targetMatch] = " + targetMatch + ".");
 		}
@@ -880,17 +880,17 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 				CCMatch ccMatch = (CCMatch) result5_green[2];
 
 				Object[] result6_black = ReqContainerToImplContainerRuleImpl
-						.pattern_ReqContainerToImplContainerRule_24_6_createcorrespondence_blackBBBB(virtualNode,
-								reqContainer, implContainer, ccMatch);
+						.pattern_ReqContainerToImplContainerRule_24_6_createcorrespondence_blackBBBB(reqContainer,
+								virtualNode, implContainer, ccMatch);
 				if (result6_black == null) {
-					throw new RuntimeException("Pattern matching failed." + " Variables: " + "[virtualNode] = "
-							+ virtualNode + ", " + "[reqContainer] = " + reqContainer + ", " + "[implContainer] = "
+					throw new RuntimeException("Pattern matching failed." + " Variables: " + "[reqContainer] = "
+							+ reqContainer + ", " + "[virtualNode] = " + virtualNode + ", " + "[implContainer] = "
 							+ implContainer + ", " + "[ccMatch] = " + ccMatch + ".");
 				}
 				ReqContainerToImplContainerRuleImpl
-						.pattern_ReqContainerToImplContainerRule_24_6_createcorrespondence_greenFBBB(reqContainer,
+						.pattern_ReqContainerToImplContainerRule_24_6_createcorrespondence_greenBBFB(reqContainer,
 								implContainer, ccMatch);
-				//nothing ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result6_green[0];
+				//nothing ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result6_green[2];
 
 				Object[] result7_black = ReqContainerToImplContainerRuleImpl
 						.pattern_ReqContainerToImplContainerRule_24_7_addtoreturnedresult_blackBB(result, ccMatch);
@@ -913,7 +913,7 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isApplicable_solveCsp_CC(NetworkSpan virtualNode, Container reqContainer,
+	public CSP isApplicable_solveCsp_CC(Container reqContainer, NetworkSpan virtualNode,
 			implementation.Container implContainer, Match sourceMatch, Match targetMatch) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 
@@ -943,9 +943,9 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean checkDEC_FWD(NetworkSpan virtualNode, Container reqContainer) {// 
+	public boolean checkDEC_FWD(Container reqContainer, NetworkSpan virtualNode) {// 
 		Object[] result1_black = ReqContainerToImplContainerRuleImpl
-				.pattern_ReqContainerToImplContainerRule_27_1_matchtggpattern_blackBB(virtualNode, reqContainer);
+				.pattern_ReqContainerToImplContainerRule_27_1_matchtggpattern_blackBB(reqContainer, virtualNode);
 		if (result1_black != null) {
 			return ReqContainerToImplContainerRuleImpl.pattern_ReqContainerToImplContainerRule_27_2_expressionF();
 		} else {
@@ -1013,10 +1013,10 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 				}
 				ReqContainerToImplContainerRuleImpl
 						.pattern_ReqContainerToImplContainerRule_29_6_perform_greenFFFFB(ruleResult);
-				//nothing NetworkSpan virtualNode = (NetworkSpan) result6_green[0];
-				//nothing ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result6_green[1];
-				//nothing Container reqContainer = (Container) result6_green[2];
-				//nothing implementation.Container implContainer = (implementation.Container) result6_green[3];
+				//nothing Container reqContainer = (Container) result6_green[0];
+				//nothing NetworkSpan virtualNode = (NetworkSpan) result6_green[1];
+				//nothing implementation.Container implContainer = (implementation.Container) result6_green[2];
+				//nothing ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result6_green[3];
 
 			} else {
 			}
@@ -1067,25 +1067,25 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
-		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___IS_APPROPRIATE_FWD__MATCH_NETWORKSPAN_CONTAINER:
-			return isAppropriate_FWD((Match) arguments.get(0), (NetworkSpan) arguments.get(1),
-					(Container) arguments.get(2));
+		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___IS_APPROPRIATE_FWD__MATCH_CONTAINER_NETWORKSPAN:
+			return isAppropriate_FWD((Match) arguments.get(0), (Container) arguments.get(1),
+					(NetworkSpan) arguments.get(2));
 		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___PERFORM_FWD__ISAPPLICABLEMATCH:
 			return perform_FWD((IsApplicableMatch) arguments.get(0));
 		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___IS_APPLICABLE_FWD__MATCH:
 			return isApplicable_FWD((Match) arguments.get(0));
-		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_NETWORKSPAN_CONTAINER:
-			registerObjectsToMatch_FWD((Match) arguments.get(0), (NetworkSpan) arguments.get(1),
-					(Container) arguments.get(2));
+		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_CONTAINER_NETWORKSPAN:
+			registerObjectsToMatch_FWD((Match) arguments.get(0), (Container) arguments.get(1),
+					(NetworkSpan) arguments.get(2));
 			return null;
-		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_NETWORKSPAN_CONTAINER:
-			return isAppropriate_solveCsp_FWD((Match) arguments.get(0), (NetworkSpan) arguments.get(1),
-					(Container) arguments.get(2));
+		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_CONTAINER_NETWORKSPAN:
+			return isAppropriate_solveCsp_FWD((Match) arguments.get(0), (Container) arguments.get(1),
+					(NetworkSpan) arguments.get(2));
 		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___IS_APPROPRIATE_CHECK_CSP_FWD__CSP:
 			return isAppropriate_checkCsp_FWD((CSP) arguments.get(0));
-		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_NETWORKSPAN_CONTAINER:
-			return isApplicable_solveCsp_FWD((IsApplicableMatch) arguments.get(0), (NetworkSpan) arguments.get(1),
-					(Container) arguments.get(2));
+		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_CONTAINER_NETWORKSPAN:
+			return isApplicable_solveCsp_FWD((IsApplicableMatch) arguments.get(0), (Container) arguments.get(1),
+					(NetworkSpan) arguments.get(2));
 		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___IS_APPLICABLE_CHECK_CSP_FWD__CSP:
 			return isApplicable_checkCsp_FWD((CSP) arguments.get(0));
 		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
@@ -1128,13 +1128,13 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 			return checkAttributes_BWD((TripleMatch) arguments.get(0));
 		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___IS_APPLICABLE_CC__MATCH_MATCH:
 			return isApplicable_CC((Match) arguments.get(0), (Match) arguments.get(1));
-		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___IS_APPLICABLE_SOLVE_CSP_CC__NETWORKSPAN_CONTAINER_CONTAINER_MATCH_MATCH:
-			return isApplicable_solveCsp_CC((NetworkSpan) arguments.get(0), (Container) arguments.get(1),
+		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___IS_APPLICABLE_SOLVE_CSP_CC__CONTAINER_NETWORKSPAN_CONTAINER_MATCH_MATCH:
+			return isApplicable_solveCsp_CC((Container) arguments.get(0), (NetworkSpan) arguments.get(1),
 					(implementation.Container) arguments.get(2), (Match) arguments.get(3), (Match) arguments.get(4));
 		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___IS_APPLICABLE_CHECK_CSP_CC__CSP:
 			return isApplicable_checkCsp_CC((CSP) arguments.get(0));
-		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___CHECK_DEC_FWD__NETWORKSPAN_CONTAINER:
-			return checkDEC_FWD((NetworkSpan) arguments.get(0), (Container) arguments.get(1));
+		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___CHECK_DEC_FWD__CONTAINER_NETWORKSPAN:
+			return checkDEC_FWD((Container) arguments.get(0), (NetworkSpan) arguments.get(1));
 		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___CHECK_DEC_BWD__CONTAINER:
 			return checkDEC_BWD((implementation.Container) arguments.get(0));
 		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___GENERATE_MODEL__RULEENTRYCONTAINER:
@@ -1149,16 +1149,16 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_0_1_initialbindings_blackBBBB(
-			ReqContainerToImplContainerRule _this, Match match, NetworkSpan virtualNode, Container reqContainer) {
-		return new Object[] { _this, match, virtualNode, reqContainer };
+			ReqContainerToImplContainerRule _this, Match match, Container reqContainer, NetworkSpan virtualNode) {
+		return new Object[] { _this, match, reqContainer, virtualNode };
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_0_2_SolveCSP_bindingFBBBB(
-			ReqContainerToImplContainerRule _this, Match match, NetworkSpan virtualNode, Container reqContainer) {
-		CSP _localVariable_0 = _this.isAppropriate_solveCsp_FWD(match, virtualNode, reqContainer);
+			ReqContainerToImplContainerRule _this, Match match, Container reqContainer, NetworkSpan virtualNode) {
+		CSP _localVariable_0 = _this.isAppropriate_solveCsp_FWD(match, reqContainer, virtualNode);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, match, virtualNode, reqContainer };
+			return new Object[] { csp, _this, match, reqContainer, virtualNode };
 		}
 		return null;
 	}
@@ -1168,9 +1168,9 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_0_2_SolveCSP_bindingAndBlackFBBBB(
-			ReqContainerToImplContainerRule _this, Match match, NetworkSpan virtualNode, Container reqContainer) {
+			ReqContainerToImplContainerRule _this, Match match, Container reqContainer, NetworkSpan virtualNode) {
 		Object[] result_pattern_ReqContainerToImplContainerRule_0_2_SolveCSP_binding = pattern_ReqContainerToImplContainerRule_0_2_SolveCSP_bindingFBBBB(
-				_this, match, virtualNode, reqContainer);
+				_this, match, reqContainer, virtualNode);
 		if (result_pattern_ReqContainerToImplContainerRule_0_2_SolveCSP_binding != null) {
 			CSP csp = (CSP) result_pattern_ReqContainerToImplContainerRule_0_2_SolveCSP_binding[0];
 
@@ -1178,7 +1178,7 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 					csp);
 			if (result_pattern_ReqContainerToImplContainerRule_0_2_SolveCSP_black != null) {
 
-				return new Object[] { csp, _this, match, virtualNode, reqContainer };
+				return new Object[] { csp, _this, match, reqContainer, virtualNode };
 			}
 		}
 		return null;
@@ -1192,31 +1192,31 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_0_4_collectelementstobetranslated_blackBBB(
-			Match match, NetworkSpan virtualNode, Container reqContainer) {
-		return new Object[] { match, virtualNode, reqContainer };
+			Match match, Container reqContainer, NetworkSpan virtualNode) {
+		return new Object[] { match, reqContainer, virtualNode };
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_0_4_collectelementstobetranslated_greenBBBF(
-			Match match, NetworkSpan virtualNode, Container reqContainer) {
+			Match match, Container reqContainer, NetworkSpan virtualNode) {
 		EMoflonEdge reqContainer__virtualNode____networkSpan = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		match.getToBeTranslatedNodes().add(virtualNode);
 		match.getToBeTranslatedNodes().add(reqContainer);
+		match.getToBeTranslatedNodes().add(virtualNode);
 		String reqContainer__virtualNode____networkSpan_name_prime = "networkSpan";
 		reqContainer__virtualNode____networkSpan.setSrc(reqContainer);
 		reqContainer__virtualNode____networkSpan.setTrg(virtualNode);
 		match.getToBeTranslatedEdges().add(reqContainer__virtualNode____networkSpan);
 		reqContainer__virtualNode____networkSpan.setName(reqContainer__virtualNode____networkSpan_name_prime);
-		return new Object[] { match, virtualNode, reqContainer, reqContainer__virtualNode____networkSpan };
+		return new Object[] { match, reqContainer, virtualNode, reqContainer__virtualNode____networkSpan };
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_0_5_collectcontextelements_blackBBB(
-			Match match, NetworkSpan virtualNode, Container reqContainer) {
-		return new Object[] { match, virtualNode, reqContainer };
+			Match match, Container reqContainer, NetworkSpan virtualNode) {
+		return new Object[] { match, reqContainer, virtualNode };
 	}
 
 	public static final void pattern_ReqContainerToImplContainerRule_0_6_registerobjectstomatch_expressionBBBB(
-			ReqContainerToImplContainerRule _this, Match match, NetworkSpan virtualNode, Container reqContainer) {
-		_this.registerObjectsToMatch_FWD(match, virtualNode, reqContainer);
+			ReqContainerToImplContainerRule _this, Match match, Container reqContainer, NetworkSpan virtualNode) {
+		_this.registerObjectsToMatch_FWD(match, reqContainer, virtualNode);
 
 	}
 
@@ -1232,27 +1232,27 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_1_1_performtransformation_bindingFFB(
 			IsApplicableMatch isApplicableMatch) {
-		EObject _localVariable_0 = isApplicableMatch.getObject("virtualNode");
-		EObject _localVariable_1 = isApplicableMatch.getObject("reqContainer");
-		EObject tmpVirtualNode = _localVariable_0;
-		EObject tmpReqContainer = _localVariable_1;
-		if (tmpVirtualNode instanceof NetworkSpan) {
-			NetworkSpan virtualNode = (NetworkSpan) tmpVirtualNode;
-			if (tmpReqContainer instanceof Container) {
-				Container reqContainer = (Container) tmpReqContainer;
-				return new Object[] { virtualNode, reqContainer, isApplicableMatch };
+		EObject _localVariable_0 = isApplicableMatch.getObject("reqContainer");
+		EObject _localVariable_1 = isApplicableMatch.getObject("virtualNode");
+		EObject tmpReqContainer = _localVariable_0;
+		EObject tmpVirtualNode = _localVariable_1;
+		if (tmpReqContainer instanceof Container) {
+			Container reqContainer = (Container) tmpReqContainer;
+			if (tmpVirtualNode instanceof NetworkSpan) {
+				NetworkSpan virtualNode = (NetworkSpan) tmpVirtualNode;
+				return new Object[] { reqContainer, virtualNode, isApplicableMatch };
 			}
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_1_1_performtransformation_blackBBFBB(
-			NetworkSpan virtualNode, Container reqContainer, ReqContainerToImplContainerRule _this,
+			Container reqContainer, NetworkSpan virtualNode, ReqContainerToImplContainerRule _this,
 			IsApplicableMatch isApplicableMatch) {
 		for (EObject tmpCsp : isApplicableMatch.getAttributeInfo()) {
 			if (tmpCsp instanceof CSP) {
 				CSP csp = (CSP) tmpCsp;
-				return new Object[] { virtualNode, reqContainer, csp, _this, isApplicableMatch };
+				return new Object[] { reqContainer, virtualNode, csp, _this, isApplicableMatch };
 			}
 		}
 		return null;
@@ -1263,58 +1263,58 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 		Object[] result_pattern_ReqContainerToImplContainerRule_1_1_performtransformation_binding = pattern_ReqContainerToImplContainerRule_1_1_performtransformation_bindingFFB(
 				isApplicableMatch);
 		if (result_pattern_ReqContainerToImplContainerRule_1_1_performtransformation_binding != null) {
-			NetworkSpan virtualNode = (NetworkSpan) result_pattern_ReqContainerToImplContainerRule_1_1_performtransformation_binding[0];
-			Container reqContainer = (Container) result_pattern_ReqContainerToImplContainerRule_1_1_performtransformation_binding[1];
+			Container reqContainer = (Container) result_pattern_ReqContainerToImplContainerRule_1_1_performtransformation_binding[0];
+			NetworkSpan virtualNode = (NetworkSpan) result_pattern_ReqContainerToImplContainerRule_1_1_performtransformation_binding[1];
 
 			Object[] result_pattern_ReqContainerToImplContainerRule_1_1_performtransformation_black = pattern_ReqContainerToImplContainerRule_1_1_performtransformation_blackBBFBB(
-					virtualNode, reqContainer, _this, isApplicableMatch);
+					reqContainer, virtualNode, _this, isApplicableMatch);
 			if (result_pattern_ReqContainerToImplContainerRule_1_1_performtransformation_black != null) {
 				CSP csp = (CSP) result_pattern_ReqContainerToImplContainerRule_1_1_performtransformation_black[2];
 
-				return new Object[] { virtualNode, reqContainer, csp, _this, isApplicableMatch };
+				return new Object[] { reqContainer, virtualNode, csp, _this, isApplicableMatch };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_ReqContainerToImplContainerRule_1_1_performtransformation_greenFBF(
+	public static final Object[] pattern_ReqContainerToImplContainerRule_1_1_performtransformation_greenBFF(
 			Container reqContainer) {
+		implementation.Container implContainer = ImplementationFactory.eINSTANCE.createContainer();
 		ReqContainerToImplContainer reqContainerToImplContainer = ReqToImpTransformatorFactory.eINSTANCE
 				.createReqContainerToImplContainer();
-		implementation.Container implContainer = ImplementationFactory.eINSTANCE.createContainer();
-		reqContainerToImplContainer.setSource(reqContainer);
 		reqContainerToImplContainer.setTarget(implContainer);
-		return new Object[] { reqContainerToImplContainer, reqContainer, implContainer };
+		reqContainerToImplContainer.setSource(reqContainer);
+		return new Object[] { reqContainer, implContainer, reqContainerToImplContainer };
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_1_2_collecttranslatedelements_blackBBBB(
-			NetworkSpan virtualNode, ReqContainerToImplContainer reqContainerToImplContainer, Container reqContainer,
-			implementation.Container implContainer) {
-		return new Object[] { virtualNode, reqContainerToImplContainer, reqContainer, implContainer };
+			Container reqContainer, NetworkSpan virtualNode, implementation.Container implContainer,
+			ReqContainerToImplContainer reqContainerToImplContainer) {
+		return new Object[] { reqContainer, virtualNode, implContainer, reqContainerToImplContainer };
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_1_2_collecttranslatedelements_greenFBBBB(
-			NetworkSpan virtualNode, ReqContainerToImplContainer reqContainerToImplContainer, Container reqContainer,
-			implementation.Container implContainer) {
+			Container reqContainer, NetworkSpan virtualNode, implementation.Container implContainer,
+			ReqContainerToImplContainer reqContainerToImplContainer) {
 		PerformRuleResult ruleresult = RuntimeFactory.eINSTANCE.createPerformRuleResult();
-		ruleresult.getTranslatedElements().add(virtualNode);
-		ruleresult.getCreatedLinkElements().add(reqContainerToImplContainer);
 		ruleresult.getTranslatedElements().add(reqContainer);
+		ruleresult.getTranslatedElements().add(virtualNode);
 		ruleresult.getCreatedElements().add(implContainer);
-		return new Object[] { ruleresult, virtualNode, reqContainerToImplContainer, reqContainer, implContainer };
+		ruleresult.getCreatedLinkElements().add(reqContainerToImplContainer);
+		return new Object[] { ruleresult, reqContainer, virtualNode, implContainer, reqContainerToImplContainer };
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_1_3_bookkeepingforedges_blackBBBBB(
-			PerformRuleResult ruleresult, EObject virtualNode, EObject reqContainerToImplContainer,
-			EObject reqContainer, EObject implContainer) {
-		if (!reqContainerToImplContainer.equals(virtualNode)) {
-			if (!reqContainer.equals(virtualNode)) {
-				if (!reqContainer.equals(reqContainerToImplContainer)) {
+			PerformRuleResult ruleresult, EObject reqContainer, EObject virtualNode, EObject implContainer,
+			EObject reqContainerToImplContainer) {
+		if (!reqContainer.equals(virtualNode)) {
+			if (!reqContainer.equals(reqContainerToImplContainer)) {
+				if (!implContainer.equals(reqContainer)) {
 					if (!implContainer.equals(virtualNode)) {
 						if (!implContainer.equals(reqContainerToImplContainer)) {
-							if (!implContainer.equals(reqContainer)) {
-								return new Object[] { ruleresult, virtualNode, reqContainerToImplContainer,
-										reqContainer, implContainer };
+							if (!reqContainerToImplContainer.equals(virtualNode)) {
+								return new Object[] { ruleresult, reqContainer, virtualNode, implContainer,
+										reqContainerToImplContainer };
 							}
 						}
 					}
@@ -1325,39 +1325,39 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_1_3_bookkeepingforedges_greenBBBBBFFF(
-			PerformRuleResult ruleresult, EObject virtualNode, EObject reqContainerToImplContainer,
-			EObject reqContainer, EObject implContainer) {
-		EMoflonEdge reqContainerToImplContainer__reqContainer____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+			PerformRuleResult ruleresult, EObject reqContainer, EObject virtualNode, EObject implContainer,
+			EObject reqContainerToImplContainer) {
 		EMoflonEdge reqContainer__virtualNode____networkSpan = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge reqContainerToImplContainer__implContainer____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge reqContainerToImplContainer__reqContainer____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String ruleresult_ruleName_prime = "ReqContainerToImplContainerRule";
-		String reqContainerToImplContainer__reqContainer____source_name_prime = "source";
 		String reqContainer__virtualNode____networkSpan_name_prime = "networkSpan";
 		String reqContainerToImplContainer__implContainer____target_name_prime = "target";
-		reqContainerToImplContainer__reqContainer____source.setSrc(reqContainerToImplContainer);
-		reqContainerToImplContainer__reqContainer____source.setTrg(reqContainer);
-		ruleresult.getCreatedEdges().add(reqContainerToImplContainer__reqContainer____source);
+		String reqContainerToImplContainer__reqContainer____source_name_prime = "source";
 		reqContainer__virtualNode____networkSpan.setSrc(reqContainer);
 		reqContainer__virtualNode____networkSpan.setTrg(virtualNode);
 		ruleresult.getTranslatedEdges().add(reqContainer__virtualNode____networkSpan);
 		reqContainerToImplContainer__implContainer____target.setSrc(reqContainerToImplContainer);
 		reqContainerToImplContainer__implContainer____target.setTrg(implContainer);
 		ruleresult.getCreatedEdges().add(reqContainerToImplContainer__implContainer____target);
+		reqContainerToImplContainer__reqContainer____source.setSrc(reqContainerToImplContainer);
+		reqContainerToImplContainer__reqContainer____source.setTrg(reqContainer);
+		ruleresult.getCreatedEdges().add(reqContainerToImplContainer__reqContainer____source);
 		ruleresult.setRuleName(ruleresult_ruleName_prime);
-		reqContainerToImplContainer__reqContainer____source
-				.setName(reqContainerToImplContainer__reqContainer____source_name_prime);
 		reqContainer__virtualNode____networkSpan.setName(reqContainer__virtualNode____networkSpan_name_prime);
 		reqContainerToImplContainer__implContainer____target
 				.setName(reqContainerToImplContainer__implContainer____target_name_prime);
-		return new Object[] { ruleresult, virtualNode, reqContainerToImplContainer, reqContainer, implContainer,
-				reqContainerToImplContainer__reqContainer____source, reqContainer__virtualNode____networkSpan,
-				reqContainerToImplContainer__implContainer____target };
+		reqContainerToImplContainer__reqContainer____source
+				.setName(reqContainerToImplContainer__reqContainer____source_name_prime);
+		return new Object[] { ruleresult, reqContainer, virtualNode, implContainer, reqContainerToImplContainer,
+				reqContainer__virtualNode____networkSpan, reqContainerToImplContainer__implContainer____target,
+				reqContainerToImplContainer__reqContainer____source };
 	}
 
 	public static final void pattern_ReqContainerToImplContainerRule_1_5_registerobjects_expressionBBBBBB(
-			ReqContainerToImplContainerRule _this, PerformRuleResult ruleresult, EObject virtualNode,
-			EObject reqContainerToImplContainer, EObject reqContainer, EObject implContainer) {
-		_this.registerObjects_FWD(ruleresult, virtualNode, reqContainerToImplContainer, reqContainer, implContainer);
+			ReqContainerToImplContainerRule _this, PerformRuleResult ruleresult, EObject reqContainer,
+			EObject virtualNode, EObject implContainer, EObject reqContainerToImplContainer) {
+		_this.registerObjects_FWD(ruleresult, reqContainer, virtualNode, implContainer, reqContainerToImplContainer);
 
 	}
 
@@ -1419,57 +1419,57 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_2_2_corematch_bindingFFB(Match match) {
-		EObject _localVariable_0 = match.getObject("virtualNode");
-		EObject _localVariable_1 = match.getObject("reqContainer");
-		EObject tmpVirtualNode = _localVariable_0;
-		EObject tmpReqContainer = _localVariable_1;
-		if (tmpVirtualNode instanceof NetworkSpan) {
-			NetworkSpan virtualNode = (NetworkSpan) tmpVirtualNode;
-			if (tmpReqContainer instanceof Container) {
-				Container reqContainer = (Container) tmpReqContainer;
-				return new Object[] { virtualNode, reqContainer, match };
+		EObject _localVariable_0 = match.getObject("reqContainer");
+		EObject _localVariable_1 = match.getObject("virtualNode");
+		EObject tmpReqContainer = _localVariable_0;
+		EObject tmpVirtualNode = _localVariable_1;
+		if (tmpReqContainer instanceof Container) {
+			Container reqContainer = (Container) tmpReqContainer;
+			if (tmpVirtualNode instanceof NetworkSpan) {
+				NetworkSpan virtualNode = (NetworkSpan) tmpVirtualNode;
+				return new Object[] { reqContainer, virtualNode, match };
 			}
 		}
 		return null;
 	}
 
 	public static final Iterable<Object[]> pattern_ReqContainerToImplContainerRule_2_2_corematch_blackBBB(
-			NetworkSpan virtualNode, Container reqContainer, Match match) {
+			Container reqContainer, NetworkSpan virtualNode, Match match) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		_result.add(new Object[] { virtualNode, reqContainer, match });
+		_result.add(new Object[] { reqContainer, virtualNode, match });
 		return _result;
 	}
 
 	public static final Iterable<Object[]> pattern_ReqContainerToImplContainerRule_2_3_findcontext_blackBB(
-			NetworkSpan virtualNode, Container reqContainer) {
+			Container reqContainer, NetworkSpan virtualNode) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		if (virtualNode.equals(reqContainer.getNetworkSpan())) {
-			_result.add(new Object[] { virtualNode, reqContainer });
+			_result.add(new Object[] { reqContainer, virtualNode });
 		}
 		return _result;
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_2_3_findcontext_greenBBFF(
-			NetworkSpan virtualNode, Container reqContainer) {
+			Container reqContainer, NetworkSpan virtualNode) {
 		IsApplicableMatch isApplicableMatch = RuntimeFactory.eINSTANCE.createIsApplicableMatch();
 		EMoflonEdge reqContainer__virtualNode____networkSpan = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String reqContainer__virtualNode____networkSpan_name_prime = "networkSpan";
-		isApplicableMatch.getAllContextElements().add(virtualNode);
 		isApplicableMatch.getAllContextElements().add(reqContainer);
+		isApplicableMatch.getAllContextElements().add(virtualNode);
 		reqContainer__virtualNode____networkSpan.setSrc(reqContainer);
 		reqContainer__virtualNode____networkSpan.setTrg(virtualNode);
 		isApplicableMatch.getAllContextElements().add(reqContainer__virtualNode____networkSpan);
 		reqContainer__virtualNode____networkSpan.setName(reqContainer__virtualNode____networkSpan_name_prime);
-		return new Object[] { virtualNode, reqContainer, isApplicableMatch, reqContainer__virtualNode____networkSpan };
+		return new Object[] { reqContainer, virtualNode, isApplicableMatch, reqContainer__virtualNode____networkSpan };
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_2_4_solveCSP_bindingFBBBB(
-			ReqContainerToImplContainerRule _this, IsApplicableMatch isApplicableMatch, NetworkSpan virtualNode,
-			Container reqContainer) {
-		CSP _localVariable_0 = _this.isApplicable_solveCsp_FWD(isApplicableMatch, virtualNode, reqContainer);
+			ReqContainerToImplContainerRule _this, IsApplicableMatch isApplicableMatch, Container reqContainer,
+			NetworkSpan virtualNode) {
+		CSP _localVariable_0 = _this.isApplicable_solveCsp_FWD(isApplicableMatch, reqContainer, virtualNode);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, virtualNode, reqContainer };
+			return new Object[] { csp, _this, isApplicableMatch, reqContainer, virtualNode };
 		}
 		return null;
 	}
@@ -1479,10 +1479,10 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_2_4_solveCSP_bindingAndBlackFBBBB(
-			ReqContainerToImplContainerRule _this, IsApplicableMatch isApplicableMatch, NetworkSpan virtualNode,
-			Container reqContainer) {
+			ReqContainerToImplContainerRule _this, IsApplicableMatch isApplicableMatch, Container reqContainer,
+			NetworkSpan virtualNode) {
 		Object[] result_pattern_ReqContainerToImplContainerRule_2_4_solveCSP_binding = pattern_ReqContainerToImplContainerRule_2_4_solveCSP_bindingFBBBB(
-				_this, isApplicableMatch, virtualNode, reqContainer);
+				_this, isApplicableMatch, reqContainer, virtualNode);
 		if (result_pattern_ReqContainerToImplContainerRule_2_4_solveCSP_binding != null) {
 			CSP csp = (CSP) result_pattern_ReqContainerToImplContainerRule_2_4_solveCSP_binding[0];
 
@@ -1490,7 +1490,7 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 					csp);
 			if (result_pattern_ReqContainerToImplContainerRule_2_4_solveCSP_black != null) {
 
-				return new Object[] { csp, _this, isApplicableMatch, virtualNode, reqContainer };
+				return new Object[] { csp, _this, isApplicableMatch, reqContainer, virtualNode };
 			}
 		}
 		return null;
@@ -1640,46 +1640,46 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 		return null;
 	}
 
-	public static final Object[] pattern_ReqContainerToImplContainerRule_11_1_performtransformation_greenFFFB(
+	public static final Object[] pattern_ReqContainerToImplContainerRule_11_1_performtransformation_greenFFBF(
 			implementation.Container implContainer) {
+		Container reqContainer = RequirementsFactory.eINSTANCE.createContainer();
 		NetworkSpan virtualNode = RequirementsFactory.eINSTANCE.createNetworkSpan();
 		ReqContainerToImplContainer reqContainerToImplContainer = ReqToImpTransformatorFactory.eINSTANCE
 				.createReqContainerToImplContainer();
-		Container reqContainer = RequirementsFactory.eINSTANCE.createContainer();
+		reqContainer.setNetworkSpan(virtualNode);
 		reqContainerToImplContainer.setTarget(implContainer);
 		reqContainerToImplContainer.setSource(reqContainer);
-		reqContainer.setNetworkSpan(virtualNode);
-		return new Object[] { virtualNode, reqContainerToImplContainer, reqContainer, implContainer };
+		return new Object[] { reqContainer, virtualNode, implContainer, reqContainerToImplContainer };
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_11_2_collecttranslatedelements_blackBBBB(
-			NetworkSpan virtualNode, ReqContainerToImplContainer reqContainerToImplContainer, Container reqContainer,
-			implementation.Container implContainer) {
-		return new Object[] { virtualNode, reqContainerToImplContainer, reqContainer, implContainer };
+			Container reqContainer, NetworkSpan virtualNode, implementation.Container implContainer,
+			ReqContainerToImplContainer reqContainerToImplContainer) {
+		return new Object[] { reqContainer, virtualNode, implContainer, reqContainerToImplContainer };
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_11_2_collecttranslatedelements_greenFBBBB(
-			NetworkSpan virtualNode, ReqContainerToImplContainer reqContainerToImplContainer, Container reqContainer,
-			implementation.Container implContainer) {
+			Container reqContainer, NetworkSpan virtualNode, implementation.Container implContainer,
+			ReqContainerToImplContainer reqContainerToImplContainer) {
 		PerformRuleResult ruleresult = RuntimeFactory.eINSTANCE.createPerformRuleResult();
-		ruleresult.getCreatedElements().add(virtualNode);
-		ruleresult.getCreatedLinkElements().add(reqContainerToImplContainer);
 		ruleresult.getCreatedElements().add(reqContainer);
+		ruleresult.getCreatedElements().add(virtualNode);
 		ruleresult.getTranslatedElements().add(implContainer);
-		return new Object[] { ruleresult, virtualNode, reqContainerToImplContainer, reqContainer, implContainer };
+		ruleresult.getCreatedLinkElements().add(reqContainerToImplContainer);
+		return new Object[] { ruleresult, reqContainer, virtualNode, implContainer, reqContainerToImplContainer };
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_11_3_bookkeepingforedges_blackBBBBB(
-			PerformRuleResult ruleresult, EObject virtualNode, EObject reqContainerToImplContainer,
-			EObject reqContainer, EObject implContainer) {
-		if (!reqContainerToImplContainer.equals(virtualNode)) {
-			if (!reqContainer.equals(virtualNode)) {
-				if (!reqContainer.equals(reqContainerToImplContainer)) {
+			PerformRuleResult ruleresult, EObject reqContainer, EObject virtualNode, EObject implContainer,
+			EObject reqContainerToImplContainer) {
+		if (!reqContainer.equals(virtualNode)) {
+			if (!reqContainer.equals(reqContainerToImplContainer)) {
+				if (!implContainer.equals(reqContainer)) {
 					if (!implContainer.equals(virtualNode)) {
 						if (!implContainer.equals(reqContainerToImplContainer)) {
-							if (!implContainer.equals(reqContainer)) {
-								return new Object[] { ruleresult, virtualNode, reqContainerToImplContainer,
-										reqContainer, implContainer };
+							if (!reqContainerToImplContainer.equals(virtualNode)) {
+								return new Object[] { ruleresult, reqContainer, virtualNode, implContainer,
+										reqContainerToImplContainer };
 							}
 						}
 					}
@@ -1690,39 +1690,39 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_11_3_bookkeepingforedges_greenBBBBBFFF(
-			PerformRuleResult ruleresult, EObject virtualNode, EObject reqContainerToImplContainer,
-			EObject reqContainer, EObject implContainer) {
-		EMoflonEdge reqContainerToImplContainer__reqContainer____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+			PerformRuleResult ruleresult, EObject reqContainer, EObject virtualNode, EObject implContainer,
+			EObject reqContainerToImplContainer) {
 		EMoflonEdge reqContainer__virtualNode____networkSpan = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge reqContainerToImplContainer__implContainer____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge reqContainerToImplContainer__reqContainer____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String ruleresult_ruleName_prime = "ReqContainerToImplContainerRule";
-		String reqContainerToImplContainer__reqContainer____source_name_prime = "source";
 		String reqContainer__virtualNode____networkSpan_name_prime = "networkSpan";
 		String reqContainerToImplContainer__implContainer____target_name_prime = "target";
-		reqContainerToImplContainer__reqContainer____source.setSrc(reqContainerToImplContainer);
-		reqContainerToImplContainer__reqContainer____source.setTrg(reqContainer);
-		ruleresult.getCreatedEdges().add(reqContainerToImplContainer__reqContainer____source);
+		String reqContainerToImplContainer__reqContainer____source_name_prime = "source";
 		reqContainer__virtualNode____networkSpan.setSrc(reqContainer);
 		reqContainer__virtualNode____networkSpan.setTrg(virtualNode);
 		ruleresult.getCreatedEdges().add(reqContainer__virtualNode____networkSpan);
 		reqContainerToImplContainer__implContainer____target.setSrc(reqContainerToImplContainer);
 		reqContainerToImplContainer__implContainer____target.setTrg(implContainer);
 		ruleresult.getCreatedEdges().add(reqContainerToImplContainer__implContainer____target);
+		reqContainerToImplContainer__reqContainer____source.setSrc(reqContainerToImplContainer);
+		reqContainerToImplContainer__reqContainer____source.setTrg(reqContainer);
+		ruleresult.getCreatedEdges().add(reqContainerToImplContainer__reqContainer____source);
 		ruleresult.setRuleName(ruleresult_ruleName_prime);
-		reqContainerToImplContainer__reqContainer____source
-				.setName(reqContainerToImplContainer__reqContainer____source_name_prime);
 		reqContainer__virtualNode____networkSpan.setName(reqContainer__virtualNode____networkSpan_name_prime);
 		reqContainerToImplContainer__implContainer____target
 				.setName(reqContainerToImplContainer__implContainer____target_name_prime);
-		return new Object[] { ruleresult, virtualNode, reqContainerToImplContainer, reqContainer, implContainer,
-				reqContainerToImplContainer__reqContainer____source, reqContainer__virtualNode____networkSpan,
-				reqContainerToImplContainer__implContainer____target };
+		reqContainerToImplContainer__reqContainer____source
+				.setName(reqContainerToImplContainer__reqContainer____source_name_prime);
+		return new Object[] { ruleresult, reqContainer, virtualNode, implContainer, reqContainerToImplContainer,
+				reqContainer__virtualNode____networkSpan, reqContainerToImplContainer__implContainer____target,
+				reqContainerToImplContainer__reqContainer____source };
 	}
 
 	public static final void pattern_ReqContainerToImplContainerRule_11_5_registerobjects_expressionBBBBBB(
-			ReqContainerToImplContainerRule _this, PerformRuleResult ruleresult, EObject virtualNode,
-			EObject reqContainerToImplContainer, EObject reqContainer, EObject implContainer) {
-		_this.registerObjects_BWD(ruleresult, virtualNode, reqContainerToImplContainer, reqContainer, implContainer);
+			ReqContainerToImplContainerRule _this, PerformRuleResult ruleresult, EObject reqContainer,
+			EObject virtualNode, EObject implContainer, EObject reqContainerToImplContainer) {
+		_this.registerObjects_BWD(ruleresult, reqContainer, virtualNode, implContainer, reqContainerToImplContainer);
 
 	}
 
@@ -2046,7 +2046,7 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 			if (tmpVirtualNode instanceof NetworkSpan) {
 				NetworkSpan virtualNode = (NetworkSpan) tmpVirtualNode;
 				if (virtualNode.equals(reqContainer.getNetworkSpan())) {
-					_result.add(new Object[] { virtualNode, reqContainer, _edge_networkSpan });
+					_result.add(new Object[] { reqContainer, virtualNode, _edge_networkSpan });
 				}
 			}
 
@@ -2066,8 +2066,8 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	}
 
 	public static final boolean pattern_ReqContainerToImplContainerRule_21_3_bookkeepingwithgenericisAppropriatemethod_expressionFBBBB(
-			ReqContainerToImplContainerRule _this, Match match, NetworkSpan virtualNode, Container reqContainer) {
-		boolean _localVariable_0 = _this.isAppropriate_FWD(match, virtualNode, reqContainer);
+			ReqContainerToImplContainerRule _this, Match match, Container reqContainer, NetworkSpan virtualNode) {
+		boolean _localVariable_0 = _this.isAppropriate_FWD(match, reqContainer, virtualNode);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -2113,19 +2113,19 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_24_2_matchsrctrgcontext_bindingFFFBB(
 			Match sourceMatch, Match targetMatch) {
-		EObject _localVariable_0 = sourceMatch.getObject("virtualNode");
-		EObject _localVariable_1 = sourceMatch.getObject("reqContainer");
+		EObject _localVariable_0 = sourceMatch.getObject("reqContainer");
+		EObject _localVariable_1 = sourceMatch.getObject("virtualNode");
 		EObject _localVariable_2 = targetMatch.getObject("implContainer");
-		EObject tmpVirtualNode = _localVariable_0;
-		EObject tmpReqContainer = _localVariable_1;
+		EObject tmpReqContainer = _localVariable_0;
+		EObject tmpVirtualNode = _localVariable_1;
 		EObject tmpImplContainer = _localVariable_2;
-		if (tmpVirtualNode instanceof NetworkSpan) {
-			NetworkSpan virtualNode = (NetworkSpan) tmpVirtualNode;
-			if (tmpReqContainer instanceof Container) {
-				Container reqContainer = (Container) tmpReqContainer;
+		if (tmpReqContainer instanceof Container) {
+			Container reqContainer = (Container) tmpReqContainer;
+			if (tmpVirtualNode instanceof NetworkSpan) {
+				NetworkSpan virtualNode = (NetworkSpan) tmpVirtualNode;
 				if (tmpImplContainer instanceof implementation.Container) {
 					implementation.Container implContainer = (implementation.Container) tmpImplContainer;
-					return new Object[] { virtualNode, reqContainer, implContainer, sourceMatch, targetMatch };
+					return new Object[] { reqContainer, virtualNode, implContainer, sourceMatch, targetMatch };
 				}
 			}
 		}
@@ -2133,10 +2133,10 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_24_2_matchsrctrgcontext_blackBBBBB(
-			NetworkSpan virtualNode, Container reqContainer, implementation.Container implContainer, Match sourceMatch,
+			Container reqContainer, NetworkSpan virtualNode, implementation.Container implContainer, Match sourceMatch,
 			Match targetMatch) {
 		if (!sourceMatch.equals(targetMatch)) {
-			return new Object[] { virtualNode, reqContainer, implContainer, sourceMatch, targetMatch };
+			return new Object[] { reqContainer, virtualNode, implContainer, sourceMatch, targetMatch };
 		}
 		return null;
 	}
@@ -2146,28 +2146,28 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 		Object[] result_pattern_ReqContainerToImplContainerRule_24_2_matchsrctrgcontext_binding = pattern_ReqContainerToImplContainerRule_24_2_matchsrctrgcontext_bindingFFFBB(
 				sourceMatch, targetMatch);
 		if (result_pattern_ReqContainerToImplContainerRule_24_2_matchsrctrgcontext_binding != null) {
-			NetworkSpan virtualNode = (NetworkSpan) result_pattern_ReqContainerToImplContainerRule_24_2_matchsrctrgcontext_binding[0];
-			Container reqContainer = (Container) result_pattern_ReqContainerToImplContainerRule_24_2_matchsrctrgcontext_binding[1];
+			Container reqContainer = (Container) result_pattern_ReqContainerToImplContainerRule_24_2_matchsrctrgcontext_binding[0];
+			NetworkSpan virtualNode = (NetworkSpan) result_pattern_ReqContainerToImplContainerRule_24_2_matchsrctrgcontext_binding[1];
 			implementation.Container implContainer = (implementation.Container) result_pattern_ReqContainerToImplContainerRule_24_2_matchsrctrgcontext_binding[2];
 
 			Object[] result_pattern_ReqContainerToImplContainerRule_24_2_matchsrctrgcontext_black = pattern_ReqContainerToImplContainerRule_24_2_matchsrctrgcontext_blackBBBBB(
-					virtualNode, reqContainer, implContainer, sourceMatch, targetMatch);
+					reqContainer, virtualNode, implContainer, sourceMatch, targetMatch);
 			if (result_pattern_ReqContainerToImplContainerRule_24_2_matchsrctrgcontext_black != null) {
 
-				return new Object[] { virtualNode, reqContainer, implContainer, sourceMatch, targetMatch };
+				return new Object[] { reqContainer, virtualNode, implContainer, sourceMatch, targetMatch };
 			}
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_24_3_solvecsp_bindingFBBBBBB(
-			ReqContainerToImplContainerRule _this, NetworkSpan virtualNode, Container reqContainer,
+			ReqContainerToImplContainerRule _this, Container reqContainer, NetworkSpan virtualNode,
 			implementation.Container implContainer, Match sourceMatch, Match targetMatch) {
-		CSP _localVariable_3 = _this.isApplicable_solveCsp_CC(virtualNode, reqContainer, implContainer, sourceMatch,
+		CSP _localVariable_3 = _this.isApplicable_solveCsp_CC(reqContainer, virtualNode, implContainer, sourceMatch,
 				targetMatch);
 		CSP csp = _localVariable_3;
 		if (csp != null) {
-			return new Object[] { csp, _this, virtualNode, reqContainer, implContainer, sourceMatch, targetMatch };
+			return new Object[] { csp, _this, reqContainer, virtualNode, implContainer, sourceMatch, targetMatch };
 		}
 		return null;
 	}
@@ -2177,10 +2177,10 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_24_3_solvecsp_bindingAndBlackFBBBBBB(
-			ReqContainerToImplContainerRule _this, NetworkSpan virtualNode, Container reqContainer,
+			ReqContainerToImplContainerRule _this, Container reqContainer, NetworkSpan virtualNode,
 			implementation.Container implContainer, Match sourceMatch, Match targetMatch) {
 		Object[] result_pattern_ReqContainerToImplContainerRule_24_3_solvecsp_binding = pattern_ReqContainerToImplContainerRule_24_3_solvecsp_bindingFBBBBBB(
-				_this, virtualNode, reqContainer, implContainer, sourceMatch, targetMatch);
+				_this, reqContainer, virtualNode, implContainer, sourceMatch, targetMatch);
 		if (result_pattern_ReqContainerToImplContainerRule_24_3_solvecsp_binding != null) {
 			CSP csp = (CSP) result_pattern_ReqContainerToImplContainerRule_24_3_solvecsp_binding[0];
 
@@ -2188,7 +2188,7 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 					csp);
 			if (result_pattern_ReqContainerToImplContainerRule_24_3_solvecsp_black != null) {
 
-				return new Object[] { csp, _this, virtualNode, reqContainer, implContainer, sourceMatch, targetMatch };
+				return new Object[] { csp, _this, reqContainer, virtualNode, implContainer, sourceMatch, targetMatch };
 			}
 		}
 		return null;
@@ -2220,18 +2220,18 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_24_6_createcorrespondence_blackBBBB(
-			NetworkSpan virtualNode, Container reqContainer, implementation.Container implContainer, CCMatch ccMatch) {
-		return new Object[] { virtualNode, reqContainer, implContainer, ccMatch };
+			Container reqContainer, NetworkSpan virtualNode, implementation.Container implContainer, CCMatch ccMatch) {
+		return new Object[] { reqContainer, virtualNode, implContainer, ccMatch };
 	}
 
-	public static final Object[] pattern_ReqContainerToImplContainerRule_24_6_createcorrespondence_greenFBBB(
+	public static final Object[] pattern_ReqContainerToImplContainerRule_24_6_createcorrespondence_greenBBFB(
 			Container reqContainer, implementation.Container implContainer, CCMatch ccMatch) {
 		ReqContainerToImplContainer reqContainerToImplContainer = ReqToImpTransformatorFactory.eINSTANCE
 				.createReqContainerToImplContainer();
-		reqContainerToImplContainer.setSource(reqContainer);
 		reqContainerToImplContainer.setTarget(implContainer);
+		reqContainerToImplContainer.setSource(reqContainer);
 		ccMatch.getCreateCorr().add(reqContainerToImplContainer);
-		return new Object[] { reqContainerToImplContainer, reqContainer, implContainer, ccMatch };
+		return new Object[] { reqContainer, implContainer, reqContainerToImplContainer, ccMatch };
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_24_7_addtoreturnedresult_blackBB(
@@ -2256,9 +2256,9 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	}
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_27_1_matchtggpattern_blackBB(
-			NetworkSpan virtualNode, Container reqContainer) {
+			Container reqContainer, NetworkSpan virtualNode) {
 		if (virtualNode.equals(reqContainer.getNetworkSpan())) {
-			return new Object[] { virtualNode, reqContainer };
+			return new Object[] { reqContainer, virtualNode };
 		}
 		return null;
 	}
@@ -2353,24 +2353,24 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 
 	public static final Object[] pattern_ReqContainerToImplContainerRule_29_6_perform_greenFFFFB(
 			ModelgeneratorRuleResult ruleResult) {
+		Container reqContainer = RequirementsFactory.eINSTANCE.createContainer();
 		NetworkSpan virtualNode = RequirementsFactory.eINSTANCE.createNetworkSpan();
+		implementation.Container implContainer = ImplementationFactory.eINSTANCE.createContainer();
 		ReqContainerToImplContainer reqContainerToImplContainer = ReqToImpTransformatorFactory.eINSTANCE
 				.createReqContainerToImplContainer();
-		Container reqContainer = RequirementsFactory.eINSTANCE.createContainer();
-		implementation.Container implContainer = ImplementationFactory.eINSTANCE.createContainer();
 		boolean ruleResult_success_prime = Boolean.valueOf(true);
 		int _localVariable_0 = ruleResult.getIncrementedPerformCount();
-		ruleResult.getSourceObjects().add(virtualNode);
-		ruleResult.getCorrObjects().add(reqContainerToImplContainer);
-		reqContainerToImplContainer.setSource(reqContainer);
-		reqContainer.setNetworkSpan(virtualNode);
 		ruleResult.getSourceObjects().add(reqContainer);
-		reqContainerToImplContainer.setTarget(implContainer);
+		reqContainer.setNetworkSpan(virtualNode);
+		ruleResult.getSourceObjects().add(virtualNode);
 		ruleResult.getTargetObjects().add(implContainer);
+		reqContainerToImplContainer.setTarget(implContainer);
+		reqContainerToImplContainer.setSource(reqContainer);
+		ruleResult.getCorrObjects().add(reqContainerToImplContainer);
 		ruleResult.setSuccess(Boolean.valueOf(ruleResult_success_prime));
 		int ruleResult_performCount_prime = Integer.valueOf(_localVariable_0);
 		ruleResult.setPerformCount(Integer.valueOf(ruleResult_performCount_prime));
-		return new Object[] { virtualNode, reqContainerToImplContainer, reqContainer, implContainer, ruleResult };
+		return new Object[] { reqContainer, virtualNode, implContainer, reqContainerToImplContainer, ruleResult };
 	}
 
 	public static final ModelgeneratorRuleResult pattern_ReqContainerToImplContainerRule_29_7_expressionFB(

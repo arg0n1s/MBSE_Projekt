@@ -105,8 +105,8 @@ public interface XContainerToContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_FWD(PerformRuleResult ruleresult, EObject container, EObject xContainer,
-			EObject xContainerToContainer);
+	void registerObjects_FWD(PerformRuleResult ruleresult, EObject container, EObject xContainerToContainer,
+			EObject xContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -186,8 +186,8 @@ public interface XContainerToContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_BWD(PerformRuleResult ruleresult, EObject container, EObject xContainer,
-			EObject xContainerToContainer);
+	void registerObjects_BWD(PerformRuleResult ruleresult, EObject container, EObject xContainerToContainer,
+			EObject xContainer);
 
 	/**
 	 * <!-- begin-user-doc -->

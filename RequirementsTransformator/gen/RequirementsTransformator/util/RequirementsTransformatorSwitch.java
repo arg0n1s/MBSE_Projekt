@@ -68,11 +68,11 @@ public class RequirementsTransformatorSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-		case RequirementsTransformatorPackage.XCONTAINER_TO_CONTAINER: {
-			XContainerToContainer xContainerToContainer = (XContainerToContainer) theEObject;
-			T result = caseXContainerToContainer(xContainerToContainer);
+		case RequirementsTransformatorPackage.XCONSUMER_TO_CONSUMER: {
+			XConsumerToConsumer xConsumerToConsumer = (XConsumerToConsumer) theEObject;
+			T result = caseXConsumerToConsumer(xConsumerToConsumer);
 			if (result == null)
-				result = caseAbstractCorrespondence(xContainerToContainer);
+				result = caseAbstractCorrespondence(xConsumerToConsumer);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -86,11 +86,11 @@ public class RequirementsTransformatorSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case RequirementsTransformatorPackage.XCONSUMER_TO_CONSUMER: {
-			XConsumerToConsumer xConsumerToConsumer = (XConsumerToConsumer) theEObject;
-			T result = caseXConsumerToConsumer(xConsumerToConsumer);
+		case RequirementsTransformatorPackage.XCONTAINER_TO_CONTAINER: {
+			XContainerToContainer xContainerToContainer = (XContainerToContainer) theEObject;
+			T result = caseXContainerToContainer(xContainerToContainer);
 			if (result == null)
-				result = caseAbstractCorrespondence(xConsumerToConsumer);
+				result = caseAbstractCorrespondence(xContainerToContainer);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -110,17 +110,17 @@ public class RequirementsTransformatorSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>XContainer To Container</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>XConsumer To Consumer</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>XContainer To Container</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>XConsumer To Consumer</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseXContainerToContainer(XContainerToContainer object) {
+	public T caseXConsumerToConsumer(XConsumerToConsumer object) {
 		return null;
 	}
 
@@ -140,17 +140,17 @@ public class RequirementsTransformatorSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>XConsumer To Consumer</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>XContainer To Container</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>XConsumer To Consumer</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>XContainer To Container</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseXConsumerToConsumer(XConsumerToConsumer object) {
+	public T caseXContainerToContainer(XContainerToContainer object) {
 		return null;
 	}
 

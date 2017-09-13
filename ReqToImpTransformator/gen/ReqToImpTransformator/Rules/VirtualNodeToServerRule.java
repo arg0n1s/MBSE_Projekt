@@ -104,8 +104,8 @@ public interface VirtualNodeToServerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_BWD(Match match, implementation.Container implContainer, Router router, Server server,
-			Cable cable);
+	boolean isAppropriate_BWD(Match match, Router router, implementation.Container implContainer, Cable cable,
+			Server server);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -129,8 +129,8 @@ public interface VirtualNodeToServerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjectsToMatch_BWD(Match match, implementation.Container implContainer, Router router, Server server,
-			Cable cable);
+	void registerObjectsToMatch_BWD(Match match, Router router, implementation.Container implContainer, Cable cable,
+			Server server);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -138,8 +138,8 @@ public interface VirtualNodeToServerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_BWD(Match match, implementation.Container implContainer, Router router, Server server,
-			Cable cable);
+	CSP isAppropriate_solveCsp_BWD(Match match, Router router, implementation.Container implContainer, Cable cable,
+			Server server);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -155,9 +155,10 @@ public interface VirtualNodeToServerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, implementation.Container implContainer,
-			NetworkSpan virtualNode, Router router, Container reqContainer, VirtualNodeToRouter virtualNodeToRouter,
-			Server server, Cable cable, ReqContainerToImplContainer reqContainerToImplContainer);
+	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Router router,
+			VirtualNodeToRouter virtualNodeToRouter, implementation.Container implContainer, NetworkSpan virtualNode,
+			Cable cable, Server server, Container reqContainer,
+			ReqContainerToImplContainer reqContainerToImplContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,9 +174,9 @@ public interface VirtualNodeToServerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_BWD(PerformRuleResult ruleresult, EObject implContainer, EObject virtualNode, EObject router,
-			EObject reqContainer, EObject virtualNodeToRouter, EObject server, EObject cable,
-			EObject reqContainerToImplContainer, EObject virtualNodeToServer);
+	void registerObjects_BWD(PerformRuleResult ruleresult, EObject router, EObject virtualNodeToRouter,
+			EObject implContainer, EObject virtualNodeToServer, EObject virtualNode, EObject cable, EObject server,
+			EObject reqContainer, EObject reqContainerToImplContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -191,7 +192,7 @@ public interface VirtualNodeToServerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_NetworkSpan_1(NetworkSpan virtualNode);
+	EObjectContainer isAppropriate_FWD_NetworkSpan_0(NetworkSpan virtualNode);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -199,7 +200,7 @@ public interface VirtualNodeToServerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_2(EMoflonEdge _edge_devices);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_2(EMoflonEdge _edge_incoming);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -231,8 +232,8 @@ public interface VirtualNodeToServerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_CC(implementation.Container implContainer, NetworkSpan virtualNode, Router router,
-			Container reqContainer, Server server, Cable cable, Match sourceMatch, Match targetMatch);
+	CSP isApplicable_solveCsp_CC(Router router, implementation.Container implContainer, NetworkSpan virtualNode,
+			Cable cable, Server server, Container reqContainer, Match sourceMatch, Match targetMatch);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -256,7 +257,7 @@ public interface VirtualNodeToServerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean checkDEC_BWD(implementation.Container implContainer, Router router, Server server, Cable cable);
+	boolean checkDEC_BWD(Router router, implementation.Container implContainer, Cable cable, Server server);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -273,9 +274,10 @@ public interface VirtualNodeToServerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, implementation.Container implContainer,
-			NetworkSpan virtualNode, Router router, Container reqContainer, VirtualNodeToRouter virtualNodeToRouter,
-			Cable cable, ReqContainerToImplContainer reqContainerToImplContainer, ModelgeneratorRuleResult ruleResult);
+	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Router router,
+			VirtualNodeToRouter virtualNodeToRouter, implementation.Container implContainer, NetworkSpan virtualNode,
+			Cable cable, Container reqContainer, ReqContainerToImplContainer reqContainerToImplContainer,
+			ModelgeneratorRuleResult ruleResult);
 
 	/**
 	 * <!-- begin-user-doc -->

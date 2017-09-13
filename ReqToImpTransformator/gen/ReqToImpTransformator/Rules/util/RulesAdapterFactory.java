@@ -69,13 +69,13 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	 */
 	protected RulesSwitch<Adapter> modelSwitch = new RulesSwitch<Adapter>() {
 		@Override
-		public Adapter caseReqAgentToDeviceRule(ReqAgentToDeviceRule object) {
-			return createReqAgentToDeviceRuleAdapter();
+		public Adapter caseVirtualNodeToRouterRule1(VirtualNodeToRouterRule1 object) {
+			return createVirtualNodeToRouterRule1Adapter();
 		}
 
 		@Override
-		public Adapter caseImplGlassIgnoreRule(ImplGlassIgnoreRule object) {
-			return createImplGlassIgnoreRuleAdapter();
+		public Adapter caseImplIncomingConnectionIgnoreRule(ImplIncomingConnectionIgnoreRule object) {
+			return createImplIncomingConnectionIgnoreRuleAdapter();
 		}
 
 		@Override
@@ -84,18 +84,8 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseImplOutgoingConnectionIgnoreRule(ImplOutgoingConnectionIgnoreRule object) {
-			return createImplOutgoingConnectionIgnoreRuleAdapter();
-		}
-
-		@Override
 		public Adapter caseVirtualNodeToServerRule(VirtualNodeToServerRule object) {
 			return createVirtualNodeToServerRuleAdapter();
-		}
-
-		@Override
-		public Adapter caseImplCopperIgnoreRule(ImplCopperIgnoreRule object) {
-			return createImplCopperIgnoreRuleAdapter();
 		}
 
 		@Override
@@ -104,8 +94,8 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseVirtualNodeToRouterRule2(VirtualNodeToRouterRule2 object) {
-			return createVirtualNodeToRouterRule2Adapter();
+		public Adapter caseImplOutgoingConnectionIgnoreRule(ImplOutgoingConnectionIgnoreRule object) {
+			return createImplOutgoingConnectionIgnoreRuleAdapter();
 		}
 
 		@Override
@@ -114,8 +104,23 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseImplCopperIgnoreRule(ImplCopperIgnoreRule object) {
+			return createImplCopperIgnoreRuleAdapter();
+		}
+
+		@Override
 		public Adapter caseReqContainerToImplContainerRule(ReqContainerToImplContainerRule object) {
 			return createReqContainerToImplContainerRuleAdapter();
+		}
+
+		@Override
+		public Adapter caseReqAgentToDeviceRule(ReqAgentToDeviceRule object) {
+			return createReqAgentToDeviceRuleAdapter();
+		}
+
+		@Override
+		public Adapter caseVirtualNodeToRouterRule2(VirtualNodeToRouterRule2 object) {
+			return createVirtualNodeToRouterRule2Adapter();
 		}
 
 		@Override
@@ -124,13 +129,8 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseVirtualNodeToRouterRule1(VirtualNodeToRouterRule1 object) {
-			return createVirtualNodeToRouterRule1Adapter();
-		}
-
-		@Override
-		public Adapter caseImplIncomingConnectionIgnoreRule(ImplIncomingConnectionIgnoreRule object) {
-			return createImplIncomingConnectionIgnoreRuleAdapter();
+		public Adapter caseImplGlassIgnoreRule(ImplGlassIgnoreRule object) {
+			return createImplGlassIgnoreRuleAdapter();
 		}
 
 		@Override
@@ -158,160 +158,6 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.Rules.ReqAgentToDeviceRule <em>Req Agent To Device Rule</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ReqToImpTransformator.Rules.ReqAgentToDeviceRule
-	 * @generated
-	 */
-	public Adapter createReqAgentToDeviceRuleAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.Rules.ImplGlassIgnoreRule <em>Impl Glass Ignore Rule</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ReqToImpTransformator.Rules.ImplGlassIgnoreRule
-	 * @generated
-	 */
-	public Adapter createImplGlassIgnoreRuleAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.Rules.VirtualNodeToComputerRule <em>Virtual Node To Computer Rule</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ReqToImpTransformator.Rules.VirtualNodeToComputerRule
-	 * @generated
-	 */
-	public Adapter createVirtualNodeToComputerRuleAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.Rules.ImplOutgoingConnectionIgnoreRule <em>Impl Outgoing Connection Ignore Rule</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ReqToImpTransformator.Rules.ImplOutgoingConnectionIgnoreRule
-	 * @generated
-	 */
-	public Adapter createImplOutgoingConnectionIgnoreRuleAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.Rules.VirtualNodeToServerRule <em>Virtual Node To Server Rule</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ReqToImpTransformator.Rules.VirtualNodeToServerRule
-	 * @generated
-	 */
-	public Adapter createVirtualNodeToServerRuleAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.Rules.ImplCopperIgnoreRule <em>Impl Copper Ignore Rule</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ReqToImpTransformator.Rules.ImplCopperIgnoreRule
-	 * @generated
-	 */
-	public Adapter createImplCopperIgnoreRuleAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.Rules.ReqConsumerToComputerRule <em>Req Consumer To Computer Rule</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ReqToImpTransformator.Rules.ReqConsumerToComputerRule
-	 * @generated
-	 */
-	public Adapter createReqConsumerToComputerRuleAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.Rules.VirtualNodeToRouterRule2 <em>Virtual Node To Router Rule2</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ReqToImpTransformator.Rules.VirtualNodeToRouterRule2
-	 * @generated
-	 */
-	public Adapter createVirtualNodeToRouterRule2Adapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.Rules.ReqProviderToServerRule <em>Req Provider To Server Rule</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ReqToImpTransformator.Rules.ReqProviderToServerRule
-	 * @generated
-	 */
-	public Adapter createReqProviderToServerRuleAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.Rules.ReqContainerToImplContainerRule <em>Req Container To Impl Container Rule</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ReqToImpTransformator.Rules.ReqContainerToImplContainerRule
-	 * @generated
-	 */
-	public Adapter createReqContainerToImplContainerRuleAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.Rules.ImplCableIgnoreRule <em>Impl Cable Ignore Rule</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ReqToImpTransformator.Rules.ImplCableIgnoreRule
-	 * @generated
-	 */
-	public Adapter createImplCableIgnoreRuleAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.Rules.VirtualNodeToRouterRule1 <em>Virtual Node To Router Rule1</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -336,6 +182,160 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createImplIncomingConnectionIgnoreRuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.Rules.VirtualNodeToComputerRule <em>Virtual Node To Computer Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ReqToImpTransformator.Rules.VirtualNodeToComputerRule
+	 * @generated
+	 */
+	public Adapter createVirtualNodeToComputerRuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.Rules.VirtualNodeToServerRule <em>Virtual Node To Server Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ReqToImpTransformator.Rules.VirtualNodeToServerRule
+	 * @generated
+	 */
+	public Adapter createVirtualNodeToServerRuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.Rules.ReqConsumerToComputerRule <em>Req Consumer To Computer Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ReqToImpTransformator.Rules.ReqConsumerToComputerRule
+	 * @generated
+	 */
+	public Adapter createReqConsumerToComputerRuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.Rules.ImplOutgoingConnectionIgnoreRule <em>Impl Outgoing Connection Ignore Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ReqToImpTransformator.Rules.ImplOutgoingConnectionIgnoreRule
+	 * @generated
+	 */
+	public Adapter createImplOutgoingConnectionIgnoreRuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.Rules.ReqProviderToServerRule <em>Req Provider To Server Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ReqToImpTransformator.Rules.ReqProviderToServerRule
+	 * @generated
+	 */
+	public Adapter createReqProviderToServerRuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.Rules.ImplCopperIgnoreRule <em>Impl Copper Ignore Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ReqToImpTransformator.Rules.ImplCopperIgnoreRule
+	 * @generated
+	 */
+	public Adapter createImplCopperIgnoreRuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.Rules.ReqContainerToImplContainerRule <em>Req Container To Impl Container Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ReqToImpTransformator.Rules.ReqContainerToImplContainerRule
+	 * @generated
+	 */
+	public Adapter createReqContainerToImplContainerRuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.Rules.ReqAgentToDeviceRule <em>Req Agent To Device Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ReqToImpTransformator.Rules.ReqAgentToDeviceRule
+	 * @generated
+	 */
+	public Adapter createReqAgentToDeviceRuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.Rules.VirtualNodeToRouterRule2 <em>Virtual Node To Router Rule2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ReqToImpTransformator.Rules.VirtualNodeToRouterRule2
+	 * @generated
+	 */
+	public Adapter createVirtualNodeToRouterRule2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.Rules.ImplCableIgnoreRule <em>Impl Cable Ignore Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ReqToImpTransformator.Rules.ImplCableIgnoreRule
+	 * @generated
+	 */
+	public Adapter createImplCableIgnoreRuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.Rules.ImplGlassIgnoreRule <em>Impl Glass Ignore Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ReqToImpTransformator.Rules.ImplGlassIgnoreRule
+	 * @generated
+	 */
+	public Adapter createImplGlassIgnoreRuleAdapter() {
 		return null;
 	}
 

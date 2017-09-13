@@ -77,6 +77,15 @@ public class RulesSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case RulesPackage.XPROVIDER_TO_PROVIDER_RULE: {
+			XProviderToProviderRule xProviderToProviderRule = (XProviderToProviderRule) theEObject;
+			T result = caseXProviderToProviderRule(xProviderToProviderRule);
+			if (result == null)
+				result = caseAbstractRule(xProviderToProviderRule);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case RulesPackage.XAGENT_TO_AGENT_RULE: {
 			XAgentToAgentRule xAgentToAgentRule = (XAgentToAgentRule) theEObject;
 			T result = caseXAgentToAgentRule(xAgentToAgentRule);
@@ -91,15 +100,6 @@ public class RulesSwitch<T> extends Switch<T> {
 			T result = caseXContainerToContainerRule(xContainerToContainerRule);
 			if (result == null)
 				result = caseAbstractRule(xContainerToContainerRule);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case RulesPackage.XPROVIDER_TO_PROVIDER_RULE: {
-			XProviderToProviderRule xProviderToProviderRule = (XProviderToProviderRule) theEObject;
-			T result = caseXProviderToProviderRule(xProviderToProviderRule);
-			if (result == null)
-				result = caseAbstractRule(xProviderToProviderRule);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -121,6 +121,21 @@ public class RulesSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseXConsumerToConsumerRule(XConsumerToConsumerRule object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>XProvider To Provider Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>XProvider To Provider Rule</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseXProviderToProviderRule(XProviderToProviderRule object) {
 		return null;
 	}
 
@@ -151,21 +166,6 @@ public class RulesSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseXContainerToContainerRule(XContainerToContainerRule object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>XProvider To Provider Rule</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>XProvider To Provider Rule</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseXProviderToProviderRule(XProviderToProviderRule object) {
 		return null;
 	}
 

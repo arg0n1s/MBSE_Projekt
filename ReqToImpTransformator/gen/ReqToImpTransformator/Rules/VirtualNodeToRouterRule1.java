@@ -45,7 +45,7 @@ public interface VirtualNodeToRouterRule1 extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_FWD(Match match, NetworkSpan virtualNode, Container reqContainer);
+	boolean isAppropriate_FWD(Match match, Container reqContainer, NetworkSpan virtualNode);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -69,7 +69,7 @@ public interface VirtualNodeToRouterRule1 extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjectsToMatch_FWD(Match match, NetworkSpan virtualNode, Container reqContainer);
+	void registerObjectsToMatch_FWD(Match match, Container reqContainer, NetworkSpan virtualNode);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -77,7 +77,7 @@ public interface VirtualNodeToRouterRule1 extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_FWD(Match match, NetworkSpan virtualNode, Container reqContainer);
+	CSP isAppropriate_solveCsp_FWD(Match match, Container reqContainer, NetworkSpan virtualNode);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -149,8 +149,8 @@ public interface VirtualNodeToRouterRule1 extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, NetworkSpan virtualNode, Container reqContainer,
-			implementation.Container implContainer, Router router,
+	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Container reqContainer,
+			implementation.Container implContainer, NetworkSpan virtualNode, Router router,
 			ReqContainerToImplContainer reqContainerToImplContainer);
 
 	/**
@@ -167,8 +167,8 @@ public interface VirtualNodeToRouterRule1 extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_BWD(PerformRuleResult ruleresult, EObject virtualNode, EObject reqContainer,
-			EObject virtualNodeToRouter, EObject implContainer, EObject router, EObject reqContainerToImplContainer);
+	void registerObjects_BWD(PerformRuleResult ruleresult, EObject reqContainer, EObject implContainer,
+			EObject virtualNode, EObject virtualNodeToRouter, EObject router, EObject reqContainerToImplContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -184,7 +184,7 @@ public interface VirtualNodeToRouterRule1 extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_NetworkSpan_3(NetworkSpan virtualNode);
+	EObjectContainer isAppropriate_FWD_Container_0(Container reqContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -192,7 +192,7 @@ public interface VirtualNodeToRouterRule1 extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_5(EMoflonEdge _edge_devices);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_0(EMoflonEdge _edge_devices);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -224,8 +224,8 @@ public interface VirtualNodeToRouterRule1 extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_CC(NetworkSpan virtualNode, Container reqContainer,
-			implementation.Container implContainer, Router router, Match sourceMatch, Match targetMatch);
+	CSP isApplicable_solveCsp_CC(Container reqContainer, implementation.Container implContainer,
+			NetworkSpan virtualNode, Router router, Match sourceMatch, Match targetMatch);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -241,7 +241,7 @@ public interface VirtualNodeToRouterRule1 extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean checkDEC_FWD(NetworkSpan virtualNode, Container reqContainer);
+	boolean checkDEC_FWD(Container reqContainer, NetworkSpan virtualNode);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -266,9 +266,9 @@ public interface VirtualNodeToRouterRule1 extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, NetworkSpan virtualNode, Container reqContainer,
-			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer,
-			ModelgeneratorRuleResult ruleResult);
+	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Container reqContainer,
+			implementation.Container implContainer, NetworkSpan virtualNode,
+			ReqContainerToImplContainer reqContainerToImplContainer, ModelgeneratorRuleResult ruleResult);
 
 	/**
 	 * <!-- begin-user-doc -->

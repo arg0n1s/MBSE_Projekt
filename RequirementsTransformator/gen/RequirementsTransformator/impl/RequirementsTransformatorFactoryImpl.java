@@ -56,12 +56,12 @@ public class RequirementsTransformatorFactoryImpl extends EFactoryImpl implement
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-		case RequirementsTransformatorPackage.XCONTAINER_TO_CONTAINER:
-			return createXContainerToContainer();
-		case RequirementsTransformatorPackage.XPROVIDER_TO_PROVIDER:
-			return createXProviderToProvider();
 		case RequirementsTransformatorPackage.XCONSUMER_TO_CONSUMER:
 			return createXConsumerToConsumer();
+		case RequirementsTransformatorPackage.XPROVIDER_TO_PROVIDER:
+			return createXProviderToProvider();
+		case RequirementsTransformatorPackage.XCONTAINER_TO_CONTAINER:
+			return createXContainerToContainer();
 		case RequirementsTransformatorPackage.XAGENT_TO_AGENT:
 			return createXAgentToAgent();
 		default:
@@ -74,9 +74,9 @@ public class RequirementsTransformatorFactoryImpl extends EFactoryImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XContainerToContainer createXContainerToContainer() {
-		XContainerToContainerImpl xContainerToContainer = new XContainerToContainerImpl();
-		return xContainerToContainer;
+	public XConsumerToConsumer createXConsumerToConsumer() {
+		XConsumerToConsumerImpl xConsumerToConsumer = new XConsumerToConsumerImpl();
+		return xConsumerToConsumer;
 	}
 
 	/**
@@ -94,9 +94,9 @@ public class RequirementsTransformatorFactoryImpl extends EFactoryImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XConsumerToConsumer createXConsumerToConsumer() {
-		XConsumerToConsumerImpl xConsumerToConsumer = new XConsumerToConsumerImpl();
-		return xConsumerToConsumer;
+	public XContainerToContainer createXContainerToContainer() {
+		XContainerToContainerImpl xContainerToContainer = new XContainerToContainerImpl();
+		return xContainerToContainer;
 	}
 
 	/**

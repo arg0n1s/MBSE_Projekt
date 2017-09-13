@@ -41,7 +41,7 @@ public interface ReqContainerToImplContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_FWD(Match match, NetworkSpan virtualNode, Container reqContainer);
+	boolean isAppropriate_FWD(Match match, Container reqContainer, NetworkSpan virtualNode);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -65,7 +65,7 @@ public interface ReqContainerToImplContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjectsToMatch_FWD(Match match, NetworkSpan virtualNode, Container reqContainer);
+	void registerObjectsToMatch_FWD(Match match, Container reqContainer, NetworkSpan virtualNode);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -73,7 +73,7 @@ public interface ReqContainerToImplContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_FWD(Match match, NetworkSpan virtualNode, Container reqContainer);
+	CSP isAppropriate_solveCsp_FWD(Match match, Container reqContainer, NetworkSpan virtualNode);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -89,7 +89,7 @@ public interface ReqContainerToImplContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, NetworkSpan virtualNode, Container reqContainer);
+	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, Container reqContainer, NetworkSpan virtualNode);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -105,8 +105,8 @@ public interface ReqContainerToImplContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_FWD(PerformRuleResult ruleresult, EObject virtualNode, EObject reqContainerToImplContainer,
-			EObject reqContainer, EObject implContainer);
+	void registerObjects_FWD(PerformRuleResult ruleresult, EObject reqContainer, EObject virtualNode,
+			EObject implContainer, EObject reqContainerToImplContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -186,8 +186,8 @@ public interface ReqContainerToImplContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_BWD(PerformRuleResult ruleresult, EObject virtualNode, EObject reqContainerToImplContainer,
-			EObject reqContainer, EObject implContainer);
+	void registerObjects_BWD(PerformRuleResult ruleresult, EObject reqContainer, EObject virtualNode,
+			EObject implContainer, EObject reqContainerToImplContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -243,7 +243,7 @@ public interface ReqContainerToImplContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_CC(NetworkSpan virtualNode, Container reqContainer,
+	CSP isApplicable_solveCsp_CC(Container reqContainer, NetworkSpan virtualNode,
 			implementation.Container implContainer, Match sourceMatch, Match targetMatch);
 
 	/**
@@ -260,7 +260,7 @@ public interface ReqContainerToImplContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean checkDEC_FWD(NetworkSpan virtualNode, Container reqContainer);
+	boolean checkDEC_FWD(Container reqContainer, NetworkSpan virtualNode);
 
 	/**
 	 * <!-- begin-user-doc -->

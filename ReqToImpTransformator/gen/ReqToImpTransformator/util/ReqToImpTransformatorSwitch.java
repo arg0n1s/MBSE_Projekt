@@ -68,6 +68,24 @@ public class ReqToImpTransformatorSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
+		case ReqToImpTransformatorPackage.VIRTUAL_NODE_TO_ROUTER: {
+			VirtualNodeToRouter virtualNodeToRouter = (VirtualNodeToRouter) theEObject;
+			T result = caseVirtualNodeToRouter(virtualNodeToRouter);
+			if (result == null)
+				result = caseAbstractCorrespondence(virtualNodeToRouter);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case ReqToImpTransformatorPackage.REQ_AGENT_TO_IMPL_DEVICE: {
+			ReqAgentToImplDevice reqAgentToImplDevice = (ReqAgentToImplDevice) theEObject;
+			T result = caseReqAgentToImplDevice(reqAgentToImplDevice);
+			if (result == null)
+				result = caseAbstractCorrespondence(reqAgentToImplDevice);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case ReqToImpTransformatorPackage.VIRTUAL_NODE_TO_COMPUTER: {
 			VirtualNodeToComputer virtualNodeToComputer = (VirtualNodeToComputer) theEObject;
 			T result = caseVirtualNodeToComputer(virtualNodeToComputer);
@@ -95,27 +113,39 @@ public class ReqToImpTransformatorSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case ReqToImpTransformatorPackage.VIRTUAL_NODE_TO_ROUTER: {
-			VirtualNodeToRouter virtualNodeToRouter = (VirtualNodeToRouter) theEObject;
-			T result = caseVirtualNodeToRouter(virtualNodeToRouter);
-			if (result == null)
-				result = caseAbstractCorrespondence(virtualNodeToRouter);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case ReqToImpTransformatorPackage.REQ_AGENT_TO_IMPL_DEVICE: {
-			ReqAgentToImplDevice reqAgentToImplDevice = (ReqAgentToImplDevice) theEObject;
-			T result = caseReqAgentToImplDevice(reqAgentToImplDevice);
-			if (result == null)
-				result = caseAbstractCorrespondence(reqAgentToImplDevice);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		default:
 			return defaultCase(theEObject);
 		}
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Virtual Node To Router</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Virtual Node To Router</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVirtualNodeToRouter(VirtualNodeToRouter object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Req Agent To Impl Device</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Req Agent To Impl Device</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseReqAgentToImplDevice(ReqAgentToImplDevice object) {
+		return null;
 	}
 
 	/**
@@ -160,36 +190,6 @@ public class ReqToImpTransformatorSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseVirtualNodeToServer(VirtualNodeToServer object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Virtual Node To Router</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Virtual Node To Router</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseVirtualNodeToRouter(VirtualNodeToRouter object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Req Agent To Impl Device</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Req Agent To Impl Device</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseReqAgentToImplDevice(ReqAgentToImplDevice object) {
 		return null;
 	}
 
