@@ -618,8 +618,8 @@ public class XSimplexGlassFiberCableRuleImpl extends AbstractRuleImpl implements
 								xContainer, cable, device, xDeviceToDevice);
 				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[6];
 				//nothing EMoflonEdge container__device____devices = (EMoflonEdge) result3_green[7];
-				//nothing EMoflonEdge container__cable____cables = (EMoflonEdge) result3_green[8];
-				//nothing EMoflonEdge xDeviceToDevice__xDevice____source = (EMoflonEdge) result3_green[9];
+				//nothing EMoflonEdge xDeviceToDevice__xDevice____source = (EMoflonEdge) result3_green[8];
+				//nothing EMoflonEdge container__cable____cables = (EMoflonEdge) result3_green[9];
 				//nothing EMoflonEdge xDeviceToDevice__device____target = (EMoflonEdge) result3_green[10];
 				//nothing EMoflonEdge xContainer__xDevice____elements = (EMoflonEdge) result3_green[11];
 
@@ -783,7 +783,7 @@ public class XSimplexGlassFiberCableRuleImpl extends AbstractRuleImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_15(EMoflonEdge _edge_cables) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_45(EMoflonEdge _edge_cables) {
 
 		Object[] result1_bindingAndBlack = XSimplexGlassFiberCableRuleImpl
 				.pattern_XSimplexGlassFiberCableRule_20_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -843,7 +843,7 @@ public class XSimplexGlassFiberCableRuleImpl extends AbstractRuleImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_11(EMoflonEdge _edge_cableAttributes) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_33(EMoflonEdge _edge_cableAttributes) {
 
 		Object[] result1_bindingAndBlack = XSimplexGlassFiberCableRuleImpl
 				.pattern_XSimplexGlassFiberCableRule_21_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -919,13 +919,13 @@ public class XSimplexGlassFiberCableRuleImpl extends AbstractRuleImpl implements
 			return ruleResult;
 		}
 
-		Variable var_cable_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable", true, csp);
-		var_cable_speed.setValue(__helper.getValue("cable", "speed"));
-		var_cable_speed.setType("BigInteger");
-
 		Variable var_cableAttributes_speed = CSPFactoryHelper.eINSTANCE.createVariable("cableAttributes", true, csp);
 		var_cableAttributes_speed.setValue(__helper.getValue("cableAttributes", "speed"));
 		var_cableAttributes_speed.setType("BigInteger");
+
+		Variable var_cable_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable", true, csp);
+		var_cable_speed.setValue(__helper.getValue("cable", "speed"));
+		var_cable_speed.setType("BigInteger");
 
 		Eq eq0 = new Eq();
 		csp.getConstraints().add(eq0);
@@ -971,13 +971,13 @@ public class XSimplexGlassFiberCableRuleImpl extends AbstractRuleImpl implements
 			return ruleResult;
 		}
 
-		Variable var_cable_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable", true, csp);
-		var_cable_speed.setValue(__helper.getValue("cable", "speed"));
-		var_cable_speed.setType("BigInteger");
-
 		Variable var_cableAttributes_speed = CSPFactoryHelper.eINSTANCE.createVariable("cableAttributes", true, csp);
 		var_cableAttributes_speed.setValue(__helper.getValue("cableAttributes", "speed"));
 		var_cableAttributes_speed.setType("BigInteger");
+
+		Variable var_cable_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable", true, csp);
+		var_cable_speed.setValue(__helper.getValue("cable", "speed"));
+		var_cable_speed.setType("BigInteger");
 
 		Eq eq0 = new Eq();
 		csp.getConstraints().add(eq0);
@@ -1358,10 +1358,10 @@ public class XSimplexGlassFiberCableRuleImpl extends AbstractRuleImpl implements
 			return null;
 		case RulesPackage.XSIMPLEX_GLASS_FIBER_CABLE_RULE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.XSIMPLEX_GLASS_FIBER_CABLE_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_15__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_15((EMoflonEdge) arguments.get(0));
-		case RulesPackage.XSIMPLEX_GLASS_FIBER_CABLE_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_11__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_11((EMoflonEdge) arguments.get(0));
+		case RulesPackage.XSIMPLEX_GLASS_FIBER_CABLE_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_45__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_45((EMoflonEdge) arguments.get(0));
+		case RulesPackage.XSIMPLEX_GLASS_FIBER_CABLE_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_33__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_33((EMoflonEdge) arguments.get(0));
 		case RulesPackage.XSIMPLEX_GLASS_FIBER_CABLE_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.XSIMPLEX_GLASS_FIBER_CABLE_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
@@ -2468,8 +2468,8 @@ public class XSimplexGlassFiberCableRuleImpl extends AbstractRuleImpl implements
 			XDeviceToDevice xDeviceToDevice) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		if (container.getDevices().contains(device)) {
-			if (container.getCables().contains(cable)) {
-				if (xDevice.equals(xDeviceToDevice.getSource())) {
+			if (xDevice.equals(xDeviceToDevice.getSource())) {
+				if (container.getCables().contains(cable)) {
 					if (device.equals(xDeviceToDevice.getTarget())) {
 						for (XContainer xContainer : org.moflon.core.utilities.eMoflonEMFUtil
 								.getOppositeReferenceTyped(xDevice, XContainer.class, "elements")) {
@@ -2488,13 +2488,13 @@ public class XSimplexGlassFiberCableRuleImpl extends AbstractRuleImpl implements
 			XDeviceToDevice xDeviceToDevice) {
 		IsApplicableMatch isApplicableMatch = RuntimeFactory.eINSTANCE.createIsApplicableMatch();
 		EMoflonEdge container__device____devices = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge container__cable____cables = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge xDeviceToDevice__xDevice____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge container__cable____cables = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge xDeviceToDevice__device____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge xContainer__xDevice____elements = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String container__device____devices_name_prime = "devices";
-		String container__cable____cables_name_prime = "cables";
 		String xDeviceToDevice__xDevice____source_name_prime = "source";
+		String container__cable____cables_name_prime = "cables";
 		String xDeviceToDevice__device____target_name_prime = "target";
 		String xContainer__xDevice____elements_name_prime = "elements";
 		isApplicableMatch.getAllContextElements().add(container);
@@ -2506,12 +2506,12 @@ public class XSimplexGlassFiberCableRuleImpl extends AbstractRuleImpl implements
 		container__device____devices.setSrc(container);
 		container__device____devices.setTrg(device);
 		isApplicableMatch.getAllContextElements().add(container__device____devices);
-		container__cable____cables.setSrc(container);
-		container__cable____cables.setTrg(cable);
-		isApplicableMatch.getAllContextElements().add(container__cable____cables);
 		xDeviceToDevice__xDevice____source.setSrc(xDeviceToDevice);
 		xDeviceToDevice__xDevice____source.setTrg(xDevice);
 		isApplicableMatch.getAllContextElements().add(xDeviceToDevice__xDevice____source);
+		container__cable____cables.setSrc(container);
+		container__cable____cables.setTrg(cable);
+		isApplicableMatch.getAllContextElements().add(container__cable____cables);
 		xDeviceToDevice__device____target.setSrc(xDeviceToDevice);
 		xDeviceToDevice__device____target.setTrg(device);
 		isApplicableMatch.getAllContextElements().add(xDeviceToDevice__device____target);
@@ -2519,12 +2519,12 @@ public class XSimplexGlassFiberCableRuleImpl extends AbstractRuleImpl implements
 		xContainer__xDevice____elements.setTrg(xDevice);
 		isApplicableMatch.getAllContextElements().add(xContainer__xDevice____elements);
 		container__device____devices.setName(container__device____devices_name_prime);
-		container__cable____cables.setName(container__cable____cables_name_prime);
 		xDeviceToDevice__xDevice____source.setName(xDeviceToDevice__xDevice____source_name_prime);
+		container__cable____cables.setName(container__cable____cables_name_prime);
 		xDeviceToDevice__device____target.setName(xDeviceToDevice__device____target_name_prime);
 		xContainer__xDevice____elements.setName(xContainer__xDevice____elements_name_prime);
 		return new Object[] { container, xDevice, xContainer, cable, device, xDeviceToDevice, isApplicableMatch,
-				container__device____devices, container__cable____cables, xDeviceToDevice__xDevice____source,
+				container__device____devices, xDeviceToDevice__xDevice____source, container__cable____cables,
 				xDeviceToDevice__device____target, xContainer__xDevice____elements };
 	}
 

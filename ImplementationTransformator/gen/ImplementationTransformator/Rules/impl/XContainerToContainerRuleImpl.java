@@ -154,40 +154,40 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 		XContainer xContainer = (XContainer) result1_bindingAndBlack[0];
 		//nothing CSP csp = (CSP) result1_bindingAndBlack[1];
 		Object[] result1_green = XContainerToContainerRuleImpl
-				.pattern_XContainerToContainerRule_1_1_performtransformation_greenFFB(xContainer);
-		Container container = (Container) result1_green[0];
+				.pattern_XContainerToContainerRule_1_1_performtransformation_greenBFF(xContainer);
 		XContainerToContainer xContainerToContainer = (XContainerToContainer) result1_green[1];
+		Container container = (Container) result1_green[2];
 
 		Object[] result2_black = XContainerToContainerRuleImpl
-				.pattern_XContainerToContainerRule_1_2_collecttranslatedelements_blackBBB(container,
-						xContainerToContainer, xContainer);
+				.pattern_XContainerToContainerRule_1_2_collecttranslatedelements_blackBBB(xContainer,
+						xContainerToContainer, container);
 		if (result2_black == null) {
-			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[container] = " + container + ", "
-					+ "[xContainerToContainer] = " + xContainerToContainer + ", " + "[xContainer] = " + xContainer
+			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[xContainer] = " + xContainer
+					+ ", " + "[xContainerToContainer] = " + xContainerToContainer + ", " + "[container] = " + container
 					+ ".");
 		}
 		Object[] result2_green = XContainerToContainerRuleImpl
-				.pattern_XContainerToContainerRule_1_2_collecttranslatedelements_greenFBBB(container,
-						xContainerToContainer, xContainer);
+				.pattern_XContainerToContainerRule_1_2_collecttranslatedelements_greenFBBB(xContainer,
+						xContainerToContainer, container);
 		PerformRuleResult ruleresult = (PerformRuleResult) result2_green[0];
 
 		Object[] result3_black = XContainerToContainerRuleImpl
-				.pattern_XContainerToContainerRule_1_3_bookkeepingforedges_blackBBBB(ruleresult, container,
-						xContainerToContainer, xContainer);
+				.pattern_XContainerToContainerRule_1_3_bookkeepingforedges_blackBBBB(ruleresult, xContainer,
+						xContainerToContainer, container);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[ruleresult] = " + ruleresult
-					+ ", " + "[container] = " + container + ", " + "[xContainerToContainer] = " + xContainerToContainer
-					+ ", " + "[xContainer] = " + xContainer + ".");
+					+ ", " + "[xContainer] = " + xContainer + ", " + "[xContainerToContainer] = "
+					+ xContainerToContainer + ", " + "[container] = " + container + ".");
 		}
 		XContainerToContainerRuleImpl.pattern_XContainerToContainerRule_1_3_bookkeepingforedges_greenBBBBFF(ruleresult,
-				container, xContainerToContainer, xContainer);
-		//nothing EMoflonEdge xContainerToContainer__container____target = (EMoflonEdge) result3_green[4];
-		//nothing EMoflonEdge xContainerToContainer__xContainer____source = (EMoflonEdge) result3_green[5];
+				xContainer, xContainerToContainer, container);
+		//nothing EMoflonEdge xContainerToContainer__xContainer____source = (EMoflonEdge) result3_green[4];
+		//nothing EMoflonEdge xContainerToContainer__container____target = (EMoflonEdge) result3_green[5];
 
 		// 
 		// 
 		XContainerToContainerRuleImpl.pattern_XContainerToContainerRule_1_5_registerobjects_expressionBBBBB(this,
-				ruleresult, container, xContainerToContainer, xContainer);
+				ruleresult, xContainer, xContainerToContainer, container);
 		return XContainerToContainerRuleImpl.pattern_XContainerToContainerRule_1_6_expressionFB(ruleresult);
 	}
 
@@ -335,11 +335,11 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjects_FWD(PerformRuleResult ruleresult, EObject container, EObject xContainerToContainer,
-			EObject xContainer) {
-		ruleresult.registerObject("container", container);
-		ruleresult.registerObject("xContainerToContainer", xContainerToContainer);
+	public void registerObjects_FWD(PerformRuleResult ruleresult, EObject xContainer, EObject xContainerToContainer,
+			EObject container) {
 		ruleresult.registerObject("xContainer", xContainer);
+		ruleresult.registerObject("xContainerToContainer", xContainerToContainer);
+		ruleresult.registerObject("container", container);
 
 	}
 
@@ -419,40 +419,40 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 		Container container = (Container) result1_bindingAndBlack[0];
 		//nothing CSP csp = (CSP) result1_bindingAndBlack[1];
 		Object[] result1_green = XContainerToContainerRuleImpl
-				.pattern_XContainerToContainerRule_11_1_performtransformation_greenBFF(container);
+				.pattern_XContainerToContainerRule_11_1_performtransformation_greenFFB(container);
+		XContainer xContainer = (XContainer) result1_green[0];
 		XContainerToContainer xContainerToContainer = (XContainerToContainer) result1_green[1];
-		XContainer xContainer = (XContainer) result1_green[2];
 
 		Object[] result2_black = XContainerToContainerRuleImpl
-				.pattern_XContainerToContainerRule_11_2_collecttranslatedelements_blackBBB(container,
-						xContainerToContainer, xContainer);
+				.pattern_XContainerToContainerRule_11_2_collecttranslatedelements_blackBBB(xContainer,
+						xContainerToContainer, container);
 		if (result2_black == null) {
-			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[container] = " + container + ", "
-					+ "[xContainerToContainer] = " + xContainerToContainer + ", " + "[xContainer] = " + xContainer
+			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[xContainer] = " + xContainer
+					+ ", " + "[xContainerToContainer] = " + xContainerToContainer + ", " + "[container] = " + container
 					+ ".");
 		}
 		Object[] result2_green = XContainerToContainerRuleImpl
-				.pattern_XContainerToContainerRule_11_2_collecttranslatedelements_greenFBBB(container,
-						xContainerToContainer, xContainer);
+				.pattern_XContainerToContainerRule_11_2_collecttranslatedelements_greenFBBB(xContainer,
+						xContainerToContainer, container);
 		PerformRuleResult ruleresult = (PerformRuleResult) result2_green[0];
 
 		Object[] result3_black = XContainerToContainerRuleImpl
-				.pattern_XContainerToContainerRule_11_3_bookkeepingforedges_blackBBBB(ruleresult, container,
-						xContainerToContainer, xContainer);
+				.pattern_XContainerToContainerRule_11_3_bookkeepingforedges_blackBBBB(ruleresult, xContainer,
+						xContainerToContainer, container);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[ruleresult] = " + ruleresult
-					+ ", " + "[container] = " + container + ", " + "[xContainerToContainer] = " + xContainerToContainer
-					+ ", " + "[xContainer] = " + xContainer + ".");
+					+ ", " + "[xContainer] = " + xContainer + ", " + "[xContainerToContainer] = "
+					+ xContainerToContainer + ", " + "[container] = " + container + ".");
 		}
 		XContainerToContainerRuleImpl.pattern_XContainerToContainerRule_11_3_bookkeepingforedges_greenBBBBFF(ruleresult,
-				container, xContainerToContainer, xContainer);
-		//nothing EMoflonEdge xContainerToContainer__container____target = (EMoflonEdge) result3_green[4];
-		//nothing EMoflonEdge xContainerToContainer__xContainer____source = (EMoflonEdge) result3_green[5];
+				xContainer, xContainerToContainer, container);
+		//nothing EMoflonEdge xContainerToContainer__xContainer____source = (EMoflonEdge) result3_green[4];
+		//nothing EMoflonEdge xContainerToContainer__container____target = (EMoflonEdge) result3_green[5];
 
 		// 
 		// 
 		XContainerToContainerRuleImpl.pattern_XContainerToContainerRule_11_5_registerobjects_expressionBBBBB(this,
-				ruleresult, container, xContainerToContainer, xContainer);
+				ruleresult, xContainer, xContainerToContainer, container);
 		return XContainerToContainerRuleImpl.pattern_XContainerToContainerRule_11_6_expressionFB(ruleresult);
 	}
 
@@ -599,11 +599,11 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject container, EObject xContainerToContainer,
-			EObject xContainer) {
-		ruleresult.registerObject("container", container);
-		ruleresult.registerObject("xContainerToContainer", xContainerToContainer);
+	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject xContainer, EObject xContainerToContainer,
+			EObject container) {
 		ruleresult.registerObject("xContainer", xContainer);
+		ruleresult.registerObject("xContainerToContainer", xContainerToContainer);
+		ruleresult.registerObject("container", container);
 
 	}
 
@@ -622,7 +622,7 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_Container_1(Container container) {
+	public EObjectContainer isAppropriate_BWD_Container_5(Container container) {
 
 		Object[] result1_bindingAndBlack = XContainerToContainerRuleImpl
 				.pattern_XContainerToContainerRule_20_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -678,7 +678,7 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_XContainer_1(XContainer xContainer) {
+	public EObjectContainer isAppropriate_FWD_XContainer_5(XContainer xContainer) {
 
 		Object[] result1_bindingAndBlack = XContainerToContainerRuleImpl
 				.pattern_XContainerToContainerRule_21_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -811,15 +811,15 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[sourceMatch] = " + sourceMatch
 					+ ", " + "[targetMatch] = " + targetMatch + ".");
 		}
-		Container container = (Container) result2_bindingAndBlack[0];
-		XContainer xContainer = (XContainer) result2_bindingAndBlack[1];
+		XContainer xContainer = (XContainer) result2_bindingAndBlack[0];
+		Container container = (Container) result2_bindingAndBlack[1];
 
 		Object[] result3_bindingAndBlack = XContainerToContainerRuleImpl
-				.pattern_XContainerToContainerRule_24_3_solvecsp_bindingAndBlackFBBBBB(this, container, xContainer,
+				.pattern_XContainerToContainerRule_24_3_solvecsp_bindingAndBlackFBBBBB(this, xContainer, container,
 						sourceMatch, targetMatch);
 		if (result3_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
-					+ "[container] = " + container + ", " + "[xContainer] = " + xContainer + ", " + "[sourceMatch] = "
+					+ "[xContainer] = " + xContainer + ", " + "[container] = " + container + ", " + "[sourceMatch] = "
 					+ sourceMatch + ", " + "[targetMatch] = " + targetMatch + ".");
 		}
 		CSP csp = (CSP) result3_bindingAndBlack[0];
@@ -833,15 +833,14 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 				CCMatch ccMatch = (CCMatch) result5_green[2];
 
 				Object[] result6_black = XContainerToContainerRuleImpl
-						.pattern_XContainerToContainerRule_24_6_createcorrespondence_blackBBB(container, xContainer,
+						.pattern_XContainerToContainerRule_24_6_createcorrespondence_blackBBB(xContainer, container,
 								ccMatch);
 				if (result6_black == null) {
-					throw new RuntimeException(
-							"Pattern matching failed." + " Variables: " + "[container] = " + container + ", "
-									+ "[xContainer] = " + xContainer + ", " + "[ccMatch] = " + ccMatch + ".");
+					throw new RuntimeException("Pattern matching failed." + " Variables: " + "[xContainer] = "
+							+ xContainer + ", " + "[container] = " + container + ", " + "[ccMatch] = " + ccMatch + ".");
 				}
 				XContainerToContainerRuleImpl.pattern_XContainerToContainerRule_24_6_createcorrespondence_greenBFBB(
-						container, xContainer, ccMatch);
+						xContainer, container, ccMatch);
 				//nothing XContainerToContainer xContainerToContainer = (XContainerToContainer) result6_green[1];
 
 				Object[] result7_black = XContainerToContainerRuleImpl
@@ -865,7 +864,7 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isApplicable_solveCsp_CC(Container container, XContainer xContainer, Match sourceMatch,
+	public CSP isApplicable_solveCsp_CC(XContainer xContainer, Container container, Match sourceMatch,
 			Match targetMatch) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 
@@ -964,9 +963,9 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 							"Pattern matching failed." + " Variables: " + "[ruleResult] = " + ruleResult + ".");
 				}
 				XContainerToContainerRuleImpl.pattern_XContainerToContainerRule_29_6_perform_greenFFFB(ruleResult);
-				//nothing Container container = (Container) result6_green[0];
+				//nothing XContainer xContainer = (XContainer) result6_green[0];
 				//nothing XContainerToContainer xContainerToContainer = (XContainerToContainer) result6_green[1];
-				//nothing XContainer xContainer = (XContainer) result6_green[2];
+				//nothing Container container = (Container) result6_green[2];
 
 			} else {
 			}
@@ -1062,18 +1061,18 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 			return null;
 		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_BWD_CONTAINER_1__CONTAINER:
-			return isAppropriate_BWD_Container_1((Container) arguments.get(0));
-		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_FWD_XCONTAINER_1__XCONTAINER:
-			return isAppropriate_FWD_XContainer_1((XContainer) arguments.get(0));
+		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_BWD_CONTAINER_5__CONTAINER:
+			return isAppropriate_BWD_Container_5((Container) arguments.get(0));
+		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_FWD_XCONTAINER_5__XCONTAINER:
+			return isAppropriate_FWD_XContainer_5((XContainer) arguments.get(0));
 		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
 			return checkAttributes_BWD((TripleMatch) arguments.get(0));
 		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_CC__MATCH_MATCH:
 			return isApplicable_CC((Match) arguments.get(0), (Match) arguments.get(1));
-		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_SOLVE_CSP_CC__CONTAINER_XCONTAINER_MATCH_MATCH:
-			return isApplicable_solveCsp_CC((Container) arguments.get(0), (XContainer) arguments.get(1),
+		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_SOLVE_CSP_CC__XCONTAINER_CONTAINER_MATCH_MATCH:
+			return isApplicable_solveCsp_CC((XContainer) arguments.get(0), (Container) arguments.get(1),
 					(Match) arguments.get(2), (Match) arguments.get(3));
 		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_CHECK_CSP_CC__CSP:
 			return isApplicable_checkCsp_CC((CSP) arguments.get(0));
@@ -1207,36 +1206,36 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 		return null;
 	}
 
-	public static final Object[] pattern_XContainerToContainerRule_1_1_performtransformation_greenFFB(
+	public static final Object[] pattern_XContainerToContainerRule_1_1_performtransformation_greenBFF(
 			XContainer xContainer) {
-		Container container = ImplementationFactory.eINSTANCE.createContainer();
 		XContainerToContainer xContainerToContainer = ImplementationTransformatorFactory.eINSTANCE
 				.createXContainerToContainer();
-		xContainerToContainer.setTarget(container);
+		Container container = ImplementationFactory.eINSTANCE.createContainer();
 		xContainerToContainer.setSource(xContainer);
-		return new Object[] { container, xContainerToContainer, xContainer };
+		xContainerToContainer.setTarget(container);
+		return new Object[] { xContainer, xContainerToContainer, container };
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_1_2_collecttranslatedelements_blackBBB(
-			Container container, XContainerToContainer xContainerToContainer, XContainer xContainer) {
-		return new Object[] { container, xContainerToContainer, xContainer };
+			XContainer xContainer, XContainerToContainer xContainerToContainer, Container container) {
+		return new Object[] { xContainer, xContainerToContainer, container };
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_1_2_collecttranslatedelements_greenFBBB(
-			Container container, XContainerToContainer xContainerToContainer, XContainer xContainer) {
+			XContainer xContainer, XContainerToContainer xContainerToContainer, Container container) {
 		PerformRuleResult ruleresult = RuntimeFactory.eINSTANCE.createPerformRuleResult();
-		ruleresult.getCreatedElements().add(container);
-		ruleresult.getCreatedLinkElements().add(xContainerToContainer);
 		ruleresult.getTranslatedElements().add(xContainer);
-		return new Object[] { ruleresult, container, xContainerToContainer, xContainer };
+		ruleresult.getCreatedLinkElements().add(xContainerToContainer);
+		ruleresult.getCreatedElements().add(container);
+		return new Object[] { ruleresult, xContainer, xContainerToContainer, container };
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_1_3_bookkeepingforedges_blackBBBB(
-			PerformRuleResult ruleresult, EObject container, EObject xContainerToContainer, EObject xContainer) {
-		if (!container.equals(xContainerToContainer)) {
+			PerformRuleResult ruleresult, EObject xContainer, EObject xContainerToContainer, EObject container) {
+		if (!xContainer.equals(xContainerToContainer)) {
 			if (!container.equals(xContainer)) {
-				if (!xContainer.equals(xContainerToContainer)) {
-					return new Object[] { ruleresult, container, xContainerToContainer, xContainer };
+				if (!container.equals(xContainerToContainer)) {
+					return new Object[] { ruleresult, xContainer, xContainerToContainer, container };
 				}
 			}
 		}
@@ -1244,29 +1243,29 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_1_3_bookkeepingforedges_greenBBBBFF(
-			PerformRuleResult ruleresult, EObject container, EObject xContainerToContainer, EObject xContainer) {
-		EMoflonEdge xContainerToContainer__container____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+			PerformRuleResult ruleresult, EObject xContainer, EObject xContainerToContainer, EObject container) {
 		EMoflonEdge xContainerToContainer__xContainer____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xContainerToContainer__container____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String ruleresult_ruleName_prime = "XContainerToContainerRule";
-		String xContainerToContainer__container____target_name_prime = "target";
 		String xContainerToContainer__xContainer____source_name_prime = "source";
-		xContainerToContainer__container____target.setSrc(xContainerToContainer);
-		xContainerToContainer__container____target.setTrg(container);
-		ruleresult.getCreatedEdges().add(xContainerToContainer__container____target);
+		String xContainerToContainer__container____target_name_prime = "target";
 		xContainerToContainer__xContainer____source.setSrc(xContainerToContainer);
 		xContainerToContainer__xContainer____source.setTrg(xContainer);
 		ruleresult.getCreatedEdges().add(xContainerToContainer__xContainer____source);
+		xContainerToContainer__container____target.setSrc(xContainerToContainer);
+		xContainerToContainer__container____target.setTrg(container);
+		ruleresult.getCreatedEdges().add(xContainerToContainer__container____target);
 		ruleresult.setRuleName(ruleresult_ruleName_prime);
-		xContainerToContainer__container____target.setName(xContainerToContainer__container____target_name_prime);
 		xContainerToContainer__xContainer____source.setName(xContainerToContainer__xContainer____source_name_prime);
-		return new Object[] { ruleresult, container, xContainerToContainer, xContainer,
-				xContainerToContainer__container____target, xContainerToContainer__xContainer____source };
+		xContainerToContainer__container____target.setName(xContainerToContainer__container____target_name_prime);
+		return new Object[] { ruleresult, xContainer, xContainerToContainer, container,
+				xContainerToContainer__xContainer____source, xContainerToContainer__container____target };
 	}
 
 	public static final void pattern_XContainerToContainerRule_1_5_registerobjects_expressionBBBBB(
-			XContainerToContainerRule _this, PerformRuleResult ruleresult, EObject container,
-			EObject xContainerToContainer, EObject xContainer) {
-		_this.registerObjects_FWD(ruleresult, container, xContainerToContainer, xContainer);
+			XContainerToContainerRule _this, PerformRuleResult ruleresult, EObject xContainer,
+			EObject xContainerToContainer, EObject container) {
+		_this.registerObjects_FWD(ruleresult, xContainer, xContainerToContainer, container);
 
 	}
 
@@ -1531,36 +1530,36 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 		return null;
 	}
 
-	public static final Object[] pattern_XContainerToContainerRule_11_1_performtransformation_greenBFF(
+	public static final Object[] pattern_XContainerToContainerRule_11_1_performtransformation_greenFFB(
 			Container container) {
+		XContainer xContainer = XtextImplFactory.eINSTANCE.createXContainer();
 		XContainerToContainer xContainerToContainer = ImplementationTransformatorFactory.eINSTANCE
 				.createXContainerToContainer();
-		XContainer xContainer = XtextImplFactory.eINSTANCE.createXContainer();
-		xContainerToContainer.setTarget(container);
 		xContainerToContainer.setSource(xContainer);
-		return new Object[] { container, xContainerToContainer, xContainer };
+		xContainerToContainer.setTarget(container);
+		return new Object[] { xContainer, xContainerToContainer, container };
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_11_2_collecttranslatedelements_blackBBB(
-			Container container, XContainerToContainer xContainerToContainer, XContainer xContainer) {
-		return new Object[] { container, xContainerToContainer, xContainer };
+			XContainer xContainer, XContainerToContainer xContainerToContainer, Container container) {
+		return new Object[] { xContainer, xContainerToContainer, container };
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_11_2_collecttranslatedelements_greenFBBB(
-			Container container, XContainerToContainer xContainerToContainer, XContainer xContainer) {
+			XContainer xContainer, XContainerToContainer xContainerToContainer, Container container) {
 		PerformRuleResult ruleresult = RuntimeFactory.eINSTANCE.createPerformRuleResult();
-		ruleresult.getTranslatedElements().add(container);
-		ruleresult.getCreatedLinkElements().add(xContainerToContainer);
 		ruleresult.getCreatedElements().add(xContainer);
-		return new Object[] { ruleresult, container, xContainerToContainer, xContainer };
+		ruleresult.getCreatedLinkElements().add(xContainerToContainer);
+		ruleresult.getTranslatedElements().add(container);
+		return new Object[] { ruleresult, xContainer, xContainerToContainer, container };
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_11_3_bookkeepingforedges_blackBBBB(
-			PerformRuleResult ruleresult, EObject container, EObject xContainerToContainer, EObject xContainer) {
-		if (!container.equals(xContainerToContainer)) {
+			PerformRuleResult ruleresult, EObject xContainer, EObject xContainerToContainer, EObject container) {
+		if (!xContainer.equals(xContainerToContainer)) {
 			if (!container.equals(xContainer)) {
-				if (!xContainer.equals(xContainerToContainer)) {
-					return new Object[] { ruleresult, container, xContainerToContainer, xContainer };
+				if (!container.equals(xContainerToContainer)) {
+					return new Object[] { ruleresult, xContainer, xContainerToContainer, container };
 				}
 			}
 		}
@@ -1568,29 +1567,29 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_11_3_bookkeepingforedges_greenBBBBFF(
-			PerformRuleResult ruleresult, EObject container, EObject xContainerToContainer, EObject xContainer) {
-		EMoflonEdge xContainerToContainer__container____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+			PerformRuleResult ruleresult, EObject xContainer, EObject xContainerToContainer, EObject container) {
 		EMoflonEdge xContainerToContainer__xContainer____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xContainerToContainer__container____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String ruleresult_ruleName_prime = "XContainerToContainerRule";
-		String xContainerToContainer__container____target_name_prime = "target";
 		String xContainerToContainer__xContainer____source_name_prime = "source";
-		xContainerToContainer__container____target.setSrc(xContainerToContainer);
-		xContainerToContainer__container____target.setTrg(container);
-		ruleresult.getCreatedEdges().add(xContainerToContainer__container____target);
+		String xContainerToContainer__container____target_name_prime = "target";
 		xContainerToContainer__xContainer____source.setSrc(xContainerToContainer);
 		xContainerToContainer__xContainer____source.setTrg(xContainer);
 		ruleresult.getCreatedEdges().add(xContainerToContainer__xContainer____source);
+		xContainerToContainer__container____target.setSrc(xContainerToContainer);
+		xContainerToContainer__container____target.setTrg(container);
+		ruleresult.getCreatedEdges().add(xContainerToContainer__container____target);
 		ruleresult.setRuleName(ruleresult_ruleName_prime);
-		xContainerToContainer__container____target.setName(xContainerToContainer__container____target_name_prime);
 		xContainerToContainer__xContainer____source.setName(xContainerToContainer__xContainer____source_name_prime);
-		return new Object[] { ruleresult, container, xContainerToContainer, xContainer,
-				xContainerToContainer__container____target, xContainerToContainer__xContainer____source };
+		xContainerToContainer__container____target.setName(xContainerToContainer__container____target_name_prime);
+		return new Object[] { ruleresult, xContainer, xContainerToContainer, container,
+				xContainerToContainer__xContainer____source, xContainerToContainer__container____target };
 	}
 
 	public static final void pattern_XContainerToContainerRule_11_5_registerobjects_expressionBBBBB(
-			XContainerToContainerRule _this, PerformRuleResult ruleresult, EObject container,
-			EObject xContainerToContainer, EObject xContainer) {
-		_this.registerObjects_BWD(ruleresult, container, xContainerToContainer, xContainer);
+			XContainerToContainerRule _this, PerformRuleResult ruleresult, EObject xContainer,
+			EObject xContainerToContainer, EObject container) {
+		_this.registerObjects_BWD(ruleresult, xContainer, xContainerToContainer, container);
 
 	}
 
@@ -1963,25 +1962,25 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_bindingFFBB(
-			Match targetMatch, Match sourceMatch) {
-		EObject _localVariable_0 = targetMatch.getObject("container");
-		EObject _localVariable_1 = sourceMatch.getObject("xContainer");
-		EObject tmpContainer = _localVariable_0;
-		EObject tmpXContainer = _localVariable_1;
-		if (tmpContainer instanceof Container) {
-			Container container = (Container) tmpContainer;
-			if (tmpXContainer instanceof XContainer) {
-				XContainer xContainer = (XContainer) tmpXContainer;
-				return new Object[] { container, xContainer, targetMatch, sourceMatch };
+			Match sourceMatch, Match targetMatch) {
+		EObject _localVariable_0 = sourceMatch.getObject("xContainer");
+		EObject _localVariable_1 = targetMatch.getObject("container");
+		EObject tmpXContainer = _localVariable_0;
+		EObject tmpContainer = _localVariable_1;
+		if (tmpXContainer instanceof XContainer) {
+			XContainer xContainer = (XContainer) tmpXContainer;
+			if (tmpContainer instanceof Container) {
+				Container container = (Container) tmpContainer;
+				return new Object[] { xContainer, container, sourceMatch, targetMatch };
 			}
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_blackBBBB(
-			Container container, XContainer xContainer, Match sourceMatch, Match targetMatch) {
+			XContainer xContainer, Container container, Match sourceMatch, Match targetMatch) {
 		if (!sourceMatch.equals(targetMatch)) {
-			return new Object[] { container, xContainer, sourceMatch, targetMatch };
+			return new Object[] { xContainer, container, sourceMatch, targetMatch };
 		}
 		return null;
 	}
@@ -1989,28 +1988,28 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	public static final Object[] pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_bindingAndBlackFFBB(
 			Match sourceMatch, Match targetMatch) {
 		Object[] result_pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_binding = pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_bindingFFBB(
-				targetMatch, sourceMatch);
+				sourceMatch, targetMatch);
 		if (result_pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_binding != null) {
-			Container container = (Container) result_pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_binding[0];
-			XContainer xContainer = (XContainer) result_pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_binding[1];
+			XContainer xContainer = (XContainer) result_pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_binding[0];
+			Container container = (Container) result_pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_binding[1];
 
 			Object[] result_pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_black = pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_blackBBBB(
-					container, xContainer, sourceMatch, targetMatch);
+					xContainer, container, sourceMatch, targetMatch);
 			if (result_pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_black != null) {
 
-				return new Object[] { container, xContainer, sourceMatch, targetMatch };
+				return new Object[] { xContainer, container, sourceMatch, targetMatch };
 			}
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_24_3_solvecsp_bindingFBBBBB(
-			XContainerToContainerRule _this, Container container, XContainer xContainer, Match sourceMatch,
+			XContainerToContainerRule _this, XContainer xContainer, Container container, Match sourceMatch,
 			Match targetMatch) {
-		CSP _localVariable_2 = _this.isApplicable_solveCsp_CC(container, xContainer, sourceMatch, targetMatch);
+		CSP _localVariable_2 = _this.isApplicable_solveCsp_CC(xContainer, container, sourceMatch, targetMatch);
 		CSP csp = _localVariable_2;
 		if (csp != null) {
-			return new Object[] { csp, _this, container, xContainer, sourceMatch, targetMatch };
+			return new Object[] { csp, _this, xContainer, container, sourceMatch, targetMatch };
 		}
 		return null;
 	}
@@ -2020,10 +2019,10 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_24_3_solvecsp_bindingAndBlackFBBBBB(
-			XContainerToContainerRule _this, Container container, XContainer xContainer, Match sourceMatch,
+			XContainerToContainerRule _this, XContainer xContainer, Container container, Match sourceMatch,
 			Match targetMatch) {
 		Object[] result_pattern_XContainerToContainerRule_24_3_solvecsp_binding = pattern_XContainerToContainerRule_24_3_solvecsp_bindingFBBBBB(
-				_this, container, xContainer, sourceMatch, targetMatch);
+				_this, xContainer, container, sourceMatch, targetMatch);
 		if (result_pattern_XContainerToContainerRule_24_3_solvecsp_binding != null) {
 			CSP csp = (CSP) result_pattern_XContainerToContainerRule_24_3_solvecsp_binding[0];
 
@@ -2031,7 +2030,7 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 					csp);
 			if (result_pattern_XContainerToContainerRule_24_3_solvecsp_black != null) {
 
-				return new Object[] { csp, _this, container, xContainer, sourceMatch, targetMatch };
+				return new Object[] { csp, _this, xContainer, container, sourceMatch, targetMatch };
 			}
 		}
 		return null;
@@ -2063,18 +2062,18 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_24_6_createcorrespondence_blackBBB(
-			Container container, XContainer xContainer, CCMatch ccMatch) {
-		return new Object[] { container, xContainer, ccMatch };
+			XContainer xContainer, Container container, CCMatch ccMatch) {
+		return new Object[] { xContainer, container, ccMatch };
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_24_6_createcorrespondence_greenBFBB(
-			Container container, XContainer xContainer, CCMatch ccMatch) {
+			XContainer xContainer, Container container, CCMatch ccMatch) {
 		XContainerToContainer xContainerToContainer = ImplementationTransformatorFactory.eINSTANCE
 				.createXContainerToContainer();
-		xContainerToContainer.setTarget(container);
 		xContainerToContainer.setSource(xContainer);
+		xContainerToContainer.setTarget(container);
 		ccMatch.getCreateCorr().add(xContainerToContainer);
-		return new Object[] { container, xContainerToContainer, xContainer, ccMatch };
+		return new Object[] { xContainer, xContainerToContainer, container, ccMatch };
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_24_7_addtoreturnedresult_blackBB(
@@ -2189,21 +2188,21 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 
 	public static final Object[] pattern_XContainerToContainerRule_29_6_perform_greenFFFB(
 			ModelgeneratorRuleResult ruleResult) {
-		Container container = ImplementationFactory.eINSTANCE.createContainer();
+		XContainer xContainer = XtextImplFactory.eINSTANCE.createXContainer();
 		XContainerToContainer xContainerToContainer = ImplementationTransformatorFactory.eINSTANCE
 				.createXContainerToContainer();
-		XContainer xContainer = XtextImplFactory.eINSTANCE.createXContainer();
+		Container container = ImplementationFactory.eINSTANCE.createContainer();
 		boolean ruleResult_success_prime = Boolean.valueOf(true);
 		int _localVariable_0 = ruleResult.getIncrementedPerformCount();
-		ruleResult.getTargetObjects().add(container);
-		xContainerToContainer.setTarget(container);
-		ruleResult.getCorrObjects().add(xContainerToContainer);
-		xContainerToContainer.setSource(xContainer);
 		ruleResult.getSourceObjects().add(xContainer);
+		xContainerToContainer.setSource(xContainer);
+		ruleResult.getCorrObjects().add(xContainerToContainer);
+		xContainerToContainer.setTarget(container);
+		ruleResult.getTargetObjects().add(container);
 		ruleResult.setSuccess(Boolean.valueOf(ruleResult_success_prime));
 		int ruleResult_performCount_prime = Integer.valueOf(_localVariable_0);
 		ruleResult.setPerformCount(Integer.valueOf(ruleResult_performCount_prime));
-		return new Object[] { container, xContainerToContainer, xContainer, ruleResult };
+		return new Object[] { xContainer, xContainerToContainer, container, ruleResult };
 	}
 
 	public static final ModelgeneratorRuleResult pattern_XContainerToContainerRule_29_7_expressionFB(

@@ -97,8 +97,8 @@ public interface ReqConsumerToComputerRule extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, Computer implDevice, Consumer reqAgent,
-			Container reqContainer, NetworkSpan virtualNode, VirtualNodeToComputer virtualNodeToComputer, Cable cable,
-			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer);
+			Container reqContainer, VirtualNodeToComputer virtualNodeToComputer, NetworkSpan virtualNode, Cable cable,
+			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -114,9 +114,9 @@ public interface ReqConsumerToComputerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_FWD(PerformRuleResult ruleresult, EObject implDevice, EObject reqAgentToImplDevice,
-			EObject reqAgent, EObject reqContainer, EObject virtualNode, EObject virtualNodeToComputer, EObject cable,
-			EObject reqContainerToImplContainer, EObject implContainer);
+	void registerObjects_FWD(PerformRuleResult ruleresult, EObject reqAgentToImplDevice, EObject implDevice,
+			EObject reqAgent, EObject reqContainer, EObject virtualNodeToComputer, EObject virtualNode, EObject cable,
+			EObject implContainer, EObject reqContainerToImplContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -190,7 +190,7 @@ public interface ReqConsumerToComputerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_Computer_0(Computer implDevice);
+	EObjectContainer isAppropriate_BWD_Computer_2(Computer implDevice);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -198,7 +198,7 @@ public interface ReqConsumerToComputerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_0(EMoflonEdge _edge_agents);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_30(EMoflonEdge _edge_agents);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -274,8 +274,8 @@ public interface ReqConsumerToComputerRule extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Computer implDevice, Container reqContainer,
-			NetworkSpan virtualNode, VirtualNodeToComputer virtualNodeToComputer, Cable cable,
-			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer,
+			VirtualNodeToComputer virtualNodeToComputer, NetworkSpan virtualNode, Cable cable,
+			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer,
 			ModelgeneratorRuleResult ruleResult);
 
 	/**

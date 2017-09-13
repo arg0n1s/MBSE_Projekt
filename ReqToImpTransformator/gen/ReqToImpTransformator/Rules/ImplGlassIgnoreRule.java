@@ -182,7 +182,7 @@ public interface ImplGlassIgnoreRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_Container_4(Container reqContainer);
+	EObjectContainer isAppropriate_FWD_Container_12(Container reqContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -190,7 +190,7 @@ public interface ImplGlassIgnoreRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_5(EMoflonEdge _edge_cables);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_38(EMoflonEdge _edge_cables);
 
 	/**
 	 * <!-- begin-user-doc -->

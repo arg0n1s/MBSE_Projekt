@@ -68,20 +68,11 @@ public class RulesSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE1: {
-			VirtualNodeToRouterRule1 virtualNodeToRouterRule1 = (VirtualNodeToRouterRule1) theEObject;
-			T result = caseVirtualNodeToRouterRule1(virtualNodeToRouterRule1);
+		case RulesPackage.REQ_PROVIDER_TO_SERVER_RULE: {
+			ReqProviderToServerRule reqProviderToServerRule = (ReqProviderToServerRule) theEObject;
+			T result = caseReqProviderToServerRule(reqProviderToServerRule);
 			if (result == null)
-				result = caseAbstractRule(virtualNodeToRouterRule1);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case RulesPackage.IMPL_INCOMING_CONNECTION_IGNORE_RULE: {
-			ImplIncomingConnectionIgnoreRule implIncomingConnectionIgnoreRule = (ImplIncomingConnectionIgnoreRule) theEObject;
-			T result = caseImplIncomingConnectionIgnoreRule(implIncomingConnectionIgnoreRule);
-			if (result == null)
-				result = caseAbstractRule(implIncomingConnectionIgnoreRule);
+				result = caseAbstractRule(reqProviderToServerRule);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -95,24 +86,6 @@ public class RulesSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case RulesPackage.VIRTUAL_NODE_TO_SERVER_RULE: {
-			VirtualNodeToServerRule virtualNodeToServerRule = (VirtualNodeToServerRule) theEObject;
-			T result = caseVirtualNodeToServerRule(virtualNodeToServerRule);
-			if (result == null)
-				result = caseAbstractRule(virtualNodeToServerRule);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case RulesPackage.REQ_CONSUMER_TO_COMPUTER_RULE: {
-			ReqConsumerToComputerRule reqConsumerToComputerRule = (ReqConsumerToComputerRule) theEObject;
-			T result = caseReqConsumerToComputerRule(reqConsumerToComputerRule);
-			if (result == null)
-				result = caseAbstractRule(reqConsumerToComputerRule);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		case RulesPackage.IMPL_OUTGOING_CONNECTION_IGNORE_RULE: {
 			ImplOutgoingConnectionIgnoreRule implOutgoingConnectionIgnoreRule = (ImplOutgoingConnectionIgnoreRule) theEObject;
 			T result = caseImplOutgoingConnectionIgnoreRule(implOutgoingConnectionIgnoreRule);
@@ -122,20 +95,29 @@ public class RulesSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case RulesPackage.REQ_PROVIDER_TO_SERVER_RULE: {
-			ReqProviderToServerRule reqProviderToServerRule = (ReqProviderToServerRule) theEObject;
-			T result = caseReqProviderToServerRule(reqProviderToServerRule);
+		case RulesPackage.IMPL_INCOMING_CONNECTION_IGNORE_RULE: {
+			ImplIncomingConnectionIgnoreRule implIncomingConnectionIgnoreRule = (ImplIncomingConnectionIgnoreRule) theEObject;
+			T result = caseImplIncomingConnectionIgnoreRule(implIncomingConnectionIgnoreRule);
 			if (result == null)
-				result = caseAbstractRule(reqProviderToServerRule);
+				result = caseAbstractRule(implIncomingConnectionIgnoreRule);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case RulesPackage.IMPL_COPPER_IGNORE_RULE: {
-			ImplCopperIgnoreRule implCopperIgnoreRule = (ImplCopperIgnoreRule) theEObject;
-			T result = caseImplCopperIgnoreRule(implCopperIgnoreRule);
+		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE1: {
+			VirtualNodeToRouterRule1 virtualNodeToRouterRule1 = (VirtualNodeToRouterRule1) theEObject;
+			T result = caseVirtualNodeToRouterRule1(virtualNodeToRouterRule1);
 			if (result == null)
-				result = caseAbstractRule(implCopperIgnoreRule);
+				result = caseAbstractRule(virtualNodeToRouterRule1);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case RulesPackage.IMPL_GLASS_IGNORE_RULE: {
+			ImplGlassIgnoreRule implGlassIgnoreRule = (ImplGlassIgnoreRule) theEObject;
+			T result = caseImplGlassIgnoreRule(implGlassIgnoreRule);
+			if (result == null)
+				result = caseAbstractRule(implGlassIgnoreRule);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -149,11 +131,20 @@ public class RulesSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case RulesPackage.REQ_AGENT_TO_DEVICE_RULE: {
-			ReqAgentToDeviceRule reqAgentToDeviceRule = (ReqAgentToDeviceRule) theEObject;
-			T result = caseReqAgentToDeviceRule(reqAgentToDeviceRule);
+		case RulesPackage.IMPL_COPPER_IGNORE_RULE: {
+			ImplCopperIgnoreRule implCopperIgnoreRule = (ImplCopperIgnoreRule) theEObject;
+			T result = caseImplCopperIgnoreRule(implCopperIgnoreRule);
 			if (result == null)
-				result = caseAbstractRule(reqAgentToDeviceRule);
+				result = caseAbstractRule(implCopperIgnoreRule);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case RulesPackage.REQ_CONSUMER_TO_COMPUTER_RULE: {
+			ReqConsumerToComputerRule reqConsumerToComputerRule = (ReqConsumerToComputerRule) theEObject;
+			T result = caseReqConsumerToComputerRule(reqConsumerToComputerRule);
+			if (result == null)
+				result = caseAbstractRule(reqConsumerToComputerRule);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -176,11 +167,20 @@ public class RulesSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case RulesPackage.IMPL_GLASS_IGNORE_RULE: {
-			ImplGlassIgnoreRule implGlassIgnoreRule = (ImplGlassIgnoreRule) theEObject;
-			T result = caseImplGlassIgnoreRule(implGlassIgnoreRule);
+		case RulesPackage.VIRTUAL_NODE_TO_SERVER_RULE: {
+			VirtualNodeToServerRule virtualNodeToServerRule = (VirtualNodeToServerRule) theEObject;
+			T result = caseVirtualNodeToServerRule(virtualNodeToServerRule);
 			if (result == null)
-				result = caseAbstractRule(implGlassIgnoreRule);
+				result = caseAbstractRule(virtualNodeToServerRule);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case RulesPackage.REQ_AGENT_TO_DEVICE_RULE: {
+			ReqAgentToDeviceRule reqAgentToDeviceRule = (ReqAgentToDeviceRule) theEObject;
+			T result = caseReqAgentToDeviceRule(reqAgentToDeviceRule);
+			if (result == null)
+				result = caseAbstractRule(reqAgentToDeviceRule);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -191,32 +191,17 @@ public class RulesSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Virtual Node To Router Rule1</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Req Provider To Server Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Virtual Node To Router Rule1</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Req Provider To Server Rule</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseVirtualNodeToRouterRule1(VirtualNodeToRouterRule1 object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Impl Incoming Connection Ignore Rule</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Impl Incoming Connection Ignore Rule</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseImplIncomingConnectionIgnoreRule(ImplIncomingConnectionIgnoreRule object) {
+	public T caseReqProviderToServerRule(ReqProviderToServerRule object) {
 		return null;
 	}
 
@@ -236,36 +221,6 @@ public class RulesSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Virtual Node To Server Rule</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Virtual Node To Server Rule</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseVirtualNodeToServerRule(VirtualNodeToServerRule object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Req Consumer To Computer Rule</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Req Consumer To Computer Rule</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseReqConsumerToComputerRule(ReqConsumerToComputerRule object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Impl Outgoing Connection Ignore Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -281,32 +236,47 @@ public class RulesSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Req Provider To Server Rule</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Impl Incoming Connection Ignore Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Req Provider To Server Rule</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Impl Incoming Connection Ignore Rule</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseReqProviderToServerRule(ReqProviderToServerRule object) {
+	public T caseImplIncomingConnectionIgnoreRule(ImplIncomingConnectionIgnoreRule object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Impl Copper Ignore Rule</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Virtual Node To Router Rule1</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Impl Copper Ignore Rule</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Virtual Node To Router Rule1</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseImplCopperIgnoreRule(ImplCopperIgnoreRule object) {
+	public T caseVirtualNodeToRouterRule1(VirtualNodeToRouterRule1 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Impl Glass Ignore Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Impl Glass Ignore Rule</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseImplGlassIgnoreRule(ImplGlassIgnoreRule object) {
 		return null;
 	}
 
@@ -326,17 +296,32 @@ public class RulesSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Req Agent To Device Rule</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Impl Copper Ignore Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Req Agent To Device Rule</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Impl Copper Ignore Rule</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseReqAgentToDeviceRule(ReqAgentToDeviceRule object) {
+	public T caseImplCopperIgnoreRule(ImplCopperIgnoreRule object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Req Consumer To Computer Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Req Consumer To Computer Rule</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseReqConsumerToComputerRule(ReqConsumerToComputerRule object) {
 		return null;
 	}
 
@@ -371,17 +356,32 @@ public class RulesSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Impl Glass Ignore Rule</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Virtual Node To Server Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Impl Glass Ignore Rule</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Virtual Node To Server Rule</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseImplGlassIgnoreRule(ImplGlassIgnoreRule object) {
+	public T caseVirtualNodeToServerRule(VirtualNodeToServerRule object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Req Agent To Device Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Req Agent To Device Rule</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseReqAgentToDeviceRule(ReqAgentToDeviceRule object) {
 		return null;
 	}
 

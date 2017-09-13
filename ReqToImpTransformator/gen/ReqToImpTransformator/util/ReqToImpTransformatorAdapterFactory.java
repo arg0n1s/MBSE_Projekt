@@ -69,8 +69,8 @@ public class ReqToImpTransformatorAdapterFactory extends AdapterFactoryImpl {
 	 */
 	protected ReqToImpTransformatorSwitch<Adapter> modelSwitch = new ReqToImpTransformatorSwitch<Adapter>() {
 		@Override
-		public Adapter caseVirtualNodeToRouter(VirtualNodeToRouter object) {
-			return createVirtualNodeToRouterAdapter();
+		public Adapter caseReqContainerToImplContainer(ReqContainerToImplContainer object) {
+			return createReqContainerToImplContainerAdapter();
 		}
 
 		@Override
@@ -79,18 +79,18 @@ public class ReqToImpTransformatorAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseVirtualNodeToComputer(VirtualNodeToComputer object) {
-			return createVirtualNodeToComputerAdapter();
-		}
-
-		@Override
-		public Adapter caseReqContainerToImplContainer(ReqContainerToImplContainer object) {
-			return createReqContainerToImplContainerAdapter();
-		}
-
-		@Override
 		public Adapter caseVirtualNodeToServer(VirtualNodeToServer object) {
 			return createVirtualNodeToServerAdapter();
+		}
+
+		@Override
+		public Adapter caseVirtualNodeToRouter(VirtualNodeToRouter object) {
+			return createVirtualNodeToRouterAdapter();
+		}
+
+		@Override
+		public Adapter caseVirtualNodeToComputer(VirtualNodeToComputer object) {
+			return createVirtualNodeToComputerAdapter();
 		}
 
 		@Override
@@ -118,16 +118,16 @@ public class ReqToImpTransformatorAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.VirtualNodeToRouter <em>Virtual Node To Router</em>}'.
+	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.ReqContainerToImplContainer <em>Req Container To Impl Container</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see ReqToImpTransformator.VirtualNodeToRouter
+	 * @see ReqToImpTransformator.ReqContainerToImplContainer
 	 * @generated
 	 */
-	public Adapter createVirtualNodeToRouterAdapter() {
+	public Adapter createReqContainerToImplContainerAdapter() {
 		return null;
 	}
 
@@ -146,34 +146,6 @@ public class ReqToImpTransformatorAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.VirtualNodeToComputer <em>Virtual Node To Computer</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ReqToImpTransformator.VirtualNodeToComputer
-	 * @generated
-	 */
-	public Adapter createVirtualNodeToComputerAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.ReqContainerToImplContainer <em>Req Container To Impl Container</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ReqToImpTransformator.ReqContainerToImplContainer
-	 * @generated
-	 */
-	public Adapter createReqContainerToImplContainerAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.VirtualNodeToServer <em>Virtual Node To Server</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -184,6 +156,34 @@ public class ReqToImpTransformatorAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createVirtualNodeToServerAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.VirtualNodeToRouter <em>Virtual Node To Router</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ReqToImpTransformator.VirtualNodeToRouter
+	 * @generated
+	 */
+	public Adapter createVirtualNodeToRouterAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ReqToImpTransformator.VirtualNodeToComputer <em>Virtual Node To Computer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ReqToImpTransformator.VirtualNodeToComputer
+	 * @generated
+	 */
+	public Adapter createVirtualNodeToComputerAdapter() {
 		return null;
 	}
 

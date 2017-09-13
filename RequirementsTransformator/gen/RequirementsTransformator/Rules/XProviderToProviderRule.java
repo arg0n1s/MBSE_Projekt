@@ -210,7 +210,7 @@ public interface XProviderToProviderRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_7(EMoflonEdge _edge_agents);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_43(EMoflonEdge _edge_agents);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -218,7 +218,7 @@ public interface XProviderToProviderRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_4(EMoflonEdge _edge_agents);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_31(EMoflonEdge _edge_agents);
 
 	/**
 	 * <!-- begin-user-doc -->

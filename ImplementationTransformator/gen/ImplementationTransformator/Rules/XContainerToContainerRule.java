@@ -105,8 +105,8 @@ public interface XContainerToContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_FWD(PerformRuleResult ruleresult, EObject container, EObject xContainerToContainer,
-			EObject xContainer);
+	void registerObjects_FWD(PerformRuleResult ruleresult, EObject xContainer, EObject xContainerToContainer,
+			EObject container);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -186,8 +186,8 @@ public interface XContainerToContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_BWD(PerformRuleResult ruleresult, EObject container, EObject xContainerToContainer,
-			EObject xContainer);
+	void registerObjects_BWD(PerformRuleResult ruleresult, EObject xContainer, EObject xContainerToContainer,
+			EObject container);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -203,7 +203,7 @@ public interface XContainerToContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_Container_1(Container container);
+	EObjectContainer isAppropriate_BWD_Container_5(Container container);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -211,7 +211,7 @@ public interface XContainerToContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_XContainer_1(XContainer xContainer);
+	EObjectContainer isAppropriate_FWD_XContainer_5(XContainer xContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -243,7 +243,7 @@ public interface XContainerToContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_CC(Container container, XContainer xContainer, Match sourceMatch, Match targetMatch);
+	CSP isApplicable_solveCsp_CC(XContainer xContainer, Container container, Match sourceMatch, Match targetMatch);
 
 	/**
 	 * <!-- begin-user-doc -->

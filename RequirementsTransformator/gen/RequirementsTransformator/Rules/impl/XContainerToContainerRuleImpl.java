@@ -155,42 +155,42 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 		XContainer xContainer = (XContainer) result1_bindingAndBlack[0];
 		//nothing CSP csp = (CSP) result1_bindingAndBlack[1];
 		Object[] result1_green = XContainerToContainerRuleImpl
-				.pattern_XContainerToContainerRule_1_1_performtransformation_greenFFBF(xContainer);
+				.pattern_XContainerToContainerRule_1_1_performtransformation_greenFBFF(xContainer);
 		XContainerToContainer xContainerToContainer = (XContainerToContainer) result1_green[0];
-		NetworkSpan virtualNode = (NetworkSpan) result1_green[1];
-		Container container = (Container) result1_green[3];
+		Container container = (Container) result1_green[2];
+		NetworkSpan virtualNode = (NetworkSpan) result1_green[3];
 
 		Object[] result2_black = XContainerToContainerRuleImpl
 				.pattern_XContainerToContainerRule_1_2_collecttranslatedelements_blackBBBB(xContainerToContainer,
-						virtualNode, xContainer, container);
+						xContainer, container, virtualNode);
 		if (result2_black == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[xContainerToContainer] = "
-					+ xContainerToContainer + ", " + "[virtualNode] = " + virtualNode + ", " + "[xContainer] = "
-					+ xContainer + ", " + "[container] = " + container + ".");
+					+ xContainerToContainer + ", " + "[xContainer] = " + xContainer + ", " + "[container] = "
+					+ container + ", " + "[virtualNode] = " + virtualNode + ".");
 		}
 		Object[] result2_green = XContainerToContainerRuleImpl
 				.pattern_XContainerToContainerRule_1_2_collecttranslatedelements_greenFBBBB(xContainerToContainer,
-						virtualNode, xContainer, container);
+						xContainer, container, virtualNode);
 		PerformRuleResult ruleresult = (PerformRuleResult) result2_green[0];
 
 		Object[] result3_black = XContainerToContainerRuleImpl
 				.pattern_XContainerToContainerRule_1_3_bookkeepingforedges_blackBBBBB(ruleresult, xContainerToContainer,
-						virtualNode, xContainer, container);
+						xContainer, container, virtualNode);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[ruleresult] = " + ruleresult
-					+ ", " + "[xContainerToContainer] = " + xContainerToContainer + ", " + "[virtualNode] = "
-					+ virtualNode + ", " + "[xContainer] = " + xContainer + ", " + "[container] = " + container + ".");
+					+ ", " + "[xContainerToContainer] = " + xContainerToContainer + ", " + "[xContainer] = "
+					+ xContainer + ", " + "[container] = " + container + ", " + "[virtualNode] = " + virtualNode + ".");
 		}
 		XContainerToContainerRuleImpl.pattern_XContainerToContainerRule_1_3_bookkeepingforedges_greenBBBBBFFF(
-				ruleresult, xContainerToContainer, virtualNode, xContainer, container);
+				ruleresult, xContainerToContainer, xContainer, container, virtualNode);
 		//nothing EMoflonEdge xContainerToContainer__xContainer____source = (EMoflonEdge) result3_green[5];
-		//nothing EMoflonEdge xContainerToContainer__container____target = (EMoflonEdge) result3_green[6];
-		//nothing EMoflonEdge container__virtualNode____networkSpan = (EMoflonEdge) result3_green[7];
+		//nothing EMoflonEdge container__virtualNode____networkSpan = (EMoflonEdge) result3_green[6];
+		//nothing EMoflonEdge xContainerToContainer__container____target = (EMoflonEdge) result3_green[7];
 
 		// 
 		// 
 		XContainerToContainerRuleImpl.pattern_XContainerToContainerRule_1_5_registerobjects_expressionBBBBBB(this,
-				ruleresult, xContainerToContainer, virtualNode, xContainer, container);
+				ruleresult, xContainerToContainer, xContainer, container, virtualNode);
 		return XContainerToContainerRuleImpl.pattern_XContainerToContainerRule_1_6_expressionFB(ruleresult);
 	}
 
@@ -338,12 +338,12 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjects_FWD(PerformRuleResult ruleresult, EObject xContainerToContainer, EObject virtualNode,
-			EObject xContainer, EObject container) {
+	public void registerObjects_FWD(PerformRuleResult ruleresult, EObject xContainerToContainer, EObject xContainer,
+			EObject container, EObject virtualNode) {
 		ruleresult.registerObject("xContainerToContainer", xContainerToContainer);
-		ruleresult.registerObject("virtualNode", virtualNode);
 		ruleresult.registerObject("xContainer", xContainer);
 		ruleresult.registerObject("container", container);
+		ruleresult.registerObject("virtualNode", virtualNode);
 
 	}
 
@@ -362,50 +362,50 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isAppropriate_BWD(Match match, NetworkSpan virtualNode, Container container) {
+	public boolean isAppropriate_BWD(Match match, Container container, NetworkSpan virtualNode) {
 
 		Object[] result1_black = XContainerToContainerRuleImpl
-				.pattern_XContainerToContainerRule_10_1_initialbindings_blackBBBB(this, match, virtualNode, container);
+				.pattern_XContainerToContainerRule_10_1_initialbindings_blackBBBB(this, match, container, virtualNode);
 		if (result1_black == null) {
 			throw new RuntimeException(
 					"Pattern matching failed." + " Variables: " + "[this] = " + this + ", " + "[match] = " + match
-							+ ", " + "[virtualNode] = " + virtualNode + ", " + "[container] = " + container + ".");
+							+ ", " + "[container] = " + container + ", " + "[virtualNode] = " + virtualNode + ".");
 		}
 
 		Object[] result2_bindingAndBlack = XContainerToContainerRuleImpl
-				.pattern_XContainerToContainerRule_10_2_SolveCSP_bindingAndBlackFBBBB(this, match, virtualNode,
-						container);
+				.pattern_XContainerToContainerRule_10_2_SolveCSP_bindingAndBlackFBBBB(this, match, container,
+						virtualNode);
 		if (result2_bindingAndBlack == null) {
 			throw new RuntimeException(
 					"Pattern matching failed." + " Variables: " + "[this] = " + this + ", " + "[match] = " + match
-							+ ", " + "[virtualNode] = " + virtualNode + ", " + "[container] = " + container + ".");
+							+ ", " + "[container] = " + container + ", " + "[virtualNode] = " + virtualNode + ".");
 		}
 		CSP csp = (CSP) result2_bindingAndBlack[0];
 		// 
 		if (XContainerToContainerRuleImpl.pattern_XContainerToContainerRule_10_3_CheckCSP_expressionFBB(this, csp)) {
 
 			Object[] result4_black = XContainerToContainerRuleImpl
-					.pattern_XContainerToContainerRule_10_4_collectelementstobetranslated_blackBBB(match, virtualNode,
-							container);
+					.pattern_XContainerToContainerRule_10_4_collectelementstobetranslated_blackBBB(match, container,
+							virtualNode);
 			if (result4_black == null) {
 				throw new RuntimeException("Pattern matching failed." + " Variables: " + "[match] = " + match + ", "
-						+ "[virtualNode] = " + virtualNode + ", " + "[container] = " + container + ".");
+						+ "[container] = " + container + ", " + "[virtualNode] = " + virtualNode + ".");
 			}
 			XContainerToContainerRuleImpl
-					.pattern_XContainerToContainerRule_10_4_collectelementstobetranslated_greenBBBF(match, virtualNode,
-							container);
+					.pattern_XContainerToContainerRule_10_4_collectelementstobetranslated_greenBBBF(match, container,
+							virtualNode);
 			//nothing EMoflonEdge container__virtualNode____networkSpan = (EMoflonEdge) result4_green[3];
 
 			Object[] result5_black = XContainerToContainerRuleImpl
-					.pattern_XContainerToContainerRule_10_5_collectcontextelements_blackBBB(match, virtualNode,
-							container);
+					.pattern_XContainerToContainerRule_10_5_collectcontextelements_blackBBB(match, container,
+							virtualNode);
 			if (result5_black == null) {
 				throw new RuntimeException("Pattern matching failed." + " Variables: " + "[match] = " + match + ", "
-						+ "[virtualNode] = " + virtualNode + ", " + "[container] = " + container + ".");
+						+ "[container] = " + container + ", " + "[virtualNode] = " + virtualNode + ".");
 			}
 			// 
 			XContainerToContainerRuleImpl.pattern_XContainerToContainerRule_10_6_registerobjectstomatch_expressionBBBB(
-					this, match, virtualNode, container);
+					this, match, container, virtualNode);
 			return XContainerToContainerRuleImpl.pattern_XContainerToContainerRule_10_7_expressionF();
 		} else {
 			return XContainerToContainerRuleImpl.pattern_XContainerToContainerRule_10_8_expressionF();
@@ -427,8 +427,8 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
 					+ "[isApplicableMatch] = " + isApplicableMatch + ".");
 		}
-		NetworkSpan virtualNode = (NetworkSpan) result1_bindingAndBlack[0];
-		Container container = (Container) result1_bindingAndBlack[1];
+		Container container = (Container) result1_bindingAndBlack[0];
+		NetworkSpan virtualNode = (NetworkSpan) result1_bindingAndBlack[1];
 		//nothing CSP csp = (CSP) result1_bindingAndBlack[2];
 		Object[] result1_green = XContainerToContainerRuleImpl
 				.pattern_XContainerToContainerRule_11_1_performtransformation_greenFFB(container);
@@ -437,35 +437,35 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 
 		Object[] result2_black = XContainerToContainerRuleImpl
 				.pattern_XContainerToContainerRule_11_2_collecttranslatedelements_blackBBBB(xContainerToContainer,
-						virtualNode, xContainer, container);
+						xContainer, container, virtualNode);
 		if (result2_black == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[xContainerToContainer] = "
-					+ xContainerToContainer + ", " + "[virtualNode] = " + virtualNode + ", " + "[xContainer] = "
-					+ xContainer + ", " + "[container] = " + container + ".");
+					+ xContainerToContainer + ", " + "[xContainer] = " + xContainer + ", " + "[container] = "
+					+ container + ", " + "[virtualNode] = " + virtualNode + ".");
 		}
 		Object[] result2_green = XContainerToContainerRuleImpl
 				.pattern_XContainerToContainerRule_11_2_collecttranslatedelements_greenFBBBB(xContainerToContainer,
-						virtualNode, xContainer, container);
+						xContainer, container, virtualNode);
 		PerformRuleResult ruleresult = (PerformRuleResult) result2_green[0];
 
 		Object[] result3_black = XContainerToContainerRuleImpl
 				.pattern_XContainerToContainerRule_11_3_bookkeepingforedges_blackBBBBB(ruleresult,
-						xContainerToContainer, virtualNode, xContainer, container);
+						xContainerToContainer, xContainer, container, virtualNode);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[ruleresult] = " + ruleresult
-					+ ", " + "[xContainerToContainer] = " + xContainerToContainer + ", " + "[virtualNode] = "
-					+ virtualNode + ", " + "[xContainer] = " + xContainer + ", " + "[container] = " + container + ".");
+					+ ", " + "[xContainerToContainer] = " + xContainerToContainer + ", " + "[xContainer] = "
+					+ xContainer + ", " + "[container] = " + container + ", " + "[virtualNode] = " + virtualNode + ".");
 		}
 		XContainerToContainerRuleImpl.pattern_XContainerToContainerRule_11_3_bookkeepingforedges_greenBBBBBFFF(
-				ruleresult, xContainerToContainer, virtualNode, xContainer, container);
+				ruleresult, xContainerToContainer, xContainer, container, virtualNode);
 		//nothing EMoflonEdge xContainerToContainer__xContainer____source = (EMoflonEdge) result3_green[5];
-		//nothing EMoflonEdge xContainerToContainer__container____target = (EMoflonEdge) result3_green[6];
-		//nothing EMoflonEdge container__virtualNode____networkSpan = (EMoflonEdge) result3_green[7];
+		//nothing EMoflonEdge container__virtualNode____networkSpan = (EMoflonEdge) result3_green[6];
+		//nothing EMoflonEdge xContainerToContainer__container____target = (EMoflonEdge) result3_green[7];
 
 		// 
 		// 
 		XContainerToContainerRuleImpl.pattern_XContainerToContainerRule_11_5_registerobjects_expressionBBBBBB(this,
-				ruleresult, xContainerToContainer, virtualNode, xContainer, container);
+				ruleresult, xContainerToContainer, xContainer, container, virtualNode);
 		return XContainerToContainerRuleImpl.pattern_XContainerToContainerRule_11_6_expressionFB(ruleresult);
 	}
 
@@ -494,25 +494,25 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 			throw new RuntimeException(
 					"Binding in node core match failed." + " Variables: " + "[match] = " + match + ".");
 		}
-		NetworkSpan virtualNode = (NetworkSpan) result2_binding[0];
-		Container container = (Container) result2_binding[1];
+		Container container = (Container) result2_binding[0];
+		NetworkSpan virtualNode = (NetworkSpan) result2_binding[1];
 		for (Object[] result2_black : XContainerToContainerRuleImpl
-				.pattern_XContainerToContainerRule_12_2_corematch_blackBBB(virtualNode, container, match)) {
+				.pattern_XContainerToContainerRule_12_2_corematch_blackBBB(container, virtualNode, match)) {
 			// ForEach 
 			for (Object[] result3_black : XContainerToContainerRuleImpl
-					.pattern_XContainerToContainerRule_12_3_findcontext_blackBB(virtualNode, container)) {
+					.pattern_XContainerToContainerRule_12_3_findcontext_blackBB(container, virtualNode)) {
 				Object[] result3_green = XContainerToContainerRuleImpl
-						.pattern_XContainerToContainerRule_12_3_findcontext_greenBBFF(virtualNode, container);
+						.pattern_XContainerToContainerRule_12_3_findcontext_greenBBFF(container, virtualNode);
 				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[2];
 				//nothing EMoflonEdge container__virtualNode____networkSpan = (EMoflonEdge) result3_green[3];
 
 				Object[] result4_bindingAndBlack = XContainerToContainerRuleImpl
 						.pattern_XContainerToContainerRule_12_4_solveCSP_bindingAndBlackFBBBB(this, isApplicableMatch,
-								virtualNode, container);
+								container, virtualNode);
 				if (result4_bindingAndBlack == null) {
 					throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
-							+ "[isApplicableMatch] = " + isApplicableMatch + ", " + "[virtualNode] = " + virtualNode
-							+ ", " + "[container] = " + container + ".");
+							+ "[isApplicableMatch] = " + isApplicableMatch + ", " + "[container] = " + container + ", "
+							+ "[virtualNode] = " + virtualNode + ".");
 				}
 				CSP csp = (CSP) result4_bindingAndBlack[0];
 				// 
@@ -543,9 +543,9 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjectsToMatch_BWD(Match match, NetworkSpan virtualNode, Container container) {
-		match.registerObject("virtualNode", virtualNode);
+	public void registerObjectsToMatch_BWD(Match match, Container container, NetworkSpan virtualNode) {
 		match.registerObject("container", container);
+		match.registerObject("virtualNode", virtualNode);
 
 	}
 
@@ -554,7 +554,7 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isAppropriate_solveCsp_BWD(Match match, NetworkSpan virtualNode, Container container) {// Create CSP
+	public CSP isAppropriate_solveCsp_BWD(Match match, Container container, NetworkSpan virtualNode) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 
 		// Create literals
@@ -583,8 +583,8 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, NetworkSpan virtualNode,
-			Container container) {// Create CSP
+	public CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Container container,
+			NetworkSpan virtualNode) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -599,8 +599,8 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 		// Solve CSP
 
 		// Snapshot pattern match on which CSP is solved
-		isApplicableMatch.registerObject("virtualNode", virtualNode);
 		isApplicableMatch.registerObject("container", container);
+		isApplicableMatch.registerObject("virtualNode", virtualNode);
 		return csp;
 	}
 
@@ -618,12 +618,12 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject xContainerToContainer, EObject virtualNode,
-			EObject xContainer, EObject container) {
+	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject xContainerToContainer, EObject xContainer,
+			EObject container, EObject virtualNode) {
 		ruleresult.registerObject("xContainerToContainer", xContainerToContainer);
-		ruleresult.registerObject("virtualNode", virtualNode);
 		ruleresult.registerObject("xContainer", xContainer);
 		ruleresult.registerObject("container", container);
+		ruleresult.registerObject("virtualNode", virtualNode);
 
 	}
 
@@ -634,10 +634,10 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	 */
 	public boolean checkTypes_BWD(Match match) {
 		return true
-				&& org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject("virtualNode").eClass())
-						.equals("requirements.NetworkSpan.")
 				&& org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject("container").eClass())
-						.equals("requirements.Container.");
+						.equals("requirements.Container.")
+				&& org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject("virtualNode").eClass())
+						.equals("requirements.NetworkSpan.");
 	}
 
 	/**
@@ -645,7 +645,7 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_XContainer_0(XContainer xContainer) {
+	public EObjectContainer isAppropriate_FWD_XContainer_4(XContainer xContainer) {
 
 		Object[] result1_bindingAndBlack = XContainerToContainerRuleImpl
 				.pattern_XContainerToContainerRule_20_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -701,7 +701,7 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_8(EMoflonEdge _edge_networkSpan) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_42(EMoflonEdge _edge_networkSpan) {
 
 		Object[] result1_bindingAndBlack = XContainerToContainerRuleImpl
 				.pattern_XContainerToContainerRule_21_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -718,8 +718,8 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 		// ForEach 
 		for (Object[] result2_black : XContainerToContainerRuleImpl
 				.pattern_XContainerToContainerRule_21_2_testcorematchandDECs_blackFFB(_edge_networkSpan)) {
-			NetworkSpan virtualNode = (NetworkSpan) result2_black[0];
-			Container container = (Container) result2_black[1];
+			Container container = (Container) result2_black[0];
+			NetworkSpan virtualNode = (NetworkSpan) result2_black[1];
 			Object[] result2_green = XContainerToContainerRuleImpl
 					.pattern_XContainerToContainerRule_21_2_testcorematchandDECs_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
@@ -727,7 +727,7 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 			// 
 			if (XContainerToContainerRuleImpl
 					.pattern_XContainerToContainerRule_21_3_bookkeepingwithgenericisAppropriatemethod_expressionFBBBB(
-							this, match, virtualNode, container)) {
+							this, match, container, virtualNode)) {
 				// 
 				if (XContainerToContainerRuleImpl
 						.pattern_XContainerToContainerRule_21_4_Ensurethatthecorrecttypesofelementsarematched_expressionFBB(
@@ -836,17 +836,17 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[sourceMatch] = " + sourceMatch
 					+ ", " + "[targetMatch] = " + targetMatch + ".");
 		}
-		NetworkSpan virtualNode = (NetworkSpan) result2_bindingAndBlack[0];
-		XContainer xContainer = (XContainer) result2_bindingAndBlack[1];
-		Container container = (Container) result2_bindingAndBlack[2];
+		XContainer xContainer = (XContainer) result2_bindingAndBlack[0];
+		Container container = (Container) result2_bindingAndBlack[1];
+		NetworkSpan virtualNode = (NetworkSpan) result2_bindingAndBlack[2];
 
 		Object[] result3_bindingAndBlack = XContainerToContainerRuleImpl
-				.pattern_XContainerToContainerRule_24_3_solvecsp_bindingAndBlackFBBBBBB(this, virtualNode, xContainer,
-						container, sourceMatch, targetMatch);
+				.pattern_XContainerToContainerRule_24_3_solvecsp_bindingAndBlackFBBBBBB(this, xContainer, container,
+						virtualNode, sourceMatch, targetMatch);
 		if (result3_bindingAndBlack == null) {
 			throw new RuntimeException(
-					"Pattern matching failed." + " Variables: " + "[this] = " + this + ", " + "[virtualNode] = "
-							+ virtualNode + ", " + "[xContainer] = " + xContainer + ", " + "[container] = " + container
+					"Pattern matching failed." + " Variables: " + "[this] = " + this + ", " + "[xContainer] = "
+							+ xContainer + ", " + "[container] = " + container + ", " + "[virtualNode] = " + virtualNode
 							+ ", " + "[sourceMatch] = " + sourceMatch + ", " + "[targetMatch] = " + targetMatch + ".");
 		}
 		CSP csp = (CSP) result3_bindingAndBlack[0];
@@ -860,11 +860,11 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 				CCMatch ccMatch = (CCMatch) result5_green[2];
 
 				Object[] result6_black = XContainerToContainerRuleImpl
-						.pattern_XContainerToContainerRule_24_6_createcorrespondence_blackBBBB(virtualNode, xContainer,
-								container, ccMatch);
+						.pattern_XContainerToContainerRule_24_6_createcorrespondence_blackBBBB(xContainer, container,
+								virtualNode, ccMatch);
 				if (result6_black == null) {
-					throw new RuntimeException("Pattern matching failed." + " Variables: " + "[virtualNode] = "
-							+ virtualNode + ", " + "[xContainer] = " + xContainer + ", " + "[container] = " + container
+					throw new RuntimeException("Pattern matching failed." + " Variables: " + "[xContainer] = "
+							+ xContainer + ", " + "[container] = " + container + ", " + "[virtualNode] = " + virtualNode
 							+ ", " + "[ccMatch] = " + ccMatch + ".");
 				}
 				XContainerToContainerRuleImpl.pattern_XContainerToContainerRule_24_6_createcorrespondence_greenFBBB(
@@ -892,7 +892,7 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isApplicable_solveCsp_CC(NetworkSpan virtualNode, XContainer xContainer, Container container,
+	public CSP isApplicable_solveCsp_CC(XContainer xContainer, Container container, NetworkSpan virtualNode,
 			Match sourceMatch, Match targetMatch) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 
@@ -938,9 +938,9 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean checkDEC_BWD(NetworkSpan virtualNode, Container container) {// 
+	public boolean checkDEC_BWD(Container container, NetworkSpan virtualNode) {// 
 		Object[] result1_black = XContainerToContainerRuleImpl
-				.pattern_XContainerToContainerRule_28_1_matchtggpattern_blackBB(virtualNode, container);
+				.pattern_XContainerToContainerRule_28_1_matchtggpattern_blackBB(container, virtualNode);
 		if (result1_black != null) {
 			return XContainerToContainerRuleImpl.pattern_XContainerToContainerRule_28_2_expressionF();
 		} else {
@@ -992,9 +992,9 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 				}
 				XContainerToContainerRuleImpl.pattern_XContainerToContainerRule_29_6_perform_greenFFFFB(ruleResult);
 				//nothing XContainerToContainer xContainerToContainer = (XContainerToContainer) result6_green[0];
-				//nothing NetworkSpan virtualNode = (NetworkSpan) result6_green[1];
-				//nothing XContainer xContainer = (XContainer) result6_green[2];
-				//nothing Container container = (Container) result6_green[3];
+				//nothing XContainer xContainer = (XContainer) result6_green[1];
+				//nothing Container container = (Container) result6_green[2];
+				//nothing NetworkSpan virtualNode = (NetworkSpan) result6_green[3];
 
 			} else {
 			}
@@ -1067,25 +1067,25 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 			return null;
 		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___CHECK_TYPES_FWD__MATCH:
 			return checkTypes_FWD((Match) arguments.get(0));
-		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_BWD__MATCH_NETWORKSPAN_CONTAINER:
-			return isAppropriate_BWD((Match) arguments.get(0), (NetworkSpan) arguments.get(1),
-					(Container) arguments.get(2));
+		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_BWD__MATCH_CONTAINER_NETWORKSPAN:
+			return isAppropriate_BWD((Match) arguments.get(0), (Container) arguments.get(1),
+					(NetworkSpan) arguments.get(2));
 		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___PERFORM_BWD__ISAPPLICABLEMATCH:
 			return perform_BWD((IsApplicableMatch) arguments.get(0));
 		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_BWD__MATCH:
 			return isApplicable_BWD((Match) arguments.get(0));
-		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_NETWORKSPAN_CONTAINER:
-			registerObjectsToMatch_BWD((Match) arguments.get(0), (NetworkSpan) arguments.get(1),
-					(Container) arguments.get(2));
+		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_CONTAINER_NETWORKSPAN:
+			registerObjectsToMatch_BWD((Match) arguments.get(0), (Container) arguments.get(1),
+					(NetworkSpan) arguments.get(2));
 			return null;
-		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_NETWORKSPAN_CONTAINER:
-			return isAppropriate_solveCsp_BWD((Match) arguments.get(0), (NetworkSpan) arguments.get(1),
-					(Container) arguments.get(2));
+		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_CONTAINER_NETWORKSPAN:
+			return isAppropriate_solveCsp_BWD((Match) arguments.get(0), (Container) arguments.get(1),
+					(NetworkSpan) arguments.get(2));
 		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_CHECK_CSP_BWD__CSP:
 			return isAppropriate_checkCsp_BWD((CSP) arguments.get(0));
-		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_NETWORKSPAN_CONTAINER:
-			return isApplicable_solveCsp_BWD((IsApplicableMatch) arguments.get(0), (NetworkSpan) arguments.get(1),
-					(Container) arguments.get(2));
+		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_CONTAINER_NETWORKSPAN:
+			return isApplicable_solveCsp_BWD((IsApplicableMatch) arguments.get(0), (Container) arguments.get(1),
+					(NetworkSpan) arguments.get(2));
 		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_CHECK_CSP_BWD__CSP:
 			return isApplicable_checkCsp_BWD((CSP) arguments.get(0));
 		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
@@ -1094,25 +1094,25 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 			return null;
 		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_FWD_XCONTAINER_0__XCONTAINER:
-			return isAppropriate_FWD_XContainer_0((XContainer) arguments.get(0));
-		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_8__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_8((EMoflonEdge) arguments.get(0));
+		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_FWD_XCONTAINER_4__XCONTAINER:
+			return isAppropriate_FWD_XContainer_4((XContainer) arguments.get(0));
+		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_42__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_42((EMoflonEdge) arguments.get(0));
 		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
 			return checkAttributes_BWD((TripleMatch) arguments.get(0));
 		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_CC__MATCH_MATCH:
 			return isApplicable_CC((Match) arguments.get(0), (Match) arguments.get(1));
-		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_SOLVE_CSP_CC__NETWORKSPAN_XCONTAINER_CONTAINER_MATCH_MATCH:
-			return isApplicable_solveCsp_CC((NetworkSpan) arguments.get(0), (XContainer) arguments.get(1),
-					(Container) arguments.get(2), (Match) arguments.get(3), (Match) arguments.get(4));
+		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_SOLVE_CSP_CC__XCONTAINER_CONTAINER_NETWORKSPAN_MATCH_MATCH:
+			return isApplicable_solveCsp_CC((XContainer) arguments.get(0), (Container) arguments.get(1),
+					(NetworkSpan) arguments.get(2), (Match) arguments.get(3), (Match) arguments.get(4));
 		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_CHECK_CSP_CC__CSP:
 			return isApplicable_checkCsp_CC((CSP) arguments.get(0));
 		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___CHECK_DEC_FWD__XCONTAINER:
 			return checkDEC_FWD((XContainer) arguments.get(0));
-		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___CHECK_DEC_BWD__NETWORKSPAN_CONTAINER:
-			return checkDEC_BWD((NetworkSpan) arguments.get(0), (Container) arguments.get(1));
+		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___CHECK_DEC_BWD__CONTAINER_NETWORKSPAN:
+			return checkDEC_BWD((Container) arguments.get(0), (NetworkSpan) arguments.get(1));
 		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___GENERATE_MODEL__RULEENTRYCONTAINER:
 			return generateModel((RuleEntryContainer) arguments.get(0));
 		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_MODELGENERATORRULERESULT:
@@ -1239,46 +1239,46 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 		return null;
 	}
 
-	public static final Object[] pattern_XContainerToContainerRule_1_1_performtransformation_greenFFBF(
+	public static final Object[] pattern_XContainerToContainerRule_1_1_performtransformation_greenFBFF(
 			XContainer xContainer) {
 		XContainerToContainer xContainerToContainer = RequirementsTransformatorFactory.eINSTANCE
 				.createXContainerToContainer();
-		NetworkSpan virtualNode = RequirementsFactory.eINSTANCE.createNetworkSpan();
 		Container container = RequirementsFactory.eINSTANCE.createContainer();
+		NetworkSpan virtualNode = RequirementsFactory.eINSTANCE.createNetworkSpan();
 		xContainerToContainer.setSource(xContainer);
 		xContainerToContainer.setTarget(container);
 		container.setNetworkSpan(virtualNode);
-		return new Object[] { xContainerToContainer, virtualNode, xContainer, container };
+		return new Object[] { xContainerToContainer, xContainer, container, virtualNode };
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_1_2_collecttranslatedelements_blackBBBB(
-			XContainerToContainer xContainerToContainer, NetworkSpan virtualNode, XContainer xContainer,
-			Container container) {
-		return new Object[] { xContainerToContainer, virtualNode, xContainer, container };
+			XContainerToContainer xContainerToContainer, XContainer xContainer, Container container,
+			NetworkSpan virtualNode) {
+		return new Object[] { xContainerToContainer, xContainer, container, virtualNode };
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_1_2_collecttranslatedelements_greenFBBBB(
-			XContainerToContainer xContainerToContainer, NetworkSpan virtualNode, XContainer xContainer,
-			Container container) {
+			XContainerToContainer xContainerToContainer, XContainer xContainer, Container container,
+			NetworkSpan virtualNode) {
 		PerformRuleResult ruleresult = RuntimeFactory.eINSTANCE.createPerformRuleResult();
 		ruleresult.getCreatedLinkElements().add(xContainerToContainer);
-		ruleresult.getCreatedElements().add(virtualNode);
 		ruleresult.getTranslatedElements().add(xContainer);
 		ruleresult.getCreatedElements().add(container);
-		return new Object[] { ruleresult, xContainerToContainer, virtualNode, xContainer, container };
+		ruleresult.getCreatedElements().add(virtualNode);
+		return new Object[] { ruleresult, xContainerToContainer, xContainer, container, virtualNode };
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_1_3_bookkeepingforedges_blackBBBBB(
-			PerformRuleResult ruleresult, EObject xContainerToContainer, EObject virtualNode, EObject xContainer,
-			EObject container) {
-		if (!virtualNode.equals(xContainerToContainer)) {
-			if (!virtualNode.equals(xContainer)) {
-				if (!xContainer.equals(xContainerToContainer)) {
-					if (!container.equals(xContainerToContainer)) {
-						if (!container.equals(virtualNode)) {
-							if (!container.equals(xContainer)) {
-								return new Object[] { ruleresult, xContainerToContainer, virtualNode, xContainer,
-										container };
+			PerformRuleResult ruleresult, EObject xContainerToContainer, EObject xContainer, EObject container,
+			EObject virtualNode) {
+		if (!xContainer.equals(xContainerToContainer)) {
+			if (!container.equals(xContainerToContainer)) {
+				if (!container.equals(xContainer)) {
+					if (!container.equals(virtualNode)) {
+						if (!virtualNode.equals(xContainerToContainer)) {
+							if (!virtualNode.equals(xContainer)) {
+								return new Object[] { ruleresult, xContainerToContainer, xContainer, container,
+										virtualNode };
 							}
 						}
 					}
@@ -1289,37 +1289,37 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_1_3_bookkeepingforedges_greenBBBBBFFF(
-			PerformRuleResult ruleresult, EObject xContainerToContainer, EObject virtualNode, EObject xContainer,
-			EObject container) {
+			PerformRuleResult ruleresult, EObject xContainerToContainer, EObject xContainer, EObject container,
+			EObject virtualNode) {
 		EMoflonEdge xContainerToContainer__xContainer____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xContainerToContainer__container____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge container__virtualNode____networkSpan = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xContainerToContainer__container____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String ruleresult_ruleName_prime = "XContainerToContainerRule";
 		String xContainerToContainer__xContainer____source_name_prime = "source";
-		String xContainerToContainer__container____target_name_prime = "target";
 		String container__virtualNode____networkSpan_name_prime = "networkSpan";
+		String xContainerToContainer__container____target_name_prime = "target";
 		xContainerToContainer__xContainer____source.setSrc(xContainerToContainer);
 		xContainerToContainer__xContainer____source.setTrg(xContainer);
 		ruleresult.getCreatedEdges().add(xContainerToContainer__xContainer____source);
-		xContainerToContainer__container____target.setSrc(xContainerToContainer);
-		xContainerToContainer__container____target.setTrg(container);
-		ruleresult.getCreatedEdges().add(xContainerToContainer__container____target);
 		container__virtualNode____networkSpan.setSrc(container);
 		container__virtualNode____networkSpan.setTrg(virtualNode);
 		ruleresult.getCreatedEdges().add(container__virtualNode____networkSpan);
+		xContainerToContainer__container____target.setSrc(xContainerToContainer);
+		xContainerToContainer__container____target.setTrg(container);
+		ruleresult.getCreatedEdges().add(xContainerToContainer__container____target);
 		ruleresult.setRuleName(ruleresult_ruleName_prime);
 		xContainerToContainer__xContainer____source.setName(xContainerToContainer__xContainer____source_name_prime);
-		xContainerToContainer__container____target.setName(xContainerToContainer__container____target_name_prime);
 		container__virtualNode____networkSpan.setName(container__virtualNode____networkSpan_name_prime);
-		return new Object[] { ruleresult, xContainerToContainer, virtualNode, xContainer, container,
-				xContainerToContainer__xContainer____source, xContainerToContainer__container____target,
-				container__virtualNode____networkSpan };
+		xContainerToContainer__container____target.setName(xContainerToContainer__container____target_name_prime);
+		return new Object[] { ruleresult, xContainerToContainer, xContainer, container, virtualNode,
+				xContainerToContainer__xContainer____source, container__virtualNode____networkSpan,
+				xContainerToContainer__container____target };
 	}
 
 	public static final void pattern_XContainerToContainerRule_1_5_registerobjects_expressionBBBBBB(
 			XContainerToContainerRule _this, PerformRuleResult ruleresult, EObject xContainerToContainer,
-			EObject virtualNode, EObject xContainer, EObject container) {
-		_this.registerObjects_FWD(ruleresult, xContainerToContainer, virtualNode, xContainer, container);
+			EObject xContainer, EObject container, EObject virtualNode) {
+		_this.registerObjects_FWD(ruleresult, xContainerToContainer, xContainer, container, virtualNode);
 
 	}
 
@@ -1470,16 +1470,16 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_10_1_initialbindings_blackBBBB(
-			XContainerToContainerRule _this, Match match, NetworkSpan virtualNode, Container container) {
-		return new Object[] { _this, match, virtualNode, container };
+			XContainerToContainerRule _this, Match match, Container container, NetworkSpan virtualNode) {
+		return new Object[] { _this, match, container, virtualNode };
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_10_2_SolveCSP_bindingFBBBB(
-			XContainerToContainerRule _this, Match match, NetworkSpan virtualNode, Container container) {
-		CSP _localVariable_0 = _this.isAppropriate_solveCsp_BWD(match, virtualNode, container);
+			XContainerToContainerRule _this, Match match, Container container, NetworkSpan virtualNode) {
+		CSP _localVariable_0 = _this.isAppropriate_solveCsp_BWD(match, container, virtualNode);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, match, virtualNode, container };
+			return new Object[] { csp, _this, match, container, virtualNode };
 		}
 		return null;
 	}
@@ -1489,9 +1489,9 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_10_2_SolveCSP_bindingAndBlackFBBBB(
-			XContainerToContainerRule _this, Match match, NetworkSpan virtualNode, Container container) {
+			XContainerToContainerRule _this, Match match, Container container, NetworkSpan virtualNode) {
 		Object[] result_pattern_XContainerToContainerRule_10_2_SolveCSP_binding = pattern_XContainerToContainerRule_10_2_SolveCSP_bindingFBBBB(
-				_this, match, virtualNode, container);
+				_this, match, container, virtualNode);
 		if (result_pattern_XContainerToContainerRule_10_2_SolveCSP_binding != null) {
 			CSP csp = (CSP) result_pattern_XContainerToContainerRule_10_2_SolveCSP_binding[0];
 
@@ -1499,7 +1499,7 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 					csp);
 			if (result_pattern_XContainerToContainerRule_10_2_SolveCSP_black != null) {
 
-				return new Object[] { csp, _this, match, virtualNode, container };
+				return new Object[] { csp, _this, match, container, virtualNode };
 			}
 		}
 		return null;
@@ -1513,31 +1513,31 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_10_4_collectelementstobetranslated_blackBBB(
-			Match match, NetworkSpan virtualNode, Container container) {
-		return new Object[] { match, virtualNode, container };
+			Match match, Container container, NetworkSpan virtualNode) {
+		return new Object[] { match, container, virtualNode };
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_10_4_collectelementstobetranslated_greenBBBF(
-			Match match, NetworkSpan virtualNode, Container container) {
+			Match match, Container container, NetworkSpan virtualNode) {
 		EMoflonEdge container__virtualNode____networkSpan = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		match.getToBeTranslatedNodes().add(virtualNode);
 		match.getToBeTranslatedNodes().add(container);
+		match.getToBeTranslatedNodes().add(virtualNode);
 		String container__virtualNode____networkSpan_name_prime = "networkSpan";
 		container__virtualNode____networkSpan.setSrc(container);
 		container__virtualNode____networkSpan.setTrg(virtualNode);
 		match.getToBeTranslatedEdges().add(container__virtualNode____networkSpan);
 		container__virtualNode____networkSpan.setName(container__virtualNode____networkSpan_name_prime);
-		return new Object[] { match, virtualNode, container, container__virtualNode____networkSpan };
+		return new Object[] { match, container, virtualNode, container__virtualNode____networkSpan };
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_10_5_collectcontextelements_blackBBB(Match match,
-			NetworkSpan virtualNode, Container container) {
-		return new Object[] { match, virtualNode, container };
+			Container container, NetworkSpan virtualNode) {
+		return new Object[] { match, container, virtualNode };
 	}
 
 	public static final void pattern_XContainerToContainerRule_10_6_registerobjectstomatch_expressionBBBB(
-			XContainerToContainerRule _this, Match match, NetworkSpan virtualNode, Container container) {
-		_this.registerObjectsToMatch_BWD(match, virtualNode, container);
+			XContainerToContainerRule _this, Match match, Container container, NetworkSpan virtualNode) {
+		_this.registerObjectsToMatch_BWD(match, container, virtualNode);
 
 	}
 
@@ -1553,27 +1553,27 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 
 	public static final Object[] pattern_XContainerToContainerRule_11_1_performtransformation_bindingFFB(
 			IsApplicableMatch isApplicableMatch) {
-		EObject _localVariable_0 = isApplicableMatch.getObject("virtualNode");
-		EObject _localVariable_1 = isApplicableMatch.getObject("container");
-		EObject tmpVirtualNode = _localVariable_0;
-		EObject tmpContainer = _localVariable_1;
-		if (tmpVirtualNode instanceof NetworkSpan) {
-			NetworkSpan virtualNode = (NetworkSpan) tmpVirtualNode;
-			if (tmpContainer instanceof Container) {
-				Container container = (Container) tmpContainer;
-				return new Object[] { virtualNode, container, isApplicableMatch };
+		EObject _localVariable_0 = isApplicableMatch.getObject("container");
+		EObject _localVariable_1 = isApplicableMatch.getObject("virtualNode");
+		EObject tmpContainer = _localVariable_0;
+		EObject tmpVirtualNode = _localVariable_1;
+		if (tmpContainer instanceof Container) {
+			Container container = (Container) tmpContainer;
+			if (tmpVirtualNode instanceof NetworkSpan) {
+				NetworkSpan virtualNode = (NetworkSpan) tmpVirtualNode;
+				return new Object[] { container, virtualNode, isApplicableMatch };
 			}
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_11_1_performtransformation_blackBBFBB(
-			NetworkSpan virtualNode, Container container, XContainerToContainerRule _this,
+			Container container, NetworkSpan virtualNode, XContainerToContainerRule _this,
 			IsApplicableMatch isApplicableMatch) {
 		for (EObject tmpCsp : isApplicableMatch.getAttributeInfo()) {
 			if (tmpCsp instanceof CSP) {
 				CSP csp = (CSP) tmpCsp;
-				return new Object[] { virtualNode, container, csp, _this, isApplicableMatch };
+				return new Object[] { container, virtualNode, csp, _this, isApplicableMatch };
 			}
 		}
 		return null;
@@ -1584,15 +1584,15 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 		Object[] result_pattern_XContainerToContainerRule_11_1_performtransformation_binding = pattern_XContainerToContainerRule_11_1_performtransformation_bindingFFB(
 				isApplicableMatch);
 		if (result_pattern_XContainerToContainerRule_11_1_performtransformation_binding != null) {
-			NetworkSpan virtualNode = (NetworkSpan) result_pattern_XContainerToContainerRule_11_1_performtransformation_binding[0];
-			Container container = (Container) result_pattern_XContainerToContainerRule_11_1_performtransformation_binding[1];
+			Container container = (Container) result_pattern_XContainerToContainerRule_11_1_performtransformation_binding[0];
+			NetworkSpan virtualNode = (NetworkSpan) result_pattern_XContainerToContainerRule_11_1_performtransformation_binding[1];
 
 			Object[] result_pattern_XContainerToContainerRule_11_1_performtransformation_black = pattern_XContainerToContainerRule_11_1_performtransformation_blackBBFBB(
-					virtualNode, container, _this, isApplicableMatch);
+					container, virtualNode, _this, isApplicableMatch);
 			if (result_pattern_XContainerToContainerRule_11_1_performtransformation_black != null) {
 				CSP csp = (CSP) result_pattern_XContainerToContainerRule_11_1_performtransformation_black[2];
 
-				return new Object[] { virtualNode, container, csp, _this, isApplicableMatch };
+				return new Object[] { container, virtualNode, csp, _this, isApplicableMatch };
 			}
 		}
 		return null;
@@ -1609,33 +1609,33 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_11_2_collecttranslatedelements_blackBBBB(
-			XContainerToContainer xContainerToContainer, NetworkSpan virtualNode, XContainer xContainer,
-			Container container) {
-		return new Object[] { xContainerToContainer, virtualNode, xContainer, container };
+			XContainerToContainer xContainerToContainer, XContainer xContainer, Container container,
+			NetworkSpan virtualNode) {
+		return new Object[] { xContainerToContainer, xContainer, container, virtualNode };
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_11_2_collecttranslatedelements_greenFBBBB(
-			XContainerToContainer xContainerToContainer, NetworkSpan virtualNode, XContainer xContainer,
-			Container container) {
+			XContainerToContainer xContainerToContainer, XContainer xContainer, Container container,
+			NetworkSpan virtualNode) {
 		PerformRuleResult ruleresult = RuntimeFactory.eINSTANCE.createPerformRuleResult();
 		ruleresult.getCreatedLinkElements().add(xContainerToContainer);
-		ruleresult.getTranslatedElements().add(virtualNode);
 		ruleresult.getCreatedElements().add(xContainer);
 		ruleresult.getTranslatedElements().add(container);
-		return new Object[] { ruleresult, xContainerToContainer, virtualNode, xContainer, container };
+		ruleresult.getTranslatedElements().add(virtualNode);
+		return new Object[] { ruleresult, xContainerToContainer, xContainer, container, virtualNode };
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_11_3_bookkeepingforedges_blackBBBBB(
-			PerformRuleResult ruleresult, EObject xContainerToContainer, EObject virtualNode, EObject xContainer,
-			EObject container) {
-		if (!virtualNode.equals(xContainerToContainer)) {
-			if (!virtualNode.equals(xContainer)) {
-				if (!xContainer.equals(xContainerToContainer)) {
-					if (!container.equals(xContainerToContainer)) {
-						if (!container.equals(virtualNode)) {
-							if (!container.equals(xContainer)) {
-								return new Object[] { ruleresult, xContainerToContainer, virtualNode, xContainer,
-										container };
+			PerformRuleResult ruleresult, EObject xContainerToContainer, EObject xContainer, EObject container,
+			EObject virtualNode) {
+		if (!xContainer.equals(xContainerToContainer)) {
+			if (!container.equals(xContainerToContainer)) {
+				if (!container.equals(xContainer)) {
+					if (!container.equals(virtualNode)) {
+						if (!virtualNode.equals(xContainerToContainer)) {
+							if (!virtualNode.equals(xContainer)) {
+								return new Object[] { ruleresult, xContainerToContainer, xContainer, container,
+										virtualNode };
 							}
 						}
 					}
@@ -1646,37 +1646,37 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_11_3_bookkeepingforedges_greenBBBBBFFF(
-			PerformRuleResult ruleresult, EObject xContainerToContainer, EObject virtualNode, EObject xContainer,
-			EObject container) {
+			PerformRuleResult ruleresult, EObject xContainerToContainer, EObject xContainer, EObject container,
+			EObject virtualNode) {
 		EMoflonEdge xContainerToContainer__xContainer____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xContainerToContainer__container____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge container__virtualNode____networkSpan = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xContainerToContainer__container____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String ruleresult_ruleName_prime = "XContainerToContainerRule";
 		String xContainerToContainer__xContainer____source_name_prime = "source";
-		String xContainerToContainer__container____target_name_prime = "target";
 		String container__virtualNode____networkSpan_name_prime = "networkSpan";
+		String xContainerToContainer__container____target_name_prime = "target";
 		xContainerToContainer__xContainer____source.setSrc(xContainerToContainer);
 		xContainerToContainer__xContainer____source.setTrg(xContainer);
 		ruleresult.getCreatedEdges().add(xContainerToContainer__xContainer____source);
-		xContainerToContainer__container____target.setSrc(xContainerToContainer);
-		xContainerToContainer__container____target.setTrg(container);
-		ruleresult.getCreatedEdges().add(xContainerToContainer__container____target);
 		container__virtualNode____networkSpan.setSrc(container);
 		container__virtualNode____networkSpan.setTrg(virtualNode);
 		ruleresult.getTranslatedEdges().add(container__virtualNode____networkSpan);
+		xContainerToContainer__container____target.setSrc(xContainerToContainer);
+		xContainerToContainer__container____target.setTrg(container);
+		ruleresult.getCreatedEdges().add(xContainerToContainer__container____target);
 		ruleresult.setRuleName(ruleresult_ruleName_prime);
 		xContainerToContainer__xContainer____source.setName(xContainerToContainer__xContainer____source_name_prime);
-		xContainerToContainer__container____target.setName(xContainerToContainer__container____target_name_prime);
 		container__virtualNode____networkSpan.setName(container__virtualNode____networkSpan_name_prime);
-		return new Object[] { ruleresult, xContainerToContainer, virtualNode, xContainer, container,
-				xContainerToContainer__xContainer____source, xContainerToContainer__container____target,
-				container__virtualNode____networkSpan };
+		xContainerToContainer__container____target.setName(xContainerToContainer__container____target_name_prime);
+		return new Object[] { ruleresult, xContainerToContainer, xContainer, container, virtualNode,
+				xContainerToContainer__xContainer____source, container__virtualNode____networkSpan,
+				xContainerToContainer__container____target };
 	}
 
 	public static final void pattern_XContainerToContainerRule_11_5_registerobjects_expressionBBBBBB(
 			XContainerToContainerRule _this, PerformRuleResult ruleresult, EObject xContainerToContainer,
-			EObject virtualNode, EObject xContainer, EObject container) {
-		_this.registerObjects_BWD(ruleresult, xContainerToContainer, virtualNode, xContainer, container);
+			EObject xContainer, EObject container, EObject virtualNode) {
+		_this.registerObjects_BWD(ruleresult, xContainerToContainer, xContainer, container, virtualNode);
 
 	}
 
@@ -1738,57 +1738,57 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_12_2_corematch_bindingFFB(Match match) {
-		EObject _localVariable_0 = match.getObject("virtualNode");
-		EObject _localVariable_1 = match.getObject("container");
-		EObject tmpVirtualNode = _localVariable_0;
-		EObject tmpContainer = _localVariable_1;
-		if (tmpVirtualNode instanceof NetworkSpan) {
-			NetworkSpan virtualNode = (NetworkSpan) tmpVirtualNode;
-			if (tmpContainer instanceof Container) {
-				Container container = (Container) tmpContainer;
-				return new Object[] { virtualNode, container, match };
+		EObject _localVariable_0 = match.getObject("container");
+		EObject _localVariable_1 = match.getObject("virtualNode");
+		EObject tmpContainer = _localVariable_0;
+		EObject tmpVirtualNode = _localVariable_1;
+		if (tmpContainer instanceof Container) {
+			Container container = (Container) tmpContainer;
+			if (tmpVirtualNode instanceof NetworkSpan) {
+				NetworkSpan virtualNode = (NetworkSpan) tmpVirtualNode;
+				return new Object[] { container, virtualNode, match };
 			}
 		}
 		return null;
 	}
 
 	public static final Iterable<Object[]> pattern_XContainerToContainerRule_12_2_corematch_blackBBB(
-			NetworkSpan virtualNode, Container container, Match match) {
+			Container container, NetworkSpan virtualNode, Match match) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		_result.add(new Object[] { virtualNode, container, match });
+		_result.add(new Object[] { container, virtualNode, match });
 		return _result;
 	}
 
 	public static final Iterable<Object[]> pattern_XContainerToContainerRule_12_3_findcontext_blackBB(
-			NetworkSpan virtualNode, Container container) {
+			Container container, NetworkSpan virtualNode) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		if (virtualNode.equals(container.getNetworkSpan())) {
-			_result.add(new Object[] { virtualNode, container });
+			_result.add(new Object[] { container, virtualNode });
 		}
 		return _result;
 	}
 
-	public static final Object[] pattern_XContainerToContainerRule_12_3_findcontext_greenBBFF(NetworkSpan virtualNode,
-			Container container) {
+	public static final Object[] pattern_XContainerToContainerRule_12_3_findcontext_greenBBFF(Container container,
+			NetworkSpan virtualNode) {
 		IsApplicableMatch isApplicableMatch = RuntimeFactory.eINSTANCE.createIsApplicableMatch();
 		EMoflonEdge container__virtualNode____networkSpan = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String container__virtualNode____networkSpan_name_prime = "networkSpan";
-		isApplicableMatch.getAllContextElements().add(virtualNode);
 		isApplicableMatch.getAllContextElements().add(container);
+		isApplicableMatch.getAllContextElements().add(virtualNode);
 		container__virtualNode____networkSpan.setSrc(container);
 		container__virtualNode____networkSpan.setTrg(virtualNode);
 		isApplicableMatch.getAllContextElements().add(container__virtualNode____networkSpan);
 		container__virtualNode____networkSpan.setName(container__virtualNode____networkSpan_name_prime);
-		return new Object[] { virtualNode, container, isApplicableMatch, container__virtualNode____networkSpan };
+		return new Object[] { container, virtualNode, isApplicableMatch, container__virtualNode____networkSpan };
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_12_4_solveCSP_bindingFBBBB(
-			XContainerToContainerRule _this, IsApplicableMatch isApplicableMatch, NetworkSpan virtualNode,
-			Container container) {
-		CSP _localVariable_0 = _this.isApplicable_solveCsp_BWD(isApplicableMatch, virtualNode, container);
+			XContainerToContainerRule _this, IsApplicableMatch isApplicableMatch, Container container,
+			NetworkSpan virtualNode) {
+		CSP _localVariable_0 = _this.isApplicable_solveCsp_BWD(isApplicableMatch, container, virtualNode);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, virtualNode, container };
+			return new Object[] { csp, _this, isApplicableMatch, container, virtualNode };
 		}
 		return null;
 	}
@@ -1798,10 +1798,10 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_12_4_solveCSP_bindingAndBlackFBBBB(
-			XContainerToContainerRule _this, IsApplicableMatch isApplicableMatch, NetworkSpan virtualNode,
-			Container container) {
+			XContainerToContainerRule _this, IsApplicableMatch isApplicableMatch, Container container,
+			NetworkSpan virtualNode) {
 		Object[] result_pattern_XContainerToContainerRule_12_4_solveCSP_binding = pattern_XContainerToContainerRule_12_4_solveCSP_bindingFBBBB(
-				_this, isApplicableMatch, virtualNode, container);
+				_this, isApplicableMatch, container, virtualNode);
 		if (result_pattern_XContainerToContainerRule_12_4_solveCSP_binding != null) {
 			CSP csp = (CSP) result_pattern_XContainerToContainerRule_12_4_solveCSP_binding[0];
 
@@ -1809,7 +1809,7 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 					csp);
 			if (result_pattern_XContainerToContainerRule_12_4_solveCSP_black != null) {
 
-				return new Object[] { csp, _this, isApplicableMatch, virtualNode, container };
+				return new Object[] { csp, _this, isApplicableMatch, container, virtualNode };
 			}
 		}
 		return null;
@@ -2013,7 +2013,7 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 			if (tmpVirtualNode instanceof NetworkSpan) {
 				NetworkSpan virtualNode = (NetworkSpan) tmpVirtualNode;
 				if (virtualNode.equals(container.getNetworkSpan())) {
-					_result.add(new Object[] { virtualNode, container, _edge_networkSpan });
+					_result.add(new Object[] { container, virtualNode, _edge_networkSpan });
 				}
 			}
 
@@ -2032,8 +2032,8 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	}
 
 	public static final boolean pattern_XContainerToContainerRule_21_3_bookkeepingwithgenericisAppropriatemethod_expressionFBBBB(
-			XContainerToContainerRule _this, Match match, NetworkSpan virtualNode, Container container) {
-		boolean _localVariable_0 = _this.isAppropriate_BWD(match, virtualNode, container);
+			XContainerToContainerRule _this, Match match, Container container, NetworkSpan virtualNode) {
+		boolean _localVariable_0 = _this.isAppropriate_BWD(match, container, virtualNode);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -2078,20 +2078,20 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_bindingFFFBB(
-			Match targetMatch, Match sourceMatch) {
-		EObject _localVariable_0 = targetMatch.getObject("virtualNode");
-		EObject _localVariable_1 = sourceMatch.getObject("xContainer");
-		EObject _localVariable_2 = targetMatch.getObject("container");
-		EObject tmpVirtualNode = _localVariable_0;
-		EObject tmpXContainer = _localVariable_1;
-		EObject tmpContainer = _localVariable_2;
-		if (tmpVirtualNode instanceof NetworkSpan) {
-			NetworkSpan virtualNode = (NetworkSpan) tmpVirtualNode;
-			if (tmpXContainer instanceof XContainer) {
-				XContainer xContainer = (XContainer) tmpXContainer;
-				if (tmpContainer instanceof Container) {
-					Container container = (Container) tmpContainer;
-					return new Object[] { virtualNode, xContainer, container, targetMatch, sourceMatch };
+			Match sourceMatch, Match targetMatch) {
+		EObject _localVariable_0 = sourceMatch.getObject("xContainer");
+		EObject _localVariable_1 = targetMatch.getObject("container");
+		EObject _localVariable_2 = targetMatch.getObject("virtualNode");
+		EObject tmpXContainer = _localVariable_0;
+		EObject tmpContainer = _localVariable_1;
+		EObject tmpVirtualNode = _localVariable_2;
+		if (tmpXContainer instanceof XContainer) {
+			XContainer xContainer = (XContainer) tmpXContainer;
+			if (tmpContainer instanceof Container) {
+				Container container = (Container) tmpContainer;
+				if (tmpVirtualNode instanceof NetworkSpan) {
+					NetworkSpan virtualNode = (NetworkSpan) tmpVirtualNode;
+					return new Object[] { xContainer, container, virtualNode, sourceMatch, targetMatch };
 				}
 			}
 		}
@@ -2099,9 +2099,9 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_blackBBBBB(
-			NetworkSpan virtualNode, XContainer xContainer, Container container, Match sourceMatch, Match targetMatch) {
+			XContainer xContainer, Container container, NetworkSpan virtualNode, Match sourceMatch, Match targetMatch) {
 		if (!sourceMatch.equals(targetMatch)) {
-			return new Object[] { virtualNode, xContainer, container, sourceMatch, targetMatch };
+			return new Object[] { xContainer, container, virtualNode, sourceMatch, targetMatch };
 		}
 		return null;
 	}
@@ -2109,30 +2109,30 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	public static final Object[] pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_bindingAndBlackFFFBB(
 			Match sourceMatch, Match targetMatch) {
 		Object[] result_pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_binding = pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_bindingFFFBB(
-				targetMatch, sourceMatch);
+				sourceMatch, targetMatch);
 		if (result_pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_binding != null) {
-			NetworkSpan virtualNode = (NetworkSpan) result_pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_binding[0];
-			XContainer xContainer = (XContainer) result_pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_binding[1];
-			Container container = (Container) result_pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_binding[2];
+			XContainer xContainer = (XContainer) result_pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_binding[0];
+			Container container = (Container) result_pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_binding[1];
+			NetworkSpan virtualNode = (NetworkSpan) result_pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_binding[2];
 
 			Object[] result_pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_black = pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_blackBBBBB(
-					virtualNode, xContainer, container, sourceMatch, targetMatch);
+					xContainer, container, virtualNode, sourceMatch, targetMatch);
 			if (result_pattern_XContainerToContainerRule_24_2_matchsrctrgcontext_black != null) {
 
-				return new Object[] { virtualNode, xContainer, container, sourceMatch, targetMatch };
+				return new Object[] { xContainer, container, virtualNode, sourceMatch, targetMatch };
 			}
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_24_3_solvecsp_bindingFBBBBBB(
-			XContainerToContainerRule _this, NetworkSpan virtualNode, XContainer xContainer, Container container,
+			XContainerToContainerRule _this, XContainer xContainer, Container container, NetworkSpan virtualNode,
 			Match sourceMatch, Match targetMatch) {
-		CSP _localVariable_3 = _this.isApplicable_solveCsp_CC(virtualNode, xContainer, container, sourceMatch,
+		CSP _localVariable_3 = _this.isApplicable_solveCsp_CC(xContainer, container, virtualNode, sourceMatch,
 				targetMatch);
 		CSP csp = _localVariable_3;
 		if (csp != null) {
-			return new Object[] { csp, _this, virtualNode, xContainer, container, sourceMatch, targetMatch };
+			return new Object[] { csp, _this, xContainer, container, virtualNode, sourceMatch, targetMatch };
 		}
 		return null;
 	}
@@ -2142,10 +2142,10 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_24_3_solvecsp_bindingAndBlackFBBBBBB(
-			XContainerToContainerRule _this, NetworkSpan virtualNode, XContainer xContainer, Container container,
+			XContainerToContainerRule _this, XContainer xContainer, Container container, NetworkSpan virtualNode,
 			Match sourceMatch, Match targetMatch) {
 		Object[] result_pattern_XContainerToContainerRule_24_3_solvecsp_binding = pattern_XContainerToContainerRule_24_3_solvecsp_bindingFBBBBBB(
-				_this, virtualNode, xContainer, container, sourceMatch, targetMatch);
+				_this, xContainer, container, virtualNode, sourceMatch, targetMatch);
 		if (result_pattern_XContainerToContainerRule_24_3_solvecsp_binding != null) {
 			CSP csp = (CSP) result_pattern_XContainerToContainerRule_24_3_solvecsp_binding[0];
 
@@ -2153,7 +2153,7 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 					csp);
 			if (result_pattern_XContainerToContainerRule_24_3_solvecsp_black != null) {
 
-				return new Object[] { csp, _this, virtualNode, xContainer, container, sourceMatch, targetMatch };
+				return new Object[] { csp, _this, xContainer, container, virtualNode, sourceMatch, targetMatch };
 			}
 		}
 		return null;
@@ -2185,8 +2185,8 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_24_6_createcorrespondence_blackBBBB(
-			NetworkSpan virtualNode, XContainer xContainer, Container container, CCMatch ccMatch) {
-		return new Object[] { virtualNode, xContainer, container, ccMatch };
+			XContainer xContainer, Container container, NetworkSpan virtualNode, CCMatch ccMatch) {
+		return new Object[] { xContainer, container, virtualNode, ccMatch };
 	}
 
 	public static final Object[] pattern_XContainerToContainerRule_24_6_createcorrespondence_greenFBBB(
@@ -2234,10 +2234,10 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 		return _result;
 	}
 
-	public static final Object[] pattern_XContainerToContainerRule_28_1_matchtggpattern_blackBB(NetworkSpan virtualNode,
-			Container container) {
+	public static final Object[] pattern_XContainerToContainerRule_28_1_matchtggpattern_blackBB(Container container,
+			NetworkSpan virtualNode) {
 		if (virtualNode.equals(container.getNetworkSpan())) {
-			return new Object[] { virtualNode, container };
+			return new Object[] { container, virtualNode };
 		}
 		return null;
 	}
@@ -2317,22 +2317,22 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 			ModelgeneratorRuleResult ruleResult) {
 		XContainerToContainer xContainerToContainer = RequirementsTransformatorFactory.eINSTANCE
 				.createXContainerToContainer();
-		NetworkSpan virtualNode = RequirementsFactory.eINSTANCE.createNetworkSpan();
 		XContainer xContainer = ReqXtextFactory.eINSTANCE.createXContainer();
 		Container container = RequirementsFactory.eINSTANCE.createContainer();
+		NetworkSpan virtualNode = RequirementsFactory.eINSTANCE.createNetworkSpan();
 		boolean ruleResult_success_prime = Boolean.valueOf(true);
 		int _localVariable_0 = ruleResult.getIncrementedPerformCount();
 		ruleResult.getCorrObjects().add(xContainerToContainer);
-		ruleResult.getTargetObjects().add(virtualNode);
 		xContainerToContainer.setSource(xContainer);
 		ruleResult.getSourceObjects().add(xContainer);
 		xContainerToContainer.setTarget(container);
-		container.setNetworkSpan(virtualNode);
 		ruleResult.getTargetObjects().add(container);
+		container.setNetworkSpan(virtualNode);
+		ruleResult.getTargetObjects().add(virtualNode);
 		ruleResult.setSuccess(Boolean.valueOf(ruleResult_success_prime));
 		int ruleResult_performCount_prime = Integer.valueOf(_localVariable_0);
 		ruleResult.setPerformCount(Integer.valueOf(ruleResult_performCount_prime));
-		return new Object[] { xContainerToContainer, virtualNode, xContainer, container, ruleResult };
+		return new Object[] { xContainerToContainer, xContainer, container, virtualNode, ruleResult };
 	}
 
 	public static final ModelgeneratorRuleResult pattern_XContainerToContainerRule_29_7_expressionFB(

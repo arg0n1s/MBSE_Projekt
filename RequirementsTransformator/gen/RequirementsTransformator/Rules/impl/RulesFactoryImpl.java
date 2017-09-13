@@ -55,37 +55,17 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-		case RulesPackage.XCONSUMER_TO_CONSUMER_RULE:
-			return createXConsumerToConsumerRule();
-		case RulesPackage.XPROVIDER_TO_PROVIDER_RULE:
-			return createXProviderToProviderRule();
 		case RulesPackage.XAGENT_TO_AGENT_RULE:
 			return createXAgentToAgentRule();
 		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE:
 			return createXContainerToContainerRule();
+		case RulesPackage.XPROVIDER_TO_PROVIDER_RULE:
+			return createXProviderToProviderRule();
+		case RulesPackage.XCONSUMER_TO_CONSUMER_RULE:
+			return createXConsumerToConsumerRule();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public XConsumerToConsumerRule createXConsumerToConsumerRule() {
-		XConsumerToConsumerRuleImpl xConsumerToConsumerRule = new XConsumerToConsumerRuleImpl();
-		return xConsumerToConsumerRule;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public XProviderToProviderRule createXProviderToProviderRule() {
-		XProviderToProviderRuleImpl xProviderToProviderRule = new XProviderToProviderRuleImpl();
-		return xProviderToProviderRule;
 	}
 
 	/**
@@ -106,6 +86,26 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	public XContainerToContainerRule createXContainerToContainerRule() {
 		XContainerToContainerRuleImpl xContainerToContainerRule = new XContainerToContainerRuleImpl();
 		return xContainerToContainerRule;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public XProviderToProviderRule createXProviderToProviderRule() {
+		XProviderToProviderRuleImpl xProviderToProviderRule = new XProviderToProviderRuleImpl();
+		return xProviderToProviderRule;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public XConsumerToConsumerRule createXConsumerToConsumerRule() {
+		XConsumerToConsumerRuleImpl xConsumerToConsumerRule = new XConsumerToConsumerRuleImpl();
+		return xConsumerToConsumerRule;
 	}
 
 	/**

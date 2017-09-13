@@ -660,7 +660,7 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_Container_0(implementation.Container implContainer) {
+	public EObjectContainer isAppropriate_BWD_Container_4(implementation.Container implContainer) {
 
 		Object[] result1_bindingAndBlack = ReqContainerToImplContainerRuleImpl
 				.pattern_ReqContainerToImplContainerRule_20_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -717,7 +717,7 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_2(EMoflonEdge _edge_networkSpan) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_29(EMoflonEdge _edge_networkSpan) {
 
 		Object[] result1_bindingAndBlack = ReqContainerToImplContainerRuleImpl
 				.pattern_ReqContainerToImplContainerRule_21_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -1118,10 +1118,10 @@ public class ReqContainerToImplContainerRuleImpl extends AbstractRuleImpl implem
 			return null;
 		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___IS_APPROPRIATE_BWD_CONTAINER_0__CONTAINER:
-			return isAppropriate_BWD_Container_0((implementation.Container) arguments.get(0));
-		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_2__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_2((EMoflonEdge) arguments.get(0));
+		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___IS_APPROPRIATE_BWD_CONTAINER_4__CONTAINER:
+			return isAppropriate_BWD_Container_4((implementation.Container) arguments.get(0));
+		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_29__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_29((EMoflonEdge) arguments.get(0));
 		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.REQ_CONTAINER_TO_IMPL_CONTAINER_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:

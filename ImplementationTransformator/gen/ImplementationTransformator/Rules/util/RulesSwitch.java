@@ -68,56 +68,20 @@ public class RulesSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-		case RulesPackage.XDEVICE_TO_DEVICE_RULE: {
-			XDeviceToDeviceRule xDeviceToDeviceRule = (XDeviceToDeviceRule) theEObject;
-			T result = caseXDeviceToDeviceRule(xDeviceToDeviceRule);
+		case RulesPackage.XSIMPLEX_CABLE_TO_CABLE_RULE: {
+			XSimplexCableToCableRule xSimplexCableToCableRule = (XSimplexCableToCableRule) theEObject;
+			T result = caseXSimplexCableToCableRule(xSimplexCableToCableRule);
 			if (result == null)
-				result = caseAbstractRule(xDeviceToDeviceRule);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case RulesPackage.XDUPLEX_GLASS_FIBER_CABLE_RULE: {
-			XDuplexGlassFiberCableRule xDuplexGlassFiberCableRule = (XDuplexGlassFiberCableRule) theEObject;
-			T result = caseXDuplexGlassFiberCableRule(xDuplexGlassFiberCableRule);
-			if (result == null)
-				result = caseAbstractRule(xDuplexGlassFiberCableRule);
+				result = caseAbstractRule(xSimplexCableToCableRule);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE: {
-			XSimplexConnectionToConnectionRule xSimplexConnectionToConnectionRule = (XSimplexConnectionToConnectionRule) theEObject;
-			T result = caseXSimplexConnectionToConnectionRule(xSimplexConnectionToConnectionRule);
+		case RulesPackage.XSIMPLEX_GLASS_FIBER_CABLE_RULE: {
+			XSimplexGlassFiberCableRule xSimplexGlassFiberCableRule = (XSimplexGlassFiberCableRule) theEObject;
+			T result = caseXSimplexGlassFiberCableRule(xSimplexGlassFiberCableRule);
 			if (result == null)
-				result = caseAbstractRule(xSimplexConnectionToConnectionRule);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE: {
-			XContainerToContainerRule xContainerToContainerRule = (XContainerToContainerRule) theEObject;
-			T result = caseXContainerToContainerRule(xContainerToContainerRule);
-			if (result == null)
-				result = caseAbstractRule(xContainerToContainerRule);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case RulesPackage.XCOMPUTER_TO_COMPUTER: {
-			XComputerToComputer xComputerToComputer = (XComputerToComputer) theEObject;
-			T result = caseXComputerToComputer(xComputerToComputer);
-			if (result == null)
-				result = caseAbstractRule(xComputerToComputer);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case RulesPackage.XROUTER_TO_ROUTER_RULE: {
-			XRouterToRouterRule xRouterToRouterRule = (XRouterToRouterRule) theEObject;
-			T result = caseXRouterToRouterRule(xRouterToRouterRule);
-			if (result == null)
-				result = caseAbstractRule(xRouterToRouterRule);
+				result = caseAbstractRule(xSimplexGlassFiberCableRule);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -140,38 +104,20 @@ public class RulesSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case RulesPackage.XSIMPLEX_COPPER_CABLE_RULE: {
-			XSimplexCopperCableRule xSimplexCopperCableRule = (XSimplexCopperCableRule) theEObject;
-			T result = caseXSimplexCopperCableRule(xSimplexCopperCableRule);
+		case RulesPackage.XROUTER_TO_ROUTER_RULE: {
+			XRouterToRouterRule xRouterToRouterRule = (XRouterToRouterRule) theEObject;
+			T result = caseXRouterToRouterRule(xRouterToRouterRule);
 			if (result == null)
-				result = caseAbstractRule(xSimplexCopperCableRule);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case RulesPackage.XSIMPLEX_CABLE_TO_CABLE_RULE: {
-			XSimplexCableToCableRule xSimplexCableToCableRule = (XSimplexCableToCableRule) theEObject;
-			T result = caseXSimplexCableToCableRule(xSimplexCableToCableRule);
-			if (result == null)
-				result = caseAbstractRule(xSimplexCableToCableRule);
+				result = caseAbstractRule(xRouterToRouterRule);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case RulesPackage.XSIMPLEX_GLASS_FIBER_CABLE_RULE: {
-			XSimplexGlassFiberCableRule xSimplexGlassFiberCableRule = (XSimplexGlassFiberCableRule) theEObject;
-			T result = caseXSimplexGlassFiberCableRule(xSimplexGlassFiberCableRule);
+		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE: {
+			XContainerToContainerRule xContainerToContainerRule = (XContainerToContainerRule) theEObject;
+			T result = caseXContainerToContainerRule(xContainerToContainerRule);
 			if (result == null)
-				result = caseAbstractRule(xSimplexGlassFiberCableRule);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case RulesPackage.XDUPLEX_COPPER_CABLE_RULE: {
-			XDuplexCopperCableRule xDuplexCopperCableRule = (XDuplexCopperCableRule) theEObject;
-			T result = caseXDuplexCopperCableRule(xDuplexCopperCableRule);
-			if (result == null)
-				result = caseAbstractRule(xDuplexCopperCableRule);
+				result = caseAbstractRule(xContainerToContainerRule);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -185,98 +131,92 @@ public class RulesSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case RulesPackage.XDUPLEX_COPPER_CABLE_RULE: {
+			XDuplexCopperCableRule xDuplexCopperCableRule = (XDuplexCopperCableRule) theEObject;
+			T result = caseXDuplexCopperCableRule(xDuplexCopperCableRule);
+			if (result == null)
+				result = caseAbstractRule(xDuplexCopperCableRule);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case RulesPackage.XCOMPUTER_TO_COMPUTER: {
+			XComputerToComputer xComputerToComputer = (XComputerToComputer) theEObject;
+			T result = caseXComputerToComputer(xComputerToComputer);
+			if (result == null)
+				result = caseAbstractRule(xComputerToComputer);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case RulesPackage.XDEVICE_TO_DEVICE_RULE: {
+			XDeviceToDeviceRule xDeviceToDeviceRule = (XDeviceToDeviceRule) theEObject;
+			T result = caseXDeviceToDeviceRule(xDeviceToDeviceRule);
+			if (result == null)
+				result = caseAbstractRule(xDeviceToDeviceRule);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case RulesPackage.XSIMPLEX_COPPER_CABLE_RULE: {
+			XSimplexCopperCableRule xSimplexCopperCableRule = (XSimplexCopperCableRule) theEObject;
+			T result = caseXSimplexCopperCableRule(xSimplexCopperCableRule);
+			if (result == null)
+				result = caseAbstractRule(xSimplexCopperCableRule);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case RulesPackage.XDUPLEX_GLASS_FIBER_CABLE_RULE: {
+			XDuplexGlassFiberCableRule xDuplexGlassFiberCableRule = (XDuplexGlassFiberCableRule) theEObject;
+			T result = caseXDuplexGlassFiberCableRule(xDuplexGlassFiberCableRule);
+			if (result == null)
+				result = caseAbstractRule(xDuplexGlassFiberCableRule);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE: {
+			XSimplexConnectionToConnectionRule xSimplexConnectionToConnectionRule = (XSimplexConnectionToConnectionRule) theEObject;
+			T result = caseXSimplexConnectionToConnectionRule(xSimplexConnectionToConnectionRule);
+			if (result == null)
+				result = caseAbstractRule(xSimplexConnectionToConnectionRule);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		default:
 			return defaultCase(theEObject);
 		}
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>XDevice To Device Rule</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>XSimplex Cable To Cable Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>XDevice To Device Rule</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>XSimplex Cable To Cable Rule</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseXDeviceToDeviceRule(XDeviceToDeviceRule object) {
+	public T caseXSimplexCableToCableRule(XSimplexCableToCableRule object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>XDuplex Glass Fiber Cable Rule</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>XSimplex Glass Fiber Cable Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>XDuplex Glass Fiber Cable Rule</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>XSimplex Glass Fiber Cable Rule</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseXDuplexGlassFiberCableRule(XDuplexGlassFiberCableRule object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>XSimplex Connection To Connection Rule</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>XSimplex Connection To Connection Rule</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseXSimplexConnectionToConnectionRule(XSimplexConnectionToConnectionRule object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>XContainer To Container Rule</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>XContainer To Container Rule</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseXContainerToContainerRule(XContainerToContainerRule object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>XComputer To Computer</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>XComputer To Computer</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseXComputerToComputer(XComputerToComputer object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>XRouter To Router Rule</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>XRouter To Router Rule</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseXRouterToRouterRule(XRouterToRouterRule object) {
+	public T caseXSimplexGlassFiberCableRule(XSimplexGlassFiberCableRule object) {
 		return null;
 	}
 
@@ -311,47 +251,47 @@ public class RulesSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>XSimplex Copper Cable Rule</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>XRouter To Router Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>XSimplex Copper Cable Rule</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>XRouter To Router Rule</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseXSimplexCopperCableRule(XSimplexCopperCableRule object) {
+	public T caseXRouterToRouterRule(XRouterToRouterRule object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>XSimplex Cable To Cable Rule</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>XContainer To Container Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>XSimplex Cable To Cable Rule</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>XContainer To Container Rule</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseXSimplexCableToCableRule(XSimplexCableToCableRule object) {
+	public T caseXContainerToContainerRule(XContainerToContainerRule object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>XSimplex Glass Fiber Cable Rule</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>XServer To Server</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>XSimplex Glass Fiber Cable Rule</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>XServer To Server</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseXSimplexGlassFiberCableRule(XSimplexGlassFiberCableRule object) {
+	public T caseXServerToServer(XServerToServer object) {
 		return null;
 	}
 
@@ -371,17 +311,77 @@ public class RulesSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>XServer To Server</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>XComputer To Computer</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>XServer To Server</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>XComputer To Computer</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseXServerToServer(XServerToServer object) {
+	public T caseXComputerToComputer(XComputerToComputer object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>XDevice To Device Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>XDevice To Device Rule</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseXDeviceToDeviceRule(XDeviceToDeviceRule object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>XSimplex Copper Cable Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>XSimplex Copper Cable Rule</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseXSimplexCopperCableRule(XSimplexCopperCableRule object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>XDuplex Glass Fiber Cable Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>XDuplex Glass Fiber Cable Rule</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseXDuplexGlassFiberCableRule(XDuplexGlassFiberCableRule object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>XSimplex Connection To Connection Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>XSimplex Connection To Connection Rule</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseXSimplexConnectionToConnectionRule(XSimplexConnectionToConnectionRule object) {
 		return null;
 	}
 

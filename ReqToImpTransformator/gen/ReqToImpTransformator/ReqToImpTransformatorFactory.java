@@ -22,13 +22,13 @@ public interface ReqToImpTransformatorFactory extends EFactory {
 	ReqToImpTransformatorFactory eINSTANCE = ReqToImpTransformator.impl.ReqToImpTransformatorFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Virtual Node To Router</em>'.
+	 * Returns a new object of class '<em>Req Container To Impl Container</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Virtual Node To Router</em>'.
+	 * @return a new object of class '<em>Req Container To Impl Container</em>'.
 	 * @generated
 	 */
-	VirtualNodeToRouter createVirtualNodeToRouter();
+	ReqContainerToImplContainer createReqContainerToImplContainer();
 
 	/**
 	 * Returns a new object of class '<em>Req Agent To Impl Device</em>'.
@@ -40,24 +40,6 @@ public interface ReqToImpTransformatorFactory extends EFactory {
 	ReqAgentToImplDevice createReqAgentToImplDevice();
 
 	/**
-	 * Returns a new object of class '<em>Virtual Node To Computer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Virtual Node To Computer</em>'.
-	 * @generated
-	 */
-	VirtualNodeToComputer createVirtualNodeToComputer();
-
-	/**
-	 * Returns a new object of class '<em>Req Container To Impl Container</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Req Container To Impl Container</em>'.
-	 * @generated
-	 */
-	ReqContainerToImplContainer createReqContainerToImplContainer();
-
-	/**
 	 * Returns a new object of class '<em>Virtual Node To Server</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -65,6 +47,24 @@ public interface ReqToImpTransformatorFactory extends EFactory {
 	 * @generated
 	 */
 	VirtualNodeToServer createVirtualNodeToServer();
+
+	/**
+	 * Returns a new object of class '<em>Virtual Node To Router</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Virtual Node To Router</em>'.
+	 * @generated
+	 */
+	VirtualNodeToRouter createVirtualNodeToRouter();
+
+	/**
+	 * Returns a new object of class '<em>Virtual Node To Computer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Virtual Node To Computer</em>'.
+	 * @generated
+	 */
+	VirtualNodeToComputer createVirtualNodeToComputer();
 
 	/**
 	 * Returns the package supported by this factory.

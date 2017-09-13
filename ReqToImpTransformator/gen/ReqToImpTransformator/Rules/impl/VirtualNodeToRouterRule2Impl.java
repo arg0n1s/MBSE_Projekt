@@ -97,50 +97,50 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isAppropriate_FWD(Match match, Container reqContainer, NetworkSpan virtualNode) {
+	public boolean isAppropriate_FWD(Match match, NetworkSpan virtualNode, Container reqContainer) {
 
 		Object[] result1_black = VirtualNodeToRouterRule2Impl
-				.pattern_VirtualNodeToRouterRule2_0_1_initialbindings_blackBBBB(this, match, reqContainer, virtualNode);
+				.pattern_VirtualNodeToRouterRule2_0_1_initialbindings_blackBBBB(this, match, virtualNode, reqContainer);
 		if (result1_black == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
-					+ "[match] = " + match + ", " + "[reqContainer] = " + reqContainer + ", " + "[virtualNode] = "
-					+ virtualNode + ".");
+					+ "[match] = " + match + ", " + "[virtualNode] = " + virtualNode + ", " + "[reqContainer] = "
+					+ reqContainer + ".");
 		}
 
 		Object[] result2_bindingAndBlack = VirtualNodeToRouterRule2Impl
-				.pattern_VirtualNodeToRouterRule2_0_2_SolveCSP_bindingAndBlackFBBBB(this, match, reqContainer,
-						virtualNode);
+				.pattern_VirtualNodeToRouterRule2_0_2_SolveCSP_bindingAndBlackFBBBB(this, match, virtualNode,
+						reqContainer);
 		if (result2_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
-					+ "[match] = " + match + ", " + "[reqContainer] = " + reqContainer + ", " + "[virtualNode] = "
-					+ virtualNode + ".");
+					+ "[match] = " + match + ", " + "[virtualNode] = " + virtualNode + ", " + "[reqContainer] = "
+					+ reqContainer + ".");
 		}
 		CSP csp = (CSP) result2_bindingAndBlack[0];
 		// 
 		if (VirtualNodeToRouterRule2Impl.pattern_VirtualNodeToRouterRule2_0_3_CheckCSP_expressionFBB(this, csp)) {
 
 			Object[] result4_black = VirtualNodeToRouterRule2Impl
-					.pattern_VirtualNodeToRouterRule2_0_4_collectelementstobetranslated_blackBBB(match, reqContainer,
-							virtualNode);
+					.pattern_VirtualNodeToRouterRule2_0_4_collectelementstobetranslated_blackBBB(match, virtualNode,
+							reqContainer);
 			if (result4_black == null) {
 				throw new RuntimeException("Pattern matching failed." + " Variables: " + "[match] = " + match + ", "
-						+ "[reqContainer] = " + reqContainer + ", " + "[virtualNode] = " + virtualNode + ".");
+						+ "[virtualNode] = " + virtualNode + ", " + "[reqContainer] = " + reqContainer + ".");
 			}
 
 			Object[] result5_black = VirtualNodeToRouterRule2Impl
-					.pattern_VirtualNodeToRouterRule2_0_5_collectcontextelements_blackBBB(match, reqContainer,
-							virtualNode);
+					.pattern_VirtualNodeToRouterRule2_0_5_collectcontextelements_blackBBB(match, virtualNode,
+							reqContainer);
 			if (result5_black == null) {
 				throw new RuntimeException("Pattern matching failed." + " Variables: " + "[match] = " + match + ", "
-						+ "[reqContainer] = " + reqContainer + ", " + "[virtualNode] = " + virtualNode + ".");
+						+ "[virtualNode] = " + virtualNode + ", " + "[reqContainer] = " + reqContainer + ".");
 			}
 			VirtualNodeToRouterRule2Impl.pattern_VirtualNodeToRouterRule2_0_5_collectcontextelements_greenBBBF(match,
-					reqContainer, virtualNode);
+					virtualNode, reqContainer);
 			//nothing EMoflonEdge reqContainer__virtualNode____networkSpan = (EMoflonEdge) result5_green[3];
 
 			// 
 			VirtualNodeToRouterRule2Impl.pattern_VirtualNodeToRouterRule2_0_6_registerobjectstomatch_expressionBBBB(
-					this, match, reqContainer, virtualNode);
+					this, match, virtualNode, reqContainer);
 			return VirtualNodeToRouterRule2Impl.pattern_VirtualNodeToRouterRule2_0_7_expressionF();
 		} else {
 			return VirtualNodeToRouterRule2Impl.pattern_VirtualNodeToRouterRule2_0_8_expressionF();
@@ -177,9 +177,9 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjectsToMatch_FWD(Match match, Container reqContainer, NetworkSpan virtualNode) {
-		match.registerObject("reqContainer", reqContainer);
+	public void registerObjectsToMatch_FWD(Match match, NetworkSpan virtualNode, Container reqContainer) {
 		match.registerObject("virtualNode", virtualNode);
+		match.registerObject("reqContainer", reqContainer);
 
 	}
 
@@ -188,7 +188,7 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isAppropriate_solveCsp_FWD(Match match, Container reqContainer, NetworkSpan virtualNode) {// Create CSP
+	public CSP isAppropriate_solveCsp_FWD(Match match, NetworkSpan virtualNode, Container reqContainer) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 
 		// Create literals
@@ -226,63 +226,63 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isAppropriate_BWD(Match match, Router router, implementation.Container implContainer, Cable cable,
-			Router router2) {
+	public boolean isAppropriate_BWD(Match match, implementation.Container implContainer, Cable cable, Router router2,
+			Router router) {
 
 		Object[] result1_black = VirtualNodeToRouterRule2Impl
-				.pattern_VirtualNodeToRouterRule2_7_1_initialbindings_blackBBBBBB(this, match, router, implContainer,
-						cable, router2);
+				.pattern_VirtualNodeToRouterRule2_7_1_initialbindings_blackBBBBBB(this, match, implContainer, cable,
+						router2, router);
 		if (result1_black == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
-					+ "[match] = " + match + ", " + "[router] = " + router + ", " + "[implContainer] = " + implContainer
-					+ ", " + "[cable] = " + cable + ", " + "[router2] = " + router2 + ".");
+					+ "[match] = " + match + ", " + "[implContainer] = " + implContainer + ", " + "[cable] = " + cable
+					+ ", " + "[router2] = " + router2 + ", " + "[router] = " + router + ".");
 		}
 
 		Object[] result2_bindingAndBlack = VirtualNodeToRouterRule2Impl
-				.pattern_VirtualNodeToRouterRule2_7_2_SolveCSP_bindingAndBlackFBBBBBB(this, match, router,
-						implContainer, cable, router2);
+				.pattern_VirtualNodeToRouterRule2_7_2_SolveCSP_bindingAndBlackFBBBBBB(this, match, implContainer, cable,
+						router2, router);
 		if (result2_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
-					+ "[match] = " + match + ", " + "[router] = " + router + ", " + "[implContainer] = " + implContainer
-					+ ", " + "[cable] = " + cable + ", " + "[router2] = " + router2 + ".");
+					+ "[match] = " + match + ", " + "[implContainer] = " + implContainer + ", " + "[cable] = " + cable
+					+ ", " + "[router2] = " + router2 + ", " + "[router] = " + router + ".");
 		}
 		CSP csp = (CSP) result2_bindingAndBlack[0];
 		// 
 		if (VirtualNodeToRouterRule2Impl.pattern_VirtualNodeToRouterRule2_7_3_CheckCSP_expressionFBB(this, csp)) {
 
 			Object[] result4_black = VirtualNodeToRouterRule2Impl
-					.pattern_VirtualNodeToRouterRule2_7_4_collectelementstobetranslated_blackBBBBB(match, router,
-							implContainer, cable, router2);
+					.pattern_VirtualNodeToRouterRule2_7_4_collectelementstobetranslated_blackBBBBB(match, implContainer,
+							cable, router2, router);
 			if (result4_black == null) {
 				throw new RuntimeException("Pattern matching failed." + " Variables: " + "[match] = " + match + ", "
-						+ "[router] = " + router + ", " + "[implContainer] = " + implContainer + ", " + "[cable] = "
-						+ cable + ", " + "[router2] = " + router2 + ".");
+						+ "[implContainer] = " + implContainer + ", " + "[cable] = " + cable + ", " + "[router2] = "
+						+ router2 + ", " + "[router] = " + router + ".");
 			}
 			VirtualNodeToRouterRule2Impl
-					.pattern_VirtualNodeToRouterRule2_7_4_collectelementstobetranslated_greenBBBBBFFFFF(match, router,
-							implContainer, cable, router2);
-			//nothing EMoflonEdge implContainer__router2____devices = (EMoflonEdge) result4_green[5];
-			//nothing EMoflonEdge router__cable____outgoing = (EMoflonEdge) result4_green[6];
-			//nothing EMoflonEdge cable__router____source = (EMoflonEdge) result4_green[7];
-			//nothing EMoflonEdge router2__cable____incoming = (EMoflonEdge) result4_green[8];
-			//nothing EMoflonEdge cable__router2____target = (EMoflonEdge) result4_green[9];
+					.pattern_VirtualNodeToRouterRule2_7_4_collectelementstobetranslated_greenBBBBBFFFFF(match,
+							implContainer, cable, router2, router);
+			//nothing EMoflonEdge router2__cable____incoming = (EMoflonEdge) result4_green[5];
+			//nothing EMoflonEdge cable__router2____target = (EMoflonEdge) result4_green[6];
+			//nothing EMoflonEdge implContainer__router2____devices = (EMoflonEdge) result4_green[7];
+			//nothing EMoflonEdge router__cable____outgoing = (EMoflonEdge) result4_green[8];
+			//nothing EMoflonEdge cable__router____source = (EMoflonEdge) result4_green[9];
 
 			Object[] result5_black = VirtualNodeToRouterRule2Impl
-					.pattern_VirtualNodeToRouterRule2_7_5_collectcontextelements_blackBBBBB(match, router,
-							implContainer, cable, router2);
+					.pattern_VirtualNodeToRouterRule2_7_5_collectcontextelements_blackBBBBB(match, implContainer, cable,
+							router2, router);
 			if (result5_black == null) {
 				throw new RuntimeException("Pattern matching failed." + " Variables: " + "[match] = " + match + ", "
-						+ "[router] = " + router + ", " + "[implContainer] = " + implContainer + ", " + "[cable] = "
-						+ cable + ", " + "[router2] = " + router2 + ".");
+						+ "[implContainer] = " + implContainer + ", " + "[cable] = " + cable + ", " + "[router2] = "
+						+ router2 + ", " + "[router] = " + router + ".");
 			}
 			VirtualNodeToRouterRule2Impl.pattern_VirtualNodeToRouterRule2_7_5_collectcontextelements_greenBBBBFF(match,
-					router, implContainer, cable);
+					implContainer, cable, router);
 			//nothing EMoflonEdge implContainer__cable____cables = (EMoflonEdge) result5_green[4];
 			//nothing EMoflonEdge implContainer__router____devices = (EMoflonEdge) result5_green[5];
 
 			// 
 			VirtualNodeToRouterRule2Impl.pattern_VirtualNodeToRouterRule2_7_6_registerobjectstomatch_expressionBBBBBB(
-					this, match, router, implContainer, cable, router2);
+					this, match, implContainer, cable, router2, router);
 			return VirtualNodeToRouterRule2Impl.pattern_VirtualNodeToRouterRule2_7_7_expressionF();
 		} else {
 			return VirtualNodeToRouterRule2Impl.pattern_VirtualNodeToRouterRule2_7_8_expressionF();
@@ -304,17 +304,17 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
 					+ "[isApplicableMatch] = " + isApplicableMatch + ".");
 		}
-		ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result1_bindingAndBlack[0];
-		Router router = (Router) result1_bindingAndBlack[1];
-		Container reqContainer = (Container) result1_bindingAndBlack[2];
-		implementation.Container implContainer = (implementation.Container) result1_bindingAndBlack[3];
+		VirtualNodeToRouter virtualNodeToRouter1 = (VirtualNodeToRouter) result1_bindingAndBlack[0];
+		implementation.Container implContainer = (implementation.Container) result1_bindingAndBlack[1];
+		ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result1_bindingAndBlack[2];
+		NetworkSpan virtualNode = (NetworkSpan) result1_bindingAndBlack[3];
 		Cable cable = (Cable) result1_bindingAndBlack[4];
 		Router router2 = (Router) result1_bindingAndBlack[5];
-		NetworkSpan virtualNode = (NetworkSpan) result1_bindingAndBlack[6];
-		VirtualNodeToRouter virtualNodeToRouter1 = (VirtualNodeToRouter) result1_bindingAndBlack[7];
+		Router router = (Router) result1_bindingAndBlack[6];
+		Container reqContainer = (Container) result1_bindingAndBlack[7];
 		//nothing CSP csp = (CSP) result1_bindingAndBlack[8];
 		Object[] result1_green = VirtualNodeToRouterRule2Impl
-				.pattern_VirtualNodeToRouterRule2_8_1_performtransformation_greenBBF(router2, virtualNode);
+				.pattern_VirtualNodeToRouterRule2_8_1_performtransformation_greenBBF(virtualNode, router2);
 		VirtualNodeToRouter virtualNodeToRouter = (VirtualNodeToRouter) result1_green[2];
 
 		Object[] result2_black = VirtualNodeToRouterRule2Impl
@@ -329,31 +329,31 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 
 		Object[] result3_black = VirtualNodeToRouterRule2Impl
 				.pattern_VirtualNodeToRouterRule2_8_3_bookkeepingforedges_blackBBBBBBBBBB(ruleresult,
-						reqContainerToImplContainer, router, reqContainer, implContainer, cable, router2, virtualNode,
-						virtualNodeToRouter1, virtualNodeToRouter);
+						virtualNodeToRouter1, implContainer, reqContainerToImplContainer, virtualNode, cable, router2,
+						virtualNodeToRouter, router, reqContainer);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[ruleresult] = " + ruleresult
-					+ ", " + "[reqContainerToImplContainer] = " + reqContainerToImplContainer + ", " + "[router] = "
-					+ router + ", " + "[reqContainer] = " + reqContainer + ", " + "[implContainer] = " + implContainer
-					+ ", " + "[cable] = " + cable + ", " + "[router2] = " + router2 + ", " + "[virtualNode] = "
-					+ virtualNode + ", " + "[virtualNodeToRouter1] = " + virtualNodeToRouter1 + ", "
-					+ "[virtualNodeToRouter] = " + virtualNodeToRouter + ".");
+					+ ", " + "[virtualNodeToRouter1] = " + virtualNodeToRouter1 + ", " + "[implContainer] = "
+					+ implContainer + ", " + "[reqContainerToImplContainer] = " + reqContainerToImplContainer + ", "
+					+ "[virtualNode] = " + virtualNode + ", " + "[cable] = " + cable + ", " + "[router2] = " + router2
+					+ ", " + "[virtualNodeToRouter] = " + virtualNodeToRouter + ", " + "[router] = " + router + ", "
+					+ "[reqContainer] = " + reqContainer + ".");
 		}
 		VirtualNodeToRouterRule2Impl.pattern_VirtualNodeToRouterRule2_8_3_bookkeepingforedges_greenBBBBBBBFFFFFFF(
-				ruleresult, router, implContainer, cable, router2, virtualNode, virtualNodeToRouter);
-		//nothing EMoflonEdge implContainer__router2____devices = (EMoflonEdge) result3_green[7];
-		//nothing EMoflonEdge router__cable____outgoing = (EMoflonEdge) result3_green[8];
-		//nothing EMoflonEdge cable__router____source = (EMoflonEdge) result3_green[9];
+				ruleresult, implContainer, virtualNode, cable, router2, virtualNodeToRouter, router);
+		//nothing EMoflonEdge router2__cable____incoming = (EMoflonEdge) result3_green[7];
+		//nothing EMoflonEdge cable__router2____target = (EMoflonEdge) result3_green[8];
+		//nothing EMoflonEdge virtualNodeToRouter__virtualNode____source = (EMoflonEdge) result3_green[9];
 		//nothing EMoflonEdge virtualNodeToRouter__router2____target = (EMoflonEdge) result3_green[10];
-		//nothing EMoflonEdge virtualNodeToRouter__virtualNode____source = (EMoflonEdge) result3_green[11];
-		//nothing EMoflonEdge router2__cable____incoming = (EMoflonEdge) result3_green[12];
-		//nothing EMoflonEdge cable__router2____target = (EMoflonEdge) result3_green[13];
+		//nothing EMoflonEdge implContainer__router2____devices = (EMoflonEdge) result3_green[11];
+		//nothing EMoflonEdge router__cable____outgoing = (EMoflonEdge) result3_green[12];
+		//nothing EMoflonEdge cable__router____source = (EMoflonEdge) result3_green[13];
 
 		// 
 		// 
 		VirtualNodeToRouterRule2Impl.pattern_VirtualNodeToRouterRule2_8_5_registerobjects_expressionBBBBBBBBBBB(this,
-				ruleresult, reqContainerToImplContainer, router, reqContainer, implContainer, cable, router2,
-				virtualNode, virtualNodeToRouter1, virtualNodeToRouter);
+				ruleresult, virtualNodeToRouter1, implContainer, reqContainerToImplContainer, virtualNode, cable,
+				router2, virtualNodeToRouter, router, reqContainer);
 		return VirtualNodeToRouterRule2Impl.pattern_VirtualNodeToRouterRule2_8_6_expressionFB(ruleresult);
 	}
 
@@ -382,50 +382,51 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 			throw new RuntimeException(
 					"Binding in node core match failed." + " Variables: " + "[match] = " + match + ".");
 		}
-		Router router = (Router) result2_binding[0];
-		implementation.Container implContainer = (implementation.Container) result2_binding[1];
-		Cable cable = (Cable) result2_binding[2];
-		Router router2 = (Router) result2_binding[3];
+		implementation.Container implContainer = (implementation.Container) result2_binding[0];
+		Cable cable = (Cable) result2_binding[1];
+		Router router2 = (Router) result2_binding[2];
+		Router router = (Router) result2_binding[3];
 		for (Object[] result2_black : VirtualNodeToRouterRule2Impl
-				.pattern_VirtualNodeToRouterRule2_9_2_corematch_blackFBFBBBFFB(router, implContainer, cable, router2,
+				.pattern_VirtualNodeToRouterRule2_9_2_corematch_blackFBFFBBBFB(implContainer, cable, router2, router,
 						match)) {
-			ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result2_black[0];
-			Container reqContainer = (Container) result2_black[2];
-			NetworkSpan virtualNode = (NetworkSpan) result2_black[6];
-			VirtualNodeToRouter virtualNodeToRouter1 = (VirtualNodeToRouter) result2_black[7];
+			VirtualNodeToRouter virtualNodeToRouter1 = (VirtualNodeToRouter) result2_black[0];
+			ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result2_black[2];
+			NetworkSpan virtualNode = (NetworkSpan) result2_black[3];
+			Container reqContainer = (Container) result2_black[7];
 			// ForEach 
 			for (Object[] result3_black : VirtualNodeToRouterRule2Impl
-					.pattern_VirtualNodeToRouterRule2_9_3_findcontext_blackBBBBBBBB(reqContainerToImplContainer, router,
-							reqContainer, implContainer, cable, router2, virtualNode, virtualNodeToRouter1)) {
+					.pattern_VirtualNodeToRouterRule2_9_3_findcontext_blackBBBBBBBB(virtualNodeToRouter1, implContainer,
+							reqContainerToImplContainer, virtualNode, cable, router2, router, reqContainer)) {
 				Object[] result3_green = VirtualNodeToRouterRule2Impl
 						.pattern_VirtualNodeToRouterRule2_9_3_findcontext_greenBBBBBBBBFFFFFFFFFFFFF(
-								reqContainerToImplContainer, router, reqContainer, implContainer, cable, router2,
-								virtualNode, virtualNodeToRouter1);
+								virtualNodeToRouter1, implContainer, reqContainerToImplContainer, virtualNode, cable,
+								router2, router, reqContainer);
 				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[8];
-				//nothing EMoflonEdge reqContainerToImplContainer__reqContainer____source = (EMoflonEdge) result3_green[9];
-				//nothing EMoflonEdge implContainer__router2____devices = (EMoflonEdge) result3_green[10];
-				//nothing EMoflonEdge router__cable____outgoing = (EMoflonEdge) result3_green[11];
-				//nothing EMoflonEdge cable__router____source = (EMoflonEdge) result3_green[12];
-				//nothing EMoflonEdge reqContainer__virtualNode____networkSpan = (EMoflonEdge) result3_green[13];
-				//nothing EMoflonEdge implContainer__cable____cables = (EMoflonEdge) result3_green[14];
+				//nothing EMoflonEdge implContainer__cable____cables = (EMoflonEdge) result3_green[9];
+				//nothing EMoflonEdge implContainer__router____devices = (EMoflonEdge) result3_green[10];
+				//nothing EMoflonEdge reqContainerToImplContainer__implContainer____target = (EMoflonEdge) result3_green[11];
+				//nothing EMoflonEdge virtualNodeToRouter1__virtualNode____source = (EMoflonEdge) result3_green[12];
+				//nothing EMoflonEdge router2__cable____incoming = (EMoflonEdge) result3_green[13];
+				//nothing EMoflonEdge cable__router2____target = (EMoflonEdge) result3_green[14];
 				//nothing EMoflonEdge virtualNodeToRouter1__router____target = (EMoflonEdge) result3_green[15];
-				//nothing EMoflonEdge virtualNodeToRouter1__virtualNode____source = (EMoflonEdge) result3_green[16];
-				//nothing EMoflonEdge implContainer__router____devices = (EMoflonEdge) result3_green[17];
-				//nothing EMoflonEdge router2__cable____incoming = (EMoflonEdge) result3_green[18];
-				//nothing EMoflonEdge cable__router2____target = (EMoflonEdge) result3_green[19];
-				//nothing EMoflonEdge reqContainerToImplContainer__implContainer____target = (EMoflonEdge) result3_green[20];
+				//nothing EMoflonEdge implContainer__router2____devices = (EMoflonEdge) result3_green[16];
+				//nothing EMoflonEdge reqContainer__virtualNode____networkSpan = (EMoflonEdge) result3_green[17];
+				//nothing EMoflonEdge reqContainerToImplContainer__reqContainer____source = (EMoflonEdge) result3_green[18];
+				//nothing EMoflonEdge router__cable____outgoing = (EMoflonEdge) result3_green[19];
+				//nothing EMoflonEdge cable__router____source = (EMoflonEdge) result3_green[20];
 
 				Object[] result4_bindingAndBlack = VirtualNodeToRouterRule2Impl
 						.pattern_VirtualNodeToRouterRule2_9_4_solveCSP_bindingAndBlackFBBBBBBBBBB(this,
-								isApplicableMatch, reqContainerToImplContainer, router, reqContainer, implContainer,
-								cable, router2, virtualNode, virtualNodeToRouter1);
+								isApplicableMatch, virtualNodeToRouter1, implContainer, reqContainerToImplContainer,
+								virtualNode, cable, router2, router, reqContainer);
 				if (result4_bindingAndBlack == null) {
 					throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
-							+ "[isApplicableMatch] = " + isApplicableMatch + ", " + "[reqContainerToImplContainer] = "
-							+ reqContainerToImplContainer + ", " + "[router] = " + router + ", " + "[reqContainer] = "
-							+ reqContainer + ", " + "[implContainer] = " + implContainer + ", " + "[cable] = " + cable
-							+ ", " + "[router2] = " + router2 + ", " + "[virtualNode] = " + virtualNode + ", "
-							+ "[virtualNodeToRouter1] = " + virtualNodeToRouter1 + ".");
+							+ "[isApplicableMatch] = " + isApplicableMatch + ", " + "[virtualNodeToRouter1] = "
+							+ virtualNodeToRouter1 + ", " + "[implContainer] = " + implContainer + ", "
+							+ "[reqContainerToImplContainer] = " + reqContainerToImplContainer + ", "
+							+ "[virtualNode] = " + virtualNode + ", " + "[cable] = " + cable + ", " + "[router2] = "
+							+ router2 + ", " + "[router] = " + router + ", " + "[reqContainer] = " + reqContainer
+							+ ".");
 				}
 				CSP csp = (CSP) result4_bindingAndBlack[0];
 				// 
@@ -456,12 +457,12 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjectsToMatch_BWD(Match match, Router router, implementation.Container implContainer,
-			Cable cable, Router router2) {
-		match.registerObject("router", router);
+	public void registerObjectsToMatch_BWD(Match match, implementation.Container implContainer, Cable cable,
+			Router router2, Router router) {
 		match.registerObject("implContainer", implContainer);
 		match.registerObject("cable", cable);
 		match.registerObject("router2", router2);
+		match.registerObject("router", router);
 
 	}
 
@@ -470,8 +471,8 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isAppropriate_solveCsp_BWD(Match match, Router router, implementation.Container implContainer,
-			Cable cable, Router router2) {// Create CSP
+	public CSP isAppropriate_solveCsp_BWD(Match match, implementation.Container implContainer, Cable cable,
+			Router router2, Router router) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 
 		// Create literals
@@ -500,10 +501,9 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch,
-			ReqContainerToImplContainer reqContainerToImplContainer, Router router, Container reqContainer,
-			implementation.Container implContainer, Cable cable, Router router2, NetworkSpan virtualNode,
-			VirtualNodeToRouter virtualNodeToRouter1) {// Create CSP
+	public CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, VirtualNodeToRouter virtualNodeToRouter1,
+			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer,
+			NetworkSpan virtualNode, Cable cable, Router router2, Router router, Container reqContainer) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -518,14 +518,14 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 		// Solve CSP
 
 		// Snapshot pattern match on which CSP is solved
-		isApplicableMatch.registerObject("reqContainerToImplContainer", reqContainerToImplContainer);
-		isApplicableMatch.registerObject("router", router);
-		isApplicableMatch.registerObject("reqContainer", reqContainer);
+		isApplicableMatch.registerObject("virtualNodeToRouter1", virtualNodeToRouter1);
 		isApplicableMatch.registerObject("implContainer", implContainer);
+		isApplicableMatch.registerObject("reqContainerToImplContainer", reqContainerToImplContainer);
+		isApplicableMatch.registerObject("virtualNode", virtualNode);
 		isApplicableMatch.registerObject("cable", cable);
 		isApplicableMatch.registerObject("router2", router2);
-		isApplicableMatch.registerObject("virtualNode", virtualNode);
-		isApplicableMatch.registerObject("virtualNodeToRouter1", virtualNodeToRouter1);
+		isApplicableMatch.registerObject("router", router);
+		isApplicableMatch.registerObject("reqContainer", reqContainer);
 		return csp;
 	}
 
@@ -543,18 +543,18 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject reqContainerToImplContainer, EObject router,
-			EObject reqContainer, EObject implContainer, EObject cable, EObject router2, EObject virtualNode,
-			EObject virtualNodeToRouter1, EObject virtualNodeToRouter) {
-		ruleresult.registerObject("reqContainerToImplContainer", reqContainerToImplContainer);
-		ruleresult.registerObject("router", router);
-		ruleresult.registerObject("reqContainer", reqContainer);
+	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject virtualNodeToRouter1, EObject implContainer,
+			EObject reqContainerToImplContainer, EObject virtualNode, EObject cable, EObject router2,
+			EObject virtualNodeToRouter, EObject router, EObject reqContainer) {
+		ruleresult.registerObject("virtualNodeToRouter1", virtualNodeToRouter1);
 		ruleresult.registerObject("implContainer", implContainer);
+		ruleresult.registerObject("reqContainerToImplContainer", reqContainerToImplContainer);
+		ruleresult.registerObject("virtualNode", virtualNode);
 		ruleresult.registerObject("cable", cable);
 		ruleresult.registerObject("router2", router2);
-		ruleresult.registerObject("virtualNode", virtualNode);
-		ruleresult.registerObject("virtualNodeToRouter1", virtualNodeToRouter1);
 		ruleresult.registerObject("virtualNodeToRouter", virtualNodeToRouter);
+		ruleresult.registerObject("router", router);
+		ruleresult.registerObject("reqContainer", reqContainer);
 
 	}
 
@@ -573,7 +573,7 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_Container_3(Container reqContainer) {
+	public EObjectContainer isAppropriate_FWD_NetworkSpan_2(NetworkSpan virtualNode) {
 
 		Object[] result1_bindingAndBlack = VirtualNodeToRouterRule2Impl
 				.pattern_VirtualNodeToRouterRule2_17_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -589,8 +589,8 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 
 		// ForEach 
 		for (Object[] result2_black : VirtualNodeToRouterRule2Impl
-				.pattern_VirtualNodeToRouterRule2_17_2_testcorematchandDECs_blackBF(reqContainer)) {
-			NetworkSpan virtualNode = (NetworkSpan) result2_black[1];
+				.pattern_VirtualNodeToRouterRule2_17_2_testcorematchandDECs_blackBF(virtualNode)) {
+			Container reqContainer = (Container) result2_black[1];
 			Object[] result2_green = VirtualNodeToRouterRule2Impl
 					.pattern_VirtualNodeToRouterRule2_17_2_testcorematchandDECs_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
@@ -598,7 +598,7 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 			// 
 			if (VirtualNodeToRouterRule2Impl
 					.pattern_VirtualNodeToRouterRule2_17_3_bookkeepingwithgenericisAppropriatemethod_expressionFBBBB(
-							this, match, reqContainer, virtualNode)) {
+							this, match, virtualNode, reqContainer)) {
 				// 
 				if (VirtualNodeToRouterRule2Impl
 						.pattern_VirtualNodeToRouterRule2_17_4_Ensurethatthecorrecttypesofelementsarematched_expressionFBB(
@@ -630,7 +630,7 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_4(EMoflonEdge _edge_devices) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_40(EMoflonEdge _edge_incoming) {
 
 		Object[] result1_bindingAndBlack = VirtualNodeToRouterRule2Impl
 				.pattern_VirtualNodeToRouterRule2_18_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -646,11 +646,11 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 
 		// ForEach 
 		for (Object[] result2_black : VirtualNodeToRouterRule2Impl
-				.pattern_VirtualNodeToRouterRule2_18_2_testcorematchandDECs_blackFFFFB(_edge_devices)) {
-			Router router = (Router) result2_black[0];
-			implementation.Container implContainer = (implementation.Container) result2_black[1];
-			Cable cable = (Cable) result2_black[2];
-			Router router2 = (Router) result2_black[3];
+				.pattern_VirtualNodeToRouterRule2_18_2_testcorematchandDECs_blackFFFFB(_edge_incoming)) {
+			implementation.Container implContainer = (implementation.Container) result2_black[0];
+			Cable cable = (Cable) result2_black[1];
+			Router router2 = (Router) result2_black[2];
+			Router router = (Router) result2_black[3];
 			Object[] result2_green = VirtualNodeToRouterRule2Impl
 					.pattern_VirtualNodeToRouterRule2_18_2_testcorematchandDECs_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
@@ -658,7 +658,7 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 			// 
 			if (VirtualNodeToRouterRule2Impl
 					.pattern_VirtualNodeToRouterRule2_18_3_bookkeepingwithgenericisAppropriatemethod_expressionFBBBBBB(
-							this, match, router, implContainer, cable, router2)) {
+							this, match, implContainer, cable, router2, router)) {
 				// 
 				if (VirtualNodeToRouterRule2Impl
 						.pattern_VirtualNodeToRouterRule2_18_4_Ensurethatthecorrecttypesofelementsarematched_expressionFBB(
@@ -767,21 +767,21 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[sourceMatch] = " + sourceMatch
 					+ ", " + "[targetMatch] = " + targetMatch + ".");
 		}
-		Router router = (Router) result2_bindingAndBlack[0];
-		Container reqContainer = (Container) result2_bindingAndBlack[1];
-		implementation.Container implContainer = (implementation.Container) result2_bindingAndBlack[2];
-		Cable cable = (Cable) result2_bindingAndBlack[3];
-		Router router2 = (Router) result2_bindingAndBlack[4];
-		NetworkSpan virtualNode = (NetworkSpan) result2_bindingAndBlack[5];
+		implementation.Container implContainer = (implementation.Container) result2_bindingAndBlack[0];
+		NetworkSpan virtualNode = (NetworkSpan) result2_bindingAndBlack[1];
+		Cable cable = (Cable) result2_bindingAndBlack[2];
+		Router router2 = (Router) result2_bindingAndBlack[3];
+		Router router = (Router) result2_bindingAndBlack[4];
+		Container reqContainer = (Container) result2_bindingAndBlack[5];
 
 		Object[] result3_bindingAndBlack = VirtualNodeToRouterRule2Impl
-				.pattern_VirtualNodeToRouterRule2_21_3_solvecsp_bindingAndBlackFBBBBBBBBB(this, router, reqContainer,
-						implContainer, cable, router2, virtualNode, sourceMatch, targetMatch);
+				.pattern_VirtualNodeToRouterRule2_21_3_solvecsp_bindingAndBlackFBBBBBBBBB(this, implContainer,
+						virtualNode, cable, router2, router, reqContainer, sourceMatch, targetMatch);
 		if (result3_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
-					+ "[router] = " + router + ", " + "[reqContainer] = " + reqContainer + ", " + "[implContainer] = "
-					+ implContainer + ", " + "[cable] = " + cable + ", " + "[router2] = " + router2 + ", "
-					+ "[virtualNode] = " + virtualNode + ", " + "[sourceMatch] = " + sourceMatch + ", "
+					+ "[implContainer] = " + implContainer + ", " + "[virtualNode] = " + virtualNode + ", "
+					+ "[cable] = " + cable + ", " + "[router2] = " + router2 + ", " + "[router] = " + router + ", "
+					+ "[reqContainer] = " + reqContainer + ", " + "[sourceMatch] = " + sourceMatch + ", "
 					+ "[targetMatch] = " + targetMatch + ".");
 		}
 		CSP csp = (CSP) result3_bindingAndBlack[0];
@@ -789,26 +789,26 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 		if (VirtualNodeToRouterRule2Impl.pattern_VirtualNodeToRouterRule2_21_4_checkCSP_expressionFB(csp)) {
 			// ForEach 
 			for (Object[] result5_black : VirtualNodeToRouterRule2Impl
-					.pattern_VirtualNodeToRouterRule2_21_5_matchcorrcontext_blackFBBBBFBB(router, reqContainer,
-							implContainer, virtualNode, sourceMatch, targetMatch)) {
-				ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result5_black[0];
-				VirtualNodeToRouter virtualNodeToRouter1 = (VirtualNodeToRouter) result5_black[5];
+					.pattern_VirtualNodeToRouterRule2_21_5_matchcorrcontext_blackFBFBBBBB(implContainer, virtualNode,
+							router, reqContainer, sourceMatch, targetMatch)) {
+				VirtualNodeToRouter virtualNodeToRouter1 = (VirtualNodeToRouter) result5_black[0];
+				ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result5_black[2];
 				Object[] result5_green = VirtualNodeToRouterRule2Impl
-						.pattern_VirtualNodeToRouterRule2_21_5_matchcorrcontext_greenBBBBF(reqContainerToImplContainer,
-								virtualNodeToRouter1, sourceMatch, targetMatch);
+						.pattern_VirtualNodeToRouterRule2_21_5_matchcorrcontext_greenBBBBF(virtualNodeToRouter1,
+								reqContainerToImplContainer, sourceMatch, targetMatch);
 				CCMatch ccMatch = (CCMatch) result5_green[4];
 
 				Object[] result6_black = VirtualNodeToRouterRule2Impl
-						.pattern_VirtualNodeToRouterRule2_21_6_createcorrespondence_blackBBBBBBB(router, reqContainer,
-								implContainer, cable, router2, virtualNode, ccMatch);
+						.pattern_VirtualNodeToRouterRule2_21_6_createcorrespondence_blackBBBBBBB(implContainer,
+								virtualNode, cable, router2, router, reqContainer, ccMatch);
 				if (result6_black == null) {
-					throw new RuntimeException("Pattern matching failed." + " Variables: " + "[router] = " + router
-							+ ", " + "[reqContainer] = " + reqContainer + ", " + "[implContainer] = " + implContainer
-							+ ", " + "[cable] = " + cable + ", " + "[router2] = " + router2 + ", " + "[virtualNode] = "
-							+ virtualNode + ", " + "[ccMatch] = " + ccMatch + ".");
+					throw new RuntimeException("Pattern matching failed." + " Variables: " + "[implContainer] = "
+							+ implContainer + ", " + "[virtualNode] = " + virtualNode + ", " + "[cable] = " + cable
+							+ ", " + "[router2] = " + router2 + ", " + "[router] = " + router + ", "
+							+ "[reqContainer] = " + reqContainer + ", " + "[ccMatch] = " + ccMatch + ".");
 				}
 				VirtualNodeToRouterRule2Impl.pattern_VirtualNodeToRouterRule2_21_6_createcorrespondence_greenBBFB(
-						router2, virtualNode, ccMatch);
+						virtualNode, router2, ccMatch);
 				//nothing VirtualNodeToRouter virtualNodeToRouter = (VirtualNodeToRouter) result6_green[2];
 
 				Object[] result7_black = VirtualNodeToRouterRule2Impl
@@ -832,8 +832,8 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isApplicable_solveCsp_CC(Router router, Container reqContainer, implementation.Container implContainer,
-			Cable cable, Router router2, NetworkSpan virtualNode, Match sourceMatch, Match targetMatch) {// Create CSP
+	public CSP isApplicable_solveCsp_CC(implementation.Container implContainer, NetworkSpan virtualNode, Cable cable,
+			Router router2, Router router, Container reqContainer, Match sourceMatch, Match targetMatch) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 
 		// Create literals
@@ -862,9 +862,9 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean checkDEC_FWD(Container reqContainer, NetworkSpan virtualNode) {// 
+	public boolean checkDEC_FWD(NetworkSpan virtualNode, Container reqContainer) {// 
 		Object[] result1_black = VirtualNodeToRouterRule2Impl
-				.pattern_VirtualNodeToRouterRule2_24_1_matchtggpattern_blackBB(reqContainer, virtualNode);
+				.pattern_VirtualNodeToRouterRule2_24_1_matchtggpattern_blackBB(virtualNode, reqContainer);
 		if (result1_black != null) {
 			return VirtualNodeToRouterRule2Impl.pattern_VirtualNodeToRouterRule2_24_2_expressionF();
 		} else {
@@ -878,9 +878,9 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean checkDEC_BWD(Router router, implementation.Container implContainer, Cable cable, Router router2) {// 
+	public boolean checkDEC_BWD(implementation.Container implContainer, Cable cable, Router router2, Router router) {// 
 		Object[] result1_black = VirtualNodeToRouterRule2Impl
-				.pattern_VirtualNodeToRouterRule2_25_1_matchtggpattern_blackBBBB(router, implContainer, cable, router2);
+				.pattern_VirtualNodeToRouterRule2_25_1_matchtggpattern_blackBBBB(implContainer, cable, router2, router);
 		if (result1_black != null) {
 			return VirtualNodeToRouterRule2Impl.pattern_VirtualNodeToRouterRule2_25_2_expressionF();
 		} else {
@@ -895,7 +895,7 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	 * @generated
 	 */
 	public ModelgeneratorRuleResult generateModel(RuleEntryContainer ruleEntryContainer,
-			ReqContainerToImplContainer reqContainerToImplContainerParameter) {
+			VirtualNodeToRouter virtualNodeToRouter1Parameter) {
 
 		Object[] result1_black = VirtualNodeToRouterRule2Impl
 				.pattern_VirtualNodeToRouterRule2_26_1_createresult_blackB(this);
@@ -911,52 +911,52 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 		for (Object[] result2_black : VirtualNodeToRouterRule2Impl
 				.pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_blackFFFFFFFFBB(ruleEntryContainer,
 						ruleResult)) {
-			//nothing RuleEntryList reqContainerToImplContainerList = (RuleEntryList) result2_black[0];
-			ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result2_black[1];
-			Container reqContainer = (Container) result2_black[2];
-			NetworkSpan virtualNode = (NetworkSpan) result2_black[3];
-			VirtualNodeToRouter virtualNodeToRouter1 = (VirtualNodeToRouter) result2_black[4];
-			Router router = (Router) result2_black[5];
-			implementation.Container implContainer = (implementation.Container) result2_black[6];
-			Cable cable = (Cable) result2_black[7];
+			//nothing RuleEntryList virtualNodeToRouter1List = (RuleEntryList) result2_black[0];
+			VirtualNodeToRouter virtualNodeToRouter1 = (VirtualNodeToRouter) result2_black[1];
+			NetworkSpan virtualNode = (NetworkSpan) result2_black[2];
+			Container reqContainer = (Container) result2_black[3];
+			ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result2_black[4];
+			implementation.Container implContainer = (implementation.Container) result2_black[5];
+			Cable cable = (Cable) result2_black[6];
+			Router router = (Router) result2_black[7];
 
 			Object[] result3_bindingAndBlack = VirtualNodeToRouterRule2Impl
 					.pattern_VirtualNodeToRouterRule2_26_3_solveCSP_bindingAndBlackFBBBBBBBBBB(this, isApplicableMatch,
-							reqContainerToImplContainer, router, reqContainer, implContainer, cable, virtualNode,
-							virtualNodeToRouter1, ruleResult);
+							virtualNodeToRouter1, implContainer, reqContainerToImplContainer, virtualNode, cable,
+							router, reqContainer, ruleResult);
 			if (result3_bindingAndBlack == null) {
 				throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
-						+ "[isApplicableMatch] = " + isApplicableMatch + ", " + "[reqContainerToImplContainer] = "
-						+ reqContainerToImplContainer + ", " + "[router] = " + router + ", " + "[reqContainer] = "
-						+ reqContainer + ", " + "[implContainer] = " + implContainer + ", " + "[cable] = " + cable
-						+ ", " + "[virtualNode] = " + virtualNode + ", " + "[virtualNodeToRouter1] = "
-						+ virtualNodeToRouter1 + ", " + "[ruleResult] = " + ruleResult + ".");
+						+ "[isApplicableMatch] = " + isApplicableMatch + ", " + "[virtualNodeToRouter1] = "
+						+ virtualNodeToRouter1 + ", " + "[implContainer] = " + implContainer + ", "
+						+ "[reqContainerToImplContainer] = " + reqContainerToImplContainer + ", " + "[virtualNode] = "
+						+ virtualNode + ", " + "[cable] = " + cable + ", " + "[router] = " + router + ", "
+						+ "[reqContainer] = " + reqContainer + ", " + "[ruleResult] = " + ruleResult + ".");
 			}
 			CSP csp = (CSP) result3_bindingAndBlack[0];
 			// 
 			if (VirtualNodeToRouterRule2Impl.pattern_VirtualNodeToRouterRule2_26_4_checkCSP_expressionFBB(this, csp)) {
 				// 
 				Object[] result5_black = VirtualNodeToRouterRule2Impl
-						.pattern_VirtualNodeToRouterRule2_26_5_checknacs_blackBBBBBBB(reqContainerToImplContainer,
-								router, reqContainer, implContainer, cable, virtualNode, virtualNodeToRouter1);
+						.pattern_VirtualNodeToRouterRule2_26_5_checknacs_blackBBBBBBB(virtualNodeToRouter1,
+								implContainer, reqContainerToImplContainer, virtualNode, cable, router, reqContainer);
 				if (result5_black != null) {
 
 					Object[] result6_black = VirtualNodeToRouterRule2Impl
-							.pattern_VirtualNodeToRouterRule2_26_6_perform_blackBBBBBBBB(reqContainerToImplContainer,
-									router, reqContainer, implContainer, cable, virtualNode, virtualNodeToRouter1,
-									ruleResult);
+							.pattern_VirtualNodeToRouterRule2_26_6_perform_blackBBBBBBBB(virtualNodeToRouter1,
+									implContainer, reqContainerToImplContainer, virtualNode, cable, router,
+									reqContainer, ruleResult);
 					if (result6_black == null) {
 						throw new RuntimeException("Pattern matching failed." + " Variables: "
-								+ "[reqContainerToImplContainer] = " + reqContainerToImplContainer + ", "
-								+ "[router] = " + router + ", " + "[reqContainer] = " + reqContainer + ", "
-								+ "[implContainer] = " + implContainer + ", " + "[cable] = " + cable + ", "
-								+ "[virtualNode] = " + virtualNode + ", " + "[virtualNodeToRouter1] = "
-								+ virtualNodeToRouter1 + ", " + "[ruleResult] = " + ruleResult + ".");
+								+ "[virtualNodeToRouter1] = " + virtualNodeToRouter1 + ", " + "[implContainer] = "
+								+ implContainer + ", " + "[reqContainerToImplContainer] = "
+								+ reqContainerToImplContainer + ", " + "[virtualNode] = " + virtualNode + ", "
+								+ "[cable] = " + cable + ", " + "[router] = " + router + ", " + "[reqContainer] = "
+								+ reqContainer + ", " + "[ruleResult] = " + ruleResult + ".");
 					}
-					VirtualNodeToRouterRule2Impl.pattern_VirtualNodeToRouterRule2_26_6_perform_greenBBBFBFB(router,
-							implContainer, cable, virtualNode, ruleResult);
+					VirtualNodeToRouterRule2Impl.pattern_VirtualNodeToRouterRule2_26_6_perform_greenBBBFFBB(
+							implContainer, virtualNode, cable, router, ruleResult);
 					//nothing Router router2 = (Router) result6_green[3];
-					//nothing VirtualNodeToRouter virtualNodeToRouter = (VirtualNodeToRouter) result6_green[5];
+					//nothing VirtualNodeToRouter virtualNodeToRouter = (VirtualNodeToRouter) result6_green[4];
 
 				} else {
 				}
@@ -973,10 +973,10 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch,
-			ReqContainerToImplContainer reqContainerToImplContainer, Router router, Container reqContainer,
-			implementation.Container implContainer, Cable cable, NetworkSpan virtualNode,
-			VirtualNodeToRouter virtualNodeToRouter1, ModelgeneratorRuleResult ruleResult) {// Create CSP
+	public CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, VirtualNodeToRouter virtualNodeToRouter1,
+			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer,
+			NetworkSpan virtualNode, Cable cable, Router router, Container reqContainer,
+			ModelgeneratorRuleResult ruleResult) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -991,13 +991,13 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 		// Solve CSP
 
 		// Snapshot pattern match on which CSP is solved
+		isApplicableMatch.registerObject("virtualNodeToRouter1", virtualNodeToRouter1);
+		isApplicableMatch.registerObject("implContainer", implContainer);
 		isApplicableMatch.registerObject("reqContainerToImplContainer", reqContainerToImplContainer);
+		isApplicableMatch.registerObject("virtualNode", virtualNode);
+		isApplicableMatch.registerObject("cable", cable);
 		isApplicableMatch.registerObject("router", router);
 		isApplicableMatch.registerObject("reqContainer", reqContainer);
-		isApplicableMatch.registerObject("implContainer", implContainer);
-		isApplicableMatch.registerObject("cable", cable);
-		isApplicableMatch.registerObject("virtualNode", virtualNode);
-		isApplicableMatch.registerObject("virtualNodeToRouter1", virtualNodeToRouter1);
 		return csp;
 	}
 
@@ -1018,45 +1018,46 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
-		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___IS_APPROPRIATE_FWD__MATCH_CONTAINER_NETWORKSPAN:
-			return isAppropriate_FWD((Match) arguments.get(0), (Container) arguments.get(1),
-					(NetworkSpan) arguments.get(2));
+		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___IS_APPROPRIATE_FWD__MATCH_NETWORKSPAN_CONTAINER:
+			return isAppropriate_FWD((Match) arguments.get(0), (NetworkSpan) arguments.get(1),
+					(Container) arguments.get(2));
 		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___PERFORM_FWD__ISAPPLICABLEMATCH:
 			return perform_FWD((IsApplicableMatch) arguments.get(0));
 		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___IS_APPLICABLE_FWD__MATCH:
 			return isApplicable_FWD((Match) arguments.get(0));
-		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_CONTAINER_NETWORKSPAN:
-			registerObjectsToMatch_FWD((Match) arguments.get(0), (Container) arguments.get(1),
-					(NetworkSpan) arguments.get(2));
+		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_NETWORKSPAN_CONTAINER:
+			registerObjectsToMatch_FWD((Match) arguments.get(0), (NetworkSpan) arguments.get(1),
+					(Container) arguments.get(2));
 			return null;
-		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_CONTAINER_NETWORKSPAN:
-			return isAppropriate_solveCsp_FWD((Match) arguments.get(0), (Container) arguments.get(1),
-					(NetworkSpan) arguments.get(2));
+		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_NETWORKSPAN_CONTAINER:
+			return isAppropriate_solveCsp_FWD((Match) arguments.get(0), (NetworkSpan) arguments.get(1),
+					(Container) arguments.get(2));
 		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___IS_APPROPRIATE_CHECK_CSP_FWD__CSP:
 			return isAppropriate_checkCsp_FWD((CSP) arguments.get(0));
 		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___CHECK_TYPES_FWD__MATCH:
 			return checkTypes_FWD((Match) arguments.get(0));
-		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___IS_APPROPRIATE_BWD__MATCH_ROUTER_CONTAINER_CABLE_ROUTER:
-			return isAppropriate_BWD((Match) arguments.get(0), (Router) arguments.get(1),
-					(implementation.Container) arguments.get(2), (Cable) arguments.get(3), (Router) arguments.get(4));
+		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___IS_APPROPRIATE_BWD__MATCH_CONTAINER_CABLE_ROUTER_ROUTER:
+			return isAppropriate_BWD((Match) arguments.get(0), (implementation.Container) arguments.get(1),
+					(Cable) arguments.get(2), (Router) arguments.get(3), (Router) arguments.get(4));
 		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___PERFORM_BWD__ISAPPLICABLEMATCH:
 			return perform_BWD((IsApplicableMatch) arguments.get(0));
 		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___IS_APPLICABLE_BWD__MATCH:
 			return isApplicable_BWD((Match) arguments.get(0));
-		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_ROUTER_CONTAINER_CABLE_ROUTER:
-			registerObjectsToMatch_BWD((Match) arguments.get(0), (Router) arguments.get(1),
-					(implementation.Container) arguments.get(2), (Cable) arguments.get(3), (Router) arguments.get(4));
+		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_CONTAINER_CABLE_ROUTER_ROUTER:
+			registerObjectsToMatch_BWD((Match) arguments.get(0), (implementation.Container) arguments.get(1),
+					(Cable) arguments.get(2), (Router) arguments.get(3), (Router) arguments.get(4));
 			return null;
-		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_ROUTER_CONTAINER_CABLE_ROUTER:
-			return isAppropriate_solveCsp_BWD((Match) arguments.get(0), (Router) arguments.get(1),
-					(implementation.Container) arguments.get(2), (Cable) arguments.get(3), (Router) arguments.get(4));
+		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_CONTAINER_CABLE_ROUTER_ROUTER:
+			return isAppropriate_solveCsp_BWD((Match) arguments.get(0), (implementation.Container) arguments.get(1),
+					(Cable) arguments.get(2), (Router) arguments.get(3), (Router) arguments.get(4));
 		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___IS_APPROPRIATE_CHECK_CSP_BWD__CSP:
 			return isAppropriate_checkCsp_BWD((CSP) arguments.get(0));
-		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_REQCONTAINERTOIMPLCONTAINER_ROUTER_CONTAINER_CONTAINER_CABLE_ROUTER_NETWORKSPAN_VIRTUALNODETOROUTER:
+		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_VIRTUALNODETOROUTER_CONTAINER_REQCONTAINERTOIMPLCONTAINER_NETWORKSPAN_CABLE_ROUTER_ROUTER_CONTAINER:
 			return isApplicable_solveCsp_BWD((IsApplicableMatch) arguments.get(0),
-					(ReqContainerToImplContainer) arguments.get(1), (Router) arguments.get(2),
-					(Container) arguments.get(3), (implementation.Container) arguments.get(4), (Cable) arguments.get(5),
-					(Router) arguments.get(6), (NetworkSpan) arguments.get(7), (VirtualNodeToRouter) arguments.get(8));
+					(VirtualNodeToRouter) arguments.get(1), (implementation.Container) arguments.get(2),
+					(ReqContainerToImplContainer) arguments.get(3), (NetworkSpan) arguments.get(4),
+					(Cable) arguments.get(5), (Router) arguments.get(6), (Router) arguments.get(7),
+					(Container) arguments.get(8));
 		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___IS_APPLICABLE_CHECK_CSP_BWD__CSP:
 			return isApplicable_checkCsp_BWD((CSP) arguments.get(0));
 		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT:
@@ -1067,34 +1068,34 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 			return null;
 		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___IS_APPROPRIATE_FWD_CONTAINER_3__CONTAINER:
-			return isAppropriate_FWD_Container_3((Container) arguments.get(0));
-		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___IS_APPROPRIATE_BWD_EMOFLON_EDGE_4__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_4((EMoflonEdge) arguments.get(0));
+		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___IS_APPROPRIATE_FWD_NETWORK_SPAN_2__NETWORKSPAN:
+			return isAppropriate_FWD_NetworkSpan_2((NetworkSpan) arguments.get(0));
+		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___IS_APPROPRIATE_BWD_EMOFLON_EDGE_40__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_40((EMoflonEdge) arguments.get(0));
 		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
 			return checkAttributes_BWD((TripleMatch) arguments.get(0));
 		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___IS_APPLICABLE_CC__MATCH_MATCH:
 			return isApplicable_CC((Match) arguments.get(0), (Match) arguments.get(1));
-		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___IS_APPLICABLE_SOLVE_CSP_CC__ROUTER_CONTAINER_CONTAINER_CABLE_ROUTER_NETWORKSPAN_MATCH_MATCH:
-			return isApplicable_solveCsp_CC((Router) arguments.get(0), (Container) arguments.get(1),
-					(implementation.Container) arguments.get(2), (Cable) arguments.get(3), (Router) arguments.get(4),
-					(NetworkSpan) arguments.get(5), (Match) arguments.get(6), (Match) arguments.get(7));
+		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___IS_APPLICABLE_SOLVE_CSP_CC__CONTAINER_NETWORKSPAN_CABLE_ROUTER_ROUTER_CONTAINER_MATCH_MATCH:
+			return isApplicable_solveCsp_CC((implementation.Container) arguments.get(0), (NetworkSpan) arguments.get(1),
+					(Cable) arguments.get(2), (Router) arguments.get(3), (Router) arguments.get(4),
+					(Container) arguments.get(5), (Match) arguments.get(6), (Match) arguments.get(7));
 		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___IS_APPLICABLE_CHECK_CSP_CC__CSP:
 			return isApplicable_checkCsp_CC((CSP) arguments.get(0));
-		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___CHECK_DEC_FWD__CONTAINER_NETWORKSPAN:
-			return checkDEC_FWD((Container) arguments.get(0), (NetworkSpan) arguments.get(1));
-		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___CHECK_DEC_BWD__ROUTER_CONTAINER_CABLE_ROUTER:
-			return checkDEC_BWD((Router) arguments.get(0), (implementation.Container) arguments.get(1),
-					(Cable) arguments.get(2), (Router) arguments.get(3));
-		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___GENERATE_MODEL__RULEENTRYCONTAINER_REQCONTAINERTOIMPLCONTAINER:
-			return generateModel((RuleEntryContainer) arguments.get(0), (ReqContainerToImplContainer) arguments.get(1));
-		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_REQCONTAINERTOIMPLCONTAINER_ROUTER_CONTAINER_CONTAINER_CABLE_NETWORKSPAN_VIRTUALNODETOROUTER_MODELGENERATORRULERESULT:
+		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___CHECK_DEC_FWD__NETWORKSPAN_CONTAINER:
+			return checkDEC_FWD((NetworkSpan) arguments.get(0), (Container) arguments.get(1));
+		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___CHECK_DEC_BWD__CONTAINER_CABLE_ROUTER_ROUTER:
+			return checkDEC_BWD((implementation.Container) arguments.get(0), (Cable) arguments.get(1),
+					(Router) arguments.get(2), (Router) arguments.get(3));
+		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___GENERATE_MODEL__RULEENTRYCONTAINER_VIRTUALNODETOROUTER:
+			return generateModel((RuleEntryContainer) arguments.get(0), (VirtualNodeToRouter) arguments.get(1));
+		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_VIRTUALNODETOROUTER_CONTAINER_REQCONTAINERTOIMPLCONTAINER_NETWORKSPAN_CABLE_ROUTER_CONTAINER_MODELGENERATORRULERESULT:
 			return generateModel_solveCsp_BWD((IsApplicableMatch) arguments.get(0),
-					(ReqContainerToImplContainer) arguments.get(1), (Router) arguments.get(2),
-					(Container) arguments.get(3), (implementation.Container) arguments.get(4), (Cable) arguments.get(5),
-					(NetworkSpan) arguments.get(6), (VirtualNodeToRouter) arguments.get(7),
+					(VirtualNodeToRouter) arguments.get(1), (implementation.Container) arguments.get(2),
+					(ReqContainerToImplContainer) arguments.get(3), (NetworkSpan) arguments.get(4),
+					(Cable) arguments.get(5), (Router) arguments.get(6), (Container) arguments.get(7),
 					(ModelgeneratorRuleResult) arguments.get(8));
 		case RulesPackage.VIRTUAL_NODE_TO_ROUTER_RULE2___GENERATE_MODEL_CHECK_CSP_BWD__CSP:
 			return generateModel_checkCsp_BWD((CSP) arguments.get(0));
@@ -1103,16 +1104,16 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_0_1_initialbindings_blackBBBB(
-			VirtualNodeToRouterRule2 _this, Match match, Container reqContainer, NetworkSpan virtualNode) {
-		return new Object[] { _this, match, reqContainer, virtualNode };
+			VirtualNodeToRouterRule2 _this, Match match, NetworkSpan virtualNode, Container reqContainer) {
+		return new Object[] { _this, match, virtualNode, reqContainer };
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_0_2_SolveCSP_bindingFBBBB(
-			VirtualNodeToRouterRule2 _this, Match match, Container reqContainer, NetworkSpan virtualNode) {
-		CSP _localVariable_0 = _this.isAppropriate_solveCsp_FWD(match, reqContainer, virtualNode);
+			VirtualNodeToRouterRule2 _this, Match match, NetworkSpan virtualNode, Container reqContainer) {
+		CSP _localVariable_0 = _this.isAppropriate_solveCsp_FWD(match, virtualNode, reqContainer);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, match, reqContainer, virtualNode };
+			return new Object[] { csp, _this, match, virtualNode, reqContainer };
 		}
 		return null;
 	}
@@ -1122,9 +1123,9 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_0_2_SolveCSP_bindingAndBlackFBBBB(
-			VirtualNodeToRouterRule2 _this, Match match, Container reqContainer, NetworkSpan virtualNode) {
+			VirtualNodeToRouterRule2 _this, Match match, NetworkSpan virtualNode, Container reqContainer) {
 		Object[] result_pattern_VirtualNodeToRouterRule2_0_2_SolveCSP_binding = pattern_VirtualNodeToRouterRule2_0_2_SolveCSP_bindingFBBBB(
-				_this, match, reqContainer, virtualNode);
+				_this, match, virtualNode, reqContainer);
 		if (result_pattern_VirtualNodeToRouterRule2_0_2_SolveCSP_binding != null) {
 			CSP csp = (CSP) result_pattern_VirtualNodeToRouterRule2_0_2_SolveCSP_binding[0];
 
@@ -1132,7 +1133,7 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 					csp);
 			if (result_pattern_VirtualNodeToRouterRule2_0_2_SolveCSP_black != null) {
 
-				return new Object[] { csp, _this, match, reqContainer, virtualNode };
+				return new Object[] { csp, _this, match, virtualNode, reqContainer };
 			}
 		}
 		return null;
@@ -1146,31 +1147,31 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_0_4_collectelementstobetranslated_blackBBB(
-			Match match, Container reqContainer, NetworkSpan virtualNode) {
-		return new Object[] { match, reqContainer, virtualNode };
+			Match match, NetworkSpan virtualNode, Container reqContainer) {
+		return new Object[] { match, virtualNode, reqContainer };
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_0_5_collectcontextelements_blackBBB(Match match,
-			Container reqContainer, NetworkSpan virtualNode) {
-		return new Object[] { match, reqContainer, virtualNode };
+			NetworkSpan virtualNode, Container reqContainer) {
+		return new Object[] { match, virtualNode, reqContainer };
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_0_5_collectcontextelements_greenBBBF(Match match,
-			Container reqContainer, NetworkSpan virtualNode) {
+			NetworkSpan virtualNode, Container reqContainer) {
 		EMoflonEdge reqContainer__virtualNode____networkSpan = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		match.getContextNodes().add(reqContainer);
 		match.getContextNodes().add(virtualNode);
+		match.getContextNodes().add(reqContainer);
 		String reqContainer__virtualNode____networkSpan_name_prime = "networkSpan";
 		reqContainer__virtualNode____networkSpan.setSrc(reqContainer);
 		reqContainer__virtualNode____networkSpan.setTrg(virtualNode);
 		match.getContextEdges().add(reqContainer__virtualNode____networkSpan);
 		reqContainer__virtualNode____networkSpan.setName(reqContainer__virtualNode____networkSpan_name_prime);
-		return new Object[] { match, reqContainer, virtualNode, reqContainer__virtualNode____networkSpan };
+		return new Object[] { match, virtualNode, reqContainer, reqContainer__virtualNode____networkSpan };
 	}
 
 	public static final void pattern_VirtualNodeToRouterRule2_0_6_registerobjectstomatch_expressionBBBB(
-			VirtualNodeToRouterRule2 _this, Match match, Container reqContainer, NetworkSpan virtualNode) {
-		_this.registerObjectsToMatch_FWD(match, reqContainer, virtualNode);
+			VirtualNodeToRouterRule2 _this, Match match, NetworkSpan virtualNode, Container reqContainer) {
+		_this.registerObjectsToMatch_FWD(match, virtualNode, reqContainer);
 
 	}
 
@@ -1185,21 +1186,21 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_7_1_initialbindings_blackBBBBBB(
-			VirtualNodeToRouterRule2 _this, Match match, Router router, implementation.Container implContainer,
-			Cable cable, Router router2) {
+			VirtualNodeToRouterRule2 _this, Match match, implementation.Container implContainer, Cable cable,
+			Router router2, Router router) {
 		if (!router.equals(router2)) {
-			return new Object[] { _this, match, router, implContainer, cable, router2 };
+			return new Object[] { _this, match, implContainer, cable, router2, router };
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_7_2_SolveCSP_bindingFBBBBBB(
-			VirtualNodeToRouterRule2 _this, Match match, Router router, implementation.Container implContainer,
-			Cable cable, Router router2) {
-		CSP _localVariable_0 = _this.isAppropriate_solveCsp_BWD(match, router, implContainer, cable, router2);
+			VirtualNodeToRouterRule2 _this, Match match, implementation.Container implContainer, Cable cable,
+			Router router2, Router router) {
+		CSP _localVariable_0 = _this.isAppropriate_solveCsp_BWD(match, implContainer, cable, router2, router);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, match, router, implContainer, cable, router2 };
+			return new Object[] { csp, _this, match, implContainer, cable, router2, router };
 		}
 		return null;
 	}
@@ -1209,10 +1210,10 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_7_2_SolveCSP_bindingAndBlackFBBBBBB(
-			VirtualNodeToRouterRule2 _this, Match match, Router router, implementation.Container implContainer,
-			Cable cable, Router router2) {
+			VirtualNodeToRouterRule2 _this, Match match, implementation.Container implContainer, Cable cable,
+			Router router2, Router router) {
 		Object[] result_pattern_VirtualNodeToRouterRule2_7_2_SolveCSP_binding = pattern_VirtualNodeToRouterRule2_7_2_SolveCSP_bindingFBBBBBB(
-				_this, match, router, implContainer, cable, router2);
+				_this, match, implContainer, cable, router2, router);
 		if (result_pattern_VirtualNodeToRouterRule2_7_2_SolveCSP_binding != null) {
 			CSP csp = (CSP) result_pattern_VirtualNodeToRouterRule2_7_2_SolveCSP_binding[0];
 
@@ -1220,7 +1221,7 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 					csp);
 			if (result_pattern_VirtualNodeToRouterRule2_7_2_SolveCSP_black != null) {
 
-				return new Object[] { csp, _this, match, router, implContainer, cable, router2 };
+				return new Object[] { csp, _this, match, implContainer, cable, router2, router };
 			}
 		}
 		return null;
@@ -1234,26 +1235,32 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_7_4_collectelementstobetranslated_blackBBBBB(
-			Match match, Router router, implementation.Container implContainer, Cable cable, Router router2) {
+			Match match, implementation.Container implContainer, Cable cable, Router router2, Router router) {
 		if (!router.equals(router2)) {
-			return new Object[] { match, router, implContainer, cable, router2 };
+			return new Object[] { match, implContainer, cable, router2, router };
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_7_4_collectelementstobetranslated_greenBBBBBFFFFF(
-			Match match, Router router, implementation.Container implContainer, Cable cable, Router router2) {
+			Match match, implementation.Container implContainer, Cable cable, Router router2, Router router) {
+		EMoflonEdge router2__cable____incoming = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge cable__router2____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge implContainer__router2____devices = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge router__cable____outgoing = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge cable__router____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge router2__cable____incoming = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge cable__router2____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		match.getToBeTranslatedNodes().add(router2);
+		String router2__cable____incoming_name_prime = "incoming";
+		String cable__router2____target_name_prime = "target";
 		String implContainer__router2____devices_name_prime = "devices";
 		String router__cable____outgoing_name_prime = "outgoing";
 		String cable__router____source_name_prime = "source";
-		String router2__cable____incoming_name_prime = "incoming";
-		String cable__router2____target_name_prime = "target";
+		router2__cable____incoming.setSrc(router2);
+		router2__cable____incoming.setTrg(cable);
+		match.getToBeTranslatedEdges().add(router2__cable____incoming);
+		cable__router2____target.setSrc(cable);
+		cable__router2____target.setTrg(router2);
+		match.getToBeTranslatedEdges().add(cable__router2____target);
 		implContainer__router2____devices.setSrc(implContainer);
 		implContainer__router2____devices.setTrg(router2);
 		match.getToBeTranslatedEdges().add(implContainer__router2____devices);
@@ -1263,37 +1270,31 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 		cable__router____source.setSrc(cable);
 		cable__router____source.setTrg(router);
 		match.getToBeTranslatedEdges().add(cable__router____source);
-		router2__cable____incoming.setSrc(router2);
-		router2__cable____incoming.setTrg(cable);
-		match.getToBeTranslatedEdges().add(router2__cable____incoming);
-		cable__router2____target.setSrc(cable);
-		cable__router2____target.setTrg(router2);
-		match.getToBeTranslatedEdges().add(cable__router2____target);
+		router2__cable____incoming.setName(router2__cable____incoming_name_prime);
+		cable__router2____target.setName(cable__router2____target_name_prime);
 		implContainer__router2____devices.setName(implContainer__router2____devices_name_prime);
 		router__cable____outgoing.setName(router__cable____outgoing_name_prime);
 		cable__router____source.setName(cable__router____source_name_prime);
-		router2__cable____incoming.setName(router2__cable____incoming_name_prime);
-		cable__router2____target.setName(cable__router2____target_name_prime);
-		return new Object[] { match, router, implContainer, cable, router2, implContainer__router2____devices,
-				router__cable____outgoing, cable__router____source, router2__cable____incoming,
-				cable__router2____target };
+		return new Object[] { match, implContainer, cable, router2, router, router2__cable____incoming,
+				cable__router2____target, implContainer__router2____devices, router__cable____outgoing,
+				cable__router____source };
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_7_5_collectcontextelements_blackBBBBB(Match match,
-			Router router, implementation.Container implContainer, Cable cable, Router router2) {
+			implementation.Container implContainer, Cable cable, Router router2, Router router) {
 		if (!router.equals(router2)) {
-			return new Object[] { match, router, implContainer, cable, router2 };
+			return new Object[] { match, implContainer, cable, router2, router };
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_7_5_collectcontextelements_greenBBBBFF(Match match,
-			Router router, implementation.Container implContainer, Cable cable) {
+			implementation.Container implContainer, Cable cable, Router router) {
 		EMoflonEdge implContainer__cable____cables = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge implContainer__router____devices = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		match.getContextNodes().add(router);
 		match.getContextNodes().add(implContainer);
 		match.getContextNodes().add(cable);
+		match.getContextNodes().add(router);
 		String implContainer__cable____cables_name_prime = "cables";
 		String implContainer__router____devices_name_prime = "devices";
 		implContainer__cable____cables.setSrc(implContainer);
@@ -1304,14 +1305,14 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 		match.getContextEdges().add(implContainer__router____devices);
 		implContainer__cable____cables.setName(implContainer__cable____cables_name_prime);
 		implContainer__router____devices.setName(implContainer__router____devices_name_prime);
-		return new Object[] { match, router, implContainer, cable, implContainer__cable____cables,
+		return new Object[] { match, implContainer, cable, router, implContainer__cable____cables,
 				implContainer__router____devices };
 	}
 
 	public static final void pattern_VirtualNodeToRouterRule2_7_6_registerobjectstomatch_expressionBBBBBB(
-			VirtualNodeToRouterRule2 _this, Match match, Router router, implementation.Container implContainer,
-			Cable cable, Router router2) {
-		_this.registerObjectsToMatch_BWD(match, router, implContainer, cable, router2);
+			VirtualNodeToRouterRule2 _this, Match match, implementation.Container implContainer, Cable cable,
+			Router router2, Router router) {
+		_this.registerObjectsToMatch_BWD(match, implContainer, cable, router2, router);
 
 	}
 
@@ -1327,41 +1328,41 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_8_1_performtransformation_bindingFFFFFFFFB(
 			IsApplicableMatch isApplicableMatch) {
-		EObject _localVariable_0 = isApplicableMatch.getObject("reqContainerToImplContainer");
-		EObject _localVariable_1 = isApplicableMatch.getObject("router");
-		EObject _localVariable_2 = isApplicableMatch.getObject("reqContainer");
-		EObject _localVariable_3 = isApplicableMatch.getObject("implContainer");
+		EObject _localVariable_0 = isApplicableMatch.getObject("virtualNodeToRouter1");
+		EObject _localVariable_1 = isApplicableMatch.getObject("implContainer");
+		EObject _localVariable_2 = isApplicableMatch.getObject("reqContainerToImplContainer");
+		EObject _localVariable_3 = isApplicableMatch.getObject("virtualNode");
 		EObject _localVariable_4 = isApplicableMatch.getObject("cable");
 		EObject _localVariable_5 = isApplicableMatch.getObject("router2");
-		EObject _localVariable_6 = isApplicableMatch.getObject("virtualNode");
-		EObject _localVariable_7 = isApplicableMatch.getObject("virtualNodeToRouter1");
-		EObject tmpReqContainerToImplContainer = _localVariable_0;
-		EObject tmpRouter = _localVariable_1;
-		EObject tmpReqContainer = _localVariable_2;
-		EObject tmpImplContainer = _localVariable_3;
+		EObject _localVariable_6 = isApplicableMatch.getObject("router");
+		EObject _localVariable_7 = isApplicableMatch.getObject("reqContainer");
+		EObject tmpVirtualNodeToRouter1 = _localVariable_0;
+		EObject tmpImplContainer = _localVariable_1;
+		EObject tmpReqContainerToImplContainer = _localVariable_2;
+		EObject tmpVirtualNode = _localVariable_3;
 		EObject tmpCable = _localVariable_4;
 		EObject tmpRouter2 = _localVariable_5;
-		EObject tmpVirtualNode = _localVariable_6;
-		EObject tmpVirtualNodeToRouter1 = _localVariable_7;
-		if (tmpReqContainerToImplContainer instanceof ReqContainerToImplContainer) {
-			ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) tmpReqContainerToImplContainer;
-			if (tmpRouter instanceof Router) {
-				Router router = (Router) tmpRouter;
-				if (tmpReqContainer instanceof Container) {
-					Container reqContainer = (Container) tmpReqContainer;
-					if (tmpImplContainer instanceof implementation.Container) {
-						implementation.Container implContainer = (implementation.Container) tmpImplContainer;
+		EObject tmpRouter = _localVariable_6;
+		EObject tmpReqContainer = _localVariable_7;
+		if (tmpVirtualNodeToRouter1 instanceof VirtualNodeToRouter) {
+			VirtualNodeToRouter virtualNodeToRouter1 = (VirtualNodeToRouter) tmpVirtualNodeToRouter1;
+			if (tmpImplContainer instanceof implementation.Container) {
+				implementation.Container implContainer = (implementation.Container) tmpImplContainer;
+				if (tmpReqContainerToImplContainer instanceof ReqContainerToImplContainer) {
+					ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) tmpReqContainerToImplContainer;
+					if (tmpVirtualNode instanceof NetworkSpan) {
+						NetworkSpan virtualNode = (NetworkSpan) tmpVirtualNode;
 						if (tmpCable instanceof Cable) {
 							Cable cable = (Cable) tmpCable;
 							if (tmpRouter2 instanceof Router) {
 								Router router2 = (Router) tmpRouter2;
-								if (tmpVirtualNode instanceof NetworkSpan) {
-									NetworkSpan virtualNode = (NetworkSpan) tmpVirtualNode;
-									if (tmpVirtualNodeToRouter1 instanceof VirtualNodeToRouter) {
-										VirtualNodeToRouter virtualNodeToRouter1 = (VirtualNodeToRouter) tmpVirtualNodeToRouter1;
-										return new Object[] { reqContainerToImplContainer, router, reqContainer,
-												implContainer, cable, router2, virtualNode, virtualNodeToRouter1,
-												isApplicableMatch };
+								if (tmpRouter instanceof Router) {
+									Router router = (Router) tmpRouter;
+									if (tmpReqContainer instanceof Container) {
+										Container reqContainer = (Container) tmpReqContainer;
+										return new Object[] { virtualNodeToRouter1, implContainer,
+												reqContainerToImplContainer, virtualNode, cable, router2, router,
+												reqContainer, isApplicableMatch };
 									}
 								}
 							}
@@ -1374,16 +1375,16 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_8_1_performtransformation_blackBBBBBBBBFBB(
-			ReqContainerToImplContainer reqContainerToImplContainer, Router router, Container reqContainer,
-			implementation.Container implContainer, Cable cable, Router router2, NetworkSpan virtualNode,
-			VirtualNodeToRouter virtualNodeToRouter1, VirtualNodeToRouterRule2 _this,
+			VirtualNodeToRouter virtualNodeToRouter1, implementation.Container implContainer,
+			ReqContainerToImplContainer reqContainerToImplContainer, NetworkSpan virtualNode, Cable cable,
+			Router router2, Router router, Container reqContainer, VirtualNodeToRouterRule2 _this,
 			IsApplicableMatch isApplicableMatch) {
 		if (!router.equals(router2)) {
 			for (EObject tmpCsp : isApplicableMatch.getAttributeInfo()) {
 				if (tmpCsp instanceof CSP) {
 					CSP csp = (CSP) tmpCsp;
-					return new Object[] { reqContainerToImplContainer, router, reqContainer, implContainer, cable,
-							router2, virtualNode, virtualNodeToRouter1, csp, _this, isApplicableMatch };
+					return new Object[] { virtualNodeToRouter1, implContainer, reqContainerToImplContainer, virtualNode,
+							cable, router2, router, reqContainer, csp, _this, isApplicableMatch };
 				}
 			}
 		}
@@ -1395,34 +1396,34 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 		Object[] result_pattern_VirtualNodeToRouterRule2_8_1_performtransformation_binding = pattern_VirtualNodeToRouterRule2_8_1_performtransformation_bindingFFFFFFFFB(
 				isApplicableMatch);
 		if (result_pattern_VirtualNodeToRouterRule2_8_1_performtransformation_binding != null) {
-			ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result_pattern_VirtualNodeToRouterRule2_8_1_performtransformation_binding[0];
-			Router router = (Router) result_pattern_VirtualNodeToRouterRule2_8_1_performtransformation_binding[1];
-			Container reqContainer = (Container) result_pattern_VirtualNodeToRouterRule2_8_1_performtransformation_binding[2];
-			implementation.Container implContainer = (implementation.Container) result_pattern_VirtualNodeToRouterRule2_8_1_performtransformation_binding[3];
+			VirtualNodeToRouter virtualNodeToRouter1 = (VirtualNodeToRouter) result_pattern_VirtualNodeToRouterRule2_8_1_performtransformation_binding[0];
+			implementation.Container implContainer = (implementation.Container) result_pattern_VirtualNodeToRouterRule2_8_1_performtransformation_binding[1];
+			ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) result_pattern_VirtualNodeToRouterRule2_8_1_performtransformation_binding[2];
+			NetworkSpan virtualNode = (NetworkSpan) result_pattern_VirtualNodeToRouterRule2_8_1_performtransformation_binding[3];
 			Cable cable = (Cable) result_pattern_VirtualNodeToRouterRule2_8_1_performtransformation_binding[4];
 			Router router2 = (Router) result_pattern_VirtualNodeToRouterRule2_8_1_performtransformation_binding[5];
-			NetworkSpan virtualNode = (NetworkSpan) result_pattern_VirtualNodeToRouterRule2_8_1_performtransformation_binding[6];
-			VirtualNodeToRouter virtualNodeToRouter1 = (VirtualNodeToRouter) result_pattern_VirtualNodeToRouterRule2_8_1_performtransformation_binding[7];
+			Router router = (Router) result_pattern_VirtualNodeToRouterRule2_8_1_performtransformation_binding[6];
+			Container reqContainer = (Container) result_pattern_VirtualNodeToRouterRule2_8_1_performtransformation_binding[7];
 
 			Object[] result_pattern_VirtualNodeToRouterRule2_8_1_performtransformation_black = pattern_VirtualNodeToRouterRule2_8_1_performtransformation_blackBBBBBBBBFBB(
-					reqContainerToImplContainer, router, reqContainer, implContainer, cable, router2, virtualNode,
-					virtualNodeToRouter1, _this, isApplicableMatch);
+					virtualNodeToRouter1, implContainer, reqContainerToImplContainer, virtualNode, cable, router2,
+					router, reqContainer, _this, isApplicableMatch);
 			if (result_pattern_VirtualNodeToRouterRule2_8_1_performtransformation_black != null) {
 				CSP csp = (CSP) result_pattern_VirtualNodeToRouterRule2_8_1_performtransformation_black[8];
 
-				return new Object[] { reqContainerToImplContainer, router, reqContainer, implContainer, cable, router2,
-						virtualNode, virtualNodeToRouter1, csp, _this, isApplicableMatch };
+				return new Object[] { virtualNodeToRouter1, implContainer, reqContainerToImplContainer, virtualNode,
+						cable, router2, router, reqContainer, csp, _this, isApplicableMatch };
 			}
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_VirtualNodeToRouterRule2_8_1_performtransformation_greenBBF(Router router2,
-			NetworkSpan virtualNode) {
+	public static final Object[] pattern_VirtualNodeToRouterRule2_8_1_performtransformation_greenBBF(
+			NetworkSpan virtualNode, Router router2) {
 		VirtualNodeToRouter virtualNodeToRouter = ReqToImpTransformatorFactory.eINSTANCE.createVirtualNodeToRouter();
-		virtualNodeToRouter.setTarget(router2);
 		virtualNodeToRouter.setSource(virtualNode);
-		return new Object[] { router2, virtualNode, virtualNodeToRouter };
+		virtualNodeToRouter.setTarget(router2);
+		return new Object[] { virtualNode, router2, virtualNodeToRouter };
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_8_2_collecttranslatedelements_blackBB(Router router2,
@@ -1439,74 +1440,73 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_8_3_bookkeepingforedges_blackBBBBBBBBBB(
-			PerformRuleResult ruleresult, EObject reqContainerToImplContainer, EObject router, EObject reqContainer,
-			EObject implContainer, EObject cable, EObject router2, EObject virtualNode, EObject virtualNodeToRouter1,
-			EObject virtualNodeToRouter) {
-		if (!reqContainerToImplContainer.equals(router)) {
-			if (!reqContainerToImplContainer.equals(router2)) {
-				if (!reqContainerToImplContainer.equals(virtualNode)) {
-					if (!reqContainerToImplContainer.equals(virtualNodeToRouter1)) {
-						if (!reqContainerToImplContainer.equals(virtualNodeToRouter)) {
-							if (!router.equals(router2)) {
-								if (!router.equals(virtualNode)) {
-									if (!router.equals(virtualNodeToRouter1)) {
-										if (!router.equals(virtualNodeToRouter)) {
-											if (!reqContainer.equals(reqContainerToImplContainer)) {
-												if (!reqContainer.equals(router)) {
-													if (!reqContainer.equals(router2)) {
-														if (!reqContainer.equals(virtualNode)) {
-															if (!reqContainer.equals(virtualNodeToRouter1)) {
-																if (!reqContainer.equals(virtualNodeToRouter)) {
-																	if (!implContainer
-																			.equals(reqContainerToImplContainer)) {
-																		if (!implContainer.equals(router)) {
-																			if (!implContainer.equals(reqContainer)) {
-																				if (!implContainer.equals(router2)) {
-																					if (!implContainer
-																							.equals(virtualNode)) {
-																						if (!implContainer.equals(
-																								virtualNodeToRouter1)) {
-																							if (!implContainer.equals(
-																									virtualNodeToRouter)) {
-																								if (!cable.equals(
-																										reqContainerToImplContainer)) {
-																									if (!cable.equals(
-																											router)) {
-																										if (!cable
-																												.equals(reqContainer)) {
-																											if (!cable
-																													.equals(implContainer)) {
-																												if (!cable
-																														.equals(router2)) {
-																													if (!cable
+			PerformRuleResult ruleresult, EObject virtualNodeToRouter1, EObject implContainer,
+			EObject reqContainerToImplContainer, EObject virtualNode, EObject cable, EObject router2,
+			EObject virtualNodeToRouter, EObject router, EObject reqContainer) {
+		if (!implContainer.equals(virtualNodeToRouter1)) {
+			if (!implContainer.equals(reqContainerToImplContainer)) {
+				if (!implContainer.equals(virtualNode)) {
+					if (!implContainer.equals(router2)) {
+						if (!implContainer.equals(virtualNodeToRouter)) {
+							if (!implContainer.equals(router)) {
+								if (!implContainer.equals(reqContainer)) {
+									if (!reqContainerToImplContainer.equals(virtualNodeToRouter1)) {
+										if (!reqContainerToImplContainer.equals(virtualNode)) {
+											if (!reqContainerToImplContainer.equals(router2)) {
+												if (!reqContainerToImplContainer.equals(virtualNodeToRouter)) {
+													if (!reqContainerToImplContainer.equals(router)) {
+														if (!virtualNode.equals(virtualNodeToRouter1)) {
+															if (!virtualNode.equals(virtualNodeToRouter)) {
+																if (!cable.equals(virtualNodeToRouter1)) {
+																	if (!cable.equals(implContainer)) {
+																		if (!cable
+																				.equals(reqContainerToImplContainer)) {
+																			if (!cable.equals(virtualNode)) {
+																				if (!cable.equals(router2)) {
+																					if (!cable.equals(
+																							virtualNodeToRouter)) {
+																						if (!cable.equals(router)) {
+																							if (!cable.equals(
+																									reqContainer)) {
+																								if (!router2.equals(
+																										virtualNodeToRouter1)) {
+																									if (!router2.equals(
+																											virtualNode)) {
+																										if (!router2
+																												.equals(virtualNodeToRouter)) {
+																											if (!virtualNodeToRouter
+																													.equals(virtualNodeToRouter1)) {
+																												if (!router
+																														.equals(virtualNodeToRouter1)) {
+																													if (!router
 																															.equals(virtualNode)) {
-																														if (!cable
-																																.equals(virtualNodeToRouter1)) {
-																															if (!cable
+																														if (!router
+																																.equals(router2)) {
+																															if (!router
 																																	.equals(virtualNodeToRouter)) {
-																																if (!router2
-																																		.equals(virtualNode)) {
-																																	if (!router2
-																																			.equals(virtualNodeToRouter1)) {
-																																		if (!router2
-																																				.equals(virtualNodeToRouter)) {
-																																			if (!virtualNode
-																																					.equals(virtualNodeToRouter1)) {
-																																				if (!virtualNode
+																																if (!reqContainer
+																																		.equals(virtualNodeToRouter1)) {
+																																	if (!reqContainer
+																																			.equals(reqContainerToImplContainer)) {
+																																		if (!reqContainer
+																																				.equals(virtualNode)) {
+																																			if (!reqContainer
+																																					.equals(router2)) {
+																																				if (!reqContainer
 																																						.equals(virtualNodeToRouter)) {
-																																					if (!virtualNodeToRouter
-																																							.equals(virtualNodeToRouter1)) {
+																																					if (!reqContainer
+																																							.equals(router)) {
 																																						return new Object[] {
 																																								ruleresult,
-																																								reqContainerToImplContainer,
-																																								router,
-																																								reqContainer,
+																																								virtualNodeToRouter1,
 																																								implContainer,
+																																								reqContainerToImplContainer,
+																																								virtualNode,
 																																								cable,
 																																								router2,
-																																								virtualNode,
-																																								virtualNodeToRouter1,
-																																								virtualNodeToRouter };
+																																								virtualNodeToRouter,
+																																								router,
+																																								reqContainer };
 																																					}
 																																				}
 																																			}
@@ -1547,23 +1547,35 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_8_3_bookkeepingforedges_greenBBBBBBBFFFFFFF(
-			PerformRuleResult ruleresult, EObject router, EObject implContainer, EObject cable, EObject router2,
-			EObject virtualNode, EObject virtualNodeToRouter) {
+			PerformRuleResult ruleresult, EObject implContainer, EObject virtualNode, EObject cable, EObject router2,
+			EObject virtualNodeToRouter, EObject router) {
+		EMoflonEdge router2__cable____incoming = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge cable__router2____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge virtualNodeToRouter__virtualNode____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge virtualNodeToRouter__router2____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge implContainer__router2____devices = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge router__cable____outgoing = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge cable__router____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge virtualNodeToRouter__router2____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge virtualNodeToRouter__virtualNode____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge router2__cable____incoming = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge cable__router2____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String ruleresult_ruleName_prime = "VirtualNodeToRouterRule2";
+		String router2__cable____incoming_name_prime = "incoming";
+		String cable__router2____target_name_prime = "target";
+		String virtualNodeToRouter__virtualNode____source_name_prime = "source";
+		String virtualNodeToRouter__router2____target_name_prime = "target";
 		String implContainer__router2____devices_name_prime = "devices";
 		String router__cable____outgoing_name_prime = "outgoing";
 		String cable__router____source_name_prime = "source";
-		String virtualNodeToRouter__router2____target_name_prime = "target";
-		String virtualNodeToRouter__virtualNode____source_name_prime = "source";
-		String router2__cable____incoming_name_prime = "incoming";
-		String cable__router2____target_name_prime = "target";
+		router2__cable____incoming.setSrc(router2);
+		router2__cable____incoming.setTrg(cable);
+		ruleresult.getTranslatedEdges().add(router2__cable____incoming);
+		cable__router2____target.setSrc(cable);
+		cable__router2____target.setTrg(router2);
+		ruleresult.getTranslatedEdges().add(cable__router2____target);
+		virtualNodeToRouter__virtualNode____source.setSrc(virtualNodeToRouter);
+		virtualNodeToRouter__virtualNode____source.setTrg(virtualNode);
+		ruleresult.getCreatedEdges().add(virtualNodeToRouter__virtualNode____source);
+		virtualNodeToRouter__router2____target.setSrc(virtualNodeToRouter);
+		virtualNodeToRouter__router2____target.setTrg(router2);
+		ruleresult.getCreatedEdges().add(virtualNodeToRouter__router2____target);
 		implContainer__router2____devices.setSrc(implContainer);
 		implContainer__router2____devices.setTrg(router2);
 		ruleresult.getTranslatedEdges().add(implContainer__router2____devices);
@@ -1573,38 +1585,26 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 		cable__router____source.setSrc(cable);
 		cable__router____source.setTrg(router);
 		ruleresult.getTranslatedEdges().add(cable__router____source);
-		virtualNodeToRouter__router2____target.setSrc(virtualNodeToRouter);
-		virtualNodeToRouter__router2____target.setTrg(router2);
-		ruleresult.getCreatedEdges().add(virtualNodeToRouter__router2____target);
-		virtualNodeToRouter__virtualNode____source.setSrc(virtualNodeToRouter);
-		virtualNodeToRouter__virtualNode____source.setTrg(virtualNode);
-		ruleresult.getCreatedEdges().add(virtualNodeToRouter__virtualNode____source);
-		router2__cable____incoming.setSrc(router2);
-		router2__cable____incoming.setTrg(cable);
-		ruleresult.getTranslatedEdges().add(router2__cable____incoming);
-		cable__router2____target.setSrc(cable);
-		cable__router2____target.setTrg(router2);
-		ruleresult.getTranslatedEdges().add(cable__router2____target);
 		ruleresult.setRuleName(ruleresult_ruleName_prime);
+		router2__cable____incoming.setName(router2__cable____incoming_name_prime);
+		cable__router2____target.setName(cable__router2____target_name_prime);
+		virtualNodeToRouter__virtualNode____source.setName(virtualNodeToRouter__virtualNode____source_name_prime);
+		virtualNodeToRouter__router2____target.setName(virtualNodeToRouter__router2____target_name_prime);
 		implContainer__router2____devices.setName(implContainer__router2____devices_name_prime);
 		router__cable____outgoing.setName(router__cable____outgoing_name_prime);
 		cable__router____source.setName(cable__router____source_name_prime);
-		virtualNodeToRouter__router2____target.setName(virtualNodeToRouter__router2____target_name_prime);
-		virtualNodeToRouter__virtualNode____source.setName(virtualNodeToRouter__virtualNode____source_name_prime);
-		router2__cable____incoming.setName(router2__cable____incoming_name_prime);
-		cable__router2____target.setName(cable__router2____target_name_prime);
-		return new Object[] { ruleresult, router, implContainer, cable, router2, virtualNode, virtualNodeToRouter,
-				implContainer__router2____devices, router__cable____outgoing, cable__router____source,
-				virtualNodeToRouter__router2____target, virtualNodeToRouter__virtualNode____source,
-				router2__cable____incoming, cable__router2____target };
+		return new Object[] { ruleresult, implContainer, virtualNode, cable, router2, virtualNodeToRouter, router,
+				router2__cable____incoming, cable__router2____target, virtualNodeToRouter__virtualNode____source,
+				virtualNodeToRouter__router2____target, implContainer__router2____devices, router__cable____outgoing,
+				cable__router____source };
 	}
 
 	public static final void pattern_VirtualNodeToRouterRule2_8_5_registerobjects_expressionBBBBBBBBBBB(
-			VirtualNodeToRouterRule2 _this, PerformRuleResult ruleresult, EObject reqContainerToImplContainer,
-			EObject router, EObject reqContainer, EObject implContainer, EObject cable, EObject router2,
-			EObject virtualNode, EObject virtualNodeToRouter1, EObject virtualNodeToRouter) {
-		_this.registerObjects_BWD(ruleresult, reqContainerToImplContainer, router, reqContainer, implContainer, cable,
-				router2, virtualNode, virtualNodeToRouter1, virtualNodeToRouter);
+			VirtualNodeToRouterRule2 _this, PerformRuleResult ruleresult, EObject virtualNodeToRouter1,
+			EObject implContainer, EObject reqContainerToImplContainer, EObject virtualNode, EObject cable,
+			EObject router2, EObject virtualNodeToRouter, EObject router, EObject reqContainer) {
+		_this.registerObjects_BWD(ruleresult, virtualNodeToRouter1, implContainer, reqContainerToImplContainer,
+				virtualNode, cable, router2, virtualNodeToRouter, router, reqContainer);
 
 	}
 
@@ -1666,23 +1666,23 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_9_2_corematch_bindingFFFFB(Match match) {
-		EObject _localVariable_0 = match.getObject("router");
-		EObject _localVariable_1 = match.getObject("implContainer");
-		EObject _localVariable_2 = match.getObject("cable");
-		EObject _localVariable_3 = match.getObject("router2");
-		EObject tmpRouter = _localVariable_0;
-		EObject tmpImplContainer = _localVariable_1;
-		EObject tmpCable = _localVariable_2;
-		EObject tmpRouter2 = _localVariable_3;
-		if (tmpRouter instanceof Router) {
-			Router router = (Router) tmpRouter;
-			if (tmpImplContainer instanceof implementation.Container) {
-				implementation.Container implContainer = (implementation.Container) tmpImplContainer;
-				if (tmpCable instanceof Cable) {
-					Cable cable = (Cable) tmpCable;
-					if (tmpRouter2 instanceof Router) {
-						Router router2 = (Router) tmpRouter2;
-						return new Object[] { router, implContainer, cable, router2, match };
+		EObject _localVariable_0 = match.getObject("implContainer");
+		EObject _localVariable_1 = match.getObject("cable");
+		EObject _localVariable_2 = match.getObject("router2");
+		EObject _localVariable_3 = match.getObject("router");
+		EObject tmpImplContainer = _localVariable_0;
+		EObject tmpCable = _localVariable_1;
+		EObject tmpRouter2 = _localVariable_2;
+		EObject tmpRouter = _localVariable_3;
+		if (tmpImplContainer instanceof implementation.Container) {
+			implementation.Container implContainer = (implementation.Container) tmpImplContainer;
+			if (tmpCable instanceof Cable) {
+				Cable cable = (Cable) tmpCable;
+				if (tmpRouter2 instanceof Router) {
+					Router router2 = (Router) tmpRouter2;
+					if (tmpRouter instanceof Router) {
+						Router router = (Router) tmpRouter;
+						return new Object[] { implContainer, cable, router2, router, match };
 					}
 				}
 			}
@@ -1690,20 +1690,20 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_VirtualNodeToRouterRule2_9_2_corematch_blackFBFBBBFFB(Router router,
-			implementation.Container implContainer, Cable cable, Router router2, Match match) {
+	public static final Iterable<Object[]> pattern_VirtualNodeToRouterRule2_9_2_corematch_blackFBFFBBBFB(
+			implementation.Container implContainer, Cable cable, Router router2, Router router, Match match) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		if (!router.equals(router2)) {
-			for (VirtualNodeToRouter virtualNodeToRouter1 : org.moflon.core.utilities.eMoflonEMFUtil
-					.getOppositeReferenceTyped(router, VirtualNodeToRouter.class, "target")) {
-				NetworkSpan virtualNode = virtualNodeToRouter1.getSource();
-				if (virtualNode != null) {
-					for (ReqContainerToImplContainer reqContainerToImplContainer : org.moflon.core.utilities.eMoflonEMFUtil
-							.getOppositeReferenceTyped(implContainer, ReqContainerToImplContainer.class, "target")) {
-						Container reqContainer = reqContainerToImplContainer.getSource();
-						if (reqContainer != null) {
-							_result.add(new Object[] { reqContainerToImplContainer, router, reqContainer, implContainer,
-									cable, router2, virtualNode, virtualNodeToRouter1, match });
+			for (ReqContainerToImplContainer reqContainerToImplContainer : org.moflon.core.utilities.eMoflonEMFUtil
+					.getOppositeReferenceTyped(implContainer, ReqContainerToImplContainer.class, "target")) {
+				Container reqContainer = reqContainerToImplContainer.getSource();
+				if (reqContainer != null) {
+					for (VirtualNodeToRouter virtualNodeToRouter1 : org.moflon.core.utilities.eMoflonEMFUtil
+							.getOppositeReferenceTyped(router, VirtualNodeToRouter.class, "target")) {
+						NetworkSpan virtualNode = virtualNodeToRouter1.getSource();
+						if (virtualNode != null) {
+							_result.add(new Object[] { virtualNodeToRouter1, implContainer, reqContainerToImplContainer,
+									virtualNode, cable, router2, router, reqContainer, match });
 						}
 
 					}
@@ -1715,24 +1715,24 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	}
 
 	public static final Iterable<Object[]> pattern_VirtualNodeToRouterRule2_9_3_findcontext_blackBBBBBBBB(
-			ReqContainerToImplContainer reqContainerToImplContainer, Router router, Container reqContainer,
-			implementation.Container implContainer, Cable cable, Router router2, NetworkSpan virtualNode,
-			VirtualNodeToRouter virtualNodeToRouter1) {
+			VirtualNodeToRouter virtualNodeToRouter1, implementation.Container implContainer,
+			ReqContainerToImplContainer reqContainerToImplContainer, NetworkSpan virtualNode, Cable cable,
+			Router router2, Router router, Container reqContainer) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		if (!router.equals(router2)) {
-			if (reqContainer.equals(reqContainerToImplContainer.getSource())) {
-				if (implContainer.getDevices().contains(router2)) {
-					if (router.getOutgoing().contains(cable)) {
-						if (virtualNode.equals(reqContainer.getNetworkSpan())) {
-							if (implContainer.getCables().contains(cable)) {
+			if (implContainer.getCables().contains(cable)) {
+				if (implContainer.getDevices().contains(router)) {
+					if (implContainer.equals(reqContainerToImplContainer.getTarget())) {
+						if (virtualNode.equals(virtualNodeToRouter1.getSource())) {
+							if (router2.getIncoming().contains(cable)) {
 								if (router.equals(virtualNodeToRouter1.getTarget())) {
-									if (virtualNode.equals(virtualNodeToRouter1.getSource())) {
-										if (implContainer.getDevices().contains(router)) {
-											if (router2.getIncoming().contains(cable)) {
-												if (implContainer.equals(reqContainerToImplContainer.getTarget())) {
-													_result.add(new Object[] { reqContainerToImplContainer, router,
-															reqContainer, implContainer, cable, router2, virtualNode,
-															virtualNodeToRouter1 });
+									if (implContainer.getDevices().contains(router2)) {
+										if (virtualNode.equals(reqContainer.getNetworkSpan())) {
+											if (reqContainer.equals(reqContainerToImplContainer.getSource())) {
+												if (router.getOutgoing().contains(cable)) {
+													_result.add(new Object[] { virtualNodeToRouter1, implContainer,
+															reqContainerToImplContainer, virtualNode, cable, router2,
+															router, reqContainer });
 												}
 											}
 										}
@@ -1748,113 +1748,112 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_9_3_findcontext_greenBBBBBBBBFFFFFFFFFFFFF(
-			ReqContainerToImplContainer reqContainerToImplContainer, Router router, Container reqContainer,
-			implementation.Container implContainer, Cable cable, Router router2, NetworkSpan virtualNode,
-			VirtualNodeToRouter virtualNodeToRouter1) {
+			VirtualNodeToRouter virtualNodeToRouter1, implementation.Container implContainer,
+			ReqContainerToImplContainer reqContainerToImplContainer, NetworkSpan virtualNode, Cable cable,
+			Router router2, Router router, Container reqContainer) {
 		IsApplicableMatch isApplicableMatch = RuntimeFactory.eINSTANCE.createIsApplicableMatch();
-		EMoflonEdge reqContainerToImplContainer__reqContainer____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge implContainer__router2____devices = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge router__cable____outgoing = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge cable__router____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge reqContainer__virtualNode____networkSpan = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge implContainer__cable____cables = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge virtualNodeToRouter1__router____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge virtualNodeToRouter1__virtualNode____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge implContainer__router____devices = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge reqContainerToImplContainer__implContainer____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge virtualNodeToRouter1__virtualNode____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge router2__cable____incoming = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge cable__router2____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge reqContainerToImplContainer__implContainer____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		String reqContainerToImplContainer__reqContainer____source_name_prime = "source";
-		String implContainer__router2____devices_name_prime = "devices";
-		String router__cable____outgoing_name_prime = "outgoing";
-		String cable__router____source_name_prime = "source";
-		String reqContainer__virtualNode____networkSpan_name_prime = "networkSpan";
+		EMoflonEdge virtualNodeToRouter1__router____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge implContainer__router2____devices = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge reqContainer__virtualNode____networkSpan = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge reqContainerToImplContainer__reqContainer____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge router__cable____outgoing = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge cable__router____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String implContainer__cable____cables_name_prime = "cables";
-		String virtualNodeToRouter1__router____target_name_prime = "target";
-		String virtualNodeToRouter1__virtualNode____source_name_prime = "source";
 		String implContainer__router____devices_name_prime = "devices";
+		String reqContainerToImplContainer__implContainer____target_name_prime = "target";
+		String virtualNodeToRouter1__virtualNode____source_name_prime = "source";
 		String router2__cable____incoming_name_prime = "incoming";
 		String cable__router2____target_name_prime = "target";
-		String reqContainerToImplContainer__implContainer____target_name_prime = "target";
-		isApplicableMatch.getAllContextElements().add(reqContainerToImplContainer);
-		isApplicableMatch.getAllContextElements().add(router);
-		isApplicableMatch.getAllContextElements().add(reqContainer);
+		String virtualNodeToRouter1__router____target_name_prime = "target";
+		String implContainer__router2____devices_name_prime = "devices";
+		String reqContainer__virtualNode____networkSpan_name_prime = "networkSpan";
+		String reqContainerToImplContainer__reqContainer____source_name_prime = "source";
+		String router__cable____outgoing_name_prime = "outgoing";
+		String cable__router____source_name_prime = "source";
+		isApplicableMatch.getAllContextElements().add(virtualNodeToRouter1);
 		isApplicableMatch.getAllContextElements().add(implContainer);
+		isApplicableMatch.getAllContextElements().add(reqContainerToImplContainer);
+		isApplicableMatch.getAllContextElements().add(virtualNode);
 		isApplicableMatch.getAllContextElements().add(cable);
 		isApplicableMatch.getAllContextElements().add(router2);
-		isApplicableMatch.getAllContextElements().add(virtualNode);
-		isApplicableMatch.getAllContextElements().add(virtualNodeToRouter1);
-		reqContainerToImplContainer__reqContainer____source.setSrc(reqContainerToImplContainer);
-		reqContainerToImplContainer__reqContainer____source.setTrg(reqContainer);
-		isApplicableMatch.getAllContextElements().add(reqContainerToImplContainer__reqContainer____source);
-		implContainer__router2____devices.setSrc(implContainer);
-		implContainer__router2____devices.setTrg(router2);
-		isApplicableMatch.getAllContextElements().add(implContainer__router2____devices);
-		router__cable____outgoing.setSrc(router);
-		router__cable____outgoing.setTrg(cable);
-		isApplicableMatch.getAllContextElements().add(router__cable____outgoing);
-		cable__router____source.setSrc(cable);
-		cable__router____source.setTrg(router);
-		isApplicableMatch.getAllContextElements().add(cable__router____source);
-		reqContainer__virtualNode____networkSpan.setSrc(reqContainer);
-		reqContainer__virtualNode____networkSpan.setTrg(virtualNode);
-		isApplicableMatch.getAllContextElements().add(reqContainer__virtualNode____networkSpan);
+		isApplicableMatch.getAllContextElements().add(router);
+		isApplicableMatch.getAllContextElements().add(reqContainer);
 		implContainer__cable____cables.setSrc(implContainer);
 		implContainer__cable____cables.setTrg(cable);
 		isApplicableMatch.getAllContextElements().add(implContainer__cable____cables);
-		virtualNodeToRouter1__router____target.setSrc(virtualNodeToRouter1);
-		virtualNodeToRouter1__router____target.setTrg(router);
-		isApplicableMatch.getAllContextElements().add(virtualNodeToRouter1__router____target);
-		virtualNodeToRouter1__virtualNode____source.setSrc(virtualNodeToRouter1);
-		virtualNodeToRouter1__virtualNode____source.setTrg(virtualNode);
-		isApplicableMatch.getAllContextElements().add(virtualNodeToRouter1__virtualNode____source);
 		implContainer__router____devices.setSrc(implContainer);
 		implContainer__router____devices.setTrg(router);
 		isApplicableMatch.getAllContextElements().add(implContainer__router____devices);
+		reqContainerToImplContainer__implContainer____target.setSrc(reqContainerToImplContainer);
+		reqContainerToImplContainer__implContainer____target.setTrg(implContainer);
+		isApplicableMatch.getAllContextElements().add(reqContainerToImplContainer__implContainer____target);
+		virtualNodeToRouter1__virtualNode____source.setSrc(virtualNodeToRouter1);
+		virtualNodeToRouter1__virtualNode____source.setTrg(virtualNode);
+		isApplicableMatch.getAllContextElements().add(virtualNodeToRouter1__virtualNode____source);
 		router2__cable____incoming.setSrc(router2);
 		router2__cable____incoming.setTrg(cable);
 		isApplicableMatch.getAllContextElements().add(router2__cable____incoming);
 		cable__router2____target.setSrc(cable);
 		cable__router2____target.setTrg(router2);
 		isApplicableMatch.getAllContextElements().add(cable__router2____target);
-		reqContainerToImplContainer__implContainer____target.setSrc(reqContainerToImplContainer);
-		reqContainerToImplContainer__implContainer____target.setTrg(implContainer);
-		isApplicableMatch.getAllContextElements().add(reqContainerToImplContainer__implContainer____target);
-		reqContainerToImplContainer__reqContainer____source
-				.setName(reqContainerToImplContainer__reqContainer____source_name_prime);
-		implContainer__router2____devices.setName(implContainer__router2____devices_name_prime);
-		router__cable____outgoing.setName(router__cable____outgoing_name_prime);
-		cable__router____source.setName(cable__router____source_name_prime);
-		reqContainer__virtualNode____networkSpan.setName(reqContainer__virtualNode____networkSpan_name_prime);
+		virtualNodeToRouter1__router____target.setSrc(virtualNodeToRouter1);
+		virtualNodeToRouter1__router____target.setTrg(router);
+		isApplicableMatch.getAllContextElements().add(virtualNodeToRouter1__router____target);
+		implContainer__router2____devices.setSrc(implContainer);
+		implContainer__router2____devices.setTrg(router2);
+		isApplicableMatch.getAllContextElements().add(implContainer__router2____devices);
+		reqContainer__virtualNode____networkSpan.setSrc(reqContainer);
+		reqContainer__virtualNode____networkSpan.setTrg(virtualNode);
+		isApplicableMatch.getAllContextElements().add(reqContainer__virtualNode____networkSpan);
+		reqContainerToImplContainer__reqContainer____source.setSrc(reqContainerToImplContainer);
+		reqContainerToImplContainer__reqContainer____source.setTrg(reqContainer);
+		isApplicableMatch.getAllContextElements().add(reqContainerToImplContainer__reqContainer____source);
+		router__cable____outgoing.setSrc(router);
+		router__cable____outgoing.setTrg(cable);
+		isApplicableMatch.getAllContextElements().add(router__cable____outgoing);
+		cable__router____source.setSrc(cable);
+		cable__router____source.setTrg(router);
+		isApplicableMatch.getAllContextElements().add(cable__router____source);
 		implContainer__cable____cables.setName(implContainer__cable____cables_name_prime);
-		virtualNodeToRouter1__router____target.setName(virtualNodeToRouter1__router____target_name_prime);
-		virtualNodeToRouter1__virtualNode____source.setName(virtualNodeToRouter1__virtualNode____source_name_prime);
 		implContainer__router____devices.setName(implContainer__router____devices_name_prime);
-		router2__cable____incoming.setName(router2__cable____incoming_name_prime);
-		cable__router2____target.setName(cable__router2____target_name_prime);
 		reqContainerToImplContainer__implContainer____target
 				.setName(reqContainerToImplContainer__implContainer____target_name_prime);
-		return new Object[] { reqContainerToImplContainer, router, reqContainer, implContainer, cable, router2,
-				virtualNode, virtualNodeToRouter1, isApplicableMatch,
-				reqContainerToImplContainer__reqContainer____source, implContainer__router2____devices,
-				router__cable____outgoing, cable__router____source, reqContainer__virtualNode____networkSpan,
-				implContainer__cable____cables, virtualNodeToRouter1__router____target,
-				virtualNodeToRouter1__virtualNode____source, implContainer__router____devices,
-				router2__cable____incoming, cable__router2____target,
-				reqContainerToImplContainer__implContainer____target };
+		virtualNodeToRouter1__virtualNode____source.setName(virtualNodeToRouter1__virtualNode____source_name_prime);
+		router2__cable____incoming.setName(router2__cable____incoming_name_prime);
+		cable__router2____target.setName(cable__router2____target_name_prime);
+		virtualNodeToRouter1__router____target.setName(virtualNodeToRouter1__router____target_name_prime);
+		implContainer__router2____devices.setName(implContainer__router2____devices_name_prime);
+		reqContainer__virtualNode____networkSpan.setName(reqContainer__virtualNode____networkSpan_name_prime);
+		reqContainerToImplContainer__reqContainer____source
+				.setName(reqContainerToImplContainer__reqContainer____source_name_prime);
+		router__cable____outgoing.setName(router__cable____outgoing_name_prime);
+		cable__router____source.setName(cable__router____source_name_prime);
+		return new Object[] { virtualNodeToRouter1, implContainer, reqContainerToImplContainer, virtualNode, cable,
+				router2, router, reqContainer, isApplicableMatch, implContainer__cable____cables,
+				implContainer__router____devices, reqContainerToImplContainer__implContainer____target,
+				virtualNodeToRouter1__virtualNode____source, router2__cable____incoming, cable__router2____target,
+				virtualNodeToRouter1__router____target, implContainer__router2____devices,
+				reqContainer__virtualNode____networkSpan, reqContainerToImplContainer__reqContainer____source,
+				router__cable____outgoing, cable__router____source };
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_9_4_solveCSP_bindingFBBBBBBBBBB(
 			VirtualNodeToRouterRule2 _this, IsApplicableMatch isApplicableMatch,
-			ReqContainerToImplContainer reqContainerToImplContainer, Router router, Container reqContainer,
-			implementation.Container implContainer, Cable cable, Router router2, NetworkSpan virtualNode,
-			VirtualNodeToRouter virtualNodeToRouter1) {
-		CSP _localVariable_0 = _this.isApplicable_solveCsp_BWD(isApplicableMatch, reqContainerToImplContainer, router,
-				reqContainer, implContainer, cable, router2, virtualNode, virtualNodeToRouter1);
+			VirtualNodeToRouter virtualNodeToRouter1, implementation.Container implContainer,
+			ReqContainerToImplContainer reqContainerToImplContainer, NetworkSpan virtualNode, Cable cable,
+			Router router2, Router router, Container reqContainer) {
+		CSP _localVariable_0 = _this.isApplicable_solveCsp_BWD(isApplicableMatch, virtualNodeToRouter1, implContainer,
+				reqContainerToImplContainer, virtualNode, cable, router2, router, reqContainer);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, reqContainerToImplContainer, router, reqContainer,
-					implContainer, cable, router2, virtualNode, virtualNodeToRouter1 };
+			return new Object[] { csp, _this, isApplicableMatch, virtualNodeToRouter1, implContainer,
+					reqContainerToImplContainer, virtualNode, cable, router2, router, reqContainer };
 		}
 		return null;
 	}
@@ -1865,12 +1864,12 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_9_4_solveCSP_bindingAndBlackFBBBBBBBBBB(
 			VirtualNodeToRouterRule2 _this, IsApplicableMatch isApplicableMatch,
-			ReqContainerToImplContainer reqContainerToImplContainer, Router router, Container reqContainer,
-			implementation.Container implContainer, Cable cable, Router router2, NetworkSpan virtualNode,
-			VirtualNodeToRouter virtualNodeToRouter1) {
+			VirtualNodeToRouter virtualNodeToRouter1, implementation.Container implContainer,
+			ReqContainerToImplContainer reqContainerToImplContainer, NetworkSpan virtualNode, Cable cable,
+			Router router2, Router router, Container reqContainer) {
 		Object[] result_pattern_VirtualNodeToRouterRule2_9_4_solveCSP_binding = pattern_VirtualNodeToRouterRule2_9_4_solveCSP_bindingFBBBBBBBBBB(
-				_this, isApplicableMatch, reqContainerToImplContainer, router, reqContainer, implContainer, cable,
-				router2, virtualNode, virtualNodeToRouter1);
+				_this, isApplicableMatch, virtualNodeToRouter1, implContainer, reqContainerToImplContainer, virtualNode,
+				cable, router2, router, reqContainer);
 		if (result_pattern_VirtualNodeToRouterRule2_9_4_solveCSP_binding != null) {
 			CSP csp = (CSP) result_pattern_VirtualNodeToRouterRule2_9_4_solveCSP_binding[0];
 
@@ -1878,8 +1877,8 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 					csp);
 			if (result_pattern_VirtualNodeToRouterRule2_9_4_solveCSP_black != null) {
 
-				return new Object[] { csp, _this, isApplicableMatch, reqContainerToImplContainer, router, reqContainer,
-						implContainer, cable, router2, virtualNode, virtualNodeToRouter1 };
+				return new Object[] { csp, _this, isApplicableMatch, virtualNodeToRouter1, implContainer,
+						reqContainerToImplContainer, virtualNode, cable, router2, router, reqContainer };
 			}
 		}
 		return null;
@@ -1968,13 +1967,12 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	}
 
 	public static final Iterable<Object[]> pattern_VirtualNodeToRouterRule2_17_2_testcorematchandDECs_blackBF(
-			Container reqContainer) {
+			NetworkSpan virtualNode) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		NetworkSpan virtualNode = reqContainer.getNetworkSpan();
-		if (virtualNode != null) {
-			_result.add(new Object[] { reqContainer, virtualNode });
+		for (Container reqContainer : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(virtualNode,
+				Container.class, "networkSpan")) {
+			_result.add(new Object[] { virtualNode, reqContainer });
 		}
-
 		return _result;
 	}
 
@@ -1988,8 +1986,8 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	}
 
 	public static final boolean pattern_VirtualNodeToRouterRule2_17_3_bookkeepingwithgenericisAppropriatemethod_expressionFBBBB(
-			VirtualNodeToRouterRule2 _this, Match match, Container reqContainer, NetworkSpan virtualNode) {
-		boolean _localVariable_0 = _this.isAppropriate_FWD(match, reqContainer, virtualNode);
+			VirtualNodeToRouterRule2 _this, Match match, NetworkSpan virtualNode, Container reqContainer) {
+		boolean _localVariable_0 = _this.isAppropriate_FWD(match, virtualNode, reqContainer);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -2077,30 +2075,31 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	}
 
 	public static final Iterable<Object[]> pattern_VirtualNodeToRouterRule2_18_2_testcorematchandDECs_blackFFFFB(
-			EMoflonEdge _edge_devices) {
+			EMoflonEdge _edge_incoming) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		EObject tmpImplContainer = _edge_devices.getSrc();
-		if (tmpImplContainer instanceof implementation.Container) {
-			implementation.Container implContainer = (implementation.Container) tmpImplContainer;
-			EObject tmpRouter2 = _edge_devices.getTrg();
-			if (tmpRouter2 instanceof Router) {
-				Router router2 = (Router) tmpRouter2;
-				if (implContainer.getDevices().contains(router2)) {
-					for (Cable cable : implContainer.getCables()) {
-						if (router2.getIncoming().contains(cable)) {
-							Device tmpRouter = cable.getSource();
-							if (tmpRouter instanceof Router) {
-								Router router = (Router) tmpRouter;
-								if (!router.equals(router2)) {
+		EObject tmpRouter2 = _edge_incoming.getSrc();
+		if (tmpRouter2 instanceof Router) {
+			Router router2 = (Router) tmpRouter2;
+			EObject tmpCable = _edge_incoming.getTrg();
+			if (tmpCable instanceof Cable) {
+				Cable cable = (Cable) tmpCable;
+				if (router2.getIncoming().contains(cable)) {
+					Device tmpRouter = cable.getSource();
+					if (tmpRouter instanceof Router) {
+						Router router = (Router) tmpRouter;
+						if (!router.equals(router2)) {
+							for (implementation.Container implContainer : org.moflon.core.utilities.eMoflonEMFUtil
+									.getOppositeReferenceTyped(router2, implementation.Container.class, "devices")) {
+								if (implContainer.getCables().contains(cable)) {
 									if (implContainer.getDevices().contains(router)) {
 										_result.add(
-												new Object[] { router, implContainer, cable, router2, _edge_devices });
+												new Object[] { implContainer, cable, router2, router, _edge_incoming });
 									}
 								}
 							}
-
 						}
 					}
+
 				}
 			}
 
@@ -2119,9 +2118,9 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	}
 
 	public static final boolean pattern_VirtualNodeToRouterRule2_18_3_bookkeepingwithgenericisAppropriatemethod_expressionFBBBBBB(
-			VirtualNodeToRouterRule2 _this, Match match, Router router, implementation.Container implContainer,
-			Cable cable, Router router2) {
-		boolean _localVariable_0 = _this.isAppropriate_BWD(match, router, implContainer, cable, router2);
+			VirtualNodeToRouterRule2 _this, Match match, implementation.Container implContainer, Cable cable,
+			Router router2, Router router) {
+		boolean _localVariable_0 = _this.isAppropriate_BWD(match, implContainer, cable, router2, router);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -2165,31 +2164,31 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_21_2_matchsrctrgcontext_bindingFFFFFFBB(
 			Match targetMatch, Match sourceMatch) {
-		EObject _localVariable_0 = targetMatch.getObject("router");
-		EObject _localVariable_1 = sourceMatch.getObject("reqContainer");
-		EObject _localVariable_2 = targetMatch.getObject("implContainer");
-		EObject _localVariable_3 = targetMatch.getObject("cable");
-		EObject _localVariable_4 = targetMatch.getObject("router2");
-		EObject _localVariable_5 = sourceMatch.getObject("virtualNode");
-		EObject tmpRouter = _localVariable_0;
-		EObject tmpReqContainer = _localVariable_1;
-		EObject tmpImplContainer = _localVariable_2;
-		EObject tmpCable = _localVariable_3;
-		EObject tmpRouter2 = _localVariable_4;
-		EObject tmpVirtualNode = _localVariable_5;
-		if (tmpRouter instanceof Router) {
-			Router router = (Router) tmpRouter;
-			if (tmpReqContainer instanceof Container) {
-				Container reqContainer = (Container) tmpReqContainer;
-				if (tmpImplContainer instanceof implementation.Container) {
-					implementation.Container implContainer = (implementation.Container) tmpImplContainer;
-					if (tmpCable instanceof Cable) {
-						Cable cable = (Cable) tmpCable;
-						if (tmpRouter2 instanceof Router) {
-							Router router2 = (Router) tmpRouter2;
-							if (tmpVirtualNode instanceof NetworkSpan) {
-								NetworkSpan virtualNode = (NetworkSpan) tmpVirtualNode;
-								return new Object[] { router, reqContainer, implContainer, cable, router2, virtualNode,
+		EObject _localVariable_0 = targetMatch.getObject("implContainer");
+		EObject _localVariable_1 = sourceMatch.getObject("virtualNode");
+		EObject _localVariable_2 = targetMatch.getObject("cable");
+		EObject _localVariable_3 = targetMatch.getObject("router2");
+		EObject _localVariable_4 = targetMatch.getObject("router");
+		EObject _localVariable_5 = sourceMatch.getObject("reqContainer");
+		EObject tmpImplContainer = _localVariable_0;
+		EObject tmpVirtualNode = _localVariable_1;
+		EObject tmpCable = _localVariable_2;
+		EObject tmpRouter2 = _localVariable_3;
+		EObject tmpRouter = _localVariable_4;
+		EObject tmpReqContainer = _localVariable_5;
+		if (tmpImplContainer instanceof implementation.Container) {
+			implementation.Container implContainer = (implementation.Container) tmpImplContainer;
+			if (tmpVirtualNode instanceof NetworkSpan) {
+				NetworkSpan virtualNode = (NetworkSpan) tmpVirtualNode;
+				if (tmpCable instanceof Cable) {
+					Cable cable = (Cable) tmpCable;
+					if (tmpRouter2 instanceof Router) {
+						Router router2 = (Router) tmpRouter2;
+						if (tmpRouter instanceof Router) {
+							Router router = (Router) tmpRouter;
+							if (tmpReqContainer instanceof Container) {
+								Container reqContainer = (Container) tmpReqContainer;
+								return new Object[] { implContainer, virtualNode, cable, router2, router, reqContainer,
 										targetMatch, sourceMatch };
 							}
 						}
@@ -2200,12 +2199,12 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 		return null;
 	}
 
-	public static final Object[] pattern_VirtualNodeToRouterRule2_21_2_matchsrctrgcontext_blackBBBBBBBB(Router router,
-			Container reqContainer, implementation.Container implContainer, Cable cable, Router router2,
-			NetworkSpan virtualNode, Match sourceMatch, Match targetMatch) {
+	public static final Object[] pattern_VirtualNodeToRouterRule2_21_2_matchsrctrgcontext_blackBBBBBBBB(
+			implementation.Container implContainer, NetworkSpan virtualNode, Cable cable, Router router2, Router router,
+			Container reqContainer, Match sourceMatch, Match targetMatch) {
 		if (!router.equals(router2)) {
 			if (!sourceMatch.equals(targetMatch)) {
-				return new Object[] { router, reqContainer, implContainer, cable, router2, virtualNode, sourceMatch,
+				return new Object[] { implContainer, virtualNode, cable, router2, router, reqContainer, sourceMatch,
 						targetMatch };
 			}
 		}
@@ -2217,18 +2216,18 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 		Object[] result_pattern_VirtualNodeToRouterRule2_21_2_matchsrctrgcontext_binding = pattern_VirtualNodeToRouterRule2_21_2_matchsrctrgcontext_bindingFFFFFFBB(
 				targetMatch, sourceMatch);
 		if (result_pattern_VirtualNodeToRouterRule2_21_2_matchsrctrgcontext_binding != null) {
-			Router router = (Router) result_pattern_VirtualNodeToRouterRule2_21_2_matchsrctrgcontext_binding[0];
-			Container reqContainer = (Container) result_pattern_VirtualNodeToRouterRule2_21_2_matchsrctrgcontext_binding[1];
-			implementation.Container implContainer = (implementation.Container) result_pattern_VirtualNodeToRouterRule2_21_2_matchsrctrgcontext_binding[2];
-			Cable cable = (Cable) result_pattern_VirtualNodeToRouterRule2_21_2_matchsrctrgcontext_binding[3];
-			Router router2 = (Router) result_pattern_VirtualNodeToRouterRule2_21_2_matchsrctrgcontext_binding[4];
-			NetworkSpan virtualNode = (NetworkSpan) result_pattern_VirtualNodeToRouterRule2_21_2_matchsrctrgcontext_binding[5];
+			implementation.Container implContainer = (implementation.Container) result_pattern_VirtualNodeToRouterRule2_21_2_matchsrctrgcontext_binding[0];
+			NetworkSpan virtualNode = (NetworkSpan) result_pattern_VirtualNodeToRouterRule2_21_2_matchsrctrgcontext_binding[1];
+			Cable cable = (Cable) result_pattern_VirtualNodeToRouterRule2_21_2_matchsrctrgcontext_binding[2];
+			Router router2 = (Router) result_pattern_VirtualNodeToRouterRule2_21_2_matchsrctrgcontext_binding[3];
+			Router router = (Router) result_pattern_VirtualNodeToRouterRule2_21_2_matchsrctrgcontext_binding[4];
+			Container reqContainer = (Container) result_pattern_VirtualNodeToRouterRule2_21_2_matchsrctrgcontext_binding[5];
 
 			Object[] result_pattern_VirtualNodeToRouterRule2_21_2_matchsrctrgcontext_black = pattern_VirtualNodeToRouterRule2_21_2_matchsrctrgcontext_blackBBBBBBBB(
-					router, reqContainer, implContainer, cable, router2, virtualNode, sourceMatch, targetMatch);
+					implContainer, virtualNode, cable, router2, router, reqContainer, sourceMatch, targetMatch);
 			if (result_pattern_VirtualNodeToRouterRule2_21_2_matchsrctrgcontext_black != null) {
 
-				return new Object[] { router, reqContainer, implContainer, cable, router2, virtualNode, sourceMatch,
+				return new Object[] { implContainer, virtualNode, cable, router2, router, reqContainer, sourceMatch,
 						targetMatch };
 			}
 		}
@@ -2236,14 +2235,13 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_21_3_solvecsp_bindingFBBBBBBBBB(
-			VirtualNodeToRouterRule2 _this, Router router, Container reqContainer,
-			implementation.Container implContainer, Cable cable, Router router2, NetworkSpan virtualNode,
-			Match sourceMatch, Match targetMatch) {
-		CSP _localVariable_6 = _this.isApplicable_solveCsp_CC(router, reqContainer, implContainer, cable, router2,
-				virtualNode, sourceMatch, targetMatch);
+			VirtualNodeToRouterRule2 _this, implementation.Container implContainer, NetworkSpan virtualNode,
+			Cable cable, Router router2, Router router, Container reqContainer, Match sourceMatch, Match targetMatch) {
+		CSP _localVariable_6 = _this.isApplicable_solveCsp_CC(implContainer, virtualNode, cable, router2, router,
+				reqContainer, sourceMatch, targetMatch);
 		CSP csp = _localVariable_6;
 		if (csp != null) {
-			return new Object[] { csp, _this, router, reqContainer, implContainer, cable, router2, virtualNode,
+			return new Object[] { csp, _this, implContainer, virtualNode, cable, router2, router, reqContainer,
 					sourceMatch, targetMatch };
 		}
 		return null;
@@ -2254,11 +2252,10 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_21_3_solvecsp_bindingAndBlackFBBBBBBBBB(
-			VirtualNodeToRouterRule2 _this, Router router, Container reqContainer,
-			implementation.Container implContainer, Cable cable, Router router2, NetworkSpan virtualNode,
-			Match sourceMatch, Match targetMatch) {
+			VirtualNodeToRouterRule2 _this, implementation.Container implContainer, NetworkSpan virtualNode,
+			Cable cable, Router router2, Router router, Container reqContainer, Match sourceMatch, Match targetMatch) {
 		Object[] result_pattern_VirtualNodeToRouterRule2_21_3_solvecsp_binding = pattern_VirtualNodeToRouterRule2_21_3_solvecsp_bindingFBBBBBBBBB(
-				_this, router, reqContainer, implContainer, cable, router2, virtualNode, sourceMatch, targetMatch);
+				_this, implContainer, virtualNode, cable, router2, router, reqContainer, sourceMatch, targetMatch);
 		if (result_pattern_VirtualNodeToRouterRule2_21_3_solvecsp_binding != null) {
 			CSP csp = (CSP) result_pattern_VirtualNodeToRouterRule2_21_3_solvecsp_binding[0];
 
@@ -2266,7 +2263,7 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 					csp);
 			if (result_pattern_VirtualNodeToRouterRule2_21_3_solvecsp_black != null) {
 
-				return new Object[] { csp, _this, router, reqContainer, implContainer, cable, router2, virtualNode,
+				return new Object[] { csp, _this, implContainer, virtualNode, cable, router2, router, reqContainer,
 						sourceMatch, targetMatch };
 			}
 		}
@@ -2279,19 +2276,19 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 		return _result;
 	}
 
-	public static final Iterable<Object[]> pattern_VirtualNodeToRouterRule2_21_5_matchcorrcontext_blackFBBBBFBB(
-			Router router, Container reqContainer, implementation.Container implContainer, NetworkSpan virtualNode,
+	public static final Iterable<Object[]> pattern_VirtualNodeToRouterRule2_21_5_matchcorrcontext_blackFBFBBBBB(
+			implementation.Container implContainer, NetworkSpan virtualNode, Router router, Container reqContainer,
 			Match sourceMatch, Match targetMatch) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		if (!sourceMatch.equals(targetMatch)) {
 			for (ReqContainerToImplContainer reqContainerToImplContainer : org.moflon.core.utilities.eMoflonEMFUtil
-					.getOppositeReferenceTyped(reqContainer, ReqContainerToImplContainer.class, "source")) {
-				if (implContainer.equals(reqContainerToImplContainer.getTarget())) {
+					.getOppositeReferenceTyped(implContainer, ReqContainerToImplContainer.class, "target")) {
+				if (reqContainer.equals(reqContainerToImplContainer.getSource())) {
 					for (VirtualNodeToRouter virtualNodeToRouter1 : org.moflon.core.utilities.eMoflonEMFUtil
-							.getOppositeReferenceTyped(router, VirtualNodeToRouter.class, "target")) {
-						if (virtualNode.equals(virtualNodeToRouter1.getSource())) {
-							_result.add(new Object[] { reqContainerToImplContainer, router, reqContainer, implContainer,
-									virtualNode, virtualNodeToRouter1, sourceMatch, targetMatch });
+							.getOppositeReferenceTyped(virtualNode, VirtualNodeToRouter.class, "source")) {
+						if (router.equals(virtualNodeToRouter1.getTarget())) {
+							_result.add(new Object[] { virtualNodeToRouter1, implContainer, reqContainerToImplContainer,
+									virtualNode, router, reqContainer, sourceMatch, targetMatch });
 						}
 					}
 				}
@@ -2301,34 +2298,34 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_21_5_matchcorrcontext_greenBBBBF(
-			ReqContainerToImplContainer reqContainerToImplContainer, VirtualNodeToRouter virtualNodeToRouter1,
+			VirtualNodeToRouter virtualNodeToRouter1, ReqContainerToImplContainer reqContainerToImplContainer,
 			Match sourceMatch, Match targetMatch) {
 		CCMatch ccMatch = RuntimeFactory.eINSTANCE.createCCMatch();
 		String ccMatch_ruleName_prime = "VirtualNodeToRouterRule2";
 		ccMatch.setSourceMatch(sourceMatch);
 		ccMatch.setTargetMatch(targetMatch);
-		ccMatch.getAllContextElements().add(reqContainerToImplContainer);
 		ccMatch.getAllContextElements().add(virtualNodeToRouter1);
+		ccMatch.getAllContextElements().add(reqContainerToImplContainer);
 		ccMatch.setRuleName(ccMatch_ruleName_prime);
-		return new Object[] { reqContainerToImplContainer, virtualNodeToRouter1, sourceMatch, targetMatch, ccMatch };
+		return new Object[] { virtualNodeToRouter1, reqContainerToImplContainer, sourceMatch, targetMatch, ccMatch };
 	}
 
-	public static final Object[] pattern_VirtualNodeToRouterRule2_21_6_createcorrespondence_blackBBBBBBB(Router router,
-			Container reqContainer, implementation.Container implContainer, Cable cable, Router router2,
-			NetworkSpan virtualNode, CCMatch ccMatch) {
+	public static final Object[] pattern_VirtualNodeToRouterRule2_21_6_createcorrespondence_blackBBBBBBB(
+			implementation.Container implContainer, NetworkSpan virtualNode, Cable cable, Router router2, Router router,
+			Container reqContainer, CCMatch ccMatch) {
 		if (!router.equals(router2)) {
-			return new Object[] { router, reqContainer, implContainer, cable, router2, virtualNode, ccMatch };
+			return new Object[] { implContainer, virtualNode, cable, router2, router, reqContainer, ccMatch };
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_VirtualNodeToRouterRule2_21_6_createcorrespondence_greenBBFB(Router router2,
-			NetworkSpan virtualNode, CCMatch ccMatch) {
+	public static final Object[] pattern_VirtualNodeToRouterRule2_21_6_createcorrespondence_greenBBFB(
+			NetworkSpan virtualNode, Router router2, CCMatch ccMatch) {
 		VirtualNodeToRouter virtualNodeToRouter = ReqToImpTransformatorFactory.eINSTANCE.createVirtualNodeToRouter();
-		virtualNodeToRouter.setTarget(router2);
 		virtualNodeToRouter.setSource(virtualNode);
+		virtualNodeToRouter.setTarget(router2);
 		ccMatch.getCreateCorr().add(virtualNodeToRouter);
-		return new Object[] { router2, virtualNode, virtualNodeToRouter, ccMatch };
+		return new Object[] { virtualNode, router2, virtualNodeToRouter, ccMatch };
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_21_7_addtoreturnedresult_blackBB(
@@ -2352,10 +2349,10 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 		return _result;
 	}
 
-	public static final Object[] pattern_VirtualNodeToRouterRule2_24_1_matchtggpattern_blackBB(Container reqContainer,
-			NetworkSpan virtualNode) {
+	public static final Object[] pattern_VirtualNodeToRouterRule2_24_1_matchtggpattern_blackBB(NetworkSpan virtualNode,
+			Container reqContainer) {
 		if (virtualNode.equals(reqContainer.getNetworkSpan())) {
-			return new Object[] { reqContainer, virtualNode };
+			return new Object[] { virtualNode, reqContainer };
 		}
 		return null;
 	}
@@ -2370,15 +2367,15 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 		return _result;
 	}
 
-	public static final Object[] pattern_VirtualNodeToRouterRule2_25_1_matchtggpattern_blackBBBB(Router router,
-			implementation.Container implContainer, Cable cable, Router router2) {
+	public static final Object[] pattern_VirtualNodeToRouterRule2_25_1_matchtggpattern_blackBBBB(
+			implementation.Container implContainer, Cable cable, Router router2, Router router) {
 		if (!router.equals(router2)) {
-			if (implContainer.getDevices().contains(router2)) {
-				if (router.getOutgoing().contains(cable)) {
-					if (implContainer.getCables().contains(cable)) {
-						if (implContainer.getDevices().contains(router)) {
-							if (router2.getIncoming().contains(cable)) {
-								return new Object[] { router, implContainer, cable, router2 };
+			if (implContainer.getCables().contains(cable)) {
+				if (implContainer.getDevices().contains(router)) {
+					if (router2.getIncoming().contains(cable)) {
+						if (implContainer.getDevices().contains(router2)) {
+							if (router.getOutgoing().contains(cable)) {
+								return new Object[] { implContainer, cable, router2, router };
 							}
 						}
 					}
@@ -2412,30 +2409,6 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_0BB(
-			ModelgeneratorRuleResult ruleResult, ReqContainerToImplContainer reqContainerToImplContainer) {
-		if (ruleResult.getCorrObjects().contains(reqContainerToImplContainer)) {
-			return new Object[] { ruleResult, reqContainerToImplContainer };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_1BB(
-			ModelgeneratorRuleResult ruleResult, Container reqContainer) {
-		if (ruleResult.getSourceObjects().contains(reqContainer)) {
-			return new Object[] { ruleResult, reqContainer };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_2BB(
-			ModelgeneratorRuleResult ruleResult, NetworkSpan virtualNode) {
-		if (ruleResult.getSourceObjects().contains(virtualNode)) {
-			return new Object[] { ruleResult, virtualNode };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_3BB(
 			ModelgeneratorRuleResult ruleResult, VirtualNodeToRouter virtualNodeToRouter1) {
 		if (ruleResult.getCorrObjects().contains(virtualNodeToRouter1)) {
 			return new Object[] { ruleResult, virtualNodeToRouter1 };
@@ -2443,15 +2416,31 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 		return null;
 	}
 
-	public static final Object[] pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_4BB(
-			ModelgeneratorRuleResult ruleResult, Router router) {
-		if (ruleResult.getTargetObjects().contains(router)) {
-			return new Object[] { ruleResult, router };
+	public static final Object[] pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_1BB(
+			ModelgeneratorRuleResult ruleResult, NetworkSpan virtualNode) {
+		if (ruleResult.getSourceObjects().contains(virtualNode)) {
+			return new Object[] { ruleResult, virtualNode };
 		}
 		return null;
 	}
 
-	public static final Object[] pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_5BB(
+	public static final Object[] pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_2BB(
+			ModelgeneratorRuleResult ruleResult, Container reqContainer) {
+		if (ruleResult.getSourceObjects().contains(reqContainer)) {
+			return new Object[] { ruleResult, reqContainer };
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_3BB(
+			ModelgeneratorRuleResult ruleResult, ReqContainerToImplContainer reqContainerToImplContainer) {
+		if (ruleResult.getCorrObjects().contains(reqContainerToImplContainer)) {
+			return new Object[] { ruleResult, reqContainerToImplContainer };
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_4BB(
 			ModelgeneratorRuleResult ruleResult, implementation.Container implContainer) {
 		if (ruleResult.getTargetObjects().contains(implContainer)) {
 			return new Object[] { ruleResult, implContainer };
@@ -2459,7 +2448,7 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 		return null;
 	}
 
-	public static final Object[] pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_6BB(
+	public static final Object[] pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_5BB(
 			ModelgeneratorRuleResult ruleResult, Cable cable) {
 		if (ruleResult.getTargetObjects().contains(cable)) {
 			return new Object[] { ruleResult, cable };
@@ -2467,53 +2456,60 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 		return null;
 	}
 
+	public static final Object[] pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_6BB(
+			ModelgeneratorRuleResult ruleResult, Router router) {
+		if (ruleResult.getTargetObjects().contains(router)) {
+			return new Object[] { ruleResult, router };
+		}
+		return null;
+	}
+
 	public static final Iterable<Object[]> pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_blackFFFFFFFFBB(
 			RuleEntryContainer ruleEntryContainer, ModelgeneratorRuleResult ruleResult) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		for (RuleEntryList reqContainerToImplContainerList : ruleEntryContainer.getRuleEntryList()) {
-			for (EObject tmpReqContainerToImplContainer : reqContainerToImplContainerList.getEntryObjects()) {
-				if (tmpReqContainerToImplContainer instanceof ReqContainerToImplContainer) {
-					ReqContainerToImplContainer reqContainerToImplContainer = (ReqContainerToImplContainer) tmpReqContainerToImplContainer;
-					Container reqContainer = reqContainerToImplContainer.getSource();
-					if (reqContainer != null) {
-						implementation.Container implContainer = reqContainerToImplContainer.getTarget();
-						if (implContainer != null) {
-							NetworkSpan virtualNode = reqContainer.getNetworkSpan();
-							if (virtualNode != null) {
-								if (pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_0BB(ruleResult,
-										reqContainerToImplContainer) == null) {
-									if (pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_1BB(ruleResult,
-											reqContainer) == null) {
-										if (pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_5BB(
-												ruleResult, implContainer) == null) {
+		for (RuleEntryList virtualNodeToRouter1List : ruleEntryContainer.getRuleEntryList()) {
+			for (EObject tmpVirtualNodeToRouter1 : virtualNodeToRouter1List.getEntryObjects()) {
+				if (tmpVirtualNodeToRouter1 instanceof VirtualNodeToRouter) {
+					VirtualNodeToRouter virtualNodeToRouter1 = (VirtualNodeToRouter) tmpVirtualNodeToRouter1;
+					NetworkSpan virtualNode = virtualNodeToRouter1.getSource();
+					if (virtualNode != null) {
+						Router router = virtualNodeToRouter1.getTarget();
+						if (router != null) {
+							if (pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_0BB(ruleResult,
+									virtualNodeToRouter1) == null) {
+								if (pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_1BB(ruleResult,
+										virtualNode) == null) {
+									if (pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_6BB(ruleResult,
+											router) == null) {
+										for (Container reqContainer : org.moflon.core.utilities.eMoflonEMFUtil
+												.getOppositeReferenceTyped(virtualNode, Container.class,
+														"networkSpan")) {
 											if (pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_2BB(
-													ruleResult, virtualNode) == null) {
-												for (Device tmpRouter : implContainer.getDevices()) {
-													if (tmpRouter instanceof Router) {
-														Router router = (Router) tmpRouter;
-														if (pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_4BB(
-																ruleResult, router) == null) {
-															for (Cable cable : implContainer.getCables()) {
-																if (pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_6BB(
-																		ruleResult, cable) == null) {
-																	for (VirtualNodeToRouter virtualNodeToRouter1 : org.moflon.core.utilities.eMoflonEMFUtil
-																			.getOppositeReferenceTyped(virtualNode,
-																					VirtualNodeToRouter.class,
-																					"source")) {
-																		if (router.equals(
-																				virtualNodeToRouter1.getTarget())) {
-																			if (pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_3BB(
-																					ruleResult,
-																					virtualNodeToRouter1) == null) {
-																				_result.add(new Object[] {
-																						reqContainerToImplContainerList,
-																						reqContainerToImplContainer,
-																						reqContainer, virtualNode,
-																						virtualNodeToRouter1, router,
-																						implContainer, cable,
-																						ruleEntryContainer,
-																						ruleResult });
-																			}
+													ruleResult, reqContainer) == null) {
+												for (implementation.Container implContainer : org.moflon.core.utilities.eMoflonEMFUtil
+														.getOppositeReferenceTyped(router,
+																implementation.Container.class, "devices")) {
+													if (pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_4BB(
+															ruleResult, implContainer) == null) {
+														for (Cable cable : implContainer.getCables()) {
+															if (pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_5BB(
+																	ruleResult, cable) == null) {
+																for (ReqContainerToImplContainer reqContainerToImplContainer : org.moflon.core.utilities.eMoflonEMFUtil
+																		.getOppositeReferenceTyped(reqContainer,
+																				ReqContainerToImplContainer.class,
+																				"source")) {
+																	if (implContainer.equals(
+																			reqContainerToImplContainer.getTarget())) {
+																		if (pattern_VirtualNodeToRouterRule2_26_2_isapplicablecore_black_nac_3BB(
+																				ruleResult,
+																				reqContainerToImplContainer) == null) {
+																			_result.add(new Object[] {
+																					virtualNodeToRouter1List,
+																					virtualNodeToRouter1, virtualNode,
+																					reqContainer,
+																					reqContainerToImplContainer,
+																					implContainer, cable, router,
+																					ruleEntryContainer, ruleResult });
 																		}
 																	}
 																}
@@ -2526,7 +2522,6 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 									}
 								}
 							}
-
 						}
 
 					}
@@ -2539,15 +2534,15 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_26_3_solveCSP_bindingFBBBBBBBBBB(
 			VirtualNodeToRouterRule2 _this, IsApplicableMatch isApplicableMatch,
-			ReqContainerToImplContainer reqContainerToImplContainer, Router router, Container reqContainer,
-			implementation.Container implContainer, Cable cable, NetworkSpan virtualNode,
-			VirtualNodeToRouter virtualNodeToRouter1, ModelgeneratorRuleResult ruleResult) {
-		CSP _localVariable_0 = _this.generateModel_solveCsp_BWD(isApplicableMatch, reqContainerToImplContainer, router,
-				reqContainer, implContainer, cable, virtualNode, virtualNodeToRouter1, ruleResult);
+			VirtualNodeToRouter virtualNodeToRouter1, implementation.Container implContainer,
+			ReqContainerToImplContainer reqContainerToImplContainer, NetworkSpan virtualNode, Cable cable,
+			Router router, Container reqContainer, ModelgeneratorRuleResult ruleResult) {
+		CSP _localVariable_0 = _this.generateModel_solveCsp_BWD(isApplicableMatch, virtualNodeToRouter1, implContainer,
+				reqContainerToImplContainer, virtualNode, cable, router, reqContainer, ruleResult);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, reqContainerToImplContainer, router, reqContainer,
-					implContainer, cable, virtualNode, virtualNodeToRouter1, ruleResult };
+			return new Object[] { csp, _this, isApplicableMatch, virtualNodeToRouter1, implContainer,
+					reqContainerToImplContainer, virtualNode, cable, router, reqContainer, ruleResult };
 		}
 		return null;
 	}
@@ -2558,12 +2553,12 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_26_3_solveCSP_bindingAndBlackFBBBBBBBBBB(
 			VirtualNodeToRouterRule2 _this, IsApplicableMatch isApplicableMatch,
-			ReqContainerToImplContainer reqContainerToImplContainer, Router router, Container reqContainer,
-			implementation.Container implContainer, Cable cable, NetworkSpan virtualNode,
-			VirtualNodeToRouter virtualNodeToRouter1, ModelgeneratorRuleResult ruleResult) {
+			VirtualNodeToRouter virtualNodeToRouter1, implementation.Container implContainer,
+			ReqContainerToImplContainer reqContainerToImplContainer, NetworkSpan virtualNode, Cable cable,
+			Router router, Container reqContainer, ModelgeneratorRuleResult ruleResult) {
 		Object[] result_pattern_VirtualNodeToRouterRule2_26_3_solveCSP_binding = pattern_VirtualNodeToRouterRule2_26_3_solveCSP_bindingFBBBBBBBBBB(
-				_this, isApplicableMatch, reqContainerToImplContainer, router, reqContainer, implContainer, cable,
-				virtualNode, virtualNodeToRouter1, ruleResult);
+				_this, isApplicableMatch, virtualNodeToRouter1, implContainer, reqContainerToImplContainer, virtualNode,
+				cable, router, reqContainer, ruleResult);
 		if (result_pattern_VirtualNodeToRouterRule2_26_3_solveCSP_binding != null) {
 			CSP csp = (CSP) result_pattern_VirtualNodeToRouterRule2_26_3_solveCSP_binding[0];
 
@@ -2571,8 +2566,8 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 					csp);
 			if (result_pattern_VirtualNodeToRouterRule2_26_3_solveCSP_black != null) {
 
-				return new Object[] { csp, _this, isApplicableMatch, reqContainerToImplContainer, router, reqContainer,
-						implContainer, cable, virtualNode, virtualNodeToRouter1, ruleResult };
+				return new Object[] { csp, _this, isApplicableMatch, virtualNodeToRouter1, implContainer,
+						reqContainerToImplContainer, virtualNode, cable, router, reqContainer, ruleResult };
 			}
 		}
 		return null;
@@ -2586,39 +2581,39 @@ public class VirtualNodeToRouterRule2Impl extends AbstractRuleImpl implements Vi
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_26_5_checknacs_blackBBBBBBB(
-			ReqContainerToImplContainer reqContainerToImplContainer, Router router, Container reqContainer,
-			implementation.Container implContainer, Cable cable, NetworkSpan virtualNode,
-			VirtualNodeToRouter virtualNodeToRouter1) {
-		return new Object[] { reqContainerToImplContainer, router, reqContainer, implContainer, cable, virtualNode,
-				virtualNodeToRouter1 };
+			VirtualNodeToRouter virtualNodeToRouter1, implementation.Container implContainer,
+			ReqContainerToImplContainer reqContainerToImplContainer, NetworkSpan virtualNode, Cable cable,
+			Router router, Container reqContainer) {
+		return new Object[] { virtualNodeToRouter1, implContainer, reqContainerToImplContainer, virtualNode, cable,
+				router, reqContainer };
 	}
 
 	public static final Object[] pattern_VirtualNodeToRouterRule2_26_6_perform_blackBBBBBBBB(
-			ReqContainerToImplContainer reqContainerToImplContainer, Router router, Container reqContainer,
-			implementation.Container implContainer, Cable cable, NetworkSpan virtualNode,
-			VirtualNodeToRouter virtualNodeToRouter1, ModelgeneratorRuleResult ruleResult) {
-		return new Object[] { reqContainerToImplContainer, router, reqContainer, implContainer, cable, virtualNode,
-				virtualNodeToRouter1, ruleResult };
+			VirtualNodeToRouter virtualNodeToRouter1, implementation.Container implContainer,
+			ReqContainerToImplContainer reqContainerToImplContainer, NetworkSpan virtualNode, Cable cable,
+			Router router, Container reqContainer, ModelgeneratorRuleResult ruleResult) {
+		return new Object[] { virtualNodeToRouter1, implContainer, reqContainerToImplContainer, virtualNode, cable,
+				router, reqContainer, ruleResult };
 	}
 
-	public static final Object[] pattern_VirtualNodeToRouterRule2_26_6_perform_greenBBBFBFB(Router router,
-			implementation.Container implContainer, Cable cable, NetworkSpan virtualNode,
+	public static final Object[] pattern_VirtualNodeToRouterRule2_26_6_perform_greenBBBFFBB(
+			implementation.Container implContainer, NetworkSpan virtualNode, Cable cable, Router router,
 			ModelgeneratorRuleResult ruleResult) {
 		Router router2 = ImplementationFactory.eINSTANCE.createRouter();
 		VirtualNodeToRouter virtualNodeToRouter = ReqToImpTransformatorFactory.eINSTANCE.createVirtualNodeToRouter();
 		router.getOutgoing().add(cable);
 		boolean ruleResult_success_prime = Boolean.valueOf(true);
 		int _localVariable_0 = ruleResult.getIncrementedPerformCount();
-		implContainer.getDevices().add(router2);
 		router2.getIncoming().add(cable);
+		implContainer.getDevices().add(router2);
 		ruleResult.getTargetObjects().add(router2);
-		virtualNodeToRouter.setTarget(router2);
 		virtualNodeToRouter.setSource(virtualNode);
+		virtualNodeToRouter.setTarget(router2);
 		ruleResult.getCorrObjects().add(virtualNodeToRouter);
 		ruleResult.setSuccess(Boolean.valueOf(ruleResult_success_prime));
 		int ruleResult_performCount_prime = Integer.valueOf(_localVariable_0);
 		ruleResult.setPerformCount(Integer.valueOf(ruleResult_performCount_prime));
-		return new Object[] { router, implContainer, cable, router2, virtualNode, virtualNodeToRouter, ruleResult };
+		return new Object[] { implContainer, virtualNode, cable, router2, virtualNodeToRouter, router, ruleResult };
 	}
 
 	public static final ModelgeneratorRuleResult pattern_VirtualNodeToRouterRule2_26_7_expressionFB(

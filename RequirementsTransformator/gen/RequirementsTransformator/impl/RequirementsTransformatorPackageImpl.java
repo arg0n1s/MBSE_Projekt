@@ -42,14 +42,14 @@ public class RequirementsTransformatorPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass xConsumerToConsumerEClass = null;
+	private EClass xAgentToAgentEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass xProviderToProviderEClass = null;
+	private EClass xConsumerToConsumerEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -63,7 +63,7 @@ public class RequirementsTransformatorPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass xAgentToAgentEClass = null;
+	private EClass xProviderToProviderEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -149,6 +149,33 @@ public class RequirementsTransformatorPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getXAgentToAgent() {
+		return xAgentToAgentEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getXAgentToAgent_Source() {
+		return (EReference) xAgentToAgentEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getXAgentToAgent_Target() {
+		return (EReference) xAgentToAgentEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getXConsumerToConsumer() {
 		return xConsumerToConsumerEClass;
 	}
@@ -169,33 +196,6 @@ public class RequirementsTransformatorPackageImpl extends EPackageImpl implement
 	 */
 	public EReference getXConsumerToConsumer_Target() {
 		return (EReference) xConsumerToConsumerEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getXProviderToProvider() {
-		return xProviderToProviderEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getXProviderToProvider_Source() {
-		return (EReference) xProviderToProviderEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getXProviderToProvider_Target() {
-		return (EReference) xProviderToProviderEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -230,8 +230,8 @@ public class RequirementsTransformatorPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getXAgentToAgent() {
-		return xAgentToAgentEClass;
+	public EClass getXProviderToProvider() {
+		return xProviderToProviderEClass;
 	}
 
 	/**
@@ -239,8 +239,8 @@ public class RequirementsTransformatorPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getXAgentToAgent_Source() {
-		return (EReference) xAgentToAgentEClass.getEStructuralFeatures().get(0);
+	public EReference getXProviderToProvider_Source() {
+		return (EReference) xProviderToProviderEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -248,8 +248,8 @@ public class RequirementsTransformatorPackageImpl extends EPackageImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getXAgentToAgent_Target() {
-		return (EReference) xAgentToAgentEClass.getEStructuralFeatures().get(1);
+	public EReference getXProviderToProvider_Target() {
+		return (EReference) xProviderToProviderEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -281,21 +281,21 @@ public class RequirementsTransformatorPackageImpl extends EPackageImpl implement
 		isCreated = true;
 
 		// Create classes and their features
+		xAgentToAgentEClass = createEClass(XAGENT_TO_AGENT);
+		createEReference(xAgentToAgentEClass, XAGENT_TO_AGENT__SOURCE);
+		createEReference(xAgentToAgentEClass, XAGENT_TO_AGENT__TARGET);
+
 		xConsumerToConsumerEClass = createEClass(XCONSUMER_TO_CONSUMER);
 		createEReference(xConsumerToConsumerEClass, XCONSUMER_TO_CONSUMER__SOURCE);
 		createEReference(xConsumerToConsumerEClass, XCONSUMER_TO_CONSUMER__TARGET);
-
-		xProviderToProviderEClass = createEClass(XPROVIDER_TO_PROVIDER);
-		createEReference(xProviderToProviderEClass, XPROVIDER_TO_PROVIDER__SOURCE);
-		createEReference(xProviderToProviderEClass, XPROVIDER_TO_PROVIDER__TARGET);
 
 		xContainerToContainerEClass = createEClass(XCONTAINER_TO_CONTAINER);
 		createEReference(xContainerToContainerEClass, XCONTAINER_TO_CONTAINER__SOURCE);
 		createEReference(xContainerToContainerEClass, XCONTAINER_TO_CONTAINER__TARGET);
 
-		xAgentToAgentEClass = createEClass(XAGENT_TO_AGENT);
-		createEReference(xAgentToAgentEClass, XAGENT_TO_AGENT__SOURCE);
-		createEReference(xAgentToAgentEClass, XAGENT_TO_AGENT__TARGET);
+		xProviderToProviderEClass = createEClass(XPROVIDER_TO_PROVIDER);
+		createEReference(xProviderToProviderEClass, XPROVIDER_TO_PROVIDER__SOURCE);
+		createEReference(xProviderToProviderEClass, XPROVIDER_TO_PROVIDER__TARGET);
 	}
 
 	/**
@@ -339,12 +339,21 @@ public class RequirementsTransformatorPackageImpl extends EPackageImpl implement
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		xConsumerToConsumerEClass.getESuperTypes().add(theRuntimePackage.getAbstractCorrespondence());
-		xProviderToProviderEClass.getESuperTypes().add(theRuntimePackage.getAbstractCorrespondence());
-		xContainerToContainerEClass.getESuperTypes().add(theRuntimePackage.getAbstractCorrespondence());
 		xAgentToAgentEClass.getESuperTypes().add(theRuntimePackage.getAbstractCorrespondence());
+		xConsumerToConsumerEClass.getESuperTypes().add(theRuntimePackage.getAbstractCorrespondence());
+		xContainerToContainerEClass.getESuperTypes().add(theRuntimePackage.getAbstractCorrespondence());
+		xProviderToProviderEClass.getESuperTypes().add(theRuntimePackage.getAbstractCorrespondence());
 
 		// Initialize classes, features, and operations; add parameters
+		initEClass(xAgentToAgentEClass, XAgentToAgent.class, "XAgentToAgent", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getXAgentToAgent_Source(), theReqXtextPackage.getXAgent(), null, "source", null, 1, 1,
+				XAgentToAgent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getXAgentToAgent_Target(), theRequirementsPackage.getAgent(), null, "target", null, 1, 1,
+				XAgentToAgent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
 		initEClass(xConsumerToConsumerEClass, XConsumerToConsumer.class, "XConsumerToConsumer", !IS_ABSTRACT,
 				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getXConsumerToConsumer_Source(), theReqXtextPackage.getXConsumer(), null, "source", null, 1, 1,
@@ -352,15 +361,6 @@ public class RequirementsTransformatorPackageImpl extends EPackageImpl implement
 				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getXConsumerToConsumer_Target(), theRequirementsPackage.getConsumer(), null, "target", null, 1,
 				1, XConsumerToConsumer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
-				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(xProviderToProviderEClass, XProviderToProvider.class, "XProviderToProvider", !IS_ABSTRACT,
-				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getXProviderToProvider_Source(), theReqXtextPackage.getXProvider(), null, "source", null, 1, 1,
-				XProviderToProvider.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
-				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getXProviderToProvider_Target(), theRequirementsPackage.getProvider(), null, "target", null, 1,
-				1, XProviderToProvider.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
 				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(xContainerToContainerEClass, XContainerToContainer.class, "XContainerToContainer", !IS_ABSTRACT,
@@ -372,14 +372,14 @@ public class RequirementsTransformatorPackageImpl extends EPackageImpl implement
 				1, 1, XContainerToContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
 				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(xAgentToAgentEClass, XAgentToAgent.class, "XAgentToAgent", !IS_ABSTRACT, !IS_INTERFACE,
-				IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getXAgentToAgent_Source(), theReqXtextPackage.getXAgent(), null, "source", null, 1, 1,
-				XAgentToAgent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
-				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getXAgentToAgent_Target(), theRequirementsPackage.getAgent(), null, "target", null, 1, 1,
-				XAgentToAgent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
-				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(xProviderToProviderEClass, XProviderToProvider.class, "XProviderToProvider", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getXProviderToProvider_Source(), theReqXtextPackage.getXProvider(), null, "source", null, 1, 1,
+				XProviderToProvider.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
+				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getXProviderToProvider_Target(), theRequirementsPackage.getProvider(), null, "target", null, 1,
+				1, XProviderToProvider.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
+				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

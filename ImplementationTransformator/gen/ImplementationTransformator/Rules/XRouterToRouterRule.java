@@ -212,7 +212,7 @@ public interface XRouterToRouterRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_12(EMoflonEdge _edge_devices);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_47(EMoflonEdge _edge_devices);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -220,7 +220,7 @@ public interface XRouterToRouterRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_8(EMoflonEdge _edge_elements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_35(EMoflonEdge _edge_elements);
 
 	/**
 	 * <!-- begin-user-doc -->

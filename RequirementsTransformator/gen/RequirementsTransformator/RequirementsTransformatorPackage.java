@@ -59,6 +59,52 @@ public interface RequirementsTransformatorPackage extends EPackage {
 			.init();
 
 	/**
+	 * The meta object id for the '{@link RequirementsTransformator.impl.XAgentToAgentImpl <em>XAgent To Agent</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see RequirementsTransformator.impl.XAgentToAgentImpl
+	 * @see RequirementsTransformator.impl.RequirementsTransformatorPackageImpl#getXAgentToAgent()
+	 * @generated
+	 */
+	int XAGENT_TO_AGENT = 0;
+
+	/**
+	 * The feature id for the '<em><b>Source</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int XAGENT_TO_AGENT__SOURCE = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Target</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int XAGENT_TO_AGENT__TARGET = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>XAgent To Agent</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int XAGENT_TO_AGENT_FEATURE_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of operations of the '<em>XAgent To Agent</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int XAGENT_TO_AGENT_OPERATION_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link RequirementsTransformator.impl.XConsumerToConsumerImpl <em>XConsumer To Consumer</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -66,7 +112,7 @@ public interface RequirementsTransformatorPackage extends EPackage {
 	 * @see RequirementsTransformator.impl.RequirementsTransformatorPackageImpl#getXConsumerToConsumer()
 	 * @generated
 	 */
-	int XCONSUMER_TO_CONSUMER = 0;
+	int XCONSUMER_TO_CONSUMER = 1;
 
 	/**
 	 * The feature id for the '<em><b>Source</b></em>' reference.
@@ -103,52 +149,6 @@ public interface RequirementsTransformatorPackage extends EPackage {
 	 * @ordered
 	 */
 	int XCONSUMER_TO_CONSUMER_OPERATION_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link RequirementsTransformator.impl.XProviderToProviderImpl <em>XProvider To Provider</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see RequirementsTransformator.impl.XProviderToProviderImpl
-	 * @see RequirementsTransformator.impl.RequirementsTransformatorPackageImpl#getXProviderToProvider()
-	 * @generated
-	 */
-	int XPROVIDER_TO_PROVIDER = 1;
-
-	/**
-	 * The feature id for the '<em><b>Source</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int XPROVIDER_TO_PROVIDER__SOURCE = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Target</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int XPROVIDER_TO_PROVIDER__TARGET = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of structural features of the '<em>XProvider To Provider</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int XPROVIDER_TO_PROVIDER_FEATURE_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 2;
-
-	/**
-	 * The number of operations of the '<em>XProvider To Provider</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int XPROVIDER_TO_PROVIDER_OPERATION_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link RequirementsTransformator.impl.XContainerToContainerImpl <em>XContainer To Container</em>}' class.
@@ -197,14 +197,14 @@ public interface RequirementsTransformatorPackage extends EPackage {
 	int XCONTAINER_TO_CONTAINER_OPERATION_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link RequirementsTransformator.impl.XAgentToAgentImpl <em>XAgent To Agent</em>}' class.
+	 * The meta object id for the '{@link RequirementsTransformator.impl.XProviderToProviderImpl <em>XProvider To Provider</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see RequirementsTransformator.impl.XAgentToAgentImpl
-	 * @see RequirementsTransformator.impl.RequirementsTransformatorPackageImpl#getXAgentToAgent()
+	 * @see RequirementsTransformator.impl.XProviderToProviderImpl
+	 * @see RequirementsTransformator.impl.RequirementsTransformatorPackageImpl#getXProviderToProvider()
 	 * @generated
 	 */
-	int XAGENT_TO_AGENT = 3;
+	int XPROVIDER_TO_PROVIDER = 3;
 
 	/**
 	 * The feature id for the '<em><b>Source</b></em>' reference.
@@ -213,7 +213,7 @@ public interface RequirementsTransformatorPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int XAGENT_TO_AGENT__SOURCE = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 0;
+	int XPROVIDER_TO_PROVIDER__SOURCE = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Target</b></em>' reference.
@@ -222,121 +222,25 @@ public interface RequirementsTransformatorPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int XAGENT_TO_AGENT__TARGET = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 1;
+	int XPROVIDER_TO_PROVIDER__TARGET = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of structural features of the '<em>XAgent To Agent</em>' class.
+	 * The number of structural features of the '<em>XProvider To Provider</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int XAGENT_TO_AGENT_FEATURE_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 2;
+	int XPROVIDER_TO_PROVIDER_FEATURE_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 2;
 
 	/**
-	 * The number of operations of the '<em>XAgent To Agent</em>' class.
+	 * The number of operations of the '<em>XProvider To Provider</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int XAGENT_TO_AGENT_OPERATION_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
-
-	/**
-	 * Returns the meta object for class '{@link RequirementsTransformator.XConsumerToConsumer <em>XConsumer To Consumer</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>XConsumer To Consumer</em>'.
-	 * @see RequirementsTransformator.XConsumerToConsumer
-	 * @generated
-	 */
-	EClass getXConsumerToConsumer();
-
-	/**
-	 * Returns the meta object for the reference '{@link RequirementsTransformator.XConsumerToConsumer#getSource <em>Source</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Source</em>'.
-	 * @see RequirementsTransformator.XConsumerToConsumer#getSource()
-	 * @see #getXConsumerToConsumer()
-	 * @generated
-	 */
-	EReference getXConsumerToConsumer_Source();
-
-	/**
-	 * Returns the meta object for the reference '{@link RequirementsTransformator.XConsumerToConsumer#getTarget <em>Target</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Target</em>'.
-	 * @see RequirementsTransformator.XConsumerToConsumer#getTarget()
-	 * @see #getXConsumerToConsumer()
-	 * @generated
-	 */
-	EReference getXConsumerToConsumer_Target();
-
-	/**
-	 * Returns the meta object for class '{@link RequirementsTransformator.XProviderToProvider <em>XProvider To Provider</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>XProvider To Provider</em>'.
-	 * @see RequirementsTransformator.XProviderToProvider
-	 * @generated
-	 */
-	EClass getXProviderToProvider();
-
-	/**
-	 * Returns the meta object for the reference '{@link RequirementsTransformator.XProviderToProvider#getSource <em>Source</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Source</em>'.
-	 * @see RequirementsTransformator.XProviderToProvider#getSource()
-	 * @see #getXProviderToProvider()
-	 * @generated
-	 */
-	EReference getXProviderToProvider_Source();
-
-	/**
-	 * Returns the meta object for the reference '{@link RequirementsTransformator.XProviderToProvider#getTarget <em>Target</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Target</em>'.
-	 * @see RequirementsTransformator.XProviderToProvider#getTarget()
-	 * @see #getXProviderToProvider()
-	 * @generated
-	 */
-	EReference getXProviderToProvider_Target();
-
-	/**
-	 * Returns the meta object for class '{@link RequirementsTransformator.XContainerToContainer <em>XContainer To Container</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>XContainer To Container</em>'.
-	 * @see RequirementsTransformator.XContainerToContainer
-	 * @generated
-	 */
-	EClass getXContainerToContainer();
-
-	/**
-	 * Returns the meta object for the reference '{@link RequirementsTransformator.XContainerToContainer#getSource <em>Source</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Source</em>'.
-	 * @see RequirementsTransformator.XContainerToContainer#getSource()
-	 * @see #getXContainerToContainer()
-	 * @generated
-	 */
-	EReference getXContainerToContainer_Source();
-
-	/**
-	 * Returns the meta object for the reference '{@link RequirementsTransformator.XContainerToContainer#getTarget <em>Target</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Target</em>'.
-	 * @see RequirementsTransformator.XContainerToContainer#getTarget()
-	 * @see #getXContainerToContainer()
-	 * @generated
-	 */
-	EReference getXContainerToContainer_Target();
+	int XPROVIDER_TO_PROVIDER_OPERATION_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
 
 	/**
 	 * Returns the meta object for class '{@link RequirementsTransformator.XAgentToAgent <em>XAgent To Agent</em>}'.
@@ -371,6 +275,102 @@ public interface RequirementsTransformatorPackage extends EPackage {
 	EReference getXAgentToAgent_Target();
 
 	/**
+	 * Returns the meta object for class '{@link RequirementsTransformator.XConsumerToConsumer <em>XConsumer To Consumer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>XConsumer To Consumer</em>'.
+	 * @see RequirementsTransformator.XConsumerToConsumer
+	 * @generated
+	 */
+	EClass getXConsumerToConsumer();
+
+	/**
+	 * Returns the meta object for the reference '{@link RequirementsTransformator.XConsumerToConsumer#getSource <em>Source</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Source</em>'.
+	 * @see RequirementsTransformator.XConsumerToConsumer#getSource()
+	 * @see #getXConsumerToConsumer()
+	 * @generated
+	 */
+	EReference getXConsumerToConsumer_Source();
+
+	/**
+	 * Returns the meta object for the reference '{@link RequirementsTransformator.XConsumerToConsumer#getTarget <em>Target</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Target</em>'.
+	 * @see RequirementsTransformator.XConsumerToConsumer#getTarget()
+	 * @see #getXConsumerToConsumer()
+	 * @generated
+	 */
+	EReference getXConsumerToConsumer_Target();
+
+	/**
+	 * Returns the meta object for class '{@link RequirementsTransformator.XContainerToContainer <em>XContainer To Container</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>XContainer To Container</em>'.
+	 * @see RequirementsTransformator.XContainerToContainer
+	 * @generated
+	 */
+	EClass getXContainerToContainer();
+
+	/**
+	 * Returns the meta object for the reference '{@link RequirementsTransformator.XContainerToContainer#getSource <em>Source</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Source</em>'.
+	 * @see RequirementsTransformator.XContainerToContainer#getSource()
+	 * @see #getXContainerToContainer()
+	 * @generated
+	 */
+	EReference getXContainerToContainer_Source();
+
+	/**
+	 * Returns the meta object for the reference '{@link RequirementsTransformator.XContainerToContainer#getTarget <em>Target</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Target</em>'.
+	 * @see RequirementsTransformator.XContainerToContainer#getTarget()
+	 * @see #getXContainerToContainer()
+	 * @generated
+	 */
+	EReference getXContainerToContainer_Target();
+
+	/**
+	 * Returns the meta object for class '{@link RequirementsTransformator.XProviderToProvider <em>XProvider To Provider</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>XProvider To Provider</em>'.
+	 * @see RequirementsTransformator.XProviderToProvider
+	 * @generated
+	 */
+	EClass getXProviderToProvider();
+
+	/**
+	 * Returns the meta object for the reference '{@link RequirementsTransformator.XProviderToProvider#getSource <em>Source</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Source</em>'.
+	 * @see RequirementsTransformator.XProviderToProvider#getSource()
+	 * @see #getXProviderToProvider()
+	 * @generated
+	 */
+	EReference getXProviderToProvider_Source();
+
+	/**
+	 * Returns the meta object for the reference '{@link RequirementsTransformator.XProviderToProvider#getTarget <em>Target</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Target</em>'.
+	 * @see RequirementsTransformator.XProviderToProvider#getTarget()
+	 * @see #getXProviderToProvider()
+	 * @generated
+	 */
+	EReference getXProviderToProvider_Target();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -393,6 +393,32 @@ public interface RequirementsTransformatorPackage extends EPackage {
 	 * @generated
 	 */
 	interface Literals {
+		/**
+		 * The meta object literal for the '{@link RequirementsTransformator.impl.XAgentToAgentImpl <em>XAgent To Agent</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see RequirementsTransformator.impl.XAgentToAgentImpl
+		 * @see RequirementsTransformator.impl.RequirementsTransformatorPackageImpl#getXAgentToAgent()
+		 * @generated
+		 */
+		EClass XAGENT_TO_AGENT = eINSTANCE.getXAgentToAgent();
+
+		/**
+		 * The meta object literal for the '<em><b>Source</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference XAGENT_TO_AGENT__SOURCE = eINSTANCE.getXAgentToAgent_Source();
+
+		/**
+		 * The meta object literal for the '<em><b>Target</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference XAGENT_TO_AGENT__TARGET = eINSTANCE.getXAgentToAgent_Target();
+
 		/**
 		 * The meta object literal for the '{@link RequirementsTransformator.impl.XConsumerToConsumerImpl <em>XConsumer To Consumer</em>}' class.
 		 * <!-- begin-user-doc -->
@@ -418,32 +444,6 @@ public interface RequirementsTransformatorPackage extends EPackage {
 		 * @generated
 		 */
 		EReference XCONSUMER_TO_CONSUMER__TARGET = eINSTANCE.getXConsumerToConsumer_Target();
-
-		/**
-		 * The meta object literal for the '{@link RequirementsTransformator.impl.XProviderToProviderImpl <em>XProvider To Provider</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see RequirementsTransformator.impl.XProviderToProviderImpl
-		 * @see RequirementsTransformator.impl.RequirementsTransformatorPackageImpl#getXProviderToProvider()
-		 * @generated
-		 */
-		EClass XPROVIDER_TO_PROVIDER = eINSTANCE.getXProviderToProvider();
-
-		/**
-		 * The meta object literal for the '<em><b>Source</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference XPROVIDER_TO_PROVIDER__SOURCE = eINSTANCE.getXProviderToProvider_Source();
-
-		/**
-		 * The meta object literal for the '<em><b>Target</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference XPROVIDER_TO_PROVIDER__TARGET = eINSTANCE.getXProviderToProvider_Target();
 
 		/**
 		 * The meta object literal for the '{@link RequirementsTransformator.impl.XContainerToContainerImpl <em>XContainer To Container</em>}' class.
@@ -472,14 +472,14 @@ public interface RequirementsTransformatorPackage extends EPackage {
 		EReference XCONTAINER_TO_CONTAINER__TARGET = eINSTANCE.getXContainerToContainer_Target();
 
 		/**
-		 * The meta object literal for the '{@link RequirementsTransformator.impl.XAgentToAgentImpl <em>XAgent To Agent</em>}' class.
+		 * The meta object literal for the '{@link RequirementsTransformator.impl.XProviderToProviderImpl <em>XProvider To Provider</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see RequirementsTransformator.impl.XAgentToAgentImpl
-		 * @see RequirementsTransformator.impl.RequirementsTransformatorPackageImpl#getXAgentToAgent()
+		 * @see RequirementsTransformator.impl.XProviderToProviderImpl
+		 * @see RequirementsTransformator.impl.RequirementsTransformatorPackageImpl#getXProviderToProvider()
 		 * @generated
 		 */
-		EClass XAGENT_TO_AGENT = eINSTANCE.getXAgentToAgent();
+		EClass XPROVIDER_TO_PROVIDER = eINSTANCE.getXProviderToProvider();
 
 		/**
 		 * The meta object literal for the '<em><b>Source</b></em>' reference feature.
@@ -487,7 +487,7 @@ public interface RequirementsTransformatorPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference XAGENT_TO_AGENT__SOURCE = eINSTANCE.getXAgentToAgent_Source();
+		EReference XPROVIDER_TO_PROVIDER__SOURCE = eINSTANCE.getXProviderToProvider_Source();
 
 		/**
 		 * The meta object literal for the '<em><b>Target</b></em>' reference feature.
@@ -495,7 +495,7 @@ public interface RequirementsTransformatorPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference XAGENT_TO_AGENT__TARGET = eINSTANCE.getXAgentToAgent_Target();
+		EReference XPROVIDER_TO_PROVIDER__TARGET = eINSTANCE.getXProviderToProvider_Target();
 
 	}
 

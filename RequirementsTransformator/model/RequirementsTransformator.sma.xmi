@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="ASCII"?>
 <analysis:StaticAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:analysis="platform:/plugin/org.moflon.tgg.language/model/Language.ecore#//analysis">
   <sourceRules>
-    <rules ruleName="XConsumerToConsumerRule">
-      <isAppropriateMethods href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isAppropriate_FWD_EMoflonEdge_3"/>
-      <checkDECMethod href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/checkDEC_FWD"/>
+    <rules ruleName="XContainerToContainerRule">
+      <isAppropriateMethods href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_FWD_XContainer_4"/>
+      <checkDECMethod href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkDEC_FWD"/>
     </rules>
     <rules ruleName="XProviderToProviderRule">
-      <isAppropriateMethods href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isAppropriate_FWD_EMoflonEdge_4"/>
+      <isAppropriateMethods href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isAppropriate_FWD_EMoflonEdge_31"/>
       <checkDECMethod href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/checkDEC_FWD"/>
     </rules>
-    <rules ruleName="XContainerToContainerRule">
-      <isAppropriateMethods href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_FWD_XContainer_0"/>
-      <checkDECMethod href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkDEC_FWD"/>
+    <rules ruleName="XConsumerToConsumerRule">
+      <isAppropriateMethods href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isAppropriate_FWD_EMoflonEdge_32"/>
+      <checkDECMethod href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/checkDEC_FWD"/>
     </rules>
   </sourceRules>
   <targetRules>
-    <rules ruleName="XConsumerToConsumerRule">
-      <isAppropriateMethods href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isAppropriate_BWD_EMoflonEdge_6"/>
-      <checkDECMethod href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/checkDEC_BWD"/>
+    <rules ruleName="XContainerToContainerRule">
+      <isAppropriateMethods href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_BWD_EMoflonEdge_42"/>
+      <checkDECMethod href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkDEC_BWD"/>
     </rules>
     <rules ruleName="XProviderToProviderRule">
-      <isAppropriateMethods href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isAppropriate_BWD_EMoflonEdge_7"/>
+      <isAppropriateMethods href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/isAppropriate_BWD_EMoflonEdge_43"/>
       <checkDECMethod href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XProviderToProviderRule/checkDEC_BWD"/>
     </rules>
-    <rules ruleName="XContainerToContainerRule">
-      <isAppropriateMethods href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/isAppropriate_BWD_EMoflonEdge_8"/>
-      <checkDECMethod href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XContainerToContainerRule/checkDEC_BWD"/>
+    <rules ruleName="XConsumerToConsumerRule">
+      <isAppropriateMethods href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/isAppropriate_BWD_EMoflonEdge_44"/>
+      <checkDECMethod href="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules/XConsumerToConsumerRule/checkDEC_BWD"/>
     </rules>
   </targetRules>
 </analysis:StaticAnalysis>

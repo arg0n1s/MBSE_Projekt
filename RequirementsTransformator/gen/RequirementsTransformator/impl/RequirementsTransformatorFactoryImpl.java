@@ -56,17 +56,27 @@ public class RequirementsTransformatorFactoryImpl extends EFactoryImpl implement
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-		case RequirementsTransformatorPackage.XCONSUMER_TO_CONSUMER:
-			return createXConsumerToConsumer();
-		case RequirementsTransformatorPackage.XPROVIDER_TO_PROVIDER:
-			return createXProviderToProvider();
-		case RequirementsTransformatorPackage.XCONTAINER_TO_CONTAINER:
-			return createXContainerToContainer();
 		case RequirementsTransformatorPackage.XAGENT_TO_AGENT:
 			return createXAgentToAgent();
+		case RequirementsTransformatorPackage.XCONSUMER_TO_CONSUMER:
+			return createXConsumerToConsumer();
+		case RequirementsTransformatorPackage.XCONTAINER_TO_CONTAINER:
+			return createXContainerToContainer();
+		case RequirementsTransformatorPackage.XPROVIDER_TO_PROVIDER:
+			return createXProviderToProvider();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public XAgentToAgent createXAgentToAgent() {
+		XAgentToAgentImpl xAgentToAgent = new XAgentToAgentImpl();
+		return xAgentToAgent;
 	}
 
 	/**
@@ -84,16 +94,6 @@ public class RequirementsTransformatorFactoryImpl extends EFactoryImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XProviderToProvider createXProviderToProvider() {
-		XProviderToProviderImpl xProviderToProvider = new XProviderToProviderImpl();
-		return xProviderToProvider;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public XContainerToContainer createXContainerToContainer() {
 		XContainerToContainerImpl xContainerToContainer = new XContainerToContainerImpl();
 		return xContainerToContainer;
@@ -104,9 +104,9 @@ public class RequirementsTransformatorFactoryImpl extends EFactoryImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XAgentToAgent createXAgentToAgent() {
-		XAgentToAgentImpl xAgentToAgent = new XAgentToAgentImpl();
-		return xAgentToAgent;
+	public XProviderToProvider createXProviderToProvider() {
+		XProviderToProviderImpl xProviderToProvider = new XProviderToProviderImpl();
+		return xProviderToProvider;
 	}
 
 	/**

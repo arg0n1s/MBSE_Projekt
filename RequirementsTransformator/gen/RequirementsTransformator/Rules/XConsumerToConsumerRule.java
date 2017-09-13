@@ -210,7 +210,7 @@ public interface XConsumerToConsumerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_6(EMoflonEdge _edge_agents);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_44(EMoflonEdge _edge_agents);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -218,7 +218,7 @@ public interface XConsumerToConsumerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_3(EMoflonEdge _edge_agents);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_32(EMoflonEdge _edge_agents);
 
 	/**
 	 * <!-- begin-user-doc -->

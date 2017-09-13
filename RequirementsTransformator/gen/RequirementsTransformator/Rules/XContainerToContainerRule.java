@@ -107,8 +107,8 @@ public interface XContainerToContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_FWD(PerformRuleResult ruleresult, EObject xContainerToContainer, EObject virtualNode,
-			EObject xContainer, EObject container);
+	void registerObjects_FWD(PerformRuleResult ruleresult, EObject xContainerToContainer, EObject xContainer,
+			EObject container, EObject virtualNode);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -124,7 +124,7 @@ public interface XContainerToContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_BWD(Match match, NetworkSpan virtualNode, Container container);
+	boolean isAppropriate_BWD(Match match, Container container, NetworkSpan virtualNode);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,7 +148,7 @@ public interface XContainerToContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjectsToMatch_BWD(Match match, NetworkSpan virtualNode, Container container);
+	void registerObjectsToMatch_BWD(Match match, Container container, NetworkSpan virtualNode);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -156,7 +156,7 @@ public interface XContainerToContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_BWD(Match match, NetworkSpan virtualNode, Container container);
+	CSP isAppropriate_solveCsp_BWD(Match match, Container container, NetworkSpan virtualNode);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,7 +172,7 @@ public interface XContainerToContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, NetworkSpan virtualNode, Container container);
+	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Container container, NetworkSpan virtualNode);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -188,8 +188,8 @@ public interface XContainerToContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_BWD(PerformRuleResult ruleresult, EObject xContainerToContainer, EObject virtualNode,
-			EObject xContainer, EObject container);
+	void registerObjects_BWD(PerformRuleResult ruleresult, EObject xContainerToContainer, EObject xContainer,
+			EObject container, EObject virtualNode);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -205,7 +205,7 @@ public interface XContainerToContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_XContainer_0(XContainer xContainer);
+	EObjectContainer isAppropriate_FWD_XContainer_4(XContainer xContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -213,7 +213,7 @@ public interface XContainerToContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_8(EMoflonEdge _edge_networkSpan);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_42(EMoflonEdge _edge_networkSpan);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -245,7 +245,7 @@ public interface XContainerToContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_CC(NetworkSpan virtualNode, XContainer xContainer, Container container, Match sourceMatch,
+	CSP isApplicable_solveCsp_CC(XContainer xContainer, Container container, NetworkSpan virtualNode, Match sourceMatch,
 			Match targetMatch);
 
 	/**
@@ -270,7 +270,7 @@ public interface XContainerToContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean checkDEC_BWD(NetworkSpan virtualNode, Container container);
+	boolean checkDEC_BWD(Container container, NetworkSpan virtualNode);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="ASCII"?>
 <sdmUtil:CompilerInjection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:sdmUtil="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//sdmUtil">
   <importInjectionEntries content="org.moflon.tgg.csp.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="ReqToImpTransformator.csp.constraints.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.csp.constraints.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.language.csp.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.csp.*">
     <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule"/>
@@ -25,52 +25,28 @@
     <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.csp.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
   </importInjectionEntries>
   <importInjectionEntries content="ReqToImpTransformator.csp.constraints.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.csp.constraints.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.language.csp.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.csp.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="ReqToImpTransformator.csp.constraints.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.csp.constraints.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.language.csp.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.csp.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="ReqToImpTransformator.csp.constraints.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.csp.constraints.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.language.csp.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.csp.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="ReqToImpTransformator.csp.constraints.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.csp.constraints.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.language.csp.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.csp.*">
     <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule"/>
@@ -85,6 +61,30 @@
     <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.csp.*">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="ReqToImpTransformator.csp.constraints.*">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.csp.constraints.*">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.language.csp.*">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.csp.*">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="ReqToImpTransformator.csp.constraints.*">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.csp.constraints.*">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.language.csp.*">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.csp.*">
     <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2"/>
   </importInjectionEntries>
   <importInjectionEntries content="ReqToImpTransformator.csp.constraints.*">
@@ -97,112 +97,16 @@
     <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.csp.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="ReqToImpTransformator.csp.constraints.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.csp.constraints.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.language.csp.*">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="java.util.Optional">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="java.util.Optional">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="java.util.Optional">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="java.util.Optional">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
     <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="java.util.Optional">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="java.util.Optional">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="java.util.Optional">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="java.util.Optional">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
     <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule"/>
@@ -229,76 +133,52 @@
     <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="java.util.Optional">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="java.util.Optional">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
   </importInjectionEntries>
   <importInjectionEntries content="java.util.Optional">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
   </importInjectionEntries>
   <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
   </importInjectionEntries>
   <importInjectionEntries content="java.util.Optional">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
   </importInjectionEntries>
   <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="java.util.Optional">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="java.util.Optional">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2"/>
-  </importInjectionEntries>
-  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
-    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2"/>
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
     <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule"/>
@@ -324,138 +204,126 @@
   <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
     <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule"/>
   </importInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_solveCsp_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="match.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;match.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/registerObjectsToMatch_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_checkCsp_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return true;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkTypes_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_solveCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="match.registerObject(&quot;implContainer&quot;, implContainer);&#xA;match.registerObject(&quot;router&quot;, router);&#xA;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/registerObjectsToMatch_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_checkCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;isApplicableMatch.registerObject(&quot;router&quot;,router);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_solveCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_checkCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="ruleresult.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;ruleresult.registerObject(&quot;implContainer&quot;, implContainer);&#xA;ruleresult.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;ruleresult.registerObject(&quot;virtualNodeToRouter&quot;, virtualNodeToRouter);&#xA;ruleresult.registerObject(&quot;router&quot;, router);&#xA;ruleresult.registerObject(&quot;reqContainerToImplContainer&quot;, reqContainerToImplContainer);&#xA;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/registerObjects_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;router&quot;).eClass()).equals(&quot;implementation.Router.&quot;);">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkTypes_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_solveCsp_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="match.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;match.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjectsToMatch_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_checkCsp_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return true;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkTypes_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_solveCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="match.registerObject(&quot;router&quot;, router);&#xA;match.registerObject(&quot;cable&quot;, cable);&#xA;match.registerObject(&quot;implContainer&quot;, implContainer);&#xA;match.registerObject(&quot;computer&quot;, computer);&#xA;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjectsToMatch_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_checkCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;router&quot;,router);&#xA;isApplicableMatch.registerObject(&quot;virtualNodeToRouter&quot;,virtualNodeToRouter);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;isApplicableMatch.registerObject(&quot;cable&quot;,cable);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;isApplicableMatch.registerObject(&quot;computer&quot;,computer);&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_solveCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_checkCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="ruleresult.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;ruleresult.registerObject(&quot;router&quot;, router);&#xA;ruleresult.registerObject(&quot;virtualNodeToRouter&quot;, virtualNodeToRouter);&#xA;ruleresult.registerObject(&quot;virtualNodeToComputer&quot;, virtualNodeToComputer);&#xA;ruleresult.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;ruleresult.registerObject(&quot;cable&quot;, cable);&#xA;ruleresult.registerObject(&quot;reqContainerToImplContainer&quot;, reqContainerToImplContainer);&#xA;ruleresult.registerObject(&quot;implContainer&quot;, implContainer);&#xA;ruleresult.registerObject(&quot;computer&quot;, computer);&#xA;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjects_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;computer&quot;).eClass()).equals(&quot;implementation.Computer.&quot;);">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkTypes_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_solveCsp_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="match.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;match.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjectsToMatch_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_checkCsp_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return true;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkTypes_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_solveCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="match.registerObject(&quot;router&quot;, router);&#xA;match.registerObject(&quot;implContainer&quot;, implContainer);&#xA;match.registerObject(&quot;cable&quot;, cable);&#xA;match.registerObject(&quot;server&quot;, server);&#xA;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjectsToMatch_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_checkCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;router&quot;,router);&#xA;isApplicableMatch.registerObject(&quot;virtualNodeToRouter&quot;,virtualNodeToRouter);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;isApplicableMatch.registerObject(&quot;cable&quot;,cable);&#xA;isApplicableMatch.registerObject(&quot;server&quot;,server);&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_solveCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_checkCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="ruleresult.registerObject(&quot;router&quot;, router);&#xA;ruleresult.registerObject(&quot;virtualNodeToRouter&quot;, virtualNodeToRouter);&#xA;ruleresult.registerObject(&quot;implContainer&quot;, implContainer);&#xA;ruleresult.registerObject(&quot;virtualNodeToServer&quot;, virtualNodeToServer);&#xA;ruleresult.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;ruleresult.registerObject(&quot;cable&quot;, cable);&#xA;ruleresult.registerObject(&quot;server&quot;, server);&#xA;ruleresult.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;ruleresult.registerObject(&quot;reqContainerToImplContainer&quot;, reqContainerToImplContainer);&#xA;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjects_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;server&quot;).eClass()).equals(&quot;implementation.Server.&quot;);">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkTypes_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_solveCsp_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="match.registerObject(&quot;reqAgent&quot;, reqAgent);&#xA;match.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;match.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjectsToMatch_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_checkCsp_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;implDevice&quot;,implDevice);&#xA;isApplicableMatch.registerObject(&quot;reqAgent&quot;,reqAgent);&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;isApplicableMatch.registerObject(&quot;virtualNodeToComputer&quot;,virtualNodeToComputer);&#xA;isApplicableMatch.registerObject(&quot;cable&quot;,cable);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_solveCsp_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_checkCsp_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="ruleresult.registerObject(&quot;implDevice&quot;, implDevice);&#xA;ruleresult.registerObject(&quot;reqAgentToImplDevice&quot;, reqAgentToImplDevice);&#xA;ruleresult.registerObject(&quot;reqAgent&quot;, reqAgent);&#xA;ruleresult.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;ruleresult.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;ruleresult.registerObject(&quot;virtualNodeToComputer&quot;, virtualNodeToComputer);&#xA;ruleresult.registerObject(&quot;cable&quot;, cable);&#xA;ruleresult.registerObject(&quot;reqContainerToImplContainer&quot;, reqContainerToImplContainer);&#xA;ruleresult.registerObject(&quot;implContainer&quot;, implContainer);&#xA;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjects_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;reqAgent&quot;).eClass()).equals(&quot;requirements.Consumer.&quot;);">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkTypes_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_solveCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="match.registerObject(&quot;implDevice&quot;, implDevice);&#xA;match.registerObject(&quot;cable&quot;, cable);&#xA;match.registerObject(&quot;implContainer&quot;, implContainer);&#xA;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjectsToMatch_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_checkCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return true;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkTypes_BWD"/>
-  </compilerInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.runtime.TripleMatchNodeMapping">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="java.util.Optional">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="org.moflon.tgg.algorithm.delta.attribute.CheckAttributeHelper">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule"/>
+  </importInjectionEntries>
+  <importInjectionEntries content="SDMLanguage.expressions.ComparingOperator">
+    <eClass href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule"/>
+  </importInjectionEntries>
   <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_solveCsp_FWD"/>
   </compilerInjectionEntries>
@@ -465,13 +333,13 @@
   <compilerInjectionEntries content="return csp.check();">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isAppropriate_checkCsp_FWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;virtualNodeToServer&quot;,virtualNodeToServer);&#xA;isApplicableMatch.registerObject(&quot;implDevice&quot;,implDevice);&#xA;isApplicableMatch.registerObject(&quot;reqAgent&quot;,reqAgent);&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;isApplicableMatch.registerObject(&quot;cable&quot;,cable);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;return csp;">
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;virtualNodeToServer&quot;,virtualNodeToServer);&#xA;isApplicableMatch.registerObject(&quot;implDevice&quot;,implDevice);&#xA;isApplicableMatch.registerObject(&quot;reqAgent&quot;,reqAgent);&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;isApplicableMatch.registerObject(&quot;cable&quot;,cable);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;return csp;">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_solveCsp_FWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return csp.check();">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_checkCsp_FWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="ruleresult.registerObject(&quot;virtualNodeToServer&quot;, virtualNodeToServer);&#xA;ruleresult.registerObject(&quot;implDevice&quot;, implDevice);&#xA;ruleresult.registerObject(&quot;reqAgentToImplDevice&quot;, reqAgentToImplDevice);&#xA;ruleresult.registerObject(&quot;reqAgent&quot;, reqAgent);&#xA;ruleresult.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;ruleresult.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;ruleresult.registerObject(&quot;cable&quot;, cable);&#xA;ruleresult.registerObject(&quot;reqContainerToImplContainer&quot;, reqContainerToImplContainer);&#xA;ruleresult.registerObject(&quot;implContainer&quot;, implContainer);&#xA;">
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;virtualNodeToServer&quot;, virtualNodeToServer);&#xA;ruleresult.registerObject(&quot;implDevice&quot;, implDevice);&#xA;ruleresult.registerObject(&quot;reqAgentToImplDevice&quot;, reqAgentToImplDevice);&#xA;ruleresult.registerObject(&quot;reqAgent&quot;, reqAgent);&#xA;ruleresult.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;ruleresult.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;ruleresult.registerObject(&quot;cable&quot;, cable);&#xA;ruleresult.registerObject(&quot;implContainer&quot;, implContainer);&#xA;ruleresult.registerObject(&quot;reqContainerToImplContainer&quot;, reqContainerToImplContainer);&#xA;">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/registerObjects_FWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;reqAgent&quot;).eClass()).equals(&quot;requirements.Provider.&quot;);">
@@ -490,37 +358,103 @@
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/checkTypes_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_solveCsp_FWD"/>
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_solveCsp_FWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="match.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/registerObjectsToMatch_FWD"/>
+  <compilerInjectionEntries content="match.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;match.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjectsToMatch_FWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_checkCsp_FWD"/>
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_checkCsp_FWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return true;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkTypes_FWD"/>
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkTypes_FWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_solveCsp_BWD"/>
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="match.registerObject(&quot;router&quot;, router);&#xA;match.registerObject(&quot;implContainer&quot;, implContainer);&#xA;match.registerObject(&quot;computer&quot;, computer);&#xA;match.registerObject(&quot;cable&quot;, cable);&#xA;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjectsToMatch_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isAppropriate_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;router&quot;,router);&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;isApplicableMatch.registerObject(&quot;computer&quot;,computer);&#xA;isApplicableMatch.registerObject(&quot;virtualNodeToRouter&quot;,virtualNodeToRouter);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;isApplicableMatch.registerObject(&quot;cable&quot;,cable);&#xA;return csp;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;router&quot;, router);&#xA;ruleresult.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;ruleresult.registerObject(&quot;implContainer&quot;, implContainer);&#xA;ruleresult.registerObject(&quot;reqContainerToImplContainer&quot;, reqContainerToImplContainer);&#xA;ruleresult.registerObject(&quot;computer&quot;, computer);&#xA;ruleresult.registerObject(&quot;virtualNodeToRouter&quot;, virtualNodeToRouter);&#xA;ruleresult.registerObject(&quot;virtualNodeToComputer&quot;, virtualNodeToComputer);&#xA;ruleresult.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;ruleresult.registerObject(&quot;cable&quot;, cable);&#xA;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/registerObjects_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;computer&quot;).eClass()).equals(&quot;implementation.Computer.&quot;);">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkTypes_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_solveCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="match.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;match.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/registerObjectsToMatch_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_checkCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkTypes_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="match.registerObject(&quot;router&quot;, router);&#xA;match.registerObject(&quot;implContainer&quot;, implContainer);&#xA;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/registerObjectsToMatch_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isAppropriate_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;router&quot;,router);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;return csp;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;virtualNodeToRouter&quot;, virtualNodeToRouter);&#xA;ruleresult.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;ruleresult.registerObject(&quot;router&quot;, router);&#xA;ruleresult.registerObject(&quot;implContainer&quot;, implContainer);&#xA;ruleresult.registerObject(&quot;reqContainerToImplContainer&quot;, reqContainerToImplContainer);&#xA;ruleresult.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/registerObjects_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;router&quot;).eClass()).equals(&quot;implementation.Router.&quot;);">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkTypes_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_solveCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="match.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/registerObjectsToMatch_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_checkCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/checkTypes_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_solveCsp_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="match.registerObject(&quot;cable&quot;, cable);&#xA;match.registerObject(&quot;implContainer&quot;, implContainer);&#xA;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/registerObjectsToMatch_BWD"/>
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/registerObjectsToMatch_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_checkCsp_BWD"/>
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_checkCsp_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;cable&quot;,cable);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_solveCsp_BWD"/>
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_solveCsp_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_checkCsp_BWD"/>
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_checkCsp_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="ruleresult.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;ruleresult.registerObject(&quot;cable&quot;, cable);&#xA;ruleresult.registerObject(&quot;reqContainerToImplContainer&quot;, reqContainerToImplContainer);&#xA;ruleresult.registerObject(&quot;implContainer&quot;, implContainer);&#xA;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/registerObjects_BWD"/>
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/registerObjects_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;cable&quot;).eClass()).equals(&quot;implementation.CopperCable.&quot;);">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkTypes_BWD"/>
+  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;cable&quot;).eClass()).equals(&quot;implementation.GlassFiberCable.&quot;);">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/checkTypes_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isAppropriate_solveCsp_FWD"/>
@@ -565,9 +499,75 @@
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/checkTypes_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_solveCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="match.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/registerObjectsToMatch_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_checkCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkTypes_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="match.registerObject(&quot;cable&quot;, cable);&#xA;match.registerObject(&quot;implContainer&quot;, implContainer);&#xA;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/registerObjectsToMatch_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isAppropriate_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;cable&quot;,cable);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;return csp;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;ruleresult.registerObject(&quot;cable&quot;, cable);&#xA;ruleresult.registerObject(&quot;reqContainerToImplContainer&quot;, reqContainerToImplContainer);&#xA;ruleresult.registerObject(&quot;implContainer&quot;, implContainer);&#xA;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/registerObjects_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;cable&quot;).eClass()).equals(&quot;implementation.CopperCable.&quot;);">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkTypes_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_solveCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="match.registerObject(&quot;reqAgent&quot;, reqAgent);&#xA;match.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;match.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjectsToMatch_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_checkCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;implDevice&quot;,implDevice);&#xA;isApplicableMatch.registerObject(&quot;reqAgent&quot;,reqAgent);&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;virtualNodeToComputer&quot;,virtualNodeToComputer);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;isApplicableMatch.registerObject(&quot;cable&quot;,cable);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;return csp;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_solveCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_checkCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;reqAgentToImplDevice&quot;, reqAgentToImplDevice);&#xA;ruleresult.registerObject(&quot;implDevice&quot;, implDevice);&#xA;ruleresult.registerObject(&quot;reqAgent&quot;, reqAgent);&#xA;ruleresult.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;ruleresult.registerObject(&quot;virtualNodeToComputer&quot;, virtualNodeToComputer);&#xA;ruleresult.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;ruleresult.registerObject(&quot;cable&quot;, cable);&#xA;ruleresult.registerObject(&quot;implContainer&quot;, implContainer);&#xA;ruleresult.registerObject(&quot;reqContainerToImplContainer&quot;, reqContainerToImplContainer);&#xA;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjects_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;reqAgent&quot;).eClass()).equals(&quot;requirements.Consumer.&quot;);">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkTypes_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="match.registerObject(&quot;implDevice&quot;, implDevice);&#xA;match.registerObject(&quot;cable&quot;, cable);&#xA;match.registerObject(&quot;implContainer&quot;, implContainer);&#xA;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/registerObjectsToMatch_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isAppropriate_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkTypes_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_solveCsp_FWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="match.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;match.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;">
+  <compilerInjectionEntries content="match.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;match.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjectsToMatch_FWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return csp.check();">
@@ -579,80 +579,56 @@
   <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_solveCsp_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="match.registerObject(&quot;router&quot;, router);&#xA;match.registerObject(&quot;implContainer&quot;, implContainer);&#xA;match.registerObject(&quot;cable&quot;, cable);&#xA;match.registerObject(&quot;router2&quot;, router2);&#xA;">
+  <compilerInjectionEntries content="match.registerObject(&quot;implContainer&quot;, implContainer);&#xA;match.registerObject(&quot;cable&quot;, cable);&#xA;match.registerObject(&quot;router2&quot;, router2);&#xA;match.registerObject(&quot;router&quot;, router);&#xA;">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjectsToMatch_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return csp.check();">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isAppropriate_checkCsp_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;isApplicableMatch.registerObject(&quot;router&quot;,router);&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;isApplicableMatch.registerObject(&quot;cable&quot;,cable);&#xA;isApplicableMatch.registerObject(&quot;router2&quot;,router2);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;isApplicableMatch.registerObject(&quot;virtualNodeToRouter1&quot;,virtualNodeToRouter1);&#xA;return csp;">
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;virtualNodeToRouter1&quot;,virtualNodeToRouter1);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;isApplicableMatch.registerObject(&quot;cable&quot;,cable);&#xA;isApplicableMatch.registerObject(&quot;router2&quot;,router2);&#xA;isApplicableMatch.registerObject(&quot;router&quot;,router);&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;return csp;">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_solveCsp_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return csp.check();">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_checkCsp_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="ruleresult.registerObject(&quot;reqContainerToImplContainer&quot;, reqContainerToImplContainer);&#xA;ruleresult.registerObject(&quot;router&quot;, router);&#xA;ruleresult.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;ruleresult.registerObject(&quot;implContainer&quot;, implContainer);&#xA;ruleresult.registerObject(&quot;cable&quot;, cable);&#xA;ruleresult.registerObject(&quot;router2&quot;, router2);&#xA;ruleresult.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;ruleresult.registerObject(&quot;virtualNodeToRouter1&quot;, virtualNodeToRouter1);&#xA;ruleresult.registerObject(&quot;virtualNodeToRouter&quot;, virtualNodeToRouter);&#xA;">
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;virtualNodeToRouter1&quot;, virtualNodeToRouter1);&#xA;ruleresult.registerObject(&quot;implContainer&quot;, implContainer);&#xA;ruleresult.registerObject(&quot;reqContainerToImplContainer&quot;, reqContainerToImplContainer);&#xA;ruleresult.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;ruleresult.registerObject(&quot;cable&quot;, cable);&#xA;ruleresult.registerObject(&quot;router2&quot;, router2);&#xA;ruleresult.registerObject(&quot;virtualNodeToRouter&quot;, virtualNodeToRouter);&#xA;ruleresult.registerObject(&quot;router&quot;, router);&#xA;ruleresult.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/registerObjects_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;router2&quot;).eClass()).equals(&quot;implementation.Router.&quot;);">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkTypes_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_solveCsp_FWD"/>
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_solveCsp_FWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="match.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/registerObjectsToMatch_FWD"/>
+  <compilerInjectionEntries content="match.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;match.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjectsToMatch_FWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_checkCsp_FWD"/>
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_checkCsp_FWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return true;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/checkTypes_FWD"/>
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkTypes_FWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_solveCsp_BWD"/>
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_solveCsp_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="match.registerObject(&quot;cable&quot;, cable);&#xA;match.registerObject(&quot;implContainer&quot;, implContainer);&#xA;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/registerObjectsToMatch_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isAppropriate_checkCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;cable&quot;,cable);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_solveCsp_BWD"/>
+  <compilerInjectionEntries content="match.registerObject(&quot;router&quot;, router);&#xA;match.registerObject(&quot;implContainer&quot;, implContainer);&#xA;match.registerObject(&quot;cable&quot;, cable);&#xA;match.registerObject(&quot;server&quot;, server);&#xA;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjectsToMatch_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_checkCsp_BWD"/>
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isAppropriate_checkCsp_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="ruleresult.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;ruleresult.registerObject(&quot;cable&quot;, cable);&#xA;ruleresult.registerObject(&quot;reqContainerToImplContainer&quot;, reqContainerToImplContainer);&#xA;ruleresult.registerObject(&quot;implContainer&quot;, implContainer);&#xA;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/registerObjects_BWD"/>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;virtualNodeToRouter&quot;,virtualNodeToRouter);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;isApplicableMatch.registerObject(&quot;router&quot;,router);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;isApplicableMatch.registerObject(&quot;cable&quot;,cable);&#xA;isApplicableMatch.registerObject(&quot;server&quot;,server);&#xA;return csp;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_solveCsp_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;cable&quot;).eClass()).equals(&quot;implementation.GlassFiberCable.&quot;);">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/checkTypes_BWD"/>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_checkCsp_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;VirtualNodeToRouterRule1&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkAttributes_FWD"/>
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;reqContainer&quot;, reqContainer);&#xA;ruleresult.registerObject(&quot;virtualNodeToRouter&quot;, virtualNodeToRouter);&#xA;ruleresult.registerObject(&quot;virtualNode&quot;, virtualNode);&#xA;ruleresult.registerObject(&quot;router&quot;, router);&#xA;ruleresult.registerObject(&quot;reqContainerToImplContainer&quot;, reqContainerToImplContainer);&#xA;ruleresult.registerObject(&quot;implContainer&quot;, implContainer);&#xA;ruleresult.registerObject(&quot;virtualNodeToServer&quot;, virtualNodeToServer);&#xA;ruleresult.registerObject(&quot;cable&quot;, cable);&#xA;ruleresult.registerObject(&quot;server&quot;, server);&#xA;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/registerObjects_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;VirtualNodeToRouterRule1&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkAttributes_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;VirtualNodeToComputerRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkAttributes_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;VirtualNodeToComputerRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkAttributes_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;VirtualNodeToServerRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkAttributes_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;VirtualNodeToServerRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkAttributes_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;ReqConsumerToComputerRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkAttributes_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;ReqConsumerToComputerRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkAttributes_BWD"/>
+  <compilerInjectionEntries content="return true &amp;&amp; org.moflon.util.eMoflonSDMUtil.getFQN(match.getObject(&quot;server&quot;).eClass()).equals(&quot;implementation.Server.&quot;);">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkTypes_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;ReqProviderToServerRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/checkAttributes_FWD"/>
@@ -660,23 +636,17 @@
   <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;ReqProviderToServerRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/checkAttributes_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;ImplCopperIgnoreRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkAttributes_FWD"/>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;VirtualNodeToComputerRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkAttributes_FWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;ImplCopperIgnoreRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkAttributes_BWD"/>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;VirtualNodeToComputerRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/checkAttributes_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;ReqContainerToImplContainerRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/checkAttributes_FWD"/>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;VirtualNodeToRouterRule1&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkAttributes_FWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;ReqContainerToImplContainerRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/checkAttributes_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;VirtualNodeToRouterRule2&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkAttributes_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;VirtualNodeToRouterRule2&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkAttributes_BWD"/>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;VirtualNodeToRouterRule1&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/checkAttributes_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;ImplGlassIgnoreRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/checkAttributes_FWD"/>
@@ -684,29 +654,35 @@
   <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;ImplGlassIgnoreRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/checkAttributes_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_solveCsp_CC"/>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;ReqContainerToImplContainerRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/checkAttributes_FWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_checkCsp_CC"/>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;ReqContainerToImplContainerRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/checkAttributes_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_solveCsp_CC"/>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;ImplCopperIgnoreRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkAttributes_FWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_checkCsp_CC"/>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;ImplCopperIgnoreRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/checkAttributes_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_solveCsp_CC"/>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;ReqConsumerToComputerRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkAttributes_FWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_checkCsp_CC"/>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;ReqConsumerToComputerRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/checkAttributes_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_solveCsp_CC"/>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;VirtualNodeToRouterRule2&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkAttributes_FWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_checkCsp_CC"/>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;VirtualNodeToRouterRule2&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/checkAttributes_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;VirtualNodeToServerRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkAttributes_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="AttributeConstraintsRuleResult ruleResult = org.moflon.tgg.runtime.RuntimeFactory.eINSTANCE.createAttributeConstraintsRuleResult();&#xA;ruleResult.setRule(&quot;VirtualNodeToServerRule&quot;);&#x9;&#xA;ruleResult.setSuccess(true);&#xA;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);&#xA;&#xA;&#xA;&#xA;if(csp.check()){ &#xA;&#x9;ruleResult.setSuccess(true);&#xA;} else {&#xA;&#x9;if(csp.check()){ &#xA;&#x9;&#x9;ruleResult.setSuccess(true);&#xA;&#x9;&#x9;ruleResult.setRequiredChange(true);&#xA;&#x9;} else {&#xA;&#x9;&#x9;ruleResult.setSuccess(false);&#xA;&#x9;&#x9;return ruleResult;&#xA;&#x9;}&#x9;&#x9;&#xA;}&#x9;&#xA;&#xA;return ruleResult;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/checkAttributes_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_solveCsp_CC"/>
@@ -715,10 +691,22 @@
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/isApplicable_checkCsp_CC"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_solveCsp_CC"/>
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_solveCsp_CC"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_checkCsp_CC"/>
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/isApplicable_checkCsp_CC"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_solveCsp_CC"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/isApplicable_checkCsp_CC"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_solveCsp_CC"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_checkCsp_CC"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_solveCsp_CC"/>
@@ -727,52 +715,52 @@
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/isApplicable_checkCsp_CC"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_solveCsp_CC"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/isApplicable_checkCsp_CC"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_solveCsp_CC"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/isApplicable_checkCsp_CC"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_solveCsp_CC"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return csp.check();">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/isApplicable_checkCsp_CC"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_solveCsp_CC"/>
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_solveCsp_CC"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/isApplicable_checkCsp_CC"/>
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/isApplicable_checkCsp_CC"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/generateModel_solveCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/generateModel_checkCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;router&quot;,router);&#xA;isApplicableMatch.registerObject(&quot;virtualNodeToRouter&quot;,virtualNodeToRouter);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;isApplicableMatch.registerObject(&quot;cable&quot;,cable);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/generateModel_solveCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/generateModel_checkCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;router&quot;,router);&#xA;isApplicableMatch.registerObject(&quot;virtualNodeToRouter&quot;,virtualNodeToRouter);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;isApplicableMatch.registerObject(&quot;cable&quot;,cable);&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/generateModel_solveCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/generateModel_checkCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;implDevice&quot;,implDevice);&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;isApplicableMatch.registerObject(&quot;virtualNodeToComputer&quot;,virtualNodeToComputer);&#xA;isApplicableMatch.registerObject(&quot;cable&quot;,cable);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/generateModel_solveCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/generateModel_checkCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;virtualNodeToServer&quot;,virtualNodeToServer);&#xA;isApplicableMatch.registerObject(&quot;implDevice&quot;,implDevice);&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;isApplicableMatch.registerObject(&quot;cable&quot;,cable);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;return csp;">
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;virtualNodeToServer&quot;,virtualNodeToServer);&#xA;isApplicableMatch.registerObject(&quot;implDevice&quot;,implDevice);&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;isApplicableMatch.registerObject(&quot;cable&quot;,cable);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;return csp;">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/generateModel_solveCsp_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return csp.check();">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqProviderToServerRule/generateModel_checkCsp_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/generateModel_solveCsp_BWD"/>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;router&quot;,router);&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;isApplicableMatch.registerObject(&quot;virtualNodeToRouter&quot;,virtualNodeToRouter);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;isApplicableMatch.registerObject(&quot;cable&quot;,cable);&#xA;return csp;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/generateModel_solveCsp_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/generateModel_checkCsp_BWD"/>
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToComputerRule/generateModel_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;return csp;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/generateModel_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule1/generateModel_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;return csp;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/generateModel_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/generateModel_checkCsp_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;return csp;">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/generateModel_solveCsp_BWD"/>
@@ -780,16 +768,28 @@
   <compilerInjectionEntries content="return csp.check();">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqContainerToImplContainerRule/generateModel_checkCsp_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;isApplicableMatch.registerObject(&quot;router&quot;,router);&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;isApplicableMatch.registerObject(&quot;cable&quot;,cable);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;isApplicableMatch.registerObject(&quot;virtualNodeToRouter1&quot;,virtualNodeToRouter1);&#xA;return csp;">
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;return csp;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/generateModel_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplCopperIgnoreRule/generateModel_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;implDevice&quot;,implDevice);&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;virtualNodeToComputer&quot;,virtualNodeToComputer);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;isApplicableMatch.registerObject(&quot;cable&quot;,cable);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;return csp;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/generateModel_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ReqConsumerToComputerRule/generateModel_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;virtualNodeToRouter1&quot;,virtualNodeToRouter1);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;isApplicableMatch.registerObject(&quot;cable&quot;,cable);&#xA;isApplicableMatch.registerObject(&quot;router&quot;,router);&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;return csp;">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/generateModel_solveCsp_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return csp.check();">
     <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToRouterRule2/generateModel_checkCsp_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;return csp;">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/generateModel_solveCsp_BWD"/>
+  <compilerInjectionEntries content="// Create CSP&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xA;&#xA;// Create literals&#xA;&#xA;// Create attribute variables&#xA;&#xA;// Create unbound variables&#xA;&#xA;// Create constraints&#xA;&#xA;&#xA;&#xA;&#xA;// Solve CSP&#xA;&#xA;// Snapshot pattern match on which CSP is solved&#xA;isApplicableMatch.registerObject(&quot;reqContainer&quot;,reqContainer);&#xA;isApplicableMatch.registerObject(&quot;virtualNodeToRouter&quot;,virtualNodeToRouter);&#xA;isApplicableMatch.registerObject(&quot;virtualNode&quot;,virtualNode);&#xA;isApplicableMatch.registerObject(&quot;router&quot;,router);&#xA;isApplicableMatch.registerObject(&quot;reqContainerToImplContainer&quot;,reqContainerToImplContainer);&#xA;isApplicableMatch.registerObject(&quot;implContainer&quot;,implContainer);&#xA;isApplicableMatch.registerObject(&quot;cable&quot;,cable);&#xA;return csp;">
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/generateModel_solveCsp_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/ImplGlassIgnoreRule/generateModel_checkCsp_BWD"/>
+    <eOperation href="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules/VirtualNodeToServerRule/generateModel_checkCsp_BWD"/>
   </compilerInjectionEntries>
 </sdmUtil:CompilerInjection>

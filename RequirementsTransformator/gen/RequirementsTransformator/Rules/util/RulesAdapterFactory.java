@@ -69,8 +69,13 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	 */
 	protected RulesSwitch<Adapter> modelSwitch = new RulesSwitch<Adapter>() {
 		@Override
-		public Adapter caseXConsumerToConsumerRule(XConsumerToConsumerRule object) {
-			return createXConsumerToConsumerRuleAdapter();
+		public Adapter caseXAgentToAgentRule(XAgentToAgentRule object) {
+			return createXAgentToAgentRuleAdapter();
+		}
+
+		@Override
+		public Adapter caseXContainerToContainerRule(XContainerToContainerRule object) {
+			return createXContainerToContainerRuleAdapter();
 		}
 
 		@Override
@@ -79,13 +84,8 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseXAgentToAgentRule(XAgentToAgentRule object) {
-			return createXAgentToAgentRuleAdapter();
-		}
-
-		@Override
-		public Adapter caseXContainerToContainerRule(XContainerToContainerRule object) {
-			return createXContainerToContainerRuleAdapter();
+		public Adapter caseXConsumerToConsumerRule(XConsumerToConsumerRule object) {
+			return createXConsumerToConsumerRuleAdapter();
 		}
 
 		@Override
@@ -113,34 +113,6 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link RequirementsTransformator.Rules.XConsumerToConsumerRule <em>XConsumer To Consumer Rule</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see RequirementsTransformator.Rules.XConsumerToConsumerRule
-	 * @generated
-	 */
-	public Adapter createXConsumerToConsumerRuleAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link RequirementsTransformator.Rules.XProviderToProviderRule <em>XProvider To Provider Rule</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see RequirementsTransformator.Rules.XProviderToProviderRule
-	 * @generated
-	 */
-	public Adapter createXProviderToProviderRuleAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link RequirementsTransformator.Rules.XAgentToAgentRule <em>XAgent To Agent Rule</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -165,6 +137,34 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createXContainerToContainerRuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link RequirementsTransformator.Rules.XProviderToProviderRule <em>XProvider To Provider Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see RequirementsTransformator.Rules.XProviderToProviderRule
+	 * @generated
+	 */
+	public Adapter createXProviderToProviderRuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link RequirementsTransformator.Rules.XConsumerToConsumerRule <em>XConsumer To Consumer Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see RequirementsTransformator.Rules.XConsumerToConsumerRule
+	 * @generated
+	 */
+	public Adapter createXConsumerToConsumerRuleAdapter() {
 		return null;
 	}
 

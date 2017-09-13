@@ -203,7 +203,7 @@ public interface ReqContainerToImplContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_Container_0(implementation.Container implContainer);
+	EObjectContainer isAppropriate_BWD_Container_4(implementation.Container implContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -211,7 +211,7 @@ public interface ReqContainerToImplContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_2(EMoflonEdge _edge_networkSpan);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_29(EMoflonEdge _edge_networkSpan);
 
 	/**
 	 * <!-- begin-user-doc -->

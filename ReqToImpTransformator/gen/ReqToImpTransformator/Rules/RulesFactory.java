@@ -22,22 +22,13 @@ public interface RulesFactory extends EFactory {
 	RulesFactory eINSTANCE = ReqToImpTransformator.Rules.impl.RulesFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Virtual Node To Router Rule1</em>'.
+	 * Returns a new object of class '<em>Req Provider To Server Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Virtual Node To Router Rule1</em>'.
+	 * @return a new object of class '<em>Req Provider To Server Rule</em>'.
 	 * @generated
 	 */
-	VirtualNodeToRouterRule1 createVirtualNodeToRouterRule1();
-
-	/**
-	 * Returns a new object of class '<em>Impl Incoming Connection Ignore Rule</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Impl Incoming Connection Ignore Rule</em>'.
-	 * @generated
-	 */
-	ImplIncomingConnectionIgnoreRule createImplIncomingConnectionIgnoreRule();
+	ReqProviderToServerRule createReqProviderToServerRule();
 
 	/**
 	 * Returns a new object of class '<em>Virtual Node To Computer Rule</em>'.
@@ -49,24 +40,6 @@ public interface RulesFactory extends EFactory {
 	VirtualNodeToComputerRule createVirtualNodeToComputerRule();
 
 	/**
-	 * Returns a new object of class '<em>Virtual Node To Server Rule</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Virtual Node To Server Rule</em>'.
-	 * @generated
-	 */
-	VirtualNodeToServerRule createVirtualNodeToServerRule();
-
-	/**
-	 * Returns a new object of class '<em>Req Consumer To Computer Rule</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Req Consumer To Computer Rule</em>'.
-	 * @generated
-	 */
-	ReqConsumerToComputerRule createReqConsumerToComputerRule();
-
-	/**
 	 * Returns a new object of class '<em>Impl Outgoing Connection Ignore Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -76,22 +49,31 @@ public interface RulesFactory extends EFactory {
 	ImplOutgoingConnectionIgnoreRule createImplOutgoingConnectionIgnoreRule();
 
 	/**
-	 * Returns a new object of class '<em>Req Provider To Server Rule</em>'.
+	 * Returns a new object of class '<em>Impl Incoming Connection Ignore Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Req Provider To Server Rule</em>'.
+	 * @return a new object of class '<em>Impl Incoming Connection Ignore Rule</em>'.
 	 * @generated
 	 */
-	ReqProviderToServerRule createReqProviderToServerRule();
+	ImplIncomingConnectionIgnoreRule createImplIncomingConnectionIgnoreRule();
 
 	/**
-	 * Returns a new object of class '<em>Impl Copper Ignore Rule</em>'.
+	 * Returns a new object of class '<em>Virtual Node To Router Rule1</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Impl Copper Ignore Rule</em>'.
+	 * @return a new object of class '<em>Virtual Node To Router Rule1</em>'.
 	 * @generated
 	 */
-	ImplCopperIgnoreRule createImplCopperIgnoreRule();
+	VirtualNodeToRouterRule1 createVirtualNodeToRouterRule1();
+
+	/**
+	 * Returns a new object of class '<em>Impl Glass Ignore Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Impl Glass Ignore Rule</em>'.
+	 * @generated
+	 */
+	ImplGlassIgnoreRule createImplGlassIgnoreRule();
 
 	/**
 	 * Returns a new object of class '<em>Req Container To Impl Container Rule</em>'.
@@ -103,13 +85,22 @@ public interface RulesFactory extends EFactory {
 	ReqContainerToImplContainerRule createReqContainerToImplContainerRule();
 
 	/**
-	 * Returns a new object of class '<em>Req Agent To Device Rule</em>'.
+	 * Returns a new object of class '<em>Impl Copper Ignore Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Req Agent To Device Rule</em>'.
+	 * @return a new object of class '<em>Impl Copper Ignore Rule</em>'.
 	 * @generated
 	 */
-	ReqAgentToDeviceRule createReqAgentToDeviceRule();
+	ImplCopperIgnoreRule createImplCopperIgnoreRule();
+
+	/**
+	 * Returns a new object of class '<em>Req Consumer To Computer Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Req Consumer To Computer Rule</em>'.
+	 * @generated
+	 */
+	ReqConsumerToComputerRule createReqConsumerToComputerRule();
 
 	/**
 	 * Returns a new object of class '<em>Virtual Node To Router Rule2</em>'.
@@ -130,13 +121,22 @@ public interface RulesFactory extends EFactory {
 	ImplCableIgnoreRule createImplCableIgnoreRule();
 
 	/**
-	 * Returns a new object of class '<em>Impl Glass Ignore Rule</em>'.
+	 * Returns a new object of class '<em>Virtual Node To Server Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Impl Glass Ignore Rule</em>'.
+	 * @return a new object of class '<em>Virtual Node To Server Rule</em>'.
 	 * @generated
 	 */
-	ImplGlassIgnoreRule createImplGlassIgnoreRule();
+	VirtualNodeToServerRule createVirtualNodeToServerRule();
+
+	/**
+	 * Returns a new object of class '<em>Req Agent To Device Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Req Agent To Device Rule</em>'.
+	 * @generated
+	 */
+	ReqAgentToDeviceRule createReqAgentToDeviceRule();
 
 	/**
 	 * Returns the package supported by this factory.

@@ -739,7 +739,7 @@ public class XRouterToRouterRuleImpl extends AbstractRuleImpl implements XRouter
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_12(EMoflonEdge _edge_devices) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_47(EMoflonEdge _edge_devices) {
 
 		Object[] result1_bindingAndBlack = XRouterToRouterRuleImpl
 				.pattern_XRouterToRouterRule_20_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -796,7 +796,7 @@ public class XRouterToRouterRuleImpl extends AbstractRuleImpl implements XRouter
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_8(EMoflonEdge _edge_elements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_35(EMoflonEdge _edge_elements) {
 
 		Object[] result1_bindingAndBlack = XRouterToRouterRuleImpl
 				.pattern_XRouterToRouterRule_21_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -864,21 +864,21 @@ public class XRouterToRouterRuleImpl extends AbstractRuleImpl implements XRouter
 
 		CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);
 
-		Variable var_device_maxSpeed = CSPFactoryHelper.eINSTANCE.createVariable("device", true, csp);
-		var_device_maxSpeed.setValue(__helper.getValue("device", "maxSpeed"));
-		var_device_maxSpeed.setType("BigInteger");
-
 		Variable var_xDevice_maxSpeed = CSPFactoryHelper.eINSTANCE.createVariable("xDevice", true, csp);
 		var_xDevice_maxSpeed.setValue(__helper.getValue("xDevice", "maxSpeed"));
 		var_xDevice_maxSpeed.setType("BigInteger");
 
-		Variable var_xDevice_name = CSPFactoryHelper.eINSTANCE.createVariable("xDevice", true, csp);
-		var_xDevice_name.setValue(__helper.getValue("xDevice", "name"));
-		var_xDevice_name.setType("String");
+		Variable var_device_maxSpeed = CSPFactoryHelper.eINSTANCE.createVariable("device", true, csp);
+		var_device_maxSpeed.setValue(__helper.getValue("device", "maxSpeed"));
+		var_device_maxSpeed.setType("BigInteger");
 
 		Variable var_device_name = CSPFactoryHelper.eINSTANCE.createVariable("device", true, csp);
 		var_device_name.setValue(__helper.getValue("device", "name"));
 		var_device_name.setType("String");
+
+		Variable var_xDevice_name = CSPFactoryHelper.eINSTANCE.createVariable("xDevice", true, csp);
+		var_xDevice_name.setValue(__helper.getValue("xDevice", "name"));
+		var_xDevice_name.setType("String");
 
 		Eq eq0 = new Eq();
 		csp.getConstraints().add(eq0);
@@ -928,21 +928,21 @@ public class XRouterToRouterRuleImpl extends AbstractRuleImpl implements XRouter
 
 		CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);
 
-		Variable var_device_maxSpeed = CSPFactoryHelper.eINSTANCE.createVariable("device", true, csp);
-		var_device_maxSpeed.setValue(__helper.getValue("device", "maxSpeed"));
-		var_device_maxSpeed.setType("BigInteger");
-
 		Variable var_xDevice_maxSpeed = CSPFactoryHelper.eINSTANCE.createVariable("xDevice", true, csp);
 		var_xDevice_maxSpeed.setValue(__helper.getValue("xDevice", "maxSpeed"));
 		var_xDevice_maxSpeed.setType("BigInteger");
 
-		Variable var_xDevice_name = CSPFactoryHelper.eINSTANCE.createVariable("xDevice", true, csp);
-		var_xDevice_name.setValue(__helper.getValue("xDevice", "name"));
-		var_xDevice_name.setType("String");
+		Variable var_device_maxSpeed = CSPFactoryHelper.eINSTANCE.createVariable("device", true, csp);
+		var_device_maxSpeed.setValue(__helper.getValue("device", "maxSpeed"));
+		var_device_maxSpeed.setType("BigInteger");
 
 		Variable var_device_name = CSPFactoryHelper.eINSTANCE.createVariable("device", true, csp);
 		var_device_name.setValue(__helper.getValue("device", "name"));
 		var_device_name.setType("String");
+
+		Variable var_xDevice_name = CSPFactoryHelper.eINSTANCE.createVariable("xDevice", true, csp);
+		var_xDevice_name.setValue(__helper.getValue("xDevice", "name"));
+		var_xDevice_name.setType("String");
 
 		Eq eq0 = new Eq();
 		csp.getConstraints().add(eq0);
@@ -1318,10 +1318,10 @@ public class XRouterToRouterRuleImpl extends AbstractRuleImpl implements XRouter
 			return null;
 		case RulesPackage.XROUTER_TO_ROUTER_RULE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.XROUTER_TO_ROUTER_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_12__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_12((EMoflonEdge) arguments.get(0));
-		case RulesPackage.XROUTER_TO_ROUTER_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_8__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_8((EMoflonEdge) arguments.get(0));
+		case RulesPackage.XROUTER_TO_ROUTER_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_47__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_47((EMoflonEdge) arguments.get(0));
+		case RulesPackage.XROUTER_TO_ROUTER_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_35__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_35((EMoflonEdge) arguments.get(0));
 		case RulesPackage.XROUTER_TO_ROUTER_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.XROUTER_TO_ROUTER_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:

@@ -342,21 +342,21 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 		// Create literals
 
 		// Create attribute variables
-		Variable var_xDevice_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("xDevice.maxSlots", true, csp);
-		var_xDevice_maxSlots.setValue(xDevice.getMaxSlots());
-		var_xDevice_maxSlots.setType("BigInteger");
 		Variable var_xDevice_MTBF = CSPFactoryHelper.eINSTANCE.createVariable("xDevice.MTBF", true, csp);
 		var_xDevice_MTBF.setValue(xDevice.getMTBF());
 		var_xDevice_MTBF.setType("BigInteger");
+		Variable var_xDevice_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("xDevice.maxSlots", true, csp);
+		var_xDevice_maxSlots.setValue(xDevice.getMaxSlots());
+		var_xDevice_maxSlots.setType("BigInteger");
 		Variable var_xDevice_name = CSPFactoryHelper.eINSTANCE.createVariable("xDevice.name", true, csp);
 		var_xDevice_name.setValue(xDevice.getName());
 		var_xDevice_name.setType("String");
 
 		// Create unbound variables
-		Variable var_device_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("device.maxSlots", csp);
-		var_device_maxSlots.setType("BigInteger");
 		Variable var_device_MTBF = CSPFactoryHelper.eINSTANCE.createVariable("device.MTBF", csp);
 		var_device_MTBF.setType("BigInteger");
+		Variable var_device_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("device.maxSlots", csp);
+		var_device_maxSlots.setType("BigInteger");
 		Variable var_device_name = CSPFactoryHelper.eINSTANCE.createVariable("device.name", csp);
 		var_device_name.setType("String");
 
@@ -371,9 +371,9 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 
 		// Solve CSP
 		eq.setRuleName("NoRuleName");
-		eq.solve(var_xDevice_maxSlots, var_device_maxSlots);
+		eq.solve(var_xDevice_MTBF, var_device_MTBF);
 		eq_0.setRuleName("NoRuleName");
-		eq_0.solve(var_xDevice_MTBF, var_device_MTBF);
+		eq_0.solve(var_xDevice_maxSlots, var_device_maxSlots);
 		eq_1.setRuleName("NoRuleName");
 		eq_1.solve(var_xDevice_name, var_device_name);
 
@@ -660,21 +660,21 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 		// Create literals
 
 		// Create attribute variables
-		Variable var_device_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("device.maxSlots", true, csp);
-		var_device_maxSlots.setValue(device.getMaxSlots());
-		var_device_maxSlots.setType("BigInteger");
 		Variable var_device_MTBF = CSPFactoryHelper.eINSTANCE.createVariable("device.MTBF", true, csp);
 		var_device_MTBF.setValue(device.getMTBF());
 		var_device_MTBF.setType("BigInteger");
+		Variable var_device_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("device.maxSlots", true, csp);
+		var_device_maxSlots.setValue(device.getMaxSlots());
+		var_device_maxSlots.setType("BigInteger");
 		Variable var_device_name = CSPFactoryHelper.eINSTANCE.createVariable("device.name", true, csp);
 		var_device_name.setValue(device.getName());
 		var_device_name.setType("String");
 
 		// Create unbound variables
-		Variable var_xDevice_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("xDevice.maxSlots", csp);
-		var_xDevice_maxSlots.setType("BigInteger");
 		Variable var_xDevice_MTBF = CSPFactoryHelper.eINSTANCE.createVariable("xDevice.MTBF", csp);
 		var_xDevice_MTBF.setType("BigInteger");
+		Variable var_xDevice_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("xDevice.maxSlots", csp);
+		var_xDevice_maxSlots.setType("BigInteger");
 		Variable var_xDevice_name = CSPFactoryHelper.eINSTANCE.createVariable("xDevice.name", csp);
 		var_xDevice_name.setType("String");
 
@@ -689,9 +689,9 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 
 		// Solve CSP
 		eq.setRuleName("NoRuleName");
-		eq.solve(var_xDevice_maxSlots, var_device_maxSlots);
+		eq.solve(var_xDevice_MTBF, var_device_MTBF);
 		eq_0.setRuleName("NoRuleName");
-		eq_0.solve(var_xDevice_MTBF, var_device_MTBF);
+		eq_0.solve(var_xDevice_maxSlots, var_device_maxSlots);
 		eq_1.setRuleName("NoRuleName");
 		eq_1.solve(var_xDevice_name, var_device_name);
 
@@ -744,7 +744,7 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_17(EMoflonEdge _edge_devices) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_48(EMoflonEdge _edge_devices) {
 
 		Object[] result1_bindingAndBlack = XServerToServerImpl
 				.pattern_XServerToServer_20_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -801,7 +801,7 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_13(EMoflonEdge _edge_elements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_36(EMoflonEdge _edge_elements) {
 
 		Object[] result1_bindingAndBlack = XServerToServerImpl
 				.pattern_XServerToServer_21_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -869,6 +869,14 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 
 		CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);
 
+		Variable var_device_MTBF = CSPFactoryHelper.eINSTANCE.createVariable("device", true, csp);
+		var_device_MTBF.setValue(__helper.getValue("device", "MTBF"));
+		var_device_MTBF.setType("BigInteger");
+
+		Variable var_xDevice_MTBF = CSPFactoryHelper.eINSTANCE.createVariable("xDevice", true, csp);
+		var_xDevice_MTBF.setValue(__helper.getValue("xDevice", "MTBF"));
+		var_xDevice_MTBF.setType("BigInteger");
+
 		Variable var_xDevice_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("xDevice", true, csp);
 		var_xDevice_maxSlots.setValue(__helper.getValue("xDevice", "maxSlots"));
 		var_xDevice_maxSlots.setType("BigInteger");
@@ -877,21 +885,13 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 		var_device_maxSlots.setValue(__helper.getValue("device", "maxSlots"));
 		var_device_maxSlots.setType("BigInteger");
 
-		Variable var_xDevice_MTBF = CSPFactoryHelper.eINSTANCE.createVariable("xDevice", true, csp);
-		var_xDevice_MTBF.setValue(__helper.getValue("xDevice", "MTBF"));
-		var_xDevice_MTBF.setType("BigInteger");
-
-		Variable var_device_MTBF = CSPFactoryHelper.eINSTANCE.createVariable("device", true, csp);
-		var_device_MTBF.setValue(__helper.getValue("device", "MTBF"));
-		var_device_MTBF.setType("BigInteger");
+		Variable var_device_name = CSPFactoryHelper.eINSTANCE.createVariable("device", true, csp);
+		var_device_name.setValue(__helper.getValue("device", "name"));
+		var_device_name.setType("String");
 
 		Variable var_xDevice_name = CSPFactoryHelper.eINSTANCE.createVariable("xDevice", true, csp);
 		var_xDevice_name.setValue(__helper.getValue("xDevice", "name"));
 		var_xDevice_name.setType("String");
-
-		Variable var_device_name = CSPFactoryHelper.eINSTANCE.createVariable("device", true, csp);
-		var_device_name.setValue(__helper.getValue("device", "name"));
-		var_device_name.setType("String");
 
 		Eq eq0 = new Eq();
 		csp.getConstraints().add(eq0);
@@ -903,10 +903,10 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 		csp.getConstraints().add(eq2);
 
 		eq0.setRuleName("XServerToServer");
-		eq0.solve(var_xDevice_maxSlots, var_device_maxSlots);
+		eq0.solve(var_xDevice_MTBF, var_device_MTBF);
 
 		eq1.setRuleName("XServerToServer");
-		eq1.solve(var_xDevice_MTBF, var_device_MTBF);
+		eq1.solve(var_xDevice_maxSlots, var_device_maxSlots);
 
 		eq2.setRuleName("XServerToServer");
 		eq2.solve(var_xDevice_name, var_device_name);
@@ -914,17 +914,17 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 		if (csp.check()) {
 			ruleResult.setSuccess(true);
 		} else {
-			var_device_maxSlots.setBound(false);
 			var_device_MTBF.setBound(false);
+			var_device_maxSlots.setBound(false);
 			var_device_name.setBound(false);
-			eq0.solve(var_xDevice_maxSlots, var_device_maxSlots);
-			eq1.solve(var_xDevice_MTBF, var_device_MTBF);
+			eq0.solve(var_xDevice_MTBF, var_device_MTBF);
+			eq1.solve(var_xDevice_maxSlots, var_device_maxSlots);
 			eq2.solve(var_xDevice_name, var_device_name);
 			if (csp.check()) {
 				ruleResult.setSuccess(true);
 				ruleResult.setRequiredChange(true);
-				__helper.setValue("device", "maxSlots", var_device_maxSlots.getValue());
 				__helper.setValue("device", "MTBF", var_device_MTBF.getValue());
+				__helper.setValue("device", "maxSlots", var_device_maxSlots.getValue());
 				__helper.setValue("device", "name", var_device_name.getValue());
 			} else {
 				ruleResult.setSuccess(false);
@@ -950,6 +950,14 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 
 		CheckAttributeHelper __helper = new CheckAttributeHelper(__tripleMatch);
 
+		Variable var_device_MTBF = CSPFactoryHelper.eINSTANCE.createVariable("device", true, csp);
+		var_device_MTBF.setValue(__helper.getValue("device", "MTBF"));
+		var_device_MTBF.setType("BigInteger");
+
+		Variable var_xDevice_MTBF = CSPFactoryHelper.eINSTANCE.createVariable("xDevice", true, csp);
+		var_xDevice_MTBF.setValue(__helper.getValue("xDevice", "MTBF"));
+		var_xDevice_MTBF.setType("BigInteger");
+
 		Variable var_xDevice_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("xDevice", true, csp);
 		var_xDevice_maxSlots.setValue(__helper.getValue("xDevice", "maxSlots"));
 		var_xDevice_maxSlots.setType("BigInteger");
@@ -958,21 +966,13 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 		var_device_maxSlots.setValue(__helper.getValue("device", "maxSlots"));
 		var_device_maxSlots.setType("BigInteger");
 
-		Variable var_xDevice_MTBF = CSPFactoryHelper.eINSTANCE.createVariable("xDevice", true, csp);
-		var_xDevice_MTBF.setValue(__helper.getValue("xDevice", "MTBF"));
-		var_xDevice_MTBF.setType("BigInteger");
-
-		Variable var_device_MTBF = CSPFactoryHelper.eINSTANCE.createVariable("device", true, csp);
-		var_device_MTBF.setValue(__helper.getValue("device", "MTBF"));
-		var_device_MTBF.setType("BigInteger");
+		Variable var_device_name = CSPFactoryHelper.eINSTANCE.createVariable("device", true, csp);
+		var_device_name.setValue(__helper.getValue("device", "name"));
+		var_device_name.setType("String");
 
 		Variable var_xDevice_name = CSPFactoryHelper.eINSTANCE.createVariable("xDevice", true, csp);
 		var_xDevice_name.setValue(__helper.getValue("xDevice", "name"));
 		var_xDevice_name.setType("String");
-
-		Variable var_device_name = CSPFactoryHelper.eINSTANCE.createVariable("device", true, csp);
-		var_device_name.setValue(__helper.getValue("device", "name"));
-		var_device_name.setType("String");
 
 		Eq eq0 = new Eq();
 		csp.getConstraints().add(eq0);
@@ -984,10 +984,10 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 		csp.getConstraints().add(eq2);
 
 		eq0.setRuleName("XServerToServer");
-		eq0.solve(var_xDevice_maxSlots, var_device_maxSlots);
+		eq0.solve(var_xDevice_MTBF, var_device_MTBF);
 
 		eq1.setRuleName("XServerToServer");
-		eq1.solve(var_xDevice_MTBF, var_device_MTBF);
+		eq1.solve(var_xDevice_maxSlots, var_device_maxSlots);
 
 		eq2.setRuleName("XServerToServer");
 		eq2.solve(var_xDevice_name, var_device_name);
@@ -995,17 +995,17 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 		if (csp.check()) {
 			ruleResult.setSuccess(true);
 		} else {
-			var_xDevice_maxSlots.setBound(false);
 			var_xDevice_MTBF.setBound(false);
+			var_xDevice_maxSlots.setBound(false);
 			var_xDevice_name.setBound(false);
-			eq0.solve(var_xDevice_maxSlots, var_device_maxSlots);
-			eq1.solve(var_xDevice_MTBF, var_device_MTBF);
+			eq0.solve(var_xDevice_MTBF, var_device_MTBF);
+			eq1.solve(var_xDevice_maxSlots, var_device_maxSlots);
 			eq2.solve(var_xDevice_name, var_device_name);
 			if (csp.check()) {
 				ruleResult.setSuccess(true);
 				ruleResult.setRequiredChange(true);
-				__helper.setValue("xDevice", "maxSlots", var_xDevice_maxSlots.getValue());
 				__helper.setValue("xDevice", "MTBF", var_xDevice_MTBF.getValue());
+				__helper.setValue("xDevice", "maxSlots", var_xDevice_maxSlots.getValue());
 				__helper.setValue("xDevice", "name", var_xDevice_name.getValue());
 			} else {
 				ruleResult.setSuccess(false);
@@ -1102,18 +1102,18 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 		// Create literals
 
 		// Create attribute variables
-		Variable var_xDevice_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("xDevice.maxSlots", true, csp);
-		var_xDevice_maxSlots.setValue(xDevice.getMaxSlots());
-		var_xDevice_maxSlots.setType("BigInteger");
-		Variable var_device_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("device.maxSlots", true, csp);
-		var_device_maxSlots.setValue(device.getMaxSlots());
-		var_device_maxSlots.setType("BigInteger");
 		Variable var_xDevice_MTBF = CSPFactoryHelper.eINSTANCE.createVariable("xDevice.MTBF", true, csp);
 		var_xDevice_MTBF.setValue(xDevice.getMTBF());
 		var_xDevice_MTBF.setType("BigInteger");
 		Variable var_device_MTBF = CSPFactoryHelper.eINSTANCE.createVariable("device.MTBF", true, csp);
 		var_device_MTBF.setValue(device.getMTBF());
 		var_device_MTBF.setType("BigInteger");
+		Variable var_xDevice_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("xDevice.maxSlots", true, csp);
+		var_xDevice_maxSlots.setValue(xDevice.getMaxSlots());
+		var_xDevice_maxSlots.setType("BigInteger");
+		Variable var_device_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("device.maxSlots", true, csp);
+		var_device_maxSlots.setValue(device.getMaxSlots());
+		var_device_maxSlots.setType("BigInteger");
 		Variable var_xDevice_name = CSPFactoryHelper.eINSTANCE.createVariable("xDevice.name", true, csp);
 		var_xDevice_name.setValue(xDevice.getName());
 		var_xDevice_name.setType("String");
@@ -1134,9 +1134,9 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 
 		// Solve CSP
 		eq.setRuleName("NoRuleName");
-		eq.solve(var_xDevice_maxSlots, var_device_maxSlots);
+		eq.solve(var_xDevice_MTBF, var_device_MTBF);
 		eq_0.setRuleName("NoRuleName");
-		eq_0.solve(var_xDevice_MTBF, var_device_MTBF);
+		eq_0.solve(var_xDevice_maxSlots, var_device_maxSlots);
 		eq_1.setRuleName("NoRuleName");
 		eq_1.solve(var_xDevice_name, var_device_name);
 		return csp;
@@ -1263,14 +1263,14 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 		// Create attribute variables
 
 		// Create unbound variables
-		Variable var_xDevice_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("xDevice.maxSlots", csp);
-		var_xDevice_maxSlots.setType("BigInteger");
-		Variable var_device_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("device.maxSlots", csp);
-		var_device_maxSlots.setType("BigInteger");
 		Variable var_xDevice_MTBF = CSPFactoryHelper.eINSTANCE.createVariable("xDevice.MTBF", csp);
 		var_xDevice_MTBF.setType("BigInteger");
 		Variable var_device_MTBF = CSPFactoryHelper.eINSTANCE.createVariable("device.MTBF", csp);
 		var_device_MTBF.setType("BigInteger");
+		Variable var_xDevice_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("xDevice.maxSlots", csp);
+		var_xDevice_maxSlots.setType("BigInteger");
+		Variable var_device_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("device.maxSlots", csp);
+		var_device_maxSlots.setType("BigInteger");
 		Variable var_xDevice_name = CSPFactoryHelper.eINSTANCE.createVariable("xDevice.name", csp);
 		var_xDevice_name.setType("String");
 		Variable var_device_name = CSPFactoryHelper.eINSTANCE.createVariable("device.name", csp);
@@ -1287,9 +1287,9 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 
 		// Solve CSP
 		eq.setRuleName("NoRuleName");
-		eq.solve(var_xDevice_maxSlots, var_device_maxSlots);
+		eq.solve(var_xDevice_MTBF, var_device_MTBF);
 		eq_0.setRuleName("NoRuleName");
-		eq_0.solve(var_xDevice_MTBF, var_device_MTBF);
+		eq_0.solve(var_xDevice_maxSlots, var_device_maxSlots);
 		eq_1.setRuleName("NoRuleName");
 		eq_1.solve(var_xDevice_name, var_device_name);
 
@@ -1373,10 +1373,10 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 			return null;
 		case RulesPackage.XSERVER_TO_SERVER___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.XSERVER_TO_SERVER___IS_APPROPRIATE_BWD_EMOFLON_EDGE_17__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_17((EMoflonEdge) arguments.get(0));
-		case RulesPackage.XSERVER_TO_SERVER___IS_APPROPRIATE_FWD_EMOFLON_EDGE_13__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_13((EMoflonEdge) arguments.get(0));
+		case RulesPackage.XSERVER_TO_SERVER___IS_APPROPRIATE_BWD_EMOFLON_EDGE_48__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_48((EMoflonEdge) arguments.get(0));
+		case RulesPackage.XSERVER_TO_SERVER___IS_APPROPRIATE_FWD_EMOFLON_EDGE_36__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_36((EMoflonEdge) arguments.get(0));
 		case RulesPackage.XSERVER_TO_SERVER___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.XSERVER_TO_SERVER___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
@@ -1572,17 +1572,17 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 			XServer xDevice, CSP csp) {
 		Server device = ImplementationFactory.eINSTANCE.createServer();
 		XDeviceToDevice xDeviceToDevice = ImplementationTransformatorFactory.eINSTANCE.createXDeviceToDevice();
-		Object _localVariable_0 = csp.getValue("device", "maxSlots");
-		Object _localVariable_1 = csp.getValue("device", "MTBF");
+		Object _localVariable_0 = csp.getValue("device", "MTBF");
+		Object _localVariable_1 = csp.getValue("device", "maxSlots");
 		Object _localVariable_2 = csp.getValue("device", "name");
 		container.getDevices().add(device);
 		xDeviceToDevice.setSource(xDevice);
 		xDeviceToDevice.setTarget(device);
-		BigInteger device_maxSlots_prime = (BigInteger) _localVariable_0;
-		BigInteger device_MTBF_prime = (BigInteger) _localVariable_1;
+		BigInteger device_MTBF_prime = (BigInteger) _localVariable_0;
+		BigInteger device_maxSlots_prime = (BigInteger) _localVariable_1;
 		String device_name_prime = (String) _localVariable_2;
-		device.setMaxSlots(device_maxSlots_prime);
 		device.setMTBF(device_MTBF_prime);
+		device.setMaxSlots(device_maxSlots_prime);
 		device.setName(device_name_prime);
 		return new Object[] { container, xDevice, device, xDeviceToDevice, csp };
 	}
@@ -2063,18 +2063,18 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 		XServer xDevice = XtextImplFactory.eINSTANCE.createXServer();
 		Connections connection = XtextImplFactory.eINSTANCE.createConnections();
 		XDeviceToDevice xDeviceToDevice = ImplementationTransformatorFactory.eINSTANCE.createXDeviceToDevice();
-		Object _localVariable_0 = csp.getValue("xDevice", "maxSlots");
-		Object _localVariable_1 = csp.getValue("xDevice", "MTBF");
+		Object _localVariable_0 = csp.getValue("xDevice", "MTBF");
+		Object _localVariable_1 = csp.getValue("xDevice", "maxSlots");
 		Object _localVariable_2 = csp.getValue("xDevice", "name");
 		xContainer.getElements().add(xDevice);
 		xDevice.setConnections(connection);
 		xDeviceToDevice.setSource(xDevice);
 		xDeviceToDevice.setTarget(device);
-		BigInteger xDevice_maxSlots_prime = (BigInteger) _localVariable_0;
-		BigInteger xDevice_MTBF_prime = (BigInteger) _localVariable_1;
+		BigInteger xDevice_MTBF_prime = (BigInteger) _localVariable_0;
+		BigInteger xDevice_maxSlots_prime = (BigInteger) _localVariable_1;
 		String xDevice_name_prime = (String) _localVariable_2;
-		xDevice.setMaxSlots(xDevice_maxSlots_prime);
 		xDevice.setMTBF(xDevice_MTBF_prime);
+		xDevice.setMaxSlots(xDevice_maxSlots_prime);
 		xDevice.setName(xDevice_name_prime);
 		return new Object[] { xDevice, xContainer, connection, device, xDeviceToDevice, csp };
 	}
@@ -2960,11 +2960,11 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 		Connections connection = XtextImplFactory.eINSTANCE.createConnections();
 		Server device = ImplementationFactory.eINSTANCE.createServer();
 		XDeviceToDevice xDeviceToDevice = ImplementationTransformatorFactory.eINSTANCE.createXDeviceToDevice();
-		Object _localVariable_0 = csp.getValue("xDevice", "maxSlots");
-		Object _localVariable_1 = csp.getValue("xDevice", "MTBF");
+		Object _localVariable_0 = csp.getValue("xDevice", "MTBF");
+		Object _localVariable_1 = csp.getValue("xDevice", "maxSlots");
 		Object _localVariable_2 = csp.getValue("xDevice", "name");
-		Object _localVariable_3 = csp.getValue("device", "maxSlots");
-		Object _localVariable_4 = csp.getValue("device", "MTBF");
+		Object _localVariable_3 = csp.getValue("device", "MTBF");
+		Object _localVariable_4 = csp.getValue("device", "maxSlots");
 		Object _localVariable_5 = csp.getValue("device", "name");
 		boolean ruleResult_success_prime = Boolean.valueOf(true);
 		int _localVariable_6 = ruleResult.getIncrementedPerformCount();
@@ -2977,19 +2977,19 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 		xDeviceToDevice.setSource(xDevice);
 		xDeviceToDevice.setTarget(device);
 		ruleResult.getCorrObjects().add(xDeviceToDevice);
-		BigInteger xDevice_maxSlots_prime = (BigInteger) _localVariable_0;
-		BigInteger xDevice_MTBF_prime = (BigInteger) _localVariable_1;
+		BigInteger xDevice_MTBF_prime = (BigInteger) _localVariable_0;
+		BigInteger xDevice_maxSlots_prime = (BigInteger) _localVariable_1;
 		String xDevice_name_prime = (String) _localVariable_2;
-		BigInteger device_maxSlots_prime = (BigInteger) _localVariable_3;
-		BigInteger device_MTBF_prime = (BigInteger) _localVariable_4;
+		BigInteger device_MTBF_prime = (BigInteger) _localVariable_3;
+		BigInteger device_maxSlots_prime = (BigInteger) _localVariable_4;
 		String device_name_prime = (String) _localVariable_5;
 		ruleResult.setSuccess(Boolean.valueOf(ruleResult_success_prime));
 		int ruleResult_performCount_prime = Integer.valueOf(_localVariable_6);
-		xDevice.setMaxSlots(xDevice_maxSlots_prime);
 		xDevice.setMTBF(xDevice_MTBF_prime);
+		xDevice.setMaxSlots(xDevice_maxSlots_prime);
 		xDevice.setName(xDevice_name_prime);
-		device.setMaxSlots(device_maxSlots_prime);
 		device.setMTBF(device_MTBF_prime);
+		device.setMaxSlots(device_maxSlots_prime);
 		device.setName(device_name_prime);
 		ruleResult.setPerformCount(Integer.valueOf(ruleResult_performCount_prime));
 		return new Object[] { container, xDevice, xContainer, connection, device, xDeviceToDevice, ruleResult, csp };

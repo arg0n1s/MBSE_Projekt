@@ -22,58 +22,22 @@ public interface RulesFactory extends EFactory {
 	RulesFactory eINSTANCE = ImplementationTransformator.Rules.impl.RulesFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>XDevice To Device Rule</em>'.
+	 * Returns a new object of class '<em>XSimplex Cable To Cable Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>XDevice To Device Rule</em>'.
+	 * @return a new object of class '<em>XSimplex Cable To Cable Rule</em>'.
 	 * @generated
 	 */
-	XDeviceToDeviceRule createXDeviceToDeviceRule();
+	XSimplexCableToCableRule createXSimplexCableToCableRule();
 
 	/**
-	 * Returns a new object of class '<em>XDuplex Glass Fiber Cable Rule</em>'.
+	 * Returns a new object of class '<em>XSimplex Glass Fiber Cable Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>XDuplex Glass Fiber Cable Rule</em>'.
+	 * @return a new object of class '<em>XSimplex Glass Fiber Cable Rule</em>'.
 	 * @generated
 	 */
-	XDuplexGlassFiberCableRule createXDuplexGlassFiberCableRule();
-
-	/**
-	 * Returns a new object of class '<em>XSimplex Connection To Connection Rule</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>XSimplex Connection To Connection Rule</em>'.
-	 * @generated
-	 */
-	XSimplexConnectionToConnectionRule createXSimplexConnectionToConnectionRule();
-
-	/**
-	 * Returns a new object of class '<em>XContainer To Container Rule</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>XContainer To Container Rule</em>'.
-	 * @generated
-	 */
-	XContainerToContainerRule createXContainerToContainerRule();
-
-	/**
-	 * Returns a new object of class '<em>XComputer To Computer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>XComputer To Computer</em>'.
-	 * @generated
-	 */
-	XComputerToComputer createXComputerToComputer();
-
-	/**
-	 * Returns a new object of class '<em>XRouter To Router Rule</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>XRouter To Router Rule</em>'.
-	 * @generated
-	 */
-	XRouterToRouterRule createXRouterToRouterRule();
+	XSimplexGlassFiberCableRule createXSimplexGlassFiberCableRule();
 
 	/**
 	 * Returns a new object of class '<em>XDuplex Connection To Connection Rule</em>'.
@@ -94,31 +58,31 @@ public interface RulesFactory extends EFactory {
 	XDuplexCableToCablesRule createXDuplexCableToCablesRule();
 
 	/**
-	 * Returns a new object of class '<em>XSimplex Copper Cable Rule</em>'.
+	 * Returns a new object of class '<em>XRouter To Router Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>XSimplex Copper Cable Rule</em>'.
+	 * @return a new object of class '<em>XRouter To Router Rule</em>'.
 	 * @generated
 	 */
-	XSimplexCopperCableRule createXSimplexCopperCableRule();
+	XRouterToRouterRule createXRouterToRouterRule();
 
 	/**
-	 * Returns a new object of class '<em>XSimplex Cable To Cable Rule</em>'.
+	 * Returns a new object of class '<em>XContainer To Container Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>XSimplex Cable To Cable Rule</em>'.
+	 * @return a new object of class '<em>XContainer To Container Rule</em>'.
 	 * @generated
 	 */
-	XSimplexCableToCableRule createXSimplexCableToCableRule();
+	XContainerToContainerRule createXContainerToContainerRule();
 
 	/**
-	 * Returns a new object of class '<em>XSimplex Glass Fiber Cable Rule</em>'.
+	 * Returns a new object of class '<em>XServer To Server</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>XSimplex Glass Fiber Cable Rule</em>'.
+	 * @return a new object of class '<em>XServer To Server</em>'.
 	 * @generated
 	 */
-	XSimplexGlassFiberCableRule createXSimplexGlassFiberCableRule();
+	XServerToServer createXServerToServer();
 
 	/**
 	 * Returns a new object of class '<em>XDuplex Copper Cable Rule</em>'.
@@ -130,13 +94,49 @@ public interface RulesFactory extends EFactory {
 	XDuplexCopperCableRule createXDuplexCopperCableRule();
 
 	/**
-	 * Returns a new object of class '<em>XServer To Server</em>'.
+	 * Returns a new object of class '<em>XComputer To Computer</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>XServer To Server</em>'.
+	 * @return a new object of class '<em>XComputer To Computer</em>'.
 	 * @generated
 	 */
-	XServerToServer createXServerToServer();
+	XComputerToComputer createXComputerToComputer();
+
+	/**
+	 * Returns a new object of class '<em>XDevice To Device Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>XDevice To Device Rule</em>'.
+	 * @generated
+	 */
+	XDeviceToDeviceRule createXDeviceToDeviceRule();
+
+	/**
+	 * Returns a new object of class '<em>XSimplex Copper Cable Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>XSimplex Copper Cable Rule</em>'.
+	 * @generated
+	 */
+	XSimplexCopperCableRule createXSimplexCopperCableRule();
+
+	/**
+	 * Returns a new object of class '<em>XDuplex Glass Fiber Cable Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>XDuplex Glass Fiber Cable Rule</em>'.
+	 * @generated
+	 */
+	XDuplexGlassFiberCableRule createXDuplexGlassFiberCableRule();
+
+	/**
+	 * Returns a new object of class '<em>XSimplex Connection To Connection Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>XSimplex Connection To Connection Rule</em>'.
+	 * @generated
+	 */
+	XSimplexConnectionToConnectionRule createXSimplexConnectionToConnectionRule();
 
 	/**
 	 * Returns the package supported by this factory.

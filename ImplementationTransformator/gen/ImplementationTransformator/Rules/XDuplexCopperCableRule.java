@@ -224,7 +224,7 @@ public interface XDuplexCopperCableRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_16(EMoflonEdge _edge_cables);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_49(EMoflonEdge _edge_cables);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -232,7 +232,7 @@ public interface XDuplexCopperCableRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_12(EMoflonEdge _edge_elements);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_37(EMoflonEdge _edge_cableAttributes);
 
 	/**
 	 * <!-- begin-user-doc -->

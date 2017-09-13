@@ -98,7 +98,7 @@ public interface ReqProviderToServerRule extends EObject, AbstractRule {
 	 */
 	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, VirtualNodeToServer virtualNodeToServer,
 			Server implDevice, Provider reqAgent, Container reqContainer, NetworkSpan virtualNode, Cable cable,
-			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer);
+			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -116,7 +116,7 @@ public interface ReqProviderToServerRule extends EObject, AbstractRule {
 	 */
 	void registerObjects_FWD(PerformRuleResult ruleresult, EObject virtualNodeToServer, EObject implDevice,
 			EObject reqAgentToImplDevice, EObject reqAgent, EObject reqContainer, EObject virtualNode, EObject cable,
-			EObject reqContainerToImplContainer, EObject implContainer);
+			EObject implContainer, EObject reqContainerToImplContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -189,7 +189,7 @@ public interface ReqProviderToServerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_Server_0(Server implDevice);
+	EObjectContainer isAppropriate_BWD_Server_2(Server implDevice);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -197,7 +197,7 @@ public interface ReqProviderToServerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_1(EMoflonEdge _edge_agents);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_28(EMoflonEdge _edge_agents);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -273,7 +273,7 @@ public interface ReqProviderToServerRule extends EObject, AbstractRule {
 	 */
 	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, VirtualNodeToServer virtualNodeToServer,
 			Server implDevice, Container reqContainer, NetworkSpan virtualNode, Cable cable,
-			ReqContainerToImplContainer reqContainerToImplContainer, implementation.Container implContainer,
+			implementation.Container implContainer, ReqContainerToImplContainer reqContainerToImplContainer,
 			ModelgeneratorRuleResult ruleResult);
 
 	/**
