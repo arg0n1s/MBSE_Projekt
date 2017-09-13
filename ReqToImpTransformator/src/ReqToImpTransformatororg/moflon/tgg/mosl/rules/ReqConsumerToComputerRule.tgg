@@ -1,0 +1,36 @@
+#using ReqToImpTransformator.*
+#using AttrCondDefLibrary.*
+
+#rule ReqConsumerToComputerRule #extends ReqAgentToDeviceRule #with ReqToImpTransformator
+
+#source {
+	
+	reqContainer : requirements.Container {
+		++ -agents->reqAgent
+		-networkSpan->virtualNode
+	}
+	
+	virtualNode : NetworkSpan
+	 
+	++ reqAgent : requirements.Consumer
+}
+
+#target {
+	 implDevice : implementation.Computer
+}
+
+#correspondence {
+	++ reqAgentToImplDevice : ReqAgentToImplDevice {
+		#src->reqAgent
+		#trg->implDevice
+	}
+	
+	virtualNodeToComputer : VirtualNodeToComputer {
+		#src->virtualNode
+		#trg->implDevice
+	}
+}
+
+#attributeConditions {
+	
+}

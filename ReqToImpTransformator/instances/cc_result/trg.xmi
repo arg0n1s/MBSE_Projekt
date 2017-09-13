@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<impl:Container xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:impl="platform:/plugin/mbse_metamodels/model/implementation.ecore">
+  <devices xsi:type="impl:Server" outgoing="//@cables.1" name="s2" maxSlots="50" MTBF="15"/>
+  <devices xsi:type="impl:Computer" incoming="//@cables.4" name="pc1"/>
+  <devices xsi:type="impl:Router" outgoing="//@cables.4" incoming="//@cables.1" name="r5"/>
+  <cables xsi:type="impl:GlassFiberCable" speed="1000"/>
+  <cables xsi:type="impl:GlassFiberCable" speed="1000" source="//@devices.0" target="//@devices.2"/>
+  <cables xsi:type="impl:GlassFiberCable" speed="1000"/>
+  <cables xsi:type="impl:GlassFiberCable" speed="1000"/>
+  <cables xsi:type="impl:GlassFiberCable" speed="1000" source="//@devices.2" target="//@devices.1"/>
+  <cables xsi:type="impl:GlassFiberCable" speed="1000"/>
+  <cables xsi:type="impl:CopperCable" speed="1000"/>
+  <cables xsi:type="impl:CopperCable" speed="1000"/>
+  <cables xsi:type="impl:CopperCable" speed="1000"/>
+</impl:Container>

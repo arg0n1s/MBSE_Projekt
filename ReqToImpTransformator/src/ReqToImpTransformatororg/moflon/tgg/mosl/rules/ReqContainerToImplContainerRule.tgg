@@ -1,0 +1,26 @@
+#using ReqToImpTransformator.*
+#using AttrCondDefLibrary.*
+
+#rule ReqContainerToImplContainerRule #with ReqToImpTransformator
+
+#source { 
+	++ reqContainer : requirements.Container{
+		++ -networkSpan->virtualNode
+	}
+	++ virtualNode : NetworkSpan
+}
+
+#target {
+	++ implContainer : implementation.Container
+}
+
+#correspondence {
+	++ reqContainerToImplContainer : ReqContainerToImplContainer {
+		#src->reqContainer
+		#trg->implContainer
+	}
+}
+
+#attributeConditions {
+	
+}

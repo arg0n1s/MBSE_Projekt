@@ -1,0 +1,52 @@
+#using ReqToImpTransformator.*
+#using AttrCondDefLibrary.*
+
+#rule VirtualNodeToComputerRule #with ReqToImpTransformator
+
+#source {
+	virtualNode : NetworkSpan
+	reqContainer : requirements.Container {
+		-networkSpan->virtualNode
+	}
+}
+
+#target {
+	
+	implContainer : implementation.Container {
+		-devices->router
+	 ++	-devices->computer
+		-cables->cable
+	}
+	
+	router : implementation.Router {
+	 ++	-outgoing->cable
+	}
+	
+	cable : implementation.Cable
+	
+	++ computer : implementation.Computer {
+		++ -incoming->cable
+	}
+
+}
+
+#correspondence {
+	reqContainerToImplContainer : ReqContainerToImplContainer {
+		#src->reqContainer
+		#trg->implContainer
+	}
+	
+	virtualNodeToRouter : VirtualNodeToRouter {
+		#src->virtualNode
+		#trg->router
+	}
+	
+	++ virtualNodeToComputer : VirtualNodeToComputer {
+		#src->virtualNode
+		#trg->computer
+	}
+}
+
+#attributeConditions {
+	
+}

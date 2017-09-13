@@ -1,0 +1,20 @@
+#using ReqToImpTransformator.*
+#using AttrCondDefLibrary.*
+
+#rule ImplGlassIgnoreRule #extends ImplCableIgnoreRule #with ReqToImpTransformator
+
+#source { 
+	
+}
+
+#target {
+	++ cable : implementation.GlassFiberCable
+}
+
+#correspondence {
+	
+}
+
+#attributeConditions {
+	
+}

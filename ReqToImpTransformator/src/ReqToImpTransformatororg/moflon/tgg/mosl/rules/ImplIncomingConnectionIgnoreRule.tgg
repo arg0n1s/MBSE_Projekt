@@ -1,0 +1,34 @@
+#using ReqToImpTransformator.*
+#using AttrCondDefLibrary.*
+
+#abstract #rule ImplIncomingConnectionIgnoreRule #with ReqToImpTransformator
+
+#source { 
+	reqContainer : requirements.Container
+}
+
+#target {
+	
+	implContainer : implementation.Container {
+	 	-cables->cable	
+	 	-devices->device	
+	}
+	
+	device : implementation.Device {
+		++ -incoming->cable
+	}
+	
+	cable : implementation.Cable
+	
+}
+
+#correspondence {
+	reqContainerToImplContainer : ReqContainerToImplContainer {
+		#src->reqContainer
+		#trg->implContainer
+	}
+}
+
+#attributeConditions {
+	
+}

@@ -1,0 +1,36 @@
+#using ReqToImpTransformator.*
+#using AttrCondDefLibrary.*
+
+#rule ReqProviderToServerRule #extends ReqAgentToDeviceRule #with ReqToImpTransformator
+
+#source {
+	
+	reqContainer : requirements.Container {
+		++ -agents->reqAgent
+		-networkSpan->virtualNode
+	}
+	
+	virtualNode : NetworkSpan
+	 
+	++ reqAgent : requirements.Provider
+}
+
+#target {
+	 implDevice : implementation.Server
+}
+
+#correspondence {
+	++ reqAgentToImplDevice : ReqAgentToImplDevice {
+		#src->reqAgent
+		#trg->implDevice
+	}
+	
+	virtualNodeToServer : VirtualNodeToServer {
+		#src->virtualNode
+		#trg->implDevice
+	}
+}
+
+#attributeConditions {
+	
+}

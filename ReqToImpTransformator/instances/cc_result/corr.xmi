@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.moflon.tgg.runtime:CorrespondenceModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ReqToImpTransformator="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore" xmlns:org.moflon.tgg.runtime="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore">
+  <correspondences xsi:type="ReqToImpTransformator:ReqContainerToImplContainer">
+    <source href="src.xmi#/"/>
+    <target href="trg.xmi#/"/>
+  </correspondences>
+  <correspondences xsi:type="ReqToImpTransformator:VirtualNodeToRouter">
+    <source href="src.xmi#//@networkSpan"/>
+    <target href="trg.xmi#//@devices.2"/>
+  </correspondences>
+  <correspondences xsi:type="ReqToImpTransformator:VirtualNodeToComputer">
+    <source href="src.xmi#//@networkSpan"/>
+    <target href="trg.xmi#//@devices.1"/>
+  </correspondences>
+  <correspondences xsi:type="ReqToImpTransformator:VirtualNodeToServer">
+    <source href="src.xmi#//@networkSpan"/>
+    <target href="trg.xmi#//@devices.0"/>
+  </correspondences>
+  <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
+    <source href="src.xmi#//@agents.0"/>
+    <target href="trg.xmi#//@devices.0"/>
+  </correspondences>
+  <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
+    <source href="src.xmi#//@agents.1"/>
+    <target href="trg.xmi#//@devices.0"/>
+  </correspondences>
+  <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
+    <source href="src.xmi#//@agents.4"/>
+    <target href="trg.xmi#//@devices.0"/>
+  </correspondences>
+  <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
+    <source href="src.xmi#//@agents.3"/>
+    <target href="trg.xmi#//@devices.1"/>
+  </correspondences>
+  <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
+    <source href="src.xmi#//@agents.2"/>
+    <target href="trg.xmi#//@devices.1"/>
+  </correspondences>
+  <correspondences xsi:type="ReqToImpTransformator:ReqAgentToImplDevice">
+    <source href="src.xmi#//@agents.5"/>
+    <target href="trg.xmi#//@devices.1"/>
+  </correspondences>
+  <source href="src.xmi#/"/>
+  <target href="trg.xmi#/"/>
+</org.moflon.tgg.runtime:CorrespondenceModel>

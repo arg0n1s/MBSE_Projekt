@@ -1,0 +1,41 @@
+#using ReqToImpTransformator.*
+#using AttrCondDefLibrary.*
+
+#abstract #rule ReqAgentToDeviceRule #with ReqToImpTransformator
+
+#source { 
+	reqContainer : requirements.Container {
+		++ -agents->reqAgent
+		-networkSpan->virtualNode
+	}
+	virtualNode : NetworkSpan
+	++ reqAgent : requirements.Agent
+}
+
+#target {
+	implContainer : implementation.Container {
+		 -devices->implDevice
+		 -cables->cable
+	}
+	
+ 	implDevice : implementation.Device
+ 	
+ 	cable : implementation.Cable
+}
+
+#correspondence {
+	 reqContainerToImplContainer : ReqContainerToImplContainer {
+		#src->reqContainer
+		#trg->implContainer
+	}
+
+ 	++ reqAgentToImplDevice : ReqAgentToImplDevice {
+		#src->reqAgent
+		#trg->implDevice
+	}
+ 
+}
+
+#attributeConditions {
+	
+}

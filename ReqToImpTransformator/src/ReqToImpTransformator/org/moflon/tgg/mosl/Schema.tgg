@@ -1,0 +1,44 @@
+#import "platform:/plugin/mbse_metamodels/model/implementation.ecore"
+#import "platform:/plugin/mbse_metamodels/model/requirements.ecore"
+
+#schema ReqToImpTransformator
+	
+#source {
+	requirements
+}
+
+#target { 
+	implementation
+}  
+
+#correspondence {
+	ReqContainerToImplContainer{
+		#src->requirements.Container
+		#trg->implementation.Container
+	}
+	
+	ReqAgentToImplDevice{
+		#src->requirements.Agent
+		#trg->implementation.Device
+	}
+	
+	VirtualNodeToRouter{
+		#src->NetworkSpan
+		#trg->Router
+	}
+	
+	VirtualNodeToComputer{
+		#src->NetworkSpan
+		#trg->Computer
+	}
+	
+	VirtualNodeToServer{
+		#src->NetworkSpan
+		#trg->Server
+	}
+	
+}
+
+#attributeConditions {
+	
+}

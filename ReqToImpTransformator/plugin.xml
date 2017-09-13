@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.0"?><plugin>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package class="ReqToImpTransformator.ReqToImpTransformatorPackage" genModel="model/ReqToImpTransformator.genmodel" uri="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore"/>
+  </extension>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package class="ReqToImpTransformator.Rules.RulesPackage" genModel="model/ReqToImpTransformator.genmodel" uri="platform:/plugin/ReqToImpTransformator/model/ReqToImpTransformator.ecore#//Rules"/>
+  </extension>
+</plugin>

@@ -1,0 +1,16 @@
+digraph G {
+s1[color = "green"]
+pc1[color = "red"]
+pc2[color = "red"]
+pc3[color = "red"]
+
+s1->r4
+s1->r1
+s1->r2
+r1->r3
+r3->r5
+r2->r6
+r4->pc3
+r6->pc2
+r5->pc1
+}
