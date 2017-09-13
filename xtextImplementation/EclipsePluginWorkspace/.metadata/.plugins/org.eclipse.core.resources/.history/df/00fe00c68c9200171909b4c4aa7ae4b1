@@ -1,0 +1,18 @@
+Provider p1 {
+	speed 3
+}
+Provider p2 {
+	speed 3
+}
+Provider p3 {
+	speed 3
+}
+Consumer c1 {
+	speed 2
+}
+Consumer c2 {
+	speed 2
+}
+Consumer c3 {
+	speed 2
+}

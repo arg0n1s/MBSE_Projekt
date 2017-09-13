@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="MBSE_NetworkMapping" modificationStamp="957" version="1.2">
+    <package visibility="1">
+        <fragment handle="=MBSE_NetworkMapping/src&lt;UI"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=MBSE_NetworkMapping/src&lt;TGG"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=MBSE_NetworkMapping/src&lt;DotGraph"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=MBSE_NetworkMapping/src&lt;Models"/>
+        <type handle="=MBSE_NetworkMapping/src&lt;Models{CorrelationModel.java[CorrelationModel" modificationStamp="996" restrictions="0" visibility="0"/>
+        <type handle="=MBSE_NetworkMapping/src&lt;Models{ImplementationModel.java[ImplementationModel" modificationStamp="997" restrictions="0" visibility="0"/>
+        <type handle="=MBSE_NetworkMapping/src&lt;Models{ModelLoader.java[ModelLoader" modificationStamp="1001" restrictions="0" visibility="0"/>
+        <type handle="=MBSE_NetworkMapping/src&lt;Models{RequirementsModel.java[RequirementsModel" modificationStamp="1000" restrictions="0" visibility="0"/>
+        <type handle="=MBSE_NetworkMapping/src&lt;Models{Model.java[Model" modificationStamp="998" restrictions="0" visibility="0"/>
+    </package>
+</component>

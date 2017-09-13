@@ -1,0 +1,50 @@
+Computer c1{
+	incoming(gfc11)
+}
+Computer c2{
+	incoming(gfc32)
+}
+Server s1{
+	maxSlots 10
+	MTBF 20
+	outgoing
+}
+Router r3{
+	maxSpeed 10
+	outgoing(gfc32, gfcr3r2)
+}
+Router r2{
+	maxSpeed 10
+	incoming(gfcr3r2)
+	outgoing(gfcr2r1)
+}
+Router r1{
+	maxSpeed 10
+	incoming(gfcr2r1)
+	outgoing(gfc11)
+}
+GlassFiberCable gfc32{
+	speed 10
+	endPoint1 r3
+	endPoint2 c2
+}
+GlassFiberCable gfcr3r2{
+	speed 10
+	endPoint1 r3
+	endPoint2 r2
+}
+GlassFiberCable gfcr2r1{
+	speed 10
+	endPoint1 r2
+	endPoint2 r1
+}
+GlassFiberCable gfc11{
+	speed 10
+	endPoint1 r1
+	endPoint2 c1
+}
+GlassFiberCable gfc13{
+	speed 10
+	endPoint1 s1
+	endPoint2 r3
+}

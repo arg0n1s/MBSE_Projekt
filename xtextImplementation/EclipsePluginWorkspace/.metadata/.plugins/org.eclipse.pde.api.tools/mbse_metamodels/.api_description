@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="mbse_metamodels" modificationStamp="1996" version="1.2">
+    <package visibility="1">
+        <fragment handle="=mbse_metamodels/src&lt;requirements.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=mbse_metamodels/src&lt;requirements"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=mbse_metamodels/src&lt;requirements.impl"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=mbse_metamodels/src&lt;implementation.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=mbse_metamodels/src&lt;implementation"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=mbse_metamodels/src&lt;implementation.impl"/>
+    </package>
+</component>

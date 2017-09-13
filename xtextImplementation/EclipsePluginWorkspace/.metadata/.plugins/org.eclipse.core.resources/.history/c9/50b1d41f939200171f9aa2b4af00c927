@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<reqXtext:XContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:reqXtext="platform:/plugin/requirementsXtext/model/generated/ReqXtext.ecore">
+  <agents xsi:type="reqXtext:XProvider" name="p1" speed="3"/>
+  <agents xsi:type="reqXtext:XProvider" name="p2" speed="3"/>
+  <agents xsi:type="reqXtext:XProvider" name="p3" speed="3"/>
+  <agents xsi:type="reqXtext:XConsumer" name="c1" speed="2"/>
+  <agents xsi:type="reqXtext:XConsumer" name="c2" speed="2"/>
+  <agents xsi:type="reqXtext:XConsumer" name="c3" speed="2"/>
+</reqXtext:XContainer>

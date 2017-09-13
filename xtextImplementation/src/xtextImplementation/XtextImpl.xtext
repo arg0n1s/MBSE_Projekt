@@ -1,0 +1,71 @@
+grammar xtextImplementation.XtextImpl with org.eclipse.xtext.common.Terminals
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+generate xtextImpl "platform:/plugin/xtextImplementation/model/generated/XtextImpl.ecore"
+
+XContainer :
+	elements+=NetworkElement*;
+
+NetworkElement returns NetworkElements:
+	XDevice | XCable;
+
+XDevice returns XDevice:
+	XServer | XComputer | XRouter;
+
+XCable returns XCable:
+	XCopperCable | XGlassFiberCable;
+
+Connections:
+	{Connections}
+		('incoming' '(' incoming+=[XCable] ( "," incoming+=[XCable])* ')' )?
+		('outgoing' '(' outgoing+=[XCable] ( "," outgoing+=[XCable])* ')' )?;
+
+EBigInteger returns ecore::EBigInteger:
+	INT;
+	
+bool returns ecore::EBoolean:
+	'true' | 'false';
+
+CableAttributes:
+	{CableAttributes}
+		'speed' speed = EBigInteger
+		'endPoint1' endPoint1= [XDevice]
+		'endPoint2' endPoint2= [XDevice]
+		('isDuplex' isDuplex = bool)?;
+
+XServer returns XServer:
+	'Server'
+	name=ID
+	'{'
+	'maxSlots' maxSlots=EBigInteger
+	'MTBF' MTBF=EBigInteger
+	(connections=Connections)
+	'}';
+
+XComputer returns XComputer:
+	'Computer'
+	name=ID
+	'{'
+	(connections=Connections)
+	'}';
+
+XRouter returns XRouter:
+	'Router'
+	name=ID
+	'{'
+	'maxSpeed' maxSpeed=EBigInteger
+	(connections=Connections)
+	'}';
+
+XCopperCable returns XCopperCable:
+	'CopperCable'
+	name=ID
+	'{'
+	(cableAttributes=CableAttributes)
+	'}';
+
+XGlassFiberCable returns XGlassFiberCable:
+	'GlassFiberCable'
+	name=ID
+	'{'
+	(cableAttributes=CableAttributes)
+	'}';

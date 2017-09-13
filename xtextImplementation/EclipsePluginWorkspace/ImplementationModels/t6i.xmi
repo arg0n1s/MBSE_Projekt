@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xtextImpl:XContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xtextImpl="platform:/plugin/xtextImplementation/model/generated/XtextImpl.ecore">
+  <elements xsi:type="xtextImpl:XComputer" name="c1">
+    <connections incoming="//@elements.10"/>
+  </elements>
+  <elements xsi:type="xtextImpl:XComputer" name="c2">
+    <connections incoming="//@elements.7"/>
+  </elements>
+  <elements xsi:type="xtextImpl:XServer" name="s1" maxSlots="10" MTBF="20">
+    <connections outgoing="//@elements.11"/>
+  </elements>
+  <elements xsi:type="xtextImpl:XServer" name="s2" maxSlots="10" MTBF="20">
+    <connections outgoing="//@elements.12"/>
+  </elements>
+  <elements xsi:type="xtextImpl:XRouter" name="r3" maxSpeed="10">
+    <connections incoming="//@elements.11" outgoing="//@elements.7 //@elements.8"/>
+  </elements>
+  <elements xsi:type="xtextImpl:XRouter" name="r2" maxSpeed="10">
+    <connections incoming="//@elements.8 //@elements.12" outgoing="//@elements.9"/>
+  </elements>
+  <elements xsi:type="xtextImpl:XRouter" name="r1" maxSpeed="10">
+    <connections incoming="//@elements.9" outgoing="//@elements.10"/>
+  </elements>
+  <elements xsi:type="xtextImpl:XGlassFiberCable" name="gfc32">
+    <cableAttributes speed="10" endPoint1="//@elements.4" endPoint2="//@elements.1"/>
+  </elements>
+  <elements xsi:type="xtextImpl:XGlassFiberCable" name="gfcr3r2">
+    <cableAttributes speed="10" endPoint1="//@elements.4" endPoint2="//@elements.5"/>
+  </elements>
+  <elements xsi:type="xtextImpl:XGlassFiberCable" name="gfcr2r1">
+    <cableAttributes speed="10" endPoint1="//@elements.5" endPoint2="//@elements.6"/>
+  </elements>
+  <elements xsi:type="xtextImpl:XGlassFiberCable" name="gfc11">
+    <cableAttributes speed="10" endPoint1="//@elements.6" endPoint2="//@elements.0"/>
+  </elements>
+  <elements xsi:type="xtextImpl:XGlassFiberCable" name="gfc13">
+    <cableAttributes speed="10" endPoint1="//@elements.2" endPoint2="//@elements.4"/>
+  </elements>
+  <elements xsi:type="xtextImpl:XGlassFiberCable" name="gfc22">
+    <cableAttributes speed="10" endPoint1="//@elements.3" endPoint2="//@elements.5"/>
+  </elements>
+</xtextImpl:XContainer>

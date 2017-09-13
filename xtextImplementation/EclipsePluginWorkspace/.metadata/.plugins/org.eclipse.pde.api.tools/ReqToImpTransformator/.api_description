@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="ReqToImpTransformator" modificationStamp="2452" version="1.2">
+    <package visibility="1">
+        <fragment handle="=ReqToImpTransformator/src&lt;ReqToImpTransformator"/>
+        <fragment handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator{ReqAgentToImplDevice.java[ReqAgentToImplDevice" modificationStamp="12995" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator{VirtualNodeToComputer.java[VirtualNodeToComputer" modificationStamp="12999" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator{ReqToImpTransformatorFactory.java[ReqToImpTransformatorFactory" modificationStamp="12988" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator{VirtualNodeToServer.java[VirtualNodeToServer" modificationStamp="13001" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator{ReqToImpTransformatorPackage.java[ReqToImpTransformatorPackage" modificationStamp="12986" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator{VirtualNodeToRouter.java[VirtualNodeToRouter" modificationStamp="12997" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator{ReqContainerToImplContainer.java[ReqContainerToImplContainer" modificationStamp="12993" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules{VirtualNodeToRouterRule1.java[VirtualNodeToRouterRule1" modificationStamp="13034" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules{ReqAgentToDeviceRule.java[ReqAgentToDeviceRule" modificationStamp="13016" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules{VirtualNodeToRouterRule2.java[VirtualNodeToRouterRule2" modificationStamp="13022" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules{ImplIncomingConnectionIgnoreRule.java[ImplIncomingConnectionIgnoreRule" modificationStamp="13032" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules{ReqConsumerToComputerRule.java[ReqConsumerToComputerRule" modificationStamp="13018" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules{ReqProviderToServerRule.java[ReqProviderToServerRule" modificationStamp="13020" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules{VirtualNodeToComputerRule.java[VirtualNodeToComputerRule" modificationStamp="13014" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules{VirtualNodeToServerRule.java[VirtualNodeToServerRule" modificationStamp="13030" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules{ImplCableIgnoreRule.java[ImplCableIgnoreRule" modificationStamp="13012" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules{ImplCopperIgnoreRule.java[ImplCopperIgnoreRule" modificationStamp="13026" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules{RulesFactory.java[RulesFactory" modificationStamp="13007" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules{ImplOutgoingConnectionIgnoreRule.java[ImplOutgoingConnectionIgnoreRule" modificationStamp="13024" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules{ReqContainerToImplContainerRule.java[ReqContainerToImplContainerRule" modificationStamp="13036" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules{RulesPackage.java[RulesPackage" modificationStamp="13004" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules{ImplGlassIgnoreRule.java[ImplGlassIgnoreRule" modificationStamp="13028" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules.util"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules.util{RulesSwitch.java[RulesSwitch" modificationStamp="13010" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules.util{RulesAdapterFactory.java[RulesAdapterFactory" modificationStamp="13011" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=ReqToImpTransformator/src&lt;ReqToImpTransformator.org.moflon.tie"/>
+        <type handle="=ReqToImpTransformator/src&lt;ReqToImpTransformator.org.moflon.tie{ReqToImpTransformatorConsistencyCheck.java[ReqToImpTransformatorConsistencyCheck" modificationStamp="2612" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/src&lt;ReqToImpTransformator.org.moflon.tie{CustomILPObjectiveProvider.java[CustomILPObjectiveProvider" modificationStamp="2611" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/src&lt;ReqToImpTransformator.org.moflon.tie{CustomILPConstraintProvider.java[CustomILPConstraintProvider" modificationStamp="2610" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/src&lt;ReqToImpTransformator.org.moflon.tie{ReqToImpTransformatorSync.java[ReqToImpTransformatorSync" modificationStamp="2614" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/src&lt;ReqToImpTransformator.org.moflon.tie{ReqToImpTransformatorTrafo.java[ReqToImpTransformatorTrafo" modificationStamp="2615" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/src&lt;ReqToImpTransformator.org.moflon.tie{ReqToImpTransformatorModelGen.java[ReqToImpTransformatorModelGen" modificationStamp="2613" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.util"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.util{ReqToImpTransformatorSwitch.java[ReqToImpTransformatorSwitch" modificationStamp="12991" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.util{ReqToImpTransformatorAdapterFactory.java[ReqToImpTransformatorAdapterFactory" modificationStamp="12992" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules.impl"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules.impl{ReqConsumerToComputerRuleImpl.java[ReqConsumerToComputerRuleImpl" modificationStamp="13019" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules.impl{ImplIncomingConnectionIgnoreRuleImpl.java[ImplIncomingConnectionIgnoreRuleImpl" modificationStamp="13033" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules.impl{RulesFactoryImpl.java[RulesFactoryImpl" modificationStamp="13008" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules.impl{ReqProviderToServerRuleImpl.java[ReqProviderToServerRuleImpl" modificationStamp="13021" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules.impl{ImplCopperIgnoreRuleImpl.java[ImplCopperIgnoreRuleImpl" modificationStamp="13027" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules.impl{VirtualNodeToRouterRule1Impl.java[VirtualNodeToRouterRule1Impl" modificationStamp="13035" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules.impl{VirtualNodeToServerRuleImpl.java[VirtualNodeToServerRuleImpl" modificationStamp="13031" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules.impl{ImplOutgoingConnectionIgnoreRuleImpl.java[ImplOutgoingConnectionIgnoreRuleImpl" modificationStamp="13025" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules.impl{ImplGlassIgnoreRuleImpl.java[ImplGlassIgnoreRuleImpl" modificationStamp="13029" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules.impl{ImplCableIgnoreRuleImpl.java[ImplCableIgnoreRuleImpl" modificationStamp="13013" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules.impl{RulesPackageImpl.java[RulesPackageImpl" modificationStamp="13006" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules.impl{ReqAgentToDeviceRuleImpl.java[ReqAgentToDeviceRuleImpl" modificationStamp="13017" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules.impl{ReqContainerToImplContainerRuleImpl.java[ReqContainerToImplContainerRuleImpl" modificationStamp="13037" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules.impl{VirtualNodeToComputerRuleImpl.java[VirtualNodeToComputerRuleImpl" modificationStamp="13015" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.Rules.impl{VirtualNodeToRouterRule2Impl.java[VirtualNodeToRouterRule2Impl" modificationStamp="13023" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.impl"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.impl{VirtualNodeToRouterImpl.java[VirtualNodeToRouterImpl" modificationStamp="12998" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.impl{VirtualNodeToComputerImpl.java[VirtualNodeToComputerImpl" modificationStamp="13000" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.impl{VirtualNodeToServerImpl.java[VirtualNodeToServerImpl" modificationStamp="13002" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.impl{ReqAgentToImplDeviceImpl.java[ReqAgentToImplDeviceImpl" modificationStamp="12996" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.impl{ReqToImpTransformatorPackageImpl.java[ReqToImpTransformatorPackageImpl" modificationStamp="12987" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.impl{ReqToImpTransformatorFactoryImpl.java[ReqToImpTransformatorFactoryImpl" modificationStamp="12989" restrictions="0" visibility="0"/>
+        <type handle="=ReqToImpTransformator/gen&lt;ReqToImpTransformator.impl{ReqContainerToImplContainerImpl.java[ReqContainerToImplContainerImpl" modificationStamp="12994" restrictions="0" visibility="0"/>
+    </package>
+</component>

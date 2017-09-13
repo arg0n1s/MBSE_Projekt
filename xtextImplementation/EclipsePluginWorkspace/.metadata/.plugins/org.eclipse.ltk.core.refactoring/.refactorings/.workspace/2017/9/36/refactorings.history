@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 4 resources" deleteContents="false" description="Delete 4 resources" element1="/mbse_metamodels" element2="/MBSE_NetworkMapping" element3="/ReqToImpTransformator" element4="/trove-gnu" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="4" stamp="1504712170410"/>
+</session>
