@@ -22,6 +22,15 @@ public interface RulesFactory extends EFactory {
 	RulesFactory eINSTANCE = RequirementsTransformator.Rules.impl.RulesFactoryImpl.init();
 
 	/**
+	 * Returns a new object of class '<em>XProvider To Provider Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>XProvider To Provider Rule</em>'.
+	 * @generated
+	 */
+	XProviderToProviderRule createXProviderToProviderRule();
+
+	/**
 	 * Returns a new object of class '<em>XAgent To Agent Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -38,15 +47,6 @@ public interface RulesFactory extends EFactory {
 	 * @generated
 	 */
 	XContainerToContainerRule createXContainerToContainerRule();
-
-	/**
-	 * Returns a new object of class '<em>XProvider To Provider Rule</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>XProvider To Provider Rule</em>'.
-	 * @generated
-	 */
-	XProviderToProviderRule createXProviderToProviderRule();
 
 	/**
 	 * Returns a new object of class '<em>XConsumer To Consumer Rule</em>'.

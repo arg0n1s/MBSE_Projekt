@@ -58,14 +58,14 @@ public class ReqToImpTransformatorFactoryImpl extends EFactoryImpl implements Re
 		switch (eClass.getClassifierID()) {
 		case ReqToImpTransformatorPackage.REQ_CONTAINER_TO_IMPL_CONTAINER:
 			return createReqContainerToImplContainer();
-		case ReqToImpTransformatorPackage.REQ_AGENT_TO_IMPL_DEVICE:
-			return createReqAgentToImplDevice();
-		case ReqToImpTransformatorPackage.VIRTUAL_NODE_TO_SERVER:
-			return createVirtualNodeToServer();
 		case ReqToImpTransformatorPackage.VIRTUAL_NODE_TO_ROUTER:
 			return createVirtualNodeToRouter();
+		case ReqToImpTransformatorPackage.REQ_AGENT_TO_IMPL_DEVICE:
+			return createReqAgentToImplDevice();
 		case ReqToImpTransformatorPackage.VIRTUAL_NODE_TO_COMPUTER:
 			return createVirtualNodeToComputer();
+		case ReqToImpTransformatorPackage.VIRTUAL_NODE_TO_SERVER:
+			return createVirtualNodeToServer();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -86,26 +86,6 @@ public class ReqToImpTransformatorFactoryImpl extends EFactoryImpl implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReqAgentToImplDevice createReqAgentToImplDevice() {
-		ReqAgentToImplDeviceImpl reqAgentToImplDevice = new ReqAgentToImplDeviceImpl();
-		return reqAgentToImplDevice;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public VirtualNodeToServer createVirtualNodeToServer() {
-		VirtualNodeToServerImpl virtualNodeToServer = new VirtualNodeToServerImpl();
-		return virtualNodeToServer;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public VirtualNodeToRouter createVirtualNodeToRouter() {
 		VirtualNodeToRouterImpl virtualNodeToRouter = new VirtualNodeToRouterImpl();
 		return virtualNodeToRouter;
@@ -116,9 +96,29 @@ public class ReqToImpTransformatorFactoryImpl extends EFactoryImpl implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public ReqAgentToImplDevice createReqAgentToImplDevice() {
+		ReqAgentToImplDeviceImpl reqAgentToImplDevice = new ReqAgentToImplDeviceImpl();
+		return reqAgentToImplDevice;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public VirtualNodeToComputer createVirtualNodeToComputer() {
 		VirtualNodeToComputerImpl virtualNodeToComputer = new VirtualNodeToComputerImpl();
 		return virtualNodeToComputer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VirtualNodeToServer createVirtualNodeToServer() {
+		VirtualNodeToServerImpl virtualNodeToServer = new VirtualNodeToServerImpl();
+		return virtualNodeToServer;
 	}
 
 	/**

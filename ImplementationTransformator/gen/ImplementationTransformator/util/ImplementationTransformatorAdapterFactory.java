@@ -74,13 +74,13 @@ public class ImplementationTransformatorAdapterFactory extends AdapterFactoryImp
 		}
 
 		@Override
-		public Adapter caseXDeviceToDevice(XDeviceToDevice object) {
-			return createXDeviceToDeviceAdapter();
+		public Adapter caseXContainerToContainer(XContainerToContainer object) {
+			return createXContainerToContainerAdapter();
 		}
 
 		@Override
-		public Adapter caseXContainerToContainer(XContainerToContainer object) {
-			return createXContainerToContainerAdapter();
+		public Adapter caseXDeviceToDevice(XDeviceToDevice object) {
+			return createXDeviceToDeviceAdapter();
 		}
 
 		@Override
@@ -122,20 +122,6 @@ public class ImplementationTransformatorAdapterFactory extends AdapterFactoryImp
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.XDeviceToDevice <em>XDevice To Device</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ImplementationTransformator.XDeviceToDevice
-	 * @generated
-	 */
-	public Adapter createXDeviceToDeviceAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.XContainerToContainer <em>XContainer To Container</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -146,6 +132,20 @@ public class ImplementationTransformatorAdapterFactory extends AdapterFactoryImp
 	 * @generated
 	 */
 	public Adapter createXContainerToContainerAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.XDeviceToDevice <em>XDevice To Device</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ImplementationTransformator.XDeviceToDevice
+	 * @generated
+	 */
+	public Adapter createXDeviceToDeviceAdapter() {
 		return null;
 	}
 

@@ -170,8 +170,8 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 		XContainer xContainer = (XContainer) result1_bindingAndBlack[3];
 		CSP csp = (CSP) result1_bindingAndBlack[4];
 		Object[] result1_green = XProviderToProviderRuleImpl
-				.pattern_XProviderToProviderRule_1_1_performtransformation_greenBFFBB(container, xAgent, csp);
-		XAgentToAgent xAgentToAgent = (XAgentToAgent) result1_green[1];
+				.pattern_XProviderToProviderRule_1_1_performtransformation_greenFBFBB(container, xAgent, csp);
+		XAgentToAgent xAgentToAgent = (XAgentToAgent) result1_green[0];
 		Provider agent = (Provider) result1_green[2];
 
 		Object[] result2_black = XProviderToProviderRuleImpl
@@ -185,25 +185,25 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 		PerformRuleResult ruleresult = (PerformRuleResult) result2_green[0];
 
 		Object[] result3_black = XProviderToProviderRuleImpl
-				.pattern_XProviderToProviderRule_1_3_bookkeepingforedges_blackBBBBBBB(ruleresult, container,
-						xAgentToAgent, agent, xAgent, xContainerToContainer, xContainer);
+				.pattern_XProviderToProviderRule_1_3_bookkeepingforedges_blackBBBBBBB(ruleresult, xAgentToAgent,
+						container, agent, xAgent, xContainerToContainer, xContainer);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[ruleresult] = " + ruleresult
-					+ ", " + "[container] = " + container + ", " + "[xAgentToAgent] = " + xAgentToAgent + ", "
+					+ ", " + "[xAgentToAgent] = " + xAgentToAgent + ", " + "[container] = " + container + ", "
 					+ "[agent] = " + agent + ", " + "[xAgent] = " + xAgent + ", " + "[xContainerToContainer] = "
 					+ xContainerToContainer + ", " + "[xContainer] = " + xContainer + ".");
 		}
 		XProviderToProviderRuleImpl.pattern_XProviderToProviderRule_1_3_bookkeepingforedges_greenBBBBBBFFFF(ruleresult,
-				container, xAgentToAgent, agent, xAgent, xContainer);
+				xAgentToAgent, container, agent, xAgent, xContainer);
 		//nothing EMoflonEdge xAgentToAgent__agent____target = (EMoflonEdge) result3_green[6];
-		//nothing EMoflonEdge xContainer__xAgent____agents = (EMoflonEdge) result3_green[7];
-		//nothing EMoflonEdge container__agent____agents = (EMoflonEdge) result3_green[8];
-		//nothing EMoflonEdge xAgentToAgent__xAgent____source = (EMoflonEdge) result3_green[9];
+		//nothing EMoflonEdge container__agent____agents = (EMoflonEdge) result3_green[7];
+		//nothing EMoflonEdge xAgentToAgent__xAgent____source = (EMoflonEdge) result3_green[8];
+		//nothing EMoflonEdge xContainer__xAgent____agents = (EMoflonEdge) result3_green[9];
 
 		// 
 		// 
 		XProviderToProviderRuleImpl.pattern_XProviderToProviderRule_1_5_registerobjects_expressionBBBBBBBB(this,
-				ruleresult, container, xAgentToAgent, agent, xAgent, xContainerToContainer, xContainer);
+				ruleresult, xAgentToAgent, container, agent, xAgent, xContainerToContainer, xContainer);
 		return XProviderToProviderRuleImpl.pattern_XProviderToProviderRule_1_6_expressionFB(ruleresult);
 	}
 
@@ -383,10 +383,10 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjects_FWD(PerformRuleResult ruleresult, EObject container, EObject xAgentToAgent,
+	public void registerObjects_FWD(PerformRuleResult ruleresult, EObject xAgentToAgent, EObject container,
 			EObject agent, EObject xAgent, EObject xContainerToContainer, EObject xContainer) {
-		ruleresult.registerObject("container", container);
 		ruleresult.registerObject("xAgentToAgent", xAgentToAgent);
+		ruleresult.registerObject("container", container);
 		ruleresult.registerObject("agent", agent);
 		ruleresult.registerObject("xAgent", xAgent);
 		ruleresult.registerObject("xContainerToContainer", xContainerToContainer);
@@ -493,25 +493,25 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 		PerformRuleResult ruleresult = (PerformRuleResult) result2_green[0];
 
 		Object[] result3_black = XProviderToProviderRuleImpl
-				.pattern_XProviderToProviderRule_11_3_bookkeepingforedges_blackBBBBBBB(ruleresult, container,
-						xAgentToAgent, agent, xAgent, xContainerToContainer, xContainer);
+				.pattern_XProviderToProviderRule_11_3_bookkeepingforedges_blackBBBBBBB(ruleresult, xAgentToAgent,
+						container, agent, xAgent, xContainerToContainer, xContainer);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[ruleresult] = " + ruleresult
-					+ ", " + "[container] = " + container + ", " + "[xAgentToAgent] = " + xAgentToAgent + ", "
+					+ ", " + "[xAgentToAgent] = " + xAgentToAgent + ", " + "[container] = " + container + ", "
 					+ "[agent] = " + agent + ", " + "[xAgent] = " + xAgent + ", " + "[xContainerToContainer] = "
 					+ xContainerToContainer + ", " + "[xContainer] = " + xContainer + ".");
 		}
 		XProviderToProviderRuleImpl.pattern_XProviderToProviderRule_11_3_bookkeepingforedges_greenBBBBBBFFFF(ruleresult,
-				container, xAgentToAgent, agent, xAgent, xContainer);
+				xAgentToAgent, container, agent, xAgent, xContainer);
 		//nothing EMoflonEdge xAgentToAgent__agent____target = (EMoflonEdge) result3_green[6];
-		//nothing EMoflonEdge xContainer__xAgent____agents = (EMoflonEdge) result3_green[7];
-		//nothing EMoflonEdge container__agent____agents = (EMoflonEdge) result3_green[8];
-		//nothing EMoflonEdge xAgentToAgent__xAgent____source = (EMoflonEdge) result3_green[9];
+		//nothing EMoflonEdge container__agent____agents = (EMoflonEdge) result3_green[7];
+		//nothing EMoflonEdge xAgentToAgent__xAgent____source = (EMoflonEdge) result3_green[8];
+		//nothing EMoflonEdge xContainer__xAgent____agents = (EMoflonEdge) result3_green[9];
 
 		// 
 		// 
 		XProviderToProviderRuleImpl.pattern_XProviderToProviderRule_11_5_registerobjects_expressionBBBBBBBB(this,
-				ruleresult, container, xAgentToAgent, agent, xAgent, xContainerToContainer, xContainer);
+				ruleresult, xAgentToAgent, container, agent, xAgent, xContainerToContainer, xContainer);
 		return XProviderToProviderRuleImpl.pattern_XProviderToProviderRule_11_6_expressionFB(ruleresult);
 	}
 
@@ -692,10 +692,10 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject container, EObject xAgentToAgent,
+	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject xAgentToAgent, EObject container,
 			EObject agent, EObject xAgent, EObject xContainerToContainer, EObject xContainer) {
-		ruleresult.registerObject("container", container);
 		ruleresult.registerObject("xAgentToAgent", xAgentToAgent);
+		ruleresult.registerObject("container", container);
 		ruleresult.registerObject("agent", agent);
 		ruleresult.registerObject("xAgent", xAgent);
 		ruleresult.registerObject("xContainerToContainer", xContainerToContainer);
@@ -718,7 +718,7 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_43(EMoflonEdge _edge_agents) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_6(EMoflonEdge _edge_agents) {
 
 		Object[] result1_bindingAndBlack = XProviderToProviderRuleImpl
 				.pattern_XProviderToProviderRule_20_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -776,7 +776,7 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_31(EMoflonEdge _edge_agents) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_3(EMoflonEdge _edge_agents) {
 
 		Object[] result1_bindingAndBlack = XProviderToProviderRuleImpl
 				.pattern_XProviderToProviderRule_21_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -848,6 +848,10 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 		var_agent_speed.setValue(__helper.getValue("agent", "speed"));
 		var_agent_speed.setType("BigInteger");
 
+		Variable var_agent_name = CSPFactoryHelper.eINSTANCE.createVariable("agent", true, csp);
+		var_agent_name.setValue(__helper.getValue("agent", "name"));
+		var_agent_name.setType("String");
+
 		Variable var_xAgent_speed = CSPFactoryHelper.eINSTANCE.createVariable("xAgent", true, csp);
 		var_xAgent_speed.setValue(__helper.getValue("xAgent", "speed"));
 		var_xAgent_speed.setType("BigInteger");
@@ -855,10 +859,6 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 		Variable var_xAgent_name = CSPFactoryHelper.eINSTANCE.createVariable("xAgent", true, csp);
 		var_xAgent_name.setValue(__helper.getValue("xAgent", "name"));
 		var_xAgent_name.setType("String");
-
-		Variable var_agent_name = CSPFactoryHelper.eINSTANCE.createVariable("agent", true, csp);
-		var_agent_name.setValue(__helper.getValue("agent", "name"));
-		var_agent_name.setType("String");
 
 		Eq eq0 = new Eq();
 		csp.getConstraints().add(eq0);
@@ -912,6 +912,10 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 		var_agent_speed.setValue(__helper.getValue("agent", "speed"));
 		var_agent_speed.setType("BigInteger");
 
+		Variable var_agent_name = CSPFactoryHelper.eINSTANCE.createVariable("agent", true, csp);
+		var_agent_name.setValue(__helper.getValue("agent", "name"));
+		var_agent_name.setType("String");
+
 		Variable var_xAgent_speed = CSPFactoryHelper.eINSTANCE.createVariable("xAgent", true, csp);
 		var_xAgent_speed.setValue(__helper.getValue("xAgent", "speed"));
 		var_xAgent_speed.setType("BigInteger");
@@ -919,10 +923,6 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 		Variable var_xAgent_name = CSPFactoryHelper.eINSTANCE.createVariable("xAgent", true, csp);
 		var_xAgent_name.setValue(__helper.getValue("xAgent", "name"));
 		var_xAgent_name.setType("String");
-
-		Variable var_agent_name = CSPFactoryHelper.eINSTANCE.createVariable("agent", true, csp);
-		var_agent_name.setValue(__helper.getValue("agent", "name"));
-		var_agent_name.setType("String");
 
 		Eq eq0 = new Eq();
 		csp.getConstraints().add(eq0);
@@ -1168,9 +1168,9 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 								+ container + ", " + "[xContainerToContainer] = " + xContainerToContainer + ", "
 								+ "[xContainer] = " + xContainer + ", " + "[ruleResult] = " + ruleResult + ".");
 					}
-					XProviderToProviderRuleImpl.pattern_XProviderToProviderRule_29_6_perform_greenBFFFBBB(container,
+					XProviderToProviderRuleImpl.pattern_XProviderToProviderRule_29_6_perform_greenFBFFBBB(container,
 							xContainer, ruleResult, csp);
-					//nothing XAgentToAgent xAgentToAgent = (XAgentToAgent) result6_green[1];
+					//nothing XAgentToAgent xAgentToAgent = (XAgentToAgent) result6_green[0];
 					//nothing Provider agent = (Provider) result6_green[2];
 					//nothing XProvider xAgent = (XProvider) result6_green[3];
 
@@ -1303,10 +1303,10 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 			return null;
 		case RulesPackage.XPROVIDER_TO_PROVIDER_RULE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.XPROVIDER_TO_PROVIDER_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_43__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_43((EMoflonEdge) arguments.get(0));
-		case RulesPackage.XPROVIDER_TO_PROVIDER_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_31__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_31((EMoflonEdge) arguments.get(0));
+		case RulesPackage.XPROVIDER_TO_PROVIDER_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_6__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_6((EMoflonEdge) arguments.get(0));
+		case RulesPackage.XPROVIDER_TO_PROVIDER_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_3__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_3((EMoflonEdge) arguments.get(0));
 		case RulesPackage.XPROVIDER_TO_PROVIDER_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.XPROVIDER_TO_PROVIDER_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
@@ -1483,7 +1483,7 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 		return null;
 	}
 
-	public static final Object[] pattern_XProviderToProviderRule_1_1_performtransformation_greenBFFBB(
+	public static final Object[] pattern_XProviderToProviderRule_1_1_performtransformation_greenFBFBB(
 			Container container, XProvider xAgent, CSP csp) {
 		XAgentToAgent xAgentToAgent = RequirementsTransformatorFactory.eINSTANCE.createXAgentToAgent();
 		Provider agent = RequirementsFactory.eINSTANCE.createProvider();
@@ -1496,7 +1496,7 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 		String agent_name_prime = (String) _localVariable_1;
 		agent.setSpeed(agent_speed_prime);
 		agent.setName(agent_name_prime);
-		return new Object[] { container, xAgentToAgent, agent, xAgent, csp };
+		return new Object[] { xAgentToAgent, container, agent, xAgent, csp };
 	}
 
 	public static final Object[] pattern_XProviderToProviderRule_1_2_collecttranslatedelements_blackBBB(
@@ -1514,16 +1514,16 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 	}
 
 	public static final Object[] pattern_XProviderToProviderRule_1_3_bookkeepingforedges_blackBBBBBBB(
-			PerformRuleResult ruleresult, EObject container, EObject xAgentToAgent, EObject agent, EObject xAgent,
+			PerformRuleResult ruleresult, EObject xAgentToAgent, EObject container, EObject agent, EObject xAgent,
 			EObject xContainerToContainer, EObject xContainer) {
-		if (!container.equals(xAgentToAgent)) {
-			if (!container.equals(xAgent)) {
-				if (!container.equals(xContainerToContainer)) {
-					if (!container.equals(xContainer)) {
-						if (!xAgentToAgent.equals(xContainerToContainer)) {
-							if (!xAgentToAgent.equals(xContainer)) {
-								if (!agent.equals(container)) {
-									if (!agent.equals(xAgentToAgent)) {
+		if (!xAgentToAgent.equals(xContainerToContainer)) {
+			if (!xAgentToAgent.equals(xContainer)) {
+				if (!container.equals(xAgentToAgent)) {
+					if (!container.equals(xAgent)) {
+						if (!container.equals(xContainerToContainer)) {
+							if (!container.equals(xContainer)) {
+								if (!agent.equals(xAgentToAgent)) {
+									if (!agent.equals(container)) {
 										if (!agent.equals(xAgent)) {
 											if (!agent.equals(xContainerToContainer)) {
 												if (!agent.equals(xContainer)) {
@@ -1531,8 +1531,8 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 														if (!xAgent.equals(xContainerToContainer)) {
 															if (!xAgent.equals(xContainer)) {
 																if (!xContainer.equals(xContainerToContainer)) {
-																	return new Object[] { ruleresult, container,
-																			xAgentToAgent, agent, xAgent,
+																	return new Object[] { ruleresult, xAgentToAgent,
+																			container, agent, xAgent,
 																			xContainerToContainer, xContainer };
 																}
 															}
@@ -1553,43 +1553,43 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 	}
 
 	public static final Object[] pattern_XProviderToProviderRule_1_3_bookkeepingforedges_greenBBBBBBFFFF(
-			PerformRuleResult ruleresult, EObject container, EObject xAgentToAgent, EObject agent, EObject xAgent,
+			PerformRuleResult ruleresult, EObject xAgentToAgent, EObject container, EObject agent, EObject xAgent,
 			EObject xContainer) {
 		EMoflonEdge xAgentToAgent__agent____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xContainer__xAgent____agents = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge container__agent____agents = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge xAgentToAgent__xAgent____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xContainer__xAgent____agents = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String ruleresult_ruleName_prime = "XProviderToProviderRule";
 		String xAgentToAgent__agent____target_name_prime = "target";
-		String xContainer__xAgent____agents_name_prime = "agents";
 		String container__agent____agents_name_prime = "agents";
 		String xAgentToAgent__xAgent____source_name_prime = "source";
+		String xContainer__xAgent____agents_name_prime = "agents";
 		xAgentToAgent__agent____target.setSrc(xAgentToAgent);
 		xAgentToAgent__agent____target.setTrg(agent);
 		ruleresult.getCreatedEdges().add(xAgentToAgent__agent____target);
-		xContainer__xAgent____agents.setSrc(xContainer);
-		xContainer__xAgent____agents.setTrg(xAgent);
-		ruleresult.getTranslatedEdges().add(xContainer__xAgent____agents);
 		container__agent____agents.setSrc(container);
 		container__agent____agents.setTrg(agent);
 		ruleresult.getCreatedEdges().add(container__agent____agents);
 		xAgentToAgent__xAgent____source.setSrc(xAgentToAgent);
 		xAgentToAgent__xAgent____source.setTrg(xAgent);
 		ruleresult.getCreatedEdges().add(xAgentToAgent__xAgent____source);
+		xContainer__xAgent____agents.setSrc(xContainer);
+		xContainer__xAgent____agents.setTrg(xAgent);
+		ruleresult.getTranslatedEdges().add(xContainer__xAgent____agents);
 		ruleresult.setRuleName(ruleresult_ruleName_prime);
 		xAgentToAgent__agent____target.setName(xAgentToAgent__agent____target_name_prime);
-		xContainer__xAgent____agents.setName(xContainer__xAgent____agents_name_prime);
 		container__agent____agents.setName(container__agent____agents_name_prime);
 		xAgentToAgent__xAgent____source.setName(xAgentToAgent__xAgent____source_name_prime);
-		return new Object[] { ruleresult, container, xAgentToAgent, agent, xAgent, xContainer,
-				xAgentToAgent__agent____target, xContainer__xAgent____agents, container__agent____agents,
-				xAgentToAgent__xAgent____source };
+		xContainer__xAgent____agents.setName(xContainer__xAgent____agents_name_prime);
+		return new Object[] { ruleresult, xAgentToAgent, container, agent, xAgent, xContainer,
+				xAgentToAgent__agent____target, container__agent____agents, xAgentToAgent__xAgent____source,
+				xContainer__xAgent____agents };
 	}
 
 	public static final void pattern_XProviderToProviderRule_1_5_registerobjects_expressionBBBBBBBB(
-			XProviderToProviderRule _this, PerformRuleResult ruleresult, EObject container, EObject xAgentToAgent,
+			XProviderToProviderRule _this, PerformRuleResult ruleresult, EObject xAgentToAgent, EObject container,
 			EObject agent, EObject xAgent, EObject xContainerToContainer, EObject xContainer) {
-		_this.registerObjects_FWD(ruleresult, container, xAgentToAgent, agent, xAgent, xContainerToContainer,
+		_this.registerObjects_FWD(ruleresult, xAgentToAgent, container, agent, xAgent, xContainerToContainer,
 				xContainer);
 
 	}
@@ -1941,8 +1941,8 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 		Object _localVariable_0 = csp.getValue("xAgent", "speed");
 		Object _localVariable_1 = csp.getValue("xAgent", "name");
 		xAgentToAgent.setTarget(agent);
-		xContainer.getAgents().add(xAgent);
 		xAgentToAgent.setSource(xAgent);
+		xContainer.getAgents().add(xAgent);
 		BigInteger xAgent_speed_prime = (BigInteger) _localVariable_0;
 		String xAgent_name_prime = (String) _localVariable_1;
 		xAgent.setSpeed(xAgent_speed_prime);
@@ -1965,16 +1965,16 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 	}
 
 	public static final Object[] pattern_XProviderToProviderRule_11_3_bookkeepingforedges_blackBBBBBBB(
-			PerformRuleResult ruleresult, EObject container, EObject xAgentToAgent, EObject agent, EObject xAgent,
+			PerformRuleResult ruleresult, EObject xAgentToAgent, EObject container, EObject agent, EObject xAgent,
 			EObject xContainerToContainer, EObject xContainer) {
-		if (!container.equals(xAgentToAgent)) {
-			if (!container.equals(xAgent)) {
-				if (!container.equals(xContainerToContainer)) {
-					if (!container.equals(xContainer)) {
-						if (!xAgentToAgent.equals(xContainerToContainer)) {
-							if (!xAgentToAgent.equals(xContainer)) {
-								if (!agent.equals(container)) {
-									if (!agent.equals(xAgentToAgent)) {
+		if (!xAgentToAgent.equals(xContainerToContainer)) {
+			if (!xAgentToAgent.equals(xContainer)) {
+				if (!container.equals(xAgentToAgent)) {
+					if (!container.equals(xAgent)) {
+						if (!container.equals(xContainerToContainer)) {
+							if (!container.equals(xContainer)) {
+								if (!agent.equals(xAgentToAgent)) {
+									if (!agent.equals(container)) {
 										if (!agent.equals(xAgent)) {
 											if (!agent.equals(xContainerToContainer)) {
 												if (!agent.equals(xContainer)) {
@@ -1982,8 +1982,8 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 														if (!xAgent.equals(xContainerToContainer)) {
 															if (!xAgent.equals(xContainer)) {
 																if (!xContainer.equals(xContainerToContainer)) {
-																	return new Object[] { ruleresult, container,
-																			xAgentToAgent, agent, xAgent,
+																	return new Object[] { ruleresult, xAgentToAgent,
+																			container, agent, xAgent,
 																			xContainerToContainer, xContainer };
 																}
 															}
@@ -2004,43 +2004,43 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 	}
 
 	public static final Object[] pattern_XProviderToProviderRule_11_3_bookkeepingforedges_greenBBBBBBFFFF(
-			PerformRuleResult ruleresult, EObject container, EObject xAgentToAgent, EObject agent, EObject xAgent,
+			PerformRuleResult ruleresult, EObject xAgentToAgent, EObject container, EObject agent, EObject xAgent,
 			EObject xContainer) {
 		EMoflonEdge xAgentToAgent__agent____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xContainer__xAgent____agents = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge container__agent____agents = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge xAgentToAgent__xAgent____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xContainer__xAgent____agents = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String ruleresult_ruleName_prime = "XProviderToProviderRule";
 		String xAgentToAgent__agent____target_name_prime = "target";
-		String xContainer__xAgent____agents_name_prime = "agents";
 		String container__agent____agents_name_prime = "agents";
 		String xAgentToAgent__xAgent____source_name_prime = "source";
+		String xContainer__xAgent____agents_name_prime = "agents";
 		xAgentToAgent__agent____target.setSrc(xAgentToAgent);
 		xAgentToAgent__agent____target.setTrg(agent);
 		ruleresult.getCreatedEdges().add(xAgentToAgent__agent____target);
-		xContainer__xAgent____agents.setSrc(xContainer);
-		xContainer__xAgent____agents.setTrg(xAgent);
-		ruleresult.getCreatedEdges().add(xContainer__xAgent____agents);
 		container__agent____agents.setSrc(container);
 		container__agent____agents.setTrg(agent);
 		ruleresult.getTranslatedEdges().add(container__agent____agents);
 		xAgentToAgent__xAgent____source.setSrc(xAgentToAgent);
 		xAgentToAgent__xAgent____source.setTrg(xAgent);
 		ruleresult.getCreatedEdges().add(xAgentToAgent__xAgent____source);
+		xContainer__xAgent____agents.setSrc(xContainer);
+		xContainer__xAgent____agents.setTrg(xAgent);
+		ruleresult.getCreatedEdges().add(xContainer__xAgent____agents);
 		ruleresult.setRuleName(ruleresult_ruleName_prime);
 		xAgentToAgent__agent____target.setName(xAgentToAgent__agent____target_name_prime);
-		xContainer__xAgent____agents.setName(xContainer__xAgent____agents_name_prime);
 		container__agent____agents.setName(container__agent____agents_name_prime);
 		xAgentToAgent__xAgent____source.setName(xAgentToAgent__xAgent____source_name_prime);
-		return new Object[] { ruleresult, container, xAgentToAgent, agent, xAgent, xContainer,
-				xAgentToAgent__agent____target, xContainer__xAgent____agents, container__agent____agents,
-				xAgentToAgent__xAgent____source };
+		xContainer__xAgent____agents.setName(xContainer__xAgent____agents_name_prime);
+		return new Object[] { ruleresult, xAgentToAgent, container, agent, xAgent, xContainer,
+				xAgentToAgent__agent____target, container__agent____agents, xAgentToAgent__xAgent____source,
+				xContainer__xAgent____agents };
 	}
 
 	public static final void pattern_XProviderToProviderRule_11_5_registerobjects_expressionBBBBBBBB(
-			XProviderToProviderRule _this, PerformRuleResult ruleresult, EObject container, EObject xAgentToAgent,
+			XProviderToProviderRule _this, PerformRuleResult ruleresult, EObject xAgentToAgent, EObject container,
 			EObject agent, EObject xAgent, EObject xContainerToContainer, EObject xContainer) {
-		_this.registerObjects_BWD(ruleresult, container, xAgentToAgent, agent, xAgent, xContainerToContainer,
+		_this.registerObjects_BWD(ruleresult, xAgentToAgent, container, agent, xAgent, xContainerToContainer,
 				xContainer);
 
 	}
@@ -2794,7 +2794,7 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 		return new Object[] { container, xContainerToContainer, xContainer, ruleResult };
 	}
 
-	public static final Object[] pattern_XProviderToProviderRule_29_6_perform_greenBFFFBBB(Container container,
+	public static final Object[] pattern_XProviderToProviderRule_29_6_perform_greenFBFFBBB(Container container,
 			XContainer xContainer, ModelgeneratorRuleResult ruleResult, CSP csp) {
 		XAgentToAgent xAgentToAgent = RequirementsTransformatorFactory.eINSTANCE.createXAgentToAgent();
 		Provider agent = RequirementsFactory.eINSTANCE.createProvider();
@@ -2809,8 +2809,8 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 		xAgentToAgent.setTarget(agent);
 		container.getAgents().add(agent);
 		ruleResult.getTargetObjects().add(agent);
-		xContainer.getAgents().add(xAgent);
 		xAgentToAgent.setSource(xAgent);
+		xContainer.getAgents().add(xAgent);
 		ruleResult.getSourceObjects().add(xAgent);
 		BigInteger agent_speed_prime = (BigInteger) _localVariable_0;
 		String agent_name_prime = (String) _localVariable_1;
@@ -2823,7 +2823,7 @@ public class XProviderToProviderRuleImpl extends AbstractRuleImpl implements XPr
 		xAgent.setSpeed(xAgent_speed_prime);
 		xAgent.setName(xAgent_name_prime);
 		ruleResult.setPerformCount(Integer.valueOf(ruleResult_performCount_prime));
-		return new Object[] { container, xAgentToAgent, agent, xAgent, xContainer, ruleResult, csp };
+		return new Object[] { xAgentToAgent, container, agent, xAgent, xContainer, ruleResult, csp };
 	}
 
 	public static final ModelgeneratorRuleResult pattern_XProviderToProviderRule_29_7_expressionFB(

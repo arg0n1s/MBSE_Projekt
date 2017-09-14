@@ -45,6 +45,13 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass xProviderToProviderRuleEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass xAgentToAgentRuleEClass = null;
 
 	/**
@@ -53,13 +60,6 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * @generated
 	 */
 	private EClass xContainerToContainerRuleEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass xProviderToProviderRuleEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -145,312 +145,6 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(RulesPackage.eNS_URI, theRulesPackage);
 		return theRulesPackage;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getXAgentToAgentRule() {
-		return xAgentToAgentRuleEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getXContainerToContainerRule() {
-		return xContainerToContainerRuleEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__IsAppropriate_FWD__Match_XContainer() {
-		return xContainerToContainerRuleEClass.getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__Perform_FWD__IsApplicableMatch() {
-		return xContainerToContainerRuleEClass.getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__IsApplicable_FWD__Match() {
-		return xContainerToContainerRuleEClass.getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__RegisterObjectsToMatch_FWD__Match_XContainer() {
-		return xContainerToContainerRuleEClass.getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__IsAppropriate_solveCsp_FWD__Match_XContainer() {
-		return xContainerToContainerRuleEClass.getEOperations().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__IsAppropriate_checkCsp_FWD__CSP() {
-		return xContainerToContainerRuleEClass.getEOperations().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__IsApplicable_solveCsp_FWD__IsApplicableMatch_XContainer() {
-		return xContainerToContainerRuleEClass.getEOperations().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__IsApplicable_checkCsp_FWD__CSP() {
-		return xContainerToContainerRuleEClass.getEOperations().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject() {
-		return xContainerToContainerRuleEClass.getEOperations().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__CheckTypes_FWD__Match() {
-		return xContainerToContainerRuleEClass.getEOperations().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__IsAppropriate_BWD__Match_Container_NetworkSpan() {
-		return xContainerToContainerRuleEClass.getEOperations().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__Perform_BWD__IsApplicableMatch() {
-		return xContainerToContainerRuleEClass.getEOperations().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__IsApplicable_BWD__Match() {
-		return xContainerToContainerRuleEClass.getEOperations().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__RegisterObjectsToMatch_BWD__Match_Container_NetworkSpan() {
-		return xContainerToContainerRuleEClass.getEOperations().get(13);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__IsAppropriate_solveCsp_BWD__Match_Container_NetworkSpan() {
-		return xContainerToContainerRuleEClass.getEOperations().get(14);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__IsAppropriate_checkCsp_BWD__CSP() {
-		return xContainerToContainerRuleEClass.getEOperations().get(15);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__IsApplicable_solveCsp_BWD__IsApplicableMatch_Container_NetworkSpan() {
-		return xContainerToContainerRuleEClass.getEOperations().get(16);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__IsApplicable_checkCsp_BWD__CSP() {
-		return xContainerToContainerRuleEClass.getEOperations().get(17);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject() {
-		return xContainerToContainerRuleEClass.getEOperations().get(18);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__CheckTypes_BWD__Match() {
-		return xContainerToContainerRuleEClass.getEOperations().get(19);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__IsAppropriate_FWD_XContainer_4__XContainer() {
-		return xContainerToContainerRuleEClass.getEOperations().get(20);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__IsAppropriate_BWD_EMoflonEdge_42__EMoflonEdge() {
-		return xContainerToContainerRuleEClass.getEOperations().get(21);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__CheckAttributes_FWD__TripleMatch() {
-		return xContainerToContainerRuleEClass.getEOperations().get(22);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__CheckAttributes_BWD__TripleMatch() {
-		return xContainerToContainerRuleEClass.getEOperations().get(23);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__IsApplicable_CC__Match_Match() {
-		return xContainerToContainerRuleEClass.getEOperations().get(24);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__IsApplicable_solveCsp_CC__XContainer_Container_NetworkSpan_Match_Match() {
-		return xContainerToContainerRuleEClass.getEOperations().get(25);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__IsApplicable_checkCsp_CC__CSP() {
-		return xContainerToContainerRuleEClass.getEOperations().get(26);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__CheckDEC_FWD__XContainer() {
-		return xContainerToContainerRuleEClass.getEOperations().get(27);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__CheckDEC_BWD__Container_NetworkSpan() {
-		return xContainerToContainerRuleEClass.getEOperations().get(28);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__GenerateModel__RuleEntryContainer() {
-		return xContainerToContainerRuleEClass.getEOperations().get(29);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__GenerateModel_solveCsp_BWD__IsApplicableMatch_ModelgeneratorRuleResult() {
-		return xContainerToContainerRuleEClass.getEOperations().get(30);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getXContainerToContainerRule__GenerateModel_checkCsp_BWD__CSP() {
-		return xContainerToContainerRuleEClass.getEOperations().get(31);
 	}
 
 	/**
@@ -647,7 +341,7 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getXProviderToProviderRule__IsAppropriate_BWD_EMoflonEdge_43__EMoflonEdge() {
+	public EOperation getXProviderToProviderRule__IsAppropriate_BWD_EMoflonEdge_6__EMoflonEdge() {
 		return xProviderToProviderRuleEClass.getEOperations().get(20);
 	}
 
@@ -656,7 +350,7 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getXProviderToProviderRule__IsAppropriate_FWD_EMoflonEdge_31__EMoflonEdge() {
+	public EOperation getXProviderToProviderRule__IsAppropriate_FWD_EMoflonEdge_3__EMoflonEdge() {
 		return xProviderToProviderRuleEClass.getEOperations().get(21);
 	}
 
@@ -748,6 +442,312 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 */
 	public EOperation getXProviderToProviderRule__GenerateModel_checkCsp_BWD__CSP() {
 		return xProviderToProviderRuleEClass.getEOperations().get(31);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getXAgentToAgentRule() {
+		return xAgentToAgentRuleEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getXContainerToContainerRule() {
+		return xContainerToContainerRuleEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__IsAppropriate_FWD__Match_XContainer() {
+		return xContainerToContainerRuleEClass.getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__Perform_FWD__IsApplicableMatch() {
+		return xContainerToContainerRuleEClass.getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__IsApplicable_FWD__Match() {
+		return xContainerToContainerRuleEClass.getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__RegisterObjectsToMatch_FWD__Match_XContainer() {
+		return xContainerToContainerRuleEClass.getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__IsAppropriate_solveCsp_FWD__Match_XContainer() {
+		return xContainerToContainerRuleEClass.getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__IsAppropriate_checkCsp_FWD__CSP() {
+		return xContainerToContainerRuleEClass.getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__IsApplicable_solveCsp_FWD__IsApplicableMatch_XContainer() {
+		return xContainerToContainerRuleEClass.getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__IsApplicable_checkCsp_FWD__CSP() {
+		return xContainerToContainerRuleEClass.getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject() {
+		return xContainerToContainerRuleEClass.getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__CheckTypes_FWD__Match() {
+		return xContainerToContainerRuleEClass.getEOperations().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__IsAppropriate_BWD__Match_NetworkSpan_Container() {
+		return xContainerToContainerRuleEClass.getEOperations().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__Perform_BWD__IsApplicableMatch() {
+		return xContainerToContainerRuleEClass.getEOperations().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__IsApplicable_BWD__Match() {
+		return xContainerToContainerRuleEClass.getEOperations().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__RegisterObjectsToMatch_BWD__Match_NetworkSpan_Container() {
+		return xContainerToContainerRuleEClass.getEOperations().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__IsAppropriate_solveCsp_BWD__Match_NetworkSpan_Container() {
+		return xContainerToContainerRuleEClass.getEOperations().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__IsAppropriate_checkCsp_BWD__CSP() {
+		return xContainerToContainerRuleEClass.getEOperations().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__IsApplicable_solveCsp_BWD__IsApplicableMatch_NetworkSpan_Container() {
+		return xContainerToContainerRuleEClass.getEOperations().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__IsApplicable_checkCsp_BWD__CSP() {
+		return xContainerToContainerRuleEClass.getEOperations().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject() {
+		return xContainerToContainerRuleEClass.getEOperations().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__CheckTypes_BWD__Match() {
+		return xContainerToContainerRuleEClass.getEOperations().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__IsAppropriate_FWD_XContainer_0__XContainer() {
+		return xContainerToContainerRuleEClass.getEOperations().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__IsAppropriate_BWD_EMoflonEdge_7__EMoflonEdge() {
+		return xContainerToContainerRuleEClass.getEOperations().get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__CheckAttributes_FWD__TripleMatch() {
+		return xContainerToContainerRuleEClass.getEOperations().get(22);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__CheckAttributes_BWD__TripleMatch() {
+		return xContainerToContainerRuleEClass.getEOperations().get(23);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__IsApplicable_CC__Match_Match() {
+		return xContainerToContainerRuleEClass.getEOperations().get(24);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__IsApplicable_solveCsp_CC__XContainer_NetworkSpan_Container_Match_Match() {
+		return xContainerToContainerRuleEClass.getEOperations().get(25);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__IsApplicable_checkCsp_CC__CSP() {
+		return xContainerToContainerRuleEClass.getEOperations().get(26);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__CheckDEC_FWD__XContainer() {
+		return xContainerToContainerRuleEClass.getEOperations().get(27);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__CheckDEC_BWD__NetworkSpan_Container() {
+		return xContainerToContainerRuleEClass.getEOperations().get(28);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__GenerateModel__RuleEntryContainer() {
+		return xContainerToContainerRuleEClass.getEOperations().get(29);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__GenerateModel_solveCsp_BWD__IsApplicableMatch_ModelgeneratorRuleResult() {
+		return xContainerToContainerRuleEClass.getEOperations().get(30);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getXContainerToContainerRule__GenerateModel_checkCsp_BWD__CSP() {
+		return xContainerToContainerRuleEClass.getEOperations().get(31);
 	}
 
 	/**
@@ -944,7 +944,7 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getXConsumerToConsumerRule__IsAppropriate_BWD_EMoflonEdge_44__EMoflonEdge() {
+	public EOperation getXConsumerToConsumerRule__IsAppropriate_BWD_EMoflonEdge_8__EMoflonEdge() {
 		return xConsumerToConsumerRuleEClass.getEOperations().get(20);
 	}
 
@@ -953,7 +953,7 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getXConsumerToConsumerRule__IsAppropriate_FWD_EMoflonEdge_32__EMoflonEdge() {
+	public EOperation getXConsumerToConsumerRule__IsAppropriate_FWD_EMoflonEdge_4__EMoflonEdge() {
 		return xConsumerToConsumerRuleEClass.getEOperations().get(21);
 	}
 
@@ -1076,68 +1076,6 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 		isCreated = true;
 
 		// Create classes and their features
-		xAgentToAgentRuleEClass = createEClass(XAGENT_TO_AGENT_RULE);
-
-		xContainerToContainerRuleEClass = createEClass(XCONTAINER_TO_CONTAINER_RULE);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_FWD__MATCH_XCONTAINER);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___PERFORM_FWD__ISAPPLICABLEMATCH);
-		createEOperation(xContainerToContainerRuleEClass, XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_FWD__MATCH);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_XCONTAINER);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_XCONTAINER);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_CHECK_CSP_FWD__CSP);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_XCONTAINER);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_CHECK_CSP_FWD__CSP);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT);
-		createEOperation(xContainerToContainerRuleEClass, XCONTAINER_TO_CONTAINER_RULE___CHECK_TYPES_FWD__MATCH);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_BWD__MATCH_CONTAINER_NETWORKSPAN);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___PERFORM_BWD__ISAPPLICABLEMATCH);
-		createEOperation(xContainerToContainerRuleEClass, XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_BWD__MATCH);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_CONTAINER_NETWORKSPAN);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_CONTAINER_NETWORKSPAN);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_CHECK_CSP_BWD__CSP);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_CONTAINER_NETWORKSPAN);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_CHECK_CSP_BWD__CSP);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT);
-		createEOperation(xContainerToContainerRuleEClass, XCONTAINER_TO_CONTAINER_RULE___CHECK_TYPES_BWD__MATCH);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_FWD_XCONTAINER_4__XCONTAINER);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_42__EMOFLONEDGE);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH);
-		createEOperation(xContainerToContainerRuleEClass, XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_CC__MATCH_MATCH);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_SOLVE_CSP_CC__XCONTAINER_CONTAINER_NETWORKSPAN_MATCH_MATCH);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_CHECK_CSP_CC__CSP);
-		createEOperation(xContainerToContainerRuleEClass, XCONTAINER_TO_CONTAINER_RULE___CHECK_DEC_FWD__XCONTAINER);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___CHECK_DEC_BWD__CONTAINER_NETWORKSPAN);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___GENERATE_MODEL__RULEENTRYCONTAINER);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_MODELGENERATORRULERESULT);
-		createEOperation(xContainerToContainerRuleEClass,
-				XCONTAINER_TO_CONTAINER_RULE___GENERATE_MODEL_CHECK_CSP_BWD__CSP);
-
 		xProviderToProviderRuleEClass = createEClass(XPROVIDER_TO_PROVIDER_RULE);
 		createEOperation(xProviderToProviderRuleEClass,
 				XPROVIDER_TO_PROVIDER_RULE___IS_APPROPRIATE_FWD__MATCH_XPROVIDER_XCONTAINER);
@@ -1170,9 +1108,9 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 				XPROVIDER_TO_PROVIDER_RULE___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT);
 		createEOperation(xProviderToProviderRuleEClass, XPROVIDER_TO_PROVIDER_RULE___CHECK_TYPES_BWD__MATCH);
 		createEOperation(xProviderToProviderRuleEClass,
-				XPROVIDER_TO_PROVIDER_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_43__EMOFLONEDGE);
+				XPROVIDER_TO_PROVIDER_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_6__EMOFLONEDGE);
 		createEOperation(xProviderToProviderRuleEClass,
-				XPROVIDER_TO_PROVIDER_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_31__EMOFLONEDGE);
+				XPROVIDER_TO_PROVIDER_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_3__EMOFLONEDGE);
 		createEOperation(xProviderToProviderRuleEClass, XPROVIDER_TO_PROVIDER_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH);
 		createEOperation(xProviderToProviderRuleEClass, XPROVIDER_TO_PROVIDER_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH);
 		createEOperation(xProviderToProviderRuleEClass, XPROVIDER_TO_PROVIDER_RULE___IS_APPLICABLE_CC__MATCH_MATCH);
@@ -1187,6 +1125,68 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 		createEOperation(xProviderToProviderRuleEClass,
 				XPROVIDER_TO_PROVIDER_RULE___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_CONTAINER_XCONTAINERTOCONTAINER_XCONTAINER_MODELGENERATORRULERESULT);
 		createEOperation(xProviderToProviderRuleEClass, XPROVIDER_TO_PROVIDER_RULE___GENERATE_MODEL_CHECK_CSP_BWD__CSP);
+
+		xAgentToAgentRuleEClass = createEClass(XAGENT_TO_AGENT_RULE);
+
+		xContainerToContainerRuleEClass = createEClass(XCONTAINER_TO_CONTAINER_RULE);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_FWD__MATCH_XCONTAINER);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___PERFORM_FWD__ISAPPLICABLEMATCH);
+		createEOperation(xContainerToContainerRuleEClass, XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_FWD__MATCH);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_XCONTAINER);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_XCONTAINER);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_CHECK_CSP_FWD__CSP);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_XCONTAINER);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_CHECK_CSP_FWD__CSP);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT);
+		createEOperation(xContainerToContainerRuleEClass, XCONTAINER_TO_CONTAINER_RULE___CHECK_TYPES_FWD__MATCH);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_BWD__MATCH_NETWORKSPAN_CONTAINER);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___PERFORM_BWD__ISAPPLICABLEMATCH);
+		createEOperation(xContainerToContainerRuleEClass, XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_BWD__MATCH);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_NETWORKSPAN_CONTAINER);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_NETWORKSPAN_CONTAINER);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_CHECK_CSP_BWD__CSP);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_NETWORKSPAN_CONTAINER);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_CHECK_CSP_BWD__CSP);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT);
+		createEOperation(xContainerToContainerRuleEClass, XCONTAINER_TO_CONTAINER_RULE___CHECK_TYPES_BWD__MATCH);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_FWD_XCONTAINER_0__XCONTAINER);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_7__EMOFLONEDGE);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH);
+		createEOperation(xContainerToContainerRuleEClass, XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_CC__MATCH_MATCH);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_SOLVE_CSP_CC__XCONTAINER_NETWORKSPAN_CONTAINER_MATCH_MATCH);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___IS_APPLICABLE_CHECK_CSP_CC__CSP);
+		createEOperation(xContainerToContainerRuleEClass, XCONTAINER_TO_CONTAINER_RULE___CHECK_DEC_FWD__XCONTAINER);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___CHECK_DEC_BWD__NETWORKSPAN_CONTAINER);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___GENERATE_MODEL__RULEENTRYCONTAINER);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_MODELGENERATORRULERESULT);
+		createEOperation(xContainerToContainerRuleEClass,
+				XCONTAINER_TO_CONTAINER_RULE___GENERATE_MODEL_CHECK_CSP_BWD__CSP);
 
 		xConsumerToConsumerRuleEClass = createEClass(XCONSUMER_TO_CONSUMER_RULE);
 		createEOperation(xConsumerToConsumerRuleEClass,
@@ -1220,9 +1220,9 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 				XCONSUMER_TO_CONSUMER_RULE___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT);
 		createEOperation(xConsumerToConsumerRuleEClass, XCONSUMER_TO_CONSUMER_RULE___CHECK_TYPES_BWD__MATCH);
 		createEOperation(xConsumerToConsumerRuleEClass,
-				XCONSUMER_TO_CONSUMER_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_44__EMOFLONEDGE);
+				XCONSUMER_TO_CONSUMER_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_8__EMOFLONEDGE);
 		createEOperation(xConsumerToConsumerRuleEClass,
-				XCONSUMER_TO_CONSUMER_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_32__EMOFLONEDGE);
+				XCONSUMER_TO_CONSUMER_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_4__EMOFLONEDGE);
 		createEOperation(xConsumerToConsumerRuleEClass, XCONSUMER_TO_CONSUMER_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH);
 		createEOperation(xConsumerToConsumerRuleEClass, XCONSUMER_TO_CONSUMER_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH);
 		createEOperation(xConsumerToConsumerRuleEClass, XCONSUMER_TO_CONSUMER_RULE___IS_APPLICABLE_CC__MATCH_MATCH);
@@ -1271,196 +1271,26 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 		CspPackage theCspPackage = (CspPackage) EPackage.Registry.INSTANCE.getEPackage(CspPackage.eNS_URI);
 		RequirementsPackage theRequirementsPackage = (RequirementsPackage) EPackage.Registry.INSTANCE
 				.getEPackage(RequirementsPackage.eNS_URI);
-		ModelgeneratorPackage theModelgeneratorPackage = (ModelgeneratorPackage) EPackage.Registry.INSTANCE
-				.getEPackage(ModelgeneratorPackage.eNS_URI);
 		RequirementsTransformatorPackage theRequirementsTransformatorPackage = (RequirementsTransformatorPackage) EPackage.Registry.INSTANCE
 				.getEPackage(RequirementsTransformatorPackage.eNS_URI);
+		ModelgeneratorPackage theModelgeneratorPackage = (ModelgeneratorPackage) EPackage.Registry.INSTANCE
+				.getEPackage(ModelgeneratorPackage.eNS_URI);
 
 		// Create type parameters
 
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		xProviderToProviderRuleEClass.getESuperTypes().add(theRuntimePackage.getAbstractRule());
 		xAgentToAgentRuleEClass.getESuperTypes().add(theRuntimePackage.getAbstractRule());
 		xContainerToContainerRuleEClass.getESuperTypes().add(theRuntimePackage.getAbstractRule());
-		xProviderToProviderRuleEClass.getESuperTypes().add(theRuntimePackage.getAbstractRule());
 		xConsumerToConsumerRuleEClass.getESuperTypes().add(theRuntimePackage.getAbstractRule());
 
 		// Initialize classes, features, and operations; add parameters
-		initEClass(xAgentToAgentRuleEClass, XAgentToAgentRule.class, "XAgentToAgentRule", !IS_ABSTRACT, !IS_INTERFACE,
-				IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(xContainerToContainerRuleEClass, XContainerToContainerRule.class, "XContainerToContainerRule",
-				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		EOperation op = initEOperation(getXContainerToContainerRule__IsAppropriate_FWD__Match_XContainer(),
-				ecorePackage.getEBoolean(), "isAppropriate_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getMatch(), "match", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theReqXtextPackage.getXContainer(), "xContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__Perform_FWD__IsApplicableMatch(),
-				theRuntimePackage.getPerformRuleResult(), "perform_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getIsApplicableMatch(), "isApplicableMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__IsApplicable_FWD__Match(),
-				theRuntimePackage.getIsApplicableRuleResult(), "isApplicable_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getMatch(), "match", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__RegisterObjectsToMatch_FWD__Match_XContainer(), null,
-				"registerObjectsToMatch_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getMatch(), "match", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theReqXtextPackage.getXContainer(), "xContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__IsAppropriate_solveCsp_FWD__Match_XContainer(),
-				theCspPackage.getCSP(), "isAppropriate_solveCsp_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getMatch(), "match", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theReqXtextPackage.getXContainer(), "xContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__IsAppropriate_checkCsp_FWD__CSP(), ecorePackage.getEBoolean(),
-				"isAppropriate_checkCsp_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theCspPackage.getCSP(), "csp", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__IsApplicable_solveCsp_FWD__IsApplicableMatch_XContainer(),
-				theCspPackage.getCSP(), "isApplicable_solveCsp_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getIsApplicableMatch(), "isApplicableMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theReqXtextPackage.getXContainer(), "xContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__IsApplicable_checkCsp_FWD__CSP(), ecorePackage.getEBoolean(),
-				"isApplicable_checkCsp_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theCspPackage.getCSP(), "csp", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(
-				getXContainerToContainerRule__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject(),
-				null, "registerObjects_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getPerformRuleResult(), "ruleresult", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEObject(), "xContainerToContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEObject(), "xContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEObject(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEObject(), "virtualNode", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__CheckTypes_FWD__Match(), ecorePackage.getEBoolean(),
-				"checkTypes_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getMatch(), "match", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__IsAppropriate_BWD__Match_Container_NetworkSpan(),
-				ecorePackage.getEBoolean(), "isAppropriate_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getMatch(), "match", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRequirementsPackage.getContainer(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRequirementsPackage.getNetworkSpan(), "virtualNode", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__Perform_BWD__IsApplicableMatch(),
-				theRuntimePackage.getPerformRuleResult(), "perform_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getIsApplicableMatch(), "isApplicableMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__IsApplicable_BWD__Match(),
-				theRuntimePackage.getIsApplicableRuleResult(), "isApplicable_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getMatch(), "match", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__RegisterObjectsToMatch_BWD__Match_Container_NetworkSpan(),
-				null, "registerObjectsToMatch_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getMatch(), "match", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRequirementsPackage.getContainer(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRequirementsPackage.getNetworkSpan(), "virtualNode", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__IsAppropriate_solveCsp_BWD__Match_Container_NetworkSpan(),
-				theCspPackage.getCSP(), "isAppropriate_solveCsp_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getMatch(), "match", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRequirementsPackage.getContainer(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRequirementsPackage.getNetworkSpan(), "virtualNode", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__IsAppropriate_checkCsp_BWD__CSP(), ecorePackage.getEBoolean(),
-				"isAppropriate_checkCsp_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theCspPackage.getCSP(), "csp", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(
-				getXContainerToContainerRule__IsApplicable_solveCsp_BWD__IsApplicableMatch_Container_NetworkSpan(),
-				theCspPackage.getCSP(), "isApplicable_solveCsp_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getIsApplicableMatch(), "isApplicableMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRequirementsPackage.getContainer(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRequirementsPackage.getNetworkSpan(), "virtualNode", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__IsApplicable_checkCsp_BWD__CSP(), ecorePackage.getEBoolean(),
-				"isApplicable_checkCsp_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theCspPackage.getCSP(), "csp", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(
-				getXContainerToContainerRule__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject(),
-				null, "registerObjects_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getPerformRuleResult(), "ruleresult", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEObject(), "xContainerToContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEObject(), "xContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEObject(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEObject(), "virtualNode", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__CheckTypes_BWD__Match(), ecorePackage.getEBoolean(),
-				"checkTypes_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getMatch(), "match", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__IsAppropriate_FWD_XContainer_4__XContainer(),
-				theRuntimePackage.getEObjectContainer(), "isAppropriate_FWD_XContainer_4", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theReqXtextPackage.getXContainer(), "xContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__IsAppropriate_BWD_EMoflonEdge_42__EMoflonEdge(),
-				theRuntimePackage.getEObjectContainer(), "isAppropriate_BWD_EMoflonEdge_42", 0, 1, IS_UNIQUE,
-				IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getEMoflonEdge(), "_edge_networkSpan", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__CheckAttributes_FWD__TripleMatch(),
-				theRuntimePackage.getAttributeConstraintsRuleResult(), "checkAttributes_FWD", 0, 1, IS_UNIQUE,
-				IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getTripleMatch(), "__tripleMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__CheckAttributes_BWD__TripleMatch(),
-				theRuntimePackage.getAttributeConstraintsRuleResult(), "checkAttributes_BWD", 0, 1, IS_UNIQUE,
-				IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getTripleMatch(), "__tripleMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__IsApplicable_CC__Match_Match(),
-				theRuntimePackage.getIsApplicableRuleResult(), "isApplicable_CC", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getMatch(), "sourceMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getMatch(), "targetMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(
-				getXContainerToContainerRule__IsApplicable_solveCsp_CC__XContainer_Container_NetworkSpan_Match_Match(),
-				theCspPackage.getCSP(), "isApplicable_solveCsp_CC", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theReqXtextPackage.getXContainer(), "xContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRequirementsPackage.getContainer(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRequirementsPackage.getNetworkSpan(), "virtualNode", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getMatch(), "sourceMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getMatch(), "targetMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__IsApplicable_checkCsp_CC__CSP(), ecorePackage.getEBoolean(),
-				"isApplicable_checkCsp_CC", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theCspPackage.getCSP(), "csp", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__CheckDEC_FWD__XContainer(), ecorePackage.getEBoolean(),
-				"checkDEC_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theReqXtextPackage.getXContainer(), "xContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__CheckDEC_BWD__Container_NetworkSpan(),
-				ecorePackage.getEBoolean(), "checkDEC_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRequirementsPackage.getContainer(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRequirementsPackage.getNetworkSpan(), "virtualNode", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__GenerateModel__RuleEntryContainer(),
-				theRuntimePackage.getModelgeneratorRuleResult(), "generateModel", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theModelgeneratorPackage.getRuleEntryContainer(), "ruleEntryContainer", 0, 1, IS_UNIQUE,
-				IS_ORDERED);
-
-		op = initEOperation(
-				getXContainerToContainerRule__GenerateModel_solveCsp_BWD__IsApplicableMatch_ModelgeneratorRuleResult(),
-				theCspPackage.getCSP(), "generateModel_solveCsp_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getIsApplicableMatch(), "isApplicableMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theRuntimePackage.getModelgeneratorRuleResult(), "ruleResult", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getXContainerToContainerRule__GenerateModel_checkCsp_BWD__CSP(), ecorePackage.getEBoolean(),
-				"generateModel_checkCsp_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theCspPackage.getCSP(), "csp", 0, 1, IS_UNIQUE, IS_ORDERED);
-
 		initEClass(xProviderToProviderRuleEClass, XProviderToProviderRule.class, "XProviderToProviderRule",
 				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		op = initEOperation(getXProviderToProviderRule__IsAppropriate_FWD__Match_XProvider_XContainer(),
+		EOperation op = initEOperation(getXProviderToProviderRule__IsAppropriate_FWD__Match_XProvider_XContainer(),
 				ecorePackage.getEBoolean(), "isAppropriate_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theRuntimePackage.getMatch(), "match", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theReqXtextPackage.getXProvider(), "xAgent", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -1508,8 +1338,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 				getXProviderToProviderRule__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject(),
 				null, "registerObjects_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theRuntimePackage.getPerformRuleResult(), "ruleresult", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEObject(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEObject(), "xAgentToAgent", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEObject(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEObject(), "agent", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEObject(), "xAgent", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEObject(), "xContainerToContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -1567,8 +1397,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 				getXProviderToProviderRule__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject(),
 				null, "registerObjects_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theRuntimePackage.getPerformRuleResult(), "ruleresult", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEObject(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEObject(), "xAgentToAgent", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEObject(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEObject(), "agent", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEObject(), "xAgent", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEObject(), "xContainerToContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -1578,13 +1408,13 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 				"checkTypes_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theRuntimePackage.getMatch(), "match", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getXProviderToProviderRule__IsAppropriate_BWD_EMoflonEdge_43__EMoflonEdge(),
-				theRuntimePackage.getEObjectContainer(), "isAppropriate_BWD_EMoflonEdge_43", 0, 1, IS_UNIQUE,
+		op = initEOperation(getXProviderToProviderRule__IsAppropriate_BWD_EMoflonEdge_6__EMoflonEdge(),
+				theRuntimePackage.getEObjectContainer(), "isAppropriate_BWD_EMoflonEdge_6", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
 		addEParameter(op, theRuntimePackage.getEMoflonEdge(), "_edge_agents", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getXProviderToProviderRule__IsAppropriate_FWD_EMoflonEdge_31__EMoflonEdge(),
-				theRuntimePackage.getEObjectContainer(), "isAppropriate_FWD_EMoflonEdge_31", 0, 1, IS_UNIQUE,
+		op = initEOperation(getXProviderToProviderRule__IsAppropriate_FWD_EMoflonEdge_3__EMoflonEdge(),
+				theRuntimePackage.getEObjectContainer(), "isAppropriate_FWD_EMoflonEdge_3", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
 		addEParameter(op, theRuntimePackage.getEMoflonEdge(), "_edge_agents", 0, 1, IS_UNIQUE, IS_ORDERED);
 
@@ -1648,6 +1478,176 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 				"generateModel_checkCsp_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theCspPackage.getCSP(), "csp", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		initEClass(xAgentToAgentRuleEClass, XAgentToAgentRule.class, "XAgentToAgentRule", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(xContainerToContainerRuleEClass, XContainerToContainerRule.class, "XContainerToContainerRule",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = initEOperation(getXContainerToContainerRule__IsAppropriate_FWD__Match_XContainer(),
+				ecorePackage.getEBoolean(), "isAppropriate_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getMatch(), "match", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theReqXtextPackage.getXContainer(), "xContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__Perform_FWD__IsApplicableMatch(),
+				theRuntimePackage.getPerformRuleResult(), "perform_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getIsApplicableMatch(), "isApplicableMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__IsApplicable_FWD__Match(),
+				theRuntimePackage.getIsApplicableRuleResult(), "isApplicable_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getMatch(), "match", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__RegisterObjectsToMatch_FWD__Match_XContainer(), null,
+				"registerObjectsToMatch_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getMatch(), "match", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theReqXtextPackage.getXContainer(), "xContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__IsAppropriate_solveCsp_FWD__Match_XContainer(),
+				theCspPackage.getCSP(), "isAppropriate_solveCsp_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getMatch(), "match", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theReqXtextPackage.getXContainer(), "xContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__IsAppropriate_checkCsp_FWD__CSP(), ecorePackage.getEBoolean(),
+				"isAppropriate_checkCsp_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theCspPackage.getCSP(), "csp", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__IsApplicable_solveCsp_FWD__IsApplicableMatch_XContainer(),
+				theCspPackage.getCSP(), "isApplicable_solveCsp_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getIsApplicableMatch(), "isApplicableMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theReqXtextPackage.getXContainer(), "xContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__IsApplicable_checkCsp_FWD__CSP(), ecorePackage.getEBoolean(),
+				"isApplicable_checkCsp_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theCspPackage.getCSP(), "csp", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(
+				getXContainerToContainerRule__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject(),
+				null, "registerObjects_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getPerformRuleResult(), "ruleresult", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEObject(), "xContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEObject(), "xContainerToContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEObject(), "virtualNode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEObject(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__CheckTypes_FWD__Match(), ecorePackage.getEBoolean(),
+				"checkTypes_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getMatch(), "match", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__IsAppropriate_BWD__Match_NetworkSpan_Container(),
+				ecorePackage.getEBoolean(), "isAppropriate_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getMatch(), "match", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRequirementsPackage.getNetworkSpan(), "virtualNode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRequirementsPackage.getContainer(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__Perform_BWD__IsApplicableMatch(),
+				theRuntimePackage.getPerformRuleResult(), "perform_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getIsApplicableMatch(), "isApplicableMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__IsApplicable_BWD__Match(),
+				theRuntimePackage.getIsApplicableRuleResult(), "isApplicable_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getMatch(), "match", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__RegisterObjectsToMatch_BWD__Match_NetworkSpan_Container(),
+				null, "registerObjectsToMatch_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getMatch(), "match", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRequirementsPackage.getNetworkSpan(), "virtualNode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRequirementsPackage.getContainer(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__IsAppropriate_solveCsp_BWD__Match_NetworkSpan_Container(),
+				theCspPackage.getCSP(), "isAppropriate_solveCsp_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getMatch(), "match", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRequirementsPackage.getNetworkSpan(), "virtualNode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRequirementsPackage.getContainer(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__IsAppropriate_checkCsp_BWD__CSP(), ecorePackage.getEBoolean(),
+				"isAppropriate_checkCsp_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theCspPackage.getCSP(), "csp", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(
+				getXContainerToContainerRule__IsApplicable_solveCsp_BWD__IsApplicableMatch_NetworkSpan_Container(),
+				theCspPackage.getCSP(), "isApplicable_solveCsp_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getIsApplicableMatch(), "isApplicableMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRequirementsPackage.getNetworkSpan(), "virtualNode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRequirementsPackage.getContainer(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__IsApplicable_checkCsp_BWD__CSP(), ecorePackage.getEBoolean(),
+				"isApplicable_checkCsp_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theCspPackage.getCSP(), "csp", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(
+				getXContainerToContainerRule__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject(),
+				null, "registerObjects_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getPerformRuleResult(), "ruleresult", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEObject(), "xContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEObject(), "xContainerToContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEObject(), "virtualNode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEObject(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__CheckTypes_BWD__Match(), ecorePackage.getEBoolean(),
+				"checkTypes_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getMatch(), "match", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__IsAppropriate_FWD_XContainer_0__XContainer(),
+				theRuntimePackage.getEObjectContainer(), "isAppropriate_FWD_XContainer_0", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theReqXtextPackage.getXContainer(), "xContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__IsAppropriate_BWD_EMoflonEdge_7__EMoflonEdge(),
+				theRuntimePackage.getEObjectContainer(), "isAppropriate_BWD_EMoflonEdge_7", 0, 1, IS_UNIQUE,
+				IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getEMoflonEdge(), "_edge_networkSpan", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__CheckAttributes_FWD__TripleMatch(),
+				theRuntimePackage.getAttributeConstraintsRuleResult(), "checkAttributes_FWD", 0, 1, IS_UNIQUE,
+				IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getTripleMatch(), "__tripleMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__CheckAttributes_BWD__TripleMatch(),
+				theRuntimePackage.getAttributeConstraintsRuleResult(), "checkAttributes_BWD", 0, 1, IS_UNIQUE,
+				IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getTripleMatch(), "__tripleMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__IsApplicable_CC__Match_Match(),
+				theRuntimePackage.getIsApplicableRuleResult(), "isApplicable_CC", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getMatch(), "sourceMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getMatch(), "targetMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(
+				getXContainerToContainerRule__IsApplicable_solveCsp_CC__XContainer_NetworkSpan_Container_Match_Match(),
+				theCspPackage.getCSP(), "isApplicable_solveCsp_CC", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theReqXtextPackage.getXContainer(), "xContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRequirementsPackage.getNetworkSpan(), "virtualNode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRequirementsPackage.getContainer(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getMatch(), "sourceMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getMatch(), "targetMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__IsApplicable_checkCsp_CC__CSP(), ecorePackage.getEBoolean(),
+				"isApplicable_checkCsp_CC", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theCspPackage.getCSP(), "csp", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__CheckDEC_FWD__XContainer(), ecorePackage.getEBoolean(),
+				"checkDEC_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theReqXtextPackage.getXContainer(), "xContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__CheckDEC_BWD__NetworkSpan_Container(),
+				ecorePackage.getEBoolean(), "checkDEC_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRequirementsPackage.getNetworkSpan(), "virtualNode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRequirementsPackage.getContainer(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__GenerateModel__RuleEntryContainer(),
+				theRuntimePackage.getModelgeneratorRuleResult(), "generateModel", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theModelgeneratorPackage.getRuleEntryContainer(), "ruleEntryContainer", 0, 1, IS_UNIQUE,
+				IS_ORDERED);
+
+		op = initEOperation(
+				getXContainerToContainerRule__GenerateModel_solveCsp_BWD__IsApplicableMatch_ModelgeneratorRuleResult(),
+				theCspPackage.getCSP(), "generateModel_solveCsp_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getIsApplicableMatch(), "isApplicableMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theRuntimePackage.getModelgeneratorRuleResult(), "ruleResult", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getXContainerToContainerRule__GenerateModel_checkCsp_BWD__CSP(), ecorePackage.getEBoolean(),
+				"generateModel_checkCsp_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theCspPackage.getCSP(), "csp", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		initEClass(xConsumerToConsumerRuleEClass, XConsumerToConsumerRule.class, "XConsumerToConsumerRule",
 				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -1699,8 +1699,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 				getXConsumerToConsumerRule__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject(),
 				null, "registerObjects_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theRuntimePackage.getPerformRuleResult(), "ruleresult", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEObject(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEObject(), "xAgentToAgent", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEObject(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEObject(), "agent", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEObject(), "xAgent", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEObject(), "xContainerToContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -1758,8 +1758,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 				getXConsumerToConsumerRule__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject(),
 				null, "registerObjects_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theRuntimePackage.getPerformRuleResult(), "ruleresult", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEObject(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEObject(), "xAgentToAgent", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEObject(), "container", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEObject(), "agent", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEObject(), "xAgent", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEObject(), "xContainerToContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -1769,13 +1769,13 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 				"checkTypes_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theRuntimePackage.getMatch(), "match", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getXConsumerToConsumerRule__IsAppropriate_BWD_EMoflonEdge_44__EMoflonEdge(),
-				theRuntimePackage.getEObjectContainer(), "isAppropriate_BWD_EMoflonEdge_44", 0, 1, IS_UNIQUE,
+		op = initEOperation(getXConsumerToConsumerRule__IsAppropriate_BWD_EMoflonEdge_8__EMoflonEdge(),
+				theRuntimePackage.getEObjectContainer(), "isAppropriate_BWD_EMoflonEdge_8", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
 		addEParameter(op, theRuntimePackage.getEMoflonEdge(), "_edge_agents", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getXConsumerToConsumerRule__IsAppropriate_FWD_EMoflonEdge_32__EMoflonEdge(),
-				theRuntimePackage.getEObjectContainer(), "isAppropriate_FWD_EMoflonEdge_32", 0, 1, IS_UNIQUE,
+		op = initEOperation(getXConsumerToConsumerRule__IsAppropriate_FWD_EMoflonEdge_4__EMoflonEdge(),
+				theRuntimePackage.getEObjectContainer(), "isAppropriate_FWD_EMoflonEdge_4", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
 		addEParameter(op, theRuntimePackage.getEMoflonEdge(), "_edge_agents", 0, 1, IS_UNIQUE, IS_ORDERED);
 

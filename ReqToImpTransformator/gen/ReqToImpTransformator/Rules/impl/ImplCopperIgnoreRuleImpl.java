@@ -493,7 +493,7 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_Container_13(Container reqContainer) {
+	public EObjectContainer isAppropriate_FWD_Container_0(Container reqContainer) {
 
 		Object[] result1_bindingAndBlack = ImplCopperIgnoreRuleImpl
 				.pattern_ImplCopperIgnoreRule_17_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -548,7 +548,7 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_39(EMoflonEdge _edge_cables) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_2(EMoflonEdge _edge_cables) {
 
 		Object[] result1_bindingAndBlack = ImplCopperIgnoreRuleImpl
 				.pattern_ImplCopperIgnoreRule_18_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -944,10 +944,10 @@ public class ImplCopperIgnoreRuleImpl extends AbstractRuleImpl implements ImplCo
 			return null;
 		case RulesPackage.IMPL_COPPER_IGNORE_RULE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.IMPL_COPPER_IGNORE_RULE___IS_APPROPRIATE_FWD_CONTAINER_13__CONTAINER:
-			return isAppropriate_FWD_Container_13((Container) arguments.get(0));
-		case RulesPackage.IMPL_COPPER_IGNORE_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_39__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_39((EMoflonEdge) arguments.get(0));
+		case RulesPackage.IMPL_COPPER_IGNORE_RULE___IS_APPROPRIATE_FWD_CONTAINER_0__CONTAINER:
+			return isAppropriate_FWD_Container_0((Container) arguments.get(0));
+		case RulesPackage.IMPL_COPPER_IGNORE_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_2__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_2((EMoflonEdge) arguments.get(0));
 		case RulesPackage.IMPL_COPPER_IGNORE_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.IMPL_COPPER_IGNORE_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:

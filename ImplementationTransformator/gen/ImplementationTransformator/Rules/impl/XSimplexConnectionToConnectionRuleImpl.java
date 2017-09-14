@@ -99,29 +99,29 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isAppropriate_FWD(Match match, XCable xCable, XDevice xDevice2, Connections connection2,
-			CableAttributes cableAttributes, XContainer xContainer, Connections connection1, XDevice xDevice1) {
+	public boolean isAppropriate_FWD(Match match, XContainer xContainer, XDevice xDevice1, Connections connection1,
+			Connections connection2, CableAttributes cableAttributes, XDevice xDevice2, XCable xCable) {
 
 		Object[] result1_black = XSimplexConnectionToConnectionRuleImpl
-				.pattern_XSimplexConnectionToConnectionRule_0_1_initialbindings_blackBBBBBBBBB(this, match, xCable,
-						xDevice2, connection2, cableAttributes, xContainer, connection1, xDevice1);
+				.pattern_XSimplexConnectionToConnectionRule_0_1_initialbindings_blackBBBBBBBBB(this, match, xContainer,
+						xDevice1, connection1, connection2, cableAttributes, xDevice2, xCable);
 		if (result1_black == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
-					+ "[match] = " + match + ", " + "[xCable] = " + xCable + ", " + "[xDevice2] = " + xDevice2 + ", "
-					+ "[connection2] = " + connection2 + ", " + "[cableAttributes] = " + cableAttributes + ", "
-					+ "[xContainer] = " + xContainer + ", " + "[connection1] = " + connection1 + ", " + "[xDevice1] = "
-					+ xDevice1 + ".");
+					+ "[match] = " + match + ", " + "[xContainer] = " + xContainer + ", " + "[xDevice1] = " + xDevice1
+					+ ", " + "[connection1] = " + connection1 + ", " + "[connection2] = " + connection2 + ", "
+					+ "[cableAttributes] = " + cableAttributes + ", " + "[xDevice2] = " + xDevice2 + ", "
+					+ "[xCable] = " + xCable + ".");
 		}
 
 		Object[] result2_bindingAndBlack = XSimplexConnectionToConnectionRuleImpl
-				.pattern_XSimplexConnectionToConnectionRule_0_2_SolveCSP_bindingAndBlackFBBBBBBBBB(this, match, xCable,
-						xDevice2, connection2, cableAttributes, xContainer, connection1, xDevice1);
+				.pattern_XSimplexConnectionToConnectionRule_0_2_SolveCSP_bindingAndBlackFBBBBBBBBB(this, match,
+						xContainer, xDevice1, connection1, connection2, cableAttributes, xDevice2, xCable);
 		if (result2_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
-					+ "[match] = " + match + ", " + "[xCable] = " + xCable + ", " + "[xDevice2] = " + xDevice2 + ", "
-					+ "[connection2] = " + connection2 + ", " + "[cableAttributes] = " + cableAttributes + ", "
-					+ "[xContainer] = " + xContainer + ", " + "[connection1] = " + connection1 + ", " + "[xDevice1] = "
-					+ xDevice1 + ".");
+					+ "[match] = " + match + ", " + "[xContainer] = " + xContainer + ", " + "[xDevice1] = " + xDevice1
+					+ ", " + "[connection1] = " + connection1 + ", " + "[connection2] = " + connection2 + ", "
+					+ "[cableAttributes] = " + cableAttributes + ", " + "[xDevice2] = " + xDevice2 + ", "
+					+ "[xCable] = " + xCable + ".");
 		}
 		CSP csp = (CSP) result2_bindingAndBlack[0];
 		// 
@@ -130,46 +130,44 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 
 			Object[] result4_black = XSimplexConnectionToConnectionRuleImpl
 					.pattern_XSimplexConnectionToConnectionRule_0_4_collectelementstobetranslated_blackBBBBBBBB(match,
-							xCable, xDevice2, connection2, cableAttributes, xContainer, connection1, xDevice1);
+							xContainer, xDevice1, connection1, connection2, cableAttributes, xDevice2, xCable);
 			if (result4_black == null) {
 				throw new RuntimeException("Pattern matching failed." + " Variables: " + "[match] = " + match + ", "
-						+ "[xCable] = " + xCable + ", " + "[xDevice2] = " + xDevice2 + ", " + "[connection2] = "
-						+ connection2 + ", " + "[cableAttributes] = " + cableAttributes + ", " + "[xContainer] = "
-						+ xContainer + ", " + "[connection1] = " + connection1 + ", " + "[xDevice1] = " + xDevice1
-						+ ".");
+						+ "[xContainer] = " + xContainer + ", " + "[xDevice1] = " + xDevice1 + ", " + "[connection1] = "
+						+ connection1 + ", " + "[connection2] = " + connection2 + ", " + "[cableAttributes] = "
+						+ cableAttributes + ", " + "[xDevice2] = " + xDevice2 + ", " + "[xCable] = " + xCable + ".");
 			}
 			XSimplexConnectionToConnectionRuleImpl
 					.pattern_XSimplexConnectionToConnectionRule_0_4_collectelementstobetranslated_greenBBBBBBBFFFF(
-							match, xCable, xDevice2, connection2, cableAttributes, connection1, xDevice1);
-			//nothing EMoflonEdge connection2__xCable____incoming = (EMoflonEdge) result4_green[7];
-			//nothing EMoflonEdge cableAttributes__xDevice1____endPoint1 = (EMoflonEdge) result4_green[8];
-			//nothing EMoflonEdge cableAttributes__xDevice2____endPoint2 = (EMoflonEdge) result4_green[9];
-			//nothing EMoflonEdge connection1__xCable____outgoing = (EMoflonEdge) result4_green[10];
+							match, xDevice1, connection1, connection2, cableAttributes, xDevice2, xCable);
+			//nothing EMoflonEdge connection1__xCable____outgoing = (EMoflonEdge) result4_green[7];
+			//nothing EMoflonEdge cableAttributes__xDevice2____endPoint2 = (EMoflonEdge) result4_green[8];
+			//nothing EMoflonEdge cableAttributes__xDevice1____endPoint1 = (EMoflonEdge) result4_green[9];
+			//nothing EMoflonEdge connection2__xCable____incoming = (EMoflonEdge) result4_green[10];
 
 			Object[] result5_black = XSimplexConnectionToConnectionRuleImpl
-					.pattern_XSimplexConnectionToConnectionRule_0_5_collectcontextelements_blackBBBBBBBB(match, xCable,
-							xDevice2, connection2, cableAttributes, xContainer, connection1, xDevice1);
+					.pattern_XSimplexConnectionToConnectionRule_0_5_collectcontextelements_blackBBBBBBBB(match,
+							xContainer, xDevice1, connection1, connection2, cableAttributes, xDevice2, xCable);
 			if (result5_black == null) {
 				throw new RuntimeException("Pattern matching failed." + " Variables: " + "[match] = " + match + ", "
-						+ "[xCable] = " + xCable + ", " + "[xDevice2] = " + xDevice2 + ", " + "[connection2] = "
-						+ connection2 + ", " + "[cableAttributes] = " + cableAttributes + ", " + "[xContainer] = "
-						+ xContainer + ", " + "[connection1] = " + connection1 + ", " + "[xDevice1] = " + xDevice1
-						+ ".");
+						+ "[xContainer] = " + xContainer + ", " + "[xDevice1] = " + xDevice1 + ", " + "[connection1] = "
+						+ connection1 + ", " + "[connection2] = " + connection2 + ", " + "[cableAttributes] = "
+						+ cableAttributes + ", " + "[xDevice2] = " + xDevice2 + ", " + "[xCable] = " + xCable + ".");
 			}
 			XSimplexConnectionToConnectionRuleImpl
 					.pattern_XSimplexConnectionToConnectionRule_0_5_collectcontextelements_greenBBBBBBBBFFFFFF(match,
-							xCable, xDevice2, connection2, cableAttributes, xContainer, connection1, xDevice1);
-			//nothing EMoflonEdge xCable__cableAttributes____cableAttributes = (EMoflonEdge) result5_green[8];
-			//nothing EMoflonEdge xDevice2__connection2____connections = (EMoflonEdge) result5_green[9];
+							xContainer, xDevice1, connection1, connection2, cableAttributes, xDevice2, xCable);
+			//nothing EMoflonEdge xDevice1__connection1____connections = (EMoflonEdge) result5_green[8];
+			//nothing EMoflonEdge xContainer__xCable____elements = (EMoflonEdge) result5_green[9];
 			//nothing EMoflonEdge xContainer__xDevice2____elements = (EMoflonEdge) result5_green[10];
-			//nothing EMoflonEdge xContainer__xDevice1____elements = (EMoflonEdge) result5_green[11];
-			//nothing EMoflonEdge xDevice1__connection1____connections = (EMoflonEdge) result5_green[12];
-			//nothing EMoflonEdge xContainer__xCable____elements = (EMoflonEdge) result5_green[13];
+			//nothing EMoflonEdge xDevice2__connection2____connections = (EMoflonEdge) result5_green[11];
+			//nothing EMoflonEdge xContainer__xDevice1____elements = (EMoflonEdge) result5_green[12];
+			//nothing EMoflonEdge xCable__cableAttributes____cableAttributes = (EMoflonEdge) result5_green[13];
 
 			// 
 			XSimplexConnectionToConnectionRuleImpl
 					.pattern_XSimplexConnectionToConnectionRule_0_6_registerobjectstomatch_expressionBBBBBBBBB(this,
-							match, xCable, xDevice2, connection2, cableAttributes, xContainer, connection1, xDevice1);
+							match, xContainer, xDevice1, connection1, connection2, cableAttributes, xDevice2, xCable);
 			return XSimplexConnectionToConnectionRuleImpl.pattern_XSimplexConnectionToConnectionRule_0_7_expressionF();
 		} else {
 			return XSimplexConnectionToConnectionRuleImpl.pattern_XSimplexConnectionToConnectionRule_0_8_expressionF();
@@ -191,23 +189,23 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
 					+ "[isApplicableMatch] = " + isApplicableMatch + ".");
 		}
-		XDeviceToDevice xDeviceToDevice = (XDeviceToDevice) result1_bindingAndBlack[0];
-		XCable xCable = (XCable) result1_bindingAndBlack[1];
-		XDevice xDevice2 = (XDevice) result1_bindingAndBlack[2];
-		Device device1 = (Device) result1_bindingAndBlack[3];
-		Connections connection2 = (Connections) result1_bindingAndBlack[4];
-		CableAttributes cableAttributes = (CableAttributes) result1_bindingAndBlack[5];
-		Container container = (Container) result1_bindingAndBlack[6];
-		XDeviceToDevice xDeviceToDevice2 = (XDeviceToDevice) result1_bindingAndBlack[7];
-		Cable cable = (Cable) result1_bindingAndBlack[8];
-		XContainer xContainer = (XContainer) result1_bindingAndBlack[9];
-		Connections connection1 = (Connections) result1_bindingAndBlack[10];
-		Device device2 = (Device) result1_bindingAndBlack[11];
-		XDevice xDevice1 = (XDevice) result1_bindingAndBlack[12];
+		XContainer xContainer = (XContainer) result1_bindingAndBlack[0];
+		XDeviceToDevice xDeviceToDevice = (XDeviceToDevice) result1_bindingAndBlack[1];
+		Device device2 = (Device) result1_bindingAndBlack[2];
+		XDevice xDevice1 = (XDevice) result1_bindingAndBlack[3];
+		Connections connection1 = (Connections) result1_bindingAndBlack[4];
+		Connections connection2 = (Connections) result1_bindingAndBlack[5];
+		CableAttributes cableAttributes = (CableAttributes) result1_bindingAndBlack[6];
+		Container container = (Container) result1_bindingAndBlack[7];
+		XDevice xDevice2 = (XDevice) result1_bindingAndBlack[8];
+		Device device1 = (Device) result1_bindingAndBlack[9];
+		Cable cable = (Cable) result1_bindingAndBlack[10];
+		XDeviceToDevice xDeviceToDevice2 = (XDeviceToDevice) result1_bindingAndBlack[11];
+		XCable xCable = (XCable) result1_bindingAndBlack[12];
 		XCableToCable xCableToCable = (XCableToCable) result1_bindingAndBlack[13];
 		//nothing CSP csp = (CSP) result1_bindingAndBlack[14];
 		XSimplexConnectionToConnectionRuleImpl
-				.pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_greenBBB(device1, cable, device2);
+				.pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_greenBBB(device2, device1, cable);
 
 		Object[] result2_green = XSimplexConnectionToConnectionRuleImpl
 				.pattern_XSimplexConnectionToConnectionRule_1_2_collecttranslatedelements_greenF();
@@ -218,35 +216,36 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 
 		Object[] result3_black = XSimplexConnectionToConnectionRuleImpl
 				.pattern_XSimplexConnectionToConnectionRule_1_3_bookkeepingforedges_blackBBBBBBBBBBBBBBB(ruleresult,
-						xDeviceToDevice, xCable, xDevice2, device1, connection2, cableAttributes, container,
-						xDeviceToDevice2, cable, xContainer, connection1, device2, xDevice1, xCableToCable);
+						xContainer, xDeviceToDevice, device2, xDevice1, connection1, connection2, cableAttributes,
+						container, xDevice2, device1, cable, xDeviceToDevice2, xCable, xCableToCable);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[ruleresult] = " + ruleresult
-					+ ", " + "[xDeviceToDevice] = " + xDeviceToDevice + ", " + "[xCable] = " + xCable + ", "
-					+ "[xDevice2] = " + xDevice2 + ", " + "[device1] = " + device1 + ", " + "[connection2] = "
-					+ connection2 + ", " + "[cableAttributes] = " + cableAttributes + ", " + "[container] = "
-					+ container + ", " + "[xDeviceToDevice2] = " + xDeviceToDevice2 + ", " + "[cable] = " + cable + ", "
-					+ "[xContainer] = " + xContainer + ", " + "[connection1] = " + connection1 + ", " + "[device2] = "
-					+ device2 + ", " + "[xDevice1] = " + xDevice1 + ", " + "[xCableToCable] = " + xCableToCable + ".");
+					+ ", " + "[xContainer] = " + xContainer + ", " + "[xDeviceToDevice] = " + xDeviceToDevice + ", "
+					+ "[device2] = " + device2 + ", " + "[xDevice1] = " + xDevice1 + ", " + "[connection1] = "
+					+ connection1 + ", " + "[connection2] = " + connection2 + ", " + "[cableAttributes] = "
+					+ cableAttributes + ", " + "[container] = " + container + ", " + "[xDevice2] = " + xDevice2 + ", "
+					+ "[device1] = " + device1 + ", " + "[cable] = " + cable + ", " + "[xDeviceToDevice2] = "
+					+ xDeviceToDevice2 + ", " + "[xCable] = " + xCable + ", " + "[xCableToCable] = " + xCableToCable
+					+ ".");
 		}
 		XSimplexConnectionToConnectionRuleImpl
 				.pattern_XSimplexConnectionToConnectionRule_1_3_bookkeepingforedges_greenBBBBBBBBBBFFFFFFFF(ruleresult,
-						xCable, xDevice2, device1, connection2, cableAttributes, cable, connection1, device2, xDevice1);
-		//nothing EMoflonEdge connection2__xCable____incoming = (EMoflonEdge) result3_green[10];
-		//nothing EMoflonEdge cable__device1____source = (EMoflonEdge) result3_green[11];
-		//nothing EMoflonEdge device1__cable____outgoing = (EMoflonEdge) result3_green[12];
-		//nothing EMoflonEdge cableAttributes__xDevice1____endPoint1 = (EMoflonEdge) result3_green[13];
-		//nothing EMoflonEdge cableAttributes__xDevice2____endPoint2 = (EMoflonEdge) result3_green[14];
-		//nothing EMoflonEdge connection1__xCable____outgoing = (EMoflonEdge) result3_green[15];
-		//nothing EMoflonEdge cable__device2____target = (EMoflonEdge) result3_green[16];
-		//nothing EMoflonEdge device2__cable____incoming = (EMoflonEdge) result3_green[17];
+						device2, xDevice1, connection1, connection2, cableAttributes, xDevice2, device1, cable, xCable);
+		//nothing EMoflonEdge connection1__xCable____outgoing = (EMoflonEdge) result3_green[10];
+		//nothing EMoflonEdge cableAttributes__xDevice2____endPoint2 = (EMoflonEdge) result3_green[11];
+		//nothing EMoflonEdge cable__device2____target = (EMoflonEdge) result3_green[12];
+		//nothing EMoflonEdge device2__cable____incoming = (EMoflonEdge) result3_green[13];
+		//nothing EMoflonEdge cable__device1____source = (EMoflonEdge) result3_green[14];
+		//nothing EMoflonEdge device1__cable____outgoing = (EMoflonEdge) result3_green[15];
+		//nothing EMoflonEdge cableAttributes__xDevice1____endPoint1 = (EMoflonEdge) result3_green[16];
+		//nothing EMoflonEdge connection2__xCable____incoming = (EMoflonEdge) result3_green[17];
 
 		// 
 		// 
 		XSimplexConnectionToConnectionRuleImpl
 				.pattern_XSimplexConnectionToConnectionRule_1_5_registerobjects_expressionBBBBBBBBBBBBBBBB(this,
-						ruleresult, xDeviceToDevice, xCable, xDevice2, device1, connection2, cableAttributes, container,
-						xDeviceToDevice2, cable, xContainer, connection1, device2, xDevice1, xCableToCable);
+						ruleresult, xContainer, xDeviceToDevice, device2, xDevice1, connection1, connection2,
+						cableAttributes, container, xDevice2, device1, cable, xDeviceToDevice2, xCable, xCableToCable);
 		return XSimplexConnectionToConnectionRuleImpl
 				.pattern_XSimplexConnectionToConnectionRule_1_6_expressionFB(ruleresult);
 	}
@@ -276,68 +275,68 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 			throw new RuntimeException(
 					"Binding in node core match failed." + " Variables: " + "[match] = " + match + ".");
 		}
-		XCable xCable = (XCable) result2_binding[0];
-		XDevice xDevice2 = (XDevice) result2_binding[1];
-		Connections connection2 = (Connections) result2_binding[2];
-		CableAttributes cableAttributes = (CableAttributes) result2_binding[3];
-		XContainer xContainer = (XContainer) result2_binding[4];
-		Connections connection1 = (Connections) result2_binding[5];
-		XDevice xDevice1 = (XDevice) result2_binding[6];
+		XContainer xContainer = (XContainer) result2_binding[0];
+		XDevice xDevice1 = (XDevice) result2_binding[1];
+		Connections connection1 = (Connections) result2_binding[2];
+		Connections connection2 = (Connections) result2_binding[3];
+		CableAttributes cableAttributes = (CableAttributes) result2_binding[4];
+		XDevice xDevice2 = (XDevice) result2_binding[5];
+		XCable xCable = (XCable) result2_binding[6];
 		for (Object[] result2_black : XSimplexConnectionToConnectionRuleImpl
-				.pattern_XSimplexConnectionToConnectionRule_2_2_corematch_blackFBBFBBFFBBFBFB(xCable, xDevice2,
-						connection2, cableAttributes, xContainer, connection1, xDevice1, match)) {
-			XDeviceToDevice xDeviceToDevice = (XDeviceToDevice) result2_black[0];
-			Device device1 = (Device) result2_black[3];
-			XDeviceToDevice xDeviceToDevice2 = (XDeviceToDevice) result2_black[6];
-			Cable cable = (Cable) result2_black[7];
-			Device device2 = (Device) result2_black[10];
+				.pattern_XSimplexConnectionToConnectionRule_2_2_corematch_blackBFFBBBBBFFFBFB(xContainer, xDevice1,
+						connection1, connection2, cableAttributes, xDevice2, xCable, match)) {
+			XDeviceToDevice xDeviceToDevice = (XDeviceToDevice) result2_black[1];
+			Device device2 = (Device) result2_black[2];
+			Device device1 = (Device) result2_black[8];
+			Cable cable = (Cable) result2_black[9];
+			XDeviceToDevice xDeviceToDevice2 = (XDeviceToDevice) result2_black[10];
 			XCableToCable xCableToCable = (XCableToCable) result2_black[12];
 			// ForEach 
 			for (Object[] result3_black : XSimplexConnectionToConnectionRuleImpl
-					.pattern_XSimplexConnectionToConnectionRule_2_3_findcontext_blackBBBBBBFBBBBBBB(xDeviceToDevice,
-							xCable, xDevice2, device1, connection2, cableAttributes, xDeviceToDevice2, cable,
-							xContainer, connection1, device2, xDevice1, xCableToCable)) {
-				Container container = (Container) result3_black[6];
+					.pattern_XSimplexConnectionToConnectionRule_2_3_findcontext_blackBBBBBBBFBBBBBB(xContainer,
+							xDeviceToDevice, device2, xDevice1, connection1, connection2, cableAttributes, xDevice2,
+							device1, cable, xDeviceToDevice2, xCable, xCableToCable)) {
+				Container container = (Container) result3_black[7];
 				Object[] result3_green = XSimplexConnectionToConnectionRuleImpl
 						.pattern_XSimplexConnectionToConnectionRule_2_3_findcontext_greenBBBBBBBBBBBBBBFFFFFFFFFFFFFFFFFFFF(
-								xDeviceToDevice, xCable, xDevice2, device1, connection2, cableAttributes, container,
-								xDeviceToDevice2, cable, xContainer, connection1, device2, xDevice1, xCableToCable);
+								xContainer, xDeviceToDevice, device2, xDevice1, connection1, connection2,
+								cableAttributes, container, xDevice2, device1, cable, xDeviceToDevice2, xCable,
+								xCableToCable);
 				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[14];
-				//nothing EMoflonEdge xCable__cableAttributes____cableAttributes = (EMoflonEdge) result3_green[15];
-				//nothing EMoflonEdge xDeviceToDevice2__xDevice2____source = (EMoflonEdge) result3_green[16];
-				//nothing EMoflonEdge connection2__xCable____incoming = (EMoflonEdge) result3_green[17];
-				//nothing EMoflonEdge cableAttributes__xDevice1____endPoint1 = (EMoflonEdge) result3_green[18];
-				//nothing EMoflonEdge xDevice2__connection2____connections = (EMoflonEdge) result3_green[19];
-				//nothing EMoflonEdge xContainer__xDevice2____elements = (EMoflonEdge) result3_green[20];
-				//nothing EMoflonEdge container__cable____cables = (EMoflonEdge) result3_green[21];
-				//nothing EMoflonEdge xDeviceToDevice__device1____target = (EMoflonEdge) result3_green[22];
-				//nothing EMoflonEdge container__device2____devices = (EMoflonEdge) result3_green[23];
-				//nothing EMoflonEdge cableAttributes__xDevice2____endPoint2 = (EMoflonEdge) result3_green[24];
-				//nothing EMoflonEdge xContainer__xDevice1____elements = (EMoflonEdge) result3_green[25];
-				//nothing EMoflonEdge xDeviceToDevice__xDevice1____source = (EMoflonEdge) result3_green[26];
-				//nothing EMoflonEdge xDevice1__connection1____connections = (EMoflonEdge) result3_green[27];
-				//nothing EMoflonEdge container__device1____devices = (EMoflonEdge) result3_green[28];
+				//nothing EMoflonEdge xDeviceToDevice__xDevice1____source = (EMoflonEdge) result3_green[15];
+				//nothing EMoflonEdge xDevice1__connection1____connections = (EMoflonEdge) result3_green[16];
+				//nothing EMoflonEdge connection1__xCable____outgoing = (EMoflonEdge) result3_green[17];
+				//nothing EMoflonEdge xContainer__xCable____elements = (EMoflonEdge) result3_green[18];
+				//nothing EMoflonEdge xContainer__xDevice2____elements = (EMoflonEdge) result3_green[19];
+				//nothing EMoflonEdge cableAttributes__xDevice2____endPoint2 = (EMoflonEdge) result3_green[20];
+				//nothing EMoflonEdge container__device1____devices = (EMoflonEdge) result3_green[21];
+				//nothing EMoflonEdge container__cable____cables = (EMoflonEdge) result3_green[22];
+				//nothing EMoflonEdge xDevice2__connection2____connections = (EMoflonEdge) result3_green[23];
+				//nothing EMoflonEdge xDeviceToDevice2__xDevice2____source = (EMoflonEdge) result3_green[24];
+				//nothing EMoflonEdge cableAttributes__xDevice1____endPoint1 = (EMoflonEdge) result3_green[25];
+				//nothing EMoflonEdge xCableToCable__cable____target = (EMoflonEdge) result3_green[26];
+				//nothing EMoflonEdge xCableToCable__xCable____source = (EMoflonEdge) result3_green[27];
+				//nothing EMoflonEdge xContainer__xDevice1____elements = (EMoflonEdge) result3_green[28];
 				//nothing EMoflonEdge xDeviceToDevice2__device2____target = (EMoflonEdge) result3_green[29];
-				//nothing EMoflonEdge connection1__xCable____outgoing = (EMoflonEdge) result3_green[30];
-				//nothing EMoflonEdge xCableToCable__xCable____source = (EMoflonEdge) result3_green[31];
-				//nothing EMoflonEdge xCableToCable__cable____target = (EMoflonEdge) result3_green[32];
-				//nothing EMoflonEdge xContainer__xCable____elements = (EMoflonEdge) result3_green[33];
+				//nothing EMoflonEdge xDeviceToDevice__device1____target = (EMoflonEdge) result3_green[30];
+				//nothing EMoflonEdge connection2__xCable____incoming = (EMoflonEdge) result3_green[31];
+				//nothing EMoflonEdge xCable__cableAttributes____cableAttributes = (EMoflonEdge) result3_green[32];
+				//nothing EMoflonEdge container__device2____devices = (EMoflonEdge) result3_green[33];
 
 				Object[] result4_bindingAndBlack = XSimplexConnectionToConnectionRuleImpl
 						.pattern_XSimplexConnectionToConnectionRule_2_4_solveCSP_bindingAndBlackFBBBBBBBBBBBBBBBB(this,
-								isApplicableMatch, xDeviceToDevice, xCable, xDevice2, device1, connection2,
-								cableAttributes, container, xDeviceToDevice2, cable, xContainer, connection1, device2,
-								xDevice1, xCableToCable);
+								isApplicableMatch, xContainer, xDeviceToDevice, device2, xDevice1, connection1,
+								connection2, cableAttributes, container, xDevice2, device1, cable, xDeviceToDevice2,
+								xCable, xCableToCable);
 				if (result4_bindingAndBlack == null) {
 					throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
-							+ "[isApplicableMatch] = " + isApplicableMatch + ", " + "[xDeviceToDevice] = "
-							+ xDeviceToDevice + ", " + "[xCable] = " + xCable + ", " + "[xDevice2] = " + xDevice2 + ", "
-							+ "[device1] = " + device1 + ", " + "[connection2] = " + connection2 + ", "
-							+ "[cableAttributes] = " + cableAttributes + ", " + "[container] = " + container + ", "
-							+ "[xDeviceToDevice2] = " + xDeviceToDevice2 + ", " + "[cable] = " + cable + ", "
-							+ "[xContainer] = " + xContainer + ", " + "[connection1] = " + connection1 + ", "
-							+ "[device2] = " + device2 + ", " + "[xDevice1] = " + xDevice1 + ", " + "[xCableToCable] = "
-							+ xCableToCable + ".");
+							+ "[isApplicableMatch] = " + isApplicableMatch + ", " + "[xContainer] = " + xContainer
+							+ ", " + "[xDeviceToDevice] = " + xDeviceToDevice + ", " + "[device2] = " + device2 + ", "
+							+ "[xDevice1] = " + xDevice1 + ", " + "[connection1] = " + connection1 + ", "
+							+ "[connection2] = " + connection2 + ", " + "[cableAttributes] = " + cableAttributes + ", "
+							+ "[container] = " + container + ", " + "[xDevice2] = " + xDevice2 + ", " + "[device1] = "
+							+ device1 + ", " + "[cable] = " + cable + ", " + "[xDeviceToDevice2] = " + xDeviceToDevice2
+							+ ", " + "[xCable] = " + xCable + ", " + "[xCableToCable] = " + xCableToCable + ".");
 				}
 				CSP csp = (CSP) result4_bindingAndBlack[0];
 				// 
@@ -370,15 +369,16 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjectsToMatch_FWD(Match match, XCable xCable, XDevice xDevice2, Connections connection2,
-			CableAttributes cableAttributes, XContainer xContainer, Connections connection1, XDevice xDevice1) {
-		match.registerObject("xCable", xCable);
-		match.registerObject("xDevice2", xDevice2);
+	public void registerObjectsToMatch_FWD(Match match, XContainer xContainer, XDevice xDevice1,
+			Connections connection1, Connections connection2, CableAttributes cableAttributes, XDevice xDevice2,
+			XCable xCable) {
+		match.registerObject("xContainer", xContainer);
+		match.registerObject("xDevice1", xDevice1);
+		match.registerObject("connection1", connection1);
 		match.registerObject("connection2", connection2);
 		match.registerObject("cableAttributes", cableAttributes);
-		match.registerObject("xContainer", xContainer);
-		match.registerObject("connection1", connection1);
-		match.registerObject("xDevice1", xDevice1);
+		match.registerObject("xDevice2", xDevice2);
+		match.registerObject("xCable", xCable);
 
 	}
 
@@ -387,8 +387,8 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isAppropriate_solveCsp_FWD(Match match, XCable xCable, XDevice xDevice2, Connections connection2,
-			CableAttributes cableAttributes, XContainer xContainer, Connections connection1, XDevice xDevice1) {// Create CSP
+	public CSP isAppropriate_solveCsp_FWD(Match match, XContainer xContainer, XDevice xDevice1, Connections connection1,
+			Connections connection2, CableAttributes cableAttributes, XDevice xDevice2, XCable xCable) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 
 		// Create literals
@@ -417,10 +417,10 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, XDeviceToDevice xDeviceToDevice,
-			XCable xCable, XDevice xDevice2, Device device1, Connections connection2, CableAttributes cableAttributes,
-			Container container, XDeviceToDevice xDeviceToDevice2, Cable cable, XContainer xContainer,
-			Connections connection1, Device device2, XDevice xDevice1, XCableToCable xCableToCable) {// Create CSP
+	public CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, XContainer xContainer,
+			XDeviceToDevice xDeviceToDevice, Device device2, XDevice xDevice1, Connections connection1,
+			Connections connection2, CableAttributes cableAttributes, Container container, XDevice xDevice2,
+			Device device1, Cable cable, XDeviceToDevice xDeviceToDevice2, XCable xCable, XCableToCable xCableToCable) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -447,19 +447,19 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 		eq.solve(var_cableAttributes_speed, var_cable_speed);
 
 		// Snapshot pattern match on which CSP is solved
+		isApplicableMatch.registerObject("xContainer", xContainer);
 		isApplicableMatch.registerObject("xDeviceToDevice", xDeviceToDevice);
-		isApplicableMatch.registerObject("xCable", xCable);
-		isApplicableMatch.registerObject("xDevice2", xDevice2);
-		isApplicableMatch.registerObject("device1", device1);
+		isApplicableMatch.registerObject("device2", device2);
+		isApplicableMatch.registerObject("xDevice1", xDevice1);
+		isApplicableMatch.registerObject("connection1", connection1);
 		isApplicableMatch.registerObject("connection2", connection2);
 		isApplicableMatch.registerObject("cableAttributes", cableAttributes);
 		isApplicableMatch.registerObject("container", container);
-		isApplicableMatch.registerObject("xDeviceToDevice2", xDeviceToDevice2);
+		isApplicableMatch.registerObject("xDevice2", xDevice2);
+		isApplicableMatch.registerObject("device1", device1);
 		isApplicableMatch.registerObject("cable", cable);
-		isApplicableMatch.registerObject("xContainer", xContainer);
-		isApplicableMatch.registerObject("connection1", connection1);
-		isApplicableMatch.registerObject("device2", device2);
-		isApplicableMatch.registerObject("xDevice1", xDevice1);
+		isApplicableMatch.registerObject("xDeviceToDevice2", xDeviceToDevice2);
+		isApplicableMatch.registerObject("xCable", xCable);
 		isApplicableMatch.registerObject("xCableToCable", xCableToCable);
 		return csp;
 	}
@@ -478,23 +478,23 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjects_FWD(PerformRuleResult ruleresult, EObject xDeviceToDevice, EObject xCable,
-			EObject xDevice2, EObject device1, EObject connection2, EObject cableAttributes, EObject container,
-			EObject xDeviceToDevice2, EObject cable, EObject xContainer, EObject connection1, EObject device2,
-			EObject xDevice1, EObject xCableToCable) {
+	public void registerObjects_FWD(PerformRuleResult ruleresult, EObject xContainer, EObject xDeviceToDevice,
+			EObject device2, EObject xDevice1, EObject connection1, EObject connection2, EObject cableAttributes,
+			EObject container, EObject xDevice2, EObject device1, EObject cable, EObject xDeviceToDevice2,
+			EObject xCable, EObject xCableToCable) {
+		ruleresult.registerObject("xContainer", xContainer);
 		ruleresult.registerObject("xDeviceToDevice", xDeviceToDevice);
-		ruleresult.registerObject("xCable", xCable);
-		ruleresult.registerObject("xDevice2", xDevice2);
-		ruleresult.registerObject("device1", device1);
+		ruleresult.registerObject("device2", device2);
+		ruleresult.registerObject("xDevice1", xDevice1);
+		ruleresult.registerObject("connection1", connection1);
 		ruleresult.registerObject("connection2", connection2);
 		ruleresult.registerObject("cableAttributes", cableAttributes);
 		ruleresult.registerObject("container", container);
-		ruleresult.registerObject("xDeviceToDevice2", xDeviceToDevice2);
+		ruleresult.registerObject("xDevice2", xDevice2);
+		ruleresult.registerObject("device1", device1);
 		ruleresult.registerObject("cable", cable);
-		ruleresult.registerObject("xContainer", xContainer);
-		ruleresult.registerObject("connection1", connection1);
-		ruleresult.registerObject("device2", device2);
-		ruleresult.registerObject("xDevice1", xDevice1);
+		ruleresult.registerObject("xDeviceToDevice2", xDeviceToDevice2);
+		ruleresult.registerObject("xCable", xCable);
 		ruleresult.registerObject("xCableToCable", xCableToCable);
 
 	}
@@ -513,24 +513,24 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isAppropriate_BWD(Match match, Device device1, Container container, Cable cable, Device device2) {
+	public boolean isAppropriate_BWD(Match match, Device device2, Container container, Device device1, Cable cable) {
 
 		Object[] result1_black = XSimplexConnectionToConnectionRuleImpl
-				.pattern_XSimplexConnectionToConnectionRule_10_1_initialbindings_blackBBBBBB(this, match, device1,
-						container, cable, device2);
+				.pattern_XSimplexConnectionToConnectionRule_10_1_initialbindings_blackBBBBBB(this, match, device2,
+						container, device1, cable);
 		if (result1_black == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
-					+ "[match] = " + match + ", " + "[device1] = " + device1 + ", " + "[container] = " + container
-					+ ", " + "[cable] = " + cable + ", " + "[device2] = " + device2 + ".");
+					+ "[match] = " + match + ", " + "[device2] = " + device2 + ", " + "[container] = " + container
+					+ ", " + "[device1] = " + device1 + ", " + "[cable] = " + cable + ".");
 		}
 
 		Object[] result2_bindingAndBlack = XSimplexConnectionToConnectionRuleImpl
-				.pattern_XSimplexConnectionToConnectionRule_10_2_SolveCSP_bindingAndBlackFBBBBBB(this, match, device1,
-						container, cable, device2);
+				.pattern_XSimplexConnectionToConnectionRule_10_2_SolveCSP_bindingAndBlackFBBBBBB(this, match, device2,
+						container, device1, cable);
 		if (result2_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
-					+ "[match] = " + match + ", " + "[device1] = " + device1 + ", " + "[container] = " + container
-					+ ", " + "[cable] = " + cable + ", " + "[device2] = " + device2 + ".");
+					+ "[match] = " + match + ", " + "[device2] = " + device2 + ", " + "[container] = " + container
+					+ ", " + "[device1] = " + device1 + ", " + "[cable] = " + cable + ".");
 		}
 		CSP csp = (CSP) result2_bindingAndBlack[0];
 		// 
@@ -539,39 +539,39 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 
 			Object[] result4_black = XSimplexConnectionToConnectionRuleImpl
 					.pattern_XSimplexConnectionToConnectionRule_10_4_collectelementstobetranslated_blackBBBBB(match,
-							device1, container, cable, device2);
+							device2, container, device1, cable);
 			if (result4_black == null) {
 				throw new RuntimeException("Pattern matching failed." + " Variables: " + "[match] = " + match + ", "
-						+ "[device1] = " + device1 + ", " + "[container] = " + container + ", " + "[cable] = " + cable
-						+ ", " + "[device2] = " + device2 + ".");
+						+ "[device2] = " + device2 + ", " + "[container] = " + container + ", " + "[device1] = "
+						+ device1 + ", " + "[cable] = " + cable + ".");
 			}
 			XSimplexConnectionToConnectionRuleImpl
 					.pattern_XSimplexConnectionToConnectionRule_10_4_collectelementstobetranslated_greenBBBBFFFF(match,
-							device1, cable, device2);
-			//nothing EMoflonEdge cable__device1____source = (EMoflonEdge) result4_green[4];
-			//nothing EMoflonEdge device1__cable____outgoing = (EMoflonEdge) result4_green[5];
-			//nothing EMoflonEdge cable__device2____target = (EMoflonEdge) result4_green[6];
-			//nothing EMoflonEdge device2__cable____incoming = (EMoflonEdge) result4_green[7];
+							device2, device1, cable);
+			//nothing EMoflonEdge cable__device2____target = (EMoflonEdge) result4_green[4];
+			//nothing EMoflonEdge device2__cable____incoming = (EMoflonEdge) result4_green[5];
+			//nothing EMoflonEdge cable__device1____source = (EMoflonEdge) result4_green[6];
+			//nothing EMoflonEdge device1__cable____outgoing = (EMoflonEdge) result4_green[7];
 
 			Object[] result5_black = XSimplexConnectionToConnectionRuleImpl
-					.pattern_XSimplexConnectionToConnectionRule_10_5_collectcontextelements_blackBBBBB(match, device1,
-							container, cable, device2);
+					.pattern_XSimplexConnectionToConnectionRule_10_5_collectcontextelements_blackBBBBB(match, device2,
+							container, device1, cable);
 			if (result5_black == null) {
 				throw new RuntimeException("Pattern matching failed." + " Variables: " + "[match] = " + match + ", "
-						+ "[device1] = " + device1 + ", " + "[container] = " + container + ", " + "[cable] = " + cable
-						+ ", " + "[device2] = " + device2 + ".");
+						+ "[device2] = " + device2 + ", " + "[container] = " + container + ", " + "[device1] = "
+						+ device1 + ", " + "[cable] = " + cable + ".");
 			}
 			XSimplexConnectionToConnectionRuleImpl
 					.pattern_XSimplexConnectionToConnectionRule_10_5_collectcontextelements_greenBBBBBFFF(match,
-							device1, container, cable, device2);
-			//nothing EMoflonEdge container__cable____cables = (EMoflonEdge) result5_green[5];
-			//nothing EMoflonEdge container__device2____devices = (EMoflonEdge) result5_green[6];
-			//nothing EMoflonEdge container__device1____devices = (EMoflonEdge) result5_green[7];
+							device2, container, device1, cable);
+			//nothing EMoflonEdge container__device1____devices = (EMoflonEdge) result5_green[5];
+			//nothing EMoflonEdge container__cable____cables = (EMoflonEdge) result5_green[6];
+			//nothing EMoflonEdge container__device2____devices = (EMoflonEdge) result5_green[7];
 
 			// 
 			XSimplexConnectionToConnectionRuleImpl
 					.pattern_XSimplexConnectionToConnectionRule_10_6_registerobjectstomatch_expressionBBBBBB(this,
-							match, device1, container, cable, device2);
+							match, device2, container, device1, cable);
 			return XSimplexConnectionToConnectionRuleImpl.pattern_XSimplexConnectionToConnectionRule_10_7_expressionF();
 		} else {
 			return XSimplexConnectionToConnectionRuleImpl.pattern_XSimplexConnectionToConnectionRule_10_8_expressionF();
@@ -593,24 +593,24 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
 					+ "[isApplicableMatch] = " + isApplicableMatch + ".");
 		}
-		XDeviceToDevice xDeviceToDevice = (XDeviceToDevice) result1_bindingAndBlack[0];
-		XCable xCable = (XCable) result1_bindingAndBlack[1];
-		XDevice xDevice2 = (XDevice) result1_bindingAndBlack[2];
-		Device device1 = (Device) result1_bindingAndBlack[3];
-		Connections connection2 = (Connections) result1_bindingAndBlack[4];
-		CableAttributes cableAttributes = (CableAttributes) result1_bindingAndBlack[5];
-		Container container = (Container) result1_bindingAndBlack[6];
-		XDeviceToDevice xDeviceToDevice2 = (XDeviceToDevice) result1_bindingAndBlack[7];
-		Cable cable = (Cable) result1_bindingAndBlack[8];
-		XContainer xContainer = (XContainer) result1_bindingAndBlack[9];
-		Connections connection1 = (Connections) result1_bindingAndBlack[10];
-		Device device2 = (Device) result1_bindingAndBlack[11];
-		XDevice xDevice1 = (XDevice) result1_bindingAndBlack[12];
+		XContainer xContainer = (XContainer) result1_bindingAndBlack[0];
+		XDeviceToDevice xDeviceToDevice = (XDeviceToDevice) result1_bindingAndBlack[1];
+		Device device2 = (Device) result1_bindingAndBlack[2];
+		XDevice xDevice1 = (XDevice) result1_bindingAndBlack[3];
+		Connections connection1 = (Connections) result1_bindingAndBlack[4];
+		Connections connection2 = (Connections) result1_bindingAndBlack[5];
+		CableAttributes cableAttributes = (CableAttributes) result1_bindingAndBlack[6];
+		Container container = (Container) result1_bindingAndBlack[7];
+		XDevice xDevice2 = (XDevice) result1_bindingAndBlack[8];
+		Device device1 = (Device) result1_bindingAndBlack[9];
+		Cable cable = (Cable) result1_bindingAndBlack[10];
+		XDeviceToDevice xDeviceToDevice2 = (XDeviceToDevice) result1_bindingAndBlack[11];
+		XCable xCable = (XCable) result1_bindingAndBlack[12];
 		XCableToCable xCableToCable = (XCableToCable) result1_bindingAndBlack[13];
 		//nothing CSP csp = (CSP) result1_bindingAndBlack[14];
 		XSimplexConnectionToConnectionRuleImpl
-				.pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_greenBBBBBB(xCable, xDevice2,
-						connection2, cableAttributes, connection1, xDevice1);
+				.pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_greenBBBBBB(xDevice1,
+						connection1, connection2, cableAttributes, xDevice2, xCable);
 
 		Object[] result2_green = XSimplexConnectionToConnectionRuleImpl
 				.pattern_XSimplexConnectionToConnectionRule_11_2_collecttranslatedelements_greenF();
@@ -621,35 +621,36 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 
 		Object[] result3_black = XSimplexConnectionToConnectionRuleImpl
 				.pattern_XSimplexConnectionToConnectionRule_11_3_bookkeepingforedges_blackBBBBBBBBBBBBBBB(ruleresult,
-						xDeviceToDevice, xCable, xDevice2, device1, connection2, cableAttributes, container,
-						xDeviceToDevice2, cable, xContainer, connection1, device2, xDevice1, xCableToCable);
+						xContainer, xDeviceToDevice, device2, xDevice1, connection1, connection2, cableAttributes,
+						container, xDevice2, device1, cable, xDeviceToDevice2, xCable, xCableToCable);
 		if (result3_black == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[ruleresult] = " + ruleresult
-					+ ", " + "[xDeviceToDevice] = " + xDeviceToDevice + ", " + "[xCable] = " + xCable + ", "
-					+ "[xDevice2] = " + xDevice2 + ", " + "[device1] = " + device1 + ", " + "[connection2] = "
-					+ connection2 + ", " + "[cableAttributes] = " + cableAttributes + ", " + "[container] = "
-					+ container + ", " + "[xDeviceToDevice2] = " + xDeviceToDevice2 + ", " + "[cable] = " + cable + ", "
-					+ "[xContainer] = " + xContainer + ", " + "[connection1] = " + connection1 + ", " + "[device2] = "
-					+ device2 + ", " + "[xDevice1] = " + xDevice1 + ", " + "[xCableToCable] = " + xCableToCable + ".");
+					+ ", " + "[xContainer] = " + xContainer + ", " + "[xDeviceToDevice] = " + xDeviceToDevice + ", "
+					+ "[device2] = " + device2 + ", " + "[xDevice1] = " + xDevice1 + ", " + "[connection1] = "
+					+ connection1 + ", " + "[connection2] = " + connection2 + ", " + "[cableAttributes] = "
+					+ cableAttributes + ", " + "[container] = " + container + ", " + "[xDevice2] = " + xDevice2 + ", "
+					+ "[device1] = " + device1 + ", " + "[cable] = " + cable + ", " + "[xDeviceToDevice2] = "
+					+ xDeviceToDevice2 + ", " + "[xCable] = " + xCable + ", " + "[xCableToCable] = " + xCableToCable
+					+ ".");
 		}
 		XSimplexConnectionToConnectionRuleImpl
 				.pattern_XSimplexConnectionToConnectionRule_11_3_bookkeepingforedges_greenBBBBBBBBBBFFFFFFFF(ruleresult,
-						xCable, xDevice2, device1, connection2, cableAttributes, cable, connection1, device2, xDevice1);
-		//nothing EMoflonEdge connection2__xCable____incoming = (EMoflonEdge) result3_green[10];
-		//nothing EMoflonEdge cable__device1____source = (EMoflonEdge) result3_green[11];
-		//nothing EMoflonEdge device1__cable____outgoing = (EMoflonEdge) result3_green[12];
-		//nothing EMoflonEdge cableAttributes__xDevice1____endPoint1 = (EMoflonEdge) result3_green[13];
-		//nothing EMoflonEdge cableAttributes__xDevice2____endPoint2 = (EMoflonEdge) result3_green[14];
-		//nothing EMoflonEdge connection1__xCable____outgoing = (EMoflonEdge) result3_green[15];
-		//nothing EMoflonEdge cable__device2____target = (EMoflonEdge) result3_green[16];
-		//nothing EMoflonEdge device2__cable____incoming = (EMoflonEdge) result3_green[17];
+						device2, xDevice1, connection1, connection2, cableAttributes, xDevice2, device1, cable, xCable);
+		//nothing EMoflonEdge connection1__xCable____outgoing = (EMoflonEdge) result3_green[10];
+		//nothing EMoflonEdge cableAttributes__xDevice2____endPoint2 = (EMoflonEdge) result3_green[11];
+		//nothing EMoflonEdge cable__device2____target = (EMoflonEdge) result3_green[12];
+		//nothing EMoflonEdge device2__cable____incoming = (EMoflonEdge) result3_green[13];
+		//nothing EMoflonEdge cable__device1____source = (EMoflonEdge) result3_green[14];
+		//nothing EMoflonEdge device1__cable____outgoing = (EMoflonEdge) result3_green[15];
+		//nothing EMoflonEdge cableAttributes__xDevice1____endPoint1 = (EMoflonEdge) result3_green[16];
+		//nothing EMoflonEdge connection2__xCable____incoming = (EMoflonEdge) result3_green[17];
 
 		// 
 		// 
 		XSimplexConnectionToConnectionRuleImpl
 				.pattern_XSimplexConnectionToConnectionRule_11_5_registerobjects_expressionBBBBBBBBBBBBBBBB(this,
-						ruleresult, xDeviceToDevice, xCable, xDevice2, device1, connection2, cableAttributes, container,
-						xDeviceToDevice2, cable, xContainer, connection1, device2, xDevice1, xCableToCable);
+						ruleresult, xContainer, xDeviceToDevice, device2, xDevice1, connection1, connection2,
+						cableAttributes, container, xDevice2, device1, cable, xDeviceToDevice2, xCable, xCableToCable);
 		return XSimplexConnectionToConnectionRuleImpl
 				.pattern_XSimplexConnectionToConnectionRule_11_6_expressionFB(ruleresult);
 	}
@@ -679,68 +680,68 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 			throw new RuntimeException(
 					"Binding in node core match failed." + " Variables: " + "[match] = " + match + ".");
 		}
-		Device device1 = (Device) result2_binding[0];
+		Device device2 = (Device) result2_binding[0];
 		Container container = (Container) result2_binding[1];
-		Cable cable = (Cable) result2_binding[2];
-		Device device2 = (Device) result2_binding[3];
+		Device device1 = (Device) result2_binding[2];
+		Cable cable = (Cable) result2_binding[3];
 		for (Object[] result2_black : XSimplexConnectionToConnectionRuleImpl
-				.pattern_XSimplexConnectionToConnectionRule_12_2_corematch_blackFFFBBFBBFFB(device1, container, cable,
-						device2, match)) {
+				.pattern_XSimplexConnectionToConnectionRule_12_2_corematch_blackFBFBFBBFFFB(device2, container, device1,
+						cable, match)) {
 			XDeviceToDevice xDeviceToDevice = (XDeviceToDevice) result2_black[0];
-			XCable xCable = (XCable) result2_black[1];
-			XDevice xDevice2 = (XDevice) result2_black[2];
-			XDeviceToDevice xDeviceToDevice2 = (XDeviceToDevice) result2_black[5];
-			XDevice xDevice1 = (XDevice) result2_black[8];
+			XDevice xDevice1 = (XDevice) result2_black[2];
+			XDevice xDevice2 = (XDevice) result2_black[4];
+			XDeviceToDevice xDeviceToDevice2 = (XDeviceToDevice) result2_black[7];
+			XCable xCable = (XCable) result2_black[8];
 			XCableToCable xCableToCable = (XCableToCable) result2_black[9];
 			// ForEach 
 			for (Object[] result3_black : XSimplexConnectionToConnectionRuleImpl
-					.pattern_XSimplexConnectionToConnectionRule_12_3_findcontext_blackBBBBFFBBBFFBBB(xDeviceToDevice,
-							xCable, xDevice2, device1, container, xDeviceToDevice2, cable, device2, xDevice1,
+					.pattern_XSimplexConnectionToConnectionRule_12_3_findcontext_blackFBBBFFFBBBBBBB(xDeviceToDevice,
+							device2, xDevice1, container, xDevice2, device1, cable, xDeviceToDevice2, xCable,
 							xCableToCable)) {
-				Connections connection2 = (Connections) result3_black[4];
-				CableAttributes cableAttributes = (CableAttributes) result3_black[5];
-				XContainer xContainer = (XContainer) result3_black[9];
-				Connections connection1 = (Connections) result3_black[10];
+				XContainer xContainer = (XContainer) result3_black[0];
+				Connections connection1 = (Connections) result3_black[4];
+				Connections connection2 = (Connections) result3_black[5];
+				CableAttributes cableAttributes = (CableAttributes) result3_black[6];
 				Object[] result3_green = XSimplexConnectionToConnectionRuleImpl
 						.pattern_XSimplexConnectionToConnectionRule_12_3_findcontext_greenBBBBBBBBBBBBBBFFFFFFFFFFFFFFFFFFFF(
-								xDeviceToDevice, xCable, xDevice2, device1, connection2, cableAttributes, container,
-								xDeviceToDevice2, cable, xContainer, connection1, device2, xDevice1, xCableToCable);
+								xContainer, xDeviceToDevice, device2, xDevice1, connection1, connection2,
+								cableAttributes, container, xDevice2, device1, cable, xDeviceToDevice2, xCable,
+								xCableToCable);
 				IsApplicableMatch isApplicableMatch = (IsApplicableMatch) result3_green[14];
-				//nothing EMoflonEdge xCable__cableAttributes____cableAttributes = (EMoflonEdge) result3_green[15];
-				//nothing EMoflonEdge xDeviceToDevice2__xDevice2____source = (EMoflonEdge) result3_green[16];
-				//nothing EMoflonEdge cable__device1____source = (EMoflonEdge) result3_green[17];
-				//nothing EMoflonEdge device1__cable____outgoing = (EMoflonEdge) result3_green[18];
-				//nothing EMoflonEdge xDevice2__connection2____connections = (EMoflonEdge) result3_green[19];
-				//nothing EMoflonEdge xContainer__xDevice2____elements = (EMoflonEdge) result3_green[20];
-				//nothing EMoflonEdge container__cable____cables = (EMoflonEdge) result3_green[21];
-				//nothing EMoflonEdge xDeviceToDevice__device1____target = (EMoflonEdge) result3_green[22];
-				//nothing EMoflonEdge container__device2____devices = (EMoflonEdge) result3_green[23];
-				//nothing EMoflonEdge xContainer__xDevice1____elements = (EMoflonEdge) result3_green[24];
-				//nothing EMoflonEdge xDeviceToDevice__xDevice1____source = (EMoflonEdge) result3_green[25];
-				//nothing EMoflonEdge xDevice1__connection1____connections = (EMoflonEdge) result3_green[26];
-				//nothing EMoflonEdge container__device1____devices = (EMoflonEdge) result3_green[27];
-				//nothing EMoflonEdge xDeviceToDevice2__device2____target = (EMoflonEdge) result3_green[28];
-				//nothing EMoflonEdge xCableToCable__xCable____source = (EMoflonEdge) result3_green[29];
-				//nothing EMoflonEdge cable__device2____target = (EMoflonEdge) result3_green[30];
-				//nothing EMoflonEdge device2__cable____incoming = (EMoflonEdge) result3_green[31];
-				//nothing EMoflonEdge xCableToCable__cable____target = (EMoflonEdge) result3_green[32];
-				//nothing EMoflonEdge xContainer__xCable____elements = (EMoflonEdge) result3_green[33];
+				//nothing EMoflonEdge xDeviceToDevice__xDevice1____source = (EMoflonEdge) result3_green[15];
+				//nothing EMoflonEdge xDevice1__connection1____connections = (EMoflonEdge) result3_green[16];
+				//nothing EMoflonEdge xContainer__xCable____elements = (EMoflonEdge) result3_green[17];
+				//nothing EMoflonEdge xContainer__xDevice2____elements = (EMoflonEdge) result3_green[18];
+				//nothing EMoflonEdge container__device1____devices = (EMoflonEdge) result3_green[19];
+				//nothing EMoflonEdge container__cable____cables = (EMoflonEdge) result3_green[20];
+				//nothing EMoflonEdge cable__device2____target = (EMoflonEdge) result3_green[21];
+				//nothing EMoflonEdge device2__cable____incoming = (EMoflonEdge) result3_green[22];
+				//nothing EMoflonEdge xDevice2__connection2____connections = (EMoflonEdge) result3_green[23];
+				//nothing EMoflonEdge xDeviceToDevice2__xDevice2____source = (EMoflonEdge) result3_green[24];
+				//nothing EMoflonEdge cable__device1____source = (EMoflonEdge) result3_green[25];
+				//nothing EMoflonEdge device1__cable____outgoing = (EMoflonEdge) result3_green[26];
+				//nothing EMoflonEdge xCableToCable__cable____target = (EMoflonEdge) result3_green[27];
+				//nothing EMoflonEdge xCableToCable__xCable____source = (EMoflonEdge) result3_green[28];
+				//nothing EMoflonEdge xContainer__xDevice1____elements = (EMoflonEdge) result3_green[29];
+				//nothing EMoflonEdge xDeviceToDevice2__device2____target = (EMoflonEdge) result3_green[30];
+				//nothing EMoflonEdge xDeviceToDevice__device1____target = (EMoflonEdge) result3_green[31];
+				//nothing EMoflonEdge xCable__cableAttributes____cableAttributes = (EMoflonEdge) result3_green[32];
+				//nothing EMoflonEdge container__device2____devices = (EMoflonEdge) result3_green[33];
 
 				Object[] result4_bindingAndBlack = XSimplexConnectionToConnectionRuleImpl
 						.pattern_XSimplexConnectionToConnectionRule_12_4_solveCSP_bindingAndBlackFBBBBBBBBBBBBBBBB(this,
-								isApplicableMatch, xDeviceToDevice, xCable, xDevice2, device1, connection2,
-								cableAttributes, container, xDeviceToDevice2, cable, xContainer, connection1, device2,
-								xDevice1, xCableToCable);
+								isApplicableMatch, xContainer, xDeviceToDevice, device2, xDevice1, connection1,
+								connection2, cableAttributes, container, xDevice2, device1, cable, xDeviceToDevice2,
+								xCable, xCableToCable);
 				if (result4_bindingAndBlack == null) {
 					throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
-							+ "[isApplicableMatch] = " + isApplicableMatch + ", " + "[xDeviceToDevice] = "
-							+ xDeviceToDevice + ", " + "[xCable] = " + xCable + ", " + "[xDevice2] = " + xDevice2 + ", "
-							+ "[device1] = " + device1 + ", " + "[connection2] = " + connection2 + ", "
-							+ "[cableAttributes] = " + cableAttributes + ", " + "[container] = " + container + ", "
-							+ "[xDeviceToDevice2] = " + xDeviceToDevice2 + ", " + "[cable] = " + cable + ", "
-							+ "[xContainer] = " + xContainer + ", " + "[connection1] = " + connection1 + ", "
-							+ "[device2] = " + device2 + ", " + "[xDevice1] = " + xDevice1 + ", " + "[xCableToCable] = "
-							+ xCableToCable + ".");
+							+ "[isApplicableMatch] = " + isApplicableMatch + ", " + "[xContainer] = " + xContainer
+							+ ", " + "[xDeviceToDevice] = " + xDeviceToDevice + ", " + "[device2] = " + device2 + ", "
+							+ "[xDevice1] = " + xDevice1 + ", " + "[connection1] = " + connection1 + ", "
+							+ "[connection2] = " + connection2 + ", " + "[cableAttributes] = " + cableAttributes + ", "
+							+ "[container] = " + container + ", " + "[xDevice2] = " + xDevice2 + ", " + "[device1] = "
+							+ device1 + ", " + "[cable] = " + cable + ", " + "[xDeviceToDevice2] = " + xDeviceToDevice2
+							+ ", " + "[xCable] = " + xCable + ", " + "[xCableToCable] = " + xCableToCable + ".");
 				}
 				CSP csp = (CSP) result4_bindingAndBlack[0];
 				// 
@@ -773,12 +774,12 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjectsToMatch_BWD(Match match, Device device1, Container container, Cable cable,
-			Device device2) {
-		match.registerObject("device1", device1);
-		match.registerObject("container", container);
-		match.registerObject("cable", cable);
+	public void registerObjectsToMatch_BWD(Match match, Device device2, Container container, Device device1,
+			Cable cable) {
 		match.registerObject("device2", device2);
+		match.registerObject("container", container);
+		match.registerObject("device1", device1);
+		match.registerObject("cable", cable);
 
 	}
 
@@ -787,8 +788,8 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isAppropriate_solveCsp_BWD(Match match, Device device1, Container container, Cable cable,
-			Device device2) {// Create CSP
+	public CSP isAppropriate_solveCsp_BWD(Match match, Device device2, Container container, Device device1,
+			Cable cable) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 
 		// Create literals
@@ -817,10 +818,10 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, XDeviceToDevice xDeviceToDevice,
-			XCable xCable, XDevice xDevice2, Device device1, Connections connection2, CableAttributes cableAttributes,
-			Container container, XDeviceToDevice xDeviceToDevice2, Cable cable, XContainer xContainer,
-			Connections connection1, Device device2, XDevice xDevice1, XCableToCable xCableToCable) {// Create CSP
+	public CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, XContainer xContainer,
+			XDeviceToDevice xDeviceToDevice, Device device2, XDevice xDevice1, Connections connection1,
+			Connections connection2, CableAttributes cableAttributes, Container container, XDevice xDevice2,
+			Device device1, Cable cable, XDeviceToDevice xDeviceToDevice2, XCable xCable, XCableToCable xCableToCable) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
 
@@ -847,19 +848,19 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 		eq.solve(var_cableAttributes_speed, var_cable_speed);
 
 		// Snapshot pattern match on which CSP is solved
+		isApplicableMatch.registerObject("xContainer", xContainer);
 		isApplicableMatch.registerObject("xDeviceToDevice", xDeviceToDevice);
-		isApplicableMatch.registerObject("xCable", xCable);
-		isApplicableMatch.registerObject("xDevice2", xDevice2);
-		isApplicableMatch.registerObject("device1", device1);
+		isApplicableMatch.registerObject("device2", device2);
+		isApplicableMatch.registerObject("xDevice1", xDevice1);
+		isApplicableMatch.registerObject("connection1", connection1);
 		isApplicableMatch.registerObject("connection2", connection2);
 		isApplicableMatch.registerObject("cableAttributes", cableAttributes);
 		isApplicableMatch.registerObject("container", container);
-		isApplicableMatch.registerObject("xDeviceToDevice2", xDeviceToDevice2);
+		isApplicableMatch.registerObject("xDevice2", xDevice2);
+		isApplicableMatch.registerObject("device1", device1);
 		isApplicableMatch.registerObject("cable", cable);
-		isApplicableMatch.registerObject("xContainer", xContainer);
-		isApplicableMatch.registerObject("connection1", connection1);
-		isApplicableMatch.registerObject("device2", device2);
-		isApplicableMatch.registerObject("xDevice1", xDevice1);
+		isApplicableMatch.registerObject("xDeviceToDevice2", xDeviceToDevice2);
+		isApplicableMatch.registerObject("xCable", xCable);
 		isApplicableMatch.registerObject("xCableToCable", xCableToCable);
 		return csp;
 	}
@@ -878,23 +879,23 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject xDeviceToDevice, EObject xCable,
-			EObject xDevice2, EObject device1, EObject connection2, EObject cableAttributes, EObject container,
-			EObject xDeviceToDevice2, EObject cable, EObject xContainer, EObject connection1, EObject device2,
-			EObject xDevice1, EObject xCableToCable) {
+	public void registerObjects_BWD(PerformRuleResult ruleresult, EObject xContainer, EObject xDeviceToDevice,
+			EObject device2, EObject xDevice1, EObject connection1, EObject connection2, EObject cableAttributes,
+			EObject container, EObject xDevice2, EObject device1, EObject cable, EObject xDeviceToDevice2,
+			EObject xCable, EObject xCableToCable) {
+		ruleresult.registerObject("xContainer", xContainer);
 		ruleresult.registerObject("xDeviceToDevice", xDeviceToDevice);
-		ruleresult.registerObject("xCable", xCable);
-		ruleresult.registerObject("xDevice2", xDevice2);
-		ruleresult.registerObject("device1", device1);
+		ruleresult.registerObject("device2", device2);
+		ruleresult.registerObject("xDevice1", xDevice1);
+		ruleresult.registerObject("connection1", connection1);
 		ruleresult.registerObject("connection2", connection2);
 		ruleresult.registerObject("cableAttributes", cableAttributes);
 		ruleresult.registerObject("container", container);
-		ruleresult.registerObject("xDeviceToDevice2", xDeviceToDevice2);
+		ruleresult.registerObject("xDevice2", xDevice2);
+		ruleresult.registerObject("device1", device1);
 		ruleresult.registerObject("cable", cable);
-		ruleresult.registerObject("xContainer", xContainer);
-		ruleresult.registerObject("connection1", connection1);
-		ruleresult.registerObject("device2", device2);
-		ruleresult.registerObject("xDevice1", xDevice1);
+		ruleresult.registerObject("xDeviceToDevice2", xDeviceToDevice2);
+		ruleresult.registerObject("xCable", xCable);
 		ruleresult.registerObject("xCableToCable", xCableToCable);
 
 	}
@@ -913,7 +914,7 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_53(EMoflonEdge _edge_source) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_11(EMoflonEdge _edge_target) {
 
 		Object[] result1_bindingAndBlack = XSimplexConnectionToConnectionRuleImpl
 				.pattern_XSimplexConnectionToConnectionRule_20_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -929,11 +930,11 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 
 		// ForEach 
 		for (Object[] result2_black : XSimplexConnectionToConnectionRuleImpl
-				.pattern_XSimplexConnectionToConnectionRule_20_2_testcorematchandDECs_blackFFFFB(_edge_source)) {
-			Device device1 = (Device) result2_black[0];
+				.pattern_XSimplexConnectionToConnectionRule_20_2_testcorematchandDECs_blackFFFFB(_edge_target)) {
+			Device device2 = (Device) result2_black[0];
 			Container container = (Container) result2_black[1];
-			Cable cable = (Cable) result2_black[2];
-			Device device2 = (Device) result2_black[3];
+			Device device1 = (Device) result2_black[2];
+			Cable cable = (Cable) result2_black[3];
 			Object[] result2_green = XSimplexConnectionToConnectionRuleImpl
 					.pattern_XSimplexConnectionToConnectionRule_20_2_testcorematchandDECs_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
@@ -941,7 +942,7 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 			// 
 			if (XSimplexConnectionToConnectionRuleImpl
 					.pattern_XSimplexConnectionToConnectionRule_20_3_bookkeepingwithgenericisAppropriatemethod_expressionFBBBBBB(
-							this, match, device1, container, cable, device2)) {
+							this, match, device2, container, device1, cable)) {
 				// 
 				if (XSimplexConnectionToConnectionRuleImpl
 						.pattern_XSimplexConnectionToConnectionRule_20_4_Ensurethatthecorrecttypesofelementsarematched_expressionFBB(
@@ -975,7 +976,7 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_41(EMoflonEdge _edge_incoming) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_7(EMoflonEdge _edge_outgoing) {
 
 		Object[] result1_bindingAndBlack = XSimplexConnectionToConnectionRuleImpl
 				.pattern_XSimplexConnectionToConnectionRule_21_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -991,14 +992,14 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 
 		// ForEach 
 		for (Object[] result2_black : XSimplexConnectionToConnectionRuleImpl
-				.pattern_XSimplexConnectionToConnectionRule_21_2_testcorematchandDECs_blackFFFFFFFB(_edge_incoming)) {
-			XCable xCable = (XCable) result2_black[0];
-			XDevice xDevice2 = (XDevice) result2_black[1];
-			Connections connection2 = (Connections) result2_black[2];
-			CableAttributes cableAttributes = (CableAttributes) result2_black[3];
-			XContainer xContainer = (XContainer) result2_black[4];
-			Connections connection1 = (Connections) result2_black[5];
-			XDevice xDevice1 = (XDevice) result2_black[6];
+				.pattern_XSimplexConnectionToConnectionRule_21_2_testcorematchandDECs_blackFFFFFFFB(_edge_outgoing)) {
+			XContainer xContainer = (XContainer) result2_black[0];
+			XDevice xDevice1 = (XDevice) result2_black[1];
+			Connections connection1 = (Connections) result2_black[2];
+			Connections connection2 = (Connections) result2_black[3];
+			CableAttributes cableAttributes = (CableAttributes) result2_black[4];
+			XDevice xDevice2 = (XDevice) result2_black[5];
+			XCable xCable = (XCable) result2_black[6];
 			Object[] result2_green = XSimplexConnectionToConnectionRuleImpl
 					.pattern_XSimplexConnectionToConnectionRule_21_2_testcorematchandDECs_greenFB(__eClass);
 			Match match = (Match) result2_green[0];
@@ -1006,8 +1007,8 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 			// 
 			if (XSimplexConnectionToConnectionRuleImpl
 					.pattern_XSimplexConnectionToConnectionRule_21_3_bookkeepingwithgenericisAppropriatemethod_expressionFBBBBBBBBB(
-							this, match, xCable, xDevice2, connection2, cableAttributes, xContainer, connection1,
-							xDevice1)) {
+							this, match, xContainer, xDevice1, connection1, connection2, cableAttributes, xDevice2,
+							xCable)) {
 				// 
 				if (XSimplexConnectionToConnectionRuleImpl
 						.pattern_XSimplexConnectionToConnectionRule_21_4_Ensurethatthecorrecttypesofelementsarematched_expressionFBB(
@@ -1056,13 +1057,13 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 			return ruleResult;
 		}
 
-		Variable var_cable_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable", true, csp);
-		var_cable_speed.setValue(__helper.getValue("cable", "speed"));
-		var_cable_speed.setType("BigInteger");
-
 		Variable var_cableAttributes_speed = CSPFactoryHelper.eINSTANCE.createVariable("cableAttributes", true, csp);
 		var_cableAttributes_speed.setValue(__helper.getValue("cableAttributes", "speed"));
 		var_cableAttributes_speed.setType("BigInteger");
+
+		Variable var_cable_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable", true, csp);
+		var_cable_speed.setValue(__helper.getValue("cable", "speed"));
+		var_cable_speed.setType("BigInteger");
 
 		Eq eq0 = new Eq();
 		csp.getConstraints().add(eq0);
@@ -1106,13 +1107,13 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 			return ruleResult;
 		}
 
-		Variable var_cable_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable", true, csp);
-		var_cable_speed.setValue(__helper.getValue("cable", "speed"));
-		var_cable_speed.setType("BigInteger");
-
 		Variable var_cableAttributes_speed = CSPFactoryHelper.eINSTANCE.createVariable("cableAttributes", true, csp);
 		var_cableAttributes_speed.setValue(__helper.getValue("cableAttributes", "speed"));
 		var_cableAttributes_speed.setType("BigInteger");
+
+		Variable var_cable_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable", true, csp);
+		var_cable_speed.setValue(__helper.getValue("cable", "speed"));
+		var_cable_speed.setType("BigInteger");
 
 		Eq eq0 = new Eq();
 		csp.getConstraints().add(eq0);
@@ -1159,30 +1160,30 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[sourceMatch] = " + sourceMatch
 					+ ", " + "[targetMatch] = " + targetMatch + ".");
 		}
-		XCable xCable = (XCable) result2_bindingAndBlack[0];
-		XDevice xDevice2 = (XDevice) result2_bindingAndBlack[1];
-		Device device1 = (Device) result2_bindingAndBlack[2];
-		Connections connection2 = (Connections) result2_bindingAndBlack[3];
-		CableAttributes cableAttributes = (CableAttributes) result2_bindingAndBlack[4];
-		Container container = (Container) result2_bindingAndBlack[5];
-		Cable cable = (Cable) result2_bindingAndBlack[6];
-		XContainer xContainer = (XContainer) result2_bindingAndBlack[7];
-		Connections connection1 = (Connections) result2_bindingAndBlack[8];
-		Device device2 = (Device) result2_bindingAndBlack[9];
-		XDevice xDevice1 = (XDevice) result2_bindingAndBlack[10];
+		XContainer xContainer = (XContainer) result2_bindingAndBlack[0];
+		Device device2 = (Device) result2_bindingAndBlack[1];
+		XDevice xDevice1 = (XDevice) result2_bindingAndBlack[2];
+		Connections connection1 = (Connections) result2_bindingAndBlack[3];
+		Connections connection2 = (Connections) result2_bindingAndBlack[4];
+		CableAttributes cableAttributes = (CableAttributes) result2_bindingAndBlack[5];
+		Container container = (Container) result2_bindingAndBlack[6];
+		XDevice xDevice2 = (XDevice) result2_bindingAndBlack[7];
+		Device device1 = (Device) result2_bindingAndBlack[8];
+		Cable cable = (Cable) result2_bindingAndBlack[9];
+		XCable xCable = (XCable) result2_bindingAndBlack[10];
 
 		Object[] result3_bindingAndBlack = XSimplexConnectionToConnectionRuleImpl
-				.pattern_XSimplexConnectionToConnectionRule_24_3_solvecsp_bindingAndBlackFBBBBBBBBBBBBBB(this, xCable,
-						xDevice2, device1, connection2, cableAttributes, container, cable, xContainer, connection1,
-						device2, xDevice1, sourceMatch, targetMatch);
+				.pattern_XSimplexConnectionToConnectionRule_24_3_solvecsp_bindingAndBlackFBBBBBBBBBBBBBB(this,
+						xContainer, device2, xDevice1, connection1, connection2, cableAttributes, container, xDevice2,
+						device1, cable, xCable, sourceMatch, targetMatch);
 		if (result3_bindingAndBlack == null) {
 			throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
-					+ "[xCable] = " + xCable + ", " + "[xDevice2] = " + xDevice2 + ", " + "[device1] = " + device1
-					+ ", " + "[connection2] = " + connection2 + ", " + "[cableAttributes] = " + cableAttributes + ", "
-					+ "[container] = " + container + ", " + "[cable] = " + cable + ", " + "[xContainer] = " + xContainer
-					+ ", " + "[connection1] = " + connection1 + ", " + "[device2] = " + device2 + ", " + "[xDevice1] = "
-					+ xDevice1 + ", " + "[sourceMatch] = " + sourceMatch + ", " + "[targetMatch] = " + targetMatch
-					+ ".");
+					+ "[xContainer] = " + xContainer + ", " + "[device2] = " + device2 + ", " + "[xDevice1] = "
+					+ xDevice1 + ", " + "[connection1] = " + connection1 + ", " + "[connection2] = " + connection2
+					+ ", " + "[cableAttributes] = " + cableAttributes + ", " + "[container] = " + container + ", "
+					+ "[xDevice2] = " + xDevice2 + ", " + "[device1] = " + device1 + ", " + "[cable] = " + cable + ", "
+					+ "[xCable] = " + xCable + ", " + "[sourceMatch] = " + sourceMatch + ", " + "[targetMatch] = "
+					+ targetMatch + ".");
 		}
 		CSP csp = (CSP) result3_bindingAndBlack[0];
 		// 
@@ -1190,10 +1191,10 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 				.pattern_XSimplexConnectionToConnectionRule_24_4_checkCSP_expressionFB(csp)) {
 			// ForEach 
 			for (Object[] result5_black : XSimplexConnectionToConnectionRuleImpl
-					.pattern_XSimplexConnectionToConnectionRule_24_5_matchcorrcontext_blackFBBBFBBBFBB(xCable, xDevice2,
-							device1, cable, device2, xDevice1, sourceMatch, targetMatch)) {
+					.pattern_XSimplexConnectionToConnectionRule_24_5_matchcorrcontext_blackFBBBBBFBFBB(device2,
+							xDevice1, xDevice2, device1, cable, xCable, sourceMatch, targetMatch)) {
 				XDeviceToDevice xDeviceToDevice = (XDeviceToDevice) result5_black[0];
-				XDeviceToDevice xDeviceToDevice2 = (XDeviceToDevice) result5_black[4];
+				XDeviceToDevice xDeviceToDevice2 = (XDeviceToDevice) result5_black[6];
 				XCableToCable xCableToCable = (XCableToCable) result5_black[8];
 				Object[] result5_green = XSimplexConnectionToConnectionRuleImpl
 						.pattern_XSimplexConnectionToConnectionRule_24_5_matchcorrcontext_greenBBBBBF(xDeviceToDevice,
@@ -1201,16 +1202,16 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 				CCMatch ccMatch = (CCMatch) result5_green[5];
 
 				Object[] result6_black = XSimplexConnectionToConnectionRuleImpl
-						.pattern_XSimplexConnectionToConnectionRule_24_6_createcorrespondence_blackBBBBBBBBBBBB(xCable,
-								xDevice2, device1, connection2, cableAttributes, container, cable, xContainer,
-								connection1, device2, xDevice1, ccMatch);
+						.pattern_XSimplexConnectionToConnectionRule_24_6_createcorrespondence_blackBBBBBBBBBBBB(
+								xContainer, device2, xDevice1, connection1, connection2, cableAttributes, container,
+								xDevice2, device1, cable, xCable, ccMatch);
 				if (result6_black == null) {
-					throw new RuntimeException("Pattern matching failed." + " Variables: " + "[xCable] = " + xCable
-							+ ", " + "[xDevice2] = " + xDevice2 + ", " + "[device1] = " + device1 + ", "
-							+ "[connection2] = " + connection2 + ", " + "[cableAttributes] = " + cableAttributes + ", "
-							+ "[container] = " + container + ", " + "[cable] = " + cable + ", " + "[xContainer] = "
-							+ xContainer + ", " + "[connection1] = " + connection1 + ", " + "[device2] = " + device2
-							+ ", " + "[xDevice1] = " + xDevice1 + ", " + "[ccMatch] = " + ccMatch + ".");
+					throw new RuntimeException("Pattern matching failed." + " Variables: " + "[xContainer] = "
+							+ xContainer + ", " + "[device2] = " + device2 + ", " + "[xDevice1] = " + xDevice1 + ", "
+							+ "[connection1] = " + connection1 + ", " + "[connection2] = " + connection2 + ", "
+							+ "[cableAttributes] = " + cableAttributes + ", " + "[container] = " + container + ", "
+							+ "[xDevice2] = " + xDevice2 + ", " + "[device1] = " + device1 + ", " + "[cable] = " + cable
+							+ ", " + "[xCable] = " + xCable + ", " + "[ccMatch] = " + ccMatch + ".");
 				}
 
 				Object[] result7_black = XSimplexConnectionToConnectionRuleImpl
@@ -1235,9 +1236,9 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP isApplicable_solveCsp_CC(XCable xCable, XDevice xDevice2, Device device1, Connections connection2,
-			CableAttributes cableAttributes, Container container, Cable cable, XContainer xContainer,
-			Connections connection1, Device device2, XDevice xDevice1, Match sourceMatch, Match targetMatch) {// Create CSP
+	public CSP isApplicable_solveCsp_CC(XContainer xContainer, Device device2, XDevice xDevice1,
+			Connections connection1, Connections connection2, CableAttributes cableAttributes, Container container,
+			XDevice xDevice2, Device device1, Cable cable, XCable xCable, Match sourceMatch, Match targetMatch) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 
 		// Create literals
@@ -1278,11 +1279,11 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean checkDEC_FWD(XCable xCable, XDevice xDevice2, Connections connection2,
-			CableAttributes cableAttributes, XContainer xContainer, Connections connection1, XDevice xDevice1) {// 
+	public boolean checkDEC_FWD(XContainer xContainer, XDevice xDevice1, Connections connection1,
+			Connections connection2, CableAttributes cableAttributes, XDevice xDevice2, XCable xCable) {// 
 		Object[] result1_black = XSimplexConnectionToConnectionRuleImpl
-				.pattern_XSimplexConnectionToConnectionRule_27_1_matchtggpattern_blackBBBBBBB(xCable, xDevice2,
-						connection2, cableAttributes, xContainer, connection1, xDevice1);
+				.pattern_XSimplexConnectionToConnectionRule_27_1_matchtggpattern_blackBBBBBBB(xContainer, xDevice1,
+						connection1, connection2, cableAttributes, xDevice2, xCable);
 		if (result1_black != null) {
 			XSimplexConnectionToConnectionRuleImpl
 					.pattern_XSimplexConnectionToConnectionRule_27_1_matchtggpattern_greenB(cableAttributes);
@@ -1299,10 +1300,10 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean checkDEC_BWD(Device device1, Container container, Cable cable, Device device2) {// 
+	public boolean checkDEC_BWD(Device device2, Container container, Device device1, Cable cable) {// 
 		Object[] result1_black = XSimplexConnectionToConnectionRuleImpl
-				.pattern_XSimplexConnectionToConnectionRule_28_1_matchtggpattern_blackBBBB(device1, container, cable,
-						device2);
+				.pattern_XSimplexConnectionToConnectionRule_28_1_matchtggpattern_blackBBBB(device2, container, device1,
+						cable);
 		if (result1_black != null) {
 			return XSimplexConnectionToConnectionRuleImpl.pattern_XSimplexConnectionToConnectionRule_28_2_expressionF();
 		} else {
@@ -1317,7 +1318,7 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	 * @generated
 	 */
 	public ModelgeneratorRuleResult generateModel(RuleEntryContainer ruleEntryContainer,
-			XDeviceToDevice xDeviceToDeviceParameter) {
+			XCableToCable xCableToCableParameter) {
 
 		Object[] result1_black = XSimplexConnectionToConnectionRuleImpl
 				.pattern_XSimplexConnectionToConnectionRule_29_1_createresult_blackB(this);
@@ -1333,39 +1334,39 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 		for (Object[] result2_black : XSimplexConnectionToConnectionRuleImpl
 				.pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_blackFFFFFFFFFFFFFFFBB(
 						ruleEntryContainer, ruleResult)) {
-			//nothing RuleEntryList xDeviceToDeviceList = (RuleEntryList) result2_black[0];
-			XDeviceToDevice xDeviceToDevice = (XDeviceToDevice) result2_black[1];
-			Device device1 = (Device) result2_black[2];
-			Container container = (Container) result2_black[3];
-			Cable cable = (Cable) result2_black[4];
-			XCableToCable xCableToCable = (XCableToCable) result2_black[5];
-			XCable xCable = (XCable) result2_black[6];
-			CableAttributes cableAttributes = (CableAttributes) result2_black[7];
-			XContainer xContainer = (XContainer) result2_black[8];
-			XDevice xDevice2 = (XDevice) result2_black[9];
-			Connections connection2 = (Connections) result2_black[10];
-			XDeviceToDevice xDeviceToDevice2 = (XDeviceToDevice) result2_black[11];
-			Device device2 = (Device) result2_black[12];
-			XDevice xDevice1 = (XDevice) result2_black[13];
-			Connections connection1 = (Connections) result2_black[14];
+			//nothing RuleEntryList xCableToCableList = (RuleEntryList) result2_black[0];
+			XContainer xContainer = (XContainer) result2_black[1];
+			XCable xCable = (XCable) result2_black[2];
+			CableAttributes cableAttributes = (CableAttributes) result2_black[3];
+			XCableToCable xCableToCable = (XCableToCable) result2_black[4];
+			Cable cable = (Cable) result2_black[5];
+			Container container = (Container) result2_black[6];
+			Device device1 = (Device) result2_black[7];
+			XDeviceToDevice xDeviceToDevice = (XDeviceToDevice) result2_black[8];
+			XDevice xDevice1 = (XDevice) result2_black[9];
+			Connections connection1 = (Connections) result2_black[10];
+			Device device2 = (Device) result2_black[11];
+			XDeviceToDevice xDeviceToDevice2 = (XDeviceToDevice) result2_black[12];
+			XDevice xDevice2 = (XDevice) result2_black[13];
+			Connections connection2 = (Connections) result2_black[14];
 			XSimplexConnectionToConnectionRuleImpl
 					.pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_greenB(cableAttributes);
 
 			Object[] result3_bindingAndBlack = XSimplexConnectionToConnectionRuleImpl
 					.pattern_XSimplexConnectionToConnectionRule_29_3_solveCSP_bindingAndBlackFBBBBBBBBBBBBBBBBB(this,
-							isApplicableMatch, xDeviceToDevice, xCable, xDevice2, device1, connection2, cableAttributes,
-							container, xDeviceToDevice2, cable, xContainer, connection1, device2, xDevice1,
+							isApplicableMatch, xContainer, xDeviceToDevice, device2, xDevice1, connection1, connection2,
+							cableAttributes, container, xDevice2, device1, cable, xDeviceToDevice2, xCable,
 							xCableToCable, ruleResult);
 			if (result3_bindingAndBlack == null) {
 				throw new RuntimeException("Pattern matching failed." + " Variables: " + "[this] = " + this + ", "
-						+ "[isApplicableMatch] = " + isApplicableMatch + ", " + "[xDeviceToDevice] = " + xDeviceToDevice
-						+ ", " + "[xCable] = " + xCable + ", " + "[xDevice2] = " + xDevice2 + ", " + "[device1] = "
-						+ device1 + ", " + "[connection2] = " + connection2 + ", " + "[cableAttributes] = "
-						+ cableAttributes + ", " + "[container] = " + container + ", " + "[xDeviceToDevice2] = "
-						+ xDeviceToDevice2 + ", " + "[cable] = " + cable + ", " + "[xContainer] = " + xContainer + ", "
-						+ "[connection1] = " + connection1 + ", " + "[device2] = " + device2 + ", " + "[xDevice1] = "
-						+ xDevice1 + ", " + "[xCableToCable] = " + xCableToCable + ", " + "[ruleResult] = " + ruleResult
-						+ ".");
+						+ "[isApplicableMatch] = " + isApplicableMatch + ", " + "[xContainer] = " + xContainer + ", "
+						+ "[xDeviceToDevice] = " + xDeviceToDevice + ", " + "[device2] = " + device2 + ", "
+						+ "[xDevice1] = " + xDevice1 + ", " + "[connection1] = " + connection1 + ", "
+						+ "[connection2] = " + connection2 + ", " + "[cableAttributes] = " + cableAttributes + ", "
+						+ "[container] = " + container + ", " + "[xDevice2] = " + xDevice2 + ", " + "[device1] = "
+						+ device1 + ", " + "[cable] = " + cable + ", " + "[xDeviceToDevice2] = " + xDeviceToDevice2
+						+ ", " + "[xCable] = " + xCable + ", " + "[xCableToCable] = " + xCableToCable + ", "
+						+ "[ruleResult] = " + ruleResult + ".");
 			}
 			CSP csp = (CSP) result3_bindingAndBlack[0];
 			// 
@@ -1373,31 +1374,31 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 					.pattern_XSimplexConnectionToConnectionRule_29_4_checkCSP_expressionFBB(this, csp)) {
 				// 
 				Object[] result5_black = XSimplexConnectionToConnectionRuleImpl
-						.pattern_XSimplexConnectionToConnectionRule_29_5_checknacs_blackBBBBBBBBBBBBBB(xDeviceToDevice,
-								xCable, xDevice2, device1, connection2, cableAttributes, container, xDeviceToDevice2,
-								cable, xContainer, connection1, device2, xDevice1, xCableToCable);
+						.pattern_XSimplexConnectionToConnectionRule_29_5_checknacs_blackBBBBBBBBBBBBBB(xContainer,
+								xDeviceToDevice, device2, xDevice1, connection1, connection2, cableAttributes,
+								container, xDevice2, device1, cable, xDeviceToDevice2, xCable, xCableToCable);
 				if (result5_black != null) {
 					XSimplexConnectionToConnectionRuleImpl
 							.pattern_XSimplexConnectionToConnectionRule_29_5_checknacs_greenB(cableAttributes);
 
 					Object[] result6_black = XSimplexConnectionToConnectionRuleImpl
-							.pattern_XSimplexConnectionToConnectionRule_29_6_perform_blackBBBBBBBBBBBBBBB(
-									xDeviceToDevice, xCable, xDevice2, device1, connection2, cableAttributes, container,
-									xDeviceToDevice2, cable, xContainer, connection1, device2, xDevice1, xCableToCable,
+							.pattern_XSimplexConnectionToConnectionRule_29_6_perform_blackBBBBBBBBBBBBBBB(xContainer,
+									xDeviceToDevice, device2, xDevice1, connection1, connection2, cableAttributes,
+									container, xDevice2, device1, cable, xDeviceToDevice2, xCable, xCableToCable,
 									ruleResult);
 					if (result6_black == null) {
-						throw new RuntimeException("Pattern matching failed." + " Variables: " + "[xDeviceToDevice] = "
-								+ xDeviceToDevice + ", " + "[xCable] = " + xCable + ", " + "[xDevice2] = " + xDevice2
-								+ ", " + "[device1] = " + device1 + ", " + "[connection2] = " + connection2 + ", "
-								+ "[cableAttributes] = " + cableAttributes + ", " + "[container] = " + container + ", "
-								+ "[xDeviceToDevice2] = " + xDeviceToDevice2 + ", " + "[cable] = " + cable + ", "
-								+ "[xContainer] = " + xContainer + ", " + "[connection1] = " + connection1 + ", "
-								+ "[device2] = " + device2 + ", " + "[xDevice1] = " + xDevice1 + ", "
+						throw new RuntimeException("Pattern matching failed." + " Variables: " + "[xContainer] = "
+								+ xContainer + ", " + "[xDeviceToDevice] = " + xDeviceToDevice + ", " + "[device2] = "
+								+ device2 + ", " + "[xDevice1] = " + xDevice1 + ", " + "[connection1] = " + connection1
+								+ ", " + "[connection2] = " + connection2 + ", " + "[cableAttributes] = "
+								+ cableAttributes + ", " + "[container] = " + container + ", " + "[xDevice2] = "
+								+ xDevice2 + ", " + "[device1] = " + device1 + ", " + "[cable] = " + cable + ", "
+								+ "[xDeviceToDevice2] = " + xDeviceToDevice2 + ", " + "[xCable] = " + xCable + ", "
 								+ "[xCableToCable] = " + xCableToCable + ", " + "[ruleResult] = " + ruleResult + ".");
 					}
 					XSimplexConnectionToConnectionRuleImpl
-							.pattern_XSimplexConnectionToConnectionRule_29_6_perform_greenBBBBBBBBBB(xCable, xDevice2,
-									device1, connection2, cableAttributes, cable, connection1, device2, xDevice1,
+							.pattern_XSimplexConnectionToConnectionRule_29_6_perform_greenBBBBBBBBBB(device2, xDevice1,
+									connection1, connection2, cableAttributes, xDevice2, device1, cable, xCable,
 									ruleResult);
 
 				} else {
@@ -1416,10 +1417,10 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, XDeviceToDevice xDeviceToDevice,
-			XCable xCable, XDevice xDevice2, Device device1, Connections connection2, CableAttributes cableAttributes,
-			Container container, XDeviceToDevice xDeviceToDevice2, Cable cable, XContainer xContainer,
-			Connections connection1, Device device2, XDevice xDevice1, XCableToCable xCableToCable,
+	public CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, XContainer xContainer,
+			XDeviceToDevice xDeviceToDevice, Device device2, XDevice xDevice1, Connections connection1,
+			Connections connection2, CableAttributes cableAttributes, Container container, XDevice xDevice2,
+			Device device1, Cable cable, XDeviceToDevice xDeviceToDevice2, XCable xCable, XCableToCable xCableToCable,
 			ModelgeneratorRuleResult ruleResult) {// Create CSP
 		CSP csp = CspFactory.eINSTANCE.createCSP();
 		isApplicableMatch.getAttributeInfo().add(csp);
@@ -1447,19 +1448,19 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 		eq.solve(var_cableAttributes_speed, var_cable_speed);
 
 		// Snapshot pattern match on which CSP is solved
+		isApplicableMatch.registerObject("xContainer", xContainer);
 		isApplicableMatch.registerObject("xDeviceToDevice", xDeviceToDevice);
-		isApplicableMatch.registerObject("xCable", xCable);
-		isApplicableMatch.registerObject("xDevice2", xDevice2);
-		isApplicableMatch.registerObject("device1", device1);
+		isApplicableMatch.registerObject("device2", device2);
+		isApplicableMatch.registerObject("xDevice1", xDevice1);
+		isApplicableMatch.registerObject("connection1", connection1);
 		isApplicableMatch.registerObject("connection2", connection2);
 		isApplicableMatch.registerObject("cableAttributes", cableAttributes);
 		isApplicableMatch.registerObject("container", container);
-		isApplicableMatch.registerObject("xDeviceToDevice2", xDeviceToDevice2);
+		isApplicableMatch.registerObject("xDevice2", xDevice2);
+		isApplicableMatch.registerObject("device1", device1);
 		isApplicableMatch.registerObject("cable", cable);
-		isApplicableMatch.registerObject("xContainer", xContainer);
-		isApplicableMatch.registerObject("connection1", connection1);
-		isApplicableMatch.registerObject("device2", device2);
-		isApplicableMatch.registerObject("xDevice1", xDevice1);
+		isApplicableMatch.registerObject("xDeviceToDevice2", xDeviceToDevice2);
+		isApplicableMatch.registerObject("xCable", xCable);
 		isApplicableMatch.registerObject("xCableToCable", xCableToCable);
 		return csp;
 	}
@@ -1481,31 +1482,31 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
-		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPROPRIATE_FWD__MATCH_XCABLE_XDEVICE_CONNECTIONS_CABLEATTRIBUTES_XCONTAINER_CONNECTIONS_XDEVICE:
-			return isAppropriate_FWD((Match) arguments.get(0), (XCable) arguments.get(1), (XDevice) arguments.get(2),
-					(Connections) arguments.get(3), (CableAttributes) arguments.get(4), (XContainer) arguments.get(5),
-					(Connections) arguments.get(6), (XDevice) arguments.get(7));
+		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPROPRIATE_FWD__MATCH_XCONTAINER_XDEVICE_CONNECTIONS_CONNECTIONS_CABLEATTRIBUTES_XDEVICE_XCABLE:
+			return isAppropriate_FWD((Match) arguments.get(0), (XContainer) arguments.get(1),
+					(XDevice) arguments.get(2), (Connections) arguments.get(3), (Connections) arguments.get(4),
+					(CableAttributes) arguments.get(5), (XDevice) arguments.get(6), (XCable) arguments.get(7));
 		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___PERFORM_FWD__ISAPPLICABLEMATCH:
 			return perform_FWD((IsApplicableMatch) arguments.get(0));
 		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPLICABLE_FWD__MATCH:
 			return isApplicable_FWD((Match) arguments.get(0));
-		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_XCABLE_XDEVICE_CONNECTIONS_CABLEATTRIBUTES_XCONTAINER_CONNECTIONS_XDEVICE:
-			registerObjectsToMatch_FWD((Match) arguments.get(0), (XCable) arguments.get(1), (XDevice) arguments.get(2),
-					(Connections) arguments.get(3), (CableAttributes) arguments.get(4), (XContainer) arguments.get(5),
-					(Connections) arguments.get(6), (XDevice) arguments.get(7));
+		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_XCONTAINER_XDEVICE_CONNECTIONS_CONNECTIONS_CABLEATTRIBUTES_XDEVICE_XCABLE:
+			registerObjectsToMatch_FWD((Match) arguments.get(0), (XContainer) arguments.get(1),
+					(XDevice) arguments.get(2), (Connections) arguments.get(3), (Connections) arguments.get(4),
+					(CableAttributes) arguments.get(5), (XDevice) arguments.get(6), (XCable) arguments.get(7));
 			return null;
-		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_XCABLE_XDEVICE_CONNECTIONS_CABLEATTRIBUTES_XCONTAINER_CONNECTIONS_XDEVICE:
-			return isAppropriate_solveCsp_FWD((Match) arguments.get(0), (XCable) arguments.get(1),
-					(XDevice) arguments.get(2), (Connections) arguments.get(3), (CableAttributes) arguments.get(4),
-					(XContainer) arguments.get(5), (Connections) arguments.get(6), (XDevice) arguments.get(7));
+		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_XCONTAINER_XDEVICE_CONNECTIONS_CONNECTIONS_CABLEATTRIBUTES_XDEVICE_XCABLE:
+			return isAppropriate_solveCsp_FWD((Match) arguments.get(0), (XContainer) arguments.get(1),
+					(XDevice) arguments.get(2), (Connections) arguments.get(3), (Connections) arguments.get(4),
+					(CableAttributes) arguments.get(5), (XDevice) arguments.get(6), (XCable) arguments.get(7));
 		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPROPRIATE_CHECK_CSP_FWD__CSP:
 			return isAppropriate_checkCsp_FWD((CSP) arguments.get(0));
-		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_XDEVICETODEVICE_XCABLE_XDEVICE_DEVICE_CONNECTIONS_CABLEATTRIBUTES_CONTAINER_XDEVICETODEVICE_CABLE_XCONTAINER_CONNECTIONS_DEVICE_XDEVICE_XCABLETOCABLE:
-			return isApplicable_solveCsp_FWD((IsApplicableMatch) arguments.get(0), (XDeviceToDevice) arguments.get(1),
-					(XCable) arguments.get(2), (XDevice) arguments.get(3), (Device) arguments.get(4),
-					(Connections) arguments.get(5), (CableAttributes) arguments.get(6), (Container) arguments.get(7),
-					(XDeviceToDevice) arguments.get(8), (Cable) arguments.get(9), (XContainer) arguments.get(10),
-					(Connections) arguments.get(11), (Device) arguments.get(12), (XDevice) arguments.get(13),
+		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_XCONTAINER_XDEVICETODEVICE_DEVICE_XDEVICE_CONNECTIONS_CONNECTIONS_CABLEATTRIBUTES_CONTAINER_XDEVICE_DEVICE_CABLE_XDEVICETODEVICE_XCABLE_XCABLETOCABLE:
+			return isApplicable_solveCsp_FWD((IsApplicableMatch) arguments.get(0), (XContainer) arguments.get(1),
+					(XDeviceToDevice) arguments.get(2), (Device) arguments.get(3), (XDevice) arguments.get(4),
+					(Connections) arguments.get(5), (Connections) arguments.get(6), (CableAttributes) arguments.get(7),
+					(Container) arguments.get(8), (XDevice) arguments.get(9), (Device) arguments.get(10),
+					(Cable) arguments.get(11), (XDeviceToDevice) arguments.get(12), (XCable) arguments.get(13),
 					(XCableToCable) arguments.get(14));
 		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPLICABLE_CHECK_CSP_FWD__CSP:
 			return isApplicable_checkCsp_FWD((CSP) arguments.get(0));
@@ -1519,28 +1520,28 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 			return null;
 		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___CHECK_TYPES_FWD__MATCH:
 			return checkTypes_FWD((Match) arguments.get(0));
-		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPROPRIATE_BWD__MATCH_DEVICE_CONTAINER_CABLE_DEVICE:
+		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPROPRIATE_BWD__MATCH_DEVICE_CONTAINER_DEVICE_CABLE:
 			return isAppropriate_BWD((Match) arguments.get(0), (Device) arguments.get(1), (Container) arguments.get(2),
-					(Cable) arguments.get(3), (Device) arguments.get(4));
+					(Device) arguments.get(3), (Cable) arguments.get(4));
 		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___PERFORM_BWD__ISAPPLICABLEMATCH:
 			return perform_BWD((IsApplicableMatch) arguments.get(0));
 		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPLICABLE_BWD__MATCH:
 			return isApplicable_BWD((Match) arguments.get(0));
-		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_DEVICE_CONTAINER_CABLE_DEVICE:
+		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_DEVICE_CONTAINER_DEVICE_CABLE:
 			registerObjectsToMatch_BWD((Match) arguments.get(0), (Device) arguments.get(1),
-					(Container) arguments.get(2), (Cable) arguments.get(3), (Device) arguments.get(4));
+					(Container) arguments.get(2), (Device) arguments.get(3), (Cable) arguments.get(4));
 			return null;
-		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_DEVICE_CONTAINER_CABLE_DEVICE:
+		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_DEVICE_CONTAINER_DEVICE_CABLE:
 			return isAppropriate_solveCsp_BWD((Match) arguments.get(0), (Device) arguments.get(1),
-					(Container) arguments.get(2), (Cable) arguments.get(3), (Device) arguments.get(4));
+					(Container) arguments.get(2), (Device) arguments.get(3), (Cable) arguments.get(4));
 		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPROPRIATE_CHECK_CSP_BWD__CSP:
 			return isAppropriate_checkCsp_BWD((CSP) arguments.get(0));
-		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_XDEVICETODEVICE_XCABLE_XDEVICE_DEVICE_CONNECTIONS_CABLEATTRIBUTES_CONTAINER_XDEVICETODEVICE_CABLE_XCONTAINER_CONNECTIONS_DEVICE_XDEVICE_XCABLETOCABLE:
-			return isApplicable_solveCsp_BWD((IsApplicableMatch) arguments.get(0), (XDeviceToDevice) arguments.get(1),
-					(XCable) arguments.get(2), (XDevice) arguments.get(3), (Device) arguments.get(4),
-					(Connections) arguments.get(5), (CableAttributes) arguments.get(6), (Container) arguments.get(7),
-					(XDeviceToDevice) arguments.get(8), (Cable) arguments.get(9), (XContainer) arguments.get(10),
-					(Connections) arguments.get(11), (Device) arguments.get(12), (XDevice) arguments.get(13),
+		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_XCONTAINER_XDEVICETODEVICE_DEVICE_XDEVICE_CONNECTIONS_CONNECTIONS_CABLEATTRIBUTES_CONTAINER_XDEVICE_DEVICE_CABLE_XDEVICETODEVICE_XCABLE_XCABLETOCABLE:
+			return isApplicable_solveCsp_BWD((IsApplicableMatch) arguments.get(0), (XContainer) arguments.get(1),
+					(XDeviceToDevice) arguments.get(2), (Device) arguments.get(3), (XDevice) arguments.get(4),
+					(Connections) arguments.get(5), (Connections) arguments.get(6), (CableAttributes) arguments.get(7),
+					(Container) arguments.get(8), (XDevice) arguments.get(9), (Device) arguments.get(10),
+					(Cable) arguments.get(11), (XDeviceToDevice) arguments.get(12), (XCable) arguments.get(13),
 					(XCableToCable) arguments.get(14));
 		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPLICABLE_CHECK_CSP_BWD__CSP:
 			return isApplicable_checkCsp_BWD((CSP) arguments.get(0));
@@ -1554,39 +1555,39 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 			return null;
 		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_53__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_53((EMoflonEdge) arguments.get(0));
-		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_41__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_41((EMoflonEdge) arguments.get(0));
+		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_11__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_11((EMoflonEdge) arguments.get(0));
+		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_7__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_7((EMoflonEdge) arguments.get(0));
 		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
 			return checkAttributes_BWD((TripleMatch) arguments.get(0));
 		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPLICABLE_CC__MATCH_MATCH:
 			return isApplicable_CC((Match) arguments.get(0), (Match) arguments.get(1));
-		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPLICABLE_SOLVE_CSP_CC__XCABLE_XDEVICE_DEVICE_CONNECTIONS_CABLEATTRIBUTES_CONTAINER_CABLE_XCONTAINER_CONNECTIONS_DEVICE_XDEVICE_MATCH_MATCH:
-			return isApplicable_solveCsp_CC((XCable) arguments.get(0), (XDevice) arguments.get(1),
-					(Device) arguments.get(2), (Connections) arguments.get(3), (CableAttributes) arguments.get(4),
-					(Container) arguments.get(5), (Cable) arguments.get(6), (XContainer) arguments.get(7),
-					(Connections) arguments.get(8), (Device) arguments.get(9), (XDevice) arguments.get(10),
+		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPLICABLE_SOLVE_CSP_CC__XCONTAINER_DEVICE_XDEVICE_CONNECTIONS_CONNECTIONS_CABLEATTRIBUTES_CONTAINER_XDEVICE_DEVICE_CABLE_XCABLE_MATCH_MATCH:
+			return isApplicable_solveCsp_CC((XContainer) arguments.get(0), (Device) arguments.get(1),
+					(XDevice) arguments.get(2), (Connections) arguments.get(3), (Connections) arguments.get(4),
+					(CableAttributes) arguments.get(5), (Container) arguments.get(6), (XDevice) arguments.get(7),
+					(Device) arguments.get(8), (Cable) arguments.get(9), (XCable) arguments.get(10),
 					(Match) arguments.get(11), (Match) arguments.get(12));
 		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___IS_APPLICABLE_CHECK_CSP_CC__CSP:
 			return isApplicable_checkCsp_CC((CSP) arguments.get(0));
-		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___CHECK_DEC_FWD__XCABLE_XDEVICE_CONNECTIONS_CABLEATTRIBUTES_XCONTAINER_CONNECTIONS_XDEVICE:
-			return checkDEC_FWD((XCable) arguments.get(0), (XDevice) arguments.get(1), (Connections) arguments.get(2),
-					(CableAttributes) arguments.get(3), (XContainer) arguments.get(4), (Connections) arguments.get(5),
-					(XDevice) arguments.get(6));
-		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___CHECK_DEC_BWD__DEVICE_CONTAINER_CABLE_DEVICE:
-			return checkDEC_BWD((Device) arguments.get(0), (Container) arguments.get(1), (Cable) arguments.get(2),
-					(Device) arguments.get(3));
-		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___GENERATE_MODEL__RULEENTRYCONTAINER_XDEVICETODEVICE:
-			return generateModel((RuleEntryContainer) arguments.get(0), (XDeviceToDevice) arguments.get(1));
-		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_XDEVICETODEVICE_XCABLE_XDEVICE_DEVICE_CONNECTIONS_CABLEATTRIBUTES_CONTAINER_XDEVICETODEVICE_CABLE_XCONTAINER_CONNECTIONS_DEVICE_XDEVICE_XCABLETOCABLE_MODELGENERATORRULERESULT:
-			return generateModel_solveCsp_BWD((IsApplicableMatch) arguments.get(0), (XDeviceToDevice) arguments.get(1),
-					(XCable) arguments.get(2), (XDevice) arguments.get(3), (Device) arguments.get(4),
-					(Connections) arguments.get(5), (CableAttributes) arguments.get(6), (Container) arguments.get(7),
-					(XDeviceToDevice) arguments.get(8), (Cable) arguments.get(9), (XContainer) arguments.get(10),
-					(Connections) arguments.get(11), (Device) arguments.get(12), (XDevice) arguments.get(13),
+		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___CHECK_DEC_FWD__XCONTAINER_XDEVICE_CONNECTIONS_CONNECTIONS_CABLEATTRIBUTES_XDEVICE_XCABLE:
+			return checkDEC_FWD((XContainer) arguments.get(0), (XDevice) arguments.get(1),
+					(Connections) arguments.get(2), (Connections) arguments.get(3), (CableAttributes) arguments.get(4),
+					(XDevice) arguments.get(5), (XCable) arguments.get(6));
+		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___CHECK_DEC_BWD__DEVICE_CONTAINER_DEVICE_CABLE:
+			return checkDEC_BWD((Device) arguments.get(0), (Container) arguments.get(1), (Device) arguments.get(2),
+					(Cable) arguments.get(3));
+		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___GENERATE_MODEL__RULEENTRYCONTAINER_XCABLETOCABLE:
+			return generateModel((RuleEntryContainer) arguments.get(0), (XCableToCable) arguments.get(1));
+		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_XCONTAINER_XDEVICETODEVICE_DEVICE_XDEVICE_CONNECTIONS_CONNECTIONS_CABLEATTRIBUTES_CONTAINER_XDEVICE_DEVICE_CABLE_XDEVICETODEVICE_XCABLE_XCABLETOCABLE_MODELGENERATORRULERESULT:
+			return generateModel_solveCsp_BWD((IsApplicableMatch) arguments.get(0), (XContainer) arguments.get(1),
+					(XDeviceToDevice) arguments.get(2), (Device) arguments.get(3), (XDevice) arguments.get(4),
+					(Connections) arguments.get(5), (Connections) arguments.get(6), (CableAttributes) arguments.get(7),
+					(Container) arguments.get(8), (XDevice) arguments.get(9), (Device) arguments.get(10),
+					(Cable) arguments.get(11), (XDeviceToDevice) arguments.get(12), (XCable) arguments.get(13),
 					(XCableToCable) arguments.get(14), (ModelgeneratorRuleResult) arguments.get(15));
 		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE___GENERATE_MODEL_CHECK_CSP_BWD__CSP:
 			return generateModel_checkCsp_BWD((CSP) arguments.get(0));
@@ -1595,28 +1596,28 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_0_1_initialbindings_blackBBBBBBBBB(
-			XSimplexConnectionToConnectionRule _this, Match match, XCable xCable, XDevice xDevice2,
-			Connections connection2, CableAttributes cableAttributes, XContainer xContainer, Connections connection1,
-			XDevice xDevice1) {
-		if (!connection1.equals(connection2)) {
-			if (!xDevice1.equals(xDevice2)) {
-				return new Object[] { _this, match, xCable, xDevice2, connection2, cableAttributes, xContainer,
-						connection1, xDevice1 };
+			XSimplexConnectionToConnectionRule _this, Match match, XContainer xContainer, XDevice xDevice1,
+			Connections connection1, Connections connection2, CableAttributes cableAttributes, XDevice xDevice2,
+			XCable xCable) {
+		if (!xDevice1.equals(xDevice2)) {
+			if (!connection1.equals(connection2)) {
+				return new Object[] { _this, match, xContainer, xDevice1, connection1, connection2, cableAttributes,
+						xDevice2, xCable };
 			}
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_0_2_SolveCSP_bindingFBBBBBBBBB(
-			XSimplexConnectionToConnectionRule _this, Match match, XCable xCable, XDevice xDevice2,
-			Connections connection2, CableAttributes cableAttributes, XContainer xContainer, Connections connection1,
-			XDevice xDevice1) {
-		CSP _localVariable_0 = _this.isAppropriate_solveCsp_FWD(match, xCable, xDevice2, connection2, cableAttributes,
-				xContainer, connection1, xDevice1);
+			XSimplexConnectionToConnectionRule _this, Match match, XContainer xContainer, XDevice xDevice1,
+			Connections connection1, Connections connection2, CableAttributes cableAttributes, XDevice xDevice2,
+			XCable xCable) {
+		CSP _localVariable_0 = _this.isAppropriate_solveCsp_FWD(match, xContainer, xDevice1, connection1, connection2,
+				cableAttributes, xDevice2, xCable);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, match, xCable, xDevice2, connection2, cableAttributes, xContainer,
-					connection1, xDevice1 };
+			return new Object[] { csp, _this, match, xContainer, xDevice1, connection1, connection2, cableAttributes,
+					xDevice2, xCable };
 		}
 		return null;
 	}
@@ -1626,11 +1627,11 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_0_2_SolveCSP_bindingAndBlackFBBBBBBBBB(
-			XSimplexConnectionToConnectionRule _this, Match match, XCable xCable, XDevice xDevice2,
-			Connections connection2, CableAttributes cableAttributes, XContainer xContainer, Connections connection1,
-			XDevice xDevice1) {
+			XSimplexConnectionToConnectionRule _this, Match match, XContainer xContainer, XDevice xDevice1,
+			Connections connection1, Connections connection2, CableAttributes cableAttributes, XDevice xDevice2,
+			XCable xCable) {
 		Object[] result_pattern_XSimplexConnectionToConnectionRule_0_2_SolveCSP_binding = pattern_XSimplexConnectionToConnectionRule_0_2_SolveCSP_bindingFBBBBBBBBB(
-				_this, match, xCable, xDevice2, connection2, cableAttributes, xContainer, connection1, xDevice1);
+				_this, match, xContainer, xDevice1, connection1, connection2, cableAttributes, xDevice2, xCable);
 		if (result_pattern_XSimplexConnectionToConnectionRule_0_2_SolveCSP_binding != null) {
 			CSP csp = (CSP) result_pattern_XSimplexConnectionToConnectionRule_0_2_SolveCSP_binding[0];
 
@@ -1638,8 +1639,8 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 					csp);
 			if (result_pattern_XSimplexConnectionToConnectionRule_0_2_SolveCSP_black != null) {
 
-				return new Object[] { csp, _this, match, xCable, xDevice2, connection2, cableAttributes, xContainer,
-						connection1, xDevice1 };
+				return new Object[] { csp, _this, match, xContainer, xDevice1, connection1, connection2,
+						cableAttributes, xDevice2, xCable };
 			}
 		}
 		return null;
@@ -1653,119 +1654,119 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_0_4_collectelementstobetranslated_blackBBBBBBBB(
-			Match match, XCable xCable, XDevice xDevice2, Connections connection2, CableAttributes cableAttributes,
-			XContainer xContainer, Connections connection1, XDevice xDevice1) {
-		if (!connection1.equals(connection2)) {
-			if (!xDevice1.equals(xDevice2)) {
-				return new Object[] { match, xCable, xDevice2, connection2, cableAttributes, xContainer, connection1,
-						xDevice1 };
+			Match match, XContainer xContainer, XDevice xDevice1, Connections connection1, Connections connection2,
+			CableAttributes cableAttributes, XDevice xDevice2, XCable xCable) {
+		if (!xDevice1.equals(xDevice2)) {
+			if (!connection1.equals(connection2)) {
+				return new Object[] { match, xContainer, xDevice1, connection1, connection2, cableAttributes, xDevice2,
+						xCable };
 			}
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_0_4_collectelementstobetranslated_greenBBBBBBBFFFF(
-			Match match, XCable xCable, XDevice xDevice2, Connections connection2, CableAttributes cableAttributes,
-			Connections connection1, XDevice xDevice1) {
-		EMoflonEdge connection2__xCable____incoming = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge cableAttributes__xDevice1____endPoint1 = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge cableAttributes__xDevice2____endPoint2 = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+			Match match, XDevice xDevice1, Connections connection1, Connections connection2,
+			CableAttributes cableAttributes, XDevice xDevice2, XCable xCable) {
 		EMoflonEdge connection1__xCable____outgoing = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		String connection2__xCable____incoming_name_prime = "incoming";
-		String cableAttributes__xDevice1____endPoint1_name_prime = "endPoint1";
-		String cableAttributes__xDevice2____endPoint2_name_prime = "endPoint2";
+		EMoflonEdge cableAttributes__xDevice2____endPoint2 = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge cableAttributes__xDevice1____endPoint1 = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge connection2__xCable____incoming = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String connection1__xCable____outgoing_name_prime = "outgoing";
-		connection2__xCable____incoming.setSrc(connection2);
-		connection2__xCable____incoming.setTrg(xCable);
-		match.getToBeTranslatedEdges().add(connection2__xCable____incoming);
-		cableAttributes__xDevice1____endPoint1.setSrc(cableAttributes);
-		cableAttributes__xDevice1____endPoint1.setTrg(xDevice1);
-		match.getToBeTranslatedEdges().add(cableAttributes__xDevice1____endPoint1);
-		cableAttributes__xDevice2____endPoint2.setSrc(cableAttributes);
-		cableAttributes__xDevice2____endPoint2.setTrg(xDevice2);
-		match.getToBeTranslatedEdges().add(cableAttributes__xDevice2____endPoint2);
+		String cableAttributes__xDevice2____endPoint2_name_prime = "endPoint2";
+		String cableAttributes__xDevice1____endPoint1_name_prime = "endPoint1";
+		String connection2__xCable____incoming_name_prime = "incoming";
 		connection1__xCable____outgoing.setSrc(connection1);
 		connection1__xCable____outgoing.setTrg(xCable);
 		match.getToBeTranslatedEdges().add(connection1__xCable____outgoing);
-		connection2__xCable____incoming.setName(connection2__xCable____incoming_name_prime);
-		cableAttributes__xDevice1____endPoint1.setName(cableAttributes__xDevice1____endPoint1_name_prime);
-		cableAttributes__xDevice2____endPoint2.setName(cableAttributes__xDevice2____endPoint2_name_prime);
+		cableAttributes__xDevice2____endPoint2.setSrc(cableAttributes);
+		cableAttributes__xDevice2____endPoint2.setTrg(xDevice2);
+		match.getToBeTranslatedEdges().add(cableAttributes__xDevice2____endPoint2);
+		cableAttributes__xDevice1____endPoint1.setSrc(cableAttributes);
+		cableAttributes__xDevice1____endPoint1.setTrg(xDevice1);
+		match.getToBeTranslatedEdges().add(cableAttributes__xDevice1____endPoint1);
+		connection2__xCable____incoming.setSrc(connection2);
+		connection2__xCable____incoming.setTrg(xCable);
+		match.getToBeTranslatedEdges().add(connection2__xCable____incoming);
 		connection1__xCable____outgoing.setName(connection1__xCable____outgoing_name_prime);
-		return new Object[] { match, xCable, xDevice2, connection2, cableAttributes, connection1, xDevice1,
-				connection2__xCable____incoming, cableAttributes__xDevice1____endPoint1,
-				cableAttributes__xDevice2____endPoint2, connection1__xCable____outgoing };
+		cableAttributes__xDevice2____endPoint2.setName(cableAttributes__xDevice2____endPoint2_name_prime);
+		cableAttributes__xDevice1____endPoint1.setName(cableAttributes__xDevice1____endPoint1_name_prime);
+		connection2__xCable____incoming.setName(connection2__xCable____incoming_name_prime);
+		return new Object[] { match, xDevice1, connection1, connection2, cableAttributes, xDevice2, xCable,
+				connection1__xCable____outgoing, cableAttributes__xDevice2____endPoint2,
+				cableAttributes__xDevice1____endPoint1, connection2__xCable____incoming };
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_0_5_collectcontextelements_blackBBBBBBBB(
-			Match match, XCable xCable, XDevice xDevice2, Connections connection2, CableAttributes cableAttributes,
-			XContainer xContainer, Connections connection1, XDevice xDevice1) {
-		if (!connection1.equals(connection2)) {
-			if (!xDevice1.equals(xDevice2)) {
-				return new Object[] { match, xCable, xDevice2, connection2, cableAttributes, xContainer, connection1,
-						xDevice1 };
+			Match match, XContainer xContainer, XDevice xDevice1, Connections connection1, Connections connection2,
+			CableAttributes cableAttributes, XDevice xDevice2, XCable xCable) {
+		if (!xDevice1.equals(xDevice2)) {
+			if (!connection1.equals(connection2)) {
+				return new Object[] { match, xContainer, xDevice1, connection1, connection2, cableAttributes, xDevice2,
+						xCable };
 			}
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_0_5_collectcontextelements_greenBBBBBBBBFFFFFF(
-			Match match, XCable xCable, XDevice xDevice2, Connections connection2, CableAttributes cableAttributes,
-			XContainer xContainer, Connections connection1, XDevice xDevice1) {
-		EMoflonEdge xCable__cableAttributes____cableAttributes = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xDevice2__connection2____connections = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xContainer__xDevice2____elements = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xContainer__xDevice1____elements = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+			Match match, XContainer xContainer, XDevice xDevice1, Connections connection1, Connections connection2,
+			CableAttributes cableAttributes, XDevice xDevice2, XCable xCable) {
 		EMoflonEdge xDevice1__connection1____connections = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge xContainer__xCable____elements = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		match.getContextNodes().add(xCable);
-		match.getContextNodes().add(xDevice2);
+		EMoflonEdge xContainer__xDevice2____elements = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xDevice2__connection2____connections = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xContainer__xDevice1____elements = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xCable__cableAttributes____cableAttributes = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		match.getContextNodes().add(xContainer);
+		match.getContextNodes().add(xDevice1);
+		match.getContextNodes().add(connection1);
 		match.getContextNodes().add(connection2);
 		match.getContextNodes().add(cableAttributes);
-		match.getContextNodes().add(xContainer);
-		match.getContextNodes().add(connection1);
-		match.getContextNodes().add(xDevice1);
-		String xCable__cableAttributes____cableAttributes_name_prime = "cableAttributes";
-		String xDevice2__connection2____connections_name_prime = "connections";
-		String xContainer__xDevice2____elements_name_prime = "elements";
-		String xContainer__xDevice1____elements_name_prime = "elements";
+		match.getContextNodes().add(xDevice2);
+		match.getContextNodes().add(xCable);
 		String xDevice1__connection1____connections_name_prime = "connections";
 		String xContainer__xCable____elements_name_prime = "elements";
-		xCable__cableAttributes____cableAttributes.setSrc(xCable);
-		xCable__cableAttributes____cableAttributes.setTrg(cableAttributes);
-		match.getContextEdges().add(xCable__cableAttributes____cableAttributes);
-		xDevice2__connection2____connections.setSrc(xDevice2);
-		xDevice2__connection2____connections.setTrg(connection2);
-		match.getContextEdges().add(xDevice2__connection2____connections);
-		xContainer__xDevice2____elements.setSrc(xContainer);
-		xContainer__xDevice2____elements.setTrg(xDevice2);
-		match.getContextEdges().add(xContainer__xDevice2____elements);
-		xContainer__xDevice1____elements.setSrc(xContainer);
-		xContainer__xDevice1____elements.setTrg(xDevice1);
-		match.getContextEdges().add(xContainer__xDevice1____elements);
+		String xContainer__xDevice2____elements_name_prime = "elements";
+		String xDevice2__connection2____connections_name_prime = "connections";
+		String xContainer__xDevice1____elements_name_prime = "elements";
+		String xCable__cableAttributes____cableAttributes_name_prime = "cableAttributes";
 		xDevice1__connection1____connections.setSrc(xDevice1);
 		xDevice1__connection1____connections.setTrg(connection1);
 		match.getContextEdges().add(xDevice1__connection1____connections);
 		xContainer__xCable____elements.setSrc(xContainer);
 		xContainer__xCable____elements.setTrg(xCable);
 		match.getContextEdges().add(xContainer__xCable____elements);
-		xCable__cableAttributes____cableAttributes.setName(xCable__cableAttributes____cableAttributes_name_prime);
-		xDevice2__connection2____connections.setName(xDevice2__connection2____connections_name_prime);
-		xContainer__xDevice2____elements.setName(xContainer__xDevice2____elements_name_prime);
-		xContainer__xDevice1____elements.setName(xContainer__xDevice1____elements_name_prime);
+		xContainer__xDevice2____elements.setSrc(xContainer);
+		xContainer__xDevice2____elements.setTrg(xDevice2);
+		match.getContextEdges().add(xContainer__xDevice2____elements);
+		xDevice2__connection2____connections.setSrc(xDevice2);
+		xDevice2__connection2____connections.setTrg(connection2);
+		match.getContextEdges().add(xDevice2__connection2____connections);
+		xContainer__xDevice1____elements.setSrc(xContainer);
+		xContainer__xDevice1____elements.setTrg(xDevice1);
+		match.getContextEdges().add(xContainer__xDevice1____elements);
+		xCable__cableAttributes____cableAttributes.setSrc(xCable);
+		xCable__cableAttributes____cableAttributes.setTrg(cableAttributes);
+		match.getContextEdges().add(xCable__cableAttributes____cableAttributes);
 		xDevice1__connection1____connections.setName(xDevice1__connection1____connections_name_prime);
 		xContainer__xCable____elements.setName(xContainer__xCable____elements_name_prime);
-		return new Object[] { match, xCable, xDevice2, connection2, cableAttributes, xContainer, connection1, xDevice1,
-				xCable__cableAttributes____cableAttributes, xDevice2__connection2____connections,
-				xContainer__xDevice2____elements, xContainer__xDevice1____elements,
-				xDevice1__connection1____connections, xContainer__xCable____elements };
+		xContainer__xDevice2____elements.setName(xContainer__xDevice2____elements_name_prime);
+		xDevice2__connection2____connections.setName(xDevice2__connection2____connections_name_prime);
+		xContainer__xDevice1____elements.setName(xContainer__xDevice1____elements_name_prime);
+		xCable__cableAttributes____cableAttributes.setName(xCable__cableAttributes____cableAttributes_name_prime);
+		return new Object[] { match, xContainer, xDevice1, connection1, connection2, cableAttributes, xDevice2, xCable,
+				xDevice1__connection1____connections, xContainer__xCable____elements, xContainer__xDevice2____elements,
+				xDevice2__connection2____connections, xContainer__xDevice1____elements,
+				xCable__cableAttributes____cableAttributes };
 	}
 
 	public static final void pattern_XSimplexConnectionToConnectionRule_0_6_registerobjectstomatch_expressionBBBBBBBBB(
-			XSimplexConnectionToConnectionRule _this, Match match, XCable xCable, XDevice xDevice2,
-			Connections connection2, CableAttributes cableAttributes, XContainer xContainer, Connections connection1,
-			XDevice xDevice1) {
-		_this.registerObjectsToMatch_FWD(match, xCable, xDevice2, connection2, cableAttributes, xContainer, connection1,
-				xDevice1);
+			XSimplexConnectionToConnectionRule _this, Match match, XContainer xContainer, XDevice xDevice1,
+			Connections connection1, Connections connection2, CableAttributes cableAttributes, XDevice xDevice2,
+			XCable xCable) {
+		_this.registerObjectsToMatch_FWD(match, xContainer, xDevice1, connection1, connection2, cableAttributes,
+				xDevice2, xCable);
 
 	}
 
@@ -1781,66 +1782,66 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_bindingFFFFFFFFFFFFFFB(
 			IsApplicableMatch isApplicableMatch) {
-		EObject _localVariable_0 = isApplicableMatch.getObject("xDeviceToDevice");
-		EObject _localVariable_1 = isApplicableMatch.getObject("xCable");
-		EObject _localVariable_2 = isApplicableMatch.getObject("xDevice2");
-		EObject _localVariable_3 = isApplicableMatch.getObject("device1");
-		EObject _localVariable_4 = isApplicableMatch.getObject("connection2");
-		EObject _localVariable_5 = isApplicableMatch.getObject("cableAttributes");
-		EObject _localVariable_6 = isApplicableMatch.getObject("container");
-		EObject _localVariable_7 = isApplicableMatch.getObject("xDeviceToDevice2");
-		EObject _localVariable_8 = isApplicableMatch.getObject("cable");
-		EObject _localVariable_9 = isApplicableMatch.getObject("xContainer");
-		EObject _localVariable_10 = isApplicableMatch.getObject("connection1");
-		EObject _localVariable_11 = isApplicableMatch.getObject("device2");
-		EObject _localVariable_12 = isApplicableMatch.getObject("xDevice1");
+		EObject _localVariable_0 = isApplicableMatch.getObject("xContainer");
+		EObject _localVariable_1 = isApplicableMatch.getObject("xDeviceToDevice");
+		EObject _localVariable_2 = isApplicableMatch.getObject("device2");
+		EObject _localVariable_3 = isApplicableMatch.getObject("xDevice1");
+		EObject _localVariable_4 = isApplicableMatch.getObject("connection1");
+		EObject _localVariable_5 = isApplicableMatch.getObject("connection2");
+		EObject _localVariable_6 = isApplicableMatch.getObject("cableAttributes");
+		EObject _localVariable_7 = isApplicableMatch.getObject("container");
+		EObject _localVariable_8 = isApplicableMatch.getObject("xDevice2");
+		EObject _localVariable_9 = isApplicableMatch.getObject("device1");
+		EObject _localVariable_10 = isApplicableMatch.getObject("cable");
+		EObject _localVariable_11 = isApplicableMatch.getObject("xDeviceToDevice2");
+		EObject _localVariable_12 = isApplicableMatch.getObject("xCable");
 		EObject _localVariable_13 = isApplicableMatch.getObject("xCableToCable");
-		EObject tmpXDeviceToDevice = _localVariable_0;
-		EObject tmpXCable = _localVariable_1;
-		EObject tmpXDevice2 = _localVariable_2;
-		EObject tmpDevice1 = _localVariable_3;
-		EObject tmpConnection2 = _localVariable_4;
-		EObject tmpCableAttributes = _localVariable_5;
-		EObject tmpContainer = _localVariable_6;
-		EObject tmpXDeviceToDevice2 = _localVariable_7;
-		EObject tmpCable = _localVariable_8;
-		EObject tmpXContainer = _localVariable_9;
-		EObject tmpConnection1 = _localVariable_10;
-		EObject tmpDevice2 = _localVariable_11;
-		EObject tmpXDevice1 = _localVariable_12;
+		EObject tmpXContainer = _localVariable_0;
+		EObject tmpXDeviceToDevice = _localVariable_1;
+		EObject tmpDevice2 = _localVariable_2;
+		EObject tmpXDevice1 = _localVariable_3;
+		EObject tmpConnection1 = _localVariable_4;
+		EObject tmpConnection2 = _localVariable_5;
+		EObject tmpCableAttributes = _localVariable_6;
+		EObject tmpContainer = _localVariable_7;
+		EObject tmpXDevice2 = _localVariable_8;
+		EObject tmpDevice1 = _localVariable_9;
+		EObject tmpCable = _localVariable_10;
+		EObject tmpXDeviceToDevice2 = _localVariable_11;
+		EObject tmpXCable = _localVariable_12;
 		EObject tmpXCableToCable = _localVariable_13;
-		if (tmpXDeviceToDevice instanceof XDeviceToDevice) {
-			XDeviceToDevice xDeviceToDevice = (XDeviceToDevice) tmpXDeviceToDevice;
-			if (tmpXCable instanceof XCable) {
-				XCable xCable = (XCable) tmpXCable;
-				if (tmpXDevice2 instanceof XDevice) {
-					XDevice xDevice2 = (XDevice) tmpXDevice2;
-					if (tmpDevice1 instanceof Device) {
-						Device device1 = (Device) tmpDevice1;
-						if (tmpConnection2 instanceof Connections) {
-							Connections connection2 = (Connections) tmpConnection2;
-							if (tmpCableAttributes instanceof CableAttributes) {
-								CableAttributes cableAttributes = (CableAttributes) tmpCableAttributes;
-								if (tmpContainer instanceof Container) {
-									Container container = (Container) tmpContainer;
-									if (tmpXDeviceToDevice2 instanceof XDeviceToDevice) {
-										XDeviceToDevice xDeviceToDevice2 = (XDeviceToDevice) tmpXDeviceToDevice2;
-										if (tmpCable instanceof Cable) {
-											Cable cable = (Cable) tmpCable;
-											if (tmpXContainer instanceof XContainer) {
-												XContainer xContainer = (XContainer) tmpXContainer;
-												if (tmpConnection1 instanceof Connections) {
-													Connections connection1 = (Connections) tmpConnection1;
-													if (tmpDevice2 instanceof Device) {
-														Device device2 = (Device) tmpDevice2;
-														if (tmpXDevice1 instanceof XDevice) {
-															XDevice xDevice1 = (XDevice) tmpXDevice1;
+		if (tmpXContainer instanceof XContainer) {
+			XContainer xContainer = (XContainer) tmpXContainer;
+			if (tmpXDeviceToDevice instanceof XDeviceToDevice) {
+				XDeviceToDevice xDeviceToDevice = (XDeviceToDevice) tmpXDeviceToDevice;
+				if (tmpDevice2 instanceof Device) {
+					Device device2 = (Device) tmpDevice2;
+					if (tmpXDevice1 instanceof XDevice) {
+						XDevice xDevice1 = (XDevice) tmpXDevice1;
+						if (tmpConnection1 instanceof Connections) {
+							Connections connection1 = (Connections) tmpConnection1;
+							if (tmpConnection2 instanceof Connections) {
+								Connections connection2 = (Connections) tmpConnection2;
+								if (tmpCableAttributes instanceof CableAttributes) {
+									CableAttributes cableAttributes = (CableAttributes) tmpCableAttributes;
+									if (tmpContainer instanceof Container) {
+										Container container = (Container) tmpContainer;
+										if (tmpXDevice2 instanceof XDevice) {
+											XDevice xDevice2 = (XDevice) tmpXDevice2;
+											if (tmpDevice1 instanceof Device) {
+												Device device1 = (Device) tmpDevice1;
+												if (tmpCable instanceof Cable) {
+													Cable cable = (Cable) tmpCable;
+													if (tmpXDeviceToDevice2 instanceof XDeviceToDevice) {
+														XDeviceToDevice xDeviceToDevice2 = (XDeviceToDevice) tmpXDeviceToDevice2;
+														if (tmpXCable instanceof XCable) {
+															XCable xCable = (XCable) tmpXCable;
 															if (tmpXCableToCable instanceof XCableToCable) {
 																XCableToCable xCableToCable = (XCableToCable) tmpXCableToCable;
-																return new Object[] { xDeviceToDevice, xCable, xDevice2,
-																		device1, connection2, cableAttributes,
-																		container, xDeviceToDevice2, cable, xContainer,
-																		connection1, device2, xDevice1, xCableToCable,
+																return new Object[] { xContainer, xDeviceToDevice,
+																		device2, xDevice1, connection1, connection2,
+																		cableAttributes, container, xDevice2, device1,
+																		cable, xDeviceToDevice2, xCable, xCableToCable,
 																		isApplicableMatch };
 															}
 														}
@@ -1860,21 +1861,21 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_blackBBBBBBBBBBBBBBFBB(
-			XDeviceToDevice xDeviceToDevice, XCable xCable, XDevice xDevice2, Device device1, Connections connection2,
-			CableAttributes cableAttributes, Container container, XDeviceToDevice xDeviceToDevice2, Cable cable,
-			XContainer xContainer, Connections connection1, Device device2, XDevice xDevice1,
+			XContainer xContainer, XDeviceToDevice xDeviceToDevice, Device device2, XDevice xDevice1,
+			Connections connection1, Connections connection2, CableAttributes cableAttributes, Container container,
+			XDevice xDevice2, Device device1, Cable cable, XDeviceToDevice xDeviceToDevice2, XCable xCable,
 			XCableToCable xCableToCable, XSimplexConnectionToConnectionRule _this,
 			IsApplicableMatch isApplicableMatch) {
 		if (!xDeviceToDevice.equals(xDeviceToDevice2)) {
-			if (!device1.equals(device2)) {
+			if (!xDevice1.equals(xDevice2)) {
 				if (!connection1.equals(connection2)) {
-					if (!xDevice1.equals(xDevice2)) {
+					if (!device1.equals(device2)) {
 						for (EObject tmpCsp : isApplicableMatch.getAttributeInfo()) {
 							if (tmpCsp instanceof CSP) {
 								CSP csp = (CSP) tmpCsp;
-								return new Object[] { xDeviceToDevice, xCable, xDevice2, device1, connection2,
-										cableAttributes, container, xDeviceToDevice2, cable, xContainer, connection1,
-										device2, xDevice1, xCableToCable, csp, _this, isApplicableMatch };
+								return new Object[] { xContainer, xDeviceToDevice, device2, xDevice1, connection1,
+										connection2, cableAttributes, container, xDevice2, device1, cable,
+										xDeviceToDevice2, xCable, xCableToCable, csp, _this, isApplicableMatch };
 							}
 						}
 					}
@@ -1889,30 +1890,30 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 		Object[] result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding = pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_bindingFFFFFFFFFFFFFFB(
 				isApplicableMatch);
 		if (result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding != null) {
-			XDeviceToDevice xDeviceToDevice = (XDeviceToDevice) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[0];
-			XCable xCable = (XCable) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[1];
-			XDevice xDevice2 = (XDevice) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[2];
-			Device device1 = (Device) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[3];
-			Connections connection2 = (Connections) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[4];
-			CableAttributes cableAttributes = (CableAttributes) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[5];
-			Container container = (Container) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[6];
-			XDeviceToDevice xDeviceToDevice2 = (XDeviceToDevice) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[7];
-			Cable cable = (Cable) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[8];
-			XContainer xContainer = (XContainer) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[9];
-			Connections connection1 = (Connections) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[10];
-			Device device2 = (Device) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[11];
-			XDevice xDevice1 = (XDevice) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[12];
+			XContainer xContainer = (XContainer) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[0];
+			XDeviceToDevice xDeviceToDevice = (XDeviceToDevice) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[1];
+			Device device2 = (Device) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[2];
+			XDevice xDevice1 = (XDevice) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[3];
+			Connections connection1 = (Connections) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[4];
+			Connections connection2 = (Connections) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[5];
+			CableAttributes cableAttributes = (CableAttributes) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[6];
+			Container container = (Container) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[7];
+			XDevice xDevice2 = (XDevice) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[8];
+			Device device1 = (Device) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[9];
+			Cable cable = (Cable) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[10];
+			XDeviceToDevice xDeviceToDevice2 = (XDeviceToDevice) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[11];
+			XCable xCable = (XCable) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[12];
 			XCableToCable xCableToCable = (XCableToCable) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_binding[13];
 
 			Object[] result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_black = pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_blackBBBBBBBBBBBBBBFBB(
-					xDeviceToDevice, xCable, xDevice2, device1, connection2, cableAttributes, container,
-					xDeviceToDevice2, cable, xContainer, connection1, device2, xDevice1, xCableToCable, _this,
+					xContainer, xDeviceToDevice, device2, xDevice1, connection1, connection2, cableAttributes,
+					container, xDevice2, device1, cable, xDeviceToDevice2, xCable, xCableToCable, _this,
 					isApplicableMatch);
 			if (result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_black != null) {
 				CSP csp = (CSP) result_pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_black[14];
 
-				return new Object[] { xDeviceToDevice, xCable, xDevice2, device1, connection2, cableAttributes,
-						container, xDeviceToDevice2, cable, xContainer, connection1, device2, xDevice1, xCableToCable,
+				return new Object[] { xContainer, xDeviceToDevice, device2, xDevice1, connection1, connection2,
+						cableAttributes, container, xDevice2, device1, cable, xDeviceToDevice2, xCable, xCableToCable,
 						csp, _this, isApplicableMatch };
 			}
 		}
@@ -1920,10 +1921,10 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_1_1_performtransformation_greenBBB(
-			Device device1, Cable cable, Device device2) {
-		cable.setSource(device1);
+			Device device2, Device device1, Cable cable) {
 		cable.setTarget(device2);
-		return new Object[] { device1, cable, device2 };
+		cable.setSource(device1);
+		return new Object[] { device2, device1, cable };
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_1_2_collecttranslatedelements_greenF() {
@@ -1932,186 +1933,188 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_1_3_bookkeepingforedges_blackBBBBBBBBBBBBBBB(
-			PerformRuleResult ruleresult, EObject xDeviceToDevice, EObject xCable, EObject xDevice2, EObject device1,
-			EObject connection2, EObject cableAttributes, EObject container, EObject xDeviceToDevice2, EObject cable,
-			EObject xContainer, EObject connection1, EObject device2, EObject xDevice1, EObject xCableToCable) {
-		if (!xDeviceToDevice.equals(xDeviceToDevice2)) {
-			if (!xCable.equals(xDeviceToDevice)) {
-				if (!xCable.equals(xDevice2)) {
-					if (!xCable.equals(xDeviceToDevice2)) {
-						if (!xCable.equals(xContainer)) {
-							if (!xCable.equals(xDevice1)) {
-								if (!xCable.equals(xCableToCable)) {
-									if (!xDevice2.equals(xDeviceToDevice)) {
-										if (!xDevice2.equals(xDeviceToDevice2)) {
-											if (!device1.equals(xDeviceToDevice)) {
-												if (!device1.equals(xCable)) {
-													if (!device1.equals(xDevice2)) {
-														if (!device1.equals(xDeviceToDevice2)) {
-															if (!device1.equals(xContainer)) {
-																if (!device1.equals(device2)) {
-																	if (!device1.equals(xDevice1)) {
-																		if (!device1.equals(xCableToCable)) {
-																			if (!connection2.equals(xDeviceToDevice)) {
-																				if (!connection2.equals(xCable)) {
-																					if (!connection2.equals(xDevice2)) {
-																						if (!connection2
-																								.equals(device1)) {
-																							if (!connection2.equals(
-																									container)) {
-																								if (!connection2.equals(
-																										xDeviceToDevice2)) {
-																									if (!connection2
-																											.equals(xContainer)) {
-																										if (!connection2
-																												.equals(device2)) {
-																											if (!connection2
-																													.equals(xDevice1)) {
+			PerformRuleResult ruleresult, EObject xContainer, EObject xDeviceToDevice, EObject device2,
+			EObject xDevice1, EObject connection1, EObject connection2, EObject cableAttributes, EObject container,
+			EObject xDevice2, EObject device1, EObject cable, EObject xDeviceToDevice2, EObject xCable,
+			EObject xCableToCable) {
+		if (!xContainer.equals(xDeviceToDevice)) {
+			if (!xContainer.equals(xDevice1)) {
+				if (!xContainer.equals(xDevice2)) {
+					if (!xContainer.equals(xDeviceToDevice2)) {
+						if (!xDeviceToDevice.equals(xDeviceToDevice2)) {
+							if (!device2.equals(xContainer)) {
+								if (!device2.equals(xDeviceToDevice)) {
+									if (!device2.equals(xDevice1)) {
+										if (!device2.equals(xDevice2)) {
+											if (!device2.equals(xDeviceToDevice2)) {
+												if (!device2.equals(xCable)) {
+													if (!device2.equals(xCableToCable)) {
+														if (!xDevice1.equals(xDeviceToDevice)) {
+															if (!xDevice1.equals(xDevice2)) {
+																if (!xDevice1.equals(xDeviceToDevice2)) {
+																	if (!connection1.equals(xContainer)) {
+																		if (!connection1.equals(xDeviceToDevice)) {
+																			if (!connection1.equals(device2)) {
+																				if (!connection1.equals(xDevice1)) {
+																					if (!connection1
+																							.equals(connection2)) {
+																						if (!connection1
+																								.equals(container)) {
+																							if (!connection1
+																									.equals(xDevice2)) {
+																								if (!connection1.equals(
+																										device1)) {
+																									if (!connection1
+																											.equals(xDeviceToDevice2)) {
+																										if (!connection1
+																												.equals(xCable)) {
+																											if (!connection1
+																													.equals(xCableToCable)) {
 																												if (!connection2
-																														.equals(xCableToCable)) {
-																													if (!cableAttributes
+																														.equals(xContainer)) {
+																													if (!connection2
 																															.equals(xDeviceToDevice)) {
-																														if (!cableAttributes
-																																.equals(xCable)) {
-																															if (!cableAttributes
-																																	.equals(xDevice2)) {
-																																if (!cableAttributes
-																																		.equals(device1)) {
-																																	if (!cableAttributes
-																																			.equals(connection2)) {
-																																		if (!cableAttributes
-																																				.equals(container)) {
-																																			if (!cableAttributes
+																														if (!connection2
+																																.equals(device2)) {
+																															if (!connection2
+																																	.equals(xDevice1)) {
+																																if (!connection2
+																																		.equals(container)) {
+																																	if (!connection2
+																																			.equals(xDevice2)) {
+																																		if (!connection2
+																																				.equals(device1)) {
+																																			if (!connection2
 																																					.equals(xDeviceToDevice2)) {
-																																				if (!cableAttributes
-																																						.equals(xContainer)) {
-																																					if (!cableAttributes
-																																							.equals(connection1)) {
+																																				if (!connection2
+																																						.equals(xCable)) {
+																																					if (!connection2
+																																							.equals(xCableToCable)) {
 																																						if (!cableAttributes
-																																								.equals(device2)) {
+																																								.equals(xContainer)) {
 																																							if (!cableAttributes
-																																									.equals(xDevice1)) {
+																																									.equals(xDeviceToDevice)) {
 																																								if (!cableAttributes
-																																										.equals(xCableToCable)) {
-																																									if (!container
-																																											.equals(xDeviceToDevice)) {
-																																										if (!container
-																																												.equals(xCable)) {
-																																											if (!container
-																																													.equals(xDevice2)) {
-																																												if (!container
-																																														.equals(device1)) {
-																																													if (!container
-																																															.equals(xDeviceToDevice2)) {
-																																														if (!container
-																																																.equals(xContainer)) {
-																																															if (!container
-																																																	.equals(device2)) {
-																																																if (!container
-																																																		.equals(xDevice1)) {
-																																																	if (!container
+																																										.equals(device2)) {
+																																									if (!cableAttributes
+																																											.equals(xDevice1)) {
+																																										if (!cableAttributes
+																																												.equals(connection1)) {
+																																											if (!cableAttributes
+																																													.equals(connection2)) {
+																																												if (!cableAttributes
+																																														.equals(container)) {
+																																													if (!cableAttributes
+																																															.equals(xDevice2)) {
+																																														if (!cableAttributes
+																																																.equals(device1)) {
+																																															if (!cableAttributes
+																																																	.equals(xDeviceToDevice2)) {
+																																																if (!cableAttributes
+																																																		.equals(xCable)) {
+																																																	if (!cableAttributes
 																																																			.equals(xCableToCable)) {
-																																																		if (!cable
-																																																				.equals(xDeviceToDevice)) {
-																																																			if (!cable
-																																																					.equals(xCable)) {
-																																																				if (!cable
-																																																						.equals(xDevice2)) {
-																																																					if (!cable
-																																																							.equals(device1)) {
-																																																						if (!cable
-																																																								.equals(connection2)) {
-																																																							if (!cable
-																																																									.equals(cableAttributes)) {
-																																																								if (!cable
-																																																										.equals(container)) {
-																																																									if (!cable
-																																																											.equals(xDeviceToDevice2)) {
-																																																										if (!cable
-																																																												.equals(xContainer)) {
-																																																											if (!cable
-																																																													.equals(connection1)) {
-																																																												if (!cable
-																																																														.equals(device2)) {
-																																																													if (!cable
-																																																															.equals(xDevice1)) {
-																																																														if (!cable
-																																																																.equals(xCableToCable)) {
-																																																															if (!xContainer
-																																																																	.equals(xDeviceToDevice)) {
-																																																																if (!xContainer
-																																																																		.equals(xDevice2)) {
-																																																																	if (!xContainer
-																																																																			.equals(xDeviceToDevice2)) {
-																																																																		if (!xContainer
-																																																																				.equals(xDevice1)) {
-																																																																			if (!connection1
-																																																																					.equals(xDeviceToDevice)) {
-																																																																				if (!connection1
-																																																																						.equals(xCable)) {
-																																																																					if (!connection1
-																																																																							.equals(xDevice2)) {
-																																																																						if (!connection1
-																																																																								.equals(device1)) {
-																																																																							if (!connection1
-																																																																									.equals(connection2)) {
-																																																																								if (!connection1
-																																																																										.equals(container)) {
-																																																																									if (!connection1
-																																																																											.equals(xDeviceToDevice2)) {
-																																																																										if (!connection1
-																																																																												.equals(xContainer)) {
-																																																																											if (!connection1
-																																																																													.equals(device2)) {
-																																																																												if (!connection1
-																																																																														.equals(xDevice1)) {
-																																																																													if (!connection1
-																																																																															.equals(xCableToCable)) {
-																																																																														if (!device2
-																																																																																.equals(xDeviceToDevice)) {
-																																																																															if (!device2
-																																																																																	.equals(xCable)) {
-																																																																																if (!device2
-																																																																																		.equals(xDevice2)) {
-																																																																																	if (!device2
-																																																																																			.equals(xDeviceToDevice2)) {
-																																																																																		if (!device2
+																																																		if (!container
+																																																				.equals(xContainer)) {
+																																																			if (!container
+																																																					.equals(xDeviceToDevice)) {
+																																																				if (!container
+																																																						.equals(device2)) {
+																																																					if (!container
+																																																							.equals(xDevice1)) {
+																																																						if (!container
+																																																								.equals(xDevice2)) {
+																																																							if (!container
+																																																									.equals(device1)) {
+																																																								if (!container
+																																																										.equals(xDeviceToDevice2)) {
+																																																									if (!container
+																																																											.equals(xCable)) {
+																																																										if (!container
+																																																												.equals(xCableToCable)) {
+																																																											if (!xDevice2
+																																																													.equals(xDeviceToDevice)) {
+																																																												if (!xDevice2
+																																																														.equals(xDeviceToDevice2)) {
+																																																													if (!device1
+																																																															.equals(xContainer)) {
+																																																														if (!device1
+																																																																.equals(xDeviceToDevice)) {
+																																																															if (!device1
+																																																																	.equals(device2)) {
+																																																																if (!device1
+																																																																		.equals(xDevice1)) {
+																																																																	if (!device1
+																																																																			.equals(xDevice2)) {
+																																																																		if (!device1
+																																																																				.equals(xDeviceToDevice2)) {
+																																																																			if (!device1
+																																																																					.equals(xCable)) {
+																																																																				if (!device1
+																																																																						.equals(xCableToCable)) {
+																																																																					if (!cable
+																																																																							.equals(xContainer)) {
+																																																																						if (!cable
+																																																																								.equals(xDeviceToDevice)) {
+																																																																							if (!cable
+																																																																									.equals(device2)) {
+																																																																								if (!cable
+																																																																										.equals(xDevice1)) {
+																																																																									if (!cable
+																																																																											.equals(connection1)) {
+																																																																										if (!cable
+																																																																												.equals(connection2)) {
+																																																																											if (!cable
+																																																																													.equals(cableAttributes)) {
+																																																																												if (!cable
+																																																																														.equals(container)) {
+																																																																													if (!cable
+																																																																															.equals(xDevice2)) {
+																																																																														if (!cable
+																																																																																.equals(device1)) {
+																																																																															if (!cable
+																																																																																	.equals(xDeviceToDevice2)) {
+																																																																																if (!cable
+																																																																																		.equals(xCable)) {
+																																																																																	if (!cable
+																																																																																			.equals(xCableToCable)) {
+																																																																																		if (!xCable
 																																																																																				.equals(xContainer)) {
-																																																																																			if (!device2
-																																																																																					.equals(xDevice1)) {
-																																																																																				if (!device2
-																																																																																						.equals(xCableToCable)) {
-																																																																																					if (!xDevice1
-																																																																																							.equals(xDeviceToDevice)) {
-																																																																																						if (!xDevice1
-																																																																																								.equals(xDevice2)) {
-																																																																																							if (!xDevice1
-																																																																																									.equals(xDeviceToDevice2)) {
+																																																																																			if (!xCable
+																																																																																					.equals(xDeviceToDevice)) {
+																																																																																				if (!xCable
+																																																																																						.equals(xDevice1)) {
+																																																																																					if (!xCable
+																																																																																							.equals(xDevice2)) {
+																																																																																						if (!xCable
+																																																																																								.equals(xDeviceToDevice2)) {
+																																																																																							if (!xCable
+																																																																																									.equals(xCableToCable)) {
 																																																																																								if (!xCableToCable
-																																																																																										.equals(xDeviceToDevice)) {
+																																																																																										.equals(xContainer)) {
 																																																																																									if (!xCableToCable
-																																																																																											.equals(xDevice2)) {
+																																																																																											.equals(xDeviceToDevice)) {
 																																																																																										if (!xCableToCable
-																																																																																												.equals(xDeviceToDevice2)) {
+																																																																																												.equals(xDevice1)) {
 																																																																																											if (!xCableToCable
-																																																																																													.equals(xContainer)) {
+																																																																																													.equals(xDevice2)) {
 																																																																																												if (!xCableToCable
-																																																																																														.equals(xDevice1)) {
+																																																																																														.equals(xDeviceToDevice2)) {
 																																																																																													return new Object[] {
 																																																																																															ruleresult,
+																																																																																															xContainer,
 																																																																																															xDeviceToDevice,
-																																																																																															xCable,
-																																																																																															xDevice2,
-																																																																																															device1,
+																																																																																															device2,
+																																																																																															xDevice1,
+																																																																																															connection1,
 																																																																																															connection2,
 																																																																																															cableAttributes,
 																																																																																															container,
-																																																																																															xDeviceToDevice2,
+																																																																																															xDevice2,
+																																																																																															device1,
 																																																																																															cable,
-																																																																																															xContainer,
-																																																																																															connection1,
-																																																																																															device2,
-																																																																																															xDevice1,
+																																																																																															xDeviceToDevice2,
+																																																																																															xCable,
 																																																																																															xCableToCable };
 																																																																																												}
 																																																																																											}
@@ -2208,28 +2211,37 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_1_3_bookkeepingforedges_greenBBBBBBBBBBFFFFFFFF(
-			PerformRuleResult ruleresult, EObject xCable, EObject xDevice2, EObject device1, EObject connection2,
-			EObject cableAttributes, EObject cable, EObject connection1, EObject device2, EObject xDevice1) {
-		EMoflonEdge connection2__xCable____incoming = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+			PerformRuleResult ruleresult, EObject device2, EObject xDevice1, EObject connection1, EObject connection2,
+			EObject cableAttributes, EObject xDevice2, EObject device1, EObject cable, EObject xCable) {
+		EMoflonEdge connection1__xCable____outgoing = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge cableAttributes__xDevice2____endPoint2 = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge cable__device2____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge device2__cable____incoming = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge cable__device1____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge device1__cable____outgoing = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge cableAttributes__xDevice1____endPoint1 = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge cableAttributes__xDevice2____endPoint2 = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge connection1__xCable____outgoing = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge cable__device2____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge device2__cable____incoming = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge connection2__xCable____incoming = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String ruleresult_ruleName_prime = "XSimplexConnectionToConnectionRule";
-		String connection2__xCable____incoming_name_prime = "incoming";
+		String connection1__xCable____outgoing_name_prime = "outgoing";
+		String cableAttributes__xDevice2____endPoint2_name_prime = "endPoint2";
+		String cable__device2____target_name_prime = "target";
+		String device2__cable____incoming_name_prime = "incoming";
 		String cable__device1____source_name_prime = "source";
 		String device1__cable____outgoing_name_prime = "outgoing";
 		String cableAttributes__xDevice1____endPoint1_name_prime = "endPoint1";
-		String cableAttributes__xDevice2____endPoint2_name_prime = "endPoint2";
-		String connection1__xCable____outgoing_name_prime = "outgoing";
-		String cable__device2____target_name_prime = "target";
-		String device2__cable____incoming_name_prime = "incoming";
-		connection2__xCable____incoming.setSrc(connection2);
-		connection2__xCable____incoming.setTrg(xCable);
-		ruleresult.getTranslatedEdges().add(connection2__xCable____incoming);
+		String connection2__xCable____incoming_name_prime = "incoming";
+		connection1__xCable____outgoing.setSrc(connection1);
+		connection1__xCable____outgoing.setTrg(xCable);
+		ruleresult.getTranslatedEdges().add(connection1__xCable____outgoing);
+		cableAttributes__xDevice2____endPoint2.setSrc(cableAttributes);
+		cableAttributes__xDevice2____endPoint2.setTrg(xDevice2);
+		ruleresult.getTranslatedEdges().add(cableAttributes__xDevice2____endPoint2);
+		cable__device2____target.setSrc(cable);
+		cable__device2____target.setTrg(device2);
+		ruleresult.getCreatedEdges().add(cable__device2____target);
+		device2__cable____incoming.setSrc(device2);
+		device2__cable____incoming.setTrg(cable);
+		ruleresult.getCreatedEdges().add(device2__cable____incoming);
 		cable__device1____source.setSrc(cable);
 		cable__device1____source.setTrg(device1);
 		ruleresult.getCreatedEdges().add(cable__device1____source);
@@ -2239,41 +2251,31 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 		cableAttributes__xDevice1____endPoint1.setSrc(cableAttributes);
 		cableAttributes__xDevice1____endPoint1.setTrg(xDevice1);
 		ruleresult.getTranslatedEdges().add(cableAttributes__xDevice1____endPoint1);
-		cableAttributes__xDevice2____endPoint2.setSrc(cableAttributes);
-		cableAttributes__xDevice2____endPoint2.setTrg(xDevice2);
-		ruleresult.getTranslatedEdges().add(cableAttributes__xDevice2____endPoint2);
-		connection1__xCable____outgoing.setSrc(connection1);
-		connection1__xCable____outgoing.setTrg(xCable);
-		ruleresult.getTranslatedEdges().add(connection1__xCable____outgoing);
-		cable__device2____target.setSrc(cable);
-		cable__device2____target.setTrg(device2);
-		ruleresult.getCreatedEdges().add(cable__device2____target);
-		device2__cable____incoming.setSrc(device2);
-		device2__cable____incoming.setTrg(cable);
-		ruleresult.getCreatedEdges().add(device2__cable____incoming);
+		connection2__xCable____incoming.setSrc(connection2);
+		connection2__xCable____incoming.setTrg(xCable);
+		ruleresult.getTranslatedEdges().add(connection2__xCable____incoming);
 		ruleresult.setRuleName(ruleresult_ruleName_prime);
-		connection2__xCable____incoming.setName(connection2__xCable____incoming_name_prime);
+		connection1__xCable____outgoing.setName(connection1__xCable____outgoing_name_prime);
+		cableAttributes__xDevice2____endPoint2.setName(cableAttributes__xDevice2____endPoint2_name_prime);
+		cable__device2____target.setName(cable__device2____target_name_prime);
+		device2__cable____incoming.setName(device2__cable____incoming_name_prime);
 		cable__device1____source.setName(cable__device1____source_name_prime);
 		device1__cable____outgoing.setName(device1__cable____outgoing_name_prime);
 		cableAttributes__xDevice1____endPoint1.setName(cableAttributes__xDevice1____endPoint1_name_prime);
-		cableAttributes__xDevice2____endPoint2.setName(cableAttributes__xDevice2____endPoint2_name_prime);
-		connection1__xCable____outgoing.setName(connection1__xCable____outgoing_name_prime);
-		cable__device2____target.setName(cable__device2____target_name_prime);
-		device2__cable____incoming.setName(device2__cable____incoming_name_prime);
-		return new Object[] { ruleresult, xCable, xDevice2, device1, connection2, cableAttributes, cable, connection1,
-				device2, xDevice1, connection2__xCable____incoming, cable__device1____source,
-				device1__cable____outgoing, cableAttributes__xDevice1____endPoint1,
-				cableAttributes__xDevice2____endPoint2, connection1__xCable____outgoing, cable__device2____target,
-				device2__cable____incoming };
+		connection2__xCable____incoming.setName(connection2__xCable____incoming_name_prime);
+		return new Object[] { ruleresult, device2, xDevice1, connection1, connection2, cableAttributes, xDevice2,
+				device1, cable, xCable, connection1__xCable____outgoing, cableAttributes__xDevice2____endPoint2,
+				cable__device2____target, device2__cable____incoming, cable__device1____source,
+				device1__cable____outgoing, cableAttributes__xDevice1____endPoint1, connection2__xCable____incoming };
 	}
 
 	public static final void pattern_XSimplexConnectionToConnectionRule_1_5_registerobjects_expressionBBBBBBBBBBBBBBBB(
-			XSimplexConnectionToConnectionRule _this, PerformRuleResult ruleresult, EObject xDeviceToDevice,
-			EObject xCable, EObject xDevice2, EObject device1, EObject connection2, EObject cableAttributes,
-			EObject container, EObject xDeviceToDevice2, EObject cable, EObject xContainer, EObject connection1,
-			EObject device2, EObject xDevice1, EObject xCableToCable) {
-		_this.registerObjects_FWD(ruleresult, xDeviceToDevice, xCable, xDevice2, device1, connection2, cableAttributes,
-				container, xDeviceToDevice2, cable, xContainer, connection1, device2, xDevice1, xCableToCable);
+			XSimplexConnectionToConnectionRule _this, PerformRuleResult ruleresult, EObject xContainer,
+			EObject xDeviceToDevice, EObject device2, EObject xDevice1, EObject connection1, EObject connection2,
+			EObject cableAttributes, EObject container, EObject xDevice2, EObject device1, EObject cable,
+			EObject xDeviceToDevice2, EObject xCable, EObject xCableToCable) {
+		_this.registerObjects_FWD(ruleresult, xContainer, xDeviceToDevice, device2, xDevice1, connection1, connection2,
+				cableAttributes, container, xDevice2, device1, cable, xDeviceToDevice2, xCable, xCableToCable);
 
 	}
 
@@ -2335,36 +2337,36 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_2_2_corematch_bindingFFFFFFFB(Match match) {
-		EObject _localVariable_0 = match.getObject("xCable");
-		EObject _localVariable_1 = match.getObject("xDevice2");
-		EObject _localVariable_2 = match.getObject("connection2");
-		EObject _localVariable_3 = match.getObject("cableAttributes");
-		EObject _localVariable_4 = match.getObject("xContainer");
-		EObject _localVariable_5 = match.getObject("connection1");
-		EObject _localVariable_6 = match.getObject("xDevice1");
-		EObject tmpXCable = _localVariable_0;
-		EObject tmpXDevice2 = _localVariable_1;
-		EObject tmpConnection2 = _localVariable_2;
-		EObject tmpCableAttributes = _localVariable_3;
-		EObject tmpXContainer = _localVariable_4;
-		EObject tmpConnection1 = _localVariable_5;
-		EObject tmpXDevice1 = _localVariable_6;
-		if (tmpXCable instanceof XCable) {
-			XCable xCable = (XCable) tmpXCable;
-			if (tmpXDevice2 instanceof XDevice) {
-				XDevice xDevice2 = (XDevice) tmpXDevice2;
-				if (tmpConnection2 instanceof Connections) {
-					Connections connection2 = (Connections) tmpConnection2;
-					if (tmpCableAttributes instanceof CableAttributes) {
-						CableAttributes cableAttributes = (CableAttributes) tmpCableAttributes;
-						if (tmpXContainer instanceof XContainer) {
-							XContainer xContainer = (XContainer) tmpXContainer;
-							if (tmpConnection1 instanceof Connections) {
-								Connections connection1 = (Connections) tmpConnection1;
-								if (tmpXDevice1 instanceof XDevice) {
-									XDevice xDevice1 = (XDevice) tmpXDevice1;
-									return new Object[] { xCable, xDevice2, connection2, cableAttributes, xContainer,
-											connection1, xDevice1, match };
+		EObject _localVariable_0 = match.getObject("xContainer");
+		EObject _localVariable_1 = match.getObject("xDevice1");
+		EObject _localVariable_2 = match.getObject("connection1");
+		EObject _localVariable_3 = match.getObject("connection2");
+		EObject _localVariable_4 = match.getObject("cableAttributes");
+		EObject _localVariable_5 = match.getObject("xDevice2");
+		EObject _localVariable_6 = match.getObject("xCable");
+		EObject tmpXContainer = _localVariable_0;
+		EObject tmpXDevice1 = _localVariable_1;
+		EObject tmpConnection1 = _localVariable_2;
+		EObject tmpConnection2 = _localVariable_3;
+		EObject tmpCableAttributes = _localVariable_4;
+		EObject tmpXDevice2 = _localVariable_5;
+		EObject tmpXCable = _localVariable_6;
+		if (tmpXContainer instanceof XContainer) {
+			XContainer xContainer = (XContainer) tmpXContainer;
+			if (tmpXDevice1 instanceof XDevice) {
+				XDevice xDevice1 = (XDevice) tmpXDevice1;
+				if (tmpConnection1 instanceof Connections) {
+					Connections connection1 = (Connections) tmpConnection1;
+					if (tmpConnection2 instanceof Connections) {
+						Connections connection2 = (Connections) tmpConnection2;
+						if (tmpCableAttributes instanceof CableAttributes) {
+							CableAttributes cableAttributes = (CableAttributes) tmpCableAttributes;
+							if (tmpXDevice2 instanceof XDevice) {
+								XDevice xDevice2 = (XDevice) tmpXDevice2;
+								if (tmpXCable instanceof XCable) {
+									XCable xCable = (XCable) tmpXCable;
+									return new Object[] { xContainer, xDevice1, connection1, connection2,
+											cableAttributes, xDevice2, xCable, match };
 								}
 							}
 						}
@@ -2375,31 +2377,31 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_XSimplexConnectionToConnectionRule_2_2_corematch_blackFBBFBBFFBBFBFB(
-			XCable xCable, XDevice xDevice2, Connections connection2, CableAttributes cableAttributes,
-			XContainer xContainer, Connections connection1, XDevice xDevice1, Match match) {
+	public static final Iterable<Object[]> pattern_XSimplexConnectionToConnectionRule_2_2_corematch_blackBFFBBBBBFFFBFB(
+			XContainer xContainer, XDevice xDevice1, Connections connection1, Connections connection2,
+			CableAttributes cableAttributes, XDevice xDevice2, XCable xCable, Match match) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		if (!connection1.equals(connection2)) {
-			if (!xDevice1.equals(xDevice2)) {
+		if (!xDevice1.equals(xDevice2)) {
+			if (!connection1.equals(connection2)) {
 				boolean cableAttributes_isDuplex = cableAttributes.isIsDuplex();
 				if (Boolean.valueOf(cableAttributes_isDuplex).equals(Boolean.valueOf(false))) {
-					for (XDeviceToDevice xDeviceToDevice2 : org.moflon.core.utilities.eMoflonEMFUtil
-							.getOppositeReferenceTyped(xDevice2, XDeviceToDevice.class, "source")) {
-						Device device2 = xDeviceToDevice2.getTarget();
-						if (device2 != null) {
-							for (XDeviceToDevice xDeviceToDevice : org.moflon.core.utilities.eMoflonEMFUtil
-									.getOppositeReferenceTyped(xDevice1, XDeviceToDevice.class, "source")) {
+					for (XDeviceToDevice xDeviceToDevice : org.moflon.core.utilities.eMoflonEMFUtil
+							.getOppositeReferenceTyped(xDevice1, XDeviceToDevice.class, "source")) {
+						Device device1 = xDeviceToDevice.getTarget();
+						if (device1 != null) {
+							for (XDeviceToDevice xDeviceToDevice2 : org.moflon.core.utilities.eMoflonEMFUtil
+									.getOppositeReferenceTyped(xDevice2, XDeviceToDevice.class, "source")) {
 								if (!xDeviceToDevice.equals(xDeviceToDevice2)) {
-									Device device1 = xDeviceToDevice.getTarget();
-									if (device1 != null) {
+									Device device2 = xDeviceToDevice2.getTarget();
+									if (device2 != null) {
 										if (!device1.equals(device2)) {
 											for (XCableToCable xCableToCable : org.moflon.core.utilities.eMoflonEMFUtil
 													.getOppositeReferenceTyped(xCable, XCableToCable.class, "source")) {
 												Cable cable = xCableToCable.getTarget();
 												if (cable != null) {
-													_result.add(new Object[] { xDeviceToDevice, xCable, xDevice2,
-															device1, connection2, cableAttributes, xDeviceToDevice2,
-															cable, xContainer, connection1, device2, xDevice1,
+													_result.add(new Object[] { xContainer, xDeviceToDevice, device2,
+															xDevice1, connection1, connection2, cableAttributes,
+															xDevice2, device1, cable, xDeviceToDevice2, xCable,
 															xCableToCable, match });
 												}
 
@@ -2419,35 +2421,35 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 		return _result;
 	}
 
-	public static final Iterable<Object[]> pattern_XSimplexConnectionToConnectionRule_2_3_findcontext_blackBBBBBBFBBBBBBB(
-			XDeviceToDevice xDeviceToDevice, XCable xCable, XDevice xDevice2, Device device1, Connections connection2,
-			CableAttributes cableAttributes, XDeviceToDevice xDeviceToDevice2, Cable cable, XContainer xContainer,
-			Connections connection1, Device device2, XDevice xDevice1, XCableToCable xCableToCable) {
+	public static final Iterable<Object[]> pattern_XSimplexConnectionToConnectionRule_2_3_findcontext_blackBBBBBBBFBBBBBB(
+			XContainer xContainer, XDeviceToDevice xDeviceToDevice, Device device2, XDevice xDevice1,
+			Connections connection1, Connections connection2, CableAttributes cableAttributes, XDevice xDevice2,
+			Device device1, Cable cable, XDeviceToDevice xDeviceToDevice2, XCable xCable, XCableToCable xCableToCable) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		if (!xDeviceToDevice.equals(xDeviceToDevice2)) {
-			if (!device1.equals(device2)) {
+			if (!xDevice1.equals(xDevice2)) {
 				if (!connection1.equals(connection2)) {
-					if (!xDevice1.equals(xDevice2)) {
-						if (cableAttributes.equals(xCable.getCableAttributes())) {
-							if (xDevice2.equals(xDeviceToDevice2.getSource())) {
-								if (connection2.getIncoming().contains(xCable)) {
-									if (xDevice1.equals(cableAttributes.getEndPoint1())) {
-										if (connection2.equals(xDevice2.getConnections())) {
-											if (xContainer.getElements().contains(xDevice2)) {
-												if (device1.equals(xDeviceToDevice.getTarget())) {
-													if (xDevice2.equals(cableAttributes.getEndPoint2())) {
-														if (xContainer.getElements().contains(xDevice1)) {
-															if (xDevice1.equals(xDeviceToDevice.getSource())) {
-																if (connection1.equals(xDevice1.getConnections())) {
-																	if (device2.equals(xDeviceToDevice2.getTarget())) {
-																		if (connection1.getOutgoing()
-																				.contains(xCable)) {
-																			if (xCable.equals(
-																					xCableToCable.getSource())) {
-																				if (cable.equals(
-																						xCableToCable.getTarget())) {
-																					if (xContainer.getElements()
-																							.contains(xCable)) {
+					if (!device1.equals(device2)) {
+						if (xDevice1.equals(xDeviceToDevice.getSource())) {
+							if (connection1.equals(xDevice1.getConnections())) {
+								if (connection1.getOutgoing().contains(xCable)) {
+									if (xContainer.getElements().contains(xCable)) {
+										if (xContainer.getElements().contains(xDevice2)) {
+											if (xDevice2.equals(cableAttributes.getEndPoint2())) {
+												if (connection2.equals(xDevice2.getConnections())) {
+													if (xDevice2.equals(xDeviceToDevice2.getSource())) {
+														if (xDevice1.equals(cableAttributes.getEndPoint1())) {
+															if (cable.equals(xCableToCable.getTarget())) {
+																if (xCable.equals(xCableToCable.getSource())) {
+																	if (xContainer.getElements().contains(xDevice1)) {
+																		if (device2
+																				.equals(xDeviceToDevice2.getTarget())) {
+																			if (device1.equals(
+																					xDeviceToDevice.getTarget())) {
+																				if (connection2.getIncoming()
+																						.contains(xCable)) {
+																					if (cableAttributes.equals(xCable
+																							.getCableAttributes())) {
 																						boolean cableAttributes_isDuplex = cableAttributes
 																								.isIsDuplex();
 																						if (Boolean
@@ -2457,32 +2459,32 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 																										false))) {
 																							for (Container container : org.moflon.core.utilities.eMoflonEMFUtil
 																									.getOppositeReferenceTyped(
-																											cable,
+																											device1,
 																											Container.class,
-																											"cables")) {
+																											"devices")) {
 																								if (container
-																										.getDevices()
+																										.getCables()
 																										.contains(
-																												device2)) {
+																												cable)) {
 																									if (container
 																											.getDevices()
 																											.contains(
-																													device1)) {
+																													device2)) {
 																										_result.add(
 																												new Object[] {
+																														xContainer,
 																														xDeviceToDevice,
-																														xCable,
-																														xDevice2,
-																														device1,
+																														device2,
+																														xDevice1,
+																														connection1,
 																														connection2,
 																														cableAttributes,
 																														container,
-																														xDeviceToDevice2,
+																														xDevice2,
+																														device1,
 																														cable,
-																														xContainer,
-																														connection1,
-																														device2,
-																														xDevice1,
+																														xDeviceToDevice2,
+																														xCable,
 																														xCableToCable });
 																									}
 																								}
@@ -2513,165 +2515,164 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_2_3_findcontext_greenBBBBBBBBBBBBBBFFFFFFFFFFFFFFFFFFFF(
-			XDeviceToDevice xDeviceToDevice, XCable xCable, XDevice xDevice2, Device device1, Connections connection2,
-			CableAttributes cableAttributes, Container container, XDeviceToDevice xDeviceToDevice2, Cable cable,
-			XContainer xContainer, Connections connection1, Device device2, XDevice xDevice1,
+			XContainer xContainer, XDeviceToDevice xDeviceToDevice, Device device2, XDevice xDevice1,
+			Connections connection1, Connections connection2, CableAttributes cableAttributes, Container container,
+			XDevice xDevice2, Device device1, Cable cable, XDeviceToDevice xDeviceToDevice2, XCable xCable,
 			XCableToCable xCableToCable) {
 		IsApplicableMatch isApplicableMatch = RuntimeFactory.eINSTANCE.createIsApplicableMatch();
-		EMoflonEdge xCable__cableAttributes____cableAttributes = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xDeviceToDevice2__xDevice2____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge connection2__xCable____incoming = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge cableAttributes__xDevice1____endPoint1 = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xDevice2__connection2____connections = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xContainer__xDevice2____elements = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge container__cable____cables = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xDeviceToDevice__device1____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge container__device2____devices = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge cableAttributes__xDevice2____endPoint2 = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xContainer__xDevice1____elements = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge xDeviceToDevice__xDevice1____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge xDevice1__connection1____connections = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge container__device1____devices = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xDeviceToDevice2__device2____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge connection1__xCable____outgoing = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xCableToCable__xCable____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xCableToCable__cable____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge xContainer__xCable____elements = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		String xCable__cableAttributes____cableAttributes_name_prime = "cableAttributes";
-		String xDeviceToDevice2__xDevice2____source_name_prime = "source";
-		String connection2__xCable____incoming_name_prime = "incoming";
-		String cableAttributes__xDevice1____endPoint1_name_prime = "endPoint1";
-		String xDevice2__connection2____connections_name_prime = "connections";
-		String xContainer__xDevice2____elements_name_prime = "elements";
-		String container__cable____cables_name_prime = "cables";
-		String xDeviceToDevice__device1____target_name_prime = "target";
-		String container__device2____devices_name_prime = "devices";
-		String cableAttributes__xDevice2____endPoint2_name_prime = "endPoint2";
-		String xContainer__xDevice1____elements_name_prime = "elements";
+		EMoflonEdge xContainer__xDevice2____elements = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge cableAttributes__xDevice2____endPoint2 = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge container__device1____devices = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge container__cable____cables = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xDevice2__connection2____connections = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xDeviceToDevice2__xDevice2____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge cableAttributes__xDevice1____endPoint1 = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xCableToCable__cable____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xCableToCable__xCable____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xContainer__xDevice1____elements = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xDeviceToDevice2__device2____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xDeviceToDevice__device1____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge connection2__xCable____incoming = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xCable__cableAttributes____cableAttributes = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge container__device2____devices = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String xDeviceToDevice__xDevice1____source_name_prime = "source";
 		String xDevice1__connection1____connections_name_prime = "connections";
-		String container__device1____devices_name_prime = "devices";
-		String xDeviceToDevice2__device2____target_name_prime = "target";
 		String connection1__xCable____outgoing_name_prime = "outgoing";
-		String xCableToCable__xCable____source_name_prime = "source";
-		String xCableToCable__cable____target_name_prime = "target";
 		String xContainer__xCable____elements_name_prime = "elements";
+		String xContainer__xDevice2____elements_name_prime = "elements";
+		String cableAttributes__xDevice2____endPoint2_name_prime = "endPoint2";
+		String container__device1____devices_name_prime = "devices";
+		String container__cable____cables_name_prime = "cables";
+		String xDevice2__connection2____connections_name_prime = "connections";
+		String xDeviceToDevice2__xDevice2____source_name_prime = "source";
+		String cableAttributes__xDevice1____endPoint1_name_prime = "endPoint1";
+		String xCableToCable__cable____target_name_prime = "target";
+		String xCableToCable__xCable____source_name_prime = "source";
+		String xContainer__xDevice1____elements_name_prime = "elements";
+		String xDeviceToDevice2__device2____target_name_prime = "target";
+		String xDeviceToDevice__device1____target_name_prime = "target";
+		String connection2__xCable____incoming_name_prime = "incoming";
+		String xCable__cableAttributes____cableAttributes_name_prime = "cableAttributes";
+		String container__device2____devices_name_prime = "devices";
+		isApplicableMatch.getAllContextElements().add(xContainer);
 		isApplicableMatch.getAllContextElements().add(xDeviceToDevice);
-		isApplicableMatch.getAllContextElements().add(xCable);
-		isApplicableMatch.getAllContextElements().add(xDevice2);
-		isApplicableMatch.getAllContextElements().add(device1);
+		isApplicableMatch.getAllContextElements().add(device2);
+		isApplicableMatch.getAllContextElements().add(xDevice1);
+		isApplicableMatch.getAllContextElements().add(connection1);
 		isApplicableMatch.getAllContextElements().add(connection2);
 		isApplicableMatch.getAllContextElements().add(cableAttributes);
 		isApplicableMatch.getAllContextElements().add(container);
-		isApplicableMatch.getAllContextElements().add(xDeviceToDevice2);
+		isApplicableMatch.getAllContextElements().add(xDevice2);
+		isApplicableMatch.getAllContextElements().add(device1);
 		isApplicableMatch.getAllContextElements().add(cable);
-		isApplicableMatch.getAllContextElements().add(xContainer);
-		isApplicableMatch.getAllContextElements().add(connection1);
-		isApplicableMatch.getAllContextElements().add(device2);
-		isApplicableMatch.getAllContextElements().add(xDevice1);
+		isApplicableMatch.getAllContextElements().add(xDeviceToDevice2);
+		isApplicableMatch.getAllContextElements().add(xCable);
 		isApplicableMatch.getAllContextElements().add(xCableToCable);
-		xCable__cableAttributes____cableAttributes.setSrc(xCable);
-		xCable__cableAttributes____cableAttributes.setTrg(cableAttributes);
-		isApplicableMatch.getAllContextElements().add(xCable__cableAttributes____cableAttributes);
-		xDeviceToDevice2__xDevice2____source.setSrc(xDeviceToDevice2);
-		xDeviceToDevice2__xDevice2____source.setTrg(xDevice2);
-		isApplicableMatch.getAllContextElements().add(xDeviceToDevice2__xDevice2____source);
-		connection2__xCable____incoming.setSrc(connection2);
-		connection2__xCable____incoming.setTrg(xCable);
-		isApplicableMatch.getAllContextElements().add(connection2__xCable____incoming);
-		cableAttributes__xDevice1____endPoint1.setSrc(cableAttributes);
-		cableAttributes__xDevice1____endPoint1.setTrg(xDevice1);
-		isApplicableMatch.getAllContextElements().add(cableAttributes__xDevice1____endPoint1);
-		xDevice2__connection2____connections.setSrc(xDevice2);
-		xDevice2__connection2____connections.setTrg(connection2);
-		isApplicableMatch.getAllContextElements().add(xDevice2__connection2____connections);
-		xContainer__xDevice2____elements.setSrc(xContainer);
-		xContainer__xDevice2____elements.setTrg(xDevice2);
-		isApplicableMatch.getAllContextElements().add(xContainer__xDevice2____elements);
-		container__cable____cables.setSrc(container);
-		container__cable____cables.setTrg(cable);
-		isApplicableMatch.getAllContextElements().add(container__cable____cables);
-		xDeviceToDevice__device1____target.setSrc(xDeviceToDevice);
-		xDeviceToDevice__device1____target.setTrg(device1);
-		isApplicableMatch.getAllContextElements().add(xDeviceToDevice__device1____target);
-		container__device2____devices.setSrc(container);
-		container__device2____devices.setTrg(device2);
-		isApplicableMatch.getAllContextElements().add(container__device2____devices);
-		cableAttributes__xDevice2____endPoint2.setSrc(cableAttributes);
-		cableAttributes__xDevice2____endPoint2.setTrg(xDevice2);
-		isApplicableMatch.getAllContextElements().add(cableAttributes__xDevice2____endPoint2);
-		xContainer__xDevice1____elements.setSrc(xContainer);
-		xContainer__xDevice1____elements.setTrg(xDevice1);
-		isApplicableMatch.getAllContextElements().add(xContainer__xDevice1____elements);
 		xDeviceToDevice__xDevice1____source.setSrc(xDeviceToDevice);
 		xDeviceToDevice__xDevice1____source.setTrg(xDevice1);
 		isApplicableMatch.getAllContextElements().add(xDeviceToDevice__xDevice1____source);
 		xDevice1__connection1____connections.setSrc(xDevice1);
 		xDevice1__connection1____connections.setTrg(connection1);
 		isApplicableMatch.getAllContextElements().add(xDevice1__connection1____connections);
-		container__device1____devices.setSrc(container);
-		container__device1____devices.setTrg(device1);
-		isApplicableMatch.getAllContextElements().add(container__device1____devices);
-		xDeviceToDevice2__device2____target.setSrc(xDeviceToDevice2);
-		xDeviceToDevice2__device2____target.setTrg(device2);
-		isApplicableMatch.getAllContextElements().add(xDeviceToDevice2__device2____target);
 		connection1__xCable____outgoing.setSrc(connection1);
 		connection1__xCable____outgoing.setTrg(xCable);
 		isApplicableMatch.getAllContextElements().add(connection1__xCable____outgoing);
-		xCableToCable__xCable____source.setSrc(xCableToCable);
-		xCableToCable__xCable____source.setTrg(xCable);
-		isApplicableMatch.getAllContextElements().add(xCableToCable__xCable____source);
-		xCableToCable__cable____target.setSrc(xCableToCable);
-		xCableToCable__cable____target.setTrg(cable);
-		isApplicableMatch.getAllContextElements().add(xCableToCable__cable____target);
 		xContainer__xCable____elements.setSrc(xContainer);
 		xContainer__xCable____elements.setTrg(xCable);
 		isApplicableMatch.getAllContextElements().add(xContainer__xCable____elements);
-		xCable__cableAttributes____cableAttributes.setName(xCable__cableAttributes____cableAttributes_name_prime);
-		xDeviceToDevice2__xDevice2____source.setName(xDeviceToDevice2__xDevice2____source_name_prime);
-		connection2__xCable____incoming.setName(connection2__xCable____incoming_name_prime);
-		cableAttributes__xDevice1____endPoint1.setName(cableAttributes__xDevice1____endPoint1_name_prime);
-		xDevice2__connection2____connections.setName(xDevice2__connection2____connections_name_prime);
-		xContainer__xDevice2____elements.setName(xContainer__xDevice2____elements_name_prime);
-		container__cable____cables.setName(container__cable____cables_name_prime);
-		xDeviceToDevice__device1____target.setName(xDeviceToDevice__device1____target_name_prime);
-		container__device2____devices.setName(container__device2____devices_name_prime);
-		cableAttributes__xDevice2____endPoint2.setName(cableAttributes__xDevice2____endPoint2_name_prime);
-		xContainer__xDevice1____elements.setName(xContainer__xDevice1____elements_name_prime);
+		xContainer__xDevice2____elements.setSrc(xContainer);
+		xContainer__xDevice2____elements.setTrg(xDevice2);
+		isApplicableMatch.getAllContextElements().add(xContainer__xDevice2____elements);
+		cableAttributes__xDevice2____endPoint2.setSrc(cableAttributes);
+		cableAttributes__xDevice2____endPoint2.setTrg(xDevice2);
+		isApplicableMatch.getAllContextElements().add(cableAttributes__xDevice2____endPoint2);
+		container__device1____devices.setSrc(container);
+		container__device1____devices.setTrg(device1);
+		isApplicableMatch.getAllContextElements().add(container__device1____devices);
+		container__cable____cables.setSrc(container);
+		container__cable____cables.setTrg(cable);
+		isApplicableMatch.getAllContextElements().add(container__cable____cables);
+		xDevice2__connection2____connections.setSrc(xDevice2);
+		xDevice2__connection2____connections.setTrg(connection2);
+		isApplicableMatch.getAllContextElements().add(xDevice2__connection2____connections);
+		xDeviceToDevice2__xDevice2____source.setSrc(xDeviceToDevice2);
+		xDeviceToDevice2__xDevice2____source.setTrg(xDevice2);
+		isApplicableMatch.getAllContextElements().add(xDeviceToDevice2__xDevice2____source);
+		cableAttributes__xDevice1____endPoint1.setSrc(cableAttributes);
+		cableAttributes__xDevice1____endPoint1.setTrg(xDevice1);
+		isApplicableMatch.getAllContextElements().add(cableAttributes__xDevice1____endPoint1);
+		xCableToCable__cable____target.setSrc(xCableToCable);
+		xCableToCable__cable____target.setTrg(cable);
+		isApplicableMatch.getAllContextElements().add(xCableToCable__cable____target);
+		xCableToCable__xCable____source.setSrc(xCableToCable);
+		xCableToCable__xCable____source.setTrg(xCable);
+		isApplicableMatch.getAllContextElements().add(xCableToCable__xCable____source);
+		xContainer__xDevice1____elements.setSrc(xContainer);
+		xContainer__xDevice1____elements.setTrg(xDevice1);
+		isApplicableMatch.getAllContextElements().add(xContainer__xDevice1____elements);
+		xDeviceToDevice2__device2____target.setSrc(xDeviceToDevice2);
+		xDeviceToDevice2__device2____target.setTrg(device2);
+		isApplicableMatch.getAllContextElements().add(xDeviceToDevice2__device2____target);
+		xDeviceToDevice__device1____target.setSrc(xDeviceToDevice);
+		xDeviceToDevice__device1____target.setTrg(device1);
+		isApplicableMatch.getAllContextElements().add(xDeviceToDevice__device1____target);
+		connection2__xCable____incoming.setSrc(connection2);
+		connection2__xCable____incoming.setTrg(xCable);
+		isApplicableMatch.getAllContextElements().add(connection2__xCable____incoming);
+		xCable__cableAttributes____cableAttributes.setSrc(xCable);
+		xCable__cableAttributes____cableAttributes.setTrg(cableAttributes);
+		isApplicableMatch.getAllContextElements().add(xCable__cableAttributes____cableAttributes);
+		container__device2____devices.setSrc(container);
+		container__device2____devices.setTrg(device2);
+		isApplicableMatch.getAllContextElements().add(container__device2____devices);
 		xDeviceToDevice__xDevice1____source.setName(xDeviceToDevice__xDevice1____source_name_prime);
 		xDevice1__connection1____connections.setName(xDevice1__connection1____connections_name_prime);
-		container__device1____devices.setName(container__device1____devices_name_prime);
-		xDeviceToDevice2__device2____target.setName(xDeviceToDevice2__device2____target_name_prime);
 		connection1__xCable____outgoing.setName(connection1__xCable____outgoing_name_prime);
-		xCableToCable__xCable____source.setName(xCableToCable__xCable____source_name_prime);
-		xCableToCable__cable____target.setName(xCableToCable__cable____target_name_prime);
 		xContainer__xCable____elements.setName(xContainer__xCable____elements_name_prime);
-		return new Object[] { xDeviceToDevice, xCable, xDevice2, device1, connection2, cableAttributes, container,
-				xDeviceToDevice2, cable, xContainer, connection1, device2, xDevice1, xCableToCable, isApplicableMatch,
-				xCable__cableAttributes____cableAttributes, xDeviceToDevice2__xDevice2____source,
-				connection2__xCable____incoming, cableAttributes__xDevice1____endPoint1,
-				xDevice2__connection2____connections, xContainer__xDevice2____elements, container__cable____cables,
-				xDeviceToDevice__device1____target, container__device2____devices,
-				cableAttributes__xDevice2____endPoint2, xContainer__xDevice1____elements,
+		xContainer__xDevice2____elements.setName(xContainer__xDevice2____elements_name_prime);
+		cableAttributes__xDevice2____endPoint2.setName(cableAttributes__xDevice2____endPoint2_name_prime);
+		container__device1____devices.setName(container__device1____devices_name_prime);
+		container__cable____cables.setName(container__cable____cables_name_prime);
+		xDevice2__connection2____connections.setName(xDevice2__connection2____connections_name_prime);
+		xDeviceToDevice2__xDevice2____source.setName(xDeviceToDevice2__xDevice2____source_name_prime);
+		cableAttributes__xDevice1____endPoint1.setName(cableAttributes__xDevice1____endPoint1_name_prime);
+		xCableToCable__cable____target.setName(xCableToCable__cable____target_name_prime);
+		xCableToCable__xCable____source.setName(xCableToCable__xCable____source_name_prime);
+		xContainer__xDevice1____elements.setName(xContainer__xDevice1____elements_name_prime);
+		xDeviceToDevice2__device2____target.setName(xDeviceToDevice2__device2____target_name_prime);
+		xDeviceToDevice__device1____target.setName(xDeviceToDevice__device1____target_name_prime);
+		connection2__xCable____incoming.setName(connection2__xCable____incoming_name_prime);
+		xCable__cableAttributes____cableAttributes.setName(xCable__cableAttributes____cableAttributes_name_prime);
+		container__device2____devices.setName(container__device2____devices_name_prime);
+		return new Object[] { xContainer, xDeviceToDevice, device2, xDevice1, connection1, connection2, cableAttributes,
+				container, xDevice2, device1, cable, xDeviceToDevice2, xCable, xCableToCable, isApplicableMatch,
 				xDeviceToDevice__xDevice1____source, xDevice1__connection1____connections,
-				container__device1____devices, xDeviceToDevice2__device2____target, connection1__xCable____outgoing,
-				xCableToCable__xCable____source, xCableToCable__cable____target, xContainer__xCable____elements };
+				connection1__xCable____outgoing, xContainer__xCable____elements, xContainer__xDevice2____elements,
+				cableAttributes__xDevice2____endPoint2, container__device1____devices, container__cable____cables,
+				xDevice2__connection2____connections, xDeviceToDevice2__xDevice2____source,
+				cableAttributes__xDevice1____endPoint1, xCableToCable__cable____target, xCableToCable__xCable____source,
+				xContainer__xDevice1____elements, xDeviceToDevice2__device2____target,
+				xDeviceToDevice__device1____target, connection2__xCable____incoming,
+				xCable__cableAttributes____cableAttributes, container__device2____devices };
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_2_4_solveCSP_bindingFBBBBBBBBBBBBBBBB(
-			XSimplexConnectionToConnectionRule _this, IsApplicableMatch isApplicableMatch,
-			XDeviceToDevice xDeviceToDevice, XCable xCable, XDevice xDevice2, Device device1, Connections connection2,
-			CableAttributes cableAttributes, Container container, XDeviceToDevice xDeviceToDevice2, Cable cable,
-			XContainer xContainer, Connections connection1, Device device2, XDevice xDevice1,
-			XCableToCable xCableToCable) {
-		CSP _localVariable_0 = _this.isApplicable_solveCsp_FWD(isApplicableMatch, xDeviceToDevice, xCable, xDevice2,
-				device1, connection2, cableAttributes, container, xDeviceToDevice2, cable, xContainer, connection1,
-				device2, xDevice1, xCableToCable);
+			XSimplexConnectionToConnectionRule _this, IsApplicableMatch isApplicableMatch, XContainer xContainer,
+			XDeviceToDevice xDeviceToDevice, Device device2, XDevice xDevice1, Connections connection1,
+			Connections connection2, CableAttributes cableAttributes, Container container, XDevice xDevice2,
+			Device device1, Cable cable, XDeviceToDevice xDeviceToDevice2, XCable xCable, XCableToCable xCableToCable) {
+		CSP _localVariable_0 = _this.isApplicable_solveCsp_FWD(isApplicableMatch, xContainer, xDeviceToDevice, device2,
+				xDevice1, connection1, connection2, cableAttributes, container, xDevice2, device1, cable,
+				xDeviceToDevice2, xCable, xCableToCable);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, xDeviceToDevice, xCable, xDevice2, device1,
-					connection2, cableAttributes, container, xDeviceToDevice2, cable, xContainer, connection1, device2,
-					xDevice1, xCableToCable };
+			return new Object[] { csp, _this, isApplicableMatch, xContainer, xDeviceToDevice, device2, xDevice1,
+					connection1, connection2, cableAttributes, container, xDevice2, device1, cable, xDeviceToDevice2,
+					xCable, xCableToCable };
 		}
 		return null;
 	}
@@ -2681,14 +2682,13 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_2_4_solveCSP_bindingAndBlackFBBBBBBBBBBBBBBBB(
-			XSimplexConnectionToConnectionRule _this, IsApplicableMatch isApplicableMatch,
-			XDeviceToDevice xDeviceToDevice, XCable xCable, XDevice xDevice2, Device device1, Connections connection2,
-			CableAttributes cableAttributes, Container container, XDeviceToDevice xDeviceToDevice2, Cable cable,
-			XContainer xContainer, Connections connection1, Device device2, XDevice xDevice1,
-			XCableToCable xCableToCable) {
+			XSimplexConnectionToConnectionRule _this, IsApplicableMatch isApplicableMatch, XContainer xContainer,
+			XDeviceToDevice xDeviceToDevice, Device device2, XDevice xDevice1, Connections connection1,
+			Connections connection2, CableAttributes cableAttributes, Container container, XDevice xDevice2,
+			Device device1, Cable cable, XDeviceToDevice xDeviceToDevice2, XCable xCable, XCableToCable xCableToCable) {
 		Object[] result_pattern_XSimplexConnectionToConnectionRule_2_4_solveCSP_binding = pattern_XSimplexConnectionToConnectionRule_2_4_solveCSP_bindingFBBBBBBBBBBBBBBBB(
-				_this, isApplicableMatch, xDeviceToDevice, xCable, xDevice2, device1, connection2, cableAttributes,
-				container, xDeviceToDevice2, cable, xContainer, connection1, device2, xDevice1, xCableToCable);
+				_this, isApplicableMatch, xContainer, xDeviceToDevice, device2, xDevice1, connection1, connection2,
+				cableAttributes, container, xDevice2, device1, cable, xDeviceToDevice2, xCable, xCableToCable);
 		if (result_pattern_XSimplexConnectionToConnectionRule_2_4_solveCSP_binding != null) {
 			CSP csp = (CSP) result_pattern_XSimplexConnectionToConnectionRule_2_4_solveCSP_binding[0];
 
@@ -2696,9 +2696,9 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 					csp);
 			if (result_pattern_XSimplexConnectionToConnectionRule_2_4_solveCSP_black != null) {
 
-				return new Object[] { csp, _this, isApplicableMatch, xDeviceToDevice, xCable, xDevice2, device1,
-						connection2, cableAttributes, container, xDeviceToDevice2, cable, xContainer, connection1,
-						device2, xDevice1, xCableToCable };
+				return new Object[] { csp, _this, isApplicableMatch, xContainer, xDeviceToDevice, device2, xDevice1,
+						connection1, connection2, cableAttributes, container, xDevice2, device1, cable,
+						xDeviceToDevice2, xCable, xCableToCable };
 			}
 		}
 		return null;
@@ -2733,21 +2733,21 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_10_1_initialbindings_blackBBBBBB(
-			XSimplexConnectionToConnectionRule _this, Match match, Device device1, Container container, Cable cable,
-			Device device2) {
+			XSimplexConnectionToConnectionRule _this, Match match, Device device2, Container container, Device device1,
+			Cable cable) {
 		if (!device1.equals(device2)) {
-			return new Object[] { _this, match, device1, container, cable, device2 };
+			return new Object[] { _this, match, device2, container, device1, cable };
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_10_2_SolveCSP_bindingFBBBBBB(
-			XSimplexConnectionToConnectionRule _this, Match match, Device device1, Container container, Cable cable,
-			Device device2) {
-		CSP _localVariable_0 = _this.isAppropriate_solveCsp_BWD(match, device1, container, cable, device2);
+			XSimplexConnectionToConnectionRule _this, Match match, Device device2, Container container, Device device1,
+			Cable cable) {
+		CSP _localVariable_0 = _this.isAppropriate_solveCsp_BWD(match, device2, container, device1, cable);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, match, device1, container, cable, device2 };
+			return new Object[] { csp, _this, match, device2, container, device1, cable };
 		}
 		return null;
 	}
@@ -2757,10 +2757,10 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_10_2_SolveCSP_bindingAndBlackFBBBBBB(
-			XSimplexConnectionToConnectionRule _this, Match match, Device device1, Container container, Cable cable,
-			Device device2) {
+			XSimplexConnectionToConnectionRule _this, Match match, Device device2, Container container, Device device1,
+			Cable cable) {
 		Object[] result_pattern_XSimplexConnectionToConnectionRule_10_2_SolveCSP_binding = pattern_XSimplexConnectionToConnectionRule_10_2_SolveCSP_bindingFBBBBBB(
-				_this, match, device1, container, cable, device2);
+				_this, match, device2, container, device1, cable);
 		if (result_pattern_XSimplexConnectionToConnectionRule_10_2_SolveCSP_binding != null) {
 			CSP csp = (CSP) result_pattern_XSimplexConnectionToConnectionRule_10_2_SolveCSP_binding[0];
 
@@ -2768,7 +2768,7 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 					csp);
 			if (result_pattern_XSimplexConnectionToConnectionRule_10_2_SolveCSP_black != null) {
 
-				return new Object[] { csp, _this, match, device1, container, cable, device2 };
+				return new Object[] { csp, _this, match, device2, container, device1, cable };
 			}
 		}
 		return null;
@@ -2782,83 +2782,83 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_10_4_collectelementstobetranslated_blackBBBBB(
-			Match match, Device device1, Container container, Cable cable, Device device2) {
+			Match match, Device device2, Container container, Device device1, Cable cable) {
 		if (!device1.equals(device2)) {
-			return new Object[] { match, device1, container, cable, device2 };
+			return new Object[] { match, device2, container, device1, cable };
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_10_4_collectelementstobetranslated_greenBBBBFFFF(
-			Match match, Device device1, Cable cable, Device device2) {
-		EMoflonEdge cable__device1____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge device1__cable____outgoing = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+			Match match, Device device2, Device device1, Cable cable) {
 		EMoflonEdge cable__device2____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge device2__cable____incoming = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		String cable__device1____source_name_prime = "source";
-		String device1__cable____outgoing_name_prime = "outgoing";
+		EMoflonEdge cable__device1____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge device1__cable____outgoing = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String cable__device2____target_name_prime = "target";
 		String device2__cable____incoming_name_prime = "incoming";
-		cable__device1____source.setSrc(cable);
-		cable__device1____source.setTrg(device1);
-		match.getToBeTranslatedEdges().add(cable__device1____source);
-		device1__cable____outgoing.setSrc(device1);
-		device1__cable____outgoing.setTrg(cable);
-		match.getToBeTranslatedEdges().add(device1__cable____outgoing);
+		String cable__device1____source_name_prime = "source";
+		String device1__cable____outgoing_name_prime = "outgoing";
 		cable__device2____target.setSrc(cable);
 		cable__device2____target.setTrg(device2);
 		match.getToBeTranslatedEdges().add(cable__device2____target);
 		device2__cable____incoming.setSrc(device2);
 		device2__cable____incoming.setTrg(cable);
 		match.getToBeTranslatedEdges().add(device2__cable____incoming);
-		cable__device1____source.setName(cable__device1____source_name_prime);
-		device1__cable____outgoing.setName(device1__cable____outgoing_name_prime);
+		cable__device1____source.setSrc(cable);
+		cable__device1____source.setTrg(device1);
+		match.getToBeTranslatedEdges().add(cable__device1____source);
+		device1__cable____outgoing.setSrc(device1);
+		device1__cable____outgoing.setTrg(cable);
+		match.getToBeTranslatedEdges().add(device1__cable____outgoing);
 		cable__device2____target.setName(cable__device2____target_name_prime);
 		device2__cable____incoming.setName(device2__cable____incoming_name_prime);
-		return new Object[] { match, device1, cable, device2, cable__device1____source, device1__cable____outgoing,
-				cable__device2____target, device2__cable____incoming };
+		cable__device1____source.setName(cable__device1____source_name_prime);
+		device1__cable____outgoing.setName(device1__cable____outgoing_name_prime);
+		return new Object[] { match, device2, device1, cable, cable__device2____target, device2__cable____incoming,
+				cable__device1____source, device1__cable____outgoing };
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_10_5_collectcontextelements_blackBBBBB(
-			Match match, Device device1, Container container, Cable cable, Device device2) {
+			Match match, Device device2, Container container, Device device1, Cable cable) {
 		if (!device1.equals(device2)) {
-			return new Object[] { match, device1, container, cable, device2 };
+			return new Object[] { match, device2, container, device1, cable };
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_10_5_collectcontextelements_greenBBBBBFFF(
-			Match match, Device device1, Container container, Cable cable, Device device2) {
+			Match match, Device device2, Container container, Device device1, Cable cable) {
+		EMoflonEdge container__device1____devices = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge container__cable____cables = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge container__device2____devices = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge container__device1____devices = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		match.getContextNodes().add(device1);
-		match.getContextNodes().add(container);
-		match.getContextNodes().add(cable);
 		match.getContextNodes().add(device2);
+		match.getContextNodes().add(container);
+		match.getContextNodes().add(device1);
+		match.getContextNodes().add(cable);
+		String container__device1____devices_name_prime = "devices";
 		String container__cable____cables_name_prime = "cables";
 		String container__device2____devices_name_prime = "devices";
-		String container__device1____devices_name_prime = "devices";
+		container__device1____devices.setSrc(container);
+		container__device1____devices.setTrg(device1);
+		match.getContextEdges().add(container__device1____devices);
 		container__cable____cables.setSrc(container);
 		container__cable____cables.setTrg(cable);
 		match.getContextEdges().add(container__cable____cables);
 		container__device2____devices.setSrc(container);
 		container__device2____devices.setTrg(device2);
 		match.getContextEdges().add(container__device2____devices);
-		container__device1____devices.setSrc(container);
-		container__device1____devices.setTrg(device1);
-		match.getContextEdges().add(container__device1____devices);
+		container__device1____devices.setName(container__device1____devices_name_prime);
 		container__cable____cables.setName(container__cable____cables_name_prime);
 		container__device2____devices.setName(container__device2____devices_name_prime);
-		container__device1____devices.setName(container__device1____devices_name_prime);
-		return new Object[] { match, device1, container, cable, device2, container__cable____cables,
-				container__device2____devices, container__device1____devices };
+		return new Object[] { match, device2, container, device1, cable, container__device1____devices,
+				container__cable____cables, container__device2____devices };
 	}
 
 	public static final void pattern_XSimplexConnectionToConnectionRule_10_6_registerobjectstomatch_expressionBBBBBB(
-			XSimplexConnectionToConnectionRule _this, Match match, Device device1, Container container, Cable cable,
-			Device device2) {
-		_this.registerObjectsToMatch_BWD(match, device1, container, cable, device2);
+			XSimplexConnectionToConnectionRule _this, Match match, Device device2, Container container, Device device1,
+			Cable cable) {
+		_this.registerObjectsToMatch_BWD(match, device2, container, device1, cable);
 
 	}
 
@@ -2874,66 +2874,66 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_bindingFFFFFFFFFFFFFFB(
 			IsApplicableMatch isApplicableMatch) {
-		EObject _localVariable_0 = isApplicableMatch.getObject("xDeviceToDevice");
-		EObject _localVariable_1 = isApplicableMatch.getObject("xCable");
-		EObject _localVariable_2 = isApplicableMatch.getObject("xDevice2");
-		EObject _localVariable_3 = isApplicableMatch.getObject("device1");
-		EObject _localVariable_4 = isApplicableMatch.getObject("connection2");
-		EObject _localVariable_5 = isApplicableMatch.getObject("cableAttributes");
-		EObject _localVariable_6 = isApplicableMatch.getObject("container");
-		EObject _localVariable_7 = isApplicableMatch.getObject("xDeviceToDevice2");
-		EObject _localVariable_8 = isApplicableMatch.getObject("cable");
-		EObject _localVariable_9 = isApplicableMatch.getObject("xContainer");
-		EObject _localVariable_10 = isApplicableMatch.getObject("connection1");
-		EObject _localVariable_11 = isApplicableMatch.getObject("device2");
-		EObject _localVariable_12 = isApplicableMatch.getObject("xDevice1");
+		EObject _localVariable_0 = isApplicableMatch.getObject("xContainer");
+		EObject _localVariable_1 = isApplicableMatch.getObject("xDeviceToDevice");
+		EObject _localVariable_2 = isApplicableMatch.getObject("device2");
+		EObject _localVariable_3 = isApplicableMatch.getObject("xDevice1");
+		EObject _localVariable_4 = isApplicableMatch.getObject("connection1");
+		EObject _localVariable_5 = isApplicableMatch.getObject("connection2");
+		EObject _localVariable_6 = isApplicableMatch.getObject("cableAttributes");
+		EObject _localVariable_7 = isApplicableMatch.getObject("container");
+		EObject _localVariable_8 = isApplicableMatch.getObject("xDevice2");
+		EObject _localVariable_9 = isApplicableMatch.getObject("device1");
+		EObject _localVariable_10 = isApplicableMatch.getObject("cable");
+		EObject _localVariable_11 = isApplicableMatch.getObject("xDeviceToDevice2");
+		EObject _localVariable_12 = isApplicableMatch.getObject("xCable");
 		EObject _localVariable_13 = isApplicableMatch.getObject("xCableToCable");
-		EObject tmpXDeviceToDevice = _localVariable_0;
-		EObject tmpXCable = _localVariable_1;
-		EObject tmpXDevice2 = _localVariable_2;
-		EObject tmpDevice1 = _localVariable_3;
-		EObject tmpConnection2 = _localVariable_4;
-		EObject tmpCableAttributes = _localVariable_5;
-		EObject tmpContainer = _localVariable_6;
-		EObject tmpXDeviceToDevice2 = _localVariable_7;
-		EObject tmpCable = _localVariable_8;
-		EObject tmpXContainer = _localVariable_9;
-		EObject tmpConnection1 = _localVariable_10;
-		EObject tmpDevice2 = _localVariable_11;
-		EObject tmpXDevice1 = _localVariable_12;
+		EObject tmpXContainer = _localVariable_0;
+		EObject tmpXDeviceToDevice = _localVariable_1;
+		EObject tmpDevice2 = _localVariable_2;
+		EObject tmpXDevice1 = _localVariable_3;
+		EObject tmpConnection1 = _localVariable_4;
+		EObject tmpConnection2 = _localVariable_5;
+		EObject tmpCableAttributes = _localVariable_6;
+		EObject tmpContainer = _localVariable_7;
+		EObject tmpXDevice2 = _localVariable_8;
+		EObject tmpDevice1 = _localVariable_9;
+		EObject tmpCable = _localVariable_10;
+		EObject tmpXDeviceToDevice2 = _localVariable_11;
+		EObject tmpXCable = _localVariable_12;
 		EObject tmpXCableToCable = _localVariable_13;
-		if (tmpXDeviceToDevice instanceof XDeviceToDevice) {
-			XDeviceToDevice xDeviceToDevice = (XDeviceToDevice) tmpXDeviceToDevice;
-			if (tmpXCable instanceof XCable) {
-				XCable xCable = (XCable) tmpXCable;
-				if (tmpXDevice2 instanceof XDevice) {
-					XDevice xDevice2 = (XDevice) tmpXDevice2;
-					if (tmpDevice1 instanceof Device) {
-						Device device1 = (Device) tmpDevice1;
-						if (tmpConnection2 instanceof Connections) {
-							Connections connection2 = (Connections) tmpConnection2;
-							if (tmpCableAttributes instanceof CableAttributes) {
-								CableAttributes cableAttributes = (CableAttributes) tmpCableAttributes;
-								if (tmpContainer instanceof Container) {
-									Container container = (Container) tmpContainer;
-									if (tmpXDeviceToDevice2 instanceof XDeviceToDevice) {
-										XDeviceToDevice xDeviceToDevice2 = (XDeviceToDevice) tmpXDeviceToDevice2;
-										if (tmpCable instanceof Cable) {
-											Cable cable = (Cable) tmpCable;
-											if (tmpXContainer instanceof XContainer) {
-												XContainer xContainer = (XContainer) tmpXContainer;
-												if (tmpConnection1 instanceof Connections) {
-													Connections connection1 = (Connections) tmpConnection1;
-													if (tmpDevice2 instanceof Device) {
-														Device device2 = (Device) tmpDevice2;
-														if (tmpXDevice1 instanceof XDevice) {
-															XDevice xDevice1 = (XDevice) tmpXDevice1;
+		if (tmpXContainer instanceof XContainer) {
+			XContainer xContainer = (XContainer) tmpXContainer;
+			if (tmpXDeviceToDevice instanceof XDeviceToDevice) {
+				XDeviceToDevice xDeviceToDevice = (XDeviceToDevice) tmpXDeviceToDevice;
+				if (tmpDevice2 instanceof Device) {
+					Device device2 = (Device) tmpDevice2;
+					if (tmpXDevice1 instanceof XDevice) {
+						XDevice xDevice1 = (XDevice) tmpXDevice1;
+						if (tmpConnection1 instanceof Connections) {
+							Connections connection1 = (Connections) tmpConnection1;
+							if (tmpConnection2 instanceof Connections) {
+								Connections connection2 = (Connections) tmpConnection2;
+								if (tmpCableAttributes instanceof CableAttributes) {
+									CableAttributes cableAttributes = (CableAttributes) tmpCableAttributes;
+									if (tmpContainer instanceof Container) {
+										Container container = (Container) tmpContainer;
+										if (tmpXDevice2 instanceof XDevice) {
+											XDevice xDevice2 = (XDevice) tmpXDevice2;
+											if (tmpDevice1 instanceof Device) {
+												Device device1 = (Device) tmpDevice1;
+												if (tmpCable instanceof Cable) {
+													Cable cable = (Cable) tmpCable;
+													if (tmpXDeviceToDevice2 instanceof XDeviceToDevice) {
+														XDeviceToDevice xDeviceToDevice2 = (XDeviceToDevice) tmpXDeviceToDevice2;
+														if (tmpXCable instanceof XCable) {
+															XCable xCable = (XCable) tmpXCable;
 															if (tmpXCableToCable instanceof XCableToCable) {
 																XCableToCable xCableToCable = (XCableToCable) tmpXCableToCable;
-																return new Object[] { xDeviceToDevice, xCable, xDevice2,
-																		device1, connection2, cableAttributes,
-																		container, xDeviceToDevice2, cable, xContainer,
-																		connection1, device2, xDevice1, xCableToCable,
+																return new Object[] { xContainer, xDeviceToDevice,
+																		device2, xDevice1, connection1, connection2,
+																		cableAttributes, container, xDevice2, device1,
+																		cable, xDeviceToDevice2, xCable, xCableToCable,
 																		isApplicableMatch };
 															}
 														}
@@ -2953,21 +2953,21 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_blackBBBBBBBBBBBBBBFBB(
-			XDeviceToDevice xDeviceToDevice, XCable xCable, XDevice xDevice2, Device device1, Connections connection2,
-			CableAttributes cableAttributes, Container container, XDeviceToDevice xDeviceToDevice2, Cable cable,
-			XContainer xContainer, Connections connection1, Device device2, XDevice xDevice1,
+			XContainer xContainer, XDeviceToDevice xDeviceToDevice, Device device2, XDevice xDevice1,
+			Connections connection1, Connections connection2, CableAttributes cableAttributes, Container container,
+			XDevice xDevice2, Device device1, Cable cable, XDeviceToDevice xDeviceToDevice2, XCable xCable,
 			XCableToCable xCableToCable, XSimplexConnectionToConnectionRule _this,
 			IsApplicableMatch isApplicableMatch) {
 		if (!xDeviceToDevice.equals(xDeviceToDevice2)) {
-			if (!device1.equals(device2)) {
+			if (!xDevice1.equals(xDevice2)) {
 				if (!connection1.equals(connection2)) {
-					if (!xDevice1.equals(xDevice2)) {
+					if (!device1.equals(device2)) {
 						for (EObject tmpCsp : isApplicableMatch.getAttributeInfo()) {
 							if (tmpCsp instanceof CSP) {
 								CSP csp = (CSP) tmpCsp;
-								return new Object[] { xDeviceToDevice, xCable, xDevice2, device1, connection2,
-										cableAttributes, container, xDeviceToDevice2, cable, xContainer, connection1,
-										device2, xDevice1, xCableToCable, csp, _this, isApplicableMatch };
+								return new Object[] { xContainer, xDeviceToDevice, device2, xDevice1, connection1,
+										connection2, cableAttributes, container, xDevice2, device1, cable,
+										xDeviceToDevice2, xCable, xCableToCable, csp, _this, isApplicableMatch };
 							}
 						}
 					}
@@ -2982,30 +2982,30 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 		Object[] result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding = pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_bindingFFFFFFFFFFFFFFB(
 				isApplicableMatch);
 		if (result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding != null) {
-			XDeviceToDevice xDeviceToDevice = (XDeviceToDevice) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[0];
-			XCable xCable = (XCable) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[1];
-			XDevice xDevice2 = (XDevice) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[2];
-			Device device1 = (Device) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[3];
-			Connections connection2 = (Connections) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[4];
-			CableAttributes cableAttributes = (CableAttributes) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[5];
-			Container container = (Container) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[6];
-			XDeviceToDevice xDeviceToDevice2 = (XDeviceToDevice) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[7];
-			Cable cable = (Cable) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[8];
-			XContainer xContainer = (XContainer) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[9];
-			Connections connection1 = (Connections) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[10];
-			Device device2 = (Device) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[11];
-			XDevice xDevice1 = (XDevice) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[12];
+			XContainer xContainer = (XContainer) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[0];
+			XDeviceToDevice xDeviceToDevice = (XDeviceToDevice) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[1];
+			Device device2 = (Device) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[2];
+			XDevice xDevice1 = (XDevice) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[3];
+			Connections connection1 = (Connections) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[4];
+			Connections connection2 = (Connections) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[5];
+			CableAttributes cableAttributes = (CableAttributes) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[6];
+			Container container = (Container) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[7];
+			XDevice xDevice2 = (XDevice) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[8];
+			Device device1 = (Device) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[9];
+			Cable cable = (Cable) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[10];
+			XDeviceToDevice xDeviceToDevice2 = (XDeviceToDevice) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[11];
+			XCable xCable = (XCable) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[12];
 			XCableToCable xCableToCable = (XCableToCable) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_binding[13];
 
 			Object[] result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_black = pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_blackBBBBBBBBBBBBBBFBB(
-					xDeviceToDevice, xCable, xDevice2, device1, connection2, cableAttributes, container,
-					xDeviceToDevice2, cable, xContainer, connection1, device2, xDevice1, xCableToCable, _this,
+					xContainer, xDeviceToDevice, device2, xDevice1, connection1, connection2, cableAttributes,
+					container, xDevice2, device1, cable, xDeviceToDevice2, xCable, xCableToCable, _this,
 					isApplicableMatch);
 			if (result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_black != null) {
 				CSP csp = (CSP) result_pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_black[14];
 
-				return new Object[] { xDeviceToDevice, xCable, xDevice2, device1, connection2, cableAttributes,
-						container, xDeviceToDevice2, cable, xContainer, connection1, device2, xDevice1, xCableToCable,
+				return new Object[] { xContainer, xDeviceToDevice, device2, xDevice1, connection1, connection2,
+						cableAttributes, container, xDevice2, device1, cable, xDeviceToDevice2, xCable, xCableToCable,
 						csp, _this, isApplicableMatch };
 			}
 		}
@@ -3013,15 +3013,15 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_11_1_performtransformation_greenBBBBBB(
-			XCable xCable, XDevice xDevice2, Connections connection2, CableAttributes cableAttributes,
-			Connections connection1, XDevice xDevice1) {
-		connection2.getIncoming().add(xCable);
-		cableAttributes.setEndPoint1(xDevice1);
-		cableAttributes.setEndPoint2(xDevice2);
+			XDevice xDevice1, Connections connection1, Connections connection2, CableAttributes cableAttributes,
+			XDevice xDevice2, XCable xCable) {
 		connection1.getOutgoing().add(xCable);
+		cableAttributes.setEndPoint2(xDevice2);
+		cableAttributes.setEndPoint1(xDevice1);
+		connection2.getIncoming().add(xCable);
 		boolean cableAttributes_isDuplex_prime = Boolean.valueOf(false);
 		cableAttributes.setIsDuplex(Boolean.valueOf(cableAttributes_isDuplex_prime));
-		return new Object[] { xCable, xDevice2, connection2, cableAttributes, connection1, xDevice1 };
+		return new Object[] { xDevice1, connection1, connection2, cableAttributes, xDevice2, xCable };
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_11_2_collecttranslatedelements_greenF() {
@@ -3030,186 +3030,188 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_11_3_bookkeepingforedges_blackBBBBBBBBBBBBBBB(
-			PerformRuleResult ruleresult, EObject xDeviceToDevice, EObject xCable, EObject xDevice2, EObject device1,
-			EObject connection2, EObject cableAttributes, EObject container, EObject xDeviceToDevice2, EObject cable,
-			EObject xContainer, EObject connection1, EObject device2, EObject xDevice1, EObject xCableToCable) {
-		if (!xDeviceToDevice.equals(xDeviceToDevice2)) {
-			if (!xCable.equals(xDeviceToDevice)) {
-				if (!xCable.equals(xDevice2)) {
-					if (!xCable.equals(xDeviceToDevice2)) {
-						if (!xCable.equals(xContainer)) {
-							if (!xCable.equals(xDevice1)) {
-								if (!xCable.equals(xCableToCable)) {
-									if (!xDevice2.equals(xDeviceToDevice)) {
-										if (!xDevice2.equals(xDeviceToDevice2)) {
-											if (!device1.equals(xDeviceToDevice)) {
-												if (!device1.equals(xCable)) {
-													if (!device1.equals(xDevice2)) {
-														if (!device1.equals(xDeviceToDevice2)) {
-															if (!device1.equals(xContainer)) {
-																if (!device1.equals(device2)) {
-																	if (!device1.equals(xDevice1)) {
-																		if (!device1.equals(xCableToCable)) {
-																			if (!connection2.equals(xDeviceToDevice)) {
-																				if (!connection2.equals(xCable)) {
-																					if (!connection2.equals(xDevice2)) {
-																						if (!connection2
-																								.equals(device1)) {
-																							if (!connection2.equals(
-																									container)) {
-																								if (!connection2.equals(
-																										xDeviceToDevice2)) {
-																									if (!connection2
-																											.equals(xContainer)) {
-																										if (!connection2
-																												.equals(device2)) {
-																											if (!connection2
-																													.equals(xDevice1)) {
+			PerformRuleResult ruleresult, EObject xContainer, EObject xDeviceToDevice, EObject device2,
+			EObject xDevice1, EObject connection1, EObject connection2, EObject cableAttributes, EObject container,
+			EObject xDevice2, EObject device1, EObject cable, EObject xDeviceToDevice2, EObject xCable,
+			EObject xCableToCable) {
+		if (!xContainer.equals(xDeviceToDevice)) {
+			if (!xContainer.equals(xDevice1)) {
+				if (!xContainer.equals(xDevice2)) {
+					if (!xContainer.equals(xDeviceToDevice2)) {
+						if (!xDeviceToDevice.equals(xDeviceToDevice2)) {
+							if (!device2.equals(xContainer)) {
+								if (!device2.equals(xDeviceToDevice)) {
+									if (!device2.equals(xDevice1)) {
+										if (!device2.equals(xDevice2)) {
+											if (!device2.equals(xDeviceToDevice2)) {
+												if (!device2.equals(xCable)) {
+													if (!device2.equals(xCableToCable)) {
+														if (!xDevice1.equals(xDeviceToDevice)) {
+															if (!xDevice1.equals(xDevice2)) {
+																if (!xDevice1.equals(xDeviceToDevice2)) {
+																	if (!connection1.equals(xContainer)) {
+																		if (!connection1.equals(xDeviceToDevice)) {
+																			if (!connection1.equals(device2)) {
+																				if (!connection1.equals(xDevice1)) {
+																					if (!connection1
+																							.equals(connection2)) {
+																						if (!connection1
+																								.equals(container)) {
+																							if (!connection1
+																									.equals(xDevice2)) {
+																								if (!connection1.equals(
+																										device1)) {
+																									if (!connection1
+																											.equals(xDeviceToDevice2)) {
+																										if (!connection1
+																												.equals(xCable)) {
+																											if (!connection1
+																													.equals(xCableToCable)) {
 																												if (!connection2
-																														.equals(xCableToCable)) {
-																													if (!cableAttributes
+																														.equals(xContainer)) {
+																													if (!connection2
 																															.equals(xDeviceToDevice)) {
-																														if (!cableAttributes
-																																.equals(xCable)) {
-																															if (!cableAttributes
-																																	.equals(xDevice2)) {
-																																if (!cableAttributes
-																																		.equals(device1)) {
-																																	if (!cableAttributes
-																																			.equals(connection2)) {
-																																		if (!cableAttributes
-																																				.equals(container)) {
-																																			if (!cableAttributes
+																														if (!connection2
+																																.equals(device2)) {
+																															if (!connection2
+																																	.equals(xDevice1)) {
+																																if (!connection2
+																																		.equals(container)) {
+																																	if (!connection2
+																																			.equals(xDevice2)) {
+																																		if (!connection2
+																																				.equals(device1)) {
+																																			if (!connection2
 																																					.equals(xDeviceToDevice2)) {
-																																				if (!cableAttributes
-																																						.equals(xContainer)) {
-																																					if (!cableAttributes
-																																							.equals(connection1)) {
+																																				if (!connection2
+																																						.equals(xCable)) {
+																																					if (!connection2
+																																							.equals(xCableToCable)) {
 																																						if (!cableAttributes
-																																								.equals(device2)) {
+																																								.equals(xContainer)) {
 																																							if (!cableAttributes
-																																									.equals(xDevice1)) {
+																																									.equals(xDeviceToDevice)) {
 																																								if (!cableAttributes
-																																										.equals(xCableToCable)) {
-																																									if (!container
-																																											.equals(xDeviceToDevice)) {
-																																										if (!container
-																																												.equals(xCable)) {
-																																											if (!container
-																																													.equals(xDevice2)) {
-																																												if (!container
-																																														.equals(device1)) {
-																																													if (!container
-																																															.equals(xDeviceToDevice2)) {
-																																														if (!container
-																																																.equals(xContainer)) {
-																																															if (!container
-																																																	.equals(device2)) {
-																																																if (!container
-																																																		.equals(xDevice1)) {
-																																																	if (!container
+																																										.equals(device2)) {
+																																									if (!cableAttributes
+																																											.equals(xDevice1)) {
+																																										if (!cableAttributes
+																																												.equals(connection1)) {
+																																											if (!cableAttributes
+																																													.equals(connection2)) {
+																																												if (!cableAttributes
+																																														.equals(container)) {
+																																													if (!cableAttributes
+																																															.equals(xDevice2)) {
+																																														if (!cableAttributes
+																																																.equals(device1)) {
+																																															if (!cableAttributes
+																																																	.equals(xDeviceToDevice2)) {
+																																																if (!cableAttributes
+																																																		.equals(xCable)) {
+																																																	if (!cableAttributes
 																																																			.equals(xCableToCable)) {
-																																																		if (!cable
-																																																				.equals(xDeviceToDevice)) {
-																																																			if (!cable
-																																																					.equals(xCable)) {
-																																																				if (!cable
-																																																						.equals(xDevice2)) {
-																																																					if (!cable
-																																																							.equals(device1)) {
-																																																						if (!cable
-																																																								.equals(connection2)) {
-																																																							if (!cable
-																																																									.equals(cableAttributes)) {
-																																																								if (!cable
-																																																										.equals(container)) {
-																																																									if (!cable
-																																																											.equals(xDeviceToDevice2)) {
-																																																										if (!cable
-																																																												.equals(xContainer)) {
-																																																											if (!cable
-																																																													.equals(connection1)) {
-																																																												if (!cable
-																																																														.equals(device2)) {
-																																																													if (!cable
-																																																															.equals(xDevice1)) {
-																																																														if (!cable
-																																																																.equals(xCableToCable)) {
-																																																															if (!xContainer
-																																																																	.equals(xDeviceToDevice)) {
-																																																																if (!xContainer
-																																																																		.equals(xDevice2)) {
-																																																																	if (!xContainer
-																																																																			.equals(xDeviceToDevice2)) {
-																																																																		if (!xContainer
-																																																																				.equals(xDevice1)) {
-																																																																			if (!connection1
-																																																																					.equals(xDeviceToDevice)) {
-																																																																				if (!connection1
-																																																																						.equals(xCable)) {
-																																																																					if (!connection1
-																																																																							.equals(xDevice2)) {
-																																																																						if (!connection1
-																																																																								.equals(device1)) {
-																																																																							if (!connection1
-																																																																									.equals(connection2)) {
-																																																																								if (!connection1
-																																																																										.equals(container)) {
-																																																																									if (!connection1
-																																																																											.equals(xDeviceToDevice2)) {
-																																																																										if (!connection1
-																																																																												.equals(xContainer)) {
-																																																																											if (!connection1
-																																																																													.equals(device2)) {
-																																																																												if (!connection1
-																																																																														.equals(xDevice1)) {
-																																																																													if (!connection1
-																																																																															.equals(xCableToCable)) {
-																																																																														if (!device2
-																																																																																.equals(xDeviceToDevice)) {
-																																																																															if (!device2
-																																																																																	.equals(xCable)) {
-																																																																																if (!device2
-																																																																																		.equals(xDevice2)) {
-																																																																																	if (!device2
-																																																																																			.equals(xDeviceToDevice2)) {
-																																																																																		if (!device2
+																																																		if (!container
+																																																				.equals(xContainer)) {
+																																																			if (!container
+																																																					.equals(xDeviceToDevice)) {
+																																																				if (!container
+																																																						.equals(device2)) {
+																																																					if (!container
+																																																							.equals(xDevice1)) {
+																																																						if (!container
+																																																								.equals(xDevice2)) {
+																																																							if (!container
+																																																									.equals(device1)) {
+																																																								if (!container
+																																																										.equals(xDeviceToDevice2)) {
+																																																									if (!container
+																																																											.equals(xCable)) {
+																																																										if (!container
+																																																												.equals(xCableToCable)) {
+																																																											if (!xDevice2
+																																																													.equals(xDeviceToDevice)) {
+																																																												if (!xDevice2
+																																																														.equals(xDeviceToDevice2)) {
+																																																													if (!device1
+																																																															.equals(xContainer)) {
+																																																														if (!device1
+																																																																.equals(xDeviceToDevice)) {
+																																																															if (!device1
+																																																																	.equals(device2)) {
+																																																																if (!device1
+																																																																		.equals(xDevice1)) {
+																																																																	if (!device1
+																																																																			.equals(xDevice2)) {
+																																																																		if (!device1
+																																																																				.equals(xDeviceToDevice2)) {
+																																																																			if (!device1
+																																																																					.equals(xCable)) {
+																																																																				if (!device1
+																																																																						.equals(xCableToCable)) {
+																																																																					if (!cable
+																																																																							.equals(xContainer)) {
+																																																																						if (!cable
+																																																																								.equals(xDeviceToDevice)) {
+																																																																							if (!cable
+																																																																									.equals(device2)) {
+																																																																								if (!cable
+																																																																										.equals(xDevice1)) {
+																																																																									if (!cable
+																																																																											.equals(connection1)) {
+																																																																										if (!cable
+																																																																												.equals(connection2)) {
+																																																																											if (!cable
+																																																																													.equals(cableAttributes)) {
+																																																																												if (!cable
+																																																																														.equals(container)) {
+																																																																													if (!cable
+																																																																															.equals(xDevice2)) {
+																																																																														if (!cable
+																																																																																.equals(device1)) {
+																																																																															if (!cable
+																																																																																	.equals(xDeviceToDevice2)) {
+																																																																																if (!cable
+																																																																																		.equals(xCable)) {
+																																																																																	if (!cable
+																																																																																			.equals(xCableToCable)) {
+																																																																																		if (!xCable
 																																																																																				.equals(xContainer)) {
-																																																																																			if (!device2
-																																																																																					.equals(xDevice1)) {
-																																																																																				if (!device2
-																																																																																						.equals(xCableToCable)) {
-																																																																																					if (!xDevice1
-																																																																																							.equals(xDeviceToDevice)) {
-																																																																																						if (!xDevice1
-																																																																																								.equals(xDevice2)) {
-																																																																																							if (!xDevice1
-																																																																																									.equals(xDeviceToDevice2)) {
+																																																																																			if (!xCable
+																																																																																					.equals(xDeviceToDevice)) {
+																																																																																				if (!xCable
+																																																																																						.equals(xDevice1)) {
+																																																																																					if (!xCable
+																																																																																							.equals(xDevice2)) {
+																																																																																						if (!xCable
+																																																																																								.equals(xDeviceToDevice2)) {
+																																																																																							if (!xCable
+																																																																																									.equals(xCableToCable)) {
 																																																																																								if (!xCableToCable
-																																																																																										.equals(xDeviceToDevice)) {
+																																																																																										.equals(xContainer)) {
 																																																																																									if (!xCableToCable
-																																																																																											.equals(xDevice2)) {
+																																																																																											.equals(xDeviceToDevice)) {
 																																																																																										if (!xCableToCable
-																																																																																												.equals(xDeviceToDevice2)) {
+																																																																																												.equals(xDevice1)) {
 																																																																																											if (!xCableToCable
-																																																																																													.equals(xContainer)) {
+																																																																																													.equals(xDevice2)) {
 																																																																																												if (!xCableToCable
-																																																																																														.equals(xDevice1)) {
+																																																																																														.equals(xDeviceToDevice2)) {
 																																																																																													return new Object[] {
 																																																																																															ruleresult,
+																																																																																															xContainer,
 																																																																																															xDeviceToDevice,
-																																																																																															xCable,
-																																																																																															xDevice2,
-																																																																																															device1,
+																																																																																															device2,
+																																																																																															xDevice1,
+																																																																																															connection1,
 																																																																																															connection2,
 																																																																																															cableAttributes,
 																																																																																															container,
-																																																																																															xDeviceToDevice2,
+																																																																																															xDevice2,
+																																																																																															device1,
 																																																																																															cable,
-																																																																																															xContainer,
-																																																																																															connection1,
-																																																																																															device2,
-																																																																																															xDevice1,
+																																																																																															xDeviceToDevice2,
+																																																																																															xCable,
 																																																																																															xCableToCable };
 																																																																																												}
 																																																																																											}
@@ -3306,28 +3308,37 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_11_3_bookkeepingforedges_greenBBBBBBBBBBFFFFFFFF(
-			PerformRuleResult ruleresult, EObject xCable, EObject xDevice2, EObject device1, EObject connection2,
-			EObject cableAttributes, EObject cable, EObject connection1, EObject device2, EObject xDevice1) {
-		EMoflonEdge connection2__xCable____incoming = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+			PerformRuleResult ruleresult, EObject device2, EObject xDevice1, EObject connection1, EObject connection2,
+			EObject cableAttributes, EObject xDevice2, EObject device1, EObject cable, EObject xCable) {
+		EMoflonEdge connection1__xCable____outgoing = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge cableAttributes__xDevice2____endPoint2 = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge cable__device2____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge device2__cable____incoming = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge cable__device1____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge device1__cable____outgoing = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge cableAttributes__xDevice1____endPoint1 = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge cableAttributes__xDevice2____endPoint2 = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge connection1__xCable____outgoing = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge cable__device2____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge device2__cable____incoming = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge connection2__xCable____incoming = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		String ruleresult_ruleName_prime = "XSimplexConnectionToConnectionRule";
-		String connection2__xCable____incoming_name_prime = "incoming";
+		String connection1__xCable____outgoing_name_prime = "outgoing";
+		String cableAttributes__xDevice2____endPoint2_name_prime = "endPoint2";
+		String cable__device2____target_name_prime = "target";
+		String device2__cable____incoming_name_prime = "incoming";
 		String cable__device1____source_name_prime = "source";
 		String device1__cable____outgoing_name_prime = "outgoing";
 		String cableAttributes__xDevice1____endPoint1_name_prime = "endPoint1";
-		String cableAttributes__xDevice2____endPoint2_name_prime = "endPoint2";
-		String connection1__xCable____outgoing_name_prime = "outgoing";
-		String cable__device2____target_name_prime = "target";
-		String device2__cable____incoming_name_prime = "incoming";
-		connection2__xCable____incoming.setSrc(connection2);
-		connection2__xCable____incoming.setTrg(xCable);
-		ruleresult.getCreatedEdges().add(connection2__xCable____incoming);
+		String connection2__xCable____incoming_name_prime = "incoming";
+		connection1__xCable____outgoing.setSrc(connection1);
+		connection1__xCable____outgoing.setTrg(xCable);
+		ruleresult.getCreatedEdges().add(connection1__xCable____outgoing);
+		cableAttributes__xDevice2____endPoint2.setSrc(cableAttributes);
+		cableAttributes__xDevice2____endPoint2.setTrg(xDevice2);
+		ruleresult.getCreatedEdges().add(cableAttributes__xDevice2____endPoint2);
+		cable__device2____target.setSrc(cable);
+		cable__device2____target.setTrg(device2);
+		ruleresult.getTranslatedEdges().add(cable__device2____target);
+		device2__cable____incoming.setSrc(device2);
+		device2__cable____incoming.setTrg(cable);
+		ruleresult.getTranslatedEdges().add(device2__cable____incoming);
 		cable__device1____source.setSrc(cable);
 		cable__device1____source.setTrg(device1);
 		ruleresult.getTranslatedEdges().add(cable__device1____source);
@@ -3337,41 +3348,31 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 		cableAttributes__xDevice1____endPoint1.setSrc(cableAttributes);
 		cableAttributes__xDevice1____endPoint1.setTrg(xDevice1);
 		ruleresult.getCreatedEdges().add(cableAttributes__xDevice1____endPoint1);
-		cableAttributes__xDevice2____endPoint2.setSrc(cableAttributes);
-		cableAttributes__xDevice2____endPoint2.setTrg(xDevice2);
-		ruleresult.getCreatedEdges().add(cableAttributes__xDevice2____endPoint2);
-		connection1__xCable____outgoing.setSrc(connection1);
-		connection1__xCable____outgoing.setTrg(xCable);
-		ruleresult.getCreatedEdges().add(connection1__xCable____outgoing);
-		cable__device2____target.setSrc(cable);
-		cable__device2____target.setTrg(device2);
-		ruleresult.getTranslatedEdges().add(cable__device2____target);
-		device2__cable____incoming.setSrc(device2);
-		device2__cable____incoming.setTrg(cable);
-		ruleresult.getTranslatedEdges().add(device2__cable____incoming);
+		connection2__xCable____incoming.setSrc(connection2);
+		connection2__xCable____incoming.setTrg(xCable);
+		ruleresult.getCreatedEdges().add(connection2__xCable____incoming);
 		ruleresult.setRuleName(ruleresult_ruleName_prime);
-		connection2__xCable____incoming.setName(connection2__xCable____incoming_name_prime);
+		connection1__xCable____outgoing.setName(connection1__xCable____outgoing_name_prime);
+		cableAttributes__xDevice2____endPoint2.setName(cableAttributes__xDevice2____endPoint2_name_prime);
+		cable__device2____target.setName(cable__device2____target_name_prime);
+		device2__cable____incoming.setName(device2__cable____incoming_name_prime);
 		cable__device1____source.setName(cable__device1____source_name_prime);
 		device1__cable____outgoing.setName(device1__cable____outgoing_name_prime);
 		cableAttributes__xDevice1____endPoint1.setName(cableAttributes__xDevice1____endPoint1_name_prime);
-		cableAttributes__xDevice2____endPoint2.setName(cableAttributes__xDevice2____endPoint2_name_prime);
-		connection1__xCable____outgoing.setName(connection1__xCable____outgoing_name_prime);
-		cable__device2____target.setName(cable__device2____target_name_prime);
-		device2__cable____incoming.setName(device2__cable____incoming_name_prime);
-		return new Object[] { ruleresult, xCable, xDevice2, device1, connection2, cableAttributes, cable, connection1,
-				device2, xDevice1, connection2__xCable____incoming, cable__device1____source,
-				device1__cable____outgoing, cableAttributes__xDevice1____endPoint1,
-				cableAttributes__xDevice2____endPoint2, connection1__xCable____outgoing, cable__device2____target,
-				device2__cable____incoming };
+		connection2__xCable____incoming.setName(connection2__xCable____incoming_name_prime);
+		return new Object[] { ruleresult, device2, xDevice1, connection1, connection2, cableAttributes, xDevice2,
+				device1, cable, xCable, connection1__xCable____outgoing, cableAttributes__xDevice2____endPoint2,
+				cable__device2____target, device2__cable____incoming, cable__device1____source,
+				device1__cable____outgoing, cableAttributes__xDevice1____endPoint1, connection2__xCable____incoming };
 	}
 
 	public static final void pattern_XSimplexConnectionToConnectionRule_11_5_registerobjects_expressionBBBBBBBBBBBBBBBB(
-			XSimplexConnectionToConnectionRule _this, PerformRuleResult ruleresult, EObject xDeviceToDevice,
-			EObject xCable, EObject xDevice2, EObject device1, EObject connection2, EObject cableAttributes,
-			EObject container, EObject xDeviceToDevice2, EObject cable, EObject xContainer, EObject connection1,
-			EObject device2, EObject xDevice1, EObject xCableToCable) {
-		_this.registerObjects_BWD(ruleresult, xDeviceToDevice, xCable, xDevice2, device1, connection2, cableAttributes,
-				container, xDeviceToDevice2, cable, xContainer, connection1, device2, xDevice1, xCableToCable);
+			XSimplexConnectionToConnectionRule _this, PerformRuleResult ruleresult, EObject xContainer,
+			EObject xDeviceToDevice, EObject device2, EObject xDevice1, EObject connection1, EObject connection2,
+			EObject cableAttributes, EObject container, EObject xDevice2, EObject device1, EObject cable,
+			EObject xDeviceToDevice2, EObject xCable, EObject xCableToCable) {
+		_this.registerObjects_BWD(ruleresult, xContainer, xDeviceToDevice, device2, xDevice1, connection1, connection2,
+				cableAttributes, container, xDevice2, device1, cable, xDeviceToDevice2, xCable, xCableToCable);
 
 	}
 
@@ -3433,23 +3434,23 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_12_2_corematch_bindingFFFFB(Match match) {
-		EObject _localVariable_0 = match.getObject("device1");
+		EObject _localVariable_0 = match.getObject("device2");
 		EObject _localVariable_1 = match.getObject("container");
-		EObject _localVariable_2 = match.getObject("cable");
-		EObject _localVariable_3 = match.getObject("device2");
-		EObject tmpDevice1 = _localVariable_0;
+		EObject _localVariable_2 = match.getObject("device1");
+		EObject _localVariable_3 = match.getObject("cable");
+		EObject tmpDevice2 = _localVariable_0;
 		EObject tmpContainer = _localVariable_1;
-		EObject tmpCable = _localVariable_2;
-		EObject tmpDevice2 = _localVariable_3;
-		if (tmpDevice1 instanceof Device) {
-			Device device1 = (Device) tmpDevice1;
+		EObject tmpDevice1 = _localVariable_2;
+		EObject tmpCable = _localVariable_3;
+		if (tmpDevice2 instanceof Device) {
+			Device device2 = (Device) tmpDevice2;
 			if (tmpContainer instanceof Container) {
 				Container container = (Container) tmpContainer;
-				if (tmpCable instanceof Cable) {
-					Cable cable = (Cable) tmpCable;
-					if (tmpDevice2 instanceof Device) {
-						Device device2 = (Device) tmpDevice2;
-						return new Object[] { device1, container, cable, device2, match };
+				if (tmpDevice1 instanceof Device) {
+					Device device1 = (Device) tmpDevice1;
+					if (tmpCable instanceof Cable) {
+						Cable cable = (Cable) tmpCable;
+						return new Object[] { device2, container, device1, cable, match };
 					}
 				}
 			}
@@ -3457,34 +3458,34 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 		return null;
 	}
 
-	public static final Iterable<Object[]> pattern_XSimplexConnectionToConnectionRule_12_2_corematch_blackFFFBBFBBFFB(
-			Device device1, Container container, Cable cable, Device device2, Match match) {
+	public static final Iterable<Object[]> pattern_XSimplexConnectionToConnectionRule_12_2_corematch_blackFBFBFBBFFFB(
+			Device device2, Container container, Device device1, Cable cable, Match match) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		if (!device1.equals(device2)) {
-			for (XDeviceToDevice xDeviceToDevice : org.moflon.core.utilities.eMoflonEMFUtil
-					.getOppositeReferenceTyped(device1, XDeviceToDevice.class, "target")) {
-				XDevice xDevice1 = xDeviceToDevice.getSource();
-				if (xDevice1 != null) {
+			for (XCableToCable xCableToCable : org.moflon.core.utilities.eMoflonEMFUtil.getOppositeReferenceTyped(cable,
+					XCableToCable.class, "target")) {
+				XCable xCable = xCableToCable.getSource();
+				if (xCable != null) {
 					for (XDeviceToDevice xDeviceToDevice2 : org.moflon.core.utilities.eMoflonEMFUtil
 							.getOppositeReferenceTyped(device2, XDeviceToDevice.class, "target")) {
-						if (!xDeviceToDevice.equals(xDeviceToDevice2)) {
-							XDevice xDevice2 = xDeviceToDevice2.getSource();
-							if (xDevice2 != null) {
-								if (!xDevice1.equals(xDevice2)) {
-									for (XCableToCable xCableToCable : org.moflon.core.utilities.eMoflonEMFUtil
-											.getOppositeReferenceTyped(cable, XCableToCable.class, "target")) {
-										XCable xCable = xCableToCable.getSource();
-										if (xCable != null) {
-											_result.add(new Object[] { xDeviceToDevice, xCable, xDevice2, device1,
-													container, xDeviceToDevice2, cable, device2, xDevice1,
-													xCableToCable, match });
+						XDevice xDevice2 = xDeviceToDevice2.getSource();
+						if (xDevice2 != null) {
+							for (XDeviceToDevice xDeviceToDevice : org.moflon.core.utilities.eMoflonEMFUtil
+									.getOppositeReferenceTyped(device1, XDeviceToDevice.class, "target")) {
+								if (!xDeviceToDevice.equals(xDeviceToDevice2)) {
+									XDevice xDevice1 = xDeviceToDevice.getSource();
+									if (xDevice1 != null) {
+										if (!xDevice1.equals(xDevice2)) {
+											_result.add(new Object[] { xDeviceToDevice, device2, xDevice1, container,
+													xDevice2, device1, cable, xDeviceToDevice2, xCable, xCableToCable,
+													match });
 										}
-
 									}
+
 								}
 							}
-
 						}
+
 					}
 				}
 
@@ -3493,61 +3494,59 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 		return _result;
 	}
 
-	public static final Iterable<Object[]> pattern_XSimplexConnectionToConnectionRule_12_3_findcontext_blackBBBBFFBBBFFBBB(
-			XDeviceToDevice xDeviceToDevice, XCable xCable, XDevice xDevice2, Device device1, Container container,
-			XDeviceToDevice xDeviceToDevice2, Cable cable, Device device2, XDevice xDevice1,
-			XCableToCable xCableToCable) {
+	public static final Iterable<Object[]> pattern_XSimplexConnectionToConnectionRule_12_3_findcontext_blackFBBBFFFBBBBBBB(
+			XDeviceToDevice xDeviceToDevice, Device device2, XDevice xDevice1, Container container, XDevice xDevice2,
+			Device device1, Cable cable, XDeviceToDevice xDeviceToDevice2, XCable xCable, XCableToCable xCableToCable) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
 		if (!xDeviceToDevice.equals(xDeviceToDevice2)) {
-			if (!device1.equals(device2)) {
-				if (!xDevice1.equals(xDevice2)) {
-					if (xDevice2.equals(xDeviceToDevice2.getSource())) {
-						if (device1.equals(cable.getSource())) {
+			if (!xDevice1.equals(xDevice2)) {
+				if (!device1.equals(device2)) {
+					if (xDevice1.equals(xDeviceToDevice.getSource())) {
+						if (container.getDevices().contains(device1)) {
 							if (container.getCables().contains(cable)) {
-								if (device1.equals(xDeviceToDevice.getTarget())) {
-									if (container.getDevices().contains(device2)) {
-										if (xDevice1.equals(xDeviceToDevice.getSource())) {
-											if (container.getDevices().contains(device1)) {
-												if (device2.equals(xDeviceToDevice2.getTarget())) {
-													if (xCable.equals(xCableToCable.getSource())) {
-														if (device2.equals(cable.getTarget())) {
-															if (cable.equals(xCableToCable.getTarget())) {
-																CableAttributes cableAttributes = xCable
-																		.getCableAttributes();
-																if (cableAttributes != null) {
+								if (device2.equals(cable.getTarget())) {
+									if (xDevice2.equals(xDeviceToDevice2.getSource())) {
+										if (device1.equals(cable.getSource())) {
+											if (cable.equals(xCableToCable.getTarget())) {
+												if (xCable.equals(xCableToCable.getSource())) {
+													if (device2.equals(xDeviceToDevice2.getTarget())) {
+														if (device1.equals(xDeviceToDevice.getTarget())) {
+															if (container.getDevices().contains(device2)) {
+																Connections connection1 = xDevice1.getConnections();
+																if (connection1 != null) {
 																	Connections connection2 = xDevice2.getConnections();
 																	if (connection2 != null) {
-																		Connections connection1 = xDevice1
-																				.getConnections();
-																		if (connection1 != null) {
-																			if (!connection1.equals(connection2)) {
+																		if (!connection1.equals(connection2)) {
+																			CableAttributes cableAttributes = xCable
+																					.getCableAttributes();
+																			if (cableAttributes != null) {
 																				for (XContainer xContainer : org.moflon.core.utilities.eMoflonEMFUtil
 																						.getOppositeReferenceTyped(
-																								xDevice2,
+																								xCable,
 																								XContainer.class,
 																								"elements")) {
 																					if (xContainer.getElements()
-																							.contains(xDevice1)) {
+																							.contains(xDevice2)) {
 																						if (xContainer.getElements()
-																								.contains(xCable)) {
+																								.contains(xDevice1)) {
 																							_result.add(new Object[] {
+																									xContainer,
 																									xDeviceToDevice,
-																									xCable, xDevice2,
-																									device1,
+																									device2, xDevice1,
+																									connection1,
 																									connection2,
 																									cableAttributes,
-																									container,
+																									container, xDevice2,
+																									device1, cable,
 																									xDeviceToDevice2,
-																									cable, xContainer,
-																									connection1,
-																									device2, xDevice1,
+																									xCable,
 																									xCableToCable });
 																						}
 																					}
 																				}
 																			}
-																		}
 
+																		}
 																	}
 
 																}
@@ -3570,67 +3569,91 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_12_3_findcontext_greenBBBBBBBBBBBBBBFFFFFFFFFFFFFFFFFFFF(
-			XDeviceToDevice xDeviceToDevice, XCable xCable, XDevice xDevice2, Device device1, Connections connection2,
-			CableAttributes cableAttributes, Container container, XDeviceToDevice xDeviceToDevice2, Cable cable,
-			XContainer xContainer, Connections connection1, Device device2, XDevice xDevice1,
+			XContainer xContainer, XDeviceToDevice xDeviceToDevice, Device device2, XDevice xDevice1,
+			Connections connection1, Connections connection2, CableAttributes cableAttributes, Container container,
+			XDevice xDevice2, Device device1, Cable cable, XDeviceToDevice xDeviceToDevice2, XCable xCable,
 			XCableToCable xCableToCable) {
 		IsApplicableMatch isApplicableMatch = RuntimeFactory.eINSTANCE.createIsApplicableMatch();
-		EMoflonEdge xCable__cableAttributes____cableAttributes = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xDeviceToDevice__xDevice1____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xDevice1__connection1____connections = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xContainer__xCable____elements = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xContainer__xDevice2____elements = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge container__device1____devices = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge container__cable____cables = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge cable__device2____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge device2__cable____incoming = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xDevice2__connection2____connections = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge xDeviceToDevice2__xDevice2____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge cable__device1____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge device1__cable____outgoing = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xDevice2__connection2____connections = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xContainer__xDevice2____elements = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge container__cable____cables = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xDeviceToDevice__device1____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge container__device2____devices = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xContainer__xDevice1____elements = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xDeviceToDevice__xDevice1____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xDevice1__connection1____connections = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge container__device1____devices = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xDeviceToDevice2__device2____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xCableToCable__xCable____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge cable__device2____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge device2__cable____incoming = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		EMoflonEdge xCableToCable__cable____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
-		EMoflonEdge xContainer__xCable____elements = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xCableToCable__xCable____source = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xContainer__xDevice1____elements = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xDeviceToDevice2__device2____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xDeviceToDevice__device1____target = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge xCable__cableAttributes____cableAttributes = RuntimeFactory.eINSTANCE.createEMoflonEdge();
+		EMoflonEdge container__device2____devices = RuntimeFactory.eINSTANCE.createEMoflonEdge();
 		boolean cableAttributes_isDuplex_prime = Boolean.valueOf(false);
-		String xCable__cableAttributes____cableAttributes_name_prime = "cableAttributes";
+		String xDeviceToDevice__xDevice1____source_name_prime = "source";
+		String xDevice1__connection1____connections_name_prime = "connections";
+		String xContainer__xCable____elements_name_prime = "elements";
+		String xContainer__xDevice2____elements_name_prime = "elements";
+		String container__device1____devices_name_prime = "devices";
+		String container__cable____cables_name_prime = "cables";
+		String cable__device2____target_name_prime = "target";
+		String device2__cable____incoming_name_prime = "incoming";
+		String xDevice2__connection2____connections_name_prime = "connections";
 		String xDeviceToDevice2__xDevice2____source_name_prime = "source";
 		String cable__device1____source_name_prime = "source";
 		String device1__cable____outgoing_name_prime = "outgoing";
-		String xDevice2__connection2____connections_name_prime = "connections";
-		String xContainer__xDevice2____elements_name_prime = "elements";
-		String container__cable____cables_name_prime = "cables";
-		String xDeviceToDevice__device1____target_name_prime = "target";
-		String container__device2____devices_name_prime = "devices";
-		String xContainer__xDevice1____elements_name_prime = "elements";
-		String xDeviceToDevice__xDevice1____source_name_prime = "source";
-		String xDevice1__connection1____connections_name_prime = "connections";
-		String container__device1____devices_name_prime = "devices";
-		String xDeviceToDevice2__device2____target_name_prime = "target";
-		String xCableToCable__xCable____source_name_prime = "source";
-		String cable__device2____target_name_prime = "target";
-		String device2__cable____incoming_name_prime = "incoming";
 		String xCableToCable__cable____target_name_prime = "target";
-		String xContainer__xCable____elements_name_prime = "elements";
+		String xCableToCable__xCable____source_name_prime = "source";
+		String xContainer__xDevice1____elements_name_prime = "elements";
+		String xDeviceToDevice2__device2____target_name_prime = "target";
+		String xDeviceToDevice__device1____target_name_prime = "target";
+		String xCable__cableAttributes____cableAttributes_name_prime = "cableAttributes";
+		String container__device2____devices_name_prime = "devices";
+		isApplicableMatch.getAllContextElements().add(xContainer);
 		isApplicableMatch.getAllContextElements().add(xDeviceToDevice);
-		isApplicableMatch.getAllContextElements().add(xCable);
-		isApplicableMatch.getAllContextElements().add(xDevice2);
-		isApplicableMatch.getAllContextElements().add(device1);
+		isApplicableMatch.getAllContextElements().add(device2);
+		isApplicableMatch.getAllContextElements().add(xDevice1);
+		isApplicableMatch.getAllContextElements().add(connection1);
 		isApplicableMatch.getAllContextElements().add(connection2);
 		isApplicableMatch.getAllContextElements().add(cableAttributes);
 		isApplicableMatch.getAllContextElements().add(container);
-		isApplicableMatch.getAllContextElements().add(xDeviceToDevice2);
+		isApplicableMatch.getAllContextElements().add(xDevice2);
+		isApplicableMatch.getAllContextElements().add(device1);
 		isApplicableMatch.getAllContextElements().add(cable);
-		isApplicableMatch.getAllContextElements().add(xContainer);
-		isApplicableMatch.getAllContextElements().add(connection1);
-		isApplicableMatch.getAllContextElements().add(device2);
-		isApplicableMatch.getAllContextElements().add(xDevice1);
+		isApplicableMatch.getAllContextElements().add(xDeviceToDevice2);
+		isApplicableMatch.getAllContextElements().add(xCable);
 		isApplicableMatch.getAllContextElements().add(xCableToCable);
-		xCable__cableAttributes____cableAttributes.setSrc(xCable);
-		xCable__cableAttributes____cableAttributes.setTrg(cableAttributes);
-		isApplicableMatch.getAllContextElements().add(xCable__cableAttributes____cableAttributes);
+		xDeviceToDevice__xDevice1____source.setSrc(xDeviceToDevice);
+		xDeviceToDevice__xDevice1____source.setTrg(xDevice1);
+		isApplicableMatch.getAllContextElements().add(xDeviceToDevice__xDevice1____source);
+		xDevice1__connection1____connections.setSrc(xDevice1);
+		xDevice1__connection1____connections.setTrg(connection1);
+		isApplicableMatch.getAllContextElements().add(xDevice1__connection1____connections);
+		xContainer__xCable____elements.setSrc(xContainer);
+		xContainer__xCable____elements.setTrg(xCable);
+		isApplicableMatch.getAllContextElements().add(xContainer__xCable____elements);
+		xContainer__xDevice2____elements.setSrc(xContainer);
+		xContainer__xDevice2____elements.setTrg(xDevice2);
+		isApplicableMatch.getAllContextElements().add(xContainer__xDevice2____elements);
+		container__device1____devices.setSrc(container);
+		container__device1____devices.setTrg(device1);
+		isApplicableMatch.getAllContextElements().add(container__device1____devices);
+		container__cable____cables.setSrc(container);
+		container__cable____cables.setTrg(cable);
+		isApplicableMatch.getAllContextElements().add(container__cable____cables);
+		cable__device2____target.setSrc(cable);
+		cable__device2____target.setTrg(device2);
+		isApplicableMatch.getAllContextElements().add(cable__device2____target);
+		device2__cable____incoming.setSrc(device2);
+		device2__cable____incoming.setTrg(cable);
+		isApplicableMatch.getAllContextElements().add(device2__cable____incoming);
+		xDevice2__connection2____connections.setSrc(xDevice2);
+		xDevice2__connection2____connections.setTrg(connection2);
+		isApplicableMatch.getAllContextElements().add(xDevice2__connection2____connections);
 		xDeviceToDevice2__xDevice2____source.setSrc(xDeviceToDevice2);
 		xDeviceToDevice2__xDevice2____source.setTrg(xDevice2);
 		isApplicableMatch.getAllContextElements().add(xDeviceToDevice2__xDevice2____source);
@@ -3640,96 +3663,72 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 		device1__cable____outgoing.setSrc(device1);
 		device1__cable____outgoing.setTrg(cable);
 		isApplicableMatch.getAllContextElements().add(device1__cable____outgoing);
-		xDevice2__connection2____connections.setSrc(xDevice2);
-		xDevice2__connection2____connections.setTrg(connection2);
-		isApplicableMatch.getAllContextElements().add(xDevice2__connection2____connections);
-		xContainer__xDevice2____elements.setSrc(xContainer);
-		xContainer__xDevice2____elements.setTrg(xDevice2);
-		isApplicableMatch.getAllContextElements().add(xContainer__xDevice2____elements);
-		container__cable____cables.setSrc(container);
-		container__cable____cables.setTrg(cable);
-		isApplicableMatch.getAllContextElements().add(container__cable____cables);
-		xDeviceToDevice__device1____target.setSrc(xDeviceToDevice);
-		xDeviceToDevice__device1____target.setTrg(device1);
-		isApplicableMatch.getAllContextElements().add(xDeviceToDevice__device1____target);
-		container__device2____devices.setSrc(container);
-		container__device2____devices.setTrg(device2);
-		isApplicableMatch.getAllContextElements().add(container__device2____devices);
-		xContainer__xDevice1____elements.setSrc(xContainer);
-		xContainer__xDevice1____elements.setTrg(xDevice1);
-		isApplicableMatch.getAllContextElements().add(xContainer__xDevice1____elements);
-		xDeviceToDevice__xDevice1____source.setSrc(xDeviceToDevice);
-		xDeviceToDevice__xDevice1____source.setTrg(xDevice1);
-		isApplicableMatch.getAllContextElements().add(xDeviceToDevice__xDevice1____source);
-		xDevice1__connection1____connections.setSrc(xDevice1);
-		xDevice1__connection1____connections.setTrg(connection1);
-		isApplicableMatch.getAllContextElements().add(xDevice1__connection1____connections);
-		container__device1____devices.setSrc(container);
-		container__device1____devices.setTrg(device1);
-		isApplicableMatch.getAllContextElements().add(container__device1____devices);
-		xDeviceToDevice2__device2____target.setSrc(xDeviceToDevice2);
-		xDeviceToDevice2__device2____target.setTrg(device2);
-		isApplicableMatch.getAllContextElements().add(xDeviceToDevice2__device2____target);
-		xCableToCable__xCable____source.setSrc(xCableToCable);
-		xCableToCable__xCable____source.setTrg(xCable);
-		isApplicableMatch.getAllContextElements().add(xCableToCable__xCable____source);
-		cable__device2____target.setSrc(cable);
-		cable__device2____target.setTrg(device2);
-		isApplicableMatch.getAllContextElements().add(cable__device2____target);
-		device2__cable____incoming.setSrc(device2);
-		device2__cable____incoming.setTrg(cable);
-		isApplicableMatch.getAllContextElements().add(device2__cable____incoming);
 		xCableToCable__cable____target.setSrc(xCableToCable);
 		xCableToCable__cable____target.setTrg(cable);
 		isApplicableMatch.getAllContextElements().add(xCableToCable__cable____target);
-		xContainer__xCable____elements.setSrc(xContainer);
-		xContainer__xCable____elements.setTrg(xCable);
-		isApplicableMatch.getAllContextElements().add(xContainer__xCable____elements);
+		xCableToCable__xCable____source.setSrc(xCableToCable);
+		xCableToCable__xCable____source.setTrg(xCable);
+		isApplicableMatch.getAllContextElements().add(xCableToCable__xCable____source);
+		xContainer__xDevice1____elements.setSrc(xContainer);
+		xContainer__xDevice1____elements.setTrg(xDevice1);
+		isApplicableMatch.getAllContextElements().add(xContainer__xDevice1____elements);
+		xDeviceToDevice2__device2____target.setSrc(xDeviceToDevice2);
+		xDeviceToDevice2__device2____target.setTrg(device2);
+		isApplicableMatch.getAllContextElements().add(xDeviceToDevice2__device2____target);
+		xDeviceToDevice__device1____target.setSrc(xDeviceToDevice);
+		xDeviceToDevice__device1____target.setTrg(device1);
+		isApplicableMatch.getAllContextElements().add(xDeviceToDevice__device1____target);
+		xCable__cableAttributes____cableAttributes.setSrc(xCable);
+		xCable__cableAttributes____cableAttributes.setTrg(cableAttributes);
+		isApplicableMatch.getAllContextElements().add(xCable__cableAttributes____cableAttributes);
+		container__device2____devices.setSrc(container);
+		container__device2____devices.setTrg(device2);
+		isApplicableMatch.getAllContextElements().add(container__device2____devices);
 		cableAttributes.setIsDuplex(Boolean.valueOf(cableAttributes_isDuplex_prime));
-		xCable__cableAttributes____cableAttributes.setName(xCable__cableAttributes____cableAttributes_name_prime);
+		xDeviceToDevice__xDevice1____source.setName(xDeviceToDevice__xDevice1____source_name_prime);
+		xDevice1__connection1____connections.setName(xDevice1__connection1____connections_name_prime);
+		xContainer__xCable____elements.setName(xContainer__xCable____elements_name_prime);
+		xContainer__xDevice2____elements.setName(xContainer__xDevice2____elements_name_prime);
+		container__device1____devices.setName(container__device1____devices_name_prime);
+		container__cable____cables.setName(container__cable____cables_name_prime);
+		cable__device2____target.setName(cable__device2____target_name_prime);
+		device2__cable____incoming.setName(device2__cable____incoming_name_prime);
+		xDevice2__connection2____connections.setName(xDevice2__connection2____connections_name_prime);
 		xDeviceToDevice2__xDevice2____source.setName(xDeviceToDevice2__xDevice2____source_name_prime);
 		cable__device1____source.setName(cable__device1____source_name_prime);
 		device1__cable____outgoing.setName(device1__cable____outgoing_name_prime);
-		xDevice2__connection2____connections.setName(xDevice2__connection2____connections_name_prime);
-		xContainer__xDevice2____elements.setName(xContainer__xDevice2____elements_name_prime);
-		container__cable____cables.setName(container__cable____cables_name_prime);
-		xDeviceToDevice__device1____target.setName(xDeviceToDevice__device1____target_name_prime);
-		container__device2____devices.setName(container__device2____devices_name_prime);
-		xContainer__xDevice1____elements.setName(xContainer__xDevice1____elements_name_prime);
-		xDeviceToDevice__xDevice1____source.setName(xDeviceToDevice__xDevice1____source_name_prime);
-		xDevice1__connection1____connections.setName(xDevice1__connection1____connections_name_prime);
-		container__device1____devices.setName(container__device1____devices_name_prime);
-		xDeviceToDevice2__device2____target.setName(xDeviceToDevice2__device2____target_name_prime);
-		xCableToCable__xCable____source.setName(xCableToCable__xCable____source_name_prime);
-		cable__device2____target.setName(cable__device2____target_name_prime);
-		device2__cable____incoming.setName(device2__cable____incoming_name_prime);
 		xCableToCable__cable____target.setName(xCableToCable__cable____target_name_prime);
-		xContainer__xCable____elements.setName(xContainer__xCable____elements_name_prime);
-		return new Object[] { xDeviceToDevice, xCable, xDevice2, device1, connection2, cableAttributes, container,
-				xDeviceToDevice2, cable, xContainer, connection1, device2, xDevice1, xCableToCable, isApplicableMatch,
-				xCable__cableAttributes____cableAttributes, xDeviceToDevice2__xDevice2____source,
-				cable__device1____source, device1__cable____outgoing, xDevice2__connection2____connections,
-				xContainer__xDevice2____elements, container__cable____cables, xDeviceToDevice__device1____target,
-				container__device2____devices, xContainer__xDevice1____elements, xDeviceToDevice__xDevice1____source,
-				xDevice1__connection1____connections, container__device1____devices,
-				xDeviceToDevice2__device2____target, xCableToCable__xCable____source, cable__device2____target,
-				device2__cable____incoming, xCableToCable__cable____target, xContainer__xCable____elements };
+		xCableToCable__xCable____source.setName(xCableToCable__xCable____source_name_prime);
+		xContainer__xDevice1____elements.setName(xContainer__xDevice1____elements_name_prime);
+		xDeviceToDevice2__device2____target.setName(xDeviceToDevice2__device2____target_name_prime);
+		xDeviceToDevice__device1____target.setName(xDeviceToDevice__device1____target_name_prime);
+		xCable__cableAttributes____cableAttributes.setName(xCable__cableAttributes____cableAttributes_name_prime);
+		container__device2____devices.setName(container__device2____devices_name_prime);
+		return new Object[] { xContainer, xDeviceToDevice, device2, xDevice1, connection1, connection2, cableAttributes,
+				container, xDevice2, device1, cable, xDeviceToDevice2, xCable, xCableToCable, isApplicableMatch,
+				xDeviceToDevice__xDevice1____source, xDevice1__connection1____connections,
+				xContainer__xCable____elements, xContainer__xDevice2____elements, container__device1____devices,
+				container__cable____cables, cable__device2____target, device2__cable____incoming,
+				xDevice2__connection2____connections, xDeviceToDevice2__xDevice2____source, cable__device1____source,
+				device1__cable____outgoing, xCableToCable__cable____target, xCableToCable__xCable____source,
+				xContainer__xDevice1____elements, xDeviceToDevice2__device2____target,
+				xDeviceToDevice__device1____target, xCable__cableAttributes____cableAttributes,
+				container__device2____devices };
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_12_4_solveCSP_bindingFBBBBBBBBBBBBBBBB(
-			XSimplexConnectionToConnectionRule _this, IsApplicableMatch isApplicableMatch,
-			XDeviceToDevice xDeviceToDevice, XCable xCable, XDevice xDevice2, Device device1, Connections connection2,
-			CableAttributes cableAttributes, Container container, XDeviceToDevice xDeviceToDevice2, Cable cable,
-			XContainer xContainer, Connections connection1, Device device2, XDevice xDevice1,
-			XCableToCable xCableToCable) {
-		CSP _localVariable_0 = _this.isApplicable_solveCsp_BWD(isApplicableMatch, xDeviceToDevice, xCable, xDevice2,
-				device1, connection2, cableAttributes, container, xDeviceToDevice2, cable, xContainer, connection1,
-				device2, xDevice1, xCableToCable);
+			XSimplexConnectionToConnectionRule _this, IsApplicableMatch isApplicableMatch, XContainer xContainer,
+			XDeviceToDevice xDeviceToDevice, Device device2, XDevice xDevice1, Connections connection1,
+			Connections connection2, CableAttributes cableAttributes, Container container, XDevice xDevice2,
+			Device device1, Cable cable, XDeviceToDevice xDeviceToDevice2, XCable xCable, XCableToCable xCableToCable) {
+		CSP _localVariable_0 = _this.isApplicable_solveCsp_BWD(isApplicableMatch, xContainer, xDeviceToDevice, device2,
+				xDevice1, connection1, connection2, cableAttributes, container, xDevice2, device1, cable,
+				xDeviceToDevice2, xCable, xCableToCable);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, xDeviceToDevice, xCable, xDevice2, device1,
-					connection2, cableAttributes, container, xDeviceToDevice2, cable, xContainer, connection1, device2,
-					xDevice1, xCableToCable };
+			return new Object[] { csp, _this, isApplicableMatch, xContainer, xDeviceToDevice, device2, xDevice1,
+					connection1, connection2, cableAttributes, container, xDevice2, device1, cable, xDeviceToDevice2,
+					xCable, xCableToCable };
 		}
 		return null;
 	}
@@ -3739,14 +3738,13 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_12_4_solveCSP_bindingAndBlackFBBBBBBBBBBBBBBBB(
-			XSimplexConnectionToConnectionRule _this, IsApplicableMatch isApplicableMatch,
-			XDeviceToDevice xDeviceToDevice, XCable xCable, XDevice xDevice2, Device device1, Connections connection2,
-			CableAttributes cableAttributes, Container container, XDeviceToDevice xDeviceToDevice2, Cable cable,
-			XContainer xContainer, Connections connection1, Device device2, XDevice xDevice1,
-			XCableToCable xCableToCable) {
+			XSimplexConnectionToConnectionRule _this, IsApplicableMatch isApplicableMatch, XContainer xContainer,
+			XDeviceToDevice xDeviceToDevice, Device device2, XDevice xDevice1, Connections connection1,
+			Connections connection2, CableAttributes cableAttributes, Container container, XDevice xDevice2,
+			Device device1, Cable cable, XDeviceToDevice xDeviceToDevice2, XCable xCable, XCableToCable xCableToCable) {
 		Object[] result_pattern_XSimplexConnectionToConnectionRule_12_4_solveCSP_binding = pattern_XSimplexConnectionToConnectionRule_12_4_solveCSP_bindingFBBBBBBBBBBBBBBBB(
-				_this, isApplicableMatch, xDeviceToDevice, xCable, xDevice2, device1, connection2, cableAttributes,
-				container, xDeviceToDevice2, cable, xContainer, connection1, device2, xDevice1, xCableToCable);
+				_this, isApplicableMatch, xContainer, xDeviceToDevice, device2, xDevice1, connection1, connection2,
+				cableAttributes, container, xDevice2, device1, cable, xDeviceToDevice2, xCable, xCableToCable);
 		if (result_pattern_XSimplexConnectionToConnectionRule_12_4_solveCSP_binding != null) {
 			CSP csp = (CSP) result_pattern_XSimplexConnectionToConnectionRule_12_4_solveCSP_binding[0];
 
@@ -3754,9 +3752,9 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 					csp);
 			if (result_pattern_XSimplexConnectionToConnectionRule_12_4_solveCSP_black != null) {
 
-				return new Object[] { csp, _this, isApplicableMatch, xDeviceToDevice, xCable, xDevice2, device1,
-						connection2, cableAttributes, container, xDeviceToDevice2, cable, xContainer, connection1,
-						device2, xDevice1, xCableToCable };
+				return new Object[] { csp, _this, isApplicableMatch, xContainer, xDeviceToDevice, device2, xDevice1,
+						connection1, connection2, cableAttributes, container, xDevice2, device1, cable,
+						xDeviceToDevice2, xCable, xCableToCable };
 			}
 		}
 		return null;
@@ -3845,23 +3843,23 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Iterable<Object[]> pattern_XSimplexConnectionToConnectionRule_20_2_testcorematchandDECs_blackFFFFB(
-			EMoflonEdge _edge_source) {
+			EMoflonEdge _edge_target) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		EObject tmpCable = _edge_source.getSrc();
+		EObject tmpCable = _edge_target.getSrc();
 		if (tmpCable instanceof Cable) {
 			Cable cable = (Cable) tmpCable;
-			EObject tmpDevice1 = _edge_source.getTrg();
-			if (tmpDevice1 instanceof Device) {
-				Device device1 = (Device) tmpDevice1;
-				if (device1.equals(cable.getSource())) {
-					Device device2 = cable.getTarget();
-					if (device2 != null) {
+			EObject tmpDevice2 = _edge_target.getTrg();
+			if (tmpDevice2 instanceof Device) {
+				Device device2 = (Device) tmpDevice2;
+				if (device2.equals(cable.getTarget())) {
+					Device device1 = cable.getSource();
+					if (device1 != null) {
 						if (!device1.equals(device2)) {
 							for (Container container : org.moflon.core.utilities.eMoflonEMFUtil
 									.getOppositeReferenceTyped(cable, Container.class, "cables")) {
-								if (container.getDevices().contains(device2)) {
-									if (container.getDevices().contains(device1)) {
-										_result.add(new Object[] { device1, container, cable, device2, _edge_source });
+								if (container.getDevices().contains(device1)) {
+									if (container.getDevices().contains(device2)) {
+										_result.add(new Object[] { device2, container, device1, cable, _edge_target });
 									}
 								}
 							}
@@ -3887,9 +3885,9 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final boolean pattern_XSimplexConnectionToConnectionRule_20_3_bookkeepingwithgenericisAppropriatemethod_expressionFBBBBBB(
-			XSimplexConnectionToConnectionRule _this, Match match, Device device1, Container container, Cable cable,
-			Device device2) {
-		boolean _localVariable_0 = _this.isAppropriate_BWD(match, device1, container, cable, device2);
+			XSimplexConnectionToConnectionRule _this, Match match, Device device2, Container container, Device device1,
+			Cable cable) {
+		boolean _localVariable_0 = _this.isAppropriate_BWD(match, device2, container, device1, cable);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -3978,37 +3976,37 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Iterable<Object[]> pattern_XSimplexConnectionToConnectionRule_21_2_testcorematchandDECs_blackFFFFFFFB(
-			EMoflonEdge _edge_incoming) {
+			EMoflonEdge _edge_outgoing) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		EObject tmpConnection2 = _edge_incoming.getSrc();
-		if (tmpConnection2 instanceof Connections) {
-			Connections connection2 = (Connections) tmpConnection2;
-			EObject tmpXCable = _edge_incoming.getTrg();
+		EObject tmpConnection1 = _edge_outgoing.getSrc();
+		if (tmpConnection1 instanceof Connections) {
+			Connections connection1 = (Connections) tmpConnection1;
+			EObject tmpXCable = _edge_outgoing.getTrg();
 			if (tmpXCable instanceof XCable) {
 				XCable xCable = (XCable) tmpXCable;
-				if (connection2.getIncoming().contains(xCable)) {
+				if (connection1.getOutgoing().contains(xCable)) {
 					CableAttributes cableAttributes = xCable.getCableAttributes();
 					if (cableAttributes != null) {
-						XDevice xDevice1 = cableAttributes.getEndPoint1();
-						if (xDevice1 != null) {
-							XDevice xDevice2 = cableAttributes.getEndPoint2();
-							if (xDevice2 != null) {
+						XDevice xDevice2 = cableAttributes.getEndPoint2();
+						if (xDevice2 != null) {
+							XDevice xDevice1 = cableAttributes.getEndPoint1();
+							if (xDevice1 != null) {
 								if (!xDevice1.equals(xDevice2)) {
-									if (connection2.equals(xDevice2.getConnections())) {
+									if (connection1.equals(xDevice1.getConnections())) {
 										boolean cableAttributes_isDuplex = cableAttributes.isIsDuplex();
 										if (Boolean.valueOf(cableAttributes_isDuplex).equals(Boolean.valueOf(false))) {
-											Connections connection1 = xDevice1.getConnections();
-											if (connection1 != null) {
+											Connections connection2 = xDevice2.getConnections();
+											if (connection2 != null) {
 												if (!connection1.equals(connection2)) {
-													if (connection1.getOutgoing().contains(xCable)) {
+													if (connection2.getIncoming().contains(xCable)) {
 														for (XContainer xContainer : org.moflon.core.utilities.eMoflonEMFUtil
 																.getOppositeReferenceTyped(xCable, XContainer.class,
 																		"elements")) {
 															if (xContainer.getElements().contains(xDevice2)) {
 																if (xContainer.getElements().contains(xDevice1)) {
-																	_result.add(new Object[] { xCable, xDevice2,
-																			connection2, cableAttributes, xContainer,
-																			connection1, xDevice1, _edge_incoming });
+																	_result.add(new Object[] { xContainer, xDevice1,
+																			connection1, connection2, cableAttributes,
+																			xDevice2, xCable, _edge_outgoing });
 																}
 															}
 														}
@@ -4045,11 +4043,11 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final boolean pattern_XSimplexConnectionToConnectionRule_21_3_bookkeepingwithgenericisAppropriatemethod_expressionFBBBBBBBBB(
-			XSimplexConnectionToConnectionRule _this, Match match, XCable xCable, XDevice xDevice2,
-			Connections connection2, CableAttributes cableAttributes, XContainer xContainer, Connections connection1,
-			XDevice xDevice1) {
-		boolean _localVariable_0 = _this.isAppropriate_FWD(match, xCable, xDevice2, connection2, cableAttributes,
-				xContainer, connection1, xDevice1);
+			XSimplexConnectionToConnectionRule _this, Match match, XContainer xContainer, XDevice xDevice1,
+			Connections connection1, Connections connection2, CableAttributes cableAttributes, XDevice xDevice2,
+			XCable xCable) {
+		boolean _localVariable_0 = _this.isAppropriate_FWD(match, xContainer, xDevice1, connection1, connection2,
+				cableAttributes, xDevice2, xCable);
 		boolean _result = Boolean.valueOf(_localVariable_0);
 		return _result;
 	}
@@ -4095,53 +4093,53 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_bindingFFFFFFFFFFFBB(
 			Match sourceMatch, Match targetMatch) {
-		EObject _localVariable_0 = sourceMatch.getObject("xCable");
-		EObject _localVariable_1 = sourceMatch.getObject("xDevice2");
-		EObject _localVariable_2 = targetMatch.getObject("device1");
-		EObject _localVariable_3 = sourceMatch.getObject("connection2");
-		EObject _localVariable_4 = sourceMatch.getObject("cableAttributes");
-		EObject _localVariable_5 = targetMatch.getObject("container");
-		EObject _localVariable_6 = targetMatch.getObject("cable");
-		EObject _localVariable_7 = sourceMatch.getObject("xContainer");
-		EObject _localVariable_8 = sourceMatch.getObject("connection1");
-		EObject _localVariable_9 = targetMatch.getObject("device2");
-		EObject _localVariable_10 = sourceMatch.getObject("xDevice1");
-		EObject tmpXCable = _localVariable_0;
-		EObject tmpXDevice2 = _localVariable_1;
-		EObject tmpDevice1 = _localVariable_2;
-		EObject tmpConnection2 = _localVariable_3;
-		EObject tmpCableAttributes = _localVariable_4;
-		EObject tmpContainer = _localVariable_5;
-		EObject tmpCable = _localVariable_6;
-		EObject tmpXContainer = _localVariable_7;
-		EObject tmpConnection1 = _localVariable_8;
-		EObject tmpDevice2 = _localVariable_9;
-		EObject tmpXDevice1 = _localVariable_10;
-		if (tmpXCable instanceof XCable) {
-			XCable xCable = (XCable) tmpXCable;
-			if (tmpXDevice2 instanceof XDevice) {
-				XDevice xDevice2 = (XDevice) tmpXDevice2;
-				if (tmpDevice1 instanceof Device) {
-					Device device1 = (Device) tmpDevice1;
-					if (tmpConnection2 instanceof Connections) {
-						Connections connection2 = (Connections) tmpConnection2;
-						if (tmpCableAttributes instanceof CableAttributes) {
-							CableAttributes cableAttributes = (CableAttributes) tmpCableAttributes;
-							if (tmpContainer instanceof Container) {
-								Container container = (Container) tmpContainer;
-								if (tmpCable instanceof Cable) {
-									Cable cable = (Cable) tmpCable;
-									if (tmpXContainer instanceof XContainer) {
-										XContainer xContainer = (XContainer) tmpXContainer;
-										if (tmpConnection1 instanceof Connections) {
-											Connections connection1 = (Connections) tmpConnection1;
-											if (tmpDevice2 instanceof Device) {
-												Device device2 = (Device) tmpDevice2;
-												if (tmpXDevice1 instanceof XDevice) {
-													XDevice xDevice1 = (XDevice) tmpXDevice1;
-													return new Object[] { xCable, xDevice2, device1, connection2,
-															cableAttributes, container, cable, xContainer, connection1,
-															device2, xDevice1, sourceMatch, targetMatch };
+		EObject _localVariable_0 = sourceMatch.getObject("xContainer");
+		EObject _localVariable_1 = targetMatch.getObject("device2");
+		EObject _localVariable_2 = sourceMatch.getObject("xDevice1");
+		EObject _localVariable_3 = sourceMatch.getObject("connection1");
+		EObject _localVariable_4 = sourceMatch.getObject("connection2");
+		EObject _localVariable_5 = sourceMatch.getObject("cableAttributes");
+		EObject _localVariable_6 = targetMatch.getObject("container");
+		EObject _localVariable_7 = sourceMatch.getObject("xDevice2");
+		EObject _localVariable_8 = targetMatch.getObject("device1");
+		EObject _localVariable_9 = targetMatch.getObject("cable");
+		EObject _localVariable_10 = sourceMatch.getObject("xCable");
+		EObject tmpXContainer = _localVariable_0;
+		EObject tmpDevice2 = _localVariable_1;
+		EObject tmpXDevice1 = _localVariable_2;
+		EObject tmpConnection1 = _localVariable_3;
+		EObject tmpConnection2 = _localVariable_4;
+		EObject tmpCableAttributes = _localVariable_5;
+		EObject tmpContainer = _localVariable_6;
+		EObject tmpXDevice2 = _localVariable_7;
+		EObject tmpDevice1 = _localVariable_8;
+		EObject tmpCable = _localVariable_9;
+		EObject tmpXCable = _localVariable_10;
+		if (tmpXContainer instanceof XContainer) {
+			XContainer xContainer = (XContainer) tmpXContainer;
+			if (tmpDevice2 instanceof Device) {
+				Device device2 = (Device) tmpDevice2;
+				if (tmpXDevice1 instanceof XDevice) {
+					XDevice xDevice1 = (XDevice) tmpXDevice1;
+					if (tmpConnection1 instanceof Connections) {
+						Connections connection1 = (Connections) tmpConnection1;
+						if (tmpConnection2 instanceof Connections) {
+							Connections connection2 = (Connections) tmpConnection2;
+							if (tmpCableAttributes instanceof CableAttributes) {
+								CableAttributes cableAttributes = (CableAttributes) tmpCableAttributes;
+								if (tmpContainer instanceof Container) {
+									Container container = (Container) tmpContainer;
+									if (tmpXDevice2 instanceof XDevice) {
+										XDevice xDevice2 = (XDevice) tmpXDevice2;
+										if (tmpDevice1 instanceof Device) {
+											Device device1 = (Device) tmpDevice1;
+											if (tmpCable instanceof Cable) {
+												Cable cable = (Cable) tmpCable;
+												if (tmpXCable instanceof XCable) {
+													XCable xCable = (XCable) tmpXCable;
+													return new Object[] { xContainer, device2, xDevice1, connection1,
+															connection2, cableAttributes, container, xDevice2, device1,
+															cable, xCable, sourceMatch, targetMatch };
 												}
 											}
 										}
@@ -4157,17 +4155,18 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_blackBBBBBBBBBBBBB(
-			XCable xCable, XDevice xDevice2, Device device1, Connections connection2, CableAttributes cableAttributes,
-			Container container, Cable cable, XContainer xContainer, Connections connection1, Device device2,
-			XDevice xDevice1, Match sourceMatch, Match targetMatch) {
-		if (!device1.equals(device2)) {
+			XContainer xContainer, Device device2, XDevice xDevice1, Connections connection1, Connections connection2,
+			CableAttributes cableAttributes, Container container, XDevice xDevice2, Device device1, Cable cable,
+			XCable xCable, Match sourceMatch, Match targetMatch) {
+		if (!xDevice1.equals(xDevice2)) {
 			if (!connection1.equals(connection2)) {
-				if (!xDevice1.equals(xDevice2)) {
+				if (!device1.equals(device2)) {
 					if (!sourceMatch.equals(targetMatch)) {
 						boolean cableAttributes_isDuplex = cableAttributes.isIsDuplex();
 						if (Boolean.valueOf(cableAttributes_isDuplex).equals(Boolean.valueOf(false))) {
-							return new Object[] { xCable, xDevice2, device1, connection2, cableAttributes, container,
-									cable, xContainer, connection1, device2, xDevice1, sourceMatch, targetMatch };
+							return new Object[] { xContainer, device2, xDevice1, connection1, connection2,
+									cableAttributes, container, xDevice2, device1, cable, xCable, sourceMatch,
+									targetMatch };
 						}
 
 					}
@@ -4182,41 +4181,40 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 		Object[] result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding = pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_bindingFFFFFFFFFFFBB(
 				sourceMatch, targetMatch);
 		if (result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding != null) {
-			XCable xCable = (XCable) result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding[0];
-			XDevice xDevice2 = (XDevice) result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding[1];
-			Device device1 = (Device) result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding[2];
-			Connections connection2 = (Connections) result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding[3];
-			CableAttributes cableAttributes = (CableAttributes) result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding[4];
-			Container container = (Container) result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding[5];
-			Cable cable = (Cable) result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding[6];
-			XContainer xContainer = (XContainer) result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding[7];
-			Connections connection1 = (Connections) result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding[8];
-			Device device2 = (Device) result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding[9];
-			XDevice xDevice1 = (XDevice) result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding[10];
+			XContainer xContainer = (XContainer) result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding[0];
+			Device device2 = (Device) result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding[1];
+			XDevice xDevice1 = (XDevice) result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding[2];
+			Connections connection1 = (Connections) result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding[3];
+			Connections connection2 = (Connections) result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding[4];
+			CableAttributes cableAttributes = (CableAttributes) result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding[5];
+			Container container = (Container) result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding[6];
+			XDevice xDevice2 = (XDevice) result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding[7];
+			Device device1 = (Device) result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding[8];
+			Cable cable = (Cable) result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding[9];
+			XCable xCable = (XCable) result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_binding[10];
 
 			Object[] result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_black = pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_blackBBBBBBBBBBBBB(
-					xCable, xDevice2, device1, connection2, cableAttributes, container, cable, xContainer, connection1,
-					device2, xDevice1, sourceMatch, targetMatch);
+					xContainer, device2, xDevice1, connection1, connection2, cableAttributes, container, xDevice2,
+					device1, cable, xCable, sourceMatch, targetMatch);
 			if (result_pattern_XSimplexConnectionToConnectionRule_24_2_matchsrctrgcontext_black != null) {
 
-				return new Object[] { xCable, xDevice2, device1, connection2, cableAttributes, container, cable,
-						xContainer, connection1, device2, xDevice1, sourceMatch, targetMatch };
+				return new Object[] { xContainer, device2, xDevice1, connection1, connection2, cableAttributes,
+						container, xDevice2, device1, cable, xCable, sourceMatch, targetMatch };
 			}
 		}
 		return null;
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_24_3_solvecsp_bindingFBBBBBBBBBBBBBB(
-			XSimplexConnectionToConnectionRule _this, XCable xCable, XDevice xDevice2, Device device1,
-			Connections connection2, CableAttributes cableAttributes, Container container, Cable cable,
-			XContainer xContainer, Connections connection1, Device device2, XDevice xDevice1, Match sourceMatch,
-			Match targetMatch) {
-		CSP _localVariable_11 = _this.isApplicable_solveCsp_CC(xCable, xDevice2, device1, connection2, cableAttributes,
-				container, cable, xContainer, connection1, device2, xDevice1, sourceMatch, targetMatch);
+			XSimplexConnectionToConnectionRule _this, XContainer xContainer, Device device2, XDevice xDevice1,
+			Connections connection1, Connections connection2, CableAttributes cableAttributes, Container container,
+			XDevice xDevice2, Device device1, Cable cable, XCable xCable, Match sourceMatch, Match targetMatch) {
+		CSP _localVariable_11 = _this.isApplicable_solveCsp_CC(xContainer, device2, xDevice1, connection1, connection2,
+				cableAttributes, container, xDevice2, device1, cable, xCable, sourceMatch, targetMatch);
 		CSP csp = _localVariable_11;
 		if (csp != null) {
-			return new Object[] { csp, _this, xCable, xDevice2, device1, connection2, cableAttributes, container, cable,
-					xContainer, connection1, device2, xDevice1, sourceMatch, targetMatch };
+			return new Object[] { csp, _this, xContainer, device2, xDevice1, connection1, connection2, cableAttributes,
+					container, xDevice2, device1, cable, xCable, sourceMatch, targetMatch };
 		}
 		return null;
 	}
@@ -4226,13 +4224,12 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_24_3_solvecsp_bindingAndBlackFBBBBBBBBBBBBBB(
-			XSimplexConnectionToConnectionRule _this, XCable xCable, XDevice xDevice2, Device device1,
-			Connections connection2, CableAttributes cableAttributes, Container container, Cable cable,
-			XContainer xContainer, Connections connection1, Device device2, XDevice xDevice1, Match sourceMatch,
-			Match targetMatch) {
+			XSimplexConnectionToConnectionRule _this, XContainer xContainer, Device device2, XDevice xDevice1,
+			Connections connection1, Connections connection2, CableAttributes cableAttributes, Container container,
+			XDevice xDevice2, Device device1, Cable cable, XCable xCable, Match sourceMatch, Match targetMatch) {
 		Object[] result_pattern_XSimplexConnectionToConnectionRule_24_3_solvecsp_binding = pattern_XSimplexConnectionToConnectionRule_24_3_solvecsp_bindingFBBBBBBBBBBBBBB(
-				_this, xCable, xDevice2, device1, connection2, cableAttributes, container, cable, xContainer,
-				connection1, device2, xDevice1, sourceMatch, targetMatch);
+				_this, xContainer, device2, xDevice1, connection1, connection2, cableAttributes, container, xDevice2,
+				device1, cable, xCable, sourceMatch, targetMatch);
 		if (result_pattern_XSimplexConnectionToConnectionRule_24_3_solvecsp_binding != null) {
 			CSP csp = (CSP) result_pattern_XSimplexConnectionToConnectionRule_24_3_solvecsp_binding[0];
 
@@ -4240,8 +4237,8 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 					csp);
 			if (result_pattern_XSimplexConnectionToConnectionRule_24_3_solvecsp_black != null) {
 
-				return new Object[] { csp, _this, xCable, xDevice2, device1, connection2, cableAttributes, container,
-						cable, xContainer, connection1, device2, xDevice1, sourceMatch, targetMatch };
+				return new Object[] { csp, _this, xContainer, device2, xDevice1, connection1, connection2,
+						cableAttributes, container, xDevice2, device1, cable, xCable, sourceMatch, targetMatch };
 			}
 		}
 		return null;
@@ -4253,25 +4250,25 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 		return _result;
 	}
 
-	public static final Iterable<Object[]> pattern_XSimplexConnectionToConnectionRule_24_5_matchcorrcontext_blackFBBBFBBBFBB(
-			XCable xCable, XDevice xDevice2, Device device1, Cable cable, Device device2, XDevice xDevice1,
+	public static final Iterable<Object[]> pattern_XSimplexConnectionToConnectionRule_24_5_matchcorrcontext_blackFBBBBBFBFBB(
+			Device device2, XDevice xDevice1, XDevice xDevice2, Device device1, Cable cable, XCable xCable,
 			Match sourceMatch, Match targetMatch) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		if (!device1.equals(device2)) {
-			if (!xDevice1.equals(xDevice2)) {
+		if (!xDevice1.equals(xDevice2)) {
+			if (!device1.equals(device2)) {
 				if (!sourceMatch.equals(targetMatch)) {
-					for (XDeviceToDevice xDeviceToDevice2 : org.moflon.core.utilities.eMoflonEMFUtil
-							.getOppositeReferenceTyped(xDevice2, XDeviceToDevice.class, "source")) {
-						if (device2.equals(xDeviceToDevice2.getTarget())) {
-							for (XDeviceToDevice xDeviceToDevice : org.moflon.core.utilities.eMoflonEMFUtil
-									.getOppositeReferenceTyped(device1, XDeviceToDevice.class, "target")) {
+					for (XDeviceToDevice xDeviceToDevice : org.moflon.core.utilities.eMoflonEMFUtil
+							.getOppositeReferenceTyped(xDevice1, XDeviceToDevice.class, "source")) {
+						if (device1.equals(xDeviceToDevice.getTarget())) {
+							for (XDeviceToDevice xDeviceToDevice2 : org.moflon.core.utilities.eMoflonEMFUtil
+									.getOppositeReferenceTyped(xDevice2, XDeviceToDevice.class, "source")) {
 								if (!xDeviceToDevice.equals(xDeviceToDevice2)) {
-									if (xDevice1.equals(xDeviceToDevice.getSource())) {
+									if (device2.equals(xDeviceToDevice2.getTarget())) {
 										for (XCableToCable xCableToCable : org.moflon.core.utilities.eMoflonEMFUtil
-												.getOppositeReferenceTyped(xCable, XCableToCable.class, "source")) {
-											if (cable.equals(xCableToCable.getTarget())) {
-												_result.add(new Object[] { xDeviceToDevice, xCable, xDevice2, device1,
-														xDeviceToDevice2, cable, device2, xDevice1, xCableToCable,
+												.getOppositeReferenceTyped(cable, XCableToCable.class, "target")) {
+											if (xCable.equals(xCableToCable.getSource())) {
+												_result.add(new Object[] { xDeviceToDevice, device2, xDevice1, xDevice2,
+														device1, cable, xDeviceToDevice2, xCable, xCableToCable,
 														sourceMatch, targetMatch });
 											}
 										}
@@ -4301,14 +4298,14 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_24_6_createcorrespondence_blackBBBBBBBBBBBB(
-			XCable xCable, XDevice xDevice2, Device device1, Connections connection2, CableAttributes cableAttributes,
-			Container container, Cable cable, XContainer xContainer, Connections connection1, Device device2,
-			XDevice xDevice1, CCMatch ccMatch) {
-		if (!device1.equals(device2)) {
+			XContainer xContainer, Device device2, XDevice xDevice1, Connections connection1, Connections connection2,
+			CableAttributes cableAttributes, Container container, XDevice xDevice2, Device device1, Cable cable,
+			XCable xCable, CCMatch ccMatch) {
+		if (!xDevice1.equals(xDevice2)) {
 			if (!connection1.equals(connection2)) {
-				if (!xDevice1.equals(xDevice2)) {
-					return new Object[] { xCable, xDevice2, device1, connection2, cableAttributes, container, cable,
-							xContainer, connection1, device2, xDevice1, ccMatch };
+				if (!device1.equals(device2)) {
+					return new Object[] { xContainer, device2, xDevice1, connection1, connection2, cableAttributes,
+							container, xDevice2, device1, cable, xCable, ccMatch };
 				}
 			}
 		}
@@ -4337,22 +4334,22 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_27_1_matchtggpattern_blackBBBBBBB(
-			XCable xCable, XDevice xDevice2, Connections connection2, CableAttributes cableAttributes,
-			XContainer xContainer, Connections connection1, XDevice xDevice1) {
-		if (!connection1.equals(connection2)) {
-			if (!xDevice1.equals(xDevice2)) {
-				if (cableAttributes.equals(xCable.getCableAttributes())) {
-					if (connection2.getIncoming().contains(xCable)) {
-						if (xDevice1.equals(cableAttributes.getEndPoint1())) {
-							if (connection2.equals(xDevice2.getConnections())) {
-								if (xContainer.getElements().contains(xDevice2)) {
-									if (xDevice2.equals(cableAttributes.getEndPoint2())) {
-										if (xContainer.getElements().contains(xDevice1)) {
-											if (connection1.equals(xDevice1.getConnections())) {
-												if (connection1.getOutgoing().contains(xCable)) {
-													if (xContainer.getElements().contains(xCable)) {
-														return new Object[] { xCable, xDevice2, connection2,
-																cableAttributes, xContainer, connection1, xDevice1 };
+			XContainer xContainer, XDevice xDevice1, Connections connection1, Connections connection2,
+			CableAttributes cableAttributes, XDevice xDevice2, XCable xCable) {
+		if (!xDevice1.equals(xDevice2)) {
+			if (!connection1.equals(connection2)) {
+				if (connection1.equals(xDevice1.getConnections())) {
+					if (connection1.getOutgoing().contains(xCable)) {
+						if (xContainer.getElements().contains(xCable)) {
+							if (xContainer.getElements().contains(xDevice2)) {
+								if (xDevice2.equals(cableAttributes.getEndPoint2())) {
+									if (connection2.equals(xDevice2.getConnections())) {
+										if (xDevice1.equals(cableAttributes.getEndPoint1())) {
+											if (xContainer.getElements().contains(xDevice1)) {
+												if (connection2.getIncoming().contains(xCable)) {
+													if (cableAttributes.equals(xCable.getCableAttributes())) {
+														return new Object[] { xContainer, xDevice1, connection1,
+																connection2, cableAttributes, xDevice2, xCable };
 													}
 												}
 											}
@@ -4386,14 +4383,14 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_28_1_matchtggpattern_blackBBBB(
-			Device device1, Container container, Cable cable, Device device2) {
+			Device device2, Container container, Device device1, Cable cable) {
 		if (!device1.equals(device2)) {
-			if (device1.equals(cable.getSource())) {
+			if (container.getDevices().contains(device1)) {
 				if (container.getCables().contains(cable)) {
-					if (container.getDevices().contains(device2)) {
-						if (container.getDevices().contains(device1)) {
-							if (device2.equals(cable.getTarget())) {
-								return new Object[] { device1, container, cable, device2 };
+					if (device2.equals(cable.getTarget())) {
+						if (device1.equals(cable.getSource())) {
+							if (container.getDevices().contains(device2)) {
+								return new Object[] { device2, container, device1, cable };
 							}
 						}
 					}
@@ -4427,62 +4424,6 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_0BB(
-			ModelgeneratorRuleResult ruleResult, XDeviceToDevice xDeviceToDevice) {
-		if (ruleResult.getCorrObjects().contains(xDeviceToDevice)) {
-			return new Object[] { ruleResult, xDeviceToDevice };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_1BB(
-			ModelgeneratorRuleResult ruleResult, Device device1) {
-		if (ruleResult.getTargetObjects().contains(device1)) {
-			return new Object[] { ruleResult, device1 };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_2BB(
-			ModelgeneratorRuleResult ruleResult, Container container) {
-		if (ruleResult.getTargetObjects().contains(container)) {
-			return new Object[] { ruleResult, container };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_3BB(
-			ModelgeneratorRuleResult ruleResult, Cable cable) {
-		if (ruleResult.getTargetObjects().contains(cable)) {
-			return new Object[] { ruleResult, cable };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_4BB(
-			ModelgeneratorRuleResult ruleResult, XCableToCable xCableToCable) {
-		if (ruleResult.getCorrObjects().contains(xCableToCable)) {
-			return new Object[] { ruleResult, xCableToCable };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_5BB(
-			ModelgeneratorRuleResult ruleResult, XCable xCable) {
-		if (ruleResult.getSourceObjects().contains(xCable)) {
-			return new Object[] { ruleResult, xCable };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_6BB(
-			ModelgeneratorRuleResult ruleResult, CableAttributes cableAttributes) {
-		if (ruleResult.getSourceObjects().contains(cableAttributes)) {
-			return new Object[] { ruleResult, cableAttributes };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_7BB(
 			ModelgeneratorRuleResult ruleResult, XContainer xContainer) {
 		if (ruleResult.getSourceObjects().contains(xContainer)) {
 			return new Object[] { ruleResult, xContainer };
@@ -4490,39 +4431,63 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 		return null;
 	}
 
+	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_1BB(
+			ModelgeneratorRuleResult ruleResult, XCable xCable) {
+		if (ruleResult.getSourceObjects().contains(xCable)) {
+			return new Object[] { ruleResult, xCable };
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_2BB(
+			ModelgeneratorRuleResult ruleResult, CableAttributes cableAttributes) {
+		if (ruleResult.getSourceObjects().contains(cableAttributes)) {
+			return new Object[] { ruleResult, cableAttributes };
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_3BB(
+			ModelgeneratorRuleResult ruleResult, XCableToCable xCableToCable) {
+		if (ruleResult.getCorrObjects().contains(xCableToCable)) {
+			return new Object[] { ruleResult, xCableToCable };
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_4BB(
+			ModelgeneratorRuleResult ruleResult, Cable cable) {
+		if (ruleResult.getTargetObjects().contains(cable)) {
+			return new Object[] { ruleResult, cable };
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_5BB(
+			ModelgeneratorRuleResult ruleResult, Container container) {
+		if (ruleResult.getTargetObjects().contains(container)) {
+			return new Object[] { ruleResult, container };
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_6BB(
+			ModelgeneratorRuleResult ruleResult, Device device1) {
+		if (ruleResult.getTargetObjects().contains(device1)) {
+			return new Object[] { ruleResult, device1 };
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_7BB(
+			ModelgeneratorRuleResult ruleResult, XDeviceToDevice xDeviceToDevice) {
+		if (ruleResult.getCorrObjects().contains(xDeviceToDevice)) {
+			return new Object[] { ruleResult, xDeviceToDevice };
+		}
+		return null;
+	}
+
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_8BB(
-			ModelgeneratorRuleResult ruleResult, XDevice xDevice2) {
-		if (ruleResult.getSourceObjects().contains(xDevice2)) {
-			return new Object[] { ruleResult, xDevice2 };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_9BB(
-			ModelgeneratorRuleResult ruleResult, Connections connection2) {
-		if (ruleResult.getSourceObjects().contains(connection2)) {
-			return new Object[] { ruleResult, connection2 };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_10BB(
-			ModelgeneratorRuleResult ruleResult, XDeviceToDevice xDeviceToDevice2) {
-		if (ruleResult.getCorrObjects().contains(xDeviceToDevice2)) {
-			return new Object[] { ruleResult, xDeviceToDevice2 };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_11BB(
-			ModelgeneratorRuleResult ruleResult, Device device2) {
-		if (ruleResult.getTargetObjects().contains(device2)) {
-			return new Object[] { ruleResult, device2 };
-		}
-		return null;
-	}
-
-	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_12BB(
 			ModelgeneratorRuleResult ruleResult, XDevice xDevice1) {
 		if (ruleResult.getSourceObjects().contains(xDevice1)) {
 			return new Object[] { ruleResult, xDevice1 };
@@ -4530,7 +4495,7 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 		return null;
 	}
 
-	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_13BB(
+	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_9BB(
 			ModelgeneratorRuleResult ruleResult, Connections connection1) {
 		if (ruleResult.getSourceObjects().contains(connection1)) {
 			return new Object[] { ruleResult, connection1 };
@@ -4538,117 +4503,150 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 		return null;
 	}
 
+	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_10BB(
+			ModelgeneratorRuleResult ruleResult, Device device2) {
+		if (ruleResult.getTargetObjects().contains(device2)) {
+			return new Object[] { ruleResult, device2 };
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_11BB(
+			ModelgeneratorRuleResult ruleResult, XDeviceToDevice xDeviceToDevice2) {
+		if (ruleResult.getCorrObjects().contains(xDeviceToDevice2)) {
+			return new Object[] { ruleResult, xDeviceToDevice2 };
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_12BB(
+			ModelgeneratorRuleResult ruleResult, XDevice xDevice2) {
+		if (ruleResult.getSourceObjects().contains(xDevice2)) {
+			return new Object[] { ruleResult, xDevice2 };
+		}
+		return null;
+	}
+
+	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_13BB(
+			ModelgeneratorRuleResult ruleResult, Connections connection2) {
+		if (ruleResult.getSourceObjects().contains(connection2)) {
+			return new Object[] { ruleResult, connection2 };
+		}
+		return null;
+	}
+
 	public static final Iterable<Object[]> pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_blackFFFFFFFFFFFFFFFBB(
 			RuleEntryContainer ruleEntryContainer, ModelgeneratorRuleResult ruleResult) {
 		LinkedList<Object[]> _result = new LinkedList<Object[]>();
-		for (RuleEntryList xDeviceToDeviceList : ruleEntryContainer.getRuleEntryList()) {
-			for (EObject tmpXDeviceToDevice : xDeviceToDeviceList.getEntryObjects()) {
-				if (tmpXDeviceToDevice instanceof XDeviceToDevice) {
-					XDeviceToDevice xDeviceToDevice = (XDeviceToDevice) tmpXDeviceToDevice;
-					Device device1 = xDeviceToDevice.getTarget();
-					if (device1 != null) {
-						XDevice xDevice1 = xDeviceToDevice.getSource();
-						if (xDevice1 != null) {
-							Connections connection1 = xDevice1.getConnections();
-							if (connection1 != null) {
-								if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_0BB(
-										ruleResult, xDeviceToDevice) == null) {
+		for (RuleEntryList xCableToCableList : ruleEntryContainer.getRuleEntryList()) {
+			for (EObject tmpXCableToCable : xCableToCableList.getEntryObjects()) {
+				if (tmpXCableToCable instanceof XCableToCable) {
+					XCableToCable xCableToCable = (XCableToCable) tmpXCableToCable;
+					XCable xCable = xCableToCable.getSource();
+					if (xCable != null) {
+						Cable cable = xCableToCable.getTarget();
+						if (cable != null) {
+							CableAttributes cableAttributes = xCable.getCableAttributes();
+							if (cableAttributes != null) {
+								if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_3BB(
+										ruleResult, xCableToCable) == null) {
 									if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_1BB(
-											ruleResult, device1) == null) {
-										if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_12BB(
-												ruleResult, xDevice1) == null) {
-											if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_13BB(
-													ruleResult, connection1) == null) {
-												for (Container container : org.moflon.core.utilities.eMoflonEMFUtil
-														.getOppositeReferenceTyped(device1, Container.class,
-																"devices")) {
-													if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_2BB(
-															ruleResult, container) == null) {
-														for (Cable cable : container.getCables()) {
-															if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_3BB(
-																	ruleResult, cable) == null) {
-																for (Device device2 : container.getDevices()) {
-																	if (!device1.equals(device2)) {
-																		if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_11BB(
-																				ruleResult, device2) == null) {
-																			for (XContainer xContainer : org.moflon.core.utilities.eMoflonEMFUtil
-																					.getOppositeReferenceTyped(xDevice1,
-																							XContainer.class,
-																							"elements")) {
-																				if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_7BB(
-																						ruleResult,
-																						xContainer) == null) {
-																					for (NetworkElements tmpXCable : xContainer
-																							.getElements()) {
-																						if (tmpXCable instanceof XCable) {
-																							XCable xCable = (XCable) tmpXCable;
-																							CableAttributes cableAttributes = xCable
-																									.getCableAttributes();
-																							if (cableAttributes != null) {
-																								if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_5BB(
+											ruleResult, xCable) == null) {
+										if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_4BB(
+												ruleResult, cable) == null) {
+											if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_2BB(
+													ruleResult, cableAttributes) == null) {
+												for (XContainer xContainer : org.moflon.core.utilities.eMoflonEMFUtil
+														.getOppositeReferenceTyped(xCable, XContainer.class,
+																"elements")) {
+													if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_0BB(
+															ruleResult, xContainer) == null) {
+														for (NetworkElements tmpXDevice1 : xContainer.getElements()) {
+															if (tmpXDevice1 instanceof XDevice) {
+																XDevice xDevice1 = (XDevice) tmpXDevice1;
+																Connections connection1 = xDevice1.getConnections();
+																if (connection1 != null) {
+																	if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_8BB(
+																			ruleResult, xDevice1) == null) {
+																		if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_9BB(
+																				ruleResult, connection1) == null) {
+																			for (NetworkElements tmpXDevice2 : xContainer
+																					.getElements()) {
+																				if (tmpXDevice2 instanceof XDevice) {
+																					XDevice xDevice2 = (XDevice) tmpXDevice2;
+																					if (!xDevice1.equals(xDevice2)) {
+																						Connections connection2 = xDevice2
+																								.getConnections();
+																						if (connection2 != null) {
+																							if (!connection1.equals(
+																									connection2)) {
+																								if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_12BB(
 																										ruleResult,
-																										xCable) == null) {
-																									if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_6BB(
+																										xDevice2) == null) {
+																									if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_13BB(
 																											ruleResult,
-																											cableAttributes) == null) {
-																										for (NetworkElements tmpXDevice2 : xContainer
-																												.getElements()) {
-																											if (tmpXDevice2 instanceof XDevice) {
-																												XDevice xDevice2 = (XDevice) tmpXDevice2;
-																												if (!xDevice1
-																														.equals(xDevice2)) {
-																													Connections connection2 = xDevice2
-																															.getConnections();
-																													if (connection2 != null) {
-																														if (!connection1
-																																.equals(connection2)) {
-																															if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_8BB(
-																																	ruleResult,
-																																	xDevice2) == null) {
-																																if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_9BB(
+																											connection2) == null) {
+																										for (Container container : org.moflon.core.utilities.eMoflonEMFUtil
+																												.getOppositeReferenceTyped(
+																														cable,
+																														Container.class,
+																														"cables")) {
+																											if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_5BB(
+																													ruleResult,
+																													container) == null) {
+																												for (Device device1 : container
+																														.getDevices()) {
+																													if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_6BB(
+																															ruleResult,
+																															device1) == null) {
+																														for (Device device2 : container
+																																.getDevices()) {
+																															if (!device1
+																																	.equals(device2)) {
+																																if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_10BB(
 																																		ruleResult,
-																																		connection2) == null) {
-																																	for (XCableToCable xCableToCable : org.moflon.core.utilities.eMoflonEMFUtil
+																																		device2) == null) {
+																																	for (XDeviceToDevice xDeviceToDevice : org.moflon.core.utilities.eMoflonEMFUtil
 																																			.getOppositeReferenceTyped(
-																																					cable,
-																																					XCableToCable.class,
-																																					"target")) {
-																																		if (xCable
-																																				.equals(xCableToCable
-																																						.getSource())) {
-																																			if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_4BB(
+																																					xDevice1,
+																																					XDeviceToDevice.class,
+																																					"source")) {
+																																		if (device1
+																																				.equals(xDeviceToDevice
+																																						.getTarget())) {
+																																			if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_7BB(
 																																					ruleResult,
-																																					xCableToCable) == null) {
+																																					xDeviceToDevice) == null) {
 																																				for (XDeviceToDevice xDeviceToDevice2 : org.moflon.core.utilities.eMoflonEMFUtil
 																																						.getOppositeReferenceTyped(
-																																								device2,
+																																								xDevice2,
 																																								XDeviceToDevice.class,
-																																								"target")) {
+																																								"source")) {
 																																					if (!xDeviceToDevice
 																																							.equals(xDeviceToDevice2)) {
-																																						if (xDevice2
+																																						if (device2
 																																								.equals(xDeviceToDevice2
-																																										.getSource())) {
-																																							if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_10BB(
+																																										.getTarget())) {
+																																							if (pattern_XSimplexConnectionToConnectionRule_29_2_isapplicablecore_black_nac_11BB(
 																																									ruleResult,
 																																									xDeviceToDevice2) == null) {
 																																								_result.add(
 																																										new Object[] {
-																																												xDeviceToDeviceList,
-																																												xDeviceToDevice,
-																																												device1,
-																																												container,
-																																												cable,
-																																												xCableToCable,
+																																												xCableToCableList,
+																																												xContainer,
 																																												xCable,
 																																												cableAttributes,
-																																												xContainer,
-																																												xDevice2,
-																																												connection2,
-																																												xDeviceToDevice2,
-																																												device2,
+																																												xCableToCable,
+																																												cable,
+																																												container,
+																																												device1,
+																																												xDeviceToDevice,
 																																												xDevice1,
 																																												connection1,
+																																												device2,
+																																												xDeviceToDevice2,
+																																												xDevice2,
+																																												connection2,
 																																												ruleEntryContainer,
 																																												ruleResult });
 																																							}
@@ -4662,21 +4660,21 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 																															}
 																														}
 																													}
-
 																												}
 																											}
 																										}
 																									}
 																								}
 																							}
-
 																						}
+
 																					}
 																				}
 																			}
 																		}
 																	}
 																}
+
 															}
 														}
 													}
@@ -4705,19 +4703,19 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_3_solveCSP_bindingFBBBBBBBBBBBBBBBBB(
-			XSimplexConnectionToConnectionRule _this, IsApplicableMatch isApplicableMatch,
-			XDeviceToDevice xDeviceToDevice, XCable xCable, XDevice xDevice2, Device device1, Connections connection2,
-			CableAttributes cableAttributes, Container container, XDeviceToDevice xDeviceToDevice2, Cable cable,
-			XContainer xContainer, Connections connection1, Device device2, XDevice xDevice1,
-			XCableToCable xCableToCable, ModelgeneratorRuleResult ruleResult) {
-		CSP _localVariable_0 = _this.generateModel_solveCsp_BWD(isApplicableMatch, xDeviceToDevice, xCable, xDevice2,
-				device1, connection2, cableAttributes, container, xDeviceToDevice2, cable, xContainer, connection1,
-				device2, xDevice1, xCableToCable, ruleResult);
+			XSimplexConnectionToConnectionRule _this, IsApplicableMatch isApplicableMatch, XContainer xContainer,
+			XDeviceToDevice xDeviceToDevice, Device device2, XDevice xDevice1, Connections connection1,
+			Connections connection2, CableAttributes cableAttributes, Container container, XDevice xDevice2,
+			Device device1, Cable cable, XDeviceToDevice xDeviceToDevice2, XCable xCable, XCableToCable xCableToCable,
+			ModelgeneratorRuleResult ruleResult) {
+		CSP _localVariable_0 = _this.generateModel_solveCsp_BWD(isApplicableMatch, xContainer, xDeviceToDevice, device2,
+				xDevice1, connection1, connection2, cableAttributes, container, xDevice2, device1, cable,
+				xDeviceToDevice2, xCable, xCableToCable, ruleResult);
 		CSP csp = _localVariable_0;
 		if (csp != null) {
-			return new Object[] { csp, _this, isApplicableMatch, xDeviceToDevice, xCable, xDevice2, device1,
-					connection2, cableAttributes, container, xDeviceToDevice2, cable, xContainer, connection1, device2,
-					xDevice1, xCableToCable, ruleResult };
+			return new Object[] { csp, _this, isApplicableMatch, xContainer, xDeviceToDevice, device2, xDevice1,
+					connection1, connection2, cableAttributes, container, xDevice2, device1, cable, xDeviceToDevice2,
+					xCable, xCableToCable, ruleResult };
 		}
 		return null;
 	}
@@ -4727,14 +4725,14 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_3_solveCSP_bindingAndBlackFBBBBBBBBBBBBBBBBB(
-			XSimplexConnectionToConnectionRule _this, IsApplicableMatch isApplicableMatch,
-			XDeviceToDevice xDeviceToDevice, XCable xCable, XDevice xDevice2, Device device1, Connections connection2,
-			CableAttributes cableAttributes, Container container, XDeviceToDevice xDeviceToDevice2, Cable cable,
-			XContainer xContainer, Connections connection1, Device device2, XDevice xDevice1,
-			XCableToCable xCableToCable, ModelgeneratorRuleResult ruleResult) {
+			XSimplexConnectionToConnectionRule _this, IsApplicableMatch isApplicableMatch, XContainer xContainer,
+			XDeviceToDevice xDeviceToDevice, Device device2, XDevice xDevice1, Connections connection1,
+			Connections connection2, CableAttributes cableAttributes, Container container, XDevice xDevice2,
+			Device device1, Cable cable, XDeviceToDevice xDeviceToDevice2, XCable xCable, XCableToCable xCableToCable,
+			ModelgeneratorRuleResult ruleResult) {
 		Object[] result_pattern_XSimplexConnectionToConnectionRule_29_3_solveCSP_binding = pattern_XSimplexConnectionToConnectionRule_29_3_solveCSP_bindingFBBBBBBBBBBBBBBBBB(
-				_this, isApplicableMatch, xDeviceToDevice, xCable, xDevice2, device1, connection2, cableAttributes,
-				container, xDeviceToDevice2, cable, xContainer, connection1, device2, xDevice1, xCableToCable,
+				_this, isApplicableMatch, xContainer, xDeviceToDevice, device2, xDevice1, connection1, connection2,
+				cableAttributes, container, xDevice2, device1, cable, xDeviceToDevice2, xCable, xCableToCable,
 				ruleResult);
 		if (result_pattern_XSimplexConnectionToConnectionRule_29_3_solveCSP_binding != null) {
 			CSP csp = (CSP) result_pattern_XSimplexConnectionToConnectionRule_29_3_solveCSP_binding[0];
@@ -4743,9 +4741,9 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 					csp);
 			if (result_pattern_XSimplexConnectionToConnectionRule_29_3_solveCSP_black != null) {
 
-				return new Object[] { csp, _this, isApplicableMatch, xDeviceToDevice, xCable, xDevice2, device1,
-						connection2, cableAttributes, container, xDeviceToDevice2, cable, xContainer, connection1,
-						device2, xDevice1, xCableToCable, ruleResult };
+				return new Object[] { csp, _this, isApplicableMatch, xContainer, xDeviceToDevice, device2, xDevice1,
+						connection1, connection2, cableAttributes, container, xDevice2, device1, cable,
+						xDeviceToDevice2, xCable, xCableToCable, ruleResult };
 			}
 		}
 		return null;
@@ -4759,16 +4757,16 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_5_checknacs_blackBBBBBBBBBBBBBB(
-			XDeviceToDevice xDeviceToDevice, XCable xCable, XDevice xDevice2, Device device1, Connections connection2,
-			CableAttributes cableAttributes, Container container, XDeviceToDevice xDeviceToDevice2, Cable cable,
-			XContainer xContainer, Connections connection1, Device device2, XDevice xDevice1,
+			XContainer xContainer, XDeviceToDevice xDeviceToDevice, Device device2, XDevice xDevice1,
+			Connections connection1, Connections connection2, CableAttributes cableAttributes, Container container,
+			XDevice xDevice2, Device device1, Cable cable, XDeviceToDevice xDeviceToDevice2, XCable xCable,
 			XCableToCable xCableToCable) {
 		if (!xDeviceToDevice.equals(xDeviceToDevice2)) {
-			if (!device1.equals(device2)) {
+			if (!xDevice1.equals(xDevice2)) {
 				if (!connection1.equals(connection2)) {
-					if (!xDevice1.equals(xDevice2)) {
-						return new Object[] { xDeviceToDevice, xCable, xDevice2, device1, connection2, cableAttributes,
-								container, xDeviceToDevice2, cable, xContainer, connection1, device2, xDevice1,
+					if (!device1.equals(device2)) {
+						return new Object[] { xContainer, xDeviceToDevice, device2, xDevice1, connection1, connection2,
+								cableAttributes, container, xDevice2, device1, cable, xDeviceToDevice2, xCable,
 								xCableToCable };
 					}
 				}
@@ -4785,16 +4783,16 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 	}
 
 	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_6_perform_blackBBBBBBBBBBBBBBB(
-			XDeviceToDevice xDeviceToDevice, XCable xCable, XDevice xDevice2, Device device1, Connections connection2,
-			CableAttributes cableAttributes, Container container, XDeviceToDevice xDeviceToDevice2, Cable cable,
-			XContainer xContainer, Connections connection1, Device device2, XDevice xDevice1,
+			XContainer xContainer, XDeviceToDevice xDeviceToDevice, Device device2, XDevice xDevice1,
+			Connections connection1, Connections connection2, CableAttributes cableAttributes, Container container,
+			XDevice xDevice2, Device device1, Cable cable, XDeviceToDevice xDeviceToDevice2, XCable xCable,
 			XCableToCable xCableToCable, ModelgeneratorRuleResult ruleResult) {
 		if (!xDeviceToDevice.equals(xDeviceToDevice2)) {
-			if (!device1.equals(device2)) {
+			if (!xDevice1.equals(xDevice2)) {
 				if (!connection1.equals(connection2)) {
-					if (!xDevice1.equals(xDevice2)) {
-						return new Object[] { xDeviceToDevice, xCable, xDevice2, device1, connection2, cableAttributes,
-								container, xDeviceToDevice2, cable, xContainer, connection1, device2, xDevice1,
+					if (!device1.equals(device2)) {
+						return new Object[] { xContainer, xDeviceToDevice, device2, xDevice1, connection1, connection2,
+								cableAttributes, container, xDevice2, device1, cable, xDeviceToDevice2, xCable,
 								xCableToCable, ruleResult };
 					}
 				}
@@ -4803,15 +4801,15 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 		return null;
 	}
 
-	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_6_perform_greenBBBBBBBBBB(XCable xCable,
-			XDevice xDevice2, Device device1, Connections connection2, CableAttributes cableAttributes, Cable cable,
-			Connections connection1, Device device2, XDevice xDevice1, ModelgeneratorRuleResult ruleResult) {
-		connection2.getIncoming().add(xCable);
+	public static final Object[] pattern_XSimplexConnectionToConnectionRule_29_6_perform_greenBBBBBBBBBB(Device device2,
+			XDevice xDevice1, Connections connection1, Connections connection2, CableAttributes cableAttributes,
+			XDevice xDevice2, Device device1, Cable cable, XCable xCable, ModelgeneratorRuleResult ruleResult) {
+		connection1.getOutgoing().add(xCable);
+		cableAttributes.setEndPoint2(xDevice2);
+		cable.setTarget(device2);
 		cable.setSource(device1);
 		cableAttributes.setEndPoint1(xDevice1);
-		cableAttributes.setEndPoint2(xDevice2);
-		connection1.getOutgoing().add(xCable);
-		cable.setTarget(device2);
+		connection2.getIncoming().add(xCable);
 		boolean cableAttributes_isDuplex_prime = Boolean.valueOf(false);
 		boolean ruleResult_success_prime = Boolean.valueOf(true);
 		int _localVariable_0 = ruleResult.getIncrementedPerformCount();
@@ -4819,8 +4817,8 @@ public class XSimplexConnectionToConnectionRuleImpl extends AbstractRuleImpl
 		ruleResult.setSuccess(Boolean.valueOf(ruleResult_success_prime));
 		int ruleResult_performCount_prime = Integer.valueOf(_localVariable_0);
 		ruleResult.setPerformCount(Integer.valueOf(ruleResult_performCount_prime));
-		return new Object[] { xCable, xDevice2, device1, connection2, cableAttributes, cable, connection1, device2,
-				xDevice1, ruleResult };
+		return new Object[] { device2, xDevice1, connection1, connection2, cableAttributes, xDevice2, device1, cable,
+				xCable, ruleResult };
 	}
 
 	public static final ModelgeneratorRuleResult pattern_XSimplexConnectionToConnectionRule_29_7_expressionFB(

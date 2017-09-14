@@ -77,20 +77,20 @@ public class ImplementationTransformatorSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case ImplementationTransformatorPackage.XDEVICE_TO_DEVICE: {
-			XDeviceToDevice xDeviceToDevice = (XDeviceToDevice) theEObject;
-			T result = caseXDeviceToDevice(xDeviceToDevice);
-			if (result == null)
-				result = caseAbstractCorrespondence(xDeviceToDevice);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		case ImplementationTransformatorPackage.XCONTAINER_TO_CONTAINER: {
 			XContainerToContainer xContainerToContainer = (XContainerToContainer) theEObject;
 			T result = caseXContainerToContainer(xContainerToContainer);
 			if (result == null)
 				result = caseAbstractCorrespondence(xContainerToContainer);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case ImplementationTransformatorPackage.XDEVICE_TO_DEVICE: {
+			XDeviceToDevice xDeviceToDevice = (XDeviceToDevice) theEObject;
+			T result = caseXDeviceToDevice(xDeviceToDevice);
+			if (result == null)
+				result = caseAbstractCorrespondence(xDeviceToDevice);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -116,21 +116,6 @@ public class ImplementationTransformatorSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>XDevice To Device</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>XDevice To Device</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseXDeviceToDevice(XDeviceToDevice object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>XContainer To Container</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -142,6 +127,21 @@ public class ImplementationTransformatorSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseXContainerToContainer(XContainerToContainer object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>XDevice To Device</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>XDevice To Device</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseXDeviceToDevice(XDeviceToDevice object) {
 		return null;
 	}
 

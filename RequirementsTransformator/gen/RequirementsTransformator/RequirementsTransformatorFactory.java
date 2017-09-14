@@ -23,13 +23,13 @@ public interface RequirementsTransformatorFactory extends EFactory {
 			.init();
 
 	/**
-	 * Returns a new object of class '<em>XAgent To Agent</em>'.
+	 * Returns a new object of class '<em>XContainer To Container</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>XAgent To Agent</em>'.
+	 * @return a new object of class '<em>XContainer To Container</em>'.
 	 * @generated
 	 */
-	XAgentToAgent createXAgentToAgent();
+	XContainerToContainer createXContainerToContainer();
 
 	/**
 	 * Returns a new object of class '<em>XConsumer To Consumer</em>'.
@@ -41,15 +41,6 @@ public interface RequirementsTransformatorFactory extends EFactory {
 	XConsumerToConsumer createXConsumerToConsumer();
 
 	/**
-	 * Returns a new object of class '<em>XContainer To Container</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>XContainer To Container</em>'.
-	 * @generated
-	 */
-	XContainerToContainer createXContainerToContainer();
-
-	/**
 	 * Returns a new object of class '<em>XProvider To Provider</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -57,6 +48,15 @@ public interface RequirementsTransformatorFactory extends EFactory {
 	 * @generated
 	 */
 	XProviderToProvider createXProviderToProvider();
+
+	/**
+	 * Returns a new object of class '<em>XAgent To Agent</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>XAgent To Agent</em>'.
+	 * @generated
+	 */
+	XAgentToAgent createXAgentToAgent();
 
 	/**
 	 * Returns the package supported by this factory.

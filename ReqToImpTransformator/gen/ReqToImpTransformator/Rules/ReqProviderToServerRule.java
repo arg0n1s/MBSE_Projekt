@@ -189,7 +189,7 @@ public interface ReqProviderToServerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_Server_2(Server implDevice);
+	EObjectContainer isAppropriate_BWD_Server_0(Server implDevice);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -197,7 +197,7 @@ public interface ReqProviderToServerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_28(EMoflonEdge _edge_agents);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_2(EMoflonEdge _edge_agents);
 
 	/**
 	 * <!-- begin-user-doc -->

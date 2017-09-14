@@ -744,7 +744,7 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_48(EMoflonEdge _edge_devices) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_10(EMoflonEdge _edge_devices) {
 
 		Object[] result1_bindingAndBlack = XServerToServerImpl
 				.pattern_XServerToServer_20_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -801,7 +801,7 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_36(EMoflonEdge _edge_elements) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_6(EMoflonEdge _edge_elements) {
 
 		Object[] result1_bindingAndBlack = XServerToServerImpl
 				.pattern_XServerToServer_21_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -877,13 +877,13 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 		var_xDevice_MTBF.setValue(__helper.getValue("xDevice", "MTBF"));
 		var_xDevice_MTBF.setType("BigInteger");
 
-		Variable var_xDevice_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("xDevice", true, csp);
-		var_xDevice_maxSlots.setValue(__helper.getValue("xDevice", "maxSlots"));
-		var_xDevice_maxSlots.setType("BigInteger");
-
 		Variable var_device_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("device", true, csp);
 		var_device_maxSlots.setValue(__helper.getValue("device", "maxSlots"));
 		var_device_maxSlots.setType("BigInteger");
+
+		Variable var_xDevice_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("xDevice", true, csp);
+		var_xDevice_maxSlots.setValue(__helper.getValue("xDevice", "maxSlots"));
+		var_xDevice_maxSlots.setType("BigInteger");
 
 		Variable var_device_name = CSPFactoryHelper.eINSTANCE.createVariable("device", true, csp);
 		var_device_name.setValue(__helper.getValue("device", "name"));
@@ -958,13 +958,13 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 		var_xDevice_MTBF.setValue(__helper.getValue("xDevice", "MTBF"));
 		var_xDevice_MTBF.setType("BigInteger");
 
-		Variable var_xDevice_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("xDevice", true, csp);
-		var_xDevice_maxSlots.setValue(__helper.getValue("xDevice", "maxSlots"));
-		var_xDevice_maxSlots.setType("BigInteger");
-
 		Variable var_device_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("device", true, csp);
 		var_device_maxSlots.setValue(__helper.getValue("device", "maxSlots"));
 		var_device_maxSlots.setType("BigInteger");
+
+		Variable var_xDevice_maxSlots = CSPFactoryHelper.eINSTANCE.createVariable("xDevice", true, csp);
+		var_xDevice_maxSlots.setValue(__helper.getValue("xDevice", "maxSlots"));
+		var_xDevice_maxSlots.setType("BigInteger");
 
 		Variable var_device_name = CSPFactoryHelper.eINSTANCE.createVariable("device", true, csp);
 		var_device_name.setValue(__helper.getValue("device", "name"));
@@ -1373,10 +1373,10 @@ public class XServerToServerImpl extends AbstractRuleImpl implements XServerToSe
 			return null;
 		case RulesPackage.XSERVER_TO_SERVER___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.XSERVER_TO_SERVER___IS_APPROPRIATE_BWD_EMOFLON_EDGE_48__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_48((EMoflonEdge) arguments.get(0));
-		case RulesPackage.XSERVER_TO_SERVER___IS_APPROPRIATE_FWD_EMOFLON_EDGE_36__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_36((EMoflonEdge) arguments.get(0));
+		case RulesPackage.XSERVER_TO_SERVER___IS_APPROPRIATE_BWD_EMOFLON_EDGE_10__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_10((EMoflonEdge) arguments.get(0));
+		case RulesPackage.XSERVER_TO_SERVER___IS_APPROPRIATE_FWD_EMOFLON_EDGE_6__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_6((EMoflonEdge) arguments.get(0));
 		case RulesPackage.XSERVER_TO_SERVER___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.XSERVER_TO_SERVER___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:

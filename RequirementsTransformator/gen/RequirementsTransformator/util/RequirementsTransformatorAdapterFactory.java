@@ -69,8 +69,8 @@ public class RequirementsTransformatorAdapterFactory extends AdapterFactoryImpl 
 	 */
 	protected RequirementsTransformatorSwitch<Adapter> modelSwitch = new RequirementsTransformatorSwitch<Adapter>() {
 		@Override
-		public Adapter caseXAgentToAgent(XAgentToAgent object) {
-			return createXAgentToAgentAdapter();
+		public Adapter caseXContainerToContainer(XContainerToContainer object) {
+			return createXContainerToContainerAdapter();
 		}
 
 		@Override
@@ -79,13 +79,13 @@ public class RequirementsTransformatorAdapterFactory extends AdapterFactoryImpl 
 		}
 
 		@Override
-		public Adapter caseXContainerToContainer(XContainerToContainer object) {
-			return createXContainerToContainerAdapter();
+		public Adapter caseXProviderToProvider(XProviderToProvider object) {
+			return createXProviderToProviderAdapter();
 		}
 
 		@Override
-		public Adapter caseXProviderToProvider(XProviderToProvider object) {
-			return createXProviderToProviderAdapter();
+		public Adapter caseXAgentToAgent(XAgentToAgent object) {
+			return createXAgentToAgentAdapter();
 		}
 
 		@Override
@@ -113,16 +113,16 @@ public class RequirementsTransformatorAdapterFactory extends AdapterFactoryImpl 
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link RequirementsTransformator.XAgentToAgent <em>XAgent To Agent</em>}'.
+	 * Creates a new adapter for an object of class '{@link RequirementsTransformator.XContainerToContainer <em>XContainer To Container</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see RequirementsTransformator.XAgentToAgent
+	 * @see RequirementsTransformator.XContainerToContainer
 	 * @generated
 	 */
-	public Adapter createXAgentToAgentAdapter() {
+	public Adapter createXContainerToContainerAdapter() {
 		return null;
 	}
 
@@ -141,20 +141,6 @@ public class RequirementsTransformatorAdapterFactory extends AdapterFactoryImpl 
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link RequirementsTransformator.XContainerToContainer <em>XContainer To Container</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see RequirementsTransformator.XContainerToContainer
-	 * @generated
-	 */
-	public Adapter createXContainerToContainerAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link RequirementsTransformator.XProviderToProvider <em>XProvider To Provider</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -165,6 +151,20 @@ public class RequirementsTransformatorAdapterFactory extends AdapterFactoryImpl 
 	 * @generated
 	 */
 	public Adapter createXProviderToProviderAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link RequirementsTransformator.XAgentToAgent <em>XAgent To Agent</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see RequirementsTransformator.XAgentToAgent
+	 * @generated
+	 */
+	public Adapter createXAgentToAgentAdapter() {
 		return null;
 	}
 

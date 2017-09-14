@@ -51,8 +51,8 @@ public interface XSimplexConnectionToConnectionRule extends EObject, AbstractRul
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_FWD(Match match, XCable xCable, XDevice xDevice2, Connections connection2,
-			CableAttributes cableAttributes, XContainer xContainer, Connections connection1, XDevice xDevice1);
+	boolean isAppropriate_FWD(Match match, XContainer xContainer, XDevice xDevice1, Connections connection1,
+			Connections connection2, CableAttributes cableAttributes, XDevice xDevice2, XCable xCable);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -76,8 +76,8 @@ public interface XSimplexConnectionToConnectionRule extends EObject, AbstractRul
 	 * @model
 	 * @generated
 	 */
-	void registerObjectsToMatch_FWD(Match match, XCable xCable, XDevice xDevice2, Connections connection2,
-			CableAttributes cableAttributes, XContainer xContainer, Connections connection1, XDevice xDevice1);
+	void registerObjectsToMatch_FWD(Match match, XContainer xContainer, XDevice xDevice1, Connections connection1,
+			Connections connection2, CableAttributes cableAttributes, XDevice xDevice2, XCable xCable);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,8 +85,8 @@ public interface XSimplexConnectionToConnectionRule extends EObject, AbstractRul
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_FWD(Match match, XCable xCable, XDevice xDevice2, Connections connection2,
-			CableAttributes cableAttributes, XContainer xContainer, Connections connection1, XDevice xDevice1);
+	CSP isAppropriate_solveCsp_FWD(Match match, XContainer xContainer, XDevice xDevice1, Connections connection1,
+			Connections connection2, CableAttributes cableAttributes, XDevice xDevice2, XCable xCable);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -102,10 +102,10 @@ public interface XSimplexConnectionToConnectionRule extends EObject, AbstractRul
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, XDeviceToDevice xDeviceToDevice, XCable xCable,
-			XDevice xDevice2, Device device1, Connections connection2, CableAttributes cableAttributes,
-			Container container, XDeviceToDevice xDeviceToDevice2, Cable cable, XContainer xContainer,
-			Connections connection1, Device device2, XDevice xDevice1, XCableToCable xCableToCable);
+	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch, XContainer xContainer,
+			XDeviceToDevice xDeviceToDevice, Device device2, XDevice xDevice1, Connections connection1,
+			Connections connection2, CableAttributes cableAttributes, Container container, XDevice xDevice2,
+			Device device1, Cable cable, XDeviceToDevice xDeviceToDevice2, XCable xCable, XCableToCable xCableToCable);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -121,9 +121,9 @@ public interface XSimplexConnectionToConnectionRule extends EObject, AbstractRul
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_FWD(PerformRuleResult ruleresult, EObject xDeviceToDevice, EObject xCable, EObject xDevice2,
-			EObject device1, EObject connection2, EObject cableAttributes, EObject container, EObject xDeviceToDevice2,
-			EObject cable, EObject xContainer, EObject connection1, EObject device2, EObject xDevice1,
+	void registerObjects_FWD(PerformRuleResult ruleresult, EObject xContainer, EObject xDeviceToDevice, EObject device2,
+			EObject xDevice1, EObject connection1, EObject connection2, EObject cableAttributes, EObject container,
+			EObject xDevice2, EObject device1, EObject cable, EObject xDeviceToDevice2, EObject xCable,
 			EObject xCableToCable);
 
 	/**
@@ -140,7 +140,7 @@ public interface XSimplexConnectionToConnectionRule extends EObject, AbstractRul
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_BWD(Match match, Device device1, Container container, Cable cable, Device device2);
+	boolean isAppropriate_BWD(Match match, Device device2, Container container, Device device1, Cable cable);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -164,7 +164,7 @@ public interface XSimplexConnectionToConnectionRule extends EObject, AbstractRul
 	 * @model
 	 * @generated
 	 */
-	void registerObjectsToMatch_BWD(Match match, Device device1, Container container, Cable cable, Device device2);
+	void registerObjectsToMatch_BWD(Match match, Device device2, Container container, Device device1, Cable cable);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,7 +172,7 @@ public interface XSimplexConnectionToConnectionRule extends EObject, AbstractRul
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_BWD(Match match, Device device1, Container container, Cable cable, Device device2);
+	CSP isAppropriate_solveCsp_BWD(Match match, Device device2, Container container, Device device1, Cable cable);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -188,10 +188,10 @@ public interface XSimplexConnectionToConnectionRule extends EObject, AbstractRul
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, XDeviceToDevice xDeviceToDevice, XCable xCable,
-			XDevice xDevice2, Device device1, Connections connection2, CableAttributes cableAttributes,
-			Container container, XDeviceToDevice xDeviceToDevice2, Cable cable, XContainer xContainer,
-			Connections connection1, Device device2, XDevice xDevice1, XCableToCable xCableToCable);
+	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, XContainer xContainer,
+			XDeviceToDevice xDeviceToDevice, Device device2, XDevice xDevice1, Connections connection1,
+			Connections connection2, CableAttributes cableAttributes, Container container, XDevice xDevice2,
+			Device device1, Cable cable, XDeviceToDevice xDeviceToDevice2, XCable xCable, XCableToCable xCableToCable);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -207,9 +207,9 @@ public interface XSimplexConnectionToConnectionRule extends EObject, AbstractRul
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_BWD(PerformRuleResult ruleresult, EObject xDeviceToDevice, EObject xCable, EObject xDevice2,
-			EObject device1, EObject connection2, EObject cableAttributes, EObject container, EObject xDeviceToDevice2,
-			EObject cable, EObject xContainer, EObject connection1, EObject device2, EObject xDevice1,
+	void registerObjects_BWD(PerformRuleResult ruleresult, EObject xContainer, EObject xDeviceToDevice, EObject device2,
+			EObject xDevice1, EObject connection1, EObject connection2, EObject cableAttributes, EObject container,
+			EObject xDevice2, EObject device1, EObject cable, EObject xDeviceToDevice2, EObject xCable,
 			EObject xCableToCable);
 
 	/**
@@ -226,7 +226,7 @@ public interface XSimplexConnectionToConnectionRule extends EObject, AbstractRul
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_53(EMoflonEdge _edge_source);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_11(EMoflonEdge _edge_target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -234,7 +234,7 @@ public interface XSimplexConnectionToConnectionRule extends EObject, AbstractRul
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_41(EMoflonEdge _edge_incoming);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_7(EMoflonEdge _edge_outgoing);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -266,9 +266,9 @@ public interface XSimplexConnectionToConnectionRule extends EObject, AbstractRul
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_CC(XCable xCable, XDevice xDevice2, Device device1, Connections connection2,
-			CableAttributes cableAttributes, Container container, Cable cable, XContainer xContainer,
-			Connections connection1, Device device2, XDevice xDevice1, Match sourceMatch, Match targetMatch);
+	CSP isApplicable_solveCsp_CC(XContainer xContainer, Device device2, XDevice xDevice1, Connections connection1,
+			Connections connection2, CableAttributes cableAttributes, Container container, XDevice xDevice2,
+			Device device1, Cable cable, XCable xCable, Match sourceMatch, Match targetMatch);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -284,8 +284,8 @@ public interface XSimplexConnectionToConnectionRule extends EObject, AbstractRul
 	 * @model
 	 * @generated
 	 */
-	boolean checkDEC_FWD(XCable xCable, XDevice xDevice2, Connections connection2, CableAttributes cableAttributes,
-			XContainer xContainer, Connections connection1, XDevice xDevice1);
+	boolean checkDEC_FWD(XContainer xContainer, XDevice xDevice1, Connections connection1, Connections connection2,
+			CableAttributes cableAttributes, XDevice xDevice2, XCable xCable);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -293,7 +293,7 @@ public interface XSimplexConnectionToConnectionRule extends EObject, AbstractRul
 	 * @model
 	 * @generated
 	 */
-	boolean checkDEC_BWD(Device device1, Container container, Cable cable, Device device2);
+	boolean checkDEC_BWD(Device device2, Container container, Device device1, Cable cable);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -301,8 +301,7 @@ public interface XSimplexConnectionToConnectionRule extends EObject, AbstractRul
 	 * @model
 	 * @generated
 	 */
-	ModelgeneratorRuleResult generateModel(RuleEntryContainer ruleEntryContainer,
-			XDeviceToDevice xDeviceToDeviceParameter);
+	ModelgeneratorRuleResult generateModel(RuleEntryContainer ruleEntryContainer, XCableToCable xCableToCableParameter);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -310,10 +309,10 @@ public interface XSimplexConnectionToConnectionRule extends EObject, AbstractRul
 	 * @model
 	 * @generated
 	 */
-	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, XDeviceToDevice xDeviceToDevice, XCable xCable,
-			XDevice xDevice2, Device device1, Connections connection2, CableAttributes cableAttributes,
-			Container container, XDeviceToDevice xDeviceToDevice2, Cable cable, XContainer xContainer,
-			Connections connection1, Device device2, XDevice xDevice1, XCableToCable xCableToCable,
+	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch, XContainer xContainer,
+			XDeviceToDevice xDeviceToDevice, Device device2, XDevice xDevice1, Connections connection1,
+			Connections connection2, CableAttributes cableAttributes, Container container, XDevice xDevice2,
+			Device device1, Cable cable, XDeviceToDevice xDeviceToDevice2, XCable xCable, XCableToCable xCableToCable,
 			ModelgeneratorRuleResult ruleResult);
 
 	/**

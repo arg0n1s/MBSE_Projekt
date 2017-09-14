@@ -55,125 +55,35 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-		case RulesPackage.XSIMPLEX_CABLE_TO_CABLE_RULE:
-			return createXSimplexCableToCableRule();
-		case RulesPackage.XSIMPLEX_GLASS_FIBER_CABLE_RULE:
-			return createXSimplexGlassFiberCableRule();
-		case RulesPackage.XDUPLEX_CONNECTION_TO_CONNECTION_RULE:
-			return createXDuplexConnectionToConnectionRule();
-		case RulesPackage.XDUPLEX_CABLE_TO_CABLES_RULE:
-			return createXDuplexCableToCablesRule();
-		case RulesPackage.XROUTER_TO_ROUTER_RULE:
-			return createXRouterToRouterRule();
-		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE:
-			return createXContainerToContainerRule();
-		case RulesPackage.XSERVER_TO_SERVER:
-			return createXServerToServer();
-		case RulesPackage.XDUPLEX_COPPER_CABLE_RULE:
-			return createXDuplexCopperCableRule();
-		case RulesPackage.XCOMPUTER_TO_COMPUTER:
-			return createXComputerToComputer();
 		case RulesPackage.XDEVICE_TO_DEVICE_RULE:
 			return createXDeviceToDeviceRule();
-		case RulesPackage.XSIMPLEX_COPPER_CABLE_RULE:
-			return createXSimplexCopperCableRule();
 		case RulesPackage.XDUPLEX_GLASS_FIBER_CABLE_RULE:
 			return createXDuplexGlassFiberCableRule();
+		case RulesPackage.XDUPLEX_CABLE_TO_CABLES_RULE:
+			return createXDuplexCableToCablesRule();
+		case RulesPackage.XSERVER_TO_SERVER:
+			return createXServerToServer();
 		case RulesPackage.XSIMPLEX_CONNECTION_TO_CONNECTION_RULE:
 			return createXSimplexConnectionToConnectionRule();
+		case RulesPackage.XDUPLEX_CONNECTION_TO_CONNECTION_RULE:
+			return createXDuplexConnectionToConnectionRule();
+		case RulesPackage.XCOMPUTER_TO_COMPUTER:
+			return createXComputerToComputer();
+		case RulesPackage.XROUTER_TO_ROUTER_RULE:
+			return createXRouterToRouterRule();
+		case RulesPackage.XSIMPLEX_COPPER_CABLE_RULE:
+			return createXSimplexCopperCableRule();
+		case RulesPackage.XSIMPLEX_GLASS_FIBER_CABLE_RULE:
+			return createXSimplexGlassFiberCableRule();
+		case RulesPackage.XDUPLEX_COPPER_CABLE_RULE:
+			return createXDuplexCopperCableRule();
+		case RulesPackage.XSIMPLEX_CABLE_TO_CABLE_RULE:
+			return createXSimplexCableToCableRule();
+		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE:
+			return createXContainerToContainerRule();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public XSimplexCableToCableRule createXSimplexCableToCableRule() {
-		XSimplexCableToCableRuleImpl xSimplexCableToCableRule = new XSimplexCableToCableRuleImpl();
-		return xSimplexCableToCableRule;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public XSimplexGlassFiberCableRule createXSimplexGlassFiberCableRule() {
-		XSimplexGlassFiberCableRuleImpl xSimplexGlassFiberCableRule = new XSimplexGlassFiberCableRuleImpl();
-		return xSimplexGlassFiberCableRule;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public XDuplexConnectionToConnectionRule createXDuplexConnectionToConnectionRule() {
-		XDuplexConnectionToConnectionRuleImpl xDuplexConnectionToConnectionRule = new XDuplexConnectionToConnectionRuleImpl();
-		return xDuplexConnectionToConnectionRule;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public XDuplexCableToCablesRule createXDuplexCableToCablesRule() {
-		XDuplexCableToCablesRuleImpl xDuplexCableToCablesRule = new XDuplexCableToCablesRuleImpl();
-		return xDuplexCableToCablesRule;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public XRouterToRouterRule createXRouterToRouterRule() {
-		XRouterToRouterRuleImpl xRouterToRouterRule = new XRouterToRouterRuleImpl();
-		return xRouterToRouterRule;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public XContainerToContainerRule createXContainerToContainerRule() {
-		XContainerToContainerRuleImpl xContainerToContainerRule = new XContainerToContainerRuleImpl();
-		return xContainerToContainerRule;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public XServerToServer createXServerToServer() {
-		XServerToServerImpl xServerToServer = new XServerToServerImpl();
-		return xServerToServer;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public XDuplexCopperCableRule createXDuplexCopperCableRule() {
-		XDuplexCopperCableRuleImpl xDuplexCopperCableRule = new XDuplexCopperCableRuleImpl();
-		return xDuplexCopperCableRule;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public XComputerToComputer createXComputerToComputer() {
-		XComputerToComputerImpl xComputerToComputer = new XComputerToComputerImpl();
-		return xComputerToComputer;
 	}
 
 	/**
@@ -191,16 +101,6 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XSimplexCopperCableRule createXSimplexCopperCableRule() {
-		XSimplexCopperCableRuleImpl xSimplexCopperCableRule = new XSimplexCopperCableRuleImpl();
-		return xSimplexCopperCableRule;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public XDuplexGlassFiberCableRule createXDuplexGlassFiberCableRule() {
 		XDuplexGlassFiberCableRuleImpl xDuplexGlassFiberCableRule = new XDuplexGlassFiberCableRuleImpl();
 		return xDuplexGlassFiberCableRule;
@@ -211,9 +111,109 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public XDuplexCableToCablesRule createXDuplexCableToCablesRule() {
+		XDuplexCableToCablesRuleImpl xDuplexCableToCablesRule = new XDuplexCableToCablesRuleImpl();
+		return xDuplexCableToCablesRule;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public XServerToServer createXServerToServer() {
+		XServerToServerImpl xServerToServer = new XServerToServerImpl();
+		return xServerToServer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public XSimplexConnectionToConnectionRule createXSimplexConnectionToConnectionRule() {
 		XSimplexConnectionToConnectionRuleImpl xSimplexConnectionToConnectionRule = new XSimplexConnectionToConnectionRuleImpl();
 		return xSimplexConnectionToConnectionRule;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public XDuplexConnectionToConnectionRule createXDuplexConnectionToConnectionRule() {
+		XDuplexConnectionToConnectionRuleImpl xDuplexConnectionToConnectionRule = new XDuplexConnectionToConnectionRuleImpl();
+		return xDuplexConnectionToConnectionRule;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public XComputerToComputer createXComputerToComputer() {
+		XComputerToComputerImpl xComputerToComputer = new XComputerToComputerImpl();
+		return xComputerToComputer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public XRouterToRouterRule createXRouterToRouterRule() {
+		XRouterToRouterRuleImpl xRouterToRouterRule = new XRouterToRouterRuleImpl();
+		return xRouterToRouterRule;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public XSimplexCopperCableRule createXSimplexCopperCableRule() {
+		XSimplexCopperCableRuleImpl xSimplexCopperCableRule = new XSimplexCopperCableRuleImpl();
+		return xSimplexCopperCableRule;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public XSimplexGlassFiberCableRule createXSimplexGlassFiberCableRule() {
+		XSimplexGlassFiberCableRuleImpl xSimplexGlassFiberCableRule = new XSimplexGlassFiberCableRuleImpl();
+		return xSimplexGlassFiberCableRule;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public XDuplexCopperCableRule createXDuplexCopperCableRule() {
+		XDuplexCopperCableRuleImpl xDuplexCopperCableRule = new XDuplexCopperCableRuleImpl();
+		return xDuplexCopperCableRule;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public XSimplexCableToCableRule createXSimplexCableToCableRule() {
+		XSimplexCableToCableRuleImpl xSimplexCableToCableRule = new XSimplexCableToCableRuleImpl();
+		return xSimplexCableToCableRule;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public XContainerToContainerRule createXContainerToContainerRule() {
+		XContainerToContainerRuleImpl xContainerToContainerRule = new XContainerToContainerRuleImpl();
+		return xContainerToContainerRule;
 	}
 
 	/**

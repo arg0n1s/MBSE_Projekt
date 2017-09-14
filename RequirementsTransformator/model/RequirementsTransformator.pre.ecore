@@ -2,11 +2,11 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="RequirementsTransformator" nsURI="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore"
     nsPrefix="RequirementsTransformator">
-  <eClassifiers xsi:type="ecore:EClass" name="XAgentToAgent" eSuperTypes="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore#//AbstractCorrespondence">
+  <eClassifiers xsi:type="ecore:EClass" name="XContainerToContainer" eSuperTypes="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore#//AbstractCorrespondence">
     <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
-        eType="ecore:EClass platform:/plugin/requirementsXtext/model/generated/ReqXtext.ecore#//XAgent"/>
+        eType="ecore:EClass platform:/plugin/requirementsXtext/model/generated/ReqXtext.ecore#//XContainer"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
-        eType="ecore:EClass platform:/plugin/mbse_metamodels/model/requirements.ecore#//Agent"/>
+        eType="ecore:EClass platform:/plugin/mbse_metamodels/model/requirements.ecore#//Container"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="XConsumerToConsumer" eSuperTypes="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore#//AbstractCorrespondence">
     <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
@@ -14,23 +14,23 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
         eType="ecore:EClass platform:/plugin/mbse_metamodels/model/requirements.ecore#//Consumer"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="XContainerToContainer" eSuperTypes="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore#//AbstractCorrespondence">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
-        eType="ecore:EClass platform:/plugin/requirementsXtext/model/generated/ReqXtext.ecore#//XContainer"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
-        eType="ecore:EClass platform:/plugin/mbse_metamodels/model/requirements.ecore#//Container"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="XProviderToProvider" eSuperTypes="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore#//AbstractCorrespondence">
     <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
         eType="ecore:EClass platform:/plugin/requirementsXtext/model/generated/ReqXtext.ecore#//XProvider"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
         eType="ecore:EClass platform:/plugin/mbse_metamodels/model/requirements.ecore#//Provider"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="XAgentToAgent" eSuperTypes="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore#//AbstractCorrespondence">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/requirementsXtext/model/generated/ReqXtext.ecore#//XAgent"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/mbse_metamodels/model/requirements.ecore#//Agent"/>
+  </eClassifiers>
   <eSubpackages name="Rules" nsURI="platform:/plugin/RequirementsTransformator/model/RequirementsTransformator.ecore#//Rules"
       nsPrefix="Rules">
+    <eClassifiers xsi:type="ecore:EClass" name="XProviderToProviderRule" eSuperTypes="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore#//AbstractRule"/>
     <eClassifiers xsi:type="ecore:EClass" name="XAgentToAgentRule" eSuperTypes="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore#//AbstractRule"/>
     <eClassifiers xsi:type="ecore:EClass" name="XContainerToContainerRule" eSuperTypes="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore#//AbstractRule"/>
-    <eClassifiers xsi:type="ecore:EClass" name="XProviderToProviderRule" eSuperTypes="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore#//AbstractRule"/>
     <eClassifiers xsi:type="ecore:EClass" name="XConsumerToConsumerRule" eSuperTypes="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore#//AbstractRule"/>
   </eSubpackages>
 </ecore:EPackage>

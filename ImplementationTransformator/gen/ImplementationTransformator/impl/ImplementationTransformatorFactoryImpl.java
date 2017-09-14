@@ -58,10 +58,10 @@ public class ImplementationTransformatorFactoryImpl extends EFactoryImpl impleme
 		switch (eClass.getClassifierID()) {
 		case ImplementationTransformatorPackage.XCABLE_TO_CABLE:
 			return createXCableToCable();
-		case ImplementationTransformatorPackage.XDEVICE_TO_DEVICE:
-			return createXDeviceToDevice();
 		case ImplementationTransformatorPackage.XCONTAINER_TO_CONTAINER:
 			return createXContainerToContainer();
+		case ImplementationTransformatorPackage.XDEVICE_TO_DEVICE:
+			return createXDeviceToDevice();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -82,9 +82,9 @@ public class ImplementationTransformatorFactoryImpl extends EFactoryImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XDeviceToDevice createXDeviceToDevice() {
-		XDeviceToDeviceImpl xDeviceToDevice = new XDeviceToDeviceImpl();
-		return xDeviceToDevice;
+	public XContainerToContainer createXContainerToContainer() {
+		XContainerToContainerImpl xContainerToContainer = new XContainerToContainerImpl();
+		return xContainerToContainer;
 	}
 
 	/**
@@ -92,9 +92,9 @@ public class ImplementationTransformatorFactoryImpl extends EFactoryImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public XContainerToContainer createXContainerToContainer() {
-		XContainerToContainerImpl xContainerToContainer = new XContainerToContainerImpl();
-		return xContainerToContainer;
+	public XDeviceToDevice createXDeviceToDevice() {
+		XDeviceToDeviceImpl xDeviceToDevice = new XDeviceToDeviceImpl();
+		return xDeviceToDevice;
 	}
 
 	/**

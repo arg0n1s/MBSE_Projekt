@@ -104,98 +104,6 @@ public interface ReqToImpTransformatorPackage extends EPackage {
 	int REQ_CONTAINER_TO_IMPL_CONTAINER_OPERATION_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link ReqToImpTransformator.impl.ReqAgentToImplDeviceImpl <em>Req Agent To Impl Device</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see ReqToImpTransformator.impl.ReqAgentToImplDeviceImpl
-	 * @see ReqToImpTransformator.impl.ReqToImpTransformatorPackageImpl#getReqAgentToImplDevice()
-	 * @generated
-	 */
-	int REQ_AGENT_TO_IMPL_DEVICE = 1;
-
-	/**
-	 * The feature id for the '<em><b>Source</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REQ_AGENT_TO_IMPL_DEVICE__SOURCE = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Target</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REQ_AGENT_TO_IMPL_DEVICE__TARGET = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of structural features of the '<em>Req Agent To Impl Device</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REQ_AGENT_TO_IMPL_DEVICE_FEATURE_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 2;
-
-	/**
-	 * The number of operations of the '<em>Req Agent To Impl Device</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REQ_AGENT_TO_IMPL_DEVICE_OPERATION_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link ReqToImpTransformator.impl.VirtualNodeToServerImpl <em>Virtual Node To Server</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see ReqToImpTransformator.impl.VirtualNodeToServerImpl
-	 * @see ReqToImpTransformator.impl.ReqToImpTransformatorPackageImpl#getVirtualNodeToServer()
-	 * @generated
-	 */
-	int VIRTUAL_NODE_TO_SERVER = 2;
-
-	/**
-	 * The feature id for the '<em><b>Source</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VIRTUAL_NODE_TO_SERVER__SOURCE = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Target</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VIRTUAL_NODE_TO_SERVER__TARGET = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of structural features of the '<em>Virtual Node To Server</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VIRTUAL_NODE_TO_SERVER_FEATURE_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 2;
-
-	/**
-	 * The number of operations of the '<em>Virtual Node To Server</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VIRTUAL_NODE_TO_SERVER_OPERATION_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link ReqToImpTransformator.impl.VirtualNodeToRouterImpl <em>Virtual Node To Router</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -203,7 +111,7 @@ public interface ReqToImpTransformatorPackage extends EPackage {
 	 * @see ReqToImpTransformator.impl.ReqToImpTransformatorPackageImpl#getVirtualNodeToRouter()
 	 * @generated
 	 */
-	int VIRTUAL_NODE_TO_ROUTER = 3;
+	int VIRTUAL_NODE_TO_ROUTER = 1;
 
 	/**
 	 * The feature id for the '<em><b>Source</b></em>' reference.
@@ -242,6 +150,52 @@ public interface ReqToImpTransformatorPackage extends EPackage {
 	int VIRTUAL_NODE_TO_ROUTER_OPERATION_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link ReqToImpTransformator.impl.ReqAgentToImplDeviceImpl <em>Req Agent To Impl Device</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ReqToImpTransformator.impl.ReqAgentToImplDeviceImpl
+	 * @see ReqToImpTransformator.impl.ReqToImpTransformatorPackageImpl#getReqAgentToImplDevice()
+	 * @generated
+	 */
+	int REQ_AGENT_TO_IMPL_DEVICE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Source</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQ_AGENT_TO_IMPL_DEVICE__SOURCE = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Target</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQ_AGENT_TO_IMPL_DEVICE__TARGET = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Req Agent To Impl Device</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQ_AGENT_TO_IMPL_DEVICE_FEATURE_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of operations of the '<em>Req Agent To Impl Device</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQ_AGENT_TO_IMPL_DEVICE_OPERATION_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link ReqToImpTransformator.impl.VirtualNodeToComputerImpl <em>Virtual Node To Computer</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -249,7 +203,7 @@ public interface ReqToImpTransformatorPackage extends EPackage {
 	 * @see ReqToImpTransformator.impl.ReqToImpTransformatorPackageImpl#getVirtualNodeToComputer()
 	 * @generated
 	 */
-	int VIRTUAL_NODE_TO_COMPUTER = 4;
+	int VIRTUAL_NODE_TO_COMPUTER = 3;
 
 	/**
 	 * The feature id for the '<em><b>Source</b></em>' reference.
@@ -288,6 +242,52 @@ public interface ReqToImpTransformatorPackage extends EPackage {
 	int VIRTUAL_NODE_TO_COMPUTER_OPERATION_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link ReqToImpTransformator.impl.VirtualNodeToServerImpl <em>Virtual Node To Server</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ReqToImpTransformator.impl.VirtualNodeToServerImpl
+	 * @see ReqToImpTransformator.impl.ReqToImpTransformatorPackageImpl#getVirtualNodeToServer()
+	 * @generated
+	 */
+	int VIRTUAL_NODE_TO_SERVER = 4;
+
+	/**
+	 * The feature id for the '<em><b>Source</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIRTUAL_NODE_TO_SERVER__SOURCE = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Target</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIRTUAL_NODE_TO_SERVER__TARGET = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Virtual Node To Server</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIRTUAL_NODE_TO_SERVER_FEATURE_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of operations of the '<em>Virtual Node To Server</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIRTUAL_NODE_TO_SERVER_OPERATION_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
+
+	/**
 	 * Returns the meta object for class '{@link ReqToImpTransformator.ReqContainerToImplContainer <em>Req Container To Impl Container</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -318,70 +318,6 @@ public interface ReqToImpTransformatorPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getReqContainerToImplContainer_Target();
-
-	/**
-	 * Returns the meta object for class '{@link ReqToImpTransformator.ReqAgentToImplDevice <em>Req Agent To Impl Device</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Req Agent To Impl Device</em>'.
-	 * @see ReqToImpTransformator.ReqAgentToImplDevice
-	 * @generated
-	 */
-	EClass getReqAgentToImplDevice();
-
-	/**
-	 * Returns the meta object for the reference '{@link ReqToImpTransformator.ReqAgentToImplDevice#getSource <em>Source</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Source</em>'.
-	 * @see ReqToImpTransformator.ReqAgentToImplDevice#getSource()
-	 * @see #getReqAgentToImplDevice()
-	 * @generated
-	 */
-	EReference getReqAgentToImplDevice_Source();
-
-	/**
-	 * Returns the meta object for the reference '{@link ReqToImpTransformator.ReqAgentToImplDevice#getTarget <em>Target</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Target</em>'.
-	 * @see ReqToImpTransformator.ReqAgentToImplDevice#getTarget()
-	 * @see #getReqAgentToImplDevice()
-	 * @generated
-	 */
-	EReference getReqAgentToImplDevice_Target();
-
-	/**
-	 * Returns the meta object for class '{@link ReqToImpTransformator.VirtualNodeToServer <em>Virtual Node To Server</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Virtual Node To Server</em>'.
-	 * @see ReqToImpTransformator.VirtualNodeToServer
-	 * @generated
-	 */
-	EClass getVirtualNodeToServer();
-
-	/**
-	 * Returns the meta object for the reference '{@link ReqToImpTransformator.VirtualNodeToServer#getSource <em>Source</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Source</em>'.
-	 * @see ReqToImpTransformator.VirtualNodeToServer#getSource()
-	 * @see #getVirtualNodeToServer()
-	 * @generated
-	 */
-	EReference getVirtualNodeToServer_Source();
-
-	/**
-	 * Returns the meta object for the reference '{@link ReqToImpTransformator.VirtualNodeToServer#getTarget <em>Target</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Target</em>'.
-	 * @see ReqToImpTransformator.VirtualNodeToServer#getTarget()
-	 * @see #getVirtualNodeToServer()
-	 * @generated
-	 */
-	EReference getVirtualNodeToServer_Target();
 
 	/**
 	 * Returns the meta object for class '{@link ReqToImpTransformator.VirtualNodeToRouter <em>Virtual Node To Router</em>}'.
@@ -416,6 +352,38 @@ public interface ReqToImpTransformatorPackage extends EPackage {
 	EReference getVirtualNodeToRouter_Target();
 
 	/**
+	 * Returns the meta object for class '{@link ReqToImpTransformator.ReqAgentToImplDevice <em>Req Agent To Impl Device</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Req Agent To Impl Device</em>'.
+	 * @see ReqToImpTransformator.ReqAgentToImplDevice
+	 * @generated
+	 */
+	EClass getReqAgentToImplDevice();
+
+	/**
+	 * Returns the meta object for the reference '{@link ReqToImpTransformator.ReqAgentToImplDevice#getSource <em>Source</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Source</em>'.
+	 * @see ReqToImpTransformator.ReqAgentToImplDevice#getSource()
+	 * @see #getReqAgentToImplDevice()
+	 * @generated
+	 */
+	EReference getReqAgentToImplDevice_Source();
+
+	/**
+	 * Returns the meta object for the reference '{@link ReqToImpTransformator.ReqAgentToImplDevice#getTarget <em>Target</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Target</em>'.
+	 * @see ReqToImpTransformator.ReqAgentToImplDevice#getTarget()
+	 * @see #getReqAgentToImplDevice()
+	 * @generated
+	 */
+	EReference getReqAgentToImplDevice_Target();
+
+	/**
 	 * Returns the meta object for class '{@link ReqToImpTransformator.VirtualNodeToComputer <em>Virtual Node To Computer</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -446,6 +414,38 @@ public interface ReqToImpTransformatorPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getVirtualNodeToComputer_Target();
+
+	/**
+	 * Returns the meta object for class '{@link ReqToImpTransformator.VirtualNodeToServer <em>Virtual Node To Server</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Virtual Node To Server</em>'.
+	 * @see ReqToImpTransformator.VirtualNodeToServer
+	 * @generated
+	 */
+	EClass getVirtualNodeToServer();
+
+	/**
+	 * Returns the meta object for the reference '{@link ReqToImpTransformator.VirtualNodeToServer#getSource <em>Source</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Source</em>'.
+	 * @see ReqToImpTransformator.VirtualNodeToServer#getSource()
+	 * @see #getVirtualNodeToServer()
+	 * @generated
+	 */
+	EReference getVirtualNodeToServer_Source();
+
+	/**
+	 * Returns the meta object for the reference '{@link ReqToImpTransformator.VirtualNodeToServer#getTarget <em>Target</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Target</em>'.
+	 * @see ReqToImpTransformator.VirtualNodeToServer#getTarget()
+	 * @see #getVirtualNodeToServer()
+	 * @generated
+	 */
+	EReference getVirtualNodeToServer_Target();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -497,58 +497,6 @@ public interface ReqToImpTransformatorPackage extends EPackage {
 		EReference REQ_CONTAINER_TO_IMPL_CONTAINER__TARGET = eINSTANCE.getReqContainerToImplContainer_Target();
 
 		/**
-		 * The meta object literal for the '{@link ReqToImpTransformator.impl.ReqAgentToImplDeviceImpl <em>Req Agent To Impl Device</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see ReqToImpTransformator.impl.ReqAgentToImplDeviceImpl
-		 * @see ReqToImpTransformator.impl.ReqToImpTransformatorPackageImpl#getReqAgentToImplDevice()
-		 * @generated
-		 */
-		EClass REQ_AGENT_TO_IMPL_DEVICE = eINSTANCE.getReqAgentToImplDevice();
-
-		/**
-		 * The meta object literal for the '<em><b>Source</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference REQ_AGENT_TO_IMPL_DEVICE__SOURCE = eINSTANCE.getReqAgentToImplDevice_Source();
-
-		/**
-		 * The meta object literal for the '<em><b>Target</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference REQ_AGENT_TO_IMPL_DEVICE__TARGET = eINSTANCE.getReqAgentToImplDevice_Target();
-
-		/**
-		 * The meta object literal for the '{@link ReqToImpTransformator.impl.VirtualNodeToServerImpl <em>Virtual Node To Server</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see ReqToImpTransformator.impl.VirtualNodeToServerImpl
-		 * @see ReqToImpTransformator.impl.ReqToImpTransformatorPackageImpl#getVirtualNodeToServer()
-		 * @generated
-		 */
-		EClass VIRTUAL_NODE_TO_SERVER = eINSTANCE.getVirtualNodeToServer();
-
-		/**
-		 * The meta object literal for the '<em><b>Source</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference VIRTUAL_NODE_TO_SERVER__SOURCE = eINSTANCE.getVirtualNodeToServer_Source();
-
-		/**
-		 * The meta object literal for the '<em><b>Target</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference VIRTUAL_NODE_TO_SERVER__TARGET = eINSTANCE.getVirtualNodeToServer_Target();
-
-		/**
 		 * The meta object literal for the '{@link ReqToImpTransformator.impl.VirtualNodeToRouterImpl <em>Virtual Node To Router</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -575,6 +523,32 @@ public interface ReqToImpTransformatorPackage extends EPackage {
 		EReference VIRTUAL_NODE_TO_ROUTER__TARGET = eINSTANCE.getVirtualNodeToRouter_Target();
 
 		/**
+		 * The meta object literal for the '{@link ReqToImpTransformator.impl.ReqAgentToImplDeviceImpl <em>Req Agent To Impl Device</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ReqToImpTransformator.impl.ReqAgentToImplDeviceImpl
+		 * @see ReqToImpTransformator.impl.ReqToImpTransformatorPackageImpl#getReqAgentToImplDevice()
+		 * @generated
+		 */
+		EClass REQ_AGENT_TO_IMPL_DEVICE = eINSTANCE.getReqAgentToImplDevice();
+
+		/**
+		 * The meta object literal for the '<em><b>Source</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference REQ_AGENT_TO_IMPL_DEVICE__SOURCE = eINSTANCE.getReqAgentToImplDevice_Source();
+
+		/**
+		 * The meta object literal for the '<em><b>Target</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference REQ_AGENT_TO_IMPL_DEVICE__TARGET = eINSTANCE.getReqAgentToImplDevice_Target();
+
+		/**
 		 * The meta object literal for the '{@link ReqToImpTransformator.impl.VirtualNodeToComputerImpl <em>Virtual Node To Computer</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -599,6 +573,32 @@ public interface ReqToImpTransformatorPackage extends EPackage {
 		 * @generated
 		 */
 		EReference VIRTUAL_NODE_TO_COMPUTER__TARGET = eINSTANCE.getVirtualNodeToComputer_Target();
+
+		/**
+		 * The meta object literal for the '{@link ReqToImpTransformator.impl.VirtualNodeToServerImpl <em>Virtual Node To Server</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ReqToImpTransformator.impl.VirtualNodeToServerImpl
+		 * @see ReqToImpTransformator.impl.ReqToImpTransformatorPackageImpl#getVirtualNodeToServer()
+		 * @generated
+		 */
+		EClass VIRTUAL_NODE_TO_SERVER = eINSTANCE.getVirtualNodeToServer();
+
+		/**
+		 * The meta object literal for the '<em><b>Source</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference VIRTUAL_NODE_TO_SERVER__SOURCE = eINSTANCE.getVirtualNodeToServer_Source();
+
+		/**
+		 * The meta object literal for the '<em><b>Target</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference VIRTUAL_NODE_TO_SERVER__TARGET = eINSTANCE.getVirtualNodeToServer_Target();
 
 	}
 

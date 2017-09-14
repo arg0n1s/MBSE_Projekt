@@ -105,52 +105,6 @@ public interface ImplementationTransformatorPackage extends EPackage {
 	int XCABLE_TO_CABLE_OPERATION_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link ImplementationTransformator.impl.XDeviceToDeviceImpl <em>XDevice To Device</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see ImplementationTransformator.impl.XDeviceToDeviceImpl
-	 * @see ImplementationTransformator.impl.ImplementationTransformatorPackageImpl#getXDeviceToDevice()
-	 * @generated
-	 */
-	int XDEVICE_TO_DEVICE = 1;
-
-	/**
-	 * The feature id for the '<em><b>Source</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int XDEVICE_TO_DEVICE__SOURCE = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Target</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int XDEVICE_TO_DEVICE__TARGET = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of structural features of the '<em>XDevice To Device</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int XDEVICE_TO_DEVICE_FEATURE_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 2;
-
-	/**
-	 * The number of operations of the '<em>XDevice To Device</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int XDEVICE_TO_DEVICE_OPERATION_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link ImplementationTransformator.impl.XContainerToContainerImpl <em>XContainer To Container</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -158,7 +112,7 @@ public interface ImplementationTransformatorPackage extends EPackage {
 	 * @see ImplementationTransformator.impl.ImplementationTransformatorPackageImpl#getXContainerToContainer()
 	 * @generated
 	 */
-	int XCONTAINER_TO_CONTAINER = 2;
+	int XCONTAINER_TO_CONTAINER = 1;
 
 	/**
 	 * The feature id for the '<em><b>Source</b></em>' reference.
@@ -197,6 +151,52 @@ public interface ImplementationTransformatorPackage extends EPackage {
 	int XCONTAINER_TO_CONTAINER_OPERATION_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link ImplementationTransformator.impl.XDeviceToDeviceImpl <em>XDevice To Device</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ImplementationTransformator.impl.XDeviceToDeviceImpl
+	 * @see ImplementationTransformator.impl.ImplementationTransformatorPackageImpl#getXDeviceToDevice()
+	 * @generated
+	 */
+	int XDEVICE_TO_DEVICE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Source</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int XDEVICE_TO_DEVICE__SOURCE = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Target</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int XDEVICE_TO_DEVICE__TARGET = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>XDevice To Device</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int XDEVICE_TO_DEVICE_FEATURE_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of operations of the '<em>XDevice To Device</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int XDEVICE_TO_DEVICE_OPERATION_COUNT = RuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
+
+	/**
 	 * Returns the meta object for class '{@link ImplementationTransformator.XCableToCable <em>XCable To Cable</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -229,38 +229,6 @@ public interface ImplementationTransformatorPackage extends EPackage {
 	EReference getXCableToCable_Target();
 
 	/**
-	 * Returns the meta object for class '{@link ImplementationTransformator.XDeviceToDevice <em>XDevice To Device</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>XDevice To Device</em>'.
-	 * @see ImplementationTransformator.XDeviceToDevice
-	 * @generated
-	 */
-	EClass getXDeviceToDevice();
-
-	/**
-	 * Returns the meta object for the reference '{@link ImplementationTransformator.XDeviceToDevice#getSource <em>Source</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Source</em>'.
-	 * @see ImplementationTransformator.XDeviceToDevice#getSource()
-	 * @see #getXDeviceToDevice()
-	 * @generated
-	 */
-	EReference getXDeviceToDevice_Source();
-
-	/**
-	 * Returns the meta object for the reference '{@link ImplementationTransformator.XDeviceToDevice#getTarget <em>Target</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Target</em>'.
-	 * @see ImplementationTransformator.XDeviceToDevice#getTarget()
-	 * @see #getXDeviceToDevice()
-	 * @generated
-	 */
-	EReference getXDeviceToDevice_Target();
-
-	/**
 	 * Returns the meta object for class '{@link ImplementationTransformator.XContainerToContainer <em>XContainer To Container</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -291,6 +259,38 @@ public interface ImplementationTransformatorPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getXContainerToContainer_Target();
+
+	/**
+	 * Returns the meta object for class '{@link ImplementationTransformator.XDeviceToDevice <em>XDevice To Device</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>XDevice To Device</em>'.
+	 * @see ImplementationTransformator.XDeviceToDevice
+	 * @generated
+	 */
+	EClass getXDeviceToDevice();
+
+	/**
+	 * Returns the meta object for the reference '{@link ImplementationTransformator.XDeviceToDevice#getSource <em>Source</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Source</em>'.
+	 * @see ImplementationTransformator.XDeviceToDevice#getSource()
+	 * @see #getXDeviceToDevice()
+	 * @generated
+	 */
+	EReference getXDeviceToDevice_Source();
+
+	/**
+	 * Returns the meta object for the reference '{@link ImplementationTransformator.XDeviceToDevice#getTarget <em>Target</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Target</em>'.
+	 * @see ImplementationTransformator.XDeviceToDevice#getTarget()
+	 * @see #getXDeviceToDevice()
+	 * @generated
+	 */
+	EReference getXDeviceToDevice_Target();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -342,32 +342,6 @@ public interface ImplementationTransformatorPackage extends EPackage {
 		EReference XCABLE_TO_CABLE__TARGET = eINSTANCE.getXCableToCable_Target();
 
 		/**
-		 * The meta object literal for the '{@link ImplementationTransformator.impl.XDeviceToDeviceImpl <em>XDevice To Device</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see ImplementationTransformator.impl.XDeviceToDeviceImpl
-		 * @see ImplementationTransformator.impl.ImplementationTransformatorPackageImpl#getXDeviceToDevice()
-		 * @generated
-		 */
-		EClass XDEVICE_TO_DEVICE = eINSTANCE.getXDeviceToDevice();
-
-		/**
-		 * The meta object literal for the '<em><b>Source</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference XDEVICE_TO_DEVICE__SOURCE = eINSTANCE.getXDeviceToDevice_Source();
-
-		/**
-		 * The meta object literal for the '<em><b>Target</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference XDEVICE_TO_DEVICE__TARGET = eINSTANCE.getXDeviceToDevice_Target();
-
-		/**
 		 * The meta object literal for the '{@link ImplementationTransformator.impl.XContainerToContainerImpl <em>XContainer To Container</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -392,6 +366,32 @@ public interface ImplementationTransformatorPackage extends EPackage {
 		 * @generated
 		 */
 		EReference XCONTAINER_TO_CONTAINER__TARGET = eINSTANCE.getXContainerToContainer_Target();
+
+		/**
+		 * The meta object literal for the '{@link ImplementationTransformator.impl.XDeviceToDeviceImpl <em>XDevice To Device</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ImplementationTransformator.impl.XDeviceToDeviceImpl
+		 * @see ImplementationTransformator.impl.ImplementationTransformatorPackageImpl#getXDeviceToDevice()
+		 * @generated
+		 */
+		EClass XDEVICE_TO_DEVICE = eINSTANCE.getXDeviceToDevice();
+
+		/**
+		 * The meta object literal for the '<em><b>Source</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference XDEVICE_TO_DEVICE__SOURCE = eINSTANCE.getXDeviceToDevice_Source();
+
+		/**
+		 * The meta object literal for the '<em><b>Target</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference XDEVICE_TO_DEVICE__TARGET = eINSTANCE.getXDeviceToDevice_Target();
 
 	}
 

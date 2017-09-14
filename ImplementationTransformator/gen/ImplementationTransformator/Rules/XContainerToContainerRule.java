@@ -203,7 +203,7 @@ public interface XContainerToContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_Container_5(Container container);
+	EObjectContainer isAppropriate_BWD_Container_1(Container container);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -211,7 +211,7 @@ public interface XContainerToContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_XContainer_5(XContainer xContainer);
+	EObjectContainer isAppropriate_FWD_XContainer_1(XContainer xContainer);
 
 	/**
 	 * <!-- begin-user-doc -->

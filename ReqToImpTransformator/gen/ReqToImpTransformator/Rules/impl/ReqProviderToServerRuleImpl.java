@@ -564,7 +564,7 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_Server_2(Server implDevice) {
+	public EObjectContainer isAppropriate_BWD_Server_0(Server implDevice) {
 
 		Object[] result1_bindingAndBlack = ReqProviderToServerRuleImpl
 				.pattern_ReqProviderToServerRule_17_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -622,7 +622,7 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_28(EMoflonEdge _edge_agents) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_2(EMoflonEdge _edge_agents) {
 
 		Object[] result1_bindingAndBlack = ReqProviderToServerRuleImpl
 				.pattern_ReqProviderToServerRule_18_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -1058,10 +1058,10 @@ public class ReqProviderToServerRuleImpl extends AbstractRuleImpl implements Req
 			return isAppropriate_checkCsp_BWD((CSP) arguments.get(0));
 		case RulesPackage.REQ_PROVIDER_TO_SERVER_RULE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.REQ_PROVIDER_TO_SERVER_RULE___IS_APPROPRIATE_BWD_SERVER_2__SERVER:
-			return isAppropriate_BWD_Server_2((Server) arguments.get(0));
-		case RulesPackage.REQ_PROVIDER_TO_SERVER_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_28__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_28((EMoflonEdge) arguments.get(0));
+		case RulesPackage.REQ_PROVIDER_TO_SERVER_RULE___IS_APPROPRIATE_BWD_SERVER_0__SERVER:
+			return isAppropriate_BWD_Server_0((Server) arguments.get(0));
+		case RulesPackage.REQ_PROVIDER_TO_SERVER_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_2__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_2((EMoflonEdge) arguments.get(0));
 		case RulesPackage.REQ_PROVIDER_TO_SERVER_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.REQ_PROVIDER_TO_SERVER_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:

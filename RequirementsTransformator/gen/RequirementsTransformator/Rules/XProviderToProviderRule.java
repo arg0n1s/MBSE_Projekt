@@ -111,7 +111,7 @@ public interface XProviderToProviderRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_FWD(PerformRuleResult ruleresult, EObject container, EObject xAgentToAgent, EObject agent,
+	void registerObjects_FWD(PerformRuleResult ruleresult, EObject xAgentToAgent, EObject container, EObject agent,
 			EObject xAgent, EObject xContainerToContainer, EObject xContainer);
 
 	/**
@@ -193,7 +193,7 @@ public interface XProviderToProviderRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_BWD(PerformRuleResult ruleresult, EObject container, EObject xAgentToAgent, EObject agent,
+	void registerObjects_BWD(PerformRuleResult ruleresult, EObject xAgentToAgent, EObject container, EObject agent,
 			EObject xAgent, EObject xContainerToContainer, EObject xContainer);
 
 	/**
@@ -210,7 +210,7 @@ public interface XProviderToProviderRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_43(EMoflonEdge _edge_agents);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_6(EMoflonEdge _edge_agents);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -218,7 +218,7 @@ public interface XProviderToProviderRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_31(EMoflonEdge _edge_agents);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_3(EMoflonEdge _edge_agents);
 
 	/**
 	 * <!-- begin-user-doc -->

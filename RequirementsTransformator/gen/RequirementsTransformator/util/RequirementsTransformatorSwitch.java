@@ -68,11 +68,11 @@ public class RequirementsTransformatorSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-		case RequirementsTransformatorPackage.XAGENT_TO_AGENT: {
-			XAgentToAgent xAgentToAgent = (XAgentToAgent) theEObject;
-			T result = caseXAgentToAgent(xAgentToAgent);
+		case RequirementsTransformatorPackage.XCONTAINER_TO_CONTAINER: {
+			XContainerToContainer xContainerToContainer = (XContainerToContainer) theEObject;
+			T result = caseXContainerToContainer(xContainerToContainer);
 			if (result == null)
-				result = caseAbstractCorrespondence(xAgentToAgent);
+				result = caseAbstractCorrespondence(xContainerToContainer);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -86,20 +86,20 @@ public class RequirementsTransformatorSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case RequirementsTransformatorPackage.XCONTAINER_TO_CONTAINER: {
-			XContainerToContainer xContainerToContainer = (XContainerToContainer) theEObject;
-			T result = caseXContainerToContainer(xContainerToContainer);
-			if (result == null)
-				result = caseAbstractCorrespondence(xContainerToContainer);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		case RequirementsTransformatorPackage.XPROVIDER_TO_PROVIDER: {
 			XProviderToProvider xProviderToProvider = (XProviderToProvider) theEObject;
 			T result = caseXProviderToProvider(xProviderToProvider);
 			if (result == null)
 				result = caseAbstractCorrespondence(xProviderToProvider);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case RequirementsTransformatorPackage.XAGENT_TO_AGENT: {
+			XAgentToAgent xAgentToAgent = (XAgentToAgent) theEObject;
+			T result = caseXAgentToAgent(xAgentToAgent);
+			if (result == null)
+				result = caseAbstractCorrespondence(xAgentToAgent);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -110,17 +110,17 @@ public class RequirementsTransformatorSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>XAgent To Agent</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>XContainer To Container</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>XAgent To Agent</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>XContainer To Container</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseXAgentToAgent(XAgentToAgent object) {
+	public T caseXContainerToContainer(XContainerToContainer object) {
 		return null;
 	}
 
@@ -140,21 +140,6 @@ public class RequirementsTransformatorSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>XContainer To Container</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>XContainer To Container</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseXContainerToContainer(XContainerToContainer object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>XProvider To Provider</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -166,6 +151,21 @@ public class RequirementsTransformatorSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseXProviderToProvider(XProviderToProvider object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>XAgent To Agent</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>XAgent To Agent</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseXAgentToAgent(XAgentToAgent object) {
 		return null;
 	}
 

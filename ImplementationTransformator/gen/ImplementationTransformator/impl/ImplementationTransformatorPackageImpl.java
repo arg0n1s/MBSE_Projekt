@@ -61,14 +61,14 @@ public class ImplementationTransformatorPackageImpl extends EPackageImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass xDeviceToDeviceEClass = null;
+	private EClass xContainerToContainerEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass xContainerToContainerEClass = null;
+	private EClass xDeviceToDeviceEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -183,41 +183,10 @@ public class ImplementationTransformatorPackageImpl extends EPackageImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getXDeviceToDevice() {
-		if (xDeviceToDeviceEClass == null) {
-			xDeviceToDeviceEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(ImplementationTransformatorPackage.eNS_URI).getEClassifiers().get(1);
-		}
-		return xDeviceToDeviceEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getXDeviceToDevice_Source() {
-		return (EReference) getXDeviceToDevice().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getXDeviceToDevice_Target() {
-		return (EReference) getXDeviceToDevice().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getXContainerToContainer() {
 		if (xContainerToContainerEClass == null) {
 			xContainerToContainerEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(ImplementationTransformatorPackage.eNS_URI).getEClassifiers().get(2);
+					.getEPackage(ImplementationTransformatorPackage.eNS_URI).getEClassifiers().get(1);
 		}
 		return xContainerToContainerEClass;
 	}
@@ -238,6 +207,37 @@ public class ImplementationTransformatorPackageImpl extends EPackageImpl impleme
 	 */
 	public EReference getXContainerToContainer_Target() {
 		return (EReference) getXContainerToContainer().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getXDeviceToDevice() {
+		if (xDeviceToDeviceEClass == null) {
+			xDeviceToDeviceEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(ImplementationTransformatorPackage.eNS_URI).getEClassifiers().get(2);
+		}
+		return xDeviceToDeviceEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getXDeviceToDevice_Source() {
+		return (EReference) getXDeviceToDevice().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getXDeviceToDevice_Target() {
+		return (EReference) getXDeviceToDevice().getEStructuralFeatures().get(1);
 	}
 
 	/**

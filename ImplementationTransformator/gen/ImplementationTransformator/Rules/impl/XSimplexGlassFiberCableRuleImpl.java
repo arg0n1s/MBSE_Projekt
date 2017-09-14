@@ -783,7 +783,7 @@ public class XSimplexGlassFiberCableRuleImpl extends AbstractRuleImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_45(EMoflonEdge _edge_cables) {
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_16(EMoflonEdge _edge_cables) {
 
 		Object[] result1_bindingAndBlack = XSimplexGlassFiberCableRuleImpl
 				.pattern_XSimplexGlassFiberCableRule_20_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -843,7 +843,7 @@ public class XSimplexGlassFiberCableRuleImpl extends AbstractRuleImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_33(EMoflonEdge _edge_cableAttributes) {
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_12(EMoflonEdge _edge_cableAttributes) {
 
 		Object[] result1_bindingAndBlack = XSimplexGlassFiberCableRuleImpl
 				.pattern_XSimplexGlassFiberCableRule_21_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -919,13 +919,13 @@ public class XSimplexGlassFiberCableRuleImpl extends AbstractRuleImpl implements
 			return ruleResult;
 		}
 
-		Variable var_cableAttributes_speed = CSPFactoryHelper.eINSTANCE.createVariable("cableAttributes", true, csp);
-		var_cableAttributes_speed.setValue(__helper.getValue("cableAttributes", "speed"));
-		var_cableAttributes_speed.setType("BigInteger");
-
 		Variable var_cable_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable", true, csp);
 		var_cable_speed.setValue(__helper.getValue("cable", "speed"));
 		var_cable_speed.setType("BigInteger");
+
+		Variable var_cableAttributes_speed = CSPFactoryHelper.eINSTANCE.createVariable("cableAttributes", true, csp);
+		var_cableAttributes_speed.setValue(__helper.getValue("cableAttributes", "speed"));
+		var_cableAttributes_speed.setType("BigInteger");
 
 		Eq eq0 = new Eq();
 		csp.getConstraints().add(eq0);
@@ -971,13 +971,13 @@ public class XSimplexGlassFiberCableRuleImpl extends AbstractRuleImpl implements
 			return ruleResult;
 		}
 
-		Variable var_cableAttributes_speed = CSPFactoryHelper.eINSTANCE.createVariable("cableAttributes", true, csp);
-		var_cableAttributes_speed.setValue(__helper.getValue("cableAttributes", "speed"));
-		var_cableAttributes_speed.setType("BigInteger");
-
 		Variable var_cable_speed = CSPFactoryHelper.eINSTANCE.createVariable("cable", true, csp);
 		var_cable_speed.setValue(__helper.getValue("cable", "speed"));
 		var_cable_speed.setType("BigInteger");
+
+		Variable var_cableAttributes_speed = CSPFactoryHelper.eINSTANCE.createVariable("cableAttributes", true, csp);
+		var_cableAttributes_speed.setValue(__helper.getValue("cableAttributes", "speed"));
+		var_cableAttributes_speed.setType("BigInteger");
 
 		Eq eq0 = new Eq();
 		csp.getConstraints().add(eq0);
@@ -1358,10 +1358,10 @@ public class XSimplexGlassFiberCableRuleImpl extends AbstractRuleImpl implements
 			return null;
 		case RulesPackage.XSIMPLEX_GLASS_FIBER_CABLE_RULE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.XSIMPLEX_GLASS_FIBER_CABLE_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_45__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_45((EMoflonEdge) arguments.get(0));
-		case RulesPackage.XSIMPLEX_GLASS_FIBER_CABLE_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_33__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_33((EMoflonEdge) arguments.get(0));
+		case RulesPackage.XSIMPLEX_GLASS_FIBER_CABLE_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_16__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_16((EMoflonEdge) arguments.get(0));
+		case RulesPackage.XSIMPLEX_GLASS_FIBER_CABLE_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_12__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_12((EMoflonEdge) arguments.get(0));
 		case RulesPackage.XSIMPLEX_GLASS_FIBER_CABLE_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.XSIMPLEX_GLASS_FIBER_CABLE_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:

@@ -69,58 +69,8 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	 */
 	protected RulesSwitch<Adapter> modelSwitch = new RulesSwitch<Adapter>() {
 		@Override
-		public Adapter caseXSimplexCableToCableRule(XSimplexCableToCableRule object) {
-			return createXSimplexCableToCableRuleAdapter();
-		}
-
-		@Override
-		public Adapter caseXSimplexGlassFiberCableRule(XSimplexGlassFiberCableRule object) {
-			return createXSimplexGlassFiberCableRuleAdapter();
-		}
-
-		@Override
-		public Adapter caseXDuplexConnectionToConnectionRule(XDuplexConnectionToConnectionRule object) {
-			return createXDuplexConnectionToConnectionRuleAdapter();
-		}
-
-		@Override
-		public Adapter caseXDuplexCableToCablesRule(XDuplexCableToCablesRule object) {
-			return createXDuplexCableToCablesRuleAdapter();
-		}
-
-		@Override
-		public Adapter caseXRouterToRouterRule(XRouterToRouterRule object) {
-			return createXRouterToRouterRuleAdapter();
-		}
-
-		@Override
-		public Adapter caseXContainerToContainerRule(XContainerToContainerRule object) {
-			return createXContainerToContainerRuleAdapter();
-		}
-
-		@Override
-		public Adapter caseXServerToServer(XServerToServer object) {
-			return createXServerToServerAdapter();
-		}
-
-		@Override
-		public Adapter caseXDuplexCopperCableRule(XDuplexCopperCableRule object) {
-			return createXDuplexCopperCableRuleAdapter();
-		}
-
-		@Override
-		public Adapter caseXComputerToComputer(XComputerToComputer object) {
-			return createXComputerToComputerAdapter();
-		}
-
-		@Override
 		public Adapter caseXDeviceToDeviceRule(XDeviceToDeviceRule object) {
 			return createXDeviceToDeviceRuleAdapter();
-		}
-
-		@Override
-		public Adapter caseXSimplexCopperCableRule(XSimplexCopperCableRule object) {
-			return createXSimplexCopperCableRuleAdapter();
 		}
 
 		@Override
@@ -129,8 +79,58 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseXDuplexCableToCablesRule(XDuplexCableToCablesRule object) {
+			return createXDuplexCableToCablesRuleAdapter();
+		}
+
+		@Override
+		public Adapter caseXServerToServer(XServerToServer object) {
+			return createXServerToServerAdapter();
+		}
+
+		@Override
 		public Adapter caseXSimplexConnectionToConnectionRule(XSimplexConnectionToConnectionRule object) {
 			return createXSimplexConnectionToConnectionRuleAdapter();
+		}
+
+		@Override
+		public Adapter caseXDuplexConnectionToConnectionRule(XDuplexConnectionToConnectionRule object) {
+			return createXDuplexConnectionToConnectionRuleAdapter();
+		}
+
+		@Override
+		public Adapter caseXComputerToComputer(XComputerToComputer object) {
+			return createXComputerToComputerAdapter();
+		}
+
+		@Override
+		public Adapter caseXRouterToRouterRule(XRouterToRouterRule object) {
+			return createXRouterToRouterRuleAdapter();
+		}
+
+		@Override
+		public Adapter caseXSimplexCopperCableRule(XSimplexCopperCableRule object) {
+			return createXSimplexCopperCableRuleAdapter();
+		}
+
+		@Override
+		public Adapter caseXSimplexGlassFiberCableRule(XSimplexGlassFiberCableRule object) {
+			return createXSimplexGlassFiberCableRuleAdapter();
+		}
+
+		@Override
+		public Adapter caseXDuplexCopperCableRule(XDuplexCopperCableRule object) {
+			return createXDuplexCopperCableRuleAdapter();
+		}
+
+		@Override
+		public Adapter caseXSimplexCableToCableRule(XSimplexCableToCableRule object) {
+			return createXSimplexCableToCableRuleAdapter();
+		}
+
+		@Override
+		public Adapter caseXContainerToContainerRule(XContainerToContainerRule object) {
+			return createXContainerToContainerRuleAdapter();
 		}
 
 		@Override
@@ -158,132 +158,6 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.Rules.XSimplexCableToCableRule <em>XSimplex Cable To Cable Rule</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ImplementationTransformator.Rules.XSimplexCableToCableRule
-	 * @generated
-	 */
-	public Adapter createXSimplexCableToCableRuleAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.Rules.XSimplexGlassFiberCableRule <em>XSimplex Glass Fiber Cable Rule</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ImplementationTransformator.Rules.XSimplexGlassFiberCableRule
-	 * @generated
-	 */
-	public Adapter createXSimplexGlassFiberCableRuleAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.Rules.XDuplexConnectionToConnectionRule <em>XDuplex Connection To Connection Rule</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ImplementationTransformator.Rules.XDuplexConnectionToConnectionRule
-	 * @generated
-	 */
-	public Adapter createXDuplexConnectionToConnectionRuleAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.Rules.XDuplexCableToCablesRule <em>XDuplex Cable To Cables Rule</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ImplementationTransformator.Rules.XDuplexCableToCablesRule
-	 * @generated
-	 */
-	public Adapter createXDuplexCableToCablesRuleAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.Rules.XRouterToRouterRule <em>XRouter To Router Rule</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ImplementationTransformator.Rules.XRouterToRouterRule
-	 * @generated
-	 */
-	public Adapter createXRouterToRouterRuleAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.Rules.XContainerToContainerRule <em>XContainer To Container Rule</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ImplementationTransformator.Rules.XContainerToContainerRule
-	 * @generated
-	 */
-	public Adapter createXContainerToContainerRuleAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.Rules.XServerToServer <em>XServer To Server</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ImplementationTransformator.Rules.XServerToServer
-	 * @generated
-	 */
-	public Adapter createXServerToServerAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.Rules.XDuplexCopperCableRule <em>XDuplex Copper Cable Rule</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ImplementationTransformator.Rules.XDuplexCopperCableRule
-	 * @generated
-	 */
-	public Adapter createXDuplexCopperCableRuleAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.Rules.XComputerToComputer <em>XComputer To Computer</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ImplementationTransformator.Rules.XComputerToComputer
-	 * @generated
-	 */
-	public Adapter createXComputerToComputerAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.Rules.XDeviceToDeviceRule <em>XDevice To Device Rule</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -294,20 +168,6 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createXDeviceToDeviceRuleAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.Rules.XSimplexCopperCableRule <em>XSimplex Copper Cable Rule</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see ImplementationTransformator.Rules.XSimplexCopperCableRule
-	 * @generated
-	 */
-	public Adapter createXSimplexCopperCableRuleAdapter() {
 		return null;
 	}
 
@@ -326,6 +186,34 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.Rules.XDuplexCableToCablesRule <em>XDuplex Cable To Cables Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ImplementationTransformator.Rules.XDuplexCableToCablesRule
+	 * @generated
+	 */
+	public Adapter createXDuplexCableToCablesRuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.Rules.XServerToServer <em>XServer To Server</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ImplementationTransformator.Rules.XServerToServer
+	 * @generated
+	 */
+	public Adapter createXServerToServerAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.Rules.XSimplexConnectionToConnectionRule <em>XSimplex Connection To Connection Rule</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -336,6 +224,118 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createXSimplexConnectionToConnectionRuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.Rules.XDuplexConnectionToConnectionRule <em>XDuplex Connection To Connection Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ImplementationTransformator.Rules.XDuplexConnectionToConnectionRule
+	 * @generated
+	 */
+	public Adapter createXDuplexConnectionToConnectionRuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.Rules.XComputerToComputer <em>XComputer To Computer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ImplementationTransformator.Rules.XComputerToComputer
+	 * @generated
+	 */
+	public Adapter createXComputerToComputerAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.Rules.XRouterToRouterRule <em>XRouter To Router Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ImplementationTransformator.Rules.XRouterToRouterRule
+	 * @generated
+	 */
+	public Adapter createXRouterToRouterRuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.Rules.XSimplexCopperCableRule <em>XSimplex Copper Cable Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ImplementationTransformator.Rules.XSimplexCopperCableRule
+	 * @generated
+	 */
+	public Adapter createXSimplexCopperCableRuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.Rules.XSimplexGlassFiberCableRule <em>XSimplex Glass Fiber Cable Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ImplementationTransformator.Rules.XSimplexGlassFiberCableRule
+	 * @generated
+	 */
+	public Adapter createXSimplexGlassFiberCableRuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.Rules.XDuplexCopperCableRule <em>XDuplex Copper Cable Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ImplementationTransformator.Rules.XDuplexCopperCableRule
+	 * @generated
+	 */
+	public Adapter createXDuplexCopperCableRuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.Rules.XSimplexCableToCableRule <em>XSimplex Cable To Cable Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ImplementationTransformator.Rules.XSimplexCableToCableRule
+	 * @generated
+	 */
+	public Adapter createXSimplexCableToCableRuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ImplementationTransformator.Rules.XContainerToContainerRule <em>XContainer To Container Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ImplementationTransformator.Rules.XContainerToContainerRule
+	 * @generated
+	 */
+	public Adapter createXContainerToContainerRuleAdapter() {
 		return null;
 	}
 

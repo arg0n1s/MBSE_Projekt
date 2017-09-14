@@ -32,15 +32,6 @@ public interface ImplementationTransformatorFactory extends EFactory {
 	XCableToCable createXCableToCable();
 
 	/**
-	 * Returns a new object of class '<em>XDevice To Device</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>XDevice To Device</em>'.
-	 * @generated
-	 */
-	XDeviceToDevice createXDeviceToDevice();
-
-	/**
 	 * Returns a new object of class '<em>XContainer To Container</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -48,6 +39,15 @@ public interface ImplementationTransformatorFactory extends EFactory {
 	 * @generated
 	 */
 	XContainerToContainer createXContainerToContainer();
+
+	/**
+	 * Returns a new object of class '<em>XDevice To Device</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>XDevice To Device</em>'.
+	 * @generated
+	 */
+	XDeviceToDevice createXDeviceToDevice();
 
 	/**
 	 * Returns the package supported by this factory.

@@ -182,7 +182,7 @@ public interface ImplCopperIgnoreRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_Container_13(Container reqContainer);
+	EObjectContainer isAppropriate_FWD_Container_0(Container reqContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -190,7 +190,7 @@ public interface ImplCopperIgnoreRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_39(EMoflonEdge _edge_cables);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_2(EMoflonEdge _edge_cables);
 
 	/**
 	 * <!-- begin-user-doc -->

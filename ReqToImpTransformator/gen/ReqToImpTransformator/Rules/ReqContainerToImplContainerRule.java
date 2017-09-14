@@ -105,8 +105,8 @@ public interface ReqContainerToImplContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_FWD(PerformRuleResult ruleresult, EObject reqContainer, EObject virtualNode,
-			EObject implContainer, EObject reqContainerToImplContainer);
+	void registerObjects_FWD(PerformRuleResult ruleresult, EObject reqContainer, EObject implContainer,
+			EObject reqContainerToImplContainer, EObject virtualNode);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -186,8 +186,8 @@ public interface ReqContainerToImplContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_BWD(PerformRuleResult ruleresult, EObject reqContainer, EObject virtualNode,
-			EObject implContainer, EObject reqContainerToImplContainer);
+	void registerObjects_BWD(PerformRuleResult ruleresult, EObject reqContainer, EObject implContainer,
+			EObject reqContainerToImplContainer, EObject virtualNode);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -203,7 +203,7 @@ public interface ReqContainerToImplContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_Container_4(implementation.Container implContainer);
+	EObjectContainer isAppropriate_BWD_Container_0(implementation.Container implContainer);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -211,7 +211,7 @@ public interface ReqContainerToImplContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_29(EMoflonEdge _edge_networkSpan);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_1(EMoflonEdge _edge_networkSpan);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -243,8 +243,8 @@ public interface ReqContainerToImplContainerRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_CC(Container reqContainer, NetworkSpan virtualNode,
-			implementation.Container implContainer, Match sourceMatch, Match targetMatch);
+	CSP isApplicable_solveCsp_CC(Container reqContainer, implementation.Container implContainer,
+			NetworkSpan virtualNode, Match sourceMatch, Match targetMatch);
 
 	/**
 	 * <!-- begin-user-doc -->

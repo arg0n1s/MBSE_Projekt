@@ -622,7 +622,7 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_Container_5(Container container) {
+	public EObjectContainer isAppropriate_BWD_Container_1(Container container) {
 
 		Object[] result1_bindingAndBlack = XContainerToContainerRuleImpl
 				.pattern_XContainerToContainerRule_20_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -678,7 +678,7 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_XContainer_5(XContainer xContainer) {
+	public EObjectContainer isAppropriate_FWD_XContainer_1(XContainer xContainer) {
 
 		Object[] result1_bindingAndBlack = XContainerToContainerRuleImpl
 				.pattern_XContainerToContainerRule_21_1_preparereturnvalue_bindingAndBlackFFBF(this);
@@ -1061,10 +1061,10 @@ public class XContainerToContainerRuleImpl extends AbstractRuleImpl implements X
 			return null;
 		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_BWD_CONTAINER_5__CONTAINER:
-			return isAppropriate_BWD_Container_5((Container) arguments.get(0));
-		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_FWD_XCONTAINER_5__XCONTAINER:
-			return isAppropriate_FWD_XContainer_5((XContainer) arguments.get(0));
+		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_BWD_CONTAINER_1__CONTAINER:
+			return isAppropriate_BWD_Container_1((Container) arguments.get(0));
+		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___IS_APPROPRIATE_FWD_XCONTAINER_1__XCONTAINER:
+			return isAppropriate_FWD_XContainer_1((XContainer) arguments.get(0));
 		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
 		case RulesPackage.XCONTAINER_TO_CONTAINER_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH:
